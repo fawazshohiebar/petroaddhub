@@ -14,25 +14,8 @@ tabs:
               validate:
                 - required
           -
-            handle: content
-            field:
-              type: markdown
-              display: Content
-              localizable: true
-          -
-            handle: author
-            field:
-              type: users
-              display: Author
-              default: current
-              localizable: true
-              max_items: 1
-          -
-            handle: template
-            field:
-              type: template
-              display: Template
-              localizable: true
+            handle: page_builder
+            field: basics.page_builder
   sidebar:
     display: Sidebar
     sections:
@@ -53,3 +36,12 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
+  fineSeo:
+    display: 'Fine SEO'
+    sections:
+      -
+        display: 'Fine SEO'
+        instructions: 'SEO settings for this entry'
+        fields:
+          -
+            import: fine_seo

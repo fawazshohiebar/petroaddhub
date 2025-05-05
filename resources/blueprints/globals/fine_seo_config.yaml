@@ -1,0 +1,32 @@
+tabs:
+  main:
+    sections:
+      -
+        display: Config
+        instructions: 'SEO Config settings'
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+              instructions: 'The website title to be used. Antlers can be used to display the title such as {{ brand.title }}'
+              instructions_position: below
+              localizable: true
+              required: true
+              width: 50
+              antlers: true
+          -
+            handle: separator
+            field:
+              type: select
+              display: Separator
+              instructions: 'The separator between the title and the description'
+              instructions_position: below
+              options:
+                '-': '-'
+                '|': '|'
+                .: .
+              default: '-'
+              required: true
+              width: 50

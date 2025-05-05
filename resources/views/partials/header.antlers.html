@@ -4,9 +4,7 @@
     {{# x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 10 })" #}}
 >
     <!-- Patronage Banner -->
-    <div class="bg-[#827654] text-white py-2 px-4 text-center">
-        <p class="text-sm font-light">Under the Patronage of His Highness Sheikh Hazaa bin Zayed Al Nahyan, Ruler's Representative in Al Ain Region</p>
-    </div>
+    {{partial:patronage}}
     
     <!-- Navigation -->
     <nav 
@@ -17,7 +15,7 @@
             <!-- Logo -->
             <a href="{{site:url}}" class="flex-shrink-0">
                 <img 
-                    :src="scrolled ? '/images/logo-colored.png' : '/images/logo-white.png'" 
+                    :src="scrolled ? '{{brand:logo}}' : '{{brand:logo_dark}}'" 
                     alt="Al Ain International Hunting & Equestrian Exhibition"
                     class="h-12 md:h-16 transition-all duration-300"
                 />

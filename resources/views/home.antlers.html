@@ -1,8 +1,23 @@
-<!-- Hero Section -->
-{{ partial:partials/hero }}
-
+{{ page_builder }}
+    {{ if type === 'reusable' }}
+        {{ entry }}
+            {{ partial:if_exists src="sets/{blueprint}" }}
+        {{ /entry }}
+    {{ elseif type === 'text' }}
+        {{ text }}
+    {{ elseif type === 'html_block' }}
+        {{ code }}
+    {{ elseif type === 'embed' }}
+        {{ partial :src="embed_template" /}}
+    {{ else }}
+        {{ partial:if_exists src="sets/{type}" }}
+    {{ /if }}
+{{ /page_builder }}
 <!-- About Section -->
 {{ partial:partials/about }}
+{{# <!-- Hero Section -->
+{{ partial:partials/hero }}
+
 
 <!-- Sectors Section -->
 {{ partial:partials/sectors }}
@@ -116,4 +131,4 @@
     html {
         scroll-behavior: smooth;
     }
-</style>
+</style> #}}

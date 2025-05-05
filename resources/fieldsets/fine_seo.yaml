@@ -1,0 +1,42 @@
+fields:
+  -
+    handle: fine_seo_title
+    field:
+      type: fine_seo_title
+      display: 'SEO Title'
+      instructions: 'Customize title for entry. Gray means synced with original title.'
+      width: 100
+      localizable: true
+  -
+    handle: fine_seo_is_title_custom
+    field:
+      type: toggle
+      display: 'Custom Title'
+      visibility: hidden
+      instructions: 'Check this box if you want to use a custom title for this entry.'
+      width: 100
+  -
+    handle: fine_seo_description
+    field:
+      type: fine_seo_description
+      display: 'SEO Description'
+      instructions: 'Customize description for entry. if empty, Search Engines will pick a random part of the content.'
+      localizable: true
+      width: 100
+  -
+    handle: fine_seo_image
+    field:
+      type: assets
+      display: 'SEO Image'
+      instructions: 'Customize image for entry. if empty, Search Engines will pick a random image from the content. prefer 1200x630 pixels.'
+      max_files: 1
+      width: 100
+      container: assets
+      folder: /my-images
+  -
+    handle: fine_seo_preview
+    field:
+      type: fine_seo_preview
+      display: 'SEO Preview'
+      instructions: 'Preview how your entry will look on search engines'
+      width: 100

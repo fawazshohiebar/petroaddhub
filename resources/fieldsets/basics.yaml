@@ -1,0 +1,213 @@
+title: Basics
+fields:
+  -
+    handle: button_group
+    field:
+      type: replicator
+      display: 'Button Group'
+      localizable: true
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            button:
+              display: Button
+              fields:
+                -
+                  handle: label
+                  field:
+                    type: text
+                    display: Label
+                    localizable: false
+                -
+                  handle: size
+                  field:
+                    options:
+                      -
+                        key: large
+                        value: L
+                      -
+                        key: medium
+                        value: M
+                      -
+                        key: small
+                        value: S
+                    default: medium
+                    type: button_group
+                    display: Size
+                    localizable: false
+                    width: 33
+                -
+                  handle: color
+                  field:
+                    options:
+                      -
+                        key: light
+                        value: W
+                      -
+                        key: dark
+                        value: D
+                      -
+                        key: primary
+                        value: P
+                      -
+                        key: secondary
+                        value: S
+                    default: primary
+                    type: button_group
+                    display: Color
+                    localizable: false
+                    width: 33
+                -
+                  handle: style
+                  field:
+                    options:
+                      -
+                        key: filled
+                        value: Fill
+                      -
+                        key: outline
+                        value: Outline
+                    default: filled
+                    type: button_group
+                    display: Style
+                    localizable: false
+                    width: 33
+                -
+                  handle: icon
+                  field: basics.icon
+                  config:
+                    width: 50
+                -
+                  handle: url
+                  field:
+                    type: link
+                    display: Url
+                    localizable: false
+                    width: 50
+  -
+    handle: icon
+    field:
+      options:
+        -
+          key: home-modern
+          value: null
+        -
+          key: home
+          value: null
+        -
+          key: arrow-path
+          value: null
+        -
+          key: arrow-right
+          value: null
+        -
+          key: arrow-left
+          value: null
+        -
+          key: sparkles
+          value: null
+        -
+          key: envelope
+          value: null
+        -
+          key: chevron-right
+          value: null
+        -
+          key: chevron-left
+          value: null
+        -
+          key: ticket
+          value: null
+      type: select
+      display: Icon
+      taggable: true
+      localizable: false
+  -
+    handle: page_builder
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - h1
+        - h4
+        - h5
+        - h6
+        - underline
+        - strikethrough
+        - small
+        - superscript
+        - subscript
+        - code
+        - codeblock
+        - horizontalrule
+        - alignleft
+        - aligncenter
+        - alignright
+        - alignjustify
+      remove_empty_nodes: false
+      type: bard
+      display: 'Page Builder'
+      localizable: false
+      sets:
+        landing:
+          display: Landing
+          icon: addon-boxes-stack
+          sets:
+            hero:
+              display: Hero
+              icon: align-object-center
+              fields:
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                    localizable: false
+                -
+                  handle: subheading
+                  field:
+                    type: text
+                    display: Subheading
+                    localizable: false
+                -
+                  handle: video
+                  field:
+                    type: text
+                    display: Video
+                    instructions: 'Can you URL or YouTube ID'
+                    localizable: false
+                -
+                  handle: icons
+                  field:
+                    type: grid
+                    display: Icons
+                    localizable: false
+                    fields:
+                      -
+                        handle: icon
+                        field: basics.icon
+                        config:
+                          width: 50
+                      -
+                        handle: label
+                        field:
+                          type: text
+                          display: Label
+                          localizable: false
+                          width: 50
+                -
+                  handle: hero_actions
+                  field: basics.button_group
+                  config:
+                    display: 'Hero Actions'
+                    width: 100
