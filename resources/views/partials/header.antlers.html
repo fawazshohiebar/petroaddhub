@@ -1,5 +1,5 @@
 <header 
-    class="sticky top-0 left-0 w-full z-50"
+    class="sticky top-0 left-0 w-full z-50 h-34"
     x-data="{ mobileMenuOpen: false, scrolled: true }" 
     {{# x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 10 })" #}}
 >
@@ -11,7 +11,7 @@
     <!-- Navigation -->
     <nav 
         class="w-full transition-all duration-300 ease-in-out"
-        :class="scrolled ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'"
+        :class="scrolled ? 'bg-white shadow-lg py-4' : 'bg-transparent py-4'"
     >
         <div class="container mx-auto px-4 md:px-6 flex items-center justify-between">
             <!-- Logo -->

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e21e53ed7079626f7fe0f667c07b0be",
+    "content-hash": "94a07652df38fe86723eeaeb3ece1aa1",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -68,6 +68,60 @@
                 "source": "https://github.com/ajthinking/archetype/tree/v2.0.0"
             },
             "time": "2024-05-11T08:05:58+00:00"
+        },
+        {
+            "name": "ali-awwad/fine-seo",
+            "version": "v0.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ali-awwad/fine-seo.git",
+                "reference": "45f11c1a7400fc7034cade7ac173f5ef4ff2f879"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ali-awwad/fine-seo/zipball/45f11c1a7400fc7034cade7ac173f5ef4ff2f879",
+                "reference": "45f11c1a7400fc7034cade7ac173f5ef4ff2f879",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^5.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AliAwwad\\FineSeo\\ServiceProvider"
+                    ]
+                },
+                "statamic": {
+                    "name": "Statamic Fine Seo",
+                    "description": "Statamic Fine Seo addon"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AliAwwad\\FineSeo\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Statamic Fine Seo addon",
+            "keywords": [
+                "ali awwad",
+                "laravel",
+                "seo",
+                "statamic"
+            ],
+            "support": {
+                "issues": "https://github.com/ali-awwad/fine-seo/issues",
+                "source": "https://github.com/ali-awwad/fine-seo/tree/v0.1.9"
+            },
+            "time": "2025-04-26T15:47:37+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
