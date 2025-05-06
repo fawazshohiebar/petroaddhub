@@ -43,3 +43,46 @@ tabs:
               type: text
               display: Patronage
               localizable: true
+          -
+            handle: social_media
+            field:
+              type: grid
+              display: 'Social Media'
+              localizable: false
+              fields:
+                -
+                  handle: platform
+                  field:
+                    options:
+                      -
+                        key: facebook
+                        value: null
+                      -
+                        key: twitter
+                        value: null
+                      -
+                        key: instagram
+                        value: null
+                      -
+                        key: linkedin
+                        value: null
+                      -
+                        key: youtube
+                        value: null
+                      -
+                        key: snapchat
+                        value: null
+                      -
+                        key: tiktok
+                        value: null
+                    type: select
+                    display: Platform
+                    localizable: false
+                    width: 50
+                -
+                  handle: social_media_link
+                  field:
+                    type: text
+                    display: 'Social Media Link'
+                    localizable: false
+                    width: 50

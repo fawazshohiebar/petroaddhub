@@ -2,3 +2,12 @@ title: 'Al Ain International Hunting & Equestrian Exhibition'
 logo: brand/logo-colored.png
 logo_dark: brand/logo-white.png
 patronage: "Under the Patronage of His Highness Sheikh Hazaa bin Zayed Al Nahyan, Ruler's Representative in Al Ain Region."
+social_media:
+  -
+    id: mac4v613
+    platform: facebook
+    social_media_link: 'https://www.facebook.com/adihex/'
+  -
+    id: mac4w85e
+    platform: twitter
+    social_media_link: 'https://twitter.com/ADIHEX'

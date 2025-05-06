@@ -119,6 +119,9 @@ fields:
         -
           key: ticket
           value: null
+        -
+          key: paper-airplane
+          value: null
       type: select
       display: Icon
       taggable: true
@@ -211,3 +214,191 @@ fields:
                   config:
                     display: 'Hero Actions'
                     width: 100
+            about:
+              display: About
+              icon: text-box-multiple
+              fields:
+                -
+                  handle: section_label
+                  field:
+                    type: text
+                    display: 'Section Label'
+                    instructions: 'Short label that appears above the title (e.g. "About the Exhibition")'
+                    localizable: false
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                    localizable: false
+                -
+                  handle: description
+                  field:
+                    type: textarea
+                    display: Description
+                    localizable: false
+                -
+                  handle: secondary_text
+                  field:
+                    type: textarea
+                    display: 'Secondary Text'
+                    localizable: false
+                -
+                  handle: image
+                  field:
+                    container: assets
+                    max_files: 1
+                    type: assets
+                    display: Image
+                    localizable: false
+                -
+                  handle: badge_text
+                  field:
+                    type: text
+                    display: 'Badge Text'
+                    instructions: 'The text to show in the badge overlay on the image (e.g. "1st")'
+                    localizable: false
+                    width: 50
+                -
+                  handle: badge_subtext
+                  field:
+                    type: text
+                    display: 'Badge Subtext'
+                    instructions: 'Smaller text below the main badge text (e.g. "Edition")'
+                    localizable: false
+                    width: 50
+                -
+                  handle: actions
+                  field: basics.button_group
+                  config:
+                    display: Actions
+                    width: 100
+            gallery:
+              display: Gallery
+              icon: photo
+              fields:
+                -
+                  handle: heading
+                  field: basics.heading_group
+                  config:
+                    display: 'Section Heading'
+                -
+                  handle: gallery_items
+                  field:
+                    type: replicator
+                    display: 'Gallery Items'
+                    localizable: false
+                    sets:
+                      item:
+                        display: 'Gallery Item'
+                        fields:
+                          -
+                            handle: image
+                            field:
+                              container: assets
+                              restrict: false
+                              allow_uploads: true
+                              max_files: 1
+                              type: assets
+                              display: Image
+                              localizable: false
+                              instructions: 'Image for the gallery'
+                              width: 100
+                          -
+                            handle: title
+                            field:
+                              type: text
+                              display: Title
+                              localizable: false
+                              instructions: 'Optional title for the image (used for alt text)'
+            sectors:
+              display: Sectors
+              icon: categories
+              fields:
+                -
+                  handle: heading
+                  field: basics.heading_group
+                  config:
+                    display: 'Section Heading'
+                -
+                  handle: sectors
+                  field:
+                    type: replicator
+                    display: Sectors
+                    localizable: false
+                    sets:
+                      main:
+                        display: Main
+                        sets:
+                          sector:
+                            display: Sector
+                            fields:
+                              -
+                                handle: title
+                                field:
+                                  type: text
+                                  display: Title
+                                  localizable: false
+                              -
+                                handle: description
+                                field:
+                                  type: textarea
+                                  display: Description
+                                  localizable: false
+                              -
+                                handle: image
+                                field:
+                                  container: assets
+                                  max_files: 1
+                                  type: assets
+                                  display: Image
+                                  localizable: false
+                              -
+                                handle: link
+                                field:
+                                  type: link
+                                  display: Link
+                                  localizable: false
+                                  instructions: 'Optional link to make the sector card clickable'
+  -
+    handle: heading_group
+    field:
+      type: group
+      display: 'Heading Group'
+      localizable: false
+      fields:
+        -
+          handle: heading
+          field:
+            type: text
+            display: Heading
+            localizable: false
+        -
+          handle: subheading
+          field:
+            type: text
+            display: SubHeading
+            localizable: false
+        -
+          handle: focus_icon
+          field:
+            type: toggle
+            display: 'Focus Icon'
+            localizable: false
+            width: 33
+        -
+          handle: heading_focus_word
+          field:
+            type: text
+            display: 'Heading Focus Word'
+            localizable: false
+            width: 66
+            unless:
+              focus_icon: 'equals true'
+        -
+          handle: icon
+          field: basics.icon
+          config:
+            width: 66
+            if:
+              focus_icon: 'equals true'
