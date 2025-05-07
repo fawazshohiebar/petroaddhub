@@ -1,4 +1,4 @@
-<section id="activities-text" class="py-20 relative overflow-hidden bg-gray-50">
+<section id="activities" class="py-20 relative overflow-hidden bg-gray-50">
     <!-- Decorative Background Elements -->
     <div class="absolute inset-0 bg-cover bg-center opacity-[0.03]" 
          style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'60\' height=\'60\' viewBox=\'0 0 60 60\'%3E%3Cg fill-rule=\'evenodd\'%3E%3Cg fill=\'%23827654\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')">
@@ -56,16 +56,7 @@
                 {{ /featured_activities }}
             </div>
         </div>
-        
-        <!-- Call-to-Action -->
-        {{ if cta_text }}
-            <div class="text-center mt-12">
-                <a href="{{ cta_url }}" class="inline-flex items-center px-6 py-3 bg-[#827654] text-white font-medium rounded-md shadow-md hover:bg-[#9a8c63] transition-colors duration-300">
-                    {{ cta_text }}
-                    {{ heroicon variant="outline" icon="arrow-right" class="h-5 w-5 ml-2 rtl:rotate-180" }}
-                </a>
-            </div>
-        {{ /if }}
+       
     </div>
 </section>
 
