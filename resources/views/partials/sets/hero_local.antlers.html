@@ -1,0 +1,175 @@
+<section class="relative min-h-screen overflow-hidden -mt-34 pt-34">
+    <!-- Local Video Background -->
+    <div class="absolute inset-0 w-full h-full z-0 video-container">
+        <video id="local-video" class="local-video" autoplay muted loop playsinline>
+            <source src="/videos/video.webm" type="video/webm">
+            <!-- You can add fallback formats here if needed -->
+            <!-- <source src="/videos/video.mp4" type="video/mp4"> -->
+            Your browser does not support the video tag.
+        </video>
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30 z-10"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div
+        class="container mx-auto relative z-20 h-full flex flex-col justify-center items-start text-left px-4 md:px-6 lg:px-10 pt-20">
+        <div class="max-w-2xl">
+            {{ if heading }}
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in-up leading-tight"
+                    style="text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+                    {{ heading }}
+                </h1>
+            {{ /if }}
+            {{ if subheading }}
+                <p class="text-white/90 text-lg md:text-xl mb-8 max-w-xl animate-fade-in-up"
+                    style="animation-delay: 0.15s; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">
+                    {{ subheading }}
+                </p>
+            {{ /if }}
+            
+            <!-- Enhanced Event Details Section -->
+            <div class="bg-black/30 backdrop-blur-sm rounded-lg p-2 border border-[#827654]/30 shadow-xl mb-10 animate-fade-in-up w-full" style="animation-delay: 0.3s">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {{ icons }}
+                        <div class="flex items-center transform transition-all duration-300 hover:translate-x-1">
+                            <div class="bg-[#827654]/20 p-3 rounded-full mr-4 border border-[#827654]/40">
+                                {{ heroicon variant="outline" :icon="icon" class="h-7 w-7 text-[#827654]" /}}
+                            </div>
+                            <div>
+                                <p class="text-white font-medium text-lg leading-tight">{{ label }}</p>
+                            </div>
+                        </div>
+                    {{ /icons }}
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-fade-in-up" style="animation-delay: 0.45s">
+                {{ hero_actions }}
+                    {{ partial:partials/buttons/button :url="url" :type="style" :color="color" :size="size" :icon="icon" }}
+                        {{label}}
+                    {{ /partial:partials/buttons/button }}
+                {{ /hero_actions }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Down Indicator - Repositioned to bottom right for elegance -->
+    <div class="absolute bottom-8 right-8 z-20 animate-bounce">
+        <a href="#about" class="flex flex-col items-center text-white opacity-80 hover:opacity-100 transition-opacity">
+            <span class="text-sm font-light mb-2 tracking-wider">SCROLL</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </a>
+    </div>
+</section>
+
+<script>
+    // Function to resize the video to cover the container
+    function resizeVideo() {
+        var video = document.querySelector('#local-video');
+        if (!video) return;
+
+        var container = document.querySelector('.video-container');
+        var containerWidth = container.offsetWidth;
+        var containerHeight = container.offsetHeight;
+        var containerRatio = containerWidth / containerHeight;
+
+        // Get the native video aspect ratio
+        var videoRatio = video.videoWidth / video.videoHeight;
+        if (videoRatio === 0) {
+            // If video is not loaded yet, use 16:9 as default
+            videoRatio = 16 / 9;
+        }
+
+        var newWidth, newHeight;
+
+        // Decide whether to fit by width or height to ensure complete coverage
+        if (containerRatio > videoRatio) {
+            // Container is wider than video aspect ratio
+            newWidth = containerWidth;
+            newHeight = containerWidth / videoRatio;
+        } else {
+            // Container is taller than video aspect ratio
+            newWidth = containerHeight * videoRatio;
+            newHeight = containerHeight;
+        }
+
+        // Position the video to center it
+        video.style.width = newWidth + 'px';
+        video.style.height = newHeight + 'px';
+        video.style.position = 'absolute';
+        video.style.left = ((containerWidth - newWidth) / 2) + 'px';
+        video.style.top = ((containerHeight - newHeight) / 2) + 'px';
+    }
+
+    // Initialize video and resize handling
+    document.addEventListener('DOMContentLoaded', function() {
+        var video = document.querySelector('#local-video');
+        
+        if (video) {
+            // Resize when video metadata is loaded
+            video.addEventListener('loadedmetadata', function() {
+                resizeVideo();
+            });
+            
+            // Resize when window size changes
+            window.addEventListener('resize', resizeVideo);
+            
+            // Handle video end (although we have loop attribute, this is a fallback)
+            video.addEventListener('ended', function() {
+                video.play();
+            });
+        }
+
+        // CSS Animation for the hero section
+        document.head.insertAdjacentHTML('beforeend', `
+            <style>
+                .video-container {
+                    overflow: hidden;
+                }
+                
+                .local-video {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+                .animate-fade-in-down {
+                    animation: fadeInDown 1s ease forwards;
+                }
+                
+                .animate-fade-in-up {
+                    animation: fadeInUp 1s ease forwards;
+                }
+                
+                @keyframes fadeInDown {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-30px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            </style>
+        `);
+    });
+</script>

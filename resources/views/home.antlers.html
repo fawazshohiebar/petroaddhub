@@ -9,6 +9,8 @@
         {{ code }}
     {{ elseif type === 'embed' }}
         {{ partial :src="embed_template" /}}
+    {{ elseif type=='activities' }}
+        {{ partial:if_exists src="sets/activities_text" }}
     {{ else }}
         {{ partial:if_exists src="sets/{type}" }}
     {{ /if }}

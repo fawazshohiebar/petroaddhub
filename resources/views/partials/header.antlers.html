@@ -23,15 +23,24 @@
 
             <!-- Desktop Menu -->
             <div class="hidden lg:flex items-center space-x-8">
-                <a href="#about" class="text-base font-medium transition-all duration-200 hover:text-[#827654]" :class="scrolled ? 'text-gray-800' : 'text-white'">About</a>
-                <a href="#sectors" class="text-base font-medium transition-all duration-200 hover:text-[#827654]" :class="scrolled ? 'text-gray-800' : 'text-white'">Sectors</a>
-                <a href="#gallery" class="text-base font-medium transition-all duration-200 hover:text-[#827654]" :class="scrolled ? 'text-gray-800' : 'text-white'">Gallery</a>
-                <a href="#contact" class="text-base font-medium transition-all duration-200 hover:text-[#827654]" :class="scrolled ? 'text-gray-800' : 'text-white'">Contact</a>
+                {{ nav:main_nav include_home="true" }}
+                    <a href="{{ url }}"
+                    class="{{ is_current || is_parent ? 'font-bold' : 'font-medium' }} flex items-center gap-1 text-nowrap text-base transition-all duration-200 hover:text-[#827654]" 
+
+                    :class="scrolled ? 'text-gray-800' : 'text-white'"
+                        
+                        >
+                        {{ if url == '/' }}
+                            <x-dynamic-component component="icons.home" class="h-4 w-4 inline-block mr-1 rtl:ml-1 rtl:mr-0" />
+                        {{ /if }}
+                        {{ title }}
+                    </a>
+            {{ /nav:main_nav }}
 
                 {{partial:language-switcher /}}
 
                 {{ partial:partials/buttons/button url="#stand" type="filled" color="primary" icon="paper-airplane" }}
-                    Book Your Stand
+                    {{'Book Your Stand' | trans}}
                 {{ /partial:partials/buttons/button }}
             </div>
 

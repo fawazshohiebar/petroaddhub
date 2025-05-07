@@ -16,6 +16,8 @@ tabs:
           -
             handle: page_builder
             field: basics.page_builder
+            config:
+              localizable: true
   sidebar:
     display: Sidebar
     sections:

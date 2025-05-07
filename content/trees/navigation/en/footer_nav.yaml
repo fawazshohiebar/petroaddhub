@@ -1,0 +1,16 @@
+tree:
+  -
+    id: 67b8ff46-b809-4190-99ef-43e1777b3e12
+    entry: home
+  -
+    id: bc8964b0-f1fa-4071-96b0-52e2faa8c818
+    title: 'About the Exhibition'
+    url: '#about'
+  -
+    id: d0fd2cc9-ae55-4054-b064-5cdc822a23fe
+    title: Sectors
+    url: '#sectors'
+  -
+    id: d8b59eb0-a3da-42aa-972e-3ad007b3c967
+    title: Gallery
+    url: '#gallery'

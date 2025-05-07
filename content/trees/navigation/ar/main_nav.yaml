@@ -1,0 +1,20 @@
+tree:
+  -
+    id: 42cf48df-75ec-4732-85c9-2eb0d4aa0920
+    entry: a508bba7-3145-41e8-a905-ef46a041d792
+  -
+    id: 221e0e0c-0571-458a-b98c-d5c6854a1517
+    title: المعرض
+    url: '#about'
+  -
+    id: 2230c460-50e3-471a-9844-df2d6d003c0b
+    title: القطاعات
+    url: '#sectors'
+  -
+    id: 25071b85-fee0-4008-8b30-616db9e3a25c
+    title: 'اتصل بنا'
+    url: '#contact'
+  -
+    id: 54b11081-31ed-47c0-9e19-1f12771e9b96
+    title: الصور
+    url: '#gallery'

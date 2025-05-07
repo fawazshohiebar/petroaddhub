@@ -1,21 +1,21 @@
-<div class="max-w-3xl mx-auto text-center mb-16"
-            x-data="{}" 
-            x-intersect="$el.classList.add('animate-fade-in')">
-            <div class="inline-flex items-center justify-center mb-4">
-                <div class="w-8 h-1 bg-[#827654]"></div>
-                {{ if heading:heading_focus_word }}
-                    <span class="mx-4 text-[#827654] font-medium uppercase tracking-wider">{{ heading:heading_focus_word ?? 'Exhibition Focus' }}</span>
-                {{ elseif heading:focus_icon }}
-                    <span class="mx-4 text-[#827654] font-medium uppercase tracking-wider flex items-center">
-                        {{ heroicon variant="outline" :icon="heading:icon" class="h-5 w-5 mr-2" /}}
-                    </span>
-                {{ /if }}
-                <div class="w-8 h-1 bg-[#827654]"></div>
-            </div>
-            
-            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">{{ heading:heading ?? 'Our Exhibition Sectors' }}</h2>
-            
-            <p class="text-gray-700 text-lg mb-0">
-                {{ heading:subheading ?? 'Explore the diverse sectors that make up the Al Ain International Hunting & Equestrian Exhibition, offering something for enthusiasts and professionals alike.' }}
-            </p>
-        </div>
+<div class="max-w-3xl mx-auto text-center mb-16" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+    <div class="inline-flex items-center justify-center mb-4">
+        <div class="w-8 h-1 bg-[#827654]"></div>
+        {{ if heading:heading_focus_word }}
+            <span
+                class="mx-4 text-[#827654] font-medium uppercase ltr:tracking-wider">{{ heading:heading_focus_word ?? 'Exhibition Focus' }}</span>
+        {{ elseif heading:focus_icon }}
+            <span class="mx-4 text-[#827654] font-medium uppercase tracking-wider flex items-center">
+                {{ heroicon variant="outline" :icon="heading:icon" class="h-5 w-5 mr-2" /}}
+            </span>
+        {{ /if }}
+        <div class="w-8 h-1 bg-[#827654]"></div>
+    </div>
+
+    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">{{ heading:heading ?? 'Our Exhibition Sectors' }}
+    </h2>
+
+    <p class="text-gray-700 text-lg mb-0">
+        {{ heading:subheading ?? 'Explore the diverse sectors that make up the Al Ain International Hunting & Equestrian Exhibition, offering something for enthusiasts and professionals alike.' }}
+    </p>
+</div>

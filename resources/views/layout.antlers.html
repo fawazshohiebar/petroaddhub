@@ -5,13 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {{ partial:favicon /}}
+        {{ partial:fonts /}}
         {{ partial:fine-seo::components/meta /}}
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/slb6fmc.css">
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
     </head>
-    <body class="font-sans leading-normal text-gray-800 antialiased">
+    <body class="leading-normal text-gray-800 antialiased {{ site:short_locale === 'ar' ? 'font-noto' : 'font-mont' }}">
         <!-- Header (includes patronage banner) -->
         {{ partial:partials/header }}
         

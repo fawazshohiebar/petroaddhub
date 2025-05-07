@@ -1,0 +1,122 @@
+<section id="tickets" class="py-20 bg-gradient-to-br from-white to-[#827654]/10 relative overflow-hidden">
+    <!-- Decorative Elements -->
+    <div class="absolute -left-32 bottom-0 w-96 h-96 bg-[#827654]/5 rounded-full"></div>
+    <div class="absolute -right-32 top-0 w-80 h-80 bg-[#827654]/5 rounded-full"></div>
+    
+
+    <div class="container mx-auto px-4 md:px-6 relative z-10 max-w-7xl">
+        <div class="text-center mb-12">
+            <div class="inline-flex items-center mb-4">
+                <div class="w-12 h-1 bg-[#827654]"></div>
+                <span class="mx-4 text-[#827654] font-medium uppercase tracking-wider">{{ subtitle }}</span>
+                <div class="w-12 h-1 bg-[#827654]"></div>
+            </div>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">{{ title }}</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto">{{ description }}</p>
+        </div>
+        
+        {{ if coming_soon }}
+            <!-- Coming Soon Display -->
+            <div class="text-center py-16" x-data="{}" x-intersect="$el.classList.add('animate-fade-in-up')">
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden p-12 max-w-3xl mx-auto">
+                    <div class="mb-8 mx-auto w-16 h-16 rounded-full bg-[#827654]/10 flex items-center justify-center">
+                        {{ heroicon variant="outline" icon="clock" class="h-8 w-8 text-[#827654]" }}
+                    </div>
+                    
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">{{ coming_soon_title }}</h3>
+                    
+                    <p class="text-gray-600 mb-8">
+                        {{ coming_soon_description }}
+                    </p>
+                    
+                    
+                    {{ if coming_soon_form_enabled }}
+                        <div class="bg-[#827654]/5 p-6 rounded-lg">
+                            <p class="text-gray-700 mb-4">{{ coming_soon_form_text }}</p>
+                            <div class="flex flex-col sm:flex-row gap-2">
+                                <input type="email" placeholder="{{ coming_soon_form_placeholder }}" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#827654]" />
+                                <button class="px-6 py-2 bg-[#827654] text-white rounded-lg hover:bg-[#827654]/90 transition-colors">
+                                    {{ coming_soon_form_button }}
+                                </button>
+                            </div>
+                        </div>
+                    {{ /if }}
+                </div>
+            </div>
+        {{ else }}
+            <!-- Regular Ticket Display -->
+            <div class="grid md:grid-cols-{{ ticket_types | count }} gap-8 mb-12">
+                {{ ticket_types }}
+                    <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105" x-data="{}" x-intersect="$el.classList.add('animate-fade-in-up')">
+                        <div class="p-1 {{ featured ? 'bg-[#827654]' : 'bg-gray-100' }}">
+                            <div class="bg-white p-6 rounded-t-lg">
+                                <h3 class="text-xl font-bold mb-2 text-center">{{ name }}</h3>
+                                <div class="text-center">
+                                    <span class="text-3xl font-bold text-[#827654]">{{ price }}</span>
+                                    {{ if price_suffix }}
+                                        <span class="text-gray-500 text-sm">{{ price_suffix }}</span>
+                                    {{ /if }}
+                                </div>
+                                
+                                <div class="my-6 text-center">
+                                    <span class="inline-block px-4 py-1 bg-[#827654]/10 text-[#827654] rounded-full text-sm font-medium">
+                                        {{ category }}
+                                    </span>
+                                </div>
+                                
+                                <ul class="space-y-3 mb-8">
+                                    {{ features }}
+                                        <li class="flex items-center">
+                                            {{ heroicon variant="solid" icon="check-circle" class="h-5 w-5 text-[#827654] ltr:mr-2 rtl:ml-2" }}
+                                            <span class="text-gray-600">{{ text }}</span>
+                                        </li>
+                                    {{ /features }}
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6 text-center">
+                            <a href="{{ button_url }}" class="inline-block px-6 py-3 {{ featured ? 'bg-[#827654] text-white hover:bg-[#827654]/90' : 'bg-gray-100 text-gray-800 hover:bg-gray-200' }} rounded-lg font-medium transition duration-300 w-full">
+                                {{ button_text }}
+                            </a>
+                        </div>
+                    </div>
+                {{ /ticket_types }}
+            </div>
+            
+            {{ if notes }}
+                <div class="text-center text-gray-500 text-sm">
+                    {{ notes }}
+                </div>
+            {{ /if }}
+            
+            {{ if callout_message }}
+                <div class="mt-12 bg-[#827654]/5 p-6 rounded-xl border border-[#827654]/20 text-center">
+                    <p class="font-medium text-gray-800">{{ callout_message }}</p>
+                    {{ if callout_button_text }}
+                        <a href="{{ callout_button_url }}" class="inline-block mt-4 px-6 py-2 bg-[#827654] text-white rounded-lg font-medium hover:bg-[#827654]/90 transition duration-300">
+                            {{ callout_button_text }}
+                        </a>
+                    {{ /if }}
+                </div>
+            {{ /if }}
+        {{ /if }}
+    </div>
+</section>
+
+<style>
+    .animate-fade-in-up {
+        animation: fadeInUp 1s ease forwards;
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>

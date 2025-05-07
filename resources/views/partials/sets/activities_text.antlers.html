@@ -1,0 +1,88 @@
+<section id="activities-text" class="py-20 relative overflow-hidden bg-gray-50">
+    <!-- Decorative Background Elements -->
+    <div class="absolute inset-0 bg-cover bg-center opacity-[0.03]" 
+         style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'60\' height=\'60\' viewBox=\'0 0 60 60\'%3E%3Cg fill-rule=\'evenodd\'%3E%3Cg fill=\'%23827654\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')">
+    </div>
+    
+    <!-- Section Decoration -->
+    <div class="absolute left-0 top-1/4 w-64 h-64 bg-[#827654]/5 rounded-full blur-3xl -translate-x-1/2"></div>
+    <div class="absolute right-0 bottom-1/4 w-64 h-64 bg-[#827654]/5 rounded-full blur-3xl translate-x-1/2"></div>
+
+    <div class="container mx-auto px-4 md:px-6 relative z-10">
+        <!-- Section Header -->
+        <div class="max-w-3xl mx-auto text-center mb-16"
+            x-data="{}" 
+            x-intersect="$el.classList.add('animate-fade-in')">
+            {{ partial:partials/sets/heading_group }}
+        </div>
+        
+        <!-- Main Activities -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {{ main_activities }}
+                <div class="group relative rounded-xl overflow-hidden shadow-lg bg-white transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl"
+                    x-data="{}"
+                    x-intersect="$el.classList.add('animate-fade-in')"
+                    >
+                    <div class="p-6 bg-white">
+                        <div class="w-14 h-14 bg-[#827654]/10 rounded-full flex items-center justify-center mb-6">
+                            {{ heroicon variant="outline" :icon="icon" class="h-8 w-8 text-[#827654]" }}
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">{{ title }}</h3>
+                        <p class="text-gray-700 mb-4">{{ description }}</p>
+                        <div class="w-12 h-1 bg-[#827654]/20"></div>
+                    </div>
+                </div>
+            {{ /main_activities }}
+        </div>
+        
+        <!-- Examples of Activities with Cards -->
+        <div class="mb-10">
+            <h3 class="text-2xl font-bold text-center mb-10">{{ 'Featured Activities' | trans }}</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {{ featured_activities }}
+                    <div class="relative overflow-hidden rounded-lg shadow-md bg-white p-6 group"
+                         x-data="{ show: false }"
+                         x-intersect="show = true"
+                         :class="show ? 'animate-card-reveal' : 'opacity-0'"
+                         style="animation-delay: {{ index * 150 }}ms">
+                        <div class="w-14 h-14 bg-[#827654]/10 rounded-full flex items-center justify-center mb-4">
+                            {{ heroicon variant="outline" icon="fire" class="text-[#827654] h-6 w-6 mb-2" }}
+                        </div>
+                        <h4 class="text-lg font-bold mb-3 text-gray-900 group-hover:text-[#827654] transition-colors duration-300">{{ title }}</h4>
+                        <p class="text-gray-700">{{ description }}</p>
+                        <div class="w-12 h-1 bg-[#827654]/20 mt-4 group-hover:bg-[#827654]/40 transition-colors duration-300"></div>
+                    </div>
+                {{ /featured_activities }}
+            </div>
+        </div>
+        
+        <!-- Call-to-Action -->
+        {{ if cta_text }}
+            <div class="text-center mt-12">
+                <a href="{{ cta_url }}" class="inline-flex items-center px-6 py-3 bg-[#827654] text-white font-medium rounded-md shadow-md hover:bg-[#9a8c63] transition-colors duration-300">
+                    {{ cta_text }}
+                    {{ heroicon variant="outline" icon="arrow-right" class="h-5 w-5 ml-2 rtl:rotate-180" }}
+                </a>
+            </div>
+        {{ /if }}
+    </div>
+</section>
+
+<style>
+    .animate-card-reveal {
+        animation: cardReveal 0.8s ease forwards;
+    }
+    
+    @keyframes cardReveal {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>

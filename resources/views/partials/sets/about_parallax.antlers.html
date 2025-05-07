@@ -1,0 +1,123 @@
+<section id="about" class="py-20 relative overflow-hidden">
+    <!-- Parallax Background Image with proper coverage -->
+    <div 
+        class="absolute inset-0 bg-cover bg-center scale-110"
+        x-data="parallaxBackground()"
+        x-ref="parallaxBg"
+        style="background-image: url('{{ image }}'); transform-origin: center center;"
+    ></div>
+    
+    <!-- Darker overlay with gradient for better contrast -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30"></div>
+
+    <div class="container mx-auto px-4 md:px-6 relative z-10">
+        <div class="max-w-2xl ml-auto lg:ml-0 lg:mr-auto backdrop-blur-sm bg-white/20 p-10 lg:p-14 rounded-lg shadow-lg border border-white/10">
+            <!-- Content Section -->
+            <div x-data="{}"
+                x-intersect="$el.classList.add('animate-fade-in')">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-1 bg-[#827654]"></div>
+                    <span
+                        class="rtl:mr-4 ltr:ml-4 text-[#827654] font-medium uppercase tracking-wider">{{ section_label ?? 'About the Exhibition' }}</span>
+                </div>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                    {{ title }}
+                </h2>
+
+                <div class="text-white/90 mb-8 leading-relaxed prose prose-lg prose-invert">
+                    {{ description }}
+                </div>
+                
+                <!-- Badge -->
+                {{ if badge_text }}
+                <div class="inline-block mb-8 -rotate-3 transform hover:rotate-0 transition-transform duration-300">
+                    <div class="bg-[#827654] text-white px-6 py-4 rounded shadow-lg">
+                        <div class="text-center">
+                            <span class="block text-2xl font-bold">{{ badge_text }}</span>
+                            {{ if badge_subtext }}
+                                <span class="text-xs uppercase tracking-wider">{{ badge_subtext }}</span>
+                            {{ /if }}
+                        </div>
+                    </div>
+                </div>
+                {{ /if }}
+                
+                {{ if actions }}
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        {{ actions }}
+                            {{ partial:partials/buttons/button :url="url" :type="style" :color="color" :size="size" :icon="icon" }}
+                                {{ label }}
+                            {{ /partial:partials/buttons/button }}
+                        {{ /actions }}
+                    </div>
+                {{ /if }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function parallaxBackground() {
+        return {
+            init() {
+                const element = this.$refs.parallaxBg;
+                if (!element) return;
+                
+                // Make sure the background image always covers with extra margin
+                element.style.backgroundSize = 'cover';
+                
+                // Parallax effect with restricted range to prevent cutoff
+                window.addEventListener('scroll', () => {
+                    const scrollY = window.scrollY;
+                    const sectionTop = element.parentElement.offsetTop;
+                    const scrollPosition = scrollY - sectionTop;
+                    
+                    // Calculate position but limit the range to prevent gaps
+                    // Using a smaller multiplier and keeping it positive
+                    let yPos = Math.max(0, scrollPosition * 0.15);
+                    
+                    // Apply transform
+                    element.style.transform = `translateY(${yPos}px) scale(1.1)`;
+                });
+                
+                // Optional subtle mouse movement effect
+                document.addEventListener('mousemove', (e) => {
+                    if (!element) return;
+                    
+                    const mouseX = e.clientX / window.innerWidth;
+                    const mouseY = e.clientY / window.innerHeight;
+                    
+                    const moveX = (mouseX - 0.5) * 10; // Reduced sensitivity
+                    const moveY = (mouseY - 0.5) * 5;  // Even less vertical movement
+                    
+                    // Get the current translateY value from scroll effect
+                    const currentTransform = element.style.transform;
+                    const currentY = currentTransform.includes('translateY') 
+                        ? parseFloat(currentTransform.split('translateY(')[1]) 
+                        : 0;
+                    
+                    // Apply combined effects with scale to ensure coverage
+                    element.style.transform = `translateY(${currentY}px) translate(${moveX}px, ${moveY}px) scale(1.1)`;
+                });
+            }
+        };
+    }
+</script>
+
+<style>
+    .animate-fade-in {
+        animation: fadeIn 1.2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
