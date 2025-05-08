@@ -11,10 +11,10 @@ tree:
     title: القطاعات
     url: '#sectors'
   -
-    id: 54b11081-31ed-47c0-9e19-1f12771e9b96
-    title: الصور
-    url: '#gallery'
+    id: 01d27a94-118e-4583-908b-648390352a7b
+    title: المشاركة
+    url: '#participate'
   -
     id: 25071b85-fee0-4008-8b30-616db9e3a25c
-    title: 'الأنشطة'
+    title: الأنشطة
     url: '#activities'

@@ -9,8 +9,7 @@ page_builder:
       id: mab2pvkr
       values:
         type: hero
-        heading: 'معرض العين الدولي للصيد والفروسية 2025'
-        subheading: 'اختبر التراث الغني للصيد والفروسية في أبرز معرض في الشرق الأوسط.'
+        heading: 'إطلاق النسخة الأولى من <span>المعرض الدولي للصيد والفروسية</span> - العين 2025'
         icons:
           -
             id: mab2w0r4
@@ -37,11 +36,11 @@ page_builder:
             color: light
             style: outline
             type: button
-            enabled: true
+            enabled: false
             label: 'اشترِ تذكرتك'
             icon: ticket
             url: '#tickets'
-        video: /videos/video.webm
+        video: /videos/alain-video.webm
   -
     type: set
     attrs:
@@ -49,9 +48,9 @@ page_builder:
       values:
         type: about
         section_label: 'حول المعرض'
-        title: 'معرض العين الدولي للصيد والفروسية'
+        title: 'المعرض الدولي للصيد والفروسية - العين'
         description: |-
-          احتفاءً بالإرث العريق للصيد والفروسية، وإبرازًا لمدينة العين كوجهة متميزة للصيد والرياضات الخارجية، وسعيًا للوصول إلى أسواق جديدة ذات قوة شرائية، بهدف توسيع العلامة التجارية للمعرض. سيتم إطلاق النسخة الاولى معرض العين الدولي للصيد والفروسية 2025 خلال الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك العين. 
+          احتفاءً بالإرث العريق للصيد والفروسية، وإبرازًا لمدينة العين كوجهة متميزة للصيد والرياضات الخارجية، وسعيًا للوصول إلى أسواق جديدة ذات قوة شرائية، بهدف توسيع العلامة التجارية للمعرض. سيتم إطلاق النسخة الاولى المعرض الدولي للصيد والفروسية - العين 2025 خلال الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك العين. 
 
           يركز المعرض على 9 قطاعات وهي: الصقارة، الفروسية، رحلات الصيد والسفاري، الحفاظ على البيئة والتراث الثقافي، معدات الصيد والتخييم، مركبات ومعدات الترفيه في الهواء الطلق (4×4)، الفنون والحِرف اليدوية، والمنتجات والخدمات البيطرية بالإضافة الى مجموعة واسعة من الأنشطة التفاعلية والمسابقات وورش العمل والمنافسات الحية والعديد من الفعاليات الترفيهية.
         image: misc/mountain-city-view.jpg
@@ -76,7 +75,7 @@ page_builder:
             style: outline
             icon: ticket
             type: button
-            enabled: true
+            enabled: false
   -
     type: set
     attrs:
@@ -84,11 +83,11 @@ page_builder:
       values:
         type: facts
         heading:
-          heading: 'حقائق عن المعرض'
-          subheading: 'إحصائيات رئيسية حول معرض العين الدولي للصيد والفروسية 2025'
-          focus_icon: false
-          heading_focus_word: بالأرقام
-          icon: null
+          heading: بالأرقام
+          subheading: null
+          focus_icon: true
+          heading_focus_word: null
+          icon: sparkles
         stats:
           -
             id: macfpfr4
@@ -113,12 +112,53 @@ page_builder:
   -
     type: set
     attrs:
+      id: my2p1rt7
+      values:
+        type: why_participate
+        heading:
+          heading: 'لماذا تشارك؟'
+          subheading: 'انضم إلى المعرض الدولي للصيد والفروسية - العين 2025 واستمتع بفرص استثنائية لعرض منتجاتك وخدماتك'
+          focus_icon: false
+          heading_focus_word: 'شارك معنا'
+          icon: null
+        main_title: 'كن من الأوائل وشارك اليوم في المعرض الدولي للصيد والفروسية - العين 2025'
+        main_subtitle: 'أطلق علامتك التجارية في الحدث الأكبر والأهم في منطقة العين'
+        cta_enabled: true
+        cta_text: 'سجل الآن'
+        cta_url: '#stand'
+        benefits:
+          -
+            id: my2p2xm1
+            icon: users
+            title: '10 قطاعات متنوعة'
+            description: 'يشارك فيها مايزيد عن 350 عارض وعلامة تجارية من أكثر من 6 دول'
+          -
+            id: my2p3btr
+            icon: chart-bar
+            title: 'توسيع شبكتك التجارية'
+            description: 'من خلال أسواق جديدة ذو قوة شرائية'
+          -
+            id: my2p3zcw
+            icon: eye
+            title: 'تواصل مع أكثر من 15،000 زائر'
+            description: 'متوقع في نسخة المعرض الأولى'
+          -
+            id: my2p4e2p
+            icon: sparkles
+            title: 'مشاركة وتغطية إعلامية واسعة'
+            description: 'تعزز من انتشار علامتك التجارية وتواجدك في السوق'
+        secondary_cta_enabled: true
+        secondary_cta_text: 'تواصل معنا للمزيد من المعلومات'
+        secondary_cta_url: '#stand'
+  -
+    type: set
+    attrs:
       id: macjkw62
       values:
         type: sectors
         heading:
           heading: 'قطاعات المعرض'
-          subheading: 'استكشف القطاعات التسعة المتنوعة التي يضمها معرض العين الدولي للصيد والفروسية، والتي تقدم ما يناسب الهواة والمحترفين على حد سواء'
+          subheading: 'استكشف القطاعات التسعة المتنوعة التي يضمها المعرض الدولي للصيد والفروسية - العين، والتي تقدم ما يناسب الهواة والمحترفين على حد سواء'
           focus_icon: true
           heading_focus_word: null
           icon: squares-2x2
@@ -205,11 +245,12 @@ page_builder:
     type: set
     attrs:
       id: mac9k6lp
+      enabled: false
       values:
         type: gallery
         heading:
           heading: الصور
-          subheading: 'استعرض الصور من المعارض السابقة وتعرّف على لمحة مما يمكن توقّعه في معرض العين الدولي للصيد والفروسية 2025.'
+          subheading: 'استعرض الصور من المعارض السابقة وتعرّف على لمحة مما يمكن توقّعه في المعرض الدولي للصيد والفروسية - العين 2025.'
           focus_icon: false
           heading_focus_word: 'أبرز معالم المعرض'
           icon: null
@@ -258,7 +299,7 @@ page_builder:
         type: activities
         heading:
           heading: 'نشاطات المعرض'
-          subheading: 'انغمس في مجموعة متنوعة من التجارب التفاعلية والترفيه في معرض العين الدولي للصيد والفروسية'
+          subheading: 'انغمس في مجموعة متنوعة من التجارب التفاعلية والترفيه في المعرض الدولي للصيد والفروسية - العين'
           focus_icon: false
           heading_focus_word: 'تجربة وانخراط'
           icon: null
@@ -308,14 +349,15 @@ page_builder:
     type: set
     attrs:
       id: maeixta2
+      enabled: false
       values:
         type: tickets
         title: 'اشترِ تذكرتك'
         subtitle: 'التذاكر والباقات'
-        description: 'اختر من بين مجموعة متنوعة من خيارات التذاكر لتجربة معرض العين الدولي للصيد والفروسية 2025.'
+        description: 'اختر من بين مجموعة متنوعة من خيارات التذاكر لتجربة المعرض الدولي للصيد والفروسية - العين 2025.'
         coming_soon: true
         coming_soon_title: 'التذاكر قريباً'
-        coming_soon_description: 'نحن نعمل على وضع اللمسات الأخيرة على خيارات التذاكر لمعرض العين الدولي للصيد والفروسية 2025.'
+        coming_soon_description: 'نحن نعمل على وضع اللمسات الأخيرة على خيارات التذاكر لالمعرض الدولي للصيد والفروسية - العين 2025.'
         coming_soon_countdown_date: '2025-06-02 10:00:00'
         coming_soon_form_enabled: false
         ticket_types:
@@ -405,7 +447,7 @@ page_builder:
       values:
         type: book_your_stand
         title: 'احجز مساحتك'
-        description: 'احجز مكانك في النسخة الأولى من معرض العين الدولي للصيد والفروسية 2025. تواصل مع فريق المبيعات لدينا اليوم لاستكشاف مساحات العرض المتاحة وفرص الشراكة. سيرشدك فريقنا خلال العملية ويساعدك على تحقيق أقصى استفادة من تجربة العرض الخاصة بك.'
+        description: 'احجز مكانك في النسخة الأولى من المعرض الدولي للصيد والفروسية - العين 2025. تواصل مع فريق المبيعات لدينا اليوم لاستكشاف مساحات العرض المتاحة وفرص الشراكة. سيرشدك فريقنا خلال العملية ويساعدك على تحقيق أقصى استفادة من تجربة العرض الخاصة بك.'
         image: misc/shutterstock_1111453718-scaled.jpg
         phone_number: '+97124446900'
         email: sales@alainihex.com
@@ -420,5 +462,5 @@ fine_seo_title: الرئيسية
 fine_seo_is_title_custom: false
 fine_seo_preview: الرئيسية
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746621619
+updated_at: 1746707463
 ---

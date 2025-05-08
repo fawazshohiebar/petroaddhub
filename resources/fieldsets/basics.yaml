@@ -823,6 +823,121 @@ fields:
                                   display: Link
                                   localizable: false
                                   instructions: 'Optional link to make the sector card clickable'
+            why_participate:
+              display: 'Why Participate'
+              icon: hand-raised
+              fields:
+                -
+                  handle: heading
+                  field: basics.heading_group
+                  config:
+                    display: 'Section Heading'
+                -
+                  handle: main_title
+                  field:
+                    type: text
+                    display: 'Main Call to Action Title'
+                    localizable: true
+                    instructions: 'The title of the main call to action section'
+                -
+                  handle: main_subtitle
+                  field:
+                    type: text
+                    display: 'Main Call to Action Subtitle'
+                    localizable: true
+                    instructions: 'The subtitle or description for the main call to action'
+                -
+                  handle: cta_enabled
+                  field:
+                    type: toggle
+                    display: 'Show Main CTA Button'
+                    default: true
+                    width: 33
+                -
+                  handle: cta_text
+                  field:
+                    type: text
+                    display: 'CTA Button Text'
+                    localizable: true
+                    instructions: 'Text for the main call to action button'
+                    width: 33
+                    if:
+                      cta_enabled: 'equals true'
+                -
+                  handle: cta_url
+                  field:
+                    type: text
+                    display: 'CTA Button URL'
+                    localizable: false
+                    instructions: 'Link for the main call to action button'
+                    width: 33
+                    if:
+                      cta_enabled: 'equals true'
+                -
+                  handle: benefits
+                  field:
+                    type: grid
+                    display: 'Benefits & Features'
+                    min_rows: 1
+                    add_row: 'Add Benefit'
+                    localizable: true
+                    fields:
+                      -
+                        handle: icon
+                        field:
+                          options:
+                            - users
+                            - chart-bar
+                            - eye
+                            - sparkles
+                            - globe-alt
+                            - shield-check
+                            - trophy
+                            - arrows-right-left
+                          type: select
+                          display: Icon
+                          width: 25
+                      -
+                        handle: title
+                        field:
+                          type: text
+                          display: Title
+                          localizable: true
+                          width: 25
+                      -
+                        handle: description
+                        field:
+                          type: text
+                          display: Description
+                          localizable: true
+                          width: 50
+                -
+                  handle: secondary_cta_enabled
+                  field:
+                    type: toggle
+                    display: 'Show Secondary CTA'
+                    default: true
+                    width: 33
+                -
+                  handle: secondary_cta_text
+                  field:
+                    type: text
+                    display: 'Secondary CTA Text'
+                    localizable: true
+                    instructions: 'Text for the secondary call to action link'
+                    width: 33
+                    if:
+                      secondary_cta_enabled: 'equals true'
+                -
+                  handle: secondary_cta_url
+                  field:
+                    type: text
+                    display: 'Secondary CTA URL'
+                    localizable: false
+                    instructions: 'Link for the secondary call to action'
+                    width: 33
+                    if:
+                      secondary_cta_enabled: 'equals true'
   -
     handle: heading_group
     field:

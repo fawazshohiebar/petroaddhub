@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746645423
+updated_at: 1746707449
 fine_seo_title: Home
 fine_seo_is_title_custom: false
 fine_seo_preview: Home
@@ -16,8 +16,7 @@ page_builder:
       id: mab2pvkr
       values:
         type: hero
-        heading: 'Al Ain International Hunting & Equestrian Exhibition 2025'
-        subheading: "Experience the rich heritage of hunting and equestrianism in the Middle East's premier exhibition."
+        heading: 'Launching the first edition of the <span>International Hunting & Equestrian Exhibition</span> – Al Ain  2025'
         icons:
           -
             id: mab2w0r4
@@ -48,7 +47,7 @@ page_builder:
             label: 'Get Your Tickets'
             icon: ticket
             url: '#tickets'
-        video: /videos/video.webm
+        video: /videos/alain-video.webm
   -
     type: set
     attrs:
@@ -60,7 +59,7 @@ page_builder:
         description: |-
           Celebrating the rich legacy of hunting and equestrianism, and highlighting Al Ain as a distinguished destination for hunting and outdoor sports, while seeking to reach new markets with purchasing power to expand the exhibition's brand.
 
-          The first edition of the Al Ain International Hunting & Equestrian Exhibition 2025 will be launched from November 26 to 30, 2025, at ADNEC Al Ain Centre.
+          The first edition of the International Hunting & Equestrian Exhibition - Al Ain 2025 will be launched from November 26 to 30, 2025, at ADNEC Al Ain Centre.
         image: misc/mountain-city-view.jpg
         badge_text: 1st
         badge_subtext: Edition
@@ -92,11 +91,11 @@ page_builder:
       values:
         type: facts
         heading:
-          heading: 'Exhibition Facts'
-          subheading: 'Key statistics about the Al Ain International Hunting & Equestrian Exhibition 2025'
-          focus_icon: false
-          heading_focus_word: 'By the Numbers'
-          icon: null
+          heading: 'By the Numbers'
+          subheading: null
+          focus_icon: true
+          heading_focus_word: null
+          icon: sparkles
         stats:
           -
             id: macfpfr4
@@ -126,7 +125,7 @@ page_builder:
         type: sectors
         heading:
           heading: 'Our Exhibition Sectors'
-          subheading: 'Explore the 9 diverse sectors that make up the Al Ain International Hunting & Equestrian Exhibition, offering something for enthusiasts and professionals alike.'
+          subheading: 'Explore the 9 diverse sectors that make up the International Hunting & Equestrian Exhibition - Al Ain, offering something for enthusiasts and professionals alike.'
           focus_icon: false
           heading_focus_word: 'Exhibition Focus'
           icon: null
@@ -207,12 +206,53 @@ page_builder:
   -
     type: set
     attrs:
+      id: mafci64q
+      values:
+        type: why_participate
+        heading:
+          heading: 'Why Participate?'
+          subheading: 'Join the International Hunting & Equestrian Exhibition - Al Ain 2025 and enjoy exceptional opportunities to showcase your products and services'
+          focus_icon: false
+          heading_focus_word: 'Join Us'
+          icon: null
+        main_title: 'Be Among the First to Participate in the International Hunting & Equestrian Exhibition - Al Ain 2025'
+        main_subtitle: 'Launch your brand at the biggest and most important event in the Al Ain region'
+        cta_enabled: true
+        cta_text: 'Register Now'
+        cta_url: '#stand'
+        benefits:
+          -
+            id: my2p6xm1
+            icon: users
+            title: '10 Diverse Sectors'
+            description: 'With more than 350 exhibitors and brands from over 6 countries'
+          -
+            id: my2p7btr
+            icon: chart-bar
+            title: 'Expand Your Business Network'
+            description: 'Through new markets with strong purchasing power'
+          -
+            id: my2p8zcw
+            icon: eye
+            title: 'Connect with 15,000+ Visitors'
+            description: 'Expected at the first edition of the exhibition'
+          -
+            id: my2p9e2p
+            icon: sparkles
+            title: 'Extensive Media Coverage'
+            description: 'Enhancing your brand reach and market presence'
+        secondary_cta_enabled: true
+        secondary_cta_text: 'Contact Us for More Information'
+        secondary_cta_url: '#stand'
+  -
+    type: set
+    attrs:
       id: mac9k6lp
       values:
         type: gallery
         heading:
           heading: Gallery
-          subheading: 'Explore visuals from past exhibitions and get a glimpse of what to expect at the Al Ain International Hunting & Equestrian Exhibition 2025.'
+          subheading: 'Explore visuals from past exhibitions and get a glimpse of what to expect at the International Hunting & Equestrian Exhibition - Al Ain 2025.'
           focus_icon: false
           heading_focus_word: 'Exhibition Highlights'
           icon: null
@@ -261,7 +301,7 @@ page_builder:
         type: activities
         heading:
           heading: 'Exhibition Activities'
-          subheading: 'Immerse yourself in a variety of interactive experiences and entertainment at the Al Ain International Hunting & Equestrian Exhibition'
+          subheading: 'Immerse yourself in a variety of interactive experiences and entertainment at the International Hunting & Equestrian Exhibition - Al Ain'
           focus_icon: false
           heading_focus_word: 'Experience & Engage'
           icon: null
@@ -312,10 +352,10 @@ page_builder:
         type: tickets
         title: 'Get Your Tickets'
         subtitle: 'TICKETS & PASSES'
-        description: 'Choose from a variety of ticket options to experience the Al Ain International Hunting & Equestrian Exhibition 2025.'
+        description: 'Choose from a variety of ticket options to experience the International Hunting & Equestrian Exhibition - Al Ain 2025.'
         coming_soon: true
         coming_soon_title: 'Tickets Coming Soon'
-        coming_soon_description: 'We are finalizing our ticket options for the Al Ain International Hunting & Equestrian Exhibition 2025. Tickets will be available for purchase soon. Please check back soon!'
+        coming_soon_description: 'We are finalizing our ticket options for the International Hunting & Equestrian Exhibition - Al Ain 2025. Tickets will be available for purchase soon. Please check back soon!'
         coming_soon_countdown_date: '2025-06-01 09:00:00'
         coming_soon_form_enabled: false
         ticket_types:
@@ -405,7 +445,7 @@ page_builder:
       values:
         type: book_your_stand
         title: 'Book Your Stand'
-        description: 'Secure your place at the inaugural Al Ain International Hunting & Equestrian Exhibition 2025. Contact our sales team today to explore available exhibition spaces and partnership opportunities. Our team will guide you through the process and help you maximize your exhibition experience.'
+        description: 'Secure your place at the inaugural International Hunting & Equestrian Exhibition - Al Ain 2025. Contact our sales team today to explore available exhibition spaces and partnership opportunities. Our team will guide you through the process and help you maximize your exhibition experience.'
         image: misc/shutterstock_1111453718-scaled.jpg
         phone_number: '+97124446900'
         email: sales@alainihex.com
