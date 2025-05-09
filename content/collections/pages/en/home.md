@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746787394
+updated_at: 1746796537
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -22,6 +22,7 @@ page_builder:
             id: mab2w0r4
             icon: map-pin
             label: 'ADNEC Al Ain Center'
+            link: 'https://maps.app.goo.gl/WizsELNyd5P8N5qj8'
           -
             id: mab2whla
             icon: calendar-days

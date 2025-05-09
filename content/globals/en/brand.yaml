@@ -4,30 +4,15 @@ logo_dark: brand/logo-white.png
 patronage: "Under the Patronage of His Highness Sheikh Hazaa bin Zayed Al Nahyan, Ruler's Representative in Al Ain Region."
 social_media:
   -
-    id: mac4v613
-    platform: facebook
-    social_media_link: 'https://www.facebook.com/adihex/'
-  -
-    id: mac4w85e
-    platform: twitter
-    social_media_link: 'https://twitter.com/ADIHEX'
-  -
     id: macihl2y
     platform: instagram
     social_media_link: 'https://www.instagram.com/alainihex/?igsh=MXN1YXQxdGZjcGN5MQ%3D%3D#'
 logos:
   -
     id: mafjvh3f
-    title: 'Organised By'
-    image: brand/logos/adnecgroup-logo-white-(2).svg
+    title: 'Organised & Hosted By'
+    image: brand/logos/adnecgroup-alaincenter-logos.png
     url: 'https://adnecgroup.ae'
-    type: logo
-    enabled: true
-  -
-    id: mafjze11
-    title: 'Host Venue'
-    image: brand/logos/adnecalain-logo-darkmode-400.png
-    url: 'https://www.adnecalain.ae'
     type: logo
     enabled: true
   -
