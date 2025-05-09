@@ -1,4 +1,5 @@
-data: {  }
+data:
+  alt: 'Colored Logo'
 size: 107290
 last_modified: 1746514053
 width: 958

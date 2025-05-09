@@ -10,7 +10,7 @@
                 x-intersect="$el.classList.add('animate-fade-slide-right')">
                 <div class="relative">
                     {{ if image }}
-                        <img src="{{ image }}" alt="{{ title }}" class="w-full h-auto rounded-lg shadow-xl" />
+                        <img src="{{ glide :src="image" format="webp" }}" alt="{{ image:alt ?? title }}" class="w-full h-auto rounded-lg shadow-xl" />
                     {{ else }}
                         <!-- Fallback image -->
                         <img src="https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/04/shutterstock_1111453718-scaled.jpg"

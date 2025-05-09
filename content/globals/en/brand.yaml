@@ -24,16 +24,16 @@ logos:
     type: logo
     enabled: true
   -
-    id: mafjy4ai
-    title: 'Belongs To'
-    image: brand/logos/efc-logo_white.png
-    url: '#'
-    type: logo
-    enabled: true
-  -
     id: mafjze11
     title: 'Host Venue'
     image: brand/logos/adnecalain-logo-darkmode-400.png
     url: 'https://www.adnecalain.ae'
+    type: logo
+    enabled: true
+  -
+    id: mafjy4ai
+    title: 'Belongs To'
+    image: brand/logos/efc-logo_white.png
+    url: '#'
     type: logo
     enabled: true

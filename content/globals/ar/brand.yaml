@@ -10,8 +10,8 @@ social_media:
 logos:
   -
     id: mafk076r
-    title: 'من تنظيم'
-    image: brand/logos/adnecgroup-logo-white-(2).svg
+    title: 'الشريك الإستراتيجي والمنظم'
+    image: brand/logos/adnecgroup-alaincenter-logos.png
     url: 'https://adnecgroup.ae'
     type: logo
     enabled: true
@@ -20,12 +20,5 @@ logos:
     title: تابع
     image: brand/logos/efc-logo_white.png
     url: '#'
-    type: logo
-    enabled: true
-  -
-    id: mafk0vsx
-    title: 'يقام في'
-    image: brand/logos/adnecalain-logo-darkmode-400.png
-    url: 'https://www.adnecalain.ae'
     type: logo
     enabled: true

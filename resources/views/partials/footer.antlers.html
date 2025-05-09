@@ -1,11 +1,11 @@
 <footer class="bg-gray-900 text-white">
     <!-- Main Footer Content -->
     <div class="container mx-auto px-4 md:px-6 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {{# Column 1: Logo & About #}}
             <div class="space-y-6">
-                <img src="{{ brand:logo_dark }}" alt="{{'International Hunting & Equestrian Exhibition - Al Ain' | trans}}"
-                    class="h-16">
+                <img src="{{ glide :src="brand:logo_dark" format="webp" }}" alt="{{'International Hunting & Equestrian Exhibition - Al Ain' | trans}}"
+                    class="h-16 w-auto">
 
                 {{#
                     <p class="text-gray-400 leading-relaxed">
@@ -23,11 +23,16 @@
                     <div class="absolute -bottom-2 rtl:right-0 ltr:left-0 w-12 h-1 bg-[#827654]"></div>
                 </h3>
 
-                <ul class="space-y-4">
+                <ul class="space-y-4 grid grid-cols-2 gap-4">
                     {{nav:footer_nav include_home="false" }}
                         <li>
                             <a href="{{ url }}"
                                 class="text-gray-400 hover:text-[#827654] transition-all transform hover:translate-x-1 inline-block">
+                                {{ if url == '/' }}
+                                    <x-dynamic-component component="icons.home" class="h-4 w-4 inline-block mr-1 rtl:ml-1 rtl:mr-0" />
+                                {{ else }}
+                                {{heroicon variant="outline" icon="chevron-right" class="h-4 w-4 inline-block mr-1 rtl:ml-1 rtl:rotate-180 rtl:mr-0" /}}
+                                {{ /if }}
                                 {{ title }}
                             </a>
                         </li>
@@ -63,16 +68,17 @@
             </div>
 
             {{# {{ partial:partials/footer_newsletter }} #}}
-            <div>
-                <div class="">
-                    <div class="grid grid-cols-3 gap-4">
-                        {{brand:logos}}
-                            <a href="{{ url }}" class="group transition-all duration-300 hover:opacity-80">
-                                <div class="text-center ltr:text-sm rtl:text-lg text-gray-400 mb-2 group-hover:text-[#827654] transition-colors">{{title}}</div>
-                                <img src="{{ image }}" alt="{{ title }}" class="h-14 object-contain mx-auto">
-                            </a>
-                        {{/brand:logos}}
-                    </div>
+            
+        </div>
+        <div class="mt-4 border-t border-gray-800 pt-6">
+            <div class="max-w-sm mx-auto">
+                <div class="flex items-center justify-between gap-4">
+                    {{brand:logos}}
+                        <a href="{{ url }}" class="group transition-all duration-300 hover:opacity-80">
+                            <div class="text-center ltr:text-sm rtl:text-lg text-gray-400 mb-2 group-hover:text-[#827654] transition-colors">{{title}}</div>
+                            <img src="{{ image }}" alt="{{ image:alt }}" class="h-14 object-contain mx-auto">
+                        </a>
+                    {{/brand:logos}}
                 </div>
             </div>
         </div>
@@ -82,7 +88,7 @@
     <div class="bg-gray-950 py-6">
         <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center">
             <div class="text-gray-500 text-sm mb-4 md:mb-0">
-                &copy; {{'All rights reserved' | trans}} {{ now format="Y" }} <a class="text-[#827654]" href="https://www.adnecgroup.ae" target="_blank" rel="noopener noreferrer">
+                &copy; {{'All rights reserved' | trans}} {{ now format="Y" }} <a class="text-white" href="https://www.adnecgroup.ae" target="_blank" rel="noopener noreferrer">
                     {{'ADNEC Group' | trans}}
                 </a>
             </div>
