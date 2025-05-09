@@ -26,7 +26,7 @@
                         {{ description }}
                     </div>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-{{ contacts:count < 2 ? "1" : "2" }} gap-4 mb-6">
+                    <div class="grid grid-cols-1 {{ contacts:count < 2 ? "md:grid-cols-1" : "md:grid-cols-2" }} gap-4 mb-6">
                         {{ contacts }}
                             <div class="bg-gradient-to-br from-white to-[#F8F6F0] p-4 rounded-lg border border-[#827654]/10 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
                                 {{ if name }}
