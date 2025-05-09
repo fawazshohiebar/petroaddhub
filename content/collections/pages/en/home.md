@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746784946
+updated_at: 1746787394
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -454,19 +454,14 @@ page_builder:
             id: maf8q1c8
             type: contact
             enabled: true
-            name: 'Khaled Taha'
             phone_number: '+971 2 406 3593'
             email: khaled.taha@adnec.ae
           -
             id: maf8q2d9
             type: contact
             enabled: false
-            name: 'Bilal Adada'
             phone_number: '+971 2 406 3594'
             email: bilal.adada@adnec.ae
-        business_hours_title: 'Business Hours'
-        business_hours_days: 'Monday - Friday'
-        business_hours_time: '8:00 AM - 5:00 PM'
   -
     type: paragraph
     attrs:

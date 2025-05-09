@@ -455,7 +455,6 @@ page_builder:
             id: maf8q2d9
             type: contact
             enabled: false
-            name: 'بلال عضاضة'
             phone_number: '+971 2 406 3594'
             email: bilal.adada@adnec.ae
   -
@@ -467,5 +466,5 @@ fine_seo_is_title_custom: true
 fine_seo_description: 'إطلاق النسخة الاولى من المعرض الدولي للصيد والفروسية - العين 2025 لتكون في الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك العين.'
 fine_seo_preview: الرئيسية
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746787215
+updated_at: 1746787372
 ---
