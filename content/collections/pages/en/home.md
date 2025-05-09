@@ -5,9 +5,9 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746774083
-fine_seo_title: Home
-fine_seo_is_title_custom: false
+updated_at: 1746775871
+fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
+fine_seo_is_title_custom: true
 fine_seo_preview: Home
 page_builder:
   -
@@ -453,13 +453,28 @@ page_builder:
         title: 'Book Your Stand'
         description: 'Secure your place at the inaugural International Hunting & Equestrian Exhibition - Al Ain 2025. Contact our sales team today to explore available exhibition spaces and partnership opportunities. Our team will guide you through the process and help you maximize your exhibition experience.'
         image: misc/shutterstock_1111453718-scaled.jpg
-        phone_number: '+971 2 406 3593'
-        email: khaled.taha@adnec.ae
+        contacts:
+          -
+            id: maf8q1c8
+            type: contact
+            enabled: true
+            name: 'Khaled Taha'
+            phone_number: '+971 2 406 3593'
+            email: khaled.taha@adnec.ae
+          -
+            id: maf8q2d9
+            type: contact
+            enabled: false
+            name: 'Bilal Adada'
+            phone_number: '+971 2 406 3594'
+            email: bilal.adada@adnec.ae
         business_hours_title: 'Business Hours'
-        business_hours_days: Sunday-Thursday
+        business_hours_days: 'Monday - Friday'
         business_hours_time: '8:00 AM - 5:00 PM'
   -
     type: paragraph
     attrs:
       textAlign: left
+fine_seo_description: 'The first edition of the International Hunting & Equestrian Exhibition - Al Ain 2025 will be launched from November 26 to 30, 2025, at ADNEC Al Ain Centre.'
+fine_seo_image: brand/padded-logo-horizontal.png
 ---

@@ -448,18 +448,32 @@ page_builder:
         title: 'احجز مساحتك'
         description: 'احجز مكانك في النسخة الأولى من المعرض الدولي للصيد والفروسية - العين 2025. تواصل مع فريق المبيعات لدينا اليوم لاستكشاف مساحات العرض المتاحة وفرص الشراكة. سيرشدك فريقنا خلال العملية ويساعدك على تحقيق أقصى استفادة من تجربة العرض الخاصة بك.'
         image: misc/shutterstock_1111453718-scaled.jpg
-        phone_number: '+971 2 406 3593'
-        email: khaled.taha@adnec.ae
+        contacts:
+          -
+            id: maf8q1c8
+            type: contact
+            enabled: true
+            name: 'خالد طه'
+            phone_number: '+971 2 406 3593'
+            email: khaled.taha@adnec.ae
+          -
+            id: maf8q2d9
+            type: contact
+            enabled: false
+            name: 'بلال عضاضة'
+            phone_number: '+971 2 406 3594'
+            email: bilal.adada@adnec.ae
         business_hours_title: 'ساعات العمل'
-        business_hours_days: 'الأحد - الخميس'
+        business_hours_days: 'الإثنين - الجمعة'
         business_hours_time: '8:00 صباحًا - 5:00 مساءً'
   -
     type: paragraph
     attrs:
       textAlign: left
-fine_seo_title: الرئيسية
-fine_seo_is_title_custom: false
+fine_seo_title: 'المعرض الدولي للصيد والفروسية - العين 2025'
+fine_seo_is_title_custom: true
+fine_seo_description: 'إطلاق النسخة الاولى من المعرض الدولي للصيد والفروسية - العين 2025 لتكون في الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك العين.'
 fine_seo_preview: الرئيسية
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746773304
+updated_at: 1746775859
 ---

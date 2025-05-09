@@ -333,21 +333,40 @@ fields:
                     localizable: false
                     instructions: 'Background image for the left side of the section'
                 -
-                  handle: phone_number
+                  handle: contacts
                   field:
-                    type: text
-                    display: 'Phone Number'
-                    localizable: false
-                    instructions: 'Contact phone number with international code'
-                    width: 50
-                -
-                  handle: email
-                  field:
-                    type: text
-                    display: 'Email Address'
-                    localizable: false
-                    instructions: 'Contact email address'
-                    width: 50
+                    type: replicator
+                    display: 'Sales Contacts'
+                    localizable: true
+                    instructions: 'Add one or more sales contact persons'
+                    sets:
+                      contact:
+                        display: 'Contact Person'
+                        fields:
+                          -
+                            handle: name
+                            field:
+                              type: text
+                              display: 'Contact Name'
+                              localizable: true
+                              instructions: 'Name or title of the contact person'
+                              width: 100
+                          -
+                            handle: phone_number
+                            field:
+                              type: text
+                              display: 'Phone Number'
+                              localizable: false
+                              instructions: 'Contact phone number with international code'
+                              width: 50
+                          -
+                            handle: email
+                            field:
+                              type: text
+                              display: 'Email Address'
+                              localizable: false
+                              instructions: 'Contact email address'
+                              width: 50
                 -
                   handle: business_hours_title
                   field:
