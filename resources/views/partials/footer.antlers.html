@@ -4,8 +4,11 @@
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-12">
             {{# Column 1: Logo & About #}}
             <div class="space-y-6 col-span-2 md:col-span-1 flex flex-col items-center md:justify-start md:items-start justify-center">
-                <img src="{{ glide :src="brand:logo_dark" format="webp" }}" alt="{{'International Hunting & Equestrian Exhibition - Al Ain' | trans}}"
+                {{ glide :src="brand:logo_dark" format="webp" }}
+                <img src="{{url}}" alt="{{alt ?? 'International Hunting & Equestrian Exhibition - Al Ain' | trans}}"
+                    width="{{width}}" height="{{height}}"
                     class="max-h-16 w-auto">
+                {{ /glide }}
 
                 {{#
                     <p class="text-gray-400 leading-relaxed">
@@ -74,7 +77,10 @@
                         {{brand:logos}}
                             <a href="{{ url }}" class="group transition-all duration-300 hover:opacity-80">
                                 <div class="text-center ltr:text-sm rtl:text-lg text-gray-400 mb-2 group-hover:text-[#827654] transition-colors">{{title}}</div>
-                                <img src="{{ image }}" alt="{{ image:alt }}" class="h-14 object-contain mx-auto">
+
+                                <img src="{{ image }}" alt="{{ image:alt }}" 
+                                    width="{{ image:width }}" height="{{ image:height }}" 
+                                    class="h-14 object-contain mx-auto">
                             </a>
                         {{/brand:logos}}
                     </div>
