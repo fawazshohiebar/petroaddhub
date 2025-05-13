@@ -966,6 +966,17 @@ fields:
                     width: 33
                     if:
                       secondary_cta_enabled: 'equals true'
+        forms:
+          display: Forms
+          icon: form-drop-down-menu
+          sets:
+            form:
+              display: Form
+              instructions: 'Form with supporting Elements'
+              icon: social-mail-send-email-message
+              fields:
+                -
+                  import: form_box
   -
     handle: heading_group
     field:
@@ -1008,3 +1019,12 @@ fields:
             width: 66
             if:
               focus_icon: 'equals true'
+  -
+    handle: turnstile_token
+    field:
+      input_type: hidden
+      type: text
+      display: 'Turnstile Token'
+      instructions: 'Keep Hidden for Turnstile Captcha'
+      visibility: hidden
+      localizable: false

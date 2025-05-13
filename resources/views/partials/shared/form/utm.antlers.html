@@ -1,0 +1,27 @@
+{{?
+    $utm_source = request('utm_source');
+
+    if ($utm_source) {
+        echo '<input type="hidden" name="utm_source" value="' . $utm_source . '">';
+    }
+    $utm_medium = request()->query('utm_medium');
+    if ($utm_medium) {
+        echo '<input type="hidden" name="utm_medium" value="' . $utm_medium . '">';
+    }
+    $utm_campaign = request()->query('utm_campaign');
+    if ($utm_campaign) {
+        echo '<input type="hidden" name="utm_campaign" value="' . $utm_campaign . '">';
+    }
+    $utm_id = request()->query('utm_id');
+    if ($utm_id) {
+        echo '<input type="hidden" name="utm_id" value="' . $utm_id . '">';
+    }
+    $utm_term = request()->query('utm_term');
+    if ($utm_term) {
+        echo '<input type="hidden" name="utm_term" value="' . $utm_term . '">';
+    }
+    $utm_content = request()->query('utm_content');
+    if ($utm_content) {
+        echo '<input type="hidden" name="utm_content" value="' . $utm_content . '">';
+    }
+                            ?}}

@@ -1,0 +1,33 @@
+{{? $_n_arr = [1,2,3,4,5,6,7,8,9]; ?}}
+{{ _nn = _n_arr | random }}
+<div id="myWidget{{ _nn }}" class="mt-2"></div>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=_turnstileCb" defer></script>
+<script>
+    window._turnstileCb = function() {
+        turnstile.render("#myWidget{{ _nn }}", {
+            sitekey: "{{ config:turnstile.site_key }}",
+            callback: function(token) {
+                if (!token) {
+                    document.dispatchEvent(
+                        new CustomEvent('recaptcha-error', {
+                            bubbles: true,
+                            detail: {
+                                error: 'Please complete the challenge'
+                            }
+                        })
+                    );
+                    return;
+                }
+                document.dispatchEvent(
+                    new CustomEvent('recaptcha-complete', {
+                        bubbles: true,
+                        detail: {
+                            token: token
+                        }
+                    })
+                );
+            },
+        });
+    };
+</script>

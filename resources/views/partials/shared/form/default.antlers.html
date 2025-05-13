@@ -1,0 +1,11 @@
+<input
+    type="{{ input_type ?? 'text' }}"
+    name="{{ handle }}"
+    value="{{ value }}"
+    {{ if placeholder }}placeholder="{{ placeholder }}"{{ /if }}
+    {{ if character_limit }}maxlength="{{ character_limit }}"{{ /if }}
+    {{if has_alpine}} x-model="form.{{ handle }}" :disabled="form.processing"
+    :class="{'animate-pulse': checkingCaptcha}" {{/if}}
+    {{if !has_alpine}} {{ if js_driver }}{{ js_attributes }}{{ /if }}  {{/if}}
+    {{ if validate|contains:required }}required{{ /if }}
+>

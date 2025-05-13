@@ -1,0 +1,45 @@
+<div>
+    <div class="mt-2 grid grid-cols-1">
+        <select id="{{ handle }}"
+            class="
+            block w-full rounded-md border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:bg-white/5 dark:ring-white/10 dark:text-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 dark:focus-visible:ring-black sm:text-sm sm:leading-6
+            col-start-1 row-start-1 appearance-none rtl:pr-3 rtl:pl-8 ltr:pr-8 ltr:pl-3 text-base outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2"
+            name="{{ handle }}{{ multiple ?= "[]" }}"
+            {{if has_alpine}} x-model="form.{{ handle }}" :disabled="form.processing"
+    :class="{'animate-pulse': checkingCaptcha}" {{/if}}
+            {{if !has_alpine}} {{ if js_driver }}{{ js_attributes }} {{ /if }}  {{/if}}
+            {{ if multiple }}multiple{{ /if }} {{ if validate|contains:required }}required{{ /if }}>
+            {{ unless multiple }}
+                <option value>
+                    {{ if placeholder }}
+                        {{ placeholder }}
+                    {{ else }}
+                        {{ trans key="{{'Please select...' | trans}}" }}
+                    {{ /if }}
+                </option>
+            {{ /unless }}
+            {{ if handle == 'country' }}
+                {{?$countries = \App\Helpers\CountryHelper::getCountries($site)  ?}}
+                {{ foreach:countries as="country|label" }}
+                    <option value="{{ country }}"
+                        {{ if multiple }}{{ if value|in_array:country }} selected{{ /if }}{{ else }}{{ if country == value }} selected{{ /if }}{{ /if }}>
+                        {{ label !== null ? label : country }}
+                    </option>
+                {{ /foreach:countries }}
+            {{ else }}
+                {{ foreach:options as="option|label" }}
+                    <option value="{{ option }}"
+                        {{ if multiple }}{{ if value|in_array:option }} selected{{ /if }}{{ else }}{{ if option == value }} selected{{ /if }}{{ /if }}>
+                        {{ label !== null ? label : option }}
+                    </option>
+                {{ /foreach:options }}
+            {{ /if }}
+        </select>
+        <svg class="pointer-events-none col-start-1 row-start-1 rtl:ml-2 ltr:mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4"
+            viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+            <path fill-rule="evenodd"
+                d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd" />
+        </svg>
+    </div>
+</div>

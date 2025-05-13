@@ -1,0 +1,73 @@
+<div x-data="{
+    error: '',
+    captchaCompleted:false,
+    getCookieValue(name) {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            if (cookie.startsWith(name + '=')) {
+                return decodeURIComponent(cookie.substring(name.length + 1));
+            }
+        }
+        return null;
+    },
+    runGrecaptcha() {
+        grecaptcha.ready(() => {
+            grecaptcha.render(this.$el, {
+                sitekey: '{{ config:recaptcha.recaptcha_v2.site_key }}',
+                size: 'invisible',
+                callback: this.tokenReturned.bind(this)
+            });
+        });
+    },
+    tokenReturned(token) {
+        const xsrfToken = this.getCookieValue('XSRF-TOKEN');
+        fetch('/verify-captcha', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-Xsrf-Token': xsrfToken
+            },
+            body: JSON.stringify({ token: token })
+        })
+        .then( response => {
+            if (!response.ok) {
+                return Promise.reject(response);
+            }
+            return response.json();
+          })
+        .then(response => {
+            if((response.data && response.data.success) || response.success) {
+                this.captchaCompleted = true;
+                this.$el.dispatchEvent(new CustomEvent('recaptcha-complete', { bubbles:true }));
+            }
+        }).catch(error => {
+            error.json().then(json => {
+                this.error = json.token[0]
+                this.$el.dispatchEvent(
+                    new CustomEvent('recaptcha-error', { bubbles:true, detail: { error: this.error }})
+                );
+                return;
+            })
+
+            if (!this.error && error.response && error.response.data && error.response.data.message) {
+                this.error = error.response.data.message;
+            } else if(!this.error) {
+                this.error = 'An error occurred. Please try again.';
+            }
+
+            this.$el.dispatchEvent(
+                new CustomEvent('recaptcha-error', { bubbles:true, detail: { error: this.error }})
+            );
+        });
+    },
+    execute() {
+        if (this.captchaCompleted) {
+            this.$el.dispatchEvent(new CustomEvent('recaptcha-complete', { bubbles:true }));
+        }
+        else {
+            grecaptcha.execute();
+        }
+    }
+}" @runrecaptcha.window="execute" @recaptcha-loaded.window="runGrecaptcha">
+</div>

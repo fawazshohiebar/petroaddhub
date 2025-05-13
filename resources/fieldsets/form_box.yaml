@@ -1,0 +1,74 @@
+title: 'Form Box'
+fields:
+  -
+    handle: heading_group
+    field: basics.heading_group
+    config:
+      width: 100
+  -
+    handle: form
+    field:
+      max_items: 1
+      type: form
+      display: Form
+      localizable: false
+  -
+    handle: redirect_to_url
+    field:
+      type: link
+      display: 'Redirect to Url'
+      width: 66
+      localizable: true
+  -
+    handle: show_labels
+    field:
+      default: true
+      type: toggle
+      display: 'Show Labels'
+      width: 33
+      localizable: false
+  -
+    handle: success_message
+    field:
+      type: markdown
+      display: 'Success Message'
+      localizable: true
+  -
+    handle: supporting_elements
+    field:
+      type: replicator
+      display: 'Supporting Elements'
+      localizable: true
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            supporting_element:
+              display: 'Supporting Element'
+              fields:
+                -
+                  handle: supporting_element_title
+                  field:
+                    type: text
+                    display: 'Supporting Element Title'
+                    localizable: false
+                    width: 50
+                -
+                  handle: supporting_element_value
+                  field:
+                    type: text
+                    display: 'Supporting Element Value'
+                    localizable: false
+                    width: 50
+                -
+                  handle: icon
+                  field: basics.icon
+                  config:
+                    width: 50
+                -
+                  handle: supporting_element_link
+                  field:
+                    type: link
+                    display: 'Supporting Element Link'
+                    localizable: false
+                    width: 50

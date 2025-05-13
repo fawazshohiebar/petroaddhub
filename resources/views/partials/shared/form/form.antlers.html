@@ -1,0 +1,64 @@
+{{ nocache }}
+    {{ form id="{{selected_form:handle ?: 'stata-form'}}" redirect="#{{selected_form:handle ?: 'stata-form'}}" error_redirect="#{{selected_form:handle ?: 'stata-form'}}" :handle="selected_form ?: 'contact_us'" class="px-6 py-10 lg:px-8" }}
+        {{ if success }}
+            <div class="mx-auto max-w-xl mb-4 lg:mr-0 lg:max-w-lg">
+                {{ partial:shared/alerts/success :message="success_message" /}}
+            </div>
+        {{ /if }}
+        {{ if errors }}
+            <div class="mx-auto max-w-xl mb-4 lg:mr-0 lg:max-w-lg">
+                {{ partial:shared/alerts/form_errors :errors="errors" /}}
+            </div>
+        {{ /if }}
+        <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                {{ widthClasses = ['100' => 'sm:col-span-2', '50' => 'sm:col-span-1', ] }}
+                {{ fields }}
+                    <div class="{{ widthClasses[width] }}">
+                        {{ if show_labels }}
+                            <label for="name"
+                                class="block text-sm font-semibold leading-6 text-gray-900 dark:text-white">{{ display | trans }}
+                                {{ if validate }}
+                                    <span class="text-red-500">*</span>
+                                {{ /if }}
+                            </label>
+                            {{ if instructions }}
+                                <div class="text-xs text-gray-400 mb-1">
+                                    {{ instructions }}
+                                </div>
+                            {{ /if }}
+                        {{ /if }}
+                        {{# Alpine fields #}}
+                        {{ partial src="shared/form/{{type}}" }}
+                        {{# end Alpine fields #}}
+                    </div>
+                {{ /fields }}
+                <span x-text="name"></span>
+                <input style="display: none;" type="text" name="personal_name" class="honeypot" />
+            </div>
+            <div class="mt-8 flex justify-end">
+
+                {{ partial:sets/button :style="style:value" :size="size:value" :url="link:url" :icon="icon" }}
+                    {{ heroicon:outline:chevron-right class="rtl:rotate-180" }}
+                    <span>
+                        {{ 'Submit' | trans }}
+                    </span>
+                {{ /partial:sets/button }}
+            </div>
+        </div>
+        </div>
+    {{ /form }}
+{{ /nocache }}
+
+{{ once }}
+    {{ push:styles }}
+        <style>
+            .grecaptcha-badge {
+                visibility: hidden !important;
+            }
+        </style>
+    {{ /push:styles }}
+    {{ push:scripts }}
+        {{ recaptcha }}
+    {{ /push:scripts }}
+{{ /once }}

@@ -1,0 +1,112 @@
+{{ nocache }}
+    {{ form id="{{form:handle}}" :handle="form" attr:x-ref="form" js="alpine" class="px-2 py-10 lg:px-8" }}
+        <div x-data='
+    {
+        checkingCaptcha: true,
+        captchaError: "",
+        success: false,
+        submitted: false,
+        form: $form(
+            "post",
+            $refs.form.getAttribute("action"),
+            JSON.parse($refs.form.getAttribute("x-data"))
+        ),
+        showCaptchaError(e) {
+            this.captchaError = e.detail.error;
+            this.checkingCaptcha = false;
+        },
+        addToken(e) {
+            $nextTick(() => {
+                this.form.turnstile_token = e.detail.token; // Explicitly set the token in form data
+                this.checkingCaptcha = false;
+            });
+        },
+        init() {
+            $refs.form.addEventListener("submit", evt => {
+                evt.preventDefault();
+                this.form.submit().then(response => {
+                        this.form.reset();
+                        this.success = true;
+                    }).catch(error => {
+                        console.log(error);
+                    }).finally(() => {
+                        {{if redirect_to_url}}
+                        {{redirect_to_url}}
+                        window.location.href = "{{url}}";
+                        {{/redirect_to_url}}
+                        {{else}}
+                        if(this.success) {
+                            this.form.reset();
+                            $refs.form.reset();
+                        }
+                        {{/if}}
+                    });
+
+            });
+        },
+
+    }' @recaptcha-complete.window="addToken" @recaptcha-error.window="showCaptchaError">
+            <template x-if="success">
+                <div class="mx-auto mt-4">
+                    {{ partial:shared/alerts/success :message="success_message" /}}
+                </div>
+            </template>
+            <template x-if="!success">
+                <div class="mx-auto">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                        {{ widthClasses = ['100' => 'sm:col-span-2', '50' => 'sm:col-span-1', ] }}
+                        {{ fields }}
+                            <div class="{{ widthClasses[width] }}">
+                                {{ if show_labels && input_type !== 'hidden' }}
+                                    <label for="name"
+                                        :class="{'text-gray-700-100 dark:text-white': !checkingCaptcha, 'text-gray-400 dark:text-white/50': checkingCaptcha}"
+                                        class="block text-sm font-semibold mb-2">{{ display | trans }}
+                                        {{validate}}
+                                
+                                        {{ if value =='required' }}
+                                            <span class="text-red-500">*</span>
+                                        {{ /if }}
+                                {{/validate}}
+                                    </label>
+                                    {{ if instructions }}
+                                        <div class="text-xs text-gray-400 mb-1">
+                                            {{ instructions }}
+                                        </div>
+                                    {{ /if }}
+                                {{ /if }}
+                                {{# Alpine fields #}}
+                                {{ partial src="shared/form/{{type}}" has_alpine="true" }}
+                                {{# end Alpine fields #}}
+                                <small class="text-xs text-red-500" x-show="form.invalid('{{ handle }}')"
+                                    x-text="form.errors.{{ handle }}"></small>
+                            </div>
+                        {{ /fields }}
+                        <p x-show="captchaError" x-text="captchaError" class="text-red-500 my-2 col-span-2"></p>
+                        <input style="display: none;" type="text" name="personal_name" class="honeypot" />
+                    </div>
+                    {{ partial:shared/form/turnstile_badge }}
+                    <div class="mt-8 flex justify-end">
+                        {{ partial:buttons/button html_tag="button" style="white" }}
+                            {{ slot:attributes }}
+                                type="submit"
+                                x-bind:disabled="form.processing || checkingCaptcha || form.validating"
+                                x-bind:class="{'opacity-20 !cursor-not-allowed': form.processing || checkingCaptcha || form.validating}"
+                            {{ /slot:attributes }}
+                            <div class="flex items-center gap-2">
+                                <template x-if="form.processing">
+                                    {{ heroicon:outline:arrow-path class="w-4 h-4 animate-spin" }}
+                                </template>
+                                <template x-if="!form.processing">
+                                    {{ heroicon:outline:chevron-right class="w-4 h-4 rtl:rotate-180" }}
+                                </template>
+                                <span>
+                                    {{ 'Submit' | trans }}
+                                </span>
+                            </div>
+                        {{ /partial:buttons/button }}
+                    </div>
+                </div>
+            </template>
+        </div>
+    {{ /form }}
+{{ /nocache }}

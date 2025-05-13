@@ -1,0 +1,10 @@
+<input
+    type="file"
+    name="{{ handle }}{{ if max_files !== 1 }}[]{{ /if }}"
+    {{if has_alpine}} x-model="form.{{ handle }}" :disabled="form.processing"
+    :class="{'animate-pulse': checkingCaptcha}" {{/if}}
+    {{if !has_alpine}} {{ if js_driver }}{{ js_attributes }}{{ /if }}  {{/if}}
+
+    {{ if max_files !== 1 }}multiple{{ /if }}
+    {{ if validate|contains:required }}required{{ /if }}
+>

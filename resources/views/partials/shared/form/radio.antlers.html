@@ -1,0 +1,18 @@
+{{ foreach:options as="option|label" }}
+    <label>
+        <input
+            type="radio"
+            name="{{ handle }}"
+            value="{{ option }}"
+            {{if has_alpine}} x-model="form.{{ handle }}" :disabled="form.processing"
+            :class="{'animate-pulse': checkingCaptcha}" {{/if}}
+            {{if !has_alpine}} {{ if js_driver }}{{ js_attributes }}{{ /if }}  {{/if}}
+            {{ if value == option }}checked{{ /if }}
+            {{ if validate|contains:required }}required{{ /if }}
+        >
+        {{ label !== null ? label : option }}
+    </label>
+    {{ unless inline }}
+        <br>
+    {{ /unless }}
+{{ /foreach:options }}
