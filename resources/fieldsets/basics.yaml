@@ -873,33 +873,11 @@ fields:
                     localizable: true
                     instructions: 'The subtitle or description for the main call to action'
                 -
-                  handle: cta_enabled
-                  field:
-                    type: toggle
-                    display: 'Show Main CTA Button'
-                    default: true
-                    width: 33
-                    localizable: false
-                -
-                  handle: cta_text
-                  field:
-                    type: text
-                    display: 'CTA Button Text'
-                    localizable: true
-                    instructions: 'Text for the main call to action button'
-                    width: 33
-                    if:
-                      cta_enabled: 'equals true'
-                -
-                  handle: cta_url
-                  field:
-                    type: text
-                    display: 'CTA Button URL'
-                    localizable: false
-                    instructions: 'Link for the main call to action button'
-                    width: 33
-                    if:
-                      cta_enabled: 'equals true'
+                  handle: cta_buttons
+                  field: basics.button_group
+                  config:
+                    display: 'CTA Buttons'
+                    width: 100
                 -
                   handle: benefits
                   field:
@@ -938,34 +916,7 @@ fields:
                           display: Description
                           localizable: true
                           width: 50
-                -
-                  handle: secondary_cta_enabled
-                  field:
-                    type: toggle
-                    display: 'Show Secondary CTA'
-                    default: true
-                    width: 33
-                    localizable: false
-                -
-                  handle: secondary_cta_text
-                  field:
-                    type: text
-                    display: 'Secondary CTA Text'
-                    localizable: true
-                    instructions: 'Text for the secondary call to action link'
-                    width: 33
-                    if:
-                      secondary_cta_enabled: 'equals true'
-                -
-                  handle: secondary_cta_url
-                  field:
-                    type: text
-                    display: 'Secondary CTA URL'
-                    localizable: false
-                    instructions: 'Link for the secondary call to action'
-                    width: 33
-                    if:
-                      secondary_cta_enabled: 'equals true'
+                
         forms:
           display: Forms
           icon: form-drop-down-menu

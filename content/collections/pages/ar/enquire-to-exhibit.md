@@ -49,6 +49,8 @@ page_builder:
             enabled: true
             phone_number: '+971 2 406 3245'
             email: sara.aljaberi@adnec.ae
+fine_seo_title: 'استفسر عن المشاركة'
+fine_seo_description: 'يوفر لك المعرض الدولي للصيد والفروسية - العين 2025 منصة استراتيجية لعرض علامتك التجارية، والتواصل مع العملاء المحتملين، والانضمام إلى روّاد القطاع.'
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747133098
+updated_at: 1747140564
 ---

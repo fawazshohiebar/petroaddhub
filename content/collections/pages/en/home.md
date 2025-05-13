@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747136501
+updated_at: 1747140253
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -222,9 +222,6 @@ page_builder:
           icon: null
         main_title: 'Be Among the First to Participate in the International Hunting & Equestrian Exhibition - Al Ain 2025'
         main_subtitle: 'Launch your brand at the biggest and most important event in the Al Ain region'
-        cta_enabled: true
-        cta_text: 'Register Now'
-        cta_url: '#stand'
         benefits:
           -
             id: my2p6xm1
@@ -246,9 +243,17 @@ page_builder:
             icon: sparkles
             title: 'Extensive Media Coverage'
             description: 'Enhancing your brand reach and market presence'
-        secondary_cta_enabled: true
-        secondary_cta_text: 'Contact Us for More Information'
-        secondary_cta_url: '#stand'
+        cta_buttons:
+          -
+            id: mami6gui
+            label: 'Book Your Stand'
+            size: medium
+            color: primary
+            style: filled
+            icon: chevron-right
+            url: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
+            type: button
+            enabled: true
   -
     type: set
     attrs:
