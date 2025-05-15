@@ -2,7 +2,7 @@ title: 'Book Your Stand'
 email:
   -
     id: mamg6evf
-    to: 'sara.aljaberi@adnec.ae,bilal.adada@adnec.ae,khaled.taha@adnec.ae'
+    to: 'khaled.taha@adnec.ae'
     mailer: smtp
     markdown: true
     subject: 'New Book Your Stand Enquiry'
