@@ -2,11 +2,6 @@ title: 'المعرض الدولي للصيد والفروسية - العين'
 logo: brand/logo-colored.png
 logo_dark: brand/logo-white.png
 patronage: 'تحت رعاية سمو الشيخ هزاع بن زايد آل نهيان، ممثل الحاكم في منطقة العين.'
-social_media:
-  -
-    id: mafkrzar
-    platform: instagram
-    social_media_link: 'https://www.instagram.com/alainihex/?igsh=MXN1YXQxdGZjcGN5MQ%3D%3D#'
 logos:
   -
     id: mafk076r
@@ -22,3 +17,4 @@ logos:
     url: '#'
     type: logo
     enabled: true
+origin: en

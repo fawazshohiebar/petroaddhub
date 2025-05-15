@@ -59,7 +59,7 @@
                             <div class="{{ widthClasses[width] }}">
                                 {{ if show_labels && input_type !== 'hidden' }}
                                     <label for="name"
-                                        :class="{'text-gray-700-100 dark:text-white': !checkingCaptcha, 'text-gray-400 dark:text-white/50': checkingCaptcha}"
+                                        :class="{'text-gray-700 dark:text-white': !checkingCaptcha, 'text-gray-400 dark:text-white/50': checkingCaptcha}"
                                         class="block text-sm font-semibold mb-2">{{ display | trans }}
                                         {{validate}}
                                 
