@@ -28,19 +28,15 @@ featured_activities:
   -
     id: madgpimy
     title: 'Arabic Coffee Competition'
-    image: sectors/dsc08182-scaled.jpg
   -
     id: madgpjcm
     title: 'Traditional Cooking Contest'
-    image: sectors/mb60436-scaled.jpg
   -
     id: madgpkcn
     title: 'Horse Shows for Children'
-    image: sectors/3e8y1912-scaled.jpg
   -
     id: madgpldo
     title: 'Falconry Demonstrations'
-    image: sectors/img_5492-scaled.jpg
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_at: 1747632603
 ---

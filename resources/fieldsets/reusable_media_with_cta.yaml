@@ -32,7 +32,7 @@ fields:
   -
     handle: image
     field:
-      container: assets
+      container: collaterals
       max_files: 1
       type: assets
       display: Image

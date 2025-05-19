@@ -31,8 +31,7 @@ fields:
       instructions: 'Customize image for entry. if empty, Search Engines will pick a random image from the content. prefer 1200x630 pixels.'
       max_files: 1
       width: 100
-      container: assets
-      folder: /my-images
+      container: collaterals
   -
     handle: fine_seo_preview
     field:

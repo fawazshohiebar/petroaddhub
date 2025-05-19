@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747639031
+updated_at: 1747643712
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -89,5 +89,5 @@ page_builder:
     attrs:
       textAlign: left
 fine_seo_description: 'The first edition of the International Hunting & Equestrian Exhibition - Al Ain 2025 will be launched from November 26 to 30, 2025, at ADNEC Al Ain Centre.'
-fine_seo_image: brand/padded-logo-horizontal.png
+fine_seo_image: misc/padded-logo-horizontal.png
 ---

@@ -99,6 +99,9 @@ return [
 
         'presets' => [
             // 'small' => ['w' => 200, 'h' => 200, 'q' => 75, 'fit' => 'crop'],
+            'small' => ['w' => 400, 'q' => 100, 'format' => 'webp'],
+            'medium' => ['w' => 800, 'q' => 100, 'format' => 'webp'],
+            'large' => ['w' => 1200, 'q' => 100, 'format' => 'webp'],
         ],
 
         /*

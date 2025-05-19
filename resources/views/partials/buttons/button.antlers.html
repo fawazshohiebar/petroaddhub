@@ -11,7 +11,7 @@ Elegant button component with the following parameters:
         target="{{ target }}"
     {{ /if }} {{ slot:attributes }}
     class="group
-        inline-flex items-center justify-center font-medium transition-all duration-300
+        inline-flex text-nowrap items-center justify-center font-medium transition-all duration-300
         {{ backdrop_blur ?= 'backdrop-filter backdrop-blur-sm' }}
         {{ if type == 'outline' }}
             border-1 bg-transparent
@@ -56,7 +56,7 @@ Elegant button component with the following parameters:
     {{ if slot }}
         {{ slot }}
     {{ else }}
-        <span>{{ slot ?? label ?? text }}</span>
+        <span class="text-nowrap">{{ slot ?? label ?? text }}</span>
     {{ /if }}
     {{ if icon }}
         {{ heroicon variant="outline" :icon="icon" class="h-5 w-5 rtl:mr-2 ltr:ml-2 transition-transform duration-300 group-hover:translate-x-1 {{(icon | contains('paper-airplane')) ?= 'rtl:rotate-180'}} {{ iconClass }}" }}

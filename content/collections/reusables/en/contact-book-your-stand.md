@@ -4,7 +4,6 @@ blueprint: contact_team
 title: 'Contact - Book your Stand'
 heading: 'Book Your Stand'
 description: 'Secure your place at the inaugural International Hunting & Equestrian Exhibition - Al Ain 2025. Contact our sales team today to explore available exhibition spaces and partnership opportunities. Our team will guide you through the process and help you maximize your exhibition experience.'
-image: misc/shutterstock_1111453718-scaled.jpg
 contacts:
   -
     id: maf8q1c8
@@ -25,5 +24,6 @@ contacts:
     phone_number: '+971 2 406 3245'
     email: sara.aljaberi@adnec.ae
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747634503
+updated_at: 1747643207
+image: misc/shutterstock_1111453718-scaled.jpg
 ---

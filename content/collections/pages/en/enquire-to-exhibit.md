@@ -4,7 +4,7 @@ blueprint: page
 title: 'Enquire to Exhibit'
 fine_seo_is_title_custom: false
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747638530
+updated_at: 1747643737
 page_builder:
   -
     type: set
@@ -35,5 +35,5 @@ page_builder:
 fine_seo_title: 'Enquire to Exhibit'
 fine_seo_preview: 'Book Your Stand'
 fine_seo_description: 'International Hunting & Equestrian Exhibition - Al Ain 2025 offers a platform to elevate your brand, meet prospective clients & align with industry excellence.'
-fine_seo_image: brand/padded-logo-horizontal.png
+fine_seo_image: misc/padded-logo-horizontal.png
 ---

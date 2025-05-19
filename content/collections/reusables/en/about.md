@@ -7,7 +7,7 @@ heading: 'A Celebration of Hunting & Equestrian Heritage'
 description: |-
   Celebrating the rich legacy of hunting and equestrianism, and highlighting Al Ain as a distinguished destination for hunting and outdoor sports, while seeking to reach new markets with purchasing power to expand the exhibition's brand
   The first edition of the International Hunting & Equestrian Exhibition - Al Ain 2025 will be launched from November 26 to 30, 2025, at ADNEC Al Ain Centre.
-image: misc/mountain-city-view.jpg
+image: misc/mountain-city-view-copy.jpg
 badge_text: 1st
 badge_subtext: Edition
 actions:
@@ -32,6 +32,6 @@ actions:
     type: button
     enabled: false
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747310516
+updated_at: 1747642060
 flipped: false
 ---

@@ -19,7 +19,7 @@ fields:
             -
               handle: image
               field:
-                container: assets
+                container: collaterals
                 restrict: false
                 allow_uploads: true
                 max_files: 1
