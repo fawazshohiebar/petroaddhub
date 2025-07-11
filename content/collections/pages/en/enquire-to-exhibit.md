@@ -14,7 +14,7 @@ page_builder:
         type: form
         heading_group:
           heading: 'Enquire to Exhibit – Showcase. Connect. Grow'
-          subheading: 'ALAINIHEX 2025 offers a strategic platform to elevate your brand, meet prospective clients, and align with industry excellence.'
+          subheading: 'AAIHEX 2025 offers a strategic platform to elevate your brand, meet prospective clients, and align with industry excellence.'
           focus_icon: false
           heading_focus_word: null
           icon: null
