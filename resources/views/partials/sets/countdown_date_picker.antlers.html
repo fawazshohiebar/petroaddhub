@@ -1,30 +1,17 @@
-<div class="countdown" data-end-time="{{ countdown_end }}">
-  <div class="countdown-item">
-    <span class="days">00</span><span class="label">Days</span>
+<div class="countdown hidden xl:flex gap-4 font-sans" data-end-time="{{ countdown_end }}">
+  <div class="countdown-item text-center">
+    <span class="days block text-lg font-light leading-tight">00</span>
+    <span class="label block text-xs text-gray-500 font-medium">Days</span>
   </div>
-  <div class="countdown-item">
-    <span class="hours">00</span><span class="label">Hours</span>
+  <div class="countdown-item text-center">
+    <span class="hours block text-lg font-light leading-tight">00</span>
+    <span class="label block text-xs text-gray-500 font-medium">Hours</span>
   </div>
-  <div class="countdown-item">
-    <span class="minutes">00</span><span class="label">Minutes</span>
+  <div class="countdown-item text-center">
+    <span class="minutes block text-lg font-light leading-tight">00</span>
+    <span class="label block text-xs text-gray-500 font-medium">Minutes</span>
   </div>
-
 </div>
- 
-
-<style>
-.countdown { display: flex; gap: 1rem; font-family: sans-serif; }
-.countdown-item { text-align: center; }
-.countdown-item span { display: block; font-size: 16px; line-height: 130%; }
-.label { font-size: 0.8rem; color: #666; }
-
-
-@media only screen and (max-width: 921px) {
-  .countdown{
-    display: none;
-  }
-}
-</style>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
