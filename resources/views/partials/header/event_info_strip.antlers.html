@@ -1,0 +1,31 @@
+<!-- Narrow Strip Under Navigation -->
+<div class="hidden md:block bg-gradient-to-r from-amber-50 to-amber-50 border-b border-gray-200/50 py-2">
+  <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto">
+    
+    <div class="flex items-center justify-center space-x-8 text-xs md:text-sm">
+      <!-- Location -->
+      <div class="flex items-center space-x-2">
+        {{ heroicon:outline:map-pin class="h-4 w-4 text-[#827654]" }}
+        <a href="{{ brand:location_link }}" class="text-gray-700 hover:text-[#827654] transition-colors font-medium">
+          {{ brand:location }}
+        </a>
+      </div>
+      
+      <!-- Date -->
+      <div class="flex items-center space-x-2">
+        {{ heroicon:outline:calendar-days class="h-4 w-4 text-[#827654]" }}
+        <a href="{{ brand:date_link }}" class="text-gray-700 hover:text-[#827654] transition-colors font-medium">
+          {{ brand:date }}
+        </a>
+      </div>
+      
+      <!-- Time -->
+      <div class="flex items-center space-x-2">
+        {{ heroicon:outline:clock class="h-4 w-4 text-[#827654]" }}
+        <a href="{{ brand:time_link }}" class="text-gray-700 hover:text-[#827654] transition-colors font-medium">
+          {{ brand:time }}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<!-- Inline Event Info - Next to Logo -->
+<div class="hidden lg:flex items-center space-x-6 ml-8">
+  <!-- Location -->
+  <div class="flex items-center space-x-2 text-sm">
+    {{ heroicon variant="outline" icon="map-pin" class="h-4 w-4 text-[#827654]" }}
+    <a href="{{ brand:location_link }}" class="text-gray-700 hover:text-[#827654] transition-colors font-medium">
+      {{ brand:location }}
+    </a>
+  </div>
+  
+  <!-- Separator -->
+  <div class="w-px h-4 bg-gray-300"></div>
+  
+  <!-- Date -->
+  <div class="flex items-center space-x-2 text-sm">
+    {{ heroicon variant="outline" icon="calendar-days" class="h-4 w-4 text-[#827654]" }}
+    <a href="{{ brand:date_link }}" class="text-gray-700 hover:text-[#827654] transition-colors font-medium">
+      {{ brand:date }}
+    </a>
+  </div>
+  
+  <!-- Separator -->
+  <div class="w-px h-4 bg-gray-300"></div>
+  
+  <!-- Time -->
+  <div class="flex items-center space-x-2 text-sm">
+    {{ heroicon variant="outline" icon="clock" class="h-4 w-4 text-[#827654]" }}
+    <a href="{{ brand:time_link }}" class="text-gray-700 hover:text-[#827654] transition-colors font-medium">
+      {{ brand:time }}
+    </a>
+  </div>
+</div>

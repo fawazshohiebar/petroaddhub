@@ -3,6 +3,9 @@
 @source "../views";
 @source "../../content";
 
+x-cloak {
+  display: none;
+}
 
 html {
   scroll-behavior: smooth;

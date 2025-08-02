@@ -1,0 +1,94 @@
+<!-- Minimalist Event Info Bar -->
+<div class="bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Desktop: Horizontal Layout -->
+    <div class="hidden md:block py-4">
+      <div class="flex items-center justify-center">
+        <div class="inline-flex items-center bg-gradient-to-r from-[#827654] to-[#9d8b65] rounded-full px-6 py-3 shadow-lg">
+          
+          <!-- Location -->
+          <div class="flex items-center text-white">
+            {{ heroicon variant="outline" icon="map-pin" class="h-4 w-4 mr-2" }}
+            <a href="{{ brand:location_link }}" class="text-sm font-medium hover:text-amber-100 transition-colors">
+              {{ brand:location }}
+            </a>
+          </div>
+
+          <!-- Dot Separator -->
+          <div class="mx-4 w-1 h-1 bg-white/60 rounded-full"></div>
+
+          <!-- Date -->
+          <div class="flex items-center text-white">
+            {{ heroicon variant="outline" icon="calendar-days" class="h-4 w-4 mr-2" }}
+            <a href="{{ brand:date_link }}" class="text-sm font-medium hover:text-amber-100 transition-colors">
+              {{ brand:date }}
+            </a>
+          </div>
+
+          <!-- Dot Separator -->
+          <div class="mx-4 w-1 h-1 bg-white/60 rounded-full"></div>
+
+          <!-- Time -->
+          <div class="flex items-center text-white">
+            {{ heroicon variant="outline" icon="clock" class="h-4 w-4 mr-2" }}
+            <a href="{{ brand:time_link }}" class="text-sm font-medium hover:text-amber-100 transition-colors">
+              {{ brand:time }}
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile: Stacked Cards -->
+    <div class="md:hidden py-3 space-y-2">
+      
+      <!-- Quick Info Banner -->
+      <div class="bg-gradient-to-r from-[#827654] to-[#9d8b65] rounded-lg p-3 text-center">
+        <p class="text-white font-semibold text-sm">{{ 'Event Information' | trans }}</p>
+      </div>
+
+      <!-- Info Items -->
+      <div class="space-y-2">
+        <!-- Location -->
+        <a href="{{ brand:location_link }}" class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors group">
+          <div class="flex-shrink-0 w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
+            {{ heroicon variant="outline" icon="map-pin" class="h-4 w-4 text-[#827654]" }}
+          </div>
+          <div class="ml-3 flex-1">
+            <p class="text-xs text-gray-500 font-medium">{{ 'Location' | trans }}</p>
+            <p class="text-sm text-gray-900 font-semibold">{{ brand:location }}</p>
+          </div>
+          {{ heroicon variant="outline" icon="chevron-right" class="h-4 w-4 text-gray-400 group-hover:text-[#827654] transition-colors" }}
+        </a>
+
+        <!-- Date -->
+        <a href="{{ brand:date_link }}" class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors group">
+          <div class="flex-shrink-0 w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
+            {{ heroicon variant="outline" icon="calendar-days" class="h-4 w-4 text-[#827654]" }}
+          </div>
+          <div class="ml-3 flex-1">
+            <p class="text-xs text-gray-500 font-medium">{{ 'Date' | trans }}</p>
+            <p class="text-sm text-gray-900 font-semibold">{{ brand:date }}</p>
+          </div>
+          {{ heroicon variant="outline" icon="chevron-right" class="h-4 w-4 text-gray-400 group-hover:text-[#827654] transition-colors" }}
+        </a>
+
+        <!-- Time -->
+        <a href="{{ brand:time_link }}" class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors group">
+          <div class="flex-shrink-0 w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
+            {{ heroicon variant="outline" icon="clock" class="h-4 w-4 text-[#827654]" }}
+          </div>
+          <div class="ml-3 flex-1">
+            <p class="text-xs text-gray-500 font-medium">{{ 'Time' | trans }}</p>
+            <p class="text-sm text-gray-900 font-semibold">{{ brand:time }}</p>
+          </div>
+          {{ heroicon variant="outline" icon="chevron-right" class="h-4 w-4 text-gray-400 group-hover:text-[#827654] transition-colors" }}
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</div>

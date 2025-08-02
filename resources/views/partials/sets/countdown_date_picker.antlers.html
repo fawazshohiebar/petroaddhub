@@ -29,8 +29,25 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const countdownEl = document.querySelector(".countdown");
+  
+  if (!countdownEl) {
+    console.warn("Countdown element not found");
+    return;
+  }
+  
   const endTimeStr = countdownEl.getAttribute("data-end-time");
+  
+  if (!endTimeStr) {
+    console.warn("Countdown end time not provided");
+    return;
+  }
+  
   const endTime = new Date(endTimeStr).getTime();
+  
+  if (isNaN(endTime)) {
+    console.warn("Invalid countdown end time:", endTimeStr);
+    return;
+  }
 
   function updateCountdown() {
     const now = new Date().getTime();
@@ -44,12 +61,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((distance / (1000 * 60)) % 60);
-    const seconds = Math.floor((distance / 1000) % 60);
 
-    countdownEl.querySelector(".days").textContent = String(days).padStart(2, "0");
-    countdownEl.querySelector(".hours").textContent = String(hours).padStart(2, "0");
-    countdownEl.querySelector(".minutes").textContent = String(minutes).padStart(2, "0");
-    countdownEl.querySelector(".seconds").textContent = String(seconds).padStart(2, "0");
+    // Safely update elements with null checks
+    const daysEl = countdownEl.querySelector(".days");
+    const hoursEl = countdownEl.querySelector(".hours");
+    const minutesEl = countdownEl.querySelector(".minutes");
+    
+    if (daysEl) daysEl.textContent = String(days).padStart(2, "0");
+    if (hoursEl) hoursEl.textContent = String(hours).padStart(2, "0");
+    if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, "0");
   }
 
   updateCountdown();
