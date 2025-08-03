@@ -18,10 +18,74 @@ info_cards:
     id: mdumoqrn
     type: info_card
     heading: 'Explore a Global Experience'
-    description: 'Modifier [variant] not found'
+    description: 'Discover the world’s largest exhibition for hunting, equestrianism, and outdoor traditions — where global cultures, Emirati heritage, and wildlife conservation come together in one immersive experience.'
     enabled: true
+    icon_type: heroicon
+    icon: globe-alt
+  -
+    id: mdvo907x
+    icon_type: heroicon
+    icon: cake
+    heading: 'Celebrate Heritage & Culture'
+    description: 'Experience cultural showcases, live auctions, and hands-on activities that highlight Arabic coffee traditions, Emirati customs, and authentic handcrafts passed down through generations.'
+    type: info_card
+    enabled: true
+  -
+    id: mdvo9jx2
+    icon_type: heroicon
+    icon: flag
+    heading: "Falcon Auctions You Can't Miss"
+    description: 'Bid on the region’s finest falcons through prestigious live and online auctions, renowned for their authenticity, exclusivity, and appeal to collectors and falconry enthusiasts.'
+    type: info_card
+    enabled: true
+  -
+    id: mdvoabod
+    icon_type: heroicon
+    heading: 'Fun for all Ages'
+    description: 'Enjoy family-friendly activities like falcon handling, art workshops, and Emirati etiquette sessions designed to inspire, educate, and entertain visitors of all ages.'
+    type: info_card
+    enabled: true
+    icon: user-group
+  -
+    id: mdvoanv5
+    icon_type: heroicon
+    heading: '13 Sectors, Endless Experiences'
+    description: 'Explore dedicated zones across 13 unique sectors, including hunting tools, outdoor gear, equestrianism, conservation, arts, and heritage — each offering products and niche experiences.'
+    type: info_card
+    enabled: true
+    icon: gift
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754221810
+updated_at: 1754228154
+hero_actions:
+  -
+    id: mdvob081
+    dynamic_button:
+      button: 'entry::a51b31a8-d8c9-48b9-9fea-92afa0b3b9fc'
+      text: null
+      button_options:
+        style: filled
+        color: primary
+        size: large
+        new_tab: false
+        icon: arrow-right
+        icon_position: end
+    type: button
+    enabled: true
+cta_actions:
+  -
+    id: mdvpzmlv
+    dynamic_button:
+      button: 'entry::a51b31a8-d8c9-48b9-9fea-92afa0b3b9fc'
+      text: null
+      button_options:
+        style: filled
+        color: primary
+        size: medium
+        new_tab: false
+        icon: chevron-right
+        icon_position: end
+    type: button
+    enabled: true
 ---
 The Abu Dhabi International Hunting and Equestrian Exhibition (ADIHEX) is your gateway to experiencing Abu Dhabi’s rich heritage and traditions in hunting and equestrianism. Whether you’re a passionate enthusiast or simply curious about the region’s cultural legacy, ADIHEX invites you to explore a vibrant array of cultural exhibitions, thrilling competitions, and breathtaking traditional performances.  
 

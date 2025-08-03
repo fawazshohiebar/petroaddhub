@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754212079
+updated_at: 1754225684
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -38,14 +38,6 @@ page_builder:
         type: reusable_block
         entry:
           - e955ebf9-b57f-4438-9219-b44ef9f10681
-  -
-    type: set
-    attrs:
-      id: maune94b
-      values:
-        type: reusable_block
-        entry:
-          - d3542e34-4109-478a-9525-8739e1c13af5
   -
     type: set
     attrs:
