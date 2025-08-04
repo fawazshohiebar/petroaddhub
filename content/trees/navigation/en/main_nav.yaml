@@ -3,34 +3,42 @@ tree:
     id: 87e08c88-5eab-4255-9767-cd3c09c6d255
     entry: home
   -
-    id: c028d02f-6e4a-4967-ab91-8f745d5fae6b
-    entry: a51b31a8-d8c9-48b9-9fea-92afa0b3b9fc
+    id: dff2d431-10f5-4668-8300-25fe6b29e020
+    title: 'Visitor Information'
+    children:
+      -
+        id: c028d02f-6e4a-4967-ab91-8f745d5fae6b
+        entry: a51b31a8-d8c9-48b9-9fea-92afa0b3b9fc
+      -
+        id: 7b92350d-dad5-4c23-8395-7f4f1c2b84d1
+        entry: 22227610-dc48-4f42-9394-c222c87592a8
+      -
+        id: cbb82464-79a6-4aa2-b883-0e62ab6d76ae
+        entry: fef0a386-0f63-45a3-94c7-97f83529c830
+      -
+        id: fdbcef85-b9c9-42f6-b91d-7898893772e4
+        title: 'Interactive Map'
+        url: 'https://map.adihex.com/?mapId=jKkBVW5WgdZYQ'
+      -
+        id: 1d953d4f-1acc-4eee-98a2-ff53135c23c6
+        entry: 8ab494c3-b905-44b4-b2f1-ec25f4fe8bed
   -
-    id: 7b92350d-dad5-4c23-8395-7f4f1c2b84d1
-    entry: 22227610-dc48-4f42-9394-c222c87592a8
-  -
-    id: cbb82464-79a6-4aa2-b883-0e62ab6d76ae
-    entry: fef0a386-0f63-45a3-94c7-97f83529c830
-  -
-    id: 6589ee9e-90e9-4f19-a281-00ec34d5af44
-    entry: bb37965e-f91b-4ced-8aa3-2df954ced5ab
-  -
-    id: fdbcef85-b9c9-42f6-b91d-7898893772e4
-    title: 'Interactive Map'
-    url: 'https://map.adihex.com/?mapId=jKkBVW5WgdZYQ'
-  -
-    id: 1d953d4f-1acc-4eee-98a2-ff53135c23c6
-    entry: 8ab494c3-b905-44b4-b2f1-ec25f4fe8bed
-  -
-    id: c6ac22e8-e73c-4690-9bf3-34adc6d075d8
-    entry: 9e18dec0-de31-48d2-b91c-2ea4f28cfb0f
-  -
-    id: 22be07a6-915d-470a-bcb1-342009c1b158
-    title: 'E-Zone Login'
-    url: 'https://ezone.adihex.com/login'
-  -
-    id: a6894777-64d7-4aff-815b-135634c9ce4f
-    entry: 56f402bd-ef8f-42f8-bdf0-8cbe736853f6
+    id: 6335cb86-1850-4d81-8b23-d369ab341ad2
+    title: 'Exhibitor Information'
+    children:
+      -
+        id: c6ac22e8-e73c-4690-9bf3-34adc6d075d8
+        entry: 9e18dec0-de31-48d2-b91c-2ea4f28cfb0f
+      -
+        id: 6589ee9e-90e9-4f19-a281-00ec34d5af44
+        entry: bb37965e-f91b-4ced-8aa3-2df954ced5ab
+      -
+        id: 22be07a6-915d-470a-bcb1-342009c1b158
+        title: 'E-Zone Login'
+        url: 'https://ezone.adihex.com/login'
+      -
+        id: a6894777-64d7-4aff-815b-135634c9ce4f
+        entry: 56f402bd-ef8f-42f8-bdf0-8cbe736853f6
   -
     id: 8041bf3c-9bec-430a-9cf7-3e57d0b0c9a3
     title: 'Media Registration'

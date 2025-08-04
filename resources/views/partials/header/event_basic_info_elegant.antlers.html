@@ -1,0 +1,134 @@
+<!-- Elegant Event Basic Info -->
+<div class="bg-gradient-to-r from-amber-50 via-white to-amber-50 border-b border-gray-200/50 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="py-3 sm:py-4">
+      
+      <!-- Desktop Layout -->
+      <div class="hidden md:flex items-center justify-center space-x-8 lg:space-x-12">
+        <!-- Location -->
+        <div class="flex items-center space-x-3 group">
+          <div class="flex-shrink-0 w-10 h-10 bg-[#827654]/10 rounded-lg flex items-center justify-center group-hover:bg-[#827654]/20 transition-colors">
+            {{ heroicon variant="outline" icon="map-pin" class="h-5 w-5 text-[#827654]" }}
+          </div>
+          <div>
+            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">{{ 'Location' | trans }}</p>
+            <a href="{{ brand:location_link }}" class="text-sm font-semibold text-gray-900 hover:text-[#827654] transition-colors">
+              {{ brand:location }}
+            </a>
+          </div>
+        </div>
+
+        <!-- Vertical Separator -->
+        <div class="h-12 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
+
+        <!-- Date -->
+        <div class="flex items-center space-x-3 group">
+          <div class="flex-shrink-0 w-10 h-10 bg-[#827654]/10 rounded-lg flex items-center justify-center group-hover:bg-[#827654]/20 transition-colors">
+            {{ heroicon variant="outline" icon="calendar-days" class="h-5 w-5 text-[#827654]" }}
+          </div>
+          <div>
+            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">{{ 'Date' | trans }}</p>
+            <a href="{{ brand:date_link }}" class="text-sm font-semibold text-gray-900 hover:text-[#827654] transition-colors">
+              {{ brand:date }}
+            </a>
+          </div>
+        </div>
+
+        <!-- Vertical Separator -->
+        <div class="h-12 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
+
+        <!-- Time -->
+        <div class="flex items-center space-x-3 group">
+          <div class="flex-shrink-0 w-10 h-10 bg-[#827654]/10 rounded-lg flex items-center justify-center group-hover:bg-[#827654]/20 transition-colors">
+            {{ heroicon variant="outline" icon="clock" class="h-5 w-5 text-[#827654]" }}
+          </div>
+          <div>
+            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">{{ 'Time' | trans }}</p>
+            <a href="{{ brand:time_link }}" class="text-sm font-semibold text-gray-900 hover:text-[#827654] transition-colors">
+              {{ brand:time }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Layout -->
+      <div class="md:hidden">
+        <!-- Mobile Grid Layout -->
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <!-- Location -->
+          <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="flex items-center space-x-3">
+              <div class="flex-shrink-0 w-8 h-8 bg-[#827654]/10 rounded-lg flex items-center justify-center">
+                {{ heroicon variant="outline" icon="map-pin" class="h-4 w-4 text-[#827654]" }}
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">{{ 'Location' | trans }}</p>
+                <a href="{{ brand:location_link }}" class="text-sm font-semibold text-gray-900 hover:text-[#827654] transition-colors block truncate">
+                  {{ brand:location }}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Date -->
+          <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="flex items-center space-x-3">
+              <div class="flex-shrink-0 w-8 h-8 bg-[#827654]/10 rounded-lg flex items-center justify-center">
+                {{ heroicon variant="outline" icon="calendar-days" class="h-4 w-4 text-[#827654]" }}
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">{{ 'Date' | trans }}</p>
+                <a href="{{ brand:date_link }}" class="text-sm font-semibold text-gray-900 hover:text-[#827654] transition-colors block truncate">
+                  {{ brand:date }}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Time -->
+          <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="flex items-center space-x-3">
+              <div class="flex-shrink-0 w-8 h-8 bg-[#827654]/10 rounded-lg flex items-center justify-center">
+                {{ heroicon variant="outline" icon="clock" class="h-4 w-4 text-[#827654]" }}
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">{{ 'Time' | trans }}</p>
+                <a href="{{ brand:time_link }}" class="text-sm font-semibold text-gray-900 hover:text-[#827654] transition-colors block truncate">
+                  {{ brand:time }}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alternative Mobile: Compact Single Row -->
+        <!-- Uncomment this and comment out the grid above if you prefer a more compact mobile layout -->
+        <!--
+        <div class="flex items-center justify-between space-x-4 bg-white rounded-lg p-3 shadow-sm border border-gray-100">
+          <div class="flex items-center space-x-2 flex-1">
+            {{ heroicon variant="outline" icon="map-pin" class="h-4 w-4 text-[#827654] flex-shrink-0" }}
+            <a href="{{ brand:location_link }}" class="text-sm text-gray-900 hover:text-[#827654] transition-colors truncate">
+              {{ brand:location }}
+            </a>
+          </div>
+          <div class="w-px h-4 bg-gray-300"></div>
+          <div class="flex items-center space-x-2 flex-1">
+            {{ heroicon variant="outline" icon="calendar-days" class="h-4 w-4 text-[#827654] flex-shrink-0" }}
+            <a href="{{ brand:date_link }}" class="text-sm text-gray-900 hover:text-[#827654] transition-colors truncate">
+              {{ brand:date }}
+            </a>
+          </div>
+          <div class="w-px h-4 bg-gray-300"></div>
+          <div class="flex items-center space-x-2 flex-1">
+            {{ heroicon variant="outline" icon="clock" class="h-4 w-4 text-[#827654] flex-shrink-0" }}
+            <a href="{{ brand:time_link }}" class="text-sm text-gray-900 hover:text-[#827654] transition-colors truncate">
+              {{ brand:time }}
+            </a>
+          </div>
+        </div>
+        -->
+      </div>
+
+    </div>
+  </div>
+</div>
