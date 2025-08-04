@@ -102,6 +102,21 @@ info_cards:
     type: info_card
     enabled: true
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754287215
+updated_at: 1754290215
+cta_actions:
+  -
+    id: mdwr333i
+    dynamic_button:
+      button: 'entry::22227610-dc48-4f42-9394-c222c87592a8'
+      text: 'View Features'
+      button_options:
+        style: filled
+        color: primary
+        size: medium
+        new_tab: false
+        icon: arrow-right
+        icon_position: end
+    type: button
+    enabled: true
 ---
 Step into a world where age-old traditions meet modern experiences. ADIHEX 2025 brings heritage to the forefront with immersive zones, live demonstrations, educational workshops, and cultural showcases that highlight the rich history of hunting, equestrianism, and Emirati craftsmanship. Every feature is designed to celebrate and preserve a legacy that continues to inspire.

@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754248789
+updated_at: 1754292690
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -55,14 +55,6 @@ page_builder:
         entry:
           - 4d6cabbc-3042-4ef0-879b-08c0e8ee4465
   -
-    type: paragraph
-    attrs:
-      textAlign: left
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-  -
     type: set
     attrs:
       id: mdmol3og
@@ -73,22 +65,11 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdmqpd8h
+      id: mdwr4uxy
       values:
-        type: heading_and_text
-        title_text: 'Explore ADIHEX Like Never Before'
-        text_field: |-
-          Your Guide to Every Hall, Feature & Experience<br>
-          Plan your visit with ease using our interactive map. Navigate exhibition halls, locate exhibitor stands, event features, parking areas, and activity zones—all in one place. Whether you’re attending for business or leisure, this map ensures you don’t miss a moment at ADIHEX 2025.
-        background_color: '#f5f2eb'
-  -
-    type: set
-    attrs:
-      id: mdmxkd2e
-      values:
-        type: divider
-        space_height: 40px
-        background_color: '#f5f2eb'
+        type: reusable_block
+        entry:
+          - a1c926f4-9f14-404a-8bc4-fe0eb1bad1bd
   -
     type: set
     attrs:
@@ -101,43 +82,11 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdmxksz1
-      values:
-        type: divider
-        space_height: 40px
-        background_color: '#f5f2eb'
-  -
-    type: set
-    attrs:
-      id: mdms2eao
-      values:
-        type: themed_button
-        button_group:
-          -
-            id: mdms2f8c
-            label: 'Explore the interactive map'
-            size: medium
-            color: primary
-            style: filled
-            type: button
-            enabled: true
-        background_color: '#f5f2eb'
-  -
-    type: set
-    attrs:
-      id: mdmxls6r
-      values:
-        type: divider
-        space_height: 70px
-        background_color: '#f5f2eb'
-  -
-    type: set
-    attrs:
       id: mdms5pe8
       values:
         type: reusable_block
         entry:
-          - 2119f48c-23fd-4557-8d5f-c2836829d11e
+          - b8dfb5b2-2bfc-4db0-af0a-652b3946372f
   -
     type: set
     attrs:
@@ -154,17 +103,6 @@ page_builder:
         type: full_width_image
         image:
           - added-images/capital-360-banner-exhibition_728x90-2-1536x190.jpg
-  -
-    type: set
-    attrs:
-      id: mdn551q6
-      values:
-        type: divider
-        space_height: 60px
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
   -
     type: set
     attrs:
