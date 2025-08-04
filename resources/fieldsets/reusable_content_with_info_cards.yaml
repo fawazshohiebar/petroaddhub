@@ -30,7 +30,7 @@ fields:
       type: replicator
       display: 'Info Cards'
       max_sets: 20
-      localizable: false
+      localizable: true
       sets:
         main:
           display: Main

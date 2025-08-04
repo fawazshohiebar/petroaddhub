@@ -102,7 +102,7 @@ fields:
       remove_empty_nodes: false
       type: bard
       display: 'Page Builder'
-      localizable: false
+      localizable: true
       sets:
         landing:
           display: Landing
@@ -507,7 +507,7 @@ fields:
     field:
       type: group
       display: 'Heading Group'
-      localizable: false
+      localizable: true
       fields:
         -
           handle: heading
@@ -576,7 +576,7 @@ fields:
     field:
       type: replicator
       display: Buttons
-      localizable: false
+      localizable: true
       sets:
         new_set_group:
           display: 'New Set Group'
@@ -631,14 +631,14 @@ fields:
           value: 'No Footer'
       type: select
       display: Layout
-      localizable: false
+      localizable: true
       default: layout
   -
     handle: heading
     field:
       type: colored_text
       display: Heading
-      localizable: false
+      localizable: true
       tag: h2
   -
     handle: turnstile_token
