@@ -1,0 +1,43 @@
+<div class="flex flex-row flex-nowrap gap-[10px] justify-center bg-gradient-to-b from-gray-50 to-gray-100 py-[5px]"
+        id="header-slider" style="display:flex; flex-direction: row; flex-wrap: nowrap;">
+
+        <div class=" w-[1px] bg-[#827654] !md:h-auto  md:hidden block  !h-[24px]"></div>
+
+        <div class=" flex flex-row flex-nowrap items-center gap-[10px] "
+            style="display:flex; flex-direction: row; flex-wrap: nowrap; margin: 0 10px;">
+            <div>
+                {{ heroicon variant="outline" icon="map-pin" class="h-[20px] w-20px text-[#827654]" /}}
+            </div>
+            <div>
+                <a class=" text-gray-700  leading-relaxed   text-[15px]"
+                    href="{{ brand:location_link }}">{{ brand:location }} </a>
+            </div>
+        </div>
+        
+        <div class=" w-[1px] bg-[#827654] !md:h-auto block  !h-[24px]"></div>
+
+        <div class=" flex  flex-nowrap items-center gap-[10px] "
+            style="display:flex; flex-direction: row; flex-wrap: nowrap; margin: 0 10px;">
+            <div>
+                {{ heroicon variant="outline" icon="calendar-date-range" class="h-[20px] w-20px text-[#827654]" /}}
+            </div>
+            <div>
+                <a class=" text-gray-700  leading-relaxed   text-[15px]" href="{{ brand:date_link }}">{{ brand:date }}
+                </a>
+            </div>
+
+        </div>
+
+        <div class=" w-[1px] bg-[#827654] !md:h-auto block  !h-[24px]"></div>
+
+        <div class="  flex flex-nowrap items-center gap-[10px] "
+            style="display:flex; flex-direction: row; flex-wrap: nowrap; margin: 0 10px;">
+            <div>
+                {{ heroicon variant="outline" icon="clock" class="h-[20px] w-20px text-[#827654]" /}}
+            </div>
+            <div>
+                <a class=" text-gray-700  leading-relaxed   text-[15px]"
+                    href="{{ brand:time_link }}">{{ brand:time }}</a>
+            </div>
+        </div>
+    </div>

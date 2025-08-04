@@ -1,0 +1,70 @@
+{{?
+  $blockStyles = [
+    'primary' => 'bg-primary-600 text-white kinda-dark',
+    'secondary' => 'bg-secondary-600 text-white kinda-dark',
+    'gray' => 'bg-gray-200 text-gray-800',
+    'lite-primary' => 'bg-primary-50 text-primary-600',
+    'lite-secondary' => 'bg-secondary-50 text-secondary-600',
+    'transparent' => 'bg-transparent text-gray-800 border border-gray-200',
+    'black' => 'bg-black text-white kinda-dark',
+    'white' => 'bg-white text-gray-900',
+    'default' => 'bg-white text-gray-900',
+];
+$blockPadding = [
+  'xlarge' => 'py-16 md:py-20 lg:py-24',
+  'large' => 'py-14 md:py-18 lg:py-22',
+  'medium' => 'py-10 md:py-14 lg:py-18',
+  'small' => 'py-8 md:py-12 lg:py-16',
+  'none' => 'py-0',
+];
+?}}
+<!-- Content with Info Cards Section -->
+<section
+  class="{{ blockPadding[{style_config:padding ?? 'medium'}] }} {{ blockStyles[{style_config:color ?? 'default'}] }} relative overflow-hidden">
+
+  <!-- Decorative Elements -->
+  <div class="absolute left-0 top-1/4 w-64 h-64 bg-[#827654]/20 rounded-full blur-3xl -translate-x-1/2"></div>
+  <div class="absolute right-0 bottom-1/4 w-64 h-64 bg-[#827654]/20 rounded-full blur-3xl translate-x-1/2"></div>
+
+  <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto relative z-10">
+
+    <!-- Section Header -->
+    {{ if heading || subheading }}
+      <div class="text-center mb-16" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+        {{ partial:partials/sets/heading_group }}
+      </div>
+    {{ /if }}
+    <!-- Main Content -->
+    {{ if content }}
+      <div class="max-w-4xl mx-auto mb-16">
+        <div
+          class="prose prose-lg {{ {['primary','secondary'] | in_array(style_config:color)} ? 'text-white' : 'prose-gray' }} max-w-none text-center"
+          x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+          {{ content | markdown }}
+        </div>
+      </div>
+    {{ /if }}
+    <!-- Info Cards Grid -->
+    {{ if info_cards }}
+      {{ if style_config:variant == 'full' }}
+        {{ partial:partials/shared/general/info_card_detailed }}
+      {{ elseif style_config:variant == 'compact' }}
+        {{ partial:partials/shared/general/info_card_compact }}
+      {{ elseif style_config:variant == 'carousel' }}
+        {{ partial:partials/shared/general/info_card_carousel }}
+      {{ elseif style_config:variant == 'grid' }}
+        {{ partial:partials/shared/general/info_card_grid }}
+      {{ /if }}
+    {{ /if }}
+    <!-- Call to Action -->
+    {{ if cta_actions }}
+      <div class="text-center" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          {{ cta_actions }}
+            {{ partial:shared/button }}
+          {{ /cta_actions }}
+        </div>
+      </div>
+    {{ /if }}
+  </div>
+</section>

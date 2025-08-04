@@ -1,0 +1,36 @@
+<!-- Compact Badge Style - Next to Logo -->
+<div class="hidden lg:flex items-center ml-6">
+  <div class="inline-flex items-center bg-gradient-to-r from-[#827654]/10 to-[#9d8b65]/10 rounded-full px-4 py-2 border border-[#827654]/20">
+    
+    <!-- Location -->
+    <div class="flex items-center">
+      {{ heroicon variant="outline" icon="map-pin" class="h-3 w-3 text-[#827654] mr-1" }}
+      <a href="{{ brand:location_link }}" class="text-xs font-medium text-gray-700 hover:text-[#827654] transition-colors">
+        {{ brand:location }}
+      </a>
+    </div>
+
+    <!-- Dot Separator -->
+    <div class="mx-2 w-1 h-1 bg-[#827654]/40 rounded-full"></div>
+
+    <!-- Date -->
+    <div class="flex items-center">
+      {{ heroicon variant="outline" icon="calendar-days" class="h-3 w-3 text-[#827654] mr-1" }}
+      <a href="{{ brand:date_link }}" class="text-xs font-medium text-gray-700 hover:text-[#827654] transition-colors">
+        {{ brand:date }}
+      </a>
+    </div>
+
+    <!-- Dot Separator -->
+    <div class="mx-2 w-1 h-1 bg-[#827654]/40 rounded-full"></div>
+
+    <!-- Time -->
+    <div class="flex items-center">
+      {{ heroicon variant="outline" icon="clock" class="h-3 w-3 text-[#827654] mr-1" }}
+      <a href="{{ brand:time_link }}" class="text-xs font-medium text-gray-700 hover:text-[#827654] transition-colors">
+        {{ brand:time }}
+      </a>
+    </div>
+
+  </div>
+</div>

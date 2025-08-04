@@ -1,0 +1,100 @@
+title: 'Reusable Content with Info Cards'
+fields:
+  -
+    handle: style_config
+    field:
+      type: style_config
+      display: 'Style Config'
+      localizable: false
+      variant_labels: |-
+        compact|Compact
+        full|Full
+        carousel|Carousel
+        grid|Grid
+      default_variant: full
+  -
+    handle: heading
+    field: basics.heading_group
+    config:
+      width: 100
+  -
+    handle: content
+    field:
+      type: markdown
+      display: Content
+      instructions: 'Main content section in markdown format'
+      localizable: true
+  -
+    handle: info_cards
+    field:
+      type: replicator
+      display: 'Info Cards'
+      max_sets: 20
+      localizable: false
+      sets:
+        main:
+          display: Main
+          sets:
+            info_card:
+              display: 'Info Card'
+              fields:
+                -
+                  handle: icon_type
+                  field:
+                    type: select
+                    display: 'Icon Type'
+                    default: heroicon
+                    options:
+                      -
+                        key: heroicon
+                        value: Heroicon
+                      -
+                        key: image
+                        value: Image
+                    width: 50
+                    localizable: false
+                -
+                  handle: icon
+                  field: basics.icon
+                  config:
+                    width: 50
+                    if:
+                      icon_type: 'equals heroicon'
+                -
+                  handle: image
+                  field:
+                    type: assets
+                    display: 'Icon Image'
+                    max_files: 1
+                    container: assets
+                    folder: icons
+                    restrict: true
+                    allowed_extensions:
+                      - svg
+                      - png
+                      - jpg
+                      - webp
+                    width: 50
+                    localizable: false
+                    if:
+                      icon_type: 'equals image'
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: 'Card Heading'
+                    localizable: true
+                    validate:
+                      - required
+                -
+                  handle: description
+                  field:
+                    type: textarea
+                    display: 'Card Description'
+                    localizable: true
+  -
+    handle: cta_actions
+    field: basics.buttons
+    config:
+      display: 'Call to Action'
+      width: 100
