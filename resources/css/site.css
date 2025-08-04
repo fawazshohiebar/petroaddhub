@@ -45,9 +45,16 @@ html {
   .colored-text-secondary {
     @apply text-secondary-500 dark:text-secondary-100;
   }
-  .colored-text-primary {
-    @apply text-primary-500 dark:text-primary-100;
+  .kinda-dark .colored-text-secondary {
+    @apply text-secondary-100;
   }
+  .colored-text-primary {
+    @apply text-primary-600 dark:text-primary-100;
+  }
+  .kinda-dark .colored-text-primary {
+    @apply text-primary-100;
+  }
+  
   .colored-text-white {
     @apply text-white;
   }

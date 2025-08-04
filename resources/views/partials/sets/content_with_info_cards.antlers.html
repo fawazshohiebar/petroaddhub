@@ -1,9 +1,30 @@
+{{?
+  $blockStyles = [
+    'primary' => 'bg-primary-600 text-white kinda-dark',
+    'secondary' => 'bg-secondary-600 text-white kinda-dark',
+    'gray' => 'bg-gray-200 text-gray-800',
+    'lite-primary' => 'bg-primary-50 text-primary-600',
+    'lite-secondary' => 'bg-secondary-50 text-secondary-600',
+    'transparent' => 'bg-transparent text-gray-800 border border-gray-200',
+    'black' => 'bg-black text-white kinda-dark',
+    'white' => 'bg-white text-gray-900',
+    'default' => 'bg-white text-gray-900',
+];
+$blockPadding = [
+  'xlarge' => 'py-16 md:py-20 lg:py-24',
+  'large' => 'py-14 md:py-18 lg:py-22',
+  'medium' => 'py-10 md:py-14 lg:py-18',
+  'small' => 'py-8 md:py-12 lg:py-16',
+  'none' => 'py-0',
+];
+?}}
 <!-- Content with Info Cards Section -->
-<section class="py-16 md:py-20 lg:py-24 bg-gray-50 relative overflow-hidden">
+<section
+  class="{{ blockPadding[{style_config:padding ?? 'medium'}] }} {{ blockStyles[{style_config:color ?? 'default'}] }} relative overflow-hidden">
 
   <!-- Decorative Elements -->
   <div class="absolute left-0 top-1/4 w-64 h-64 bg-[#827654]/20 rounded-full blur-3xl -translate-x-1/2"></div>
-    <div class="absolute right-0 bottom-1/4 w-64 h-64 bg-[#827654]/20 rounded-full blur-3xl translate-x-1/2"></div>
+  <div class="absolute right-0 bottom-1/4 w-64 h-64 bg-[#827654]/20 rounded-full blur-3xl translate-x-1/2"></div>
 
   <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto relative z-10">
 
@@ -16,43 +37,22 @@
     <!-- Main Content -->
     {{ if content }}
       <div class="max-w-4xl mx-auto mb-16">
-        <div class="prose prose-lg prose-gray max-w-none text-center" x-data="{}"
-          x-intersect="$el.classList.add('animate-fade-in')">
+        <div
+          class="prose prose-lg {{ {['primary','secondary'] | in_array(style_config:color)} ? 'text-white' : 'prose-gray' }} max-w-none text-center"
+          x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
           {{ content | markdown }}
         </div>
       </div>
     {{ /if }}
     <!-- Info Cards Grid -->
     {{ if info_cards }}
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 {{card_style=='compact' ? 'lg:grid-cols-5' : 'lg:grid-cols-3'}} gap-8 mb-16"
-        x-data="{ cardsVisible: false }" x-intersect="cardsVisible = true">
-
-        {{ info_cards }}
-          <div
-            class="group relative rounded-xl overflow-hidden shadow-lg p-6 bg-white transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl"
-            :class="cardsVisible ? 'animate-fade-in-up' : 'opacity-0'"
-            :style="`animation-delay: ${{ { (count - 1) * 150 } }}ms`">
-
-            <!-- Icon -->
-            <div class="{{card_style=='compact' ? 'w-full' : 'w-14 h-14'}} bg-[#827654]/10 rounded-full flex items-center justify-center mb-6">
-              {{ if icon_type == 'heroicon' }}
-                {{ heroicon:outline :icon="icon" class="{{card_style=='compact' ? 'w-full h-auto' : 'h-8 w-8'}} text-[#827654]" }}
-              {{ elseif icon_type == 'image' }}
-                <img src="{{ image }}" alt="{{ heading }}" class="{{card_style=='compact' ? 'w-full h-auto rounded-md' : 'h-8 w-8'}} object-contain">
-              {{ /if }}
-            </div>
-
-            <!-- Content -->
-            <h3 class="text-base lg:text-xl font-semibold text-gray-900 mb-3">{{ heading }}</h3>
-            <p class="text-gray-700 mb-4">{{ description }}</p>
-            {{ if card_style != 'compact' }}
-              <div class="w-12 h-1 bg-[#827654]/20"></div>
-            {{ /if }}
-          </div>
-        {{ /info_cards }}
-
-      </div>
+      {{ if style_config:variant == 'full' }}
+        {{ partial:partials/shared/general/info_card_detailed }}
+      {{ elseif style_config:variant == 'compact' }}
+        {{ partial:partials/shared/general/info_card_compact }}
+      {{ elseif style_config:variant == 'carousel' }}
+        {{ partial:partials/shared/general/info_card_carousel }}
+      {{ /if }}
     {{ /if }}
     <!-- Call to Action -->
     {{ if cta_actions }}

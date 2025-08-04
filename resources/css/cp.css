@@ -61,3 +61,11 @@
 .text-secondary-600 {
     @apply text-secondary-600;
 }
+
+.bg-primary-50 {
+    @apply bg-primary-50;
+}
+
+.bg-secondary-50 {
+    @apply bg-secondary-50;
+}

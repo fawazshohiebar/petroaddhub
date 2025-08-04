@@ -16,8 +16,10 @@ Statamic.booting(() => {
 // LinkCompanion Fieldtype
 import LinkCompanion from './components/fieldtypes/LinkCompanion.vue';
 import ColoredText from './components/fieldtypes/ColoredText.vue';
+import StyleConfig from './components/fieldtypes/StyleConfig.vue';
 
 Statamic.booting(() => {
     Statamic.$components.register('link_companion-fieldtype', LinkCompanion);
     Statamic.$components.register('colored_text-fieldtype', ColoredText);
+    Statamic.$components.register('style_config-fieldtype', StyleConfig);
 });

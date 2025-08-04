@@ -20,7 +20,7 @@ heading:
   icon: null
 card_style: compact
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754237871
+updated_at: 1754246861
 info_cards:
   -
     id: mdvtxk9v
@@ -113,5 +113,9 @@ info_cards:
     heading: Saluki
     type: info_card
     enabled: true
+style_config:
+  padding: large
+  color: lite-primary
+  variant: compact
 ---
 ADIHEX 2025 brings together a diverse range of sectors that celebrate tradition, showcase culture, and connect global communities. From falconry, equestrian, and outdoor adventure to arts & crafts, weapons, and heritage conservation—each sector offers a unique experience for enthusiasts, professionals, and families alike. Discover the depth and diversity that make ADIHEX a one-of-a-kind destination.

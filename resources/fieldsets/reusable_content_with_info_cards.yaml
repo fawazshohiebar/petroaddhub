@@ -1,6 +1,18 @@
 title: 'Reusable Content with Info Cards'
 fields:
   -
+    handle: style_config
+    field:
+      type: style_config
+      display: 'Style Config'
+      localizable: false
+      variant_labels: |-
+        compact|Compact
+        full|Full
+        carousel|Carousel
+        grid|Grid
+      default_variant: full
+  -
     handle: heading
     field: basics.heading_group
     config:
@@ -12,21 +24,6 @@ fields:
       display: Content
       instructions: 'Main content section in markdown format'
       localizable: true
-  -
-    handle: card_style
-    field:
-      type: select
-      display: 'Card Style'
-      default: full
-      options:
-        -
-          key: full
-          value: 'Full Cards (Icon + Title + Description)'
-        -
-          key: compact
-          value: 'Compact Cards (Icon + Title Only)'
-      localizable: false
-      instructions: 'Choose between full cards with description or compact cards with just icon and title'
   -
     handle: info_cards
     field:

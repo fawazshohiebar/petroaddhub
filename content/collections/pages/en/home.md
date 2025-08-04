@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754234632
+updated_at: 1754248789
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -59,140 +59,9 @@ page_builder:
     attrs:
       textAlign: left
   -
-    type: set
-    attrs:
-      id: mdn53gxy
-      values:
-        type: divider
-        space_height: 40px
-        background_color: '#f5f2eb'
-  -
-    type: set
-    attrs:
-      id: mdisx16y
-      values:
-        type: heading_and_text
-        title_text: 'Explore the World of Heritage, Hunting, and Culture - 2025 Sectors'
-        text_field: 'ADIHEX 2025 brings together a diverse range of sectors that celebrate tradition, showcase culture, and connect global communities. From falconry, equestrian, and outdoor adventure to arts & crafts, weapons, and heritage conservation—each sector offers a unique experience for enthusiasts, professionals, and families alike. Discover the depth and diversity that make ADIHEX a one-of-a-kind destination.'
-        background_color: '#f5f2eb'
-  -
-    type: set
-    attrs:
-      id: mdmxcegd
-      values:
-        type: divider
-        space_height: 40px
-        background_color: '#f5f2eb'
-  -
-    type: set
-    attrs:
-      id: mdo8vj5a
-      values:
-        type: reusable_block
-        entry:
-          - 6363d154-ba9f-4175-ba6b-efd3ac9e97d1
-  -
     type: paragraph
     attrs:
       textAlign: left
-  -
-    type: set
-    attrs:
-      id: mdite4xn
-      enabled: false
-      values:
-        type: continuous_slider
-        image_and_text_replicator:
-          -
-            id: mdite65q
-            image_feild: added-images/icon-sectors_2-13-1.jpg
-            text_field: 'Veterinary Products & Services'
-            type: new_set
-            enabled: true
-          -
-            id: mditg554
-            image_feild: added-images/icon-sectors_2-13-1.jpg
-            text_field: 'Hunting Tourism & Safari'
-            type: new_set
-            enabled: true
-          -
-            id: mditgbda
-            image_feild: added-images/icon-sectors_2-13-1.jpg
-            text_field: Falconry
-            type: new_set
-            enabled: true
-          -
-            id: mditgq70
-            image_feild: added-images/icon-sectors_2-13-1.jpg
-            text_field: Falconry
-            type: new_set
-            enabled: true
-          -
-            id: mditgs50
-            image_feild: added-images/icon-sectors_2-13-1.jpg
-            text_field: Falconry
-            type: new_set
-            enabled: true
-          -
-            id: mditgnp0
-            image_feild: added-images/icon-sectors_2-13-1.jpg
-            text_field: Falconry
-            type: new_set
-            enabled: true
-          -
-            id: mditgufi
-            image_feild: added-images/icon-sectors_2-13-1.jpg
-            text_field: Falconry
-            type: new_set
-            enabled: true
-          -
-            id: mditgx6j
-            image_feild: added-images/icon-sectors_2-13-1.jpg
-            text_field: Falconry
-            type: new_set
-            enabled: true
-        background_color: '#f5f2eb'
-  -
-    type: set
-    attrs:
-      id: mdmxjpuv
-      values:
-        type: divider
-        space_height: 20px
-        background_color: '#f5f2eb'
-  -
-    type: set
-    attrs:
-      id: mdmo3qth
-      values:
-        type: themed_button
-        button_group:
-          -
-            id: mdmo3rsz
-            label: 'Buy your ticket'
-            size: medium
-            color: primary
-            style: filled
-            type: button
-            enabled: true
-        background_color: '#f5f2eb'
-  -
-    type: set
-    attrs:
-      id: mdn54k3t
-      values:
-        type: divider
-        space_height: 40px
-        background_color: '#f5f2eb'
-  -
-    type: set
-    attrs:
-      id: mdmoly1b
-      values:
-        type: heading_and_text
-        title_text: 'Where the Legacy Comes to Life'
-        text_field: 'Step into a world where age-old traditions meet modern experiences. ADIHEX 2025 brings heritage to the forefront with immersive zones, live demonstrations, educational workshops, and cultural showcases that highlight the rich history of hunting, equestrianism, and Emirati craftsmanship. Every feature is designed to celebrate and preserve a legacy that continues to inspire.'
-        background_color: white
   -
     type: set
     attrs:
@@ -200,7 +69,7 @@ page_builder:
       values:
         type: reusable_block
         entry:
-          - e83ad0f5-ae88-4126-9e5e-ec9ef21b569d
+          - 424afcd4-bbf9-488d-bc21-fe1343478187
   -
     type: set
     attrs:
