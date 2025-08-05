@@ -35,7 +35,7 @@ tabs:
                           handle: premium_sponsors_logos
                           field:
                             max_files: 1
-                            container: assets
+                            container: collaterals
                             type: assets
                             display: 'Premium Sponsors Logos'
                             localizable: false
@@ -62,7 +62,7 @@ tabs:
                           handle: medium_sponsors_logos
                           field:
                             max_files: 1
-                            container: assets
+                            container: collaterals
                             type: assets
                             display: 'Medium Sponsors Logos'
                             localizable: false
@@ -89,7 +89,7 @@ tabs:
                           handle: normal_sponsors_logos
                           field:
                             max_files: 1
-                            container: assets
+                            container: collaterals
                             type: assets
                             display: 'Normal Sponsors Logos'
                             localizable: false

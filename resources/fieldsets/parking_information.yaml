@@ -25,7 +25,7 @@ fields:
                 -
                   handle: icon_upload_image
                   field:
-                    container: assets
+                    container: collaterals
                     type: assets
                     display: 'Icon Upload Image'
                     localizable: false
@@ -88,7 +88,7 @@ fields:
                 -
                   handle: icon_upload_image
                   field:
-                    container: assets
+                    container: collaterals
                     type: assets
                     display: 'Icon Upload Image'
                     localizable: false

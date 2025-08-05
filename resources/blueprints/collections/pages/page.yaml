@@ -119,7 +119,7 @@ tabs:
                         -
                           handle: redirect_to
                           field:
-                            container: assets
+                            container: collaterals
                             type: link
                             display: 'Redirect To'
                             localizable: false
@@ -218,7 +218,7 @@ tabs:
                                         handle: image_feild
                                         field:
                                           max_files: 1
-                                          container: assets
+                                          container: collaterals
                                           type: assets
                                           display: 'Image Feild'
                                           localizable: false
@@ -251,7 +251,7 @@ tabs:
                         -
                           handle: image
                           field:
-                            container: assets
+                            container: collaterals
                             type: assets
                             display: Image
                             localizable: false
@@ -356,7 +356,7 @@ tabs:
                                         handle: image_upload
                                         field:
                                           max_files: 1
-                                          container: assets
+                                          container: collaterals
                                           type: assets
                                           display: 'Image Upload'
                                           localizable: false
@@ -447,7 +447,7 @@ tabs:
                                                       handle: image_upload
                                                       field:
                                                         max_files: 1
-                                                        container: assets
+                                                        container: collaterals
                                                         type: assets
                                                         display: 'Image Upload'
                                                         localizable: false
@@ -461,7 +461,7 @@ tabs:
                           handle: image
                           field:
                             max_files: 1
-                            container: assets
+                            container: collaterals
                             type: assets
                             display: Image
                             localizable: false
