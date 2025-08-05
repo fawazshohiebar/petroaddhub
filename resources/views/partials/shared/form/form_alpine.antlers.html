@@ -86,7 +86,13 @@
                     </div>
                     {{ partial:shared/form/turnstile_badge }}
                     <div class="mt-8 flex justify-end">
-                        {{ partial:shared/button button_type="button" style="filled" }}
+                        {{ partial:shared/button 
+                            button_type="button"
+                            style="filled"
+                            size="medium"
+                            color="primary"
+                            icon=""
+                            }}
                             {{ slot:attributes }}
                                 type="submit"
                                 x-bind:disabled="form.processing || checkingCaptcha || form.validating"

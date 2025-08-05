@@ -64,6 +64,9 @@ fields:
         -
           key: check-circle
           value: null
+        -
+          key: arrow-down-tray
+          value: null
       type: select
       display: Icon
       taggable: true
@@ -524,6 +527,33 @@ fields:
                     type: markdown
                     display: 'Text Field'
                     localizable: false
+        media:
+          display: Media
+          icon: computer-logo-communication-zoom
+          sets:
+            gallery_infinite:
+              display: 'Gallery Infinite'
+              icon: arrows-fit-to-width
+              fields:
+                -
+                  handle: heading
+                  field: basics.heading_group
+                -
+                  handle: images
+                  field:
+                    max_files: 40
+                    min_files: 2
+                    container: collaterals
+                    type: assets
+                    display: Images
+                    localizable: false
+                    folder: galleries
+            banner:
+              display: Banner
+              icon: media-image-photo-focus-frame
+              fields:
+                -
+                  import: reusable_banner
   -
     handle: heading_group
     field:
