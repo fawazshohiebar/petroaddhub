@@ -6,7 +6,7 @@
     {{ if width == 'full' }}
       w-full
     {{ else }}
-      min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto
+     adnec-container mx-auto
     {{ /if }}
     relative overflow-hidden group
   "
@@ -20,7 +20,7 @@
       <a 
         href="{{ link:url ?? link }}"
         {{ if new_tab == true }}target="_blank" rel="noopener noreferrer"{{ /if }}
-        class="block relative transition-all duration-300 hover:scale-[1.02] focus:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+        class="block relative transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
         aria-label="{{ heading:text ?? heading ?? 'Banner link' }}"
       >
     {{ /if }}
@@ -60,7 +60,6 @@
             {{ else }}
               h-auto
             {{ /if }}
-            transition-transform duration-700 group-hover:scale-105
           "
           loading="lazy"
         />

@@ -554,6 +554,57 @@ fields:
               fields:
                 -
                   import: reusable_banner
+        exhibition:
+          display: Exhibition
+          icon: arrow-roadmap-path-flow
+          sets:
+            exhibiting_brand:
+              display: 'Exhibiting Brand'
+              icon: addon-boxes-stack
+              fields:
+                -
+                  handle: heading
+                  field: basics.heading_group
+                  config:
+                    display: Heading
+                -
+                  handle: ezone_base_url
+                  field:
+                    default: 'https://ezone.adihex.com/exhibitors-list-top-with-images-resource/'
+                    type: hidden
+                    display: 'EZone Base Url'
+                    localizable: false
+                -
+                  handle: event_id
+                  field:
+                    default: '4'
+                    type: integer
+                    display: 'Event ID'
+                    localizable: false
+                    width: 33
+                -
+                  handle: in_random_order
+                  field:
+                    default: true
+                    type: toggle
+                    display: Random
+                    localizable: false
+                    width: 33
+                -
+                  handle: pagination_count
+                  field:
+                    default: '10'
+                    type: integer
+                    display: Count
+                    localizable: false
+                    width: 33
+                -
+                  handle: style_config
+                  field:
+                    type: style_config
+                    display: 'Style Config'
+                    localizable: false
+                    variant_labels: 'style1|Style 1'
   -
     handle: heading_group
     field:

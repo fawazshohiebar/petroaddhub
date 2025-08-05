@@ -1,7 +1,5 @@
-
-
 <!-- md:pb-[70px] pt-[70px] pb-[100px]  -->
-<div class="  min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto  relative   pt-[50px] pb-[70px]">
+<div class=" adnec-container mx-auto  relative   pt-[50px] pb-[70px]">
 
          {{ if heading || subheading }}
       <div class="text-center mb-16" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
@@ -10,46 +8,102 @@
     {{ /if }}
 
     <div class="grid lg:grid-cols-[58%_auto] gap-[30px]  grid-cols-1          bg-white/60 backdrop-blur-md rounded-xl text-center transform transition-all duration-500 hover:-translate-y-2 hover:shadow-lg border border-gray-200/50 shadow-sm p-[20px] md:pb-[20px] pb-[80px]">
-            <div class="slider-feedback    ">
-                    {{replicator_quotes_and_reviews}}
-                    <div class="!flex flex-col justify-center items-center h-full px-4">
-                        <!-- Quote Icon -->
-                        <div class="text-primary/20 mb-4">
-                            <svg class="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
-                            </svg>
-                        </div>
+            <div class="slider-feedback relative" 
+                 x-data="{ 
+                     swiper: null,
+                     initSwiper() {
+                         this.$nextTick(() => {
+                             if (window.Swiper && this.$refs.swiperContainer) {
+                                 this.swiper = new window.Swiper(this.$refs.swiperContainer, {
+                                     slidesPerView: 1,
+                                     spaceBetween: 30,
+                                     grabCursor: true,
+                                     autoHeight: true,
+                                     centeredSlides: false,
+                                     loop: true,
+                                     autoplay: {
+                                         delay: 6000,
+                                         disableOnInteraction: false,
+                                     },
+                                     pagination: {
+                                         el: '.feedback-pagination',
+                                         clickable: true,
+                                         dynamicBullets: false,
+                                         bulletClass: 'swiper-pagination-bullet feedback-bullet',
+                                         bulletActiveClass: 'swiper-pagination-bullet-active feedback-bullet-active',
+                                     },
+                                 });
+                             }
+                         });
+                     }
+                 }"
+                 x-init="initSwiper()">
+                 
+                <div class="swiper" x-ref="swiperContainer">
+                    <div class="swiper-wrapper">
+                        {{replicator_quotes_and_reviews}}
+                            <div class="swiper-slide">
+                                <div class="!flex flex-col justify-center items-center h-full px-4">
+                                    <!-- Quote Icon -->
+                                    <div class="text-primary/20 mb-4">
+                                        <svg class="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                                        </svg>
+                                    </div>
 
-                        <!-- Feedback Text -->
-                        <blockquote class="relative">
-                            <div class="text-gray-700 mb-8 leading-relaxed text-lg lg:text-xl italic text-center font-light">
-                                "{{feedback_text}}"
+                                    <!-- Feedback Text -->
+                                    <blockquote class="relative">
+                                        <div class="text-gray-700 mb-8 leading-relaxed text-lg lg:text-xl italic text-center font-light">
+                                            "{{feedback_text}}"
+                                        </div>
+                                    </blockquote>
+
+                                    <!-- Author Information -->
+                                    <div class="text-center border-t border-gray-200 pt-6 mt-4 w-full max-w-md">
+                                        <p class="font-semibold text-gray-900 text-lg mb-1">{{feedback_writer}}</p>
+                                        <p class="text-gray-600 text-sm uppercase tracking-wider">{{writer_position}}</p>
+                                    </div>
+                                </div>
                             </div>
-                        </blockquote>
-
-                        <!-- Author Information -->
-                        <div class="text-center border-t border-gray-200 pt-6 mt-4 w-full max-w-md">
-                            <p class="font-semibold text-gray-900 text-lg mb-1">{{feedback_writer}}</p>
-                            <p class="text-gray-600 text-sm uppercase tracking-wider">{{writer_position}}</p>
-                        </div>
+                        {{/replicator_quotes_and_reviews}}
                     </div>
-                    {{/replicator_quotes_and_reviews}}
+                </div>
                 
+                <!-- Pagination with custom styling -->
+                <div class="feedback-pagination text-center mt-6"></div>
+                
+                <!-- Custom pagination styles -->
+                <style>
+                    .feedback-bullet {
+                        width: 8px !important;
+                        height: 8px !important;
+                        border-radius: 4px !important;
+                        background: #d1d5db !important;
+                        opacity: 1 !important;
+                        margin: 0 4px !important;
+                        transition: all 0.3s ease !important;
+                    }
+                    
+                    .feedback-bullet-active {
+                        width: 24px !important;
+                        background: #827654 !important; /* Primary color */
+                        transform: scale(1.1) !important;
+                    }
+                    
+                    .feedback-bullet:hover {
+                        background: #9ca3af !important;
+                    }
+                    
+                    .feedback-bullet-active:hover {
+                        background: #6b5d42 !important; /* Darker primary color on hover */
+                    }
+                </style>
             </div>
 
-            <div class="overflow-hidden rounded-[8px] lg:block hidden">
-                {{image}}
-                <img class="rounded-[8px]" src="{{url}}" alt="">
-                {{/image}}
+            {{image}}
+            <div class="overflow-hidden rounded-[8px] lg:block hidden bg-cover"
+                style="background-image: url('{{url}}');background-position: {{focus_css}}">
             </div>
+            {{/image}}
     </div>
 </div>
-
-
-<style>
-
-html[lang="ar"] .slider-feedback .slick-list {
-    direction: ltr!important;
-}
-
-</style>

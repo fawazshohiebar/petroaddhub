@@ -1,5 +1,5 @@
 <div style="background-color: {{background_color}};">
-<div class=" min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto  relative pt-[50px] md:pb-[70px] pb-[100px] ">
+<div class="adnec-container mx-auto  relative pt-[50px] md:pb-[70px] pb-[100px] ">
 
     {{if title_feild }}
 <div>
@@ -7,20 +7,102 @@
 </div>
 {{/if}}
 
-<div  class="slicking-slider ">
-{{images_and_text_replicator}}
-<div class="px-[15px] ">
-<div class="rounded-[8px] overflow-hidden">
+<div  class="slicking-slider relative" 
+     x-data="{ 
+         swiper: null,
+         initSwiper() {
+             this.$nextTick(() => {
+                 if (window.Swiper && this.$refs.swiperContainer) {
+                     this.swiper = new window.Swiper(this.$refs.swiperContainer, {
+                         slidesPerView: 1.2,
+                         spaceBetween: 16,
+                         grabCursor: true,
+                         autoHeight: false,
+                         centeredSlides: false,
+                         loop: true,
+                         autoplay: {
+                             delay: 4000,
+                             disableOnInteraction: false,
+                         },
+                         pagination: {
+                             el: '.slicking-pagination',
+                             clickable: true,
+                             dynamicBullets: false,
+                             bulletClass: 'swiper-pagination-bullet slicking-bullet',
+                             bulletActiveClass: 'swiper-pagination-bullet-active slicking-bullet-active',
+                         },
+                         breakpoints: {
+                             640: {
+                                 slidesPerView: 2,
+                                 spaceBetween: 20,
+                                 centeredSlides: false,
+                             },
+                             1024: {
+                                 slidesPerView: 3,
+                                 spaceBetween: 24,
+                                 centeredSlides: false,
+                             },
+                             1280: {
+                                 slidesPerView: 4,
+                                 spaceBetween: 30,
+                                 centeredSlides: false,
+                             },
+                         }
+                     });
+                 }
+             });
+         }
+     }"
+     x-init="initSwiper()">
+     
+    <div class="swiper" x-ref="swiperContainer">
+        <div class="swiper-wrapper">
+            {{images_and_text_replicator}}
+                <div class="swiper-slide">
+                    <div class="px-[15px]">
+                        <div class="rounded-[8px] overflow-hidden">
+                            {{image}}
+                            <img src="{{url}}" alt="" class="w-full h-auto">
+                            {{/image}}
+                        </div>
+                        {{if text}}
+                        <p class="pt-[10px] text-[#bc9772] font-['Montserrat',sans-serif] font-semibold text-[16px]">{{text}}</p>
+                        {{/if}}
+                    </div>
+                </div>
+            {{/images_and_text_replicator}}
+        </div>
+    </div>
     
-    {{image}}
-    <img src="{{url}}" alt="">
-        {{/image}}
-</div>
-{{if text}}
-<p class=" pt-[10px] text-[#bc9772] font-['Montserrat',sans-serif] font-semibold text-[16px]">{{text}}</p>
-    {{/if}}
-</div>
-{{/images_and_text_replicator}}
+    <!-- Pagination with custom styling -->
+    <div class="slicking-pagination text-center mt-6"></div>
+    
+    <!-- Custom pagination styles -->
+    <style>
+        .slicking-bullet {
+            width: 8px !important;
+            height: 8px !important;
+            border-radius: 4px !important;
+            background: #d1d5db !important;
+            opacity: 1 !important;
+            margin: 0 4px !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .slicking-bullet-active {
+            width: 24px !important;
+            background: #bc9772 !important; /* Using the text color as accent */
+            transform: scale(1.1) !important;
+        }
+        
+        .slicking-bullet:hover {
+            background: #9ca3af !important;
+        }
+        
+        .slicking-bullet-active:hover {
+            background: #a0845f !important; /* Darker version of #bc9772 */
+        }
+    </style>
 </div>
 
 </div>

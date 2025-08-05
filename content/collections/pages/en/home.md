@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754396284
+updated_at: 1754402642
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -47,7 +47,8 @@ page_builder:
         new_tab: true
         is_div: false
         use_image_height: false
-        image: banners/download-app-now-2025_ar2-(1).jpg
+        image:
+          - banners/download-app-now-2025_ar2-(1).jpg
         link: 'https://onelink.to/hbb8wm'
         width: full
         image_style: contain
@@ -82,6 +83,39 @@ page_builder:
         type: reusable_block
         entry:
           - 424afcd4-bbf9-488d-bc21-fe1343478187
+  -
+    type: set
+    attrs:
+      id: mdyloxip
+      values:
+        type: exhibiting_brand
+        heading:
+          heading:
+            text: 'Exhibiting Brands'
+            size: small
+            color: black
+            tag: p
+            uppercase: false
+          subheading: null
+          focus_icon: true
+          heading_focus_word: null
+          icon: globe-asia-australia
+        ezone_base_url: 'https://ezone.adihex.com/exhibitors-list-top-with-images-resource/'
+        event_id: 4
+        random: true
+        count: 10
+        in_random_order: true
+        pagination_count: 10
+        style_config_field:
+          padding: small
+          color: black
+          size: normal
+          variant: style1
+        style_config:
+          padding: small
+          color: lite-secondary
+          size: normal
+          variant: style1
   -
     type: set
     attrs:
