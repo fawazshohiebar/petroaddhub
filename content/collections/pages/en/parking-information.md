@@ -3,119 +3,161 @@ id: 8ab494c3-b905-44b4-b2f1-ec25f4fe8bed
 blueprint: page
 title: 'Parking Information'
 fine_seo_is_title_custom: false
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754314223
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754369359
 page_builder:
   -
     type: set
     attrs:
-      id: mdqya5c2
+      id: mdy1jnfs
       values:
-        type: parking_information
-        icon: truck
-        heading: 'Premium Parking'
-        text: |-
+        type: call_to_action
+        style_config:
+          padding: small
+          color: white
+          variant: no_image
+        heading:
+          text: 'Premium Parking'
+          size: small
+          color: primary
+          tag: h2
+          uppercase: false
+        description: |-
           Avoid the hassle and secure your spot by booking Premium Parking in advance.
           Enjoy guaranteed convenience with easy access to ADIHEX via the Grandstand or Central Plaza parking areas.
 
-          - <b>Price:</b> AED 350 per vehicle
-          - <b>Includes:</b> One-time access to either Grandstand or Central Plaza parking
-          - <b>QR Code:</b> Sent to your email after purchase – required for entry
-          - <b>ADIHEX Entrance Tickets:</b> Not included – tickets must be purchased separately
-        button_replicator:
+          **Price**: AED 350 per vehicle
+          **Includes**: One-time access to either Grandstand or Central Plaza parking
+          **QR Code**: Sent to your email after purchase – required for entry
+          **ADIHEX Entrance Tickets**: Not included – tickets must be purchased separately
+
+          Please select your preferred parking location below
+        buttons:
           -
-            id: mdqzu282
-            button_text: 'Secure premium parking'
-            button_link: '###'
-            background_color: '#827654'
-            type: new_set
-            enabled: true
-        last_text: '<b>Please select your preferred parking location below:</b>'
-        button_replicator_second:
-          -
-            id: mdr0kkcr
-            button_text: 'Grandstand Parking'
-            button_link: '###'
-            background_color: '#cfa76b'
-            type: new_set
-            enabled: true
-          -
-            id: mdr0stvu
-            button_text: 'Grandstand Parking'
-            button_link: '###'
-            background_color: '#cfa76b'
-            type: new_set
+            id: mdy1leik
+            dynamic_button:
+              button: 'https://business.mamopay.com/pay/adnecgroup-9a34b2'
+              text: 'Secure Premium Parking'
+              button_options:
+                style: filled
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
             enabled: true
           -
-            id: mdr0svhm
-            button_text: 'Grandstand Parking'
-            button_link: '###'
-            background_color: '#cfa76b'
-            type: new_set
+            id: mdy1mihl
+            dynamic_button:
+              button: 'https://maps.app.goo.gl/3H9c3Nj3KW45Z4y4A'
+              text: 'Grandstand Parking'
+              button_options:
+                style: outline
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
             enabled: true
-        heading_group:
-          heading: null
-          subheading: null
-          focus_icon: false
-          heading_focus_word: null
-          icon: null
+          -
+            id: mdy1nl92
+            dynamic_button:
+              button: 'https://maps.app.goo.gl/QJnWp4a6oqM15XZW6'
+              text: 'Central Plaza Parking'
+              button_options:
+                style: outline
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
   -
     type: set
     attrs:
-      id: mdr0ywl4
+      id: mdy1wcb2
       values:
-        type: parking_information
-        heading: 'Standard Parking'
-        text: |-
+        type: call_to_action
+        style_config:
+          padding: small
+          color: lite-primary
+          variant: no_image
+        heading:
+          text: 'Standard Parking'
+          size: small
+          color: black
+          tag: h2
+          uppercase: false
+        description: |-
           Standard Parking is available at ADNEC Car Park A, B, D & E for AED 20.
-          Parking is on a <b>first-come, first-served</b> basis – we recommend arriving early.
+          Parking is on a first-come, first-served basis – we recommend arriving early.
 
-          - <b>Price:</b> AED 20 per vehicle (pay onsite)
-          - <b>ADIHEX Entrance Tickets:</b> Not included – tickets must be purchased separately
+          **Price:** AED 20 per vehicle (pay onsite)
+          **ADIHEX Entrance Tickets:** Not included – tickets must be purchased separately
 
-          <b>Please select your preferred parking location below:</b>
-        button_replicator:
+          Please review the parking <a href="https://www.adnec.ae/en/terms-and-conditions" target="_blank">General Terms & Conditions</a> before your visit.
+
+          Please select your preferred parking location below:
+        buttons:
           -
-            id: mdr138g5
-            button_text: 'Car park A'
-            button_link: '#'
-            background_color: '#cfa76b'
-            type: new_set
+            id: mdy1leik
+            dynamic_button:
+              button: 'https://goo.gl/maps/xE3kYSnrSB7jAE8g6'
+              text: 'Car Park A'
+              button_options:
+                style: outline
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
             enabled: true
           -
-            id: mdr1jkbm
-            button_text: 'Car park A'
-            button_link: '#'
-            background_color: '#cfa76b'
-            type: new_set
+            id: mdy1mihl
+            dynamic_button:
+              button: 'https://goo.gl/maps/MwF11vzQm1mWVFDf7'
+              text: 'Car Park B'
+              button_options:
+                style: outline
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
             enabled: true
           -
-            id: mdr1jj9a
-            button_text: 'Car park A'
-            button_link: '#'
-            background_color: '#cfa76b'
-            type: new_set
+            id: mdy1nl92
+            dynamic_button:
+              button: 'https://www.google.com/maps/place/ADNEC+Parking+D/@24.4181602,54.426636,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5e6901cb08d555:0x28c5964679352f94!8m2!3d24.4181553!4d54.4292109!16s%2Fg%2F11tsf87kkv?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D'
+              text: 'Car Park D'
+              button_options:
+                style: outline
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
             enabled: true
           -
-            id: mdr1ji3m
-            button_text: 'Car park A'
-            button_link: '#'
-            background_color: '#cfa76b'
-            type: new_set
+            id: mdy249g2
+            dynamic_button:
+              button: 'https://www.google.com/maps/place/ADNEC+Parking+E+Marina+Hall/@24.4150569,54.4386641,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5e43af32ec2a69:0x5f843f9b6868b973!8m2!3d24.415052!4d54.441239!16s%2Fg%2F11kb46hk8d?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D'
+              text: 'Car Park E'
+              button_options:
+                style: outline
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
             enabled: true
-        last_text: |-
-          <br>
-          Please review the parking <a href="https://www.adnec.ae/en/terms-and-conditions">General Terms & Conditions</a> before your visit.
-        heading_group:
-          heading: null
-          subheading: null
-          focus_icon: false
-          heading_focus_word: null
-          icon: null
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
 fine_seo_title: 'Parking Information'
 fine_seo_preview: 'Parking Information'
 ---

@@ -185,11 +185,17 @@ fields:
                     type: link
                     display: 'Redirect To'
                     localizable: false
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    replicator_preview: true
-                    hide_display: false
+            call_to_action:
+              display: 'Call to Action'
+              icon: align-left
+              fields:
+                -
+                  import: reusable_media_with_cta
+            parking_information:
+              display: 'Parking Information'
+              fields:
+                -
+                  import: parking_information
         forms:
           display: Forms
           icon: form-drop-down-menu

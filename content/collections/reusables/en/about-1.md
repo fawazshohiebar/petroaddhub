@@ -2,7 +2,12 @@
 id: 0cbfa9a5-39cd-4db4-8809-3589cf1c159f
 blueprint: media_with_cta
 title: 'Why Visit'
-heading: 'The Ultimate Destination for Passion, Heritage, and Innovation'
+heading:
+  text: 'The Ultimate Destination for Passion, Heritage, and Innovation'
+  size: small
+  color: black
+  tag: h1
+  uppercase: false
 description: 'Step into a world where tradition meets innovation. The Abu Dhabi International Hunting and Equestrian Exhibition (ADIHEX) is more than an event — it’s a one-of-a-kind cultural and commercial experience that brings together enthusiasts, collectors, families, professionals, and global brands from over 65 countries.'
 actions:
   -
@@ -25,9 +30,13 @@ actions:
     icon: ticket
     type: button
     enabled: false
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1753767032
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754369432
 flipped: false
 duplicated_from: 39f8c616-eb93-4ada-9310-0e1f4b0b324b
-image: dsc_7196-2048x1365-(1).jpg
+image: call_to_actions/why_visit.jpg
+style_config:
+  padding: small
+  color: transparent
+  variant: image_left
 ---
