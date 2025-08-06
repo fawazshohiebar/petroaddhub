@@ -1,0 +1,245 @@
+<section id="gallery" class="py-[45px] md:py-[50px] lg:py-[70px] bg-white relative overflow-hidden">
+    <!-- Decorative Elements -->
+    <div class="absolute right-0 top-0 w-64 h-64 rounded-full bg-[#827654] opacity-5 -translate-y-1/2 translate-x-1/2">
+    </div>
+    <div class="absolute left-0 bottom-0 w-64 h-64 rounded-full bg-[#827654] opacity-5 translate-y-1/2 -translate-x-1/2">
+    </div>
+
+    <div class="container mx-auto px-4 md:px-6 relative" x-data="slidingGallery()">
+        <!-- Section Header -->
+        {{ partial:partials/sets/heading_group }}
+        
+        <!-- Dual Row Sliding Gallery -->
+        <div class="space-y-6 relative">
+            <!-- First Row - Slides Right to Left -->
+            <div class="relative overflow-hidden">
+                <!-- Gradient Overlays for Fade Effect -->
+                <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+
+                <div class="swiper gallery-swiper-1">
+                    <div class="swiper-wrapper">
+                        {{ images }}
+                            <div class="swiper-slide">
+                                <div class="relative group h-40 lg:h-60 overflow-hidden rounded-lg shadow-lg mx-2 cursor-pointer" @click="openLightbox('{{ url }}')">
+                                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('{{ url }}');"></div>
+                                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
+                                </div>
+                            </div>
+                        {{ /images }}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row - Slides Left to Right -->
+            <div class="relative overflow-hidden">
+                <!-- Gradient Overlays for Fade Effect -->
+                <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+
+                <div class="swiper gallery-swiper-2">
+                    <div class="swiper-wrapper">
+                        {{ images }}
+                            <div class="swiper-slide">
+                                <div class="relative group h-40 lg:h-60 overflow-hidden rounded-lg shadow-lg mx-2 cursor-pointer" @click="openLightbox('{{ url }}')">
+                                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('{{ url }}');"></div>
+                                    <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
+                                </div>
+                            </div>
+                        {{ /images }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div x-show="lightboxOpen" 
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0" 
+             x-transition:enter-end="opacity-100"
+             x-transition:leave="transition ease-in duration-300" 
+             x-transition:leave-start="opacity-100"
+             x-transition:leave-end="opacity-0" 
+             class="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
+             @click.self="closeLightbox" 
+             @keyup.escape.window="closeLightbox"
+             x-cloak>
+            <div class="relative max-w-5xl max-h-screen p-4">
+                <button @click="closeLightbox" class="absolute top-4 right-4 text-white hover:text-[#827654] transition-colors z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <img :src="currentImage" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function slidingGallery() {
+        return {
+            swiper1: null,
+            swiper2: null,
+            lightboxOpen: false,
+            currentImage: '',
+
+            openLightbox(imageUrl) {
+                this.currentImage = imageUrl;
+                this.lightboxOpen = true;
+                document.body.classList.add('overflow-hidden');
+            },
+
+            closeLightbox() {
+                this.lightboxOpen = false;
+                document.body.classList.remove('overflow-hidden');
+                this.currentImage = '';
+            },
+
+            init() {
+                // Check if Swiper is available
+                if (typeof Swiper === 'undefined') {
+                    console.error('Swiper is not loaded. Please include SwiperJS in your project.');
+                    return;
+                }
+
+                // Initialize first swiper (slides right to left)
+                this.swiper1 = new Swiper('.gallery-swiper-1', {
+                    slidesPerView: 'auto',
+                    spaceBetween: 16,
+                    speed: 300,
+                    loop: true,
+                    grabCursor: true,
+                    allowTouchMove: true,
+                    simulateTouch: true,
+                    breakpoints: {
+                        320: { slidesPerView: 1.5, spaceBetween: 10 },
+                        640: { slidesPerView: 2.5, spaceBetween: 12 },
+                        768: { slidesPerView: 3.5, spaceBetween: 14 },
+                        1024: { slidesPerView: 4.5, spaceBetween: 16 },
+                        1280: { slidesPerView: 5.5, spaceBetween: 16 }
+                    }
+                });
+
+                // Initialize second swiper (slides left to right)
+                this.swiper2 = new Swiper('.gallery-swiper-2', {
+                    slidesPerView: 'auto',
+                    spaceBetween: 16,
+                    speed: 300,
+                    loop: true,
+                    grabCursor: true,
+                    allowTouchMove: true,
+                    simulateTouch: true,
+                    breakpoints: {
+                        320: { slidesPerView: 1.5, spaceBetween: 10 },
+                        640: { slidesPerView: 2.5, spaceBetween: 12 },
+                        768: { slidesPerView: 3.5, spaceBetween: 14 },
+                        1024: { slidesPerView: 4.5, spaceBetween: 16 },
+                        1280: { slidesPerView: 5.5, spaceBetween: 16 }
+                    }
+                });
+
+                console.log('Gallery initialized successfully');
+            },
+
+            destroy() {
+                if (this.swiper1) {
+                    this.swiper1.destroy(true, true);
+                    this.swiper1 = null;
+                }
+                if (this.swiper2) {
+                    this.swiper2.destroy(true, true);
+                    this.swiper2 = null;
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    [x-cloak] {
+        display: none !important;
+    }
+
+    /* Smooth continuous animations */
+    @keyframes slideRightToLeft {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @keyframes slideLeftToRight {
+        0% {
+            transform: translateX(-50%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    /* Apply animations to swiper wrappers */
+    .gallery-swiper-1 .swiper-wrapper {
+        animation: slideRightToLeft 30s linear infinite;
+        will-change: transform;
+    }
+
+    .gallery-swiper-2 .swiper-wrapper {
+        animation: slideLeftToRight 35s linear infinite;
+        will-change: transform;
+    }
+
+    /* Pause animation on hover */
+    .gallery-swiper-1:hover .swiper-wrapper,
+    .gallery-swiper-2:hover .swiper-wrapper {
+        animation-play-state: paused;
+    }
+
+    /* Swiper slide width */
+    .gallery-swiper-1 .swiper-slide,
+    .gallery-swiper-2 .swiper-slide {
+        width: auto;
+    }
+
+    /* Smooth transitions */
+    .swiper-wrapper {
+        transition-timing-function: ease-out;
+    }
+
+    /* Custom slide min-widths for responsive design */
+    .gallery-swiper-1 .swiper-slide > div,
+    .gallery-swiper-2 .swiper-slide > div {
+        min-width: 200px;
+    }
+
+    @media (min-width: 320px) {
+        .gallery-swiper-1 .swiper-slide > div,
+        .gallery-swiper-2 .swiper-slide > div {
+            min-width: 180px;
+        }
+    }
+
+    @media (min-width: 640px) {
+        .gallery-swiper-1 .swiper-slide > div,
+        .gallery-swiper-2 .swiper-slide > div {
+            min-width: 220px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .gallery-swiper-1 .swiper-slide > div,
+        .gallery-swiper-2 .swiper-slide > div {
+            min-width: 250px;
+        }
+    }
+
+    /* Ensure images cover the container properly */
+    .gallery-swiper-1 .swiper-slide [style*="background-image"],
+    .gallery-swiper-2 .swiper-slide [style*="background-image"] {
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+</style>

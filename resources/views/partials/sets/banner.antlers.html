@@ -1,0 +1,110 @@
+
+
+{{ if image }}
+  {{# Main container wrapper #}}
+  <div class="
+    {{ if width == 'full' }}
+      w-full
+    {{ else }}
+     adnec-container mx-auto
+    {{ /if }}
+    relative overflow-hidden group
+  "
+  {{ if use_image_height != true && image_height && is_div == true }}
+    style="height: {{ image_height }}px;"
+  {{ /if }}
+  >
+
+    {{# Conditional link wrapper for img version #}}
+    {{ if is_div != true && link }}
+      <a 
+        href="{{ link:url ?? link }}"
+        {{ if new_tab == true }}target="_blank" rel="noopener noreferrer"{{ /if }}
+        class="block relative transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+        aria-label="{{ heading:text ?? heading ?? 'Banner link' }}"
+      >
+    {{ /if }}
+
+    {{# Banner image content #}}
+    {{ image }}
+      {{ if is_div == true }}
+        {{# Render as div with background-image #}}
+        <div 
+          class="
+            relative w-full transition-transform duration-700
+            {{ if use_image_height == true }}
+              h-auto
+            {{ else }}
+              h-full
+            {{ /if }}
+          "
+          style="
+          {{if use_image_height == true}} height: {{ height }}px; {{ /if }}
+            background-image: url('{{ url }}');
+            background-size: {{ image_style ?? 'contain' }};
+            background-position: {{focus_css ?? 'center'}};
+            background-repeat: no-repeat;
+          "
+          role="img" 
+          aria-label="{{ alt ?? heading:text ?? heading ?? '' }}"
+        >
+      {{ else }}
+        {{# Render as img tag #}}
+        <img 
+          src="{{ url }}" 
+          alt="{{ alt ?? heading:text ?? heading ?? '' }}"
+          class="
+            w-full 
+            {{ if use_image_height != true && image_height }}
+              h-full object-{{ image_style ?? 'contain' }}
+            {{ else }}
+              h-auto
+            {{ /if }}
+          "
+          loading="lazy"
+        />
+      {{ /if }}
+
+      {{# Overlay link for div version #}}
+      {{ if is_div == true && link }}
+        <a 
+          href="{{ link:url ?? link }}"
+          {{ if new_tab == true }}target="_blank" rel="noopener noreferrer"{{ /if }}
+          class="absolute inset-0 z-20 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+          aria-label="{{ heading:text ?? heading ?? 'Banner link' }}"
+        ></a>
+      {{ /if }}
+
+      {{# Heading text overlay #}}
+      {{ if heading }}
+        {{# Overlay for better text readability #}}
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent z-10"></div>
+        
+        <div class="absolute inset-0 flex items-center justify-center p-4 md:p-8 z-10">
+          <div class="text-center max-w-4xl mx-auto">
+            {{ heading }}
+            {{ partial:sets/heading 
+                :text="heading:text" 
+                :size="heading:size"
+                :color="heading:color"
+                :tag="heading:tag"
+                :uppercase="heading:uppercase"
+            }}
+            {{ /heading }}
+          </div>
+        </div>
+      {{ /if }}
+
+      {{# Close div for background-image version #}}
+      {{ if is_div == true }}
+        </div>
+      {{ /if }}
+    {{ /image }}
+
+    {{# Close conditional link wrapper for img version #}}
+    {{ if is_div != true && link }}
+      </a>
+    {{ /if }}
+
+  </div>
+{{ /if }}

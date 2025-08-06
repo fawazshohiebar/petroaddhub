@@ -1,6 +1,6 @@
 {{?
 
-$colors = [
+$btnColors = [
     'black' => 'bg-gray-900 text-white hover:bg-gray-800 focus:ring-gray-900',
     'white' => 'bg-white text-gray-900 hover:bg-gray-100 focus:ring-white',
     'primary' => 'bg-primary-600 text-white hover:bg-primary-500 focus:ring-primary-600',
@@ -17,14 +17,15 @@ $colors = [
     $icon_position = icon_position ?? button_options:icon_position ?? 'end';
     $new_tab = new_tab ?? button_options:new_tab ?? false;
 }}
-{{? $final_classes = trim("{$base_classes} {$sizes[$size]['padding']} {$sizes[$size]['font']} {$colors[$color]}"); ?}}
 
-<{{ button_type }} href="{{ url }}" 
-    target="{{ new_tab ? '_blank' : '_self' }}"
+{{ $final_classes = base_classes + " " + btnSizes[$size]['padding'] + " " + btnSizes[$size]['font'] + " " + btnColors[$color] }}
+
+<{{ button_type }} {{if button_type == 'a'}}href="{{ url }}" target="{{ new_tab ? '_blank' : '_self' }}"{{/if}} 
+    
     class="{{final_classes}} {{ icon_position == 'start' ? 'flex-row-reverse' : ''}}"
     {{ slot:attributes }}>
     <span class="text-nowrap">{{ slot ?? text }}</span>
     {{ if icon }}
-        {{heroicon variant="outline" :icon="icon" class="{{ sizes[size]['icon'] }} {{(icon | contains('paper-airplane')) ?= 'rtl:rotate-180'}}" }}
+        {{heroicon variant="outline" :icon="icon" class="{{ btnSizes[size]['icon'] }} {{(icon | contains('paper-airplane')) ?= 'rtl:rotate-180'}}" }}
     {{ /if }}
 </{{ button_type ?? 'a' }}>

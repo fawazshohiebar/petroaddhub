@@ -1,0 +1,81 @@
+title: 'Reusable Banner'
+fields:
+  -
+    handle: image
+    field:
+      container: collaterals
+      folder: banners
+      type: assets
+      display: Image
+      localizable: false
+      max_files: 1
+  -
+    handle: link
+    field:
+      type: link
+      display: Link
+      localizable: false
+      width: 66
+  -
+    handle: new_tab
+    field:
+      type: toggle
+      display: 'New Tab'
+      localizable: false
+      width: 33
+  -
+    handle: width
+    field:
+      options:
+        -
+          key: contained
+          value: Contained
+        -
+          key: full
+          value: Full
+      type: button_group
+      display: Width
+      localizable: false
+      width: 33
+      default: contained
+  -
+    handle: image_style
+    field:
+      options:
+        -
+          key: contain
+          value: Contain
+        -
+          key: cover
+          value: Cover
+      type: button_group
+      display: 'Image Style'
+      localizable: false
+      width: 33
+      default: contain
+  -
+    handle: is_div
+    field:
+      type: toggle
+      display: 'Make DIV'
+      localizable: false
+      width: 33
+  -
+    handle: use_image_height
+    field:
+      default: true
+      type: toggle
+      display: 'Use Image Height'
+      localizable: false
+      width: 50
+  -
+    handle: image_height
+    field:
+      input_type: number
+      append: px
+      type: text
+      display: 'Image Height'
+      localizable: false
+      width: 50
+      unless:
+        use_image_height: 'equals true'

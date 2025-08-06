@@ -5,11 +5,13 @@
 
     <div class="theme-container relative">
         <!-- Section Header -->
+        {{ if heading || subheading }}
         <div class="max-w-3xl mx-auto text-center mb-16"
             x-data="{}" 
             x-intersect="$el.classList.add('animate-fade-in')">
-            {{ partial:partials/sets/heading_group :heading="heading_group" }}
+            {{ partial:partials/sets/heading_group }}
         </div>
+        {{ /if }}
         
 
         <div class="max-w-4xl mx-auto">

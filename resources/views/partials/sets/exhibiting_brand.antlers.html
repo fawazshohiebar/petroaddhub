@@ -1,25 +1,218 @@
-<div class="bg-[#F9FAFC]">
-<div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto">
-<div id="exhibitors-init" v-cloak class="exhibitors">
-  <section id="exhibitors" v-show="!loading" class="splide">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li v-for="item in items" class="splide__slide">
-          <div @click="goToExhibitor(item.id)" class="exhibitor-list-item">
-            <img v-if="item.logo_media && item.logo_media.webp" :src="item.logo_media.webp" :alt="item.name">
-            <img v-else-if="item.logo_media" :src="item.logo_media.url" :alt="item.name">
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
+{{?
+  $blockStyles = [
+    'primary' => 'bg-primary-600 text-white kinda-dark',
+    'secondary' => 'bg-secondary-600 text-white kinda-dark',
+    'gray' => 'bg-gray-200 text-gray-800',
+    'lite-primary' => 'bg-primary-50 text-primary-600',
+    'lite-secondary' => 'bg-secondary-50 text-secondary-600',
+    'transparent' => 'bg-transparent text-gray-800 border border-gray-200',
+    'black' => 'bg-black text-white kinda-dark',
+    'white' => 'bg-white text-gray-900',
+    'default' => 'bg-white text-gray-900',
+];
+$blockPadding = [
+  'xlarge' => 'py-16 md:py-20 lg:py-24',
+  'large' => 'py-14 md:py-18 lg:py-22',
+  'medium' => 'py-10 md:py-14 lg:py-18',
+  'small' => 'py-8 md:py-12 lg:py-16',
+  'none' => 'py-0',
+];
 
-  <div v-show="loading" class="loading-holder">
-    <svg class="animate-spin h-10 w-10" fill="none" viewBox="0 0 24 24">
-      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
-      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0..." />
-    </svg>
-  </div>
+?}}
+{{ $size = style_config:size ?? 'normal'; $isCompact = $size === 'compact'; $variant = style_config:variant ?? 'left_image';
+ }}
+
+{{
+  fullEZoneUrl = ezone_base_url + event_id + '?count=' + pagination_count + '&random=' + in_random_order
+}}
+
+<section id="{{ slug }}"
+  class="{{ blockPadding[{style_config:padding ?? 'medium'}] }} {{ blockStyles[{style_config:color ?? 'default'}] }} relative overflow-hidden">
+
+  {{ if heading   }}
+      <div class="text-center mb-16" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+        {{ partial:partials/sets/heading_group }}
+      </div>
+    {{ /if }}
+<div class="adnec-container">
+    <!-- Exhibiting Brands Carousel -->
+    <div class="exhibiting-brands-carousel mb-16 relative" 
+         x-data="{ 
+             swiper: null,
+             exhibitors: [],
+             loading: false,
+             error: null,
+             fullEZoneUrl: '{{ fullEZoneUrl }}',
+             
+             async fetchExhibitors() {
+                 if (this.loading || this.exhibitors.length > 0) return;
+                 
+                 this.loading = true;
+                 this.error = null;
+                 
+                 try {
+                     const response = await fetch(this.fullEZoneUrl);
+                     if (!response.ok) throw new Error('Failed to fetch exhibitors');
+                     
+                     const data = await response.json();
+                     this.exhibitors = data.data || [];
+                     
+                     // Initialize Swiper after data is loaded
+                     this.$nextTick(() => {
+                         this.initSwiper();
+                     });
+                 } catch (err) {
+                     this.error = err.message;
+                     console.error('Error fetching exhibitors:', err);
+                 } finally {
+                     this.loading = false;
+                 }
+             },
+             
+             initSwiper() {
+                 if (window.Swiper && this.$refs.swiperContainer && this.exhibitors.length > 0) {
+                     this.swiper = new window.Swiper(this.$refs.swiperContainer, {
+                         slidesPerView: 1.2,
+                         spaceBetween: 16,
+                         grabCursor: true,
+                         autoHeight: false,
+                         centeredSlides: false,
+                         pagination: {
+                             el: '.carousel-pagination',
+                             clickable: true,
+                             dynamicBullets: false,
+                             bulletClass: 'swiper-pagination-bullet custom-bullet',
+                             bulletActiveClass: 'swiper-pagination-bullet-active custom-bullet-active',
+                         },
+                         navigation: {
+                             nextEl: '.carousel-button-next',
+                             prevEl: '.carousel-button-prev',
+                         },
+                         breakpoints: {
+                             640: {
+                                 slidesPerView: 3,
+                                 spaceBetween: 20,
+                                 centeredSlides: false,
+                             },
+                             1024: {
+                                 slidesPerView: 4,
+                                 spaceBetween: 24,
+                                 centeredSlides: false,
+                             },
+                         }
+                     });
+                 }
+             }
+         }"
+         x-intersect="fetchExhibitors()">
+         
+        <!-- Navigation buttons positioned at top right -->
+        <div class="hidden sm:flex absolute -top-12 right-0 z-10 gap-2" x-show="!loading && exhibitors.length > 0">
+            <button class="carousel-button-prev bg-white/90 hover:bg-primary-50 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center w-10 h-10">
+                {{heroicon:outline:chevron-left class="w-4 h-4 text-primary-600"}}
+            </button>
+            <button class="carousel-button-next bg-white/90 hover:bg-primary-50 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center w-10 h-10">
+                {{heroicon:outline:chevron-right class="w-4 h-4 text-primary-600"}}
+            </button>
+        </div>
+        
+        <!-- Loading State -->
+        <div x-show="loading" class="text-center py-16">
+            <div class="inline-flex items-center justify-center w-16 h-16 border-4 border-primary-200 border-t-primary-600 rounded-full animate-spin"></div>
+            <p class="mt-4 text-gray-600">Loading exhibiting brands...</p>
+        </div>
+        
+        <!-- Error State -->
+        <div x-show="error" class="text-center py-16">
+            <div class="text-red-600 mb-4">{{heroicon:outline:exclamation-triangle class="w-12 h-12 mx-auto"}}</div>
+            <p class="text-red-600 mb-4" x-text="error"></p>
+            <button @click="fetchExhibitors()" class="bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition-colors">
+                Try Again
+            </button>
+        </div>
+         
+        <!-- Carousel -->
+        <div x-show="!loading && !error && exhibitors.length > 0" class="swiper pt-8" x-ref="swiperContainer">
+            <div class="swiper-wrapper">
+                <template x-for="exhibitor in exhibitors" :key="exhibitor.id">
+                    <div class="swiper-slide">
+                        <div class="group relative rounded-2xl overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300 h-full"
+                             x-data="{}" x-intersect="$el.classList.add('animate-fade-in-up')">
+                            
+                            <!-- Large Image Area with Text Overlay -->
+                            <div class="relative h-64 bg-white overflow-hidden">
+                                <img :src="exhibitor.logo_media?.webp || exhibitor.logo_media?.url || exhibitor.logo_media?.fullpath" 
+                                     :alt="exhibitor.name"
+                                     class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                                     loading="lazy">
+                                
+                                <!-- Dark overlay for better text readability -->
+                                {{# <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div> #}}
+                                
+                                <!-- Text Content Overlay -->
+                                {{# <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                    <h3 class="text-lg font-bold mb-1 leading-tight drop-shadow-lg" x-text="exhibitor.name"></h3>
+                                    
+                                    <div class="text-sm opacity-90 leading-relaxed drop-shadow space-y-1">
+                                        <p x-show="exhibitor.stand_formatted" class="flex items-center">
+                                            <span class="font-medium">Stand:</span>
+                                            <span class="ml-1" x-text="exhibitor.stand_formatted"></span>
+                                        </p>
+                                        <p x-show="exhibitor.city_string" class="flex items-center">
+                                            <span class="font-medium">City:</span>
+                                            <span class="ml-1" x-text="exhibitor.city_string"></span>
+                                        </p>
+                                        <p x-show="exhibitor.country?.nice_name" class="flex items-center">
+                                            <span class="font-medium">Country:</span>
+                                            <span class="ml-1" x-text="exhibitor.country.nice_name"></span>
+                                        </p>
+                                    </div>
+                                </div> #}}
+                                
+                                <!-- Subtle hover overlay -->
+                                <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            
+            <!-- Pagination with custom styling -->
+            <div class="carousel-pagination text-center mt-4"></div>
+        </div>
+        
+        <!-- Empty State -->
+        <div x-show="!loading && !error && exhibitors.length === 0" class="text-center py-16">
+            <div class="text-gray-400 mb-4">{{heroicon:outline:building-office class="w-12 h-12 mx-auto"}}</div>
+            <p class="text-gray-600">No exhibiting brands found.</p>
+        </div>
+        
+        <!-- Custom pagination styles -->
+        <style>
+            .custom-bullet {
+                width: 8px !important;
+                height: 8px !important;
+                border-radius: 4px !important;
+                background: #d1d5db !important;
+                opacity: 1 !important;
+                margin: 0 4px !important;
+                transition: all 0.3s ease !important;
+            }
+            
+            .custom-bullet-active {
+                width: 24px !important;
+                background: #827654 !important; /* Primary color */
+                transform: scale(1.1) !important;
+            }
+            
+            .custom-bullet:hover {
+                background: #9ca3af !important;
+            }
+            
+            .custom-bullet-active:hover {
+                background: #6b5d42 !important; /* Darker primary color on hover */
+            }
+        </style>
+    </div>
 </div>
-</div>
-</div>
+</section>

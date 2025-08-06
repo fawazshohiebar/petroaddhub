@@ -42,6 +42,9 @@ html {
 }
 
 @layer utilities {
+  .adnec-container {
+    @apply container mx-auto px-4 md:px-6 relative;
+  }
   .colored-text-secondary {
     @apply text-secondary-500 dark:text-secondary-100;
   }

@@ -14,60 +14,37 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdod042e
+      id: mdybtj44
       values:
-        type: themed_button
-        button_group:
+        type: buttons
+        style_config:
+          padding: small
+          color: white
+          size: normal
+          variant: flex_centered
+        buttons:
           -
-            id: mdod05fz
-            label: 'Enquire to exhibit'
-            size: medium
-            color: primary
-            style: filled
+            id: mdybtmmg
+            dynamic_button:
+              button: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
+              text: null
+              button_options:
+                style: filled
+                color: primary
+                size: large
+                new_tab: false
+                icon: paper-airplane
+                icon_position: end
             type: button
             enabled: true
-        background_color: '#f3f4f6'
   -
     type: set
     attrs:
-      id: mdod9m9b
-      values:
-        type: divider
-        space_height: 40px
-        background_color: '#f3f4f6'
-  -
-    type: set
-    attrs:
-      id: mdo8iyaf
-      values:
-        type: heading_and_text
-        title_text: 'WHO EXHIBITS?'
-        text_field: 'Manufacturers, Wholesalers, Retailers and Distributors of the following:'
-        background_color: '#f5f2eb'
-  -
-    type: set
-    attrs:
-      id: mdo8jn1z
-      values:
-        type: divider
-        space_height: 40px
-        background_color: '#f5f2eb'
-  -
-    type: set
-    attrs:
-      id: mdo8k1jp
+      id: mdyc912n
       values:
         type: reusable_block
         entry:
-          - 6363d154-ba9f-4175-ba6b-efd3ac9e97d1
-  -
-    type: set
-    attrs:
-      id: mdodk1w2
-      values:
-        type: divider
-        space_height: 40px
-        background_color: '#f5f2eb'
+          - 19c78f5c-f170-4bb6-809c-8dac466e09fc
   -
     type: set
     attrs:
@@ -97,8 +74,8 @@ page_builder:
     attrs:
       textAlign: left
 fine_seo_is_title_custom: false
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754315109
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754396093
 fine_seo_title: 'Why Exhibit'
 fine_seo_preview: 'Why Exhibit'
 ---

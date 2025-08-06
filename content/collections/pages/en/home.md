@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754333496
+updated_at: 1754402642
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -33,11 +33,32 @@ page_builder:
   -
     type: set
     attrs:
-      id: mapbqlao
+      id: mdyi906q
       values:
         type: reusable_block
         entry:
           - e955ebf9-b57f-4438-9219-b44ef9f10681
+  -
+    type: set
+    attrs:
+      id: mdygki3k
+      values:
+        type: banner
+        new_tab: true
+        is_div: false
+        use_image_height: false
+        image:
+          - banners/download-app-now-2025_ar2-(1).jpg
+        link: 'https://onelink.to/hbb8wm'
+        width: full
+        image_style: contain
+        heading:
+          text: null
+          size: small
+          color: white
+          tag: p
+          uppercase: true
+        image_height: 300
   -
     type: set
     attrs:
@@ -62,6 +83,39 @@ page_builder:
         type: reusable_block
         entry:
           - 424afcd4-bbf9-488d-bc21-fe1343478187
+  -
+    type: set
+    attrs:
+      id: mdyloxip
+      values:
+        type: exhibiting_brand
+        heading:
+          heading:
+            text: 'Exhibiting Brands'
+            size: small
+            color: black
+            tag: p
+            uppercase: false
+          subheading: null
+          focus_icon: true
+          heading_focus_word: null
+          icon: globe-asia-australia
+        ezone_base_url: 'https://ezone.adihex.com/exhibitors-list-top-with-images-resource/'
+        event_id: 4
+        random: true
+        count: 10
+        in_random_order: true
+        pagination_count: 10
+        style_config_field:
+          padding: small
+          color: black
+          size: normal
+          variant: style1
+        style_config:
+          padding: small
+          color: lite-secondary
+          size: normal
+          variant: style1
   -
     type: set
     attrs:
@@ -97,11 +151,42 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdmubrbn
+      id: mdyt4esn
       values:
-        type: full_width_image
-        image:
-          - added-images/capital-360-banner-exhibition_728x90-2-1536x190.jpg
+        type: banner_carousel
+        heading:
+          heading:
+            text: 'Our Somposers'
+            size: small
+            color: black
+            tag: p
+            uppercase: false
+          subheading: null
+          focus_icon: false
+          heading_focus_word: null
+          icon: null
+        images:
+          -
+            id: hyke8hDT
+            image: banners/adpg_adihex_homepage-banner.jpg
+            link: 'https://www.adportsgroup.com/'
+          -
+            id: mdyt6kjg
+            image: banners/gac_adihex_website_banner.jpg
+            link: 'https://www.gargashgacmotor.com/'
+          -
+            id: mdyt7ja3
+            image: banners/ranaka-banner.png
+            link: 'https://rakna.ae/'
+          -
+            id: mdyt917c
+            image: banners/schiwywaffen.png
+            link: 'https://www.schiwywaffen.com/'
+        new_tab: true
+        width: contained
+        image_style: contain
+        is_div: false
+        use_image_height: true
   -
     type: set
     attrs:
