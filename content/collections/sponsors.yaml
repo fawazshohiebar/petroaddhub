@@ -1,0 +1,9 @@
+title: Sponsors
+sites:
+  - en
+  - ar
+propagate: true
+revisions: false
+date_behavior:
+  past: public
+  future: private

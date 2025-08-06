@@ -1,0 +1,51 @@
+title: Sponsor
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: false
+              validate:
+                - required
+          -
+            handle: sponsor_link
+            field:
+              type: text
+              display: 'Sponsor Link'
+              localizable: false
+          -
+            handle: sponsors_logos
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Sponsors Logos'
+              localizable: false
+          -
+            handle: sponsor_level
+            field:
+              max_items: 1
+              mode: select
+              taxonomies:
+                - sponsor_level
+              type: terms
+              display: 'Sponsor Level'
+              localizable: false
+              create: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

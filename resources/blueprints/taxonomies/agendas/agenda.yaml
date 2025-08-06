@@ -1,0 +1,37 @@
+title: Agenda
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: true
+              validate:
+                - required
+          -
+            handle: image
+            field: basics.image
+            config:
+              validate:
+                - image
+                - 'max_filesize:9216'
+                - 'mimes:png,jpg,jpeg,gif,tiff,webp,avif'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              required: true
+              validate:
+                - required
+                - 'max:200'
+              localizable: false
