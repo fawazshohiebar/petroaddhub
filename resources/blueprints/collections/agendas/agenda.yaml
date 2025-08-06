@@ -1,0 +1,88 @@
+title: Agenda
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: true
+              validate:
+                - required
+          -
+            handle: agenda
+            field:
+              max_items: 1
+              mode: select
+              taxonomies:
+                - agendas
+              type: terms
+              display: Agenda
+              localizable: false
+              width: 50
+          -
+            handle: hall
+            field:
+              max_items: 1
+              taxonomies:
+                - halls
+              type: terms
+              display: Hall
+              localizable: false
+              width: 50
+          -
+            handle: start_time
+            field:
+              type: time
+              display: 'Start time'
+              localizable: false
+              width: 33
+          -
+            handle: end_time
+            field:
+              type: time
+              display: 'End Time'
+              localizable: false
+              width: 33
+          -
+            handle: event_date
+            field:
+              type: date
+              display: Date
+              localizable: false
+              width: 33
+              earliest_date: '2025-08-30'
+              latest_date: '2025-09-08'
+          -
+            handle: content
+            field:
+              type: markdown
+              display: Content
+              localizable: true
+      -
+        display: Relations
+        fields:
+          -
+            handle: speakers
+            field:
+              max_items: 20
+              collections:
+                - speakers
+              type: entries
+              display: Speakers
+              localizable: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

@@ -72,10 +72,6 @@ page_builder:
         type: divider
         space_height: 25px
         background_color: white
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
 fine_seo_title: 'Why Visit'
 fine_seo_preview: 'Why Visit'
 feature_banner_image: call_to_actions/main_cta.jpg
