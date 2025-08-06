@@ -4,10 +4,10 @@ blueprint: tickets
 title: Tickets
 heading: 'Get Your Tickets'
 subheading: 'TICKETS & PASSES'
-description: 'Choose from a variety of ticket options to experience the International Hunting & Equestrian Exhibition - Al Ain 2025.'
+description: 'Choose from a variety of ticket options to experience the International Hunting & Equestrian Exhibition - Abu Dhabi 2025.'
 coming_soon: true
 coming_soon_title: 'Tickets Coming Soon'
-coming_soon_description: 'We are finalizing our ticket options for the International Hunting & Equestrian Exhibition - Al Ain 2025. Tickets will be available for purchase soon. Please check back soon!'
+coming_soon_description: 'We are finalizing our ticket options for the International Hunting & Equestrian Exhibition - Abu Dhabi 2025. Tickets will be available for purchase soon. Please check back soon!'
 coming_soon_countdown_date: '2025-06-01 09:00:00'
 coming_soon_form_enabled: false
 ticket_types:

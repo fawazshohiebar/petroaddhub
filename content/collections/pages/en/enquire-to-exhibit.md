@@ -14,7 +14,7 @@ page_builder:
         type: form
         heading_group:
           heading: 'Enquire to Exhibit – Showcase. Connect. Grow'
-          subheading: 'AAIHEX 2025 offers a strategic platform to elevate your brand, meet prospective clients, and align with industry excellence.'
+          subheading: 'ADIHEX 2025 offers a strategic platform to elevate your brand, meet prospective clients, and align with industry excellence.'
           focus_icon: false
           heading_focus_word: null
           icon: null
@@ -35,6 +35,6 @@ page_builder:
       textAlign: left
 fine_seo_title: 'Enquire to Exhibit'
 fine_seo_preview: 'Book Your Stand'
-fine_seo_description: 'International Hunting & Equestrian Exhibition - Al Ain 2025 offers a platform to elevate your brand, meet prospective clients & align with industry excellence.'
+fine_seo_description: 'International Hunting & Equestrian Exhibition - Abu Dhabi 2025 offers a platform to elevate your brand, meet prospective clients & align with industry excellence.'
 fine_seo_image: misc/padded-logo-horizontal.png
 ---
