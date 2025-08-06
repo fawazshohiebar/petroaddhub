@@ -4,12 +4,12 @@ blueprint: why_participate
 title: 'Why Participate Section'
 heading:
   heading: 'Why Participate?'
-  subheading: 'Join the International Hunting & Equestrian Exhibition - Al Ain 2025 and enjoy exceptional opportunities to showcase your products and services'
+  subheading: 'Join the International Hunting & Equestrian Exhibition - Abu Dhabi 2025 and enjoy exceptional opportunities to showcase your products and services'
   focus_icon: false
   heading_focus_word: 'Join Us'
   icon: null
-main_title: 'Be Among the First to Participate in the International Hunting & Equestrian Exhibition - Al Ain 2025'
-main_subtitle: 'Launch your brand at the biggest and most important event in the Al Ain region'
+main_title: 'Be Among the First to Participate in the International Hunting & Equestrian Exhibition - Abu Dhabi 2025'
+main_subtitle: 'Launch your brand at the biggest and most important event in the Abu Dhabi region'
 benefits:
   -
     id: my2p6xm1

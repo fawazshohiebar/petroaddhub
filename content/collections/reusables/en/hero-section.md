@@ -2,7 +2,7 @@
 id: 1da0b009-5464-456d-8cbc-4736b92d7931
 blueprint: hero
 title: 'Hero Section'
-heading: 'Launching the first edition of the <span>International Hunting & Equestrian Exhibition</span> – Al Ain  2025'
+heading: 'Launching the first edition of the <span>International Hunting & Equestrian Exhibition</span> – Abu Dhabi  2025'
 icons:
   -
     id: mab2w0r4

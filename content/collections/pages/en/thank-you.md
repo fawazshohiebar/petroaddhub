@@ -21,7 +21,7 @@ page_builder:
     content:
       -
         type: text
-        text: 'Thank you for submitting your form to AAIHEX. We appreciate your interest in exhibiting with us. Our team will review your information and get in touch with you soon.'
+        text: 'Thank you for submitting your form to ADIHEX. We appreciate your interest in exhibiting with us. Our team will review your information and get in touch with you soon.'
   -
     type: paragraph
     attrs:
@@ -42,7 +42,7 @@ page_builder:
         type: hardBreak
       -
         type: text
-        text: 'The AAIHEX Team'
+        text: 'The ADIHEX Team'
 fine_seo_is_title_custom: false
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_at: 1752243235

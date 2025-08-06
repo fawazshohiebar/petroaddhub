@@ -21,7 +21,7 @@ page_builder:
     content:
       -
         type: text
-        text: 'نشكرك على تقديم النموذج الخاص بك إلى AAIHEX. نحن نقدر اهتمامك بالمشاركة معنا في المعرض. سيقوم فريقنا بمراجعة معلوماتك والتواصل معك قريباً.'
+        text: 'نشكرك على تقديم النموذج الخاص بك إلى ADIHEX. نحن نقدر اهتمامك بالمشاركة معنا في المعرض. سيقوم فريقنا بمراجعة معلوماتك والتواصل معك قريباً.'
   -
     type: paragraph
     attrs:
@@ -42,7 +42,7 @@ page_builder:
         type: hardBreak
       -
         type: text
-        text: 'فريق AAIHEX.'
+        text: 'فريق ADIHEX.'
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_at: 1752243226
 ---

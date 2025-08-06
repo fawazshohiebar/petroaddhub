@@ -4,7 +4,7 @@ blueprint: gallery
 title: 'Home Page Gallery'
 heading:
   heading: Gallery
-  subheading: 'Explore visuals from past exhibitions and get a glimpse of what to expect at the International Hunting & Equestrian Exhibition - Al Ain 2025.'
+  subheading: 'Explore visuals from past exhibitions and get a glimpse of what to expect at the International Hunting & Equestrian Exhibition - Abu Dhabi 2025.'
   focus_icon: false
   heading_focus_word: 'Exhibition Highlights'
   icon: null

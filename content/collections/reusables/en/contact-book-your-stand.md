@@ -3,7 +3,7 @@ id: 96d67b24-84cb-4e38-8dc7-e8833cbc5ed7
 blueprint: contact_team
 title: 'Contact - Book your Stand'
 heading: 'Book Your Stand'
-description: 'Secure your place at the inaugural International Hunting & Equestrian Exhibition - Al Ain 2025. Contact our sales team today to explore available exhibition spaces and partnership opportunities. Our team will guide you through the process and help you maximize your exhibition experience.'
+description: 'Secure your place at the inaugural International Hunting & Equestrian Exhibition - Abu Dhabi 2025. Contact our sales team today to explore available exhibition spaces and partnership opportunities. Our team will guide you through the process and help you maximize your exhibition experience.'
 contacts:
   -
     id: maf8q1c8
