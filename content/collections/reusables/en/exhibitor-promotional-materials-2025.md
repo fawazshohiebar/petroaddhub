@@ -3,7 +3,12 @@ id: cd6337ea-06d8-4d97-9b51-8407fcfbb3ad
 blueprint: activity
 title: 'Exhibitor Promotional Materials 2025'
 heading:
-  heading: null
+  heading:
+    text: 'Exhibition Activities'
+    size: small
+    color: black
+    tag: p
+    uppercase: false
   subheading: null
   focus_icon: false
   heading_focus_word: null
@@ -36,8 +41,8 @@ main_activities:
 featured_activities:
   -
     id: mdiqvg3h
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754396792
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754378783
 button_group:
   -
     id: mdirjamk

@@ -46,6 +46,9 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
+          -
+            handle: template
+            field: basics.template
   fineSeo:
     display: 'Fine SEO'
     sections:

@@ -748,6 +748,11 @@ fields:
                     instructions: 'Used to force clear cache for assets'
                     localizable: false
                     width: 50
+            agenda_component:
+              display: 'Agenda Component'
+              fields:
+                -
+                  import: reusable_agenda_component
   -
     handle: heading_group
     field:
@@ -895,3 +900,17 @@ fields:
       instructions: 'Keep Hidden for Turnstile Captcha'
       visibility: hidden
       localizable: false
+  -
+    handle: template
+    field:
+      options:
+        -
+          key: default
+          value: Default
+        -
+          key: agenda
+          value: Agenda
+      type: select
+      display: Template
+      localizable: true
+      default: default

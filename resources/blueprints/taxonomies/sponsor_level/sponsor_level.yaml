@@ -1,0 +1,36 @@
+title: 'Sponsor Level'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              width: 75
+              validate:
+                - required
+          -
+            handle: order
+            field:
+              type: integer
+              width: 25
+              display: "Order"
+              default: 999
+              instructions: "Lower numbers appear first"
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              from: title
+              required: true
+              validate:
+                - required

@@ -1,0 +1,207 @@
+{{# IMPORTANT #}}
+
+{{# This file is deprecated. Please use the agenda component in normal default template. #}}
+
+
+
+
+{{# DID YOU SEE THE ABOVE NOTICE?? #}}
+
+{{ start_date = {'2025-08-30'} | format('Y-m-d')
+ end_date = {'2025-09-7'} | format('Y-m-d') }}
+
+<div class="adnec-container py-10" x-data="agenda(
+[
+{{ taxonomy:agendas sort="order:asc" }}
+    {
+        title: '{{ title }}',
+        image: {
+            url: '{{ image.url }}',
+            alt: '{{ image.alt }}'
+        },
+        handle: '{{ slug }}'
+    }{{ unless last }},{{ /unless }}
+{{ /taxonomy:agendas }}
+]
+)">
+
+    {{# Agenda Days Selector #}}
+    {{ partial:agenda/day_selector }}
+    {{# End Agenda Days Selector #}}
+    {{# Program Selector #}}
+    {{ partial:agenda/program_selector }}
+    {{# End Program Selector #}}
+    
+    {{# Loading State #}}
+    <div x-show="loading" class="flex justify-center items-center py-20">
+        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-600"></div>
+        <span class="ml-2 text-gray-600">{{'Loading sessions...' | trans}}</span>
+    </div>
+    
+    {{# Selected Day Daily Agenda Details #}}
+    <div x-show="!loading">
+        {{ partial:agenda/active_day_sessions }}
+    </div>
+</div>
+
+<script>
+    function agenda(programs) {
+        return {
+            selectedDay: 1,
+            startDate: '{{ start_date }}',
+            endDate: '{{ end_date }}',
+            days: [],
+            programs: programs,
+            selectedProgram: 0,
+            sessions: [],
+            schedule: [],
+            loading: false,
+            
+            init() {
+                this.generateDays();
+                
+                // Load initial data
+                this.loadSessions();
+                
+                // Watch for changes
+                this.$watch('selectedProgram', () => {
+                    this.loadSessions();
+                });
+                
+                this.$watch('selectedDay', () => {
+                    this.loadSessions();
+                });
+            },
+            
+            generateDays() {
+                const start = new Date(this.startDate);
+                const end = new Date(this.endDate);
+                const days = [];
+                let current = new Date(start);
+                let dayNumber = 1;
+
+                while (current <= end) {
+                    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                        'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+                    ];
+
+                    const month = monthNames[current.getMonth()];
+                    const day = current.getDate();
+
+                    days.push({
+                        number: dayNumber,
+                        date: `${month} ${day}`,
+                        fullDate: new Date(current)
+                    });
+
+                    current.setDate(current.getDate() + 1);
+                    dayNumber++;
+                }
+
+                this.days = days;
+            },
+            
+            getApiUrl() {
+                const selectedDay = this.days[this.selectedDay - 1];
+                const selectedProgram = this.programs[this.selectedProgram];
+                
+                if (!selectedDay || !selectedProgram) return '';
+                
+                const dateString = selectedDay.fullDate.toISOString().split('T')[0];
+                return `/agenda/${selectedProgram.handle}/${dateString}`;
+            },
+            
+            async loadSessions() {
+                if (!this.days[this.selectedDay - 1] || !this.programs[this.selectedProgram]) {
+                    return;
+                }
+                
+                this.loading = true;
+                
+                try {
+                    const url = this.getApiUrl();
+                    
+                    const response = await fetch(url);
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    
+                    const sessions = await response.json();
+                    this.sessions = sessions;
+                    this.generateSchedule();
+                    
+                } catch (error) {
+                    this.sessions = [];
+                    this.schedule = [];
+                } finally {
+                    this.loading = false;
+                }
+            },
+            
+            generateSchedule() {
+                // Group sessions by time
+                const timeSlots = {};
+                
+                this.sessions.forEach(session => {
+                    const timeKey = this.formatTime(session.start_time);
+                    
+                    if (!timeSlots[timeKey]) {
+                        timeSlots[timeKey] = {
+                            time: timeKey,
+                            events: []
+                        };
+                    }
+                    
+                    // Transform session data for the UI
+                    timeSlots[timeKey].events.push({
+                        id: session.slug || session.title,
+                        title: session.title,
+                        description: session.description,
+                        hall: session.hall || 'TBA',
+                        duration: session.show_time_duration ? 
+                                 `${this.formatTime(session.start_time)} - ${this.formatTime(session.end_time)}` : null,
+                        speakers: session.speakers && session.speakers.length > 0 ? 
+                            session.speakers.map(speaker => ({
+                                name: speaker.name || '',
+                                title: (speaker.position || '') + (speaker.company ? `, ${speaker.company}` : ''),
+                                image: speaker.photo || ''
+                            })) : []
+                    });
+                });
+                
+                // Convert to array and sort by time
+                this.schedule = Object.values(timeSlots).sort((a, b) => {
+                    return this.parseTime(a.time) - this.parseTime(b.time);
+                });
+            },
+            
+            formatTime(timeString) {
+                // Convert 24-hour time to 12-hour format with AM/PM
+                const [hours, minutes] = timeString.split(':');
+                const hour24 = parseInt(hours);
+                const hour12 = hour24 === 0 ? 12 : hour24 > 12 ? hour24 - 12 : hour24;
+                const ampm = hour24 >= 12 ? 'PM' : 'AM';
+                return `${hour12}:${minutes} ${ampm}`;
+            },
+            
+            parseTime(timeString) {
+                // Parse time string for sorting (convert back to 24-hour)
+                const [time, ampm] = timeString.split(' ');
+                const [hours, minutes] = time.split(':');
+                let hour24 = parseInt(hours);
+                
+                if (ampm === 'PM' && hour24 !== 12) {
+                    hour24 += 12;
+                } else if (ampm === 'AM' && hour24 === 12) {
+                    hour24 = 0;
+                }
+                
+                return hour24 * 60 + parseInt(minutes);
+            },
+            
+            getCurrentDaySchedule() {
+                return this.schedule;
+            }
+        }
+    }
+</script>

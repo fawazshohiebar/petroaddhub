@@ -1,0 +1,24 @@
+title: 'Reusable Agenda Component'
+fields:
+  -
+    handle: start_date
+    field:
+      type: date
+      display: 'Start Date'
+      localizable: false
+      width: 50
+  -
+    handle: end_date
+    field:
+      type: date
+      display: 'End Date'
+      localizable: false
+      width: 50
+  -
+    handle: agendas
+    field:
+      taxonomies:
+        - agendas
+      type: terms
+      display: Agendas
+      localizable: false

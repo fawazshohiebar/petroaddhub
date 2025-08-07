@@ -1,0 +1,115 @@
+title: Agenda
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: true
+              validate:
+                - required
+          -
+            handle: start_time
+            field:
+              type: time
+              display: 'Start time'
+              localizable: false
+              width: 33
+          -
+            handle: end_time
+            field:
+              type: time
+              display: 'End Time'
+              localizable: false
+              width: 33
+          -
+            handle: event_date
+            field:
+              type: date
+              display: Date
+              localizable: false
+              width: 33
+              earliest_date: '2025-08-30'
+              latest_date: '2025-09-08'
+          -
+            handle: content
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h4
+                - h5
+                - h6
+                - underline
+                - strikethrough
+                - small
+                - superscript
+                - subscript
+                - horizontalrule
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+              remove_empty_nodes: false
+              container: collaterals
+              type: bard
+              display: Content
+              localizable: false
+              save_html: true
+      -
+        display: Relations
+        fields:
+          -
+            handle: speakers
+            field:
+              max_items: 20
+              collections:
+                - speakers
+              type: entries
+              display: Speakers
+              localizable: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: agendas
+            field:
+              type: terms
+              taxonomies:
+                - agendas
+              display: Agendas
+              mode: select
+              localizable: false
+              max_items: 1
+          -
+            handle: halls
+            field:
+              type: terms
+              taxonomies:
+                - halls
+              display: Halls
+              mode: select
+              localizable: false
+              max_items: 1
