@@ -8,6 +8,22 @@ preferences:
       after_save: continue_editing
     reusables:
       after_save: continue_editing
+    sessions:
+      columns:
+        - title
+        - site
+        - status
+        - event_date
+        - start_time
+        - end_time
+        - speakers
+        - agendas
   assets:
     collaterals:
       mode: grid
+  taxonomies:
+    agendas:
+      columns:
+        - title
+        - slug
+        - order

@@ -14,27 +14,6 @@ tabs:
               validate:
                 - required
           -
-            handle: agenda
-            field:
-              max_items: 1
-              mode: select
-              taxonomies:
-                - agendas
-              type: terms
-              display: Agenda
-              localizable: false
-              width: 50
-          -
-            handle: hall
-            field:
-              max_items: 1
-              taxonomies:
-                - halls
-              type: terms
-              display: Hall
-              localizable: false
-              width: 50
-          -
             handle: start_time
             field:
               type: time
@@ -60,9 +39,37 @@ tabs:
           -
             handle: content
             field:
-              type: markdown
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h4
+                - h5
+                - h6
+                - underline
+                - strikethrough
+                - small
+                - superscript
+                - subscript
+                - horizontalrule
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+              remove_empty_nodes: false
+              container: collaterals
+              type: bard
               display: Content
-              localizable: true
+              localizable: false
+              save_html: true
       -
         display: Relations
         fields:
@@ -86,3 +93,23 @@ tabs:
               type: slug
               localizable: true
               validate: 'max:200'
+          -
+            handle: agendas
+            field:
+              type: terms
+              taxonomies:
+                - agendas
+              display: Agendas
+              mode: select
+              localizable: false
+              max_items: 1
+          -
+            handle: halls
+            field:
+              type: terms
+              taxonomies:
+                - halls
+              display: Halls
+              mode: select
+              localizable: false
+              max_items: 1

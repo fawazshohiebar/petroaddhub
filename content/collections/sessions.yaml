@@ -1,10 +1,13 @@
-title: Agendas
+title: Sessions
 sites:
   - en
   - ar
 propagate: false
 template: default
 layout: layout
+taxonomies:
+  - agendas
+  - halls
 revisions: false
 sort_dir: asc
 date_behavior:
