@@ -39,6 +39,68 @@ html {
   --color-secondary-800: #3b464f;
   --color-secondary-900: #343d45;
   --color-secondary-950: #1f262d;
+
+  /* Custom Animations */
+  --animate-fade-slide-right: fade-slide-right 1s ease forwards;
+  --animate-fade-slide-left: fade-slide-left 1s ease forwards;
+  --animate-fade-slide-up: fade-slide-up 1s ease forwards;
+  --animate-fade-in: fadeIn 1s ease forwards;
+  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+
+  @keyframes fade-slide-right {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-slide-left {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 @layer utilities {
@@ -64,88 +126,21 @@ html {
   .colored-text-black {
     @apply text-black;
   }
-}
 
-.animate-fade-in {
-  animation: fadeIn 1s ease forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+  /* Directional Animation Utilities for RTL/LTR */
+  .ltr\:animate-fade-slide-right:where([dir="ltr"], [dir="ltr"] *) {
+    animation: fade-slide-right 1s ease forwards;
   }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  
+  .rtl\:animate-fade-slide-right:where([dir="rtl"], [dir="rtl"] *) {
+    animation: fade-slide-right 1s ease forwards;
   }
-}
-
-@keyframes fade-in-up {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  
+  .ltr\:animate-fade-slide-left:where([dir="ltr"], [dir="ltr"] *) {
+    animation: fade-slide-left 1s ease forwards;
   }
-
-  .animate-fade-in-up {
-    animation: fade-in-up 0.8s ease-out forwards;
+  
+  .rtl\:animate-fade-slide-left:where([dir="rtl"], [dir="rtl"] *) {
+    animation: fade-slide-left 1s ease forwards;
   }
-
-/* h1 span,
-h2 span,
-h3 span,
-h4 span,
-h5 span,
-h6 span {
-  @apply text-amber-100;
-} */
-
-
-
-.slicking-slider .slick-list {
-  margin: 0 10px;
-  overflow: hidden;
-}
-
-.slider-feedback .slick-list {
-  height: 100%;
-  overflow: hidden;
-  margin: 0 40px;
-}
-
-.slider-feedback .slick-track {
-  height: 100%;
-}
-
-
-.splide__slide{
-    display: flex!important;
-    align-items: center!important;
-    justify-content: center!important;
-}
-.splide__slide img{
-  max-height:185px!important;
-}
-.splide__slide .exhibitor-list-item {
-  display: flex!important;
-  justify-content: center!important;
-}
-
-
-@media only screen and (max-width: 767px) {
-
-
-  .slider-feedback .slick-list {
-    height: 100%;
-    overflow: hidden;
-    margin: 0 0px;
-  }
-
 }

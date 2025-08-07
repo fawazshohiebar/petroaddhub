@@ -1,6 +1,51 @@
 ---
 id: 7ff438ae-3f53-4146-84da-2a1203cd410d
 origin: 67e0641c-45df-420d-90f1-0a3bbe96b8f1
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754300031
+heading: 'تراث يتجدد'
+icons:
+  -
+    id: mdwv396j
+    icon: calendar-days
+    label: '30 أغسطس - 7 سبتمبر'
+    link: '#'
+  -
+    id: mdwv6hil
+    icon: clock
+    label: '11 صباحاً - 10 مساءً'
+  -
+    id: mdwv2qob
+    icon: map-pin
+    label: 'مركز أدنيك أبوظبي'
+    link: '#'
+hero_actions:
+  -
+    id: mdwv7m4p
+    dynamic_button:
+      button: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
+      text: 'احجز مكانك اليوم'
+      button_options:
+        style: filled
+        color: white
+        size: medium
+        new_tab: false
+        icon: paper-airplane
+        icon_position: start
+    type: button
+    enabled: true
+  -
+    id: mdwv8omy
+    dynamic_button:
+      button: 'entry::b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7'
+      text: 'اشترِ تذكرتك الآن'
+      button_options:
+        style: outline
+        color: white
+        size: medium
+        new_tab: true
+        icon: ticket
+        icon_position: start
+    type: button
+    enabled: true
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754577434
 ---

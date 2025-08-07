@@ -12,15 +12,14 @@ description: |-
   يمثل التراث بوصلتنا التي تُشكّل قيمنا وممارساتنا، ولذا نقل إلينا أسلافنا ثقافتهم وحرفهم واهتماماتهم ومهاراتهم من جيل إلى آخر، وبالمثل يسعى معرض أبوظبي الدولي للصيد والفروسية إلى الاحتفاء بإرثهم من خلال تقديم منتجات وخدمات مبتكرة تجمع بين الهوية التراثية الأصيلة وروح الحداثة.
 
   ويمثل المعرض -بالنسبة للشغوفين بالصيد والفروسية- الفعالية المثالية التي تحتفي بهذا الشغف المشترك وتُحيي صدى إرثنا العريق.
-image: null
-badge_text: 'النسخة الأولى'
+badge_text: null
 badge_subtext: null
 buttons:
   -
     id: mdvfk921
     dynamic_button:
       button: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
-      text: 'احجز منصتك'
+      text: 'احجز مكانك اليوم'
       button_options:
         style: filled
         color: primary
@@ -44,6 +43,6 @@ buttons:
         icon_position: end
     type: button
     enabled: true
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754309026
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754578135
 ---

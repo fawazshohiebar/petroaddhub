@@ -10,7 +10,8 @@ page_builder:
       values:
         type: reusable_block
         entry:
-          - 322f734a-569b-4f8f-aeef-d02e9a18ea4d
+          - b8dfb5b2-2bfc-4db0-af0a-652b3946372f
+          - e955ebf9-b57f-4438-9219-b44ef9f10681
   -
     type: set
     attrs:
@@ -48,14 +49,6 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdodjs2b
-      values:
-        type: reusable_block
-        entry:
-          - 7e56d7a4-208b-4cb7-b85d-b5535c35aef3
-  -
-    type: set
-    attrs:
       id: mdo96fjh
       values:
         type: reusable_block
@@ -75,7 +68,9 @@ page_builder:
       textAlign: left
 fine_seo_is_title_custom: false
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754396093
+updated_at: 1754587452
 fine_seo_title: 'Why Exhibit'
 fine_seo_preview: 'Why Exhibit'
+template: default
+feature_banner_image: galleries/2024_gallery/2024_gallery_6.jpg
 ---

@@ -1,9 +1,20 @@
 ---
-id: 662ad5f5-8c34-4c2e-97c0-7473e0ac4a75
-origin: d3542e34-4109-478a-9525-8739e1c13af5
+id: 8a156e82-3cf6-458e-8c2d-aa2f03989a7d
+origin: db449970-0ac9-4d2d-8cb6-1fc600429e4e
+title: 'Why Visit Experiences - AR'
 heading:
-  heading: 'نشاطات المعرض'
-  subheading: 'انغمس في مجموعة متنوعة من التجارب التفاعلية والترفيه في المعرض الدولي للصيد والفروسية - أبوظبي'
+  heading:
+    text: 'نشاطات المعرض'
+    size: small
+    color: primary
+    tag: p
+    uppercase: false
+  subheading:
+    text: 'انغمس في مجموعة متنوعة من التجارب التفاعلية والترفيه في المعرض الدولي للصيد والفروسية - العين'
+    size: small
+    color: primary
+    tag: p
+    uppercase: false
   focus_icon: false
   heading_focus_word: null
   icon: null
@@ -37,5 +48,5 @@ featured_activities:
     id: madhqjqw
     title: 'عروض التلواح'
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747632632
+updated_at: 1754584197
 ---

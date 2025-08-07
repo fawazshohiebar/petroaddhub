@@ -1,23 +1,23 @@
----
 id: b5532a8f-654b-4e5d-9609-826b27206fac
 origin: 19c78f5c-f170-4bb6-809c-8dac466e09fc
-published: false
+title: 'Who Exhibits? - AR'
 heading:
   heading:
-    text: 'استكشف عالم {primary:التراث، والصيد، والثقافة}'
+    text: 'ما هي الجهات المشاركة في المعرض؟'
     size: small
     color: black
     tag: h2
     uppercase: false
   subheading:
-    text: null
-    size: small
+    text: 'الشركات المصنعة وتجار الجملة والتجزئة كما يلي:'
+    size: large
     color: secondary
     tag: p
     uppercase: false
-  focus_icon: false
-  heading_focus_word: 'قطاعات 2025'
-  icon: null
+  focus_icon: true
+  heading_focus_word: null
+  icon: building-storefront
+content: null
 info_cards:
   -
     id: mdvtxk9v
@@ -110,9 +110,5 @@ info_cards:
     heading: السلوقي
     type: info_card
     enabled: true
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754310513
-title: 'Explore 2025 Sectors (Duplicated)'
-duplicated_from: bc822cf7-e053-48b9-821b-600f3ad7d9bd
----
-يجمع معرض أبوظبي الدولي للصيد والفروسية 2025 مجموعة متنوعة من القطاعات التي تحتفي بالتقاليد، وتُبرز الثقافة، وتربط المجتمعات من مختلف أنحاء العالم. من الصقارة والفروسية والمغامرات الخارجية إلى الفنون والحرف اليدوية والأسلحة والمحافظة على التراث — يقدّم كل قطاع تجربة فريدة لعشاق التراث، والمهنيين، والعائلات على حد سواء. اكتشف العمق والتنوّع الذي يجعل من المعرض وجهة لا مثيل لها.
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754587254

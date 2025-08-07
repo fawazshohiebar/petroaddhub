@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754402642
+updated_at: 1754577157
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Abu Dhabi 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -47,8 +47,7 @@ page_builder:
         new_tab: true
         is_div: false
         use_image_height: false
-        image:
-          - banners/download-app-now-2025_ar2-(1).jpg
+        image: banners/download-app-now-2025_ar2-(1).jpg
         link: 'https://onelink.to/hbb8wm'
         width: full
         image_style: contain
@@ -199,5 +198,6 @@ page_builder:
     type: paragraph
     attrs:
       textAlign: left
-fine_seo_description: 'The first edition of the International Hunting & Equestrian Exhibition - Abu Dhabi 2025 will be launched from November 26 to 30, 2025, at ADNEC Abu Dhabi Centre.'
+fine_seo_description: 'Celebrate inherited values at ADIHEX 2025 — An immersive heritage &amp; innovation event merging ancestral traditions with cutting‑edge hunting, falconry & equestrian experiences.'
+fine_seo_image: brand/logos/adihex-logo-social.png
 ---
