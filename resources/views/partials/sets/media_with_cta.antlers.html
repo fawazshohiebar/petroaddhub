@@ -137,7 +137,7 @@ style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image'
         <div class="adnec-container z-10">
             <div class="flex flex-col lg:flex-row items-center {{ $isCompact ? 'gap-6' : 'gap-12' }} {{ $variant == 'right_image' ? 'lg:flex-row-reverse' : '' }}">
                 <!-- Image Section -->
-                <div class="w-full {{ $isCompact ? 'lg:w-2/5' : 'lg:w-1/2' }}" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-right')">
+                <div class="w-full {{ $isCompact ? 'lg:w-2/5' : 'lg:w-1/2' }}" x-data="{}" x-intersect="$el.classList.add('{{ $variant == 'right_image' ? 'ltr:animate-fade-slide-left' : 'ltr:animate-fade-slide-right' }}', '{{ $variant == 'right_image' ? 'rtl:animate-fade-slide-right' : 'rtl:animate-fade-slide-left' }}')">
                     <div class="relative">
                         {{ if image }}
                             {{ glide:image preset="{{ $isCompact ? 'medium' : 'large' }}" }}
@@ -161,14 +161,13 @@ style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image'
                 </div>
 
                 <!-- Content Section -->
-                <div class="w-full {{ $isCompact ? 'lg:w-3/5' : 'lg:w-1/2' }}" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-left')">
+                <!-- Content Section -->
+                <div class="w-full {{ $isCompact ? 'lg:w-3/5' : 'lg:w-1/2' }}" x-data="{}" x-intersect="$el.classList.add('{{ $variant == 'right_image' ? 'ltr:animate-fade-slide-right' : 'ltr:animate-fade-slide-left' }}', '{{ $variant == 'right_image' ? 'rtl:animate-fade-slide-left' : 'rtl:animate-fade-slide-right' }}')">
                     <div class="flex items-center {{ $isCompact ? 'mb-2' : 'mb-4' }}">
                         <div class="{{ $isCompact ? 'w-8 h-0.5' : 'w-12 h-1' }} bg-[#827654]"></div>
                         <span
                             class="rtl:mr-4 ltr:ml-4 text-[#827654] font-medium uppercase ltr:tracking-wider {{ $isCompact ? 'text-sm' : '' }}">{{ section_label }}</span>
-                    </div>
-
-                    {{ heading }}
+                    </div>                    {{ heading }}
                         {{ partial:sets/heading :text="text" :size="size" :color="color" :tag="tag" :uppercase="uppercase" }}
                     {{ /heading }}
 
@@ -186,53 +185,3 @@ style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image'
         </div>
     {{ /if }}
 </section>
-
-<style>
-    .animate-fade-slide-right {
-        animation: fadeSlideRight 1s ease forwards;
-    }
-
-    .animate-fade-slide-left {
-        animation: fadeSlideLeft 1s ease forwards;
-    }
-
-    .animate-fade-slide-up {
-        animation: fadeSlideUp 1s ease forwards;
-    }
-
-    @keyframes fadeSlideRight {
-        from {
-            opacity: 0;
-            transform: translateX(-50px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    @keyframes fadeSlideLeft {
-        from {
-            opacity: 0;
-            transform: translateX(50px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    @keyframes fadeSlideUp {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-</style>

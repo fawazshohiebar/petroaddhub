@@ -1,17 +1,13 @@
 ---
-id: 22227610-dc48-4f42-9394-c222c87592a8
-blueprint: page
-title: Features
-fine_seo_is_title_custom: false
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754481540
-fine_seo_title: '2025 Features'
-fine_seo_preview: '2025 Features'
+id: abf1d00b-a591-44e5-8c71-b9701e33b901
+origin: 22227610-dc48-4f42-9394-c222c87592a8
+title: الفعاليات
 page_builder:
   -
     type: set
     attrs:
       id: mdy3tijj
+      enabled: false
       values:
         type: call_to_action
         style_config:
@@ -54,26 +50,19 @@ page_builder:
           size: normal
           variant: right_image
         heading:
-          text: Arena
+          text: 'منطقة العروض الحية (الأرينا)'
           size: small
           color: black
           tag: p
           uppercase: false
-        description: |-
-          The Arena provides a family friendly space filled with multicultural, educational, and interactive shows for all ages. Visitors can enjoy daily performances, engaging workshops, beauty contests, auctions, and a variety of exciting activities. 
-
-          **This year’s new shows include thrilling:**
-          • Equestrian shows. • Falconry shows simulating hunting experience. • Mongolian hunting practices with Eagles. • Arabian Saluki Lure Coursing Demonstration and Competition. • Traditional Bedouin Camel Show • Arabian Horse Auction • Tshouleeb Competition • Mono Breed Group Show • Sighthound Specialty Show
-
-          **Returning shows:**
-          • Falcon Beauty Contest • Arabian Saluki Beauty Contest • Camel Auction • International Dog Show • Emirati Handler’s Competition • Gymkhana for People of Determination (Children Only)
+        description: 'تشكّل منطقة العروض الحية (الأرينا) القلب النابض للمعرض، إذ تقدّم تجربة عائلية تشمل عروضاً تعليمية وتفاعلية متنوعة ومناسبة لكل الأعمار. استمتعوا بالعروض العائلية اليومية والأنشطة وورش العمل ومسابقات الجمال والمزادات الشيّقة وغيرها الكثير. وتضم أبرز الفعاليات مزاد الصقور ومسابقة مزاين الصقور، ومسابقة الكلاب الدولية للسلالات المنفردة، ومزاد الهجن، ومسابقة ركوب الخيل لأصحاب الهمم، واستعراض الفروسية والموسيقى، وركوب المهر، ومركز فرسان عُمان للفروسية، إضافة إلى ورشة العمل الملهمة والعروض الموسيقية التي تقدمها الفارسة فاطمة البلوشي، واستعراض ركوب الخيل بالطريقة الرومانية مع الفارس عبدالله الغفري.'
         image: added-images/dsc_4814-2048x1365.jpg
         buttons:
           -
             id: mdy3ups5
             dynamic_button:
               button: 'https://map.adihex.com/directions?to=prNQGQJ5ogm5J&toPoiSlug=arena&mapId=jKkBVW5WgdZYQ'
-              text: 'Arena Location'
+              text: 'مكان الأرينا'
               button_options:
                 style: outline
                 color: primary
@@ -95,19 +84,19 @@ page_builder:
           size: normal
           variant: left_image
         heading:
-          text: 'Falcon Auction'
+          text: 'مزادات الصقور'
           size: small
           color: black
           tag: p
           uppercase: false
-        description: 'Building on ADIHEX’s rich legacy of successful auctions, this year’s falcon auctions will take place before and during exhibition. **The pre-event auctions will be held on August 16 & 17 and August 23 & 24, 2025 in Conference Room A. The in-event auctions will take place on August 30 & 31 and September 6 & 7, 2025, starting at 7:30 PM**. All falcons will be displayed in advance, allowing participants to view them up close and access their full biodata before bidding. This year also features an online auction, enabling participants to join remotely and bid in real time from anywhere in the world.'
+        description: 'امتداداً لإرث معرض أبوظبي الغني بالمزادات الناجحة، تُقام مزادات الصقور هذا العام قبل المعرض وخلاله. ستُعقد المزادات التمهيدية بتاريخ 16 و17 أغسطس و23 و24 أغسطس 2025 في قاعة المؤتمرات A. أما المزادات خلال المعرض فستُقام في 30 و31 أغسطس و6 و7 سبتمبر 2025، بدءًا من الساعة 7:30 مساءً. سيتم عرض جميع الصقور مسبقًا، مما يتيح للمشاركين مشاهدتها عن قرب والاطلاع على بياناتها الكاملة قبل الدخول في المزاد. ويتميز هذا العام بإتاحة المزاد عبر الإنترنت، ما يسمح للمشاركين بالمزايدة المباشرة من أي مكان في العالم.'
         image: added-images/mb64231-768x511.jpg
         buttons:
           -
             id: mdy3ups5
             dynamic_button:
               button: 'https://map.adihex.com/directions?to=zJAkVkykrgYjD&toPoiSlug=falcon-auction-r&mapId=jKkBVW5WgdZYQ'
-              text: 'Falcon Auction Location'
+              text: 'مكان مزاد الصقور'
               button_options:
                 style: outline
                 color: primary
@@ -129,12 +118,12 @@ page_builder:
           size: normal
           variant: right_image
         heading:
-          text: 'The Young Falconers’ Village and Emirati Etiquette Learning Zone'
+          text: 'قرية الصقارين الصغار ومنطقة تعلم الإتيكيت الإماراتي'
           size: small
           color: black
           tag: p
           uppercase: false
-        description: 'This exciting zone offers interactive workshops for children to learn about falcons, including handling techniques and making falconry tools like hoods, anklets, and jesses. Kids can also enjoy falcon-themed arts and crafts. In the Hadheera Area, they’ll explore Emirati customs such as greeting guests, majlis etiquette, and the proper way to serve Arabic coffee, including the order of serving based on seniority.'
+        description: 'منطقة تفاعلية مخصصة للأطفال تشمل ورش عمل لتعليمهم أنواع الصقور، كيفية التعامل معها، وصناعة أدوات الصقارة مثل البرقع والمسبقة والمرسل. كما تتضمن أنشطة فنية مستوحاة من عالم الصقور. وفي منطقة "الحظيرة"، يتعرف الأطفال على العادات الإماراتية مثل استقبال الضيوف وآداب المجلس والطريقة الصحيحة لتقديم القهوة العربية.'
         image: features/dsc_6007-scaled.jpg
   -
     type: set
@@ -148,19 +137,19 @@ page_builder:
           size: normal
           variant: left_image
         heading:
-          text: 'Knowledge Hub'
+          text: 'مركز المعرفة'
           size: small
           color: black
           tag: p
           uppercase: false
-        description: 'Knowledge Hub is a platform that provides exhibitors, experts, innovators, and industry leaders with the opportunity to present their latest innovations, cutting-edge technologies, share industry trends and research findings that shape the future of the different sectors covered in ADIHEX. Also, for governmental entities and NGOs to raise awareness of various initiatives and national campaigns.'
+        description: 'يضم مركز المعرفة التابع للمعرض، يمكن للزوار الاستمتاع بالعروض الحية والمشاركة في ورش العمل العملية التي ستأخذهم في رحلة إلى أعماق التراث الإماراتي المرتبط بالصقارة والفروسية وفراسة الصحراء والمهارات البحرية واكتشاف أسرار العيش في الصحراء من كبار الخبراء. اكتشفوا كنوز التراث الإماراتي، وتعلّموا أهم مهارات السلامة والأمن في بيئة تعليمية ممتعة.'
         image: added-images/dsc_6007-2048x1365.jpg
         buttons:
           -
             id: mdy3ups5
             dynamic_button:
               button: 'https://map.adihex.com/directions?to=z9NngXzoqVDy3&toPoiSlug=knowledge-hub&mapId=jKkBVW5WgdZYQ'
-              text: 'Click here for the knowledge hub location'
+              text: 'موقع مركز المعرفة'
               button_options:
                 style: outline
                 color: primary
@@ -182,12 +171,12 @@ page_builder:
           size: normal
           variant: right_image
         heading:
-          text: 'Shooting Range by Tasleeh'
+          text: 'ميدان الرماية من "تسليح"'
           size: small
           color: black
           tag: p
           uppercase: false
-        description: 'Step into the Tasleeh Stand within the “Hunting & Shooting” sector and elevate your shooting skills at our cutting-edge shooting range. Whether you’re a seasoned marksman or a novice eager to learn, this fully equipped range offers an exhilarating opportunity to practice and perfect your aim. Experience the thrill of hitting your target with precision in a dynamic environment designed for enthusiasts of all levels. Join us for an action-packed adventure where skill meets excitement!'
+        description: 'يمكنكم زيارة جناح شركة "تسليح" ضمن قسم "الصيد والرماية" للارتقاء بمهاراتكم في ميدان الرماية الحديثة. ويتيح الميدان المجهز بالكامل لكل من الرماة المتمرسين والمبتدئين فرصة لممارسة الرماية وإتقان التصويب. اختبروا متعة إصابة الهدف بدقة في بيئة تفاعلية مصممة لهواة الرماية من كل المستويات. انضموا إلينا في مغامرة مليئة بالتشويق تجتمع فيها المهارة مع الحماسة!'
         image: features/dsc_1335-scaled.jpg
         buttons:
           -
@@ -216,12 +205,12 @@ page_builder:
           size: normal
           variant: left_image
         heading:
-          text: 'Marbling workshops & Mural Painting'
+          text: 'ورش الترخيم والرسم الجداري'
           size: small
           color: black
           tag: p
           uppercase: false
-        description: 'Located in the ICC Hall, this immersive art area offers creative activities for all ages, including marbling workshops, a mural painting experience inspired by ADIHEX sectors, and a charm station where visitors can design their own charm bracelets. Participants can take home a personalized artwork as a memorable keepsake.'
+        description: 'في قاعة ICC، تتوفر أنشطة فنية لجميع الأعمار تشمل ورش الترخيم، تجربة الرسم الجداري المستوحاة من قطاعات المعرض، ومحطة تصميم السلاسل حيث يمكن للزوار تصميم أساورهم الخاصة واختيار القطع والزينة بأنفسهم. يمكن للمشاركين أخذ أعمالهم الفنية الشخصية كتذكار مميز.'
         image: features/dsc_6008-scaled.jpg
   -
     type: set
@@ -235,12 +224,12 @@ page_builder:
           size: normal
           variant: right_image
         heading:
-          text: 'Arabian Saluki Zone'
+          text: 'منطقة السلوقي العربي'
           size: small
           color: black
           tag: p
           uppercase: false
-        description: 'Located in the ICC Hall, the Arabian Saluki area features workshops and arts and crafts activities where children can create Saluki-themed souvenirs. Visitors can also explore a photo gallery showcasing different types of Arabian Salukis and learn about their historical significance in Emirati heritage.'
+        description: 'تقع في قاعة ICC، وتشمل ورش عمل وأنشطة فنية للأطفال لتصميم تذكارات مستوحاة من السلوقي العربي، بالإضافة إلى معرض صور يعرض أنواع السلوقي المختلفة ومعلومات عن أهميته التاريخية في التراث الإماراتي.'
         image: features/1f4a2280-2.jpg
   -
     type: set
@@ -254,12 +243,12 @@ page_builder:
           size: normal
           variant: left_image
         heading:
-          text: 'Decoden Art, Mosaic & Paint your Night Lamp Workshops'
+          text: 'فن ديكودن، الفسيفساء، ورش تلوين المصابيح الليلية'
           size: small
           color: black
           tag: p
           uppercase: false
-        description: 'This artistic zone offers fun, hands-on activities for all age groups. Visitors can try Decoden Art, a Japanese craft where charms are placed on icing-like glue to decorate items like phone covers and accessories. Other experiences include painting night lamps with colorful designs and mosaic workshops to create custom coasters.'
+        description: 'منطقة فنية تفاعلية تضم أنشطة ممتعة لجميع الأعمار. تشمل تجربة "ديكودن" اليابانية، حيث يتم تزيين الإكسسوارات باستخدام مادة تشبه كريمة الزينة مع وضع الزينة المصغرة عليها. كما يمكن للزوار تلوين مصابيح ليلية بتصاميم زاهية من خلال استخدام ورق تتبع، والمشاركة في ورش الفسيفساء لصنع قواعد أكواب بتصميم شخصي.'
         image: features/dsc_6008-scaled.jpg
   -
     type: paragraph
@@ -295,5 +284,6 @@ page_builder:
     type: paragraph
     attrs:
       textAlign: left
-feature_banner_image: galleries/2024_gallery/2024_gallery_10.jpg
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754584792
 ---

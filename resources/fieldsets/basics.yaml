@@ -621,10 +621,10 @@ fields:
                 -
                   handle: ezone_base_url
                   field:
-                    default: 'https://ezone.adihex.com'
                     type: text
                     display: 'EZone Base Url'
                     localizable: false
+                    placeholder: 'https://ezone.adihex.com'
                 -
                   handle: event_id
                   field:
@@ -664,21 +664,21 @@ fields:
                 -
                   handle: main_color
                   field:
-                    default: grey
                     type: text
                     display: 'Main Color'
                     instructions: 'Refer to <a href="https://vuetifyjs.com/en/styles/colors/#material-colors" target="_blank">Color Palette</a>'
                     localizable: false
                     width: 50
+                    placeholder: grey
                 -
                   handle: color_level
                   field:
-                    default: darken-4
                     type: text
                     display: 'Color Level'
                     instructions: 'Refer to <a href="https://vuetifyjs.com/en/styles/colors/#material-colors" target="_blank">Color Palette</a>'
                     localizable: false
                     width: 50
+                    placeholder: darken-4
                 -
                   handle: has_products
                   field:
@@ -704,35 +704,35 @@ fields:
                 -
                   handle: scroll_margin_top
                   field:
-                    default: '100'
                     type: integer
                     display: 'Scroll Margin Top'
                     localizable: false
                     width: 50
+                    placeholder: '100'
                 -
                   handle: awards_search_active_on
                   field:
-                    default: 'exhibitors,products'
                     type: text
                     display: 'Awards Search Active On'
                     localizable: false
                     width: 50
+                    placeholder: 'exhibitors,products'
                 -
                   handle: awards_title
                   field:
-                    default: 'Innovation Awards'
                     type: text
                     display: 'Awards Title'
                     localizable: false
                     width: 50
+                    placeholder: 'Innovation Awards'
                 -
                   handle: external_search_prefix
                   field:
-                    default: 'https://aisearch.idexuae.ae/'
                     type: text
                     display: 'External Search Prefix'
                     localizable: false
                     width: 50
+                    placeholder: 'https://aisearch.adihex.com/'
                 -
                   handle: show_contact_details
                   field:
@@ -748,6 +748,7 @@ fields:
                     instructions: 'Used to force clear cache for assets'
                     localizable: false
                     width: 50
+                    placeholder: '1234123'
             agenda_component:
               display: 'Agenda Component'
               fields:

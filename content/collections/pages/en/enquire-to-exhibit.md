@@ -4,7 +4,7 @@ blueprint: page
 title: 'Enquire to Exhibit'
 fine_seo_is_title_custom: false
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1752243294
+updated_at: 1754588197
 page_builder:
   -
     type: set
@@ -21,6 +21,17 @@ page_builder:
         form: book_your_stand
         show_labels: true
         redirect_to_url: 'entry::275ecc1e-5364-4ceb-906a-16601a396d77'
+        heading:
+          heading:
+            text: 'Enquire to Exhibit'
+            size: small
+            color: black
+            tag: p
+            uppercase: false
+          subheading: null
+          focus_icon: false
+          heading_focus_word: 'ADIHEX 2025'
+          icon: null
   -
     type: set
     attrs:
@@ -36,5 +47,7 @@ page_builder:
 fine_seo_title: 'Enquire to Exhibit'
 fine_seo_preview: 'Book Your Stand'
 fine_seo_description: 'International Hunting & Equestrian Exhibition - Abu Dhabi 2025 offers a platform to elevate your brand, meet prospective clients & align with industry excellence.'
-fine_seo_image: misc/padded-logo-horizontal.png
+template: default
+fine_seo_image: dsc_6082-2048x1365.jpg
+feature_banner_image: mb63891-768x511.jpg
 ---

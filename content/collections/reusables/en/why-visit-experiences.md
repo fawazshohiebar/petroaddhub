@@ -47,17 +47,7 @@ main_activities:
 featured_activities:
   -
     id: mdiqvg3h
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1753767485
-button_group:
-  -
-    id: mdirjamk
-    label: 'DIscover More'
-    size: medium
-    color: secondary
-    style: filled
-    type: button
-    enabled: false
-    url: holl
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754584146
 duplicated_from: d3542e34-4109-478a-9525-8739e1c13af5
 ---

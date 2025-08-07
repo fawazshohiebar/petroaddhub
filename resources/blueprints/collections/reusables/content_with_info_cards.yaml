@@ -1,6 +1,28 @@
-title: Content with Info Cards
-sections:
+title: 'Content with Info Cards'
+tabs:
   main:
     display: Content
-    fields:
-      - import: reusable_content_with_info_cards
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: true
+              validate:
+                - required
+          -
+            import: reusable_content_with_info_cards
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

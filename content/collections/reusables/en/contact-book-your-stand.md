@@ -24,6 +24,6 @@ contacts:
     phone_number: '+971 2 406 3245'
     email: sara.aljaberi@adnec.ae
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747643207
-image: misc/shutterstock_1111453718-scaled.jpg
+updated_at: 1754587926
+image: galleries/2024_gallery/2024_gallery_12.jpg
 ---
