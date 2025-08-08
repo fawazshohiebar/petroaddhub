@@ -1,0 +1,14 @@
+{{#
+    @name Error: Redirects
+    @desc Handles the 404 page redirects
+#}}
+
+{{# Redirect if current_url is in the Redirects global. #}}
+{{ redirects:redirects | whereIn('url_old', [{current_uri | urldecode}, { {current_uri | urldecode} + '/'}]) }}
+    <p>Debug - Found redirect for: {{ url_old }} → {{ internal_url ?? external_url }}</p>
+    {{ if internal_url }}
+        {{ %redirect :to="internal_url:url" response="{response}" }}
+    {{ elseif external_url }}
+        {{ %redirect :to="external_url" response="{response}" }}
+    {{ /if }}
+{{ /redirects:redirects }}
