@@ -1,0 +1,141 @@
+redirects:
+  -
+    id: me2t66d8
+    url_old: /why-visit/
+    internal_url: a51b31a8-d8c9-48b9-9fea-92afa0b3b9fc
+    response: 302
+  -
+    id: me2v8euh
+    url_old: /features/
+    internal_url: 22227610-dc48-4f42-9394-c222c87592a8
+    response: 302
+  -
+    id: me2wo4dt
+    url_old: /registration/
+    internal_url: b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7
+    response: 302
+  -
+    id: me3a1b2c
+    url_old: /speakers/
+    internal_url: fef0a386-0f63-45a3-94c7-97f83529c830
+    response: 302
+  -
+    id: me3b2c3d
+    url_old: /exhibit/exhibitor-list/
+    internal_url: bb37965e-f91b-4ced-8aa3-2df954ced5ab
+    response: 302
+  -
+    id: me3c3d4e
+    url_old: /interactive-map-adihex-2025/
+    external_url: 'https://map.adihex.com/?mapId=jKkBVW5WgdZYQ'
+    response: 302
+  -
+    id: me3d4e5f
+    url_old: /download-adihex-app/
+    response: 302
+    internal_url: d3b8f489-3376-4124-b0ae-eb44394fd56a
+  -
+    id: me3e5f6g
+    url_old: /visitor-information/parking-information/
+    internal_url: 8ab494c3-b905-44b4-b2f1-ec25f4fe8bed
+    response: 302
+  -
+    id: me3f6g7h
+    url_old: /why-to-exhibit/
+    internal_url: 9e18dec0-de31-48d2-b91c-2ea4f28cfb0f
+    response: 302
+  -
+    id: me3g7h8i
+    url_old: /e-zone-login/
+    external_url: 'https://ezone.adihex.com/login'
+    response: 302
+  -
+    id: me3h8i9j
+    url_old: /promotional-materials/
+    internal_url: 56f402bd-ef8f-42f8-bdf0-8cbe736853f6
+    response: 302
+  -
+    id: me3i9j0k
+    url_old: /sales-brochure-2025/
+    internal_url: 1512a292-ac2d-453f-9323-e679b145efc8
+    response: 302
+  -
+    id: me3j0k1l
+    url_old: /exhibit/post-show-report-2024/
+    internal_url: a5ad64aa-044c-4a7f-b60f-11303b9122e1
+    response: 302
+  -
+    id: me3k1l2m
+    url_old: /media/media-registration/
+    internal_url: 95868f89-d9b7-4b83-a09d-43ac1858e192
+    response: 302
+  -
+    id: me3l2m3n
+    url_old: /become-a-media-partner/
+    internal_url: b9ed386b-c5e5-4a93-897c-05be9477c053
+    response: 302
+  -
+    id: me3m3n4o
+    url_old: /sponsors-partners/media-partners/
+    internal_url: 7ea32775-fe59-4926-ae0a-da035129a2bf
+    response: 302
+  -
+    id: me3n4o5p
+    url_old: /contact-us/
+    internal_url: 8cc63d1c-8cec-40c0-9eff-689c72f40539
+    response: 302
+  -
+    id: me3o5p6q
+    url_old: /capital-events-llc-sustainable-development-policy/
+    internal_url: 52d66057-af24-4d2c-a705-59656cc289ee
+    response: 302
+  -
+    id: me3p6q7r
+    url_old: /ar/الفعاليات/
+    internal_url: abf1d00b-a591-44e5-8c71-b9701e33b901
+    response: 302
+  -
+    id: me3q7r8s
+    url_old: /ar/registration/
+    internal_url: 63466c00-5686-42a7-b5bf-36935f3563a0
+    response: 302
+  -
+    id: me3r8s9t
+    url_old: /ar/قائمة-العارضين/
+    internal_url: ca87f7bf-3e49-4f6e-a38b-1c8e6aadec36
+    response: 302
+  -
+    id: me3s9t0u
+    url_old: /ar/نزل-التطبيق-الأن/
+    internal_url: 8dda41eb-a23e-4de0-a726-d24b38ced748
+    response: 302
+  -
+    id: me3t0u1v
+    url_old: /ar/معلومات-الزوار/معلومات-مواقف-السيارات/
+    internal_url: e45d483f-bb19-48ac-aedf-fc86ee574383
+    response: 302
+  -
+    id: me3u1v2w
+    url_old: /ar/لماذا-تعرضوا-منتجاتكم-في-المعرض/
+    internal_url: 786ea688-0705-4ea1-9532-9d108ff6e372
+    response: 302
+  -
+    id: me3v2w3x
+    url_old: /ar/مواد-ترويجية-للعارضين/
+    internal_url: c9cf109e-be4c-44ee-8451-beda0d795216
+    response: 302
+  -
+    id: me3w3x4y
+    url_old: /ar/سياسة-التنمية-المستدامة-لشركة-كابيتا/
+    internal_url: b4422980-2277-40e9-91ba-e5eb0fe21933
+    response: 302
+  -
+    id: me3x4y5z
+    url_old: /ar/التواصل/
+    internal_url: 88e597e9-2759-4922-a2a3-55ac2ec9e0f5
+    response: 302
+  -
+    id: me3y5z6a
+    url_old: /ar/شركاء-الاعلام/
+    internal_url: 313db36b-4390-488f-a7b3-53d1818150db
+    response: 302
