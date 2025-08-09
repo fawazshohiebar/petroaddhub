@@ -39,9 +39,6 @@ style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image'
                     <div class="w-full h-full bg-cover bg-no-repeat" 
                          style="background-image: url('{{ url }}'); background-position: {{ focus_css ?? 'center' }};"></div>
                 {{ /glide:image }}
-            {{ else }}
-                <div class="w-full h-full bg-cover bg-no-repeat" 
-                     style="background-image: url('https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/04/shutterstock_1111453718-scaled.jpg'); background-position: center;"></div>
             {{ /if }}
             <div class="absolute inset-0 bg-black/40"></div>
         </div>

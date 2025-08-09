@@ -26,7 +26,7 @@
     {{ /if }}
 
     {{# Banner image content #}}
-    {{ image }}
+    {{ glide:image format="webp" }}
       {{ if is_div == true }}
         {{# Render as div with background-image #}}
         <div 
@@ -52,6 +52,9 @@
         {{# Render as img tag #}}
         <img 
           src="{{ url }}" 
+          width="{{ width }}"
+          height="{{ height }}" 
+          {{ if focus_css }}style="object-position: {{focus_css}};"{{ /if }}
           alt="{{ alt ?? heading:text ?? heading ?? '' }}"
           class="
             w-full 
@@ -99,7 +102,7 @@
       {{ if is_div == true }}
         </div>
       {{ /if }}
-    {{ /image }}
+    {{ /glide:image }}
 
     {{# Close conditional link wrapper for img version #}}
     {{ if is_div != true && link }}

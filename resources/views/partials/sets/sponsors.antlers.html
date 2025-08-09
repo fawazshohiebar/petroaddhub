@@ -19,9 +19,9 @@
                       {{ sponsors}}
                     <div class="bg-white rounded-lg p-4 flex flex-col items-center hover:shadow-md transition w-[calc(50%-0.75rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
                       <a href="{{sponsor_link}}">
-                      {{sponsors_logos}}
-                      <img src="{{url}}" alt="Caracal" class="h-16 mb-2  mx-auto">
-                        {{/sponsors_logos}}
+                      {{glide:sponsors_logos format="webp"}}
+                      <img src="{{url}}" width="{{width}}" height="{{height}}" alt="{{alt ?? title}}" class="h-16 mb-2 object-contain mx-auto">
+                        {{/glide:sponsors_logos}}
                     <p class="text-xs text-[#5b4526] text-center">{{title}}</p>
                       </a>
                   </div>
@@ -42,5 +42,5 @@
 
 
 
-    <div class="absolute inset-0 bg-[url('/desert-pattern.png')] bg-cover opacity-5 pointer-events-none"></div>
+    <div class="absolute inset-0 bg-cover opacity-5 pointer-events-none"></div>
 </div>
