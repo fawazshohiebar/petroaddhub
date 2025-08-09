@@ -13,7 +13,9 @@
               {{ if icon_type == 'heroicon' }}
                 {{ heroicon:outline :icon="icon" class="h-8 w-8 text-[#827654]" }}
               {{ elseif icon_type == 'image' }}
-                <img src="{{ image }}" alt="{{ heading }}" class="h-8 w-8 object-contain">
+                {{ glide:image format="webp" }}
+                  <img src="{{ url }}" alt="{{ heading }}" class="h-8 w-8 object-contain">
+                {{ /glide:image }}
               {{ /if }}
             </div>
 

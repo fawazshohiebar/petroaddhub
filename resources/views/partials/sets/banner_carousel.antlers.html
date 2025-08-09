@@ -52,9 +52,11 @@
                           class="block relative transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
                           aria-label="{{ heading:text ?? heading ?? 'Banner link' }}"
                         >
-                          {{ image }}
+                          {{ glide:image format="webp" }}
                             <img 
                               src="{{ url }}" 
+                              width="{{ width }}" 
+                              height="{{ height }}" 
                               alt="{{ alt ?? heading:text ?? heading ?? '' }}"
                               class="
                                 w-full 
@@ -67,7 +69,7 @@
                               "
                               loading="lazy"
                             />
-                          {{ /image }}
+                          {{ /glide:image }}
                           
                         </a>
                     </div>
@@ -114,7 +116,7 @@
           class="block relative transition-all duration-300 hover:scale-[1.02] focus:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-blue-500/50"
           aria-label="{{ heading:text ?? heading ?? 'Banner link' }}"
         >
-          {{ image }}
+          {{ glide:image format="webp" }}
             <img 
               src="{{ url }}" 
               alt="{{ alt ?? heading:text ?? heading ?? '' }}"
@@ -129,7 +131,7 @@
               "
               loading="lazy"
             />
-          {{ /image }}
+          {{ /glide:image }}
         </a>
       {{ /images }}
     {{ /if }}

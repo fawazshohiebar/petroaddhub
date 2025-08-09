@@ -6,8 +6,11 @@
             
             <!-- Large Image Area with Text Overlay -->
             <div class="relative h-64 bg-gradient-to-br from-[#827654]/5 to-[#827654]/10 overflow-hidden">
-                <img src="{{ image }}" alt="{{ heading }}"
+                {{glide:image format="webp"}}
+                <img src="{{ url }}" alt="{{ heading }}"
+                    style="object-position: {{focus_css ?? 'center'}};"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                {{ /glide:image }}
                 
                 <!-- Dark overlay for better text readability -->
                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
