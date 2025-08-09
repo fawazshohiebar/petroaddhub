@@ -7,36 +7,15 @@
   {{ partial:favicon /}}
   {{ partial:fonts /}}
   {{ partial:tracking_scripts_head /}}
+  {{ partial:additional_scripts_head /}}
   {{ partial:meta /}}
   
-  {{if header_scripts_available_on | pluck('value') | contains(environment) }}
-    {{ header_scripts:code | raw }}
-  {{/if}}
-
-  {{ if site:short_locale === 'ar' }}
-    <link rel="stylesheet" href="{{ site:assets_url }}/css/ar.css">
-  {{ else }}
-    <link rel="stylesheet" href="{{ site:assets_url }}/css/en.css">
-  {{ /if }}
-
-  {{ if site:short_locale === 'ar' }}
-    <link rel="stylesheet" href="{{ site:assets_url }}/css/rtl.css">
-  {{ /if }}
-  
-  {{ if site:short_locale === 'en' }}
-    <link rel="stylesheet" href="{{ site:assets_url }}/css/ltr.css">
-  {{/if}}
-  
   <link rel="stylesheet" href="https://use.typekit.net/slb6fmc.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   {{ vite src="resources/js/site.js|resources/css/site.css" }}
 </head>
 <body class="leading-normal text-gray-800 antialiased {{ site:short_locale === 'ar' ? 'font-noto' : 'font-mont' }}">
   {{ partial:tracking_scripts_body /}}
-  
-  {{if body_start_scripts_available_on | pluck('value') | contains(environment) }}
-    {{ body_start_scripts:code | raw }}
-  {{/if}}
+  {{ partial:additional_scripts_body_start /}}
 
   {{ partial:partials/header }}
   <main class="relative">
@@ -44,9 +23,6 @@
   </main>
 
   {{ partial:partials/footer }}
-
-  {{ if body_end_scripts_available_on | pluck('value') | contains(environment) }}
-    {{ body_end_scripts:code | raw }}
-  {{/if }}
+  {{ partial:additional_scripts_body_end /}}
 </body>
 </html>
