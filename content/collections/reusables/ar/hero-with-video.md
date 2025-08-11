@@ -7,7 +7,6 @@ icons:
     id: mdwv396j
     icon: calendar-days
     label: '30 أغسطس - 7 سبتمبر'
-    link: '#'
   -
     id: mdwv6hil
     icon: clock
@@ -16,7 +15,7 @@ icons:
     id: mdwv2qob
     icon: map-pin
     label: 'مركز أدنيك أبوظبي'
-    link: '#'
+    link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
 hero_actions:
   -
     id: mdwv7m4p
@@ -46,6 +45,6 @@ hero_actions:
         icon_position: start
     type: button
     enabled: true
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754926637
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754937560
 ---
