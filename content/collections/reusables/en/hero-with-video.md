@@ -5,12 +5,12 @@ title: 'Hero With Video'
 heading: 'THE LEGACY LIVES ON'
 video: Fq-8cqfzMt4
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754924269
+updated_at: 1754924318
 icons:
   -
     id: mdwv396j
     icon: calendar-days
-    label: '30 Aug - 7 Sept'
+    label: '30 AUG - 7 SEPT'
     link: '#'
   -
     id: mdwv6hil
