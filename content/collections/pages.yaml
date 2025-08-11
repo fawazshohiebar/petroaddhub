@@ -5,7 +5,7 @@ sites:
 propagate: false
 template: default
 layout: layout
-revisions: false
+revisions: true
 route: '{parent_uri}/{slug}'
 sort_dir: asc
 preview_targets:
