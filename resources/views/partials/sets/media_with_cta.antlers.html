@@ -138,7 +138,7 @@ style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image'
                     <div class="relative">
                         {{ if image }}
                             {{ glide:image preset="{{ $isCompact ? 'medium' : 'large' }}" }}
-                                <img src="{{ url }}" alt="{{ alt ?? title }}" width="{{ width }}" height="{{ height }}"
+                                <img loading="lazy" src="{{ url }}" alt="{{ alt ?? title }}" width="{{ width }}" height="{{ height }}"
                                     style="object-position: {{ focus_css ?? 'center' }};"
                                     class="w-full max-h-96 object-cover h-auto {{ $isCompact ? 'lg:max-h-96 rounded-md shadow-lg' : 'lg:max-h-max rounded-lg shadow-xl' }}" />
                             {{ /glide:image }}

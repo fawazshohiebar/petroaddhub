@@ -12,6 +12,7 @@
             <div class="space-y-6 col-span-2 md:col-span-1 flex flex-col items-start md:justify-start md:items-start justify-center">
                 {{ glide :src="brand:logo_dark" format="webp" }}
                 <img src="{{url}}" alt="{{alt ?? 'International Hunting & Equestrian Exhibition - Abu Dhabi' | trans}}"
+                    loading="lazy"
                     width="{{width}}" height="{{height}}"
                     class="max-h-16 w-auto">
                 {{ /glide }}
@@ -85,7 +86,7 @@
                             <a href="{{ url }}" class="group transition-all duration-300 hover:opacity-80">
                                 <div class="text-center ltr:text-sm rtl:text-lg text-[#fff] mb-2 group-hover:text-[#fff] transition-colors">{{title}}</div>
 
-                                <img src="{{ image }}" alt="{{ image:alt }}" 
+                                <img loading="lazy" src="{{ image }}" alt="{{ image:alt }}" 
                                     width="{{ image:width }}" height="{{ image:height }}" 
                                     class="h-14 object-contain mx-auto">
                             </a>
