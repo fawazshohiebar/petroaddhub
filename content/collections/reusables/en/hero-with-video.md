@@ -4,14 +4,13 @@ blueprint: hero
 title: 'Hero With Video'
 heading: 'THE LEGACY LIVES ON'
 video: Fq-8cqfzMt4
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754926627
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754937540
 icons:
   -
     id: mdwv396j
     icon: calendar-days
     label: '30 AUG - 7 SEPT'
-    link: '#'
   -
     id: mdwv6hil
     icon: clock
@@ -20,7 +19,7 @@ icons:
     id: mdwv2qob
     icon: map-pin
     label: 'ADNEC Centre Abu Dhabi'
-    link: '#'
+    link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
 hero_actions:
   -
     id: mdwv7m4p
