@@ -5,7 +5,7 @@ title: 'Hero With Video'
 heading: 'THE LEGACY LIVES ON'
 video: Fq-8cqfzMt4
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754924318
+updated_at: 1754926627
 icons:
   -
     id: mdwv396j
@@ -31,7 +31,7 @@ hero_actions:
         style: filled
         color: white
         size: medium
-        new_tab: false
+        new_tab: true
         icon: paper-airplane
         icon_position: start
     type: button
