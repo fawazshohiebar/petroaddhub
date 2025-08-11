@@ -7,7 +7,7 @@
             <!-- Large Image Area with Text Overlay -->
             <div class="relative h-64 bg-gradient-to-br from-[#827654]/5 to-[#827654]/10 overflow-hidden">
                 {{glide:image format="webp"}}
-                <img src="{{ url }}" alt="{{ heading }}"
+                <img src="{{ url }}" alt="{{ heading }}" loading="lazy"
                     style="object-position: {{focus_css ?? 'center'}};"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 {{ /glide:image }}
