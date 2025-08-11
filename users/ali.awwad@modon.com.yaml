@@ -18,6 +18,12 @@ preferences:
         - end_time
         - speakers
         - agendas
+      filters:
+        day_1:
+          display: 'Day 1'
+          filters:
+            site:
+              site: en
   assets:
     collaterals:
       mode: grid
