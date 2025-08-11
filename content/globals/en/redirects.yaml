@@ -139,3 +139,8 @@ redirects:
     url_old: /ar/شركاء-الاعلام/
     internal_url: 313db36b-4390-488f-a7b3-53d1818150db
     response: 302
+  -
+    id: me7fvzgj
+    url_old: /adihex-floorplan
+    external_url: 'https://map.adihex.com/?mapId=jKkBVW5WgdZYQ'
+    response: 302
