@@ -38,7 +38,7 @@ page_builder:
                 icon: null
                 icon_position: start
             type: button
-            enabled: true
+            enabled: false
         image: features/pet-fashion-show.png
   -
     type: set
@@ -80,7 +80,7 @@ page_builder:
                 icon: null
                 icon_position: start
             type: button
-            enabled: true
+            enabled: false
   -
     type: set
     attrs:
@@ -114,7 +114,7 @@ page_builder:
                 icon: null
                 icon_position: start
             type: button
-            enabled: true
+            enabled: false
   -
     type: set
     attrs:
@@ -305,5 +305,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754926103
+updated_at: 1754926223
 ---
