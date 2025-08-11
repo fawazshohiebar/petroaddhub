@@ -6,3 +6,12 @@ preferences:
   assets:
     assets:
       per_page: 100
+  collections:
+    sessions:
+      columns:
+        - title
+        - site
+        - status
+        - agendas
+        - event_date
+        - start_time
