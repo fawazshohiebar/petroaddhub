@@ -34,7 +34,7 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Emirates Kennel Union (EKC) & Showline'
         description: "This competition tests the agility of dogs. Demonstrations and training tips will be provided by experts to dog owners who will be given trial runs followed by the competition where the winners will be given prizes. The competition will be open for both trained and untrained dogs. The 'Dog Agility Contest' is a thrilling display of speed, agility, and teamwork between dogs and their handlers. This competition will test the dogs' ability to navigate an obstacle course with precision and speed, providing exciting entertainment for all visitors."
-        image: dog-agility.jpeg
+        image: competitions/dog-agility.jpeg
   -
     type: set
     attrs:
