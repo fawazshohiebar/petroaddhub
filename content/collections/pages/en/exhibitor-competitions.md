@@ -63,7 +63,7 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: ADNEC Group'
         description: "The 'Best Set of Falconry Tools' competition is a celebration of the craftsmanship and practicality essential to successful hunting trips. Participants will be judged on the quality of materials used, the functionality of each tool, and the overall cohesion of the set. Participation is limited to manufacturers of handmade falconry tools. This event underscores the importance of tradition in falconry, making it a key highlight at ADIHEX."
-        image: b5cf2fea-e6f6-cfdc-3f23-802d6237be7c.jpg
+        image: competitions/b5cf2fea-e6f6-cfdc-3f23-802d6237be7c.jpg
   -
     type: set
     attrs:
