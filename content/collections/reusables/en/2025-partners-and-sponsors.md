@@ -54,7 +54,7 @@ medium_sposnsors:
     enabled: true
   -
     id: mdwygq26
-    medium_sponsors_logos: added-images/logos-6.png
+    medium_sponsors_logos: haw_wappen-signet_4c.png
     medium_sponsor_title: 'Weaponry Sponsor'
     type: new_set
     enabled: true
@@ -113,8 +113,8 @@ normal_sponsors:
     normal_sponsor_title: 'Fragrance Sponsor'
     type: new_set
     enabled: true
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754303214
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1754981129
 heading_group:
   heading:
     text: '2025 PARTNERS AND SPONSORS'
