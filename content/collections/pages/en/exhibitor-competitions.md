@@ -23,7 +23,7 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: ADNEC Group'
         description: 'Witness the pinnacle of craftsmanship in falconry with the ‘Best and Most Beautiful Falcon Perch’ competition. This contest highlights the skill and attention to detail that goes into creating perches that are not only functional but also aesthetically pleasing. Judges will be looking for the quality of materials used, the perch’s functionality, and its visual appeal. A must-see for falconry enthusiasts!'
-        image: 318549e1-3569-a9ff-4c0a-2fbef1747244.jpg
+        image: competitions/318549e1-3569-a9ff-4c0a-2fbef1747244.jpg
   -
     type: set
     attrs:
