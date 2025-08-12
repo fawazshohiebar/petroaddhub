@@ -42,11 +42,14 @@ main_activities:
     id: me89l5eq
     title: 'Social Media Deliverables'
     icon: arrow-down-tray
+  -
+    id: me8ggfnz
+    title: qssss
 featured_activities:
   -
     id: mdiqvg3h
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754997849
+updated_at: 1754997939
 button_group:
   -
     id: mdirjamk
