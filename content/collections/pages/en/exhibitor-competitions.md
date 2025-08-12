@@ -163,7 +163,7 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: ADNEC Group'
         description: "Prepare to be amazed by the ingenuity and creativity on display at ADIHEX as exhibitors compete for the title of 'Best Stand Design in Each Sector'. Each stand will be judged on its sustainability, innovative use of environment-friendly materials, and overall design aesthetic. This competition is a true celebration of artistry and environmental consciousness, reflecting the high standards set by ADNEC Group."
-        image: best-stand.jpg
+        image: competitions/best-stand.jpg
   -
     type: set
     attrs:
