@@ -40,13 +40,13 @@ main_activities:
     title: '<a href="https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/07/Social-sharing-banners.zip">Additional Social Media Banners</a>'
   -
     id: me89l5eq
-    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/adihex-partners-social-media-deliverables.pdf">Social Media Deliverables</a>'
+    title: 'Social Media Deliverables'
     icon: arrow-down-tray
 featured_activities:
   -
     id: mdiqvg3h
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754997821
+updated_at: 1754997849
 button_group:
   -
     id: mdirjamk
