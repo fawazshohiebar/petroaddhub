@@ -16,6 +16,12 @@ premium_sponsors:
     type: new_set
     enabled: true
   -
+    id: me9kyzcp
+    premium_sponsors_logos: adt_logo_english_notagline_approved_6sep_black_rgb.png
+    sponsor_title: 'Official Destination Partner'
+    type: new_set
+    enabled: true
+  -
     id: mdwyd53e
     premium_sponsors_logos: logos-(1).png
     sponsor_title: 'Strategic Partner'
@@ -113,8 +119,8 @@ normal_sponsors:
     normal_sponsor_title: 'Fragrance Sponsor'
     type: new_set
     enabled: true
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754982950
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1755066014
 heading_group:
   heading:
     text: '2025 PARTNERS AND SPONSORS'
