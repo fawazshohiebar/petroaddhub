@@ -13,7 +13,7 @@ description: |-
 
   As enthusiasts of hunting and equestrian pursuits, ADIHEX is the event that celebrates shared passion while paying homage to our rich heritage.
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755060773
+updated_at: 1755060782
 flipped: false
 image: call_to_actions/main_cta.jpg
 buttons:
