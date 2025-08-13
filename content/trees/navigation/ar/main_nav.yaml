@@ -13,6 +13,10 @@ tree:
         id: 9e1cd7be-8ece-4e92-8c93-4c3e09ad9ba9
         entry: abf1d00b-a591-44e5-8c71-b9701e33b901
       -
+        id: 85a08600-9b7c-42ba-87af-e27cfd3bc6e2
+        title: 'مزاد الصقور'
+        url: 'https://auction.adihex.com/ar'
+      -
         id: cdde1a21-fd21-415a-b255-bfd2faea14ad
         entry: a528e2a8-6ce4-4e52-98a4-5f3e329c1aec
       -
