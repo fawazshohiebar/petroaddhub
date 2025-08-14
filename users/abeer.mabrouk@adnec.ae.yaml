@@ -23,3 +23,4 @@ preferences:
           filters:
             site:
               site: en
+      per_page: 500
