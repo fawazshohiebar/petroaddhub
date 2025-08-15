@@ -1,6 +1,5 @@
 ---
 id: 342e6705-da7e-4d78-bb62-5267826693e2
-published: false
 blueprint: session
 title: 'Stand P10-05 (Moor) - Meet the Makers'
 start_time: '16:30'

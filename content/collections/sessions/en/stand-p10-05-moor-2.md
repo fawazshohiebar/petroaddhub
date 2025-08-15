@@ -1,6 +1,5 @@
 ---
 id: 49289687-7d49-4635-8b04-d9f5974c3097
-published: false
 blueprint: session
 title: 'Stand P10-05 (MOOR)'
 start_time: '15:00'
