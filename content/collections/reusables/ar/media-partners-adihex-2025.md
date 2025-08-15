@@ -11,14 +11,6 @@ replicator_media_partners:
     type: new_set
     enabled: true
   -
-    id: mdoiwomy
-    link: 'https://www.bawaditv.com/'
-    logo:
-      - albawadi-hd-logo-1-768x263-(1).png
-    title: 'شريك إعلامي'
-    type: new_set
-    enabled: false
-  -
     id: mdoiwr0d
     link: 'https://thebrewnews.com/'
     logo:
@@ -31,6 +23,14 @@ replicator_media_partners:
     link: 'http://dreamsports.tv/'
     logo:
       - dreamsports.tv_logo-large-768x133-(1).png
+    title: 'شريك إعلامي'
+    type: new_set
+    enabled: true
+  -
+    id: mectccmq
+    link: 'https://menews247.com/'
+    logo:
+      - middle-east-news-247-logo.png
     title: 'شريك إعلامي'
     type: new_set
     enabled: true
@@ -51,5 +51,5 @@ replicator_media_partners:
     type: new_set
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755258084
+updated_at: 1755261465
 ---
