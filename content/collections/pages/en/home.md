@@ -20,6 +20,7 @@ page_builder:
     type: set
     attrs:
       id: medwu920
+      enabled: false
       values:
         type: heading_group
         heading:
@@ -37,6 +38,7 @@ page_builder:
     type: set
     attrs:
       id: medwjzyt
+      enabled: false
       values:
         type: html_block
         available_on:
@@ -52,6 +54,7 @@ page_builder:
     type: set
     attrs:
       id: medwzg71
+      enabled: false
       values:
         type: divider
         space_height: 50px
@@ -284,5 +287,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: c970e8d9-e297-424a-bad0-93b7dab4d61d
-updated_at: 1755328334
+updated_at: 1755328683
 ---
