@@ -6,29 +6,19 @@ page_builder:
   -
     type: set
     attrs:
-      id: mapb3fbo
-      values:
-        type: reusable_block
-        entry:
-          - 7ff438ae-3f53-4146-84da-2a1203cd410d
-  -
-    type: set
-    attrs:
-      id: medxfrud
-      enabled: false
+      id: meeeetnn
       values:
         type: divider
         space_height: 20px
   -
     type: set
     attrs:
-      id: medxdvea
-      enabled: false
+      id: meeefb04
       values:
         type: heading_group
         heading:
           heading:
-            text: 'بث مباشر مزاد الصقور 2025'
+            text: 'البث المباشر لمزاد الصقور 2025'
             size: small
             color: black
             tag: h1
@@ -40,8 +30,7 @@ page_builder:
   -
     type: set
     attrs:
-      id: medxejny
-      enabled: false
+      id: meeef0pp
       values:
         type: html_block
         available_on:
@@ -50,17 +39,24 @@ page_builder:
         code:
           code: |-
             <div class="flex items-center justify-center">
-            <iframe width="660" height="415" src="https://www.youtube.com/embed/bniMYhDV47g?si=MZoPbWJ0e25u--7J&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="660" height="415" src="https://www.youtube.com/embed/-DKAl29gyBQ?si=lWoWxD1uCg47YqX5&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           mode: htmlmixed
   -
     type: set
     attrs:
-      id: medxeq0x
-      enabled: false
+      id: meeehgkl
       values:
         type: divider
-        space_height: 50px
+        space_height: 180px
+  -
+    type: set
+    attrs:
+      id: mapb3fbo
+      values:
+        type: reusable_block
+        entry:
+          - 7ff438ae-3f53-4146-84da-2a1203cd410d
   -
     type: paragraph
     attrs:
@@ -263,5 +259,5 @@ fine_seo_is_title_custom: true
 fine_seo_description: 'تراث يتجدد يمثل التراث بوصلتنا التي تُشكّل قيمنا وممارساتنا، ولذا نقل إلينا أسلافنا ثقافتهم وحرفهم واهتماماتهم ومهاراتهم من جيل إلى آخر، وبالمثل يسعى معرض'
 fine_seo_preview: الرئيسية
 updated_by: c970e8d9-e297-424a-bad0-93b7dab4d61d
-updated_at: 1755329601
+updated_at: 1755357469
 ---
