@@ -11,34 +11,40 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdtzdfw4
+      id: meed7ocz
       values:
-        type: reusable_block
-        entry:
-          - 67e0641c-45df-420d-90f1-0a3bbe96b8f1
+        type: divider
+        space_height: 20px
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
   -
     type: set
     attrs:
-      id: medwu920
-      enabled: false
+      id: meed4hzu
       values:
         type: heading_group
         heading:
           heading:
-            text: 'Live Auction streaming'
+            text: 'Watch Live Falcon Auction Now'
             size: small
-            color: black
+            color: primary
             tag: h1
             uppercase: false
-          subheading: null
+          subheading:
+            text: null
+            size: small
+            color: black
+            tag: p
+            uppercase: false
           focus_icon: false
           heading_focus_word: null
           icon: null
   -
     type: set
     attrs:
-      id: medwjzyt
-      enabled: false
+      id: meed4kfk
       values:
         type: html_block
         available_on:
@@ -47,17 +53,24 @@ page_builder:
         code:
           code: |-
             <div class="flex items-center justify-center">
-            <iframe width="660" height="415" src="https://www.youtube.com/embed/bniMYhDV47g?si=MZoPbWJ0e25u--7J&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="660" height="415" src="https://www.youtube.com/embed/-DKAl29gyBQ?si=Be_lOf6R5Up4Dn7U&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           mode: htmlmixed
   -
     type: set
     attrs:
-      id: medwzg71
-      enabled: false
+      id: meed4rjd
       values:
         type: divider
-        space_height: 50px
+        space_height: 180px
+  -
+    type: set
+    attrs:
+      id: meed4f77
+      values:
+        type: reusable_block
+        entry:
+          - 67e0641c-45df-420d-90f1-0a3bbe96b8f1
   -
     type: paragraph
     attrs:
@@ -287,5 +300,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: c970e8d9-e297-424a-bad0-93b7dab4d61d
-updated_at: 1755328683
+updated_at: 1755357271
 ---
