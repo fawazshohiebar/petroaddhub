@@ -19,6 +19,49 @@ page_builder:
   -
     type: set
     attrs:
+      id: medwu920
+      values:
+        type: heading_group
+        heading:
+          heading:
+            text: 'Live Auction streaming'
+            size: small
+            color: black
+            tag: h1
+            uppercase: false
+          subheading: null
+          focus_icon: false
+          heading_focus_word: null
+          icon: null
+  -
+    type: set
+    attrs:
+      id: medwjzyt
+      values:
+        type: html_block
+        available_on:
+          - production
+          - local
+        code:
+          code: |-
+            <div class="flex items-center justify-center">
+            <iframe width="660" height="415" src="https://www.youtube.com/embed/bniMYhDV47g?si=MZoPbWJ0e25u--7J&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          mode: htmlmixed
+  -
+    type: set
+    attrs:
+      id: medwzg71
+      values:
+        type: divider
+        space_height: 50px
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+  -
+    type: set
+    attrs:
       id: me3vjibx
       values:
         type: banner
@@ -240,6 +283,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754938836
+updated_by: c970e8d9-e297-424a-bad0-93b7dab4d61d
+updated_at: 1755328334
 ---
