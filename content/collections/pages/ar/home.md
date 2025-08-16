@@ -15,6 +15,7 @@ page_builder:
     type: set
     attrs:
       id: medxfrud
+      enabled: false
       values:
         type: divider
         space_height: 20px
@@ -262,5 +263,5 @@ fine_seo_is_title_custom: true
 fine_seo_description: 'تراث يتجدد يمثل التراث بوصلتنا التي تُشكّل قيمنا وممارساتنا، ولذا نقل إلينا أسلافنا ثقافتهم وحرفهم واهتماماتهم ومهاراتهم من جيل إلى آخر، وبالمثل يسعى معرض'
 fine_seo_preview: الرئيسية
 updated_by: c970e8d9-e297-424a-bad0-93b7dab4d61d
-updated_at: 1755328868
+updated_at: 1755329601
 ---
