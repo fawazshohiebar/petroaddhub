@@ -1,6 +1,5 @@
 ---
 id: 58d2f74a-6863-4114-956f-a838e8585100
-published: false
 blueprint: session
 title: 'Pony Riding (Dhabian Equestrian Club)'
 start_time: '18:00'
