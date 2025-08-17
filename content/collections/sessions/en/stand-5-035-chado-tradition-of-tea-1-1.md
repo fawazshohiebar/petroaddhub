@@ -1,6 +1,5 @@
 ---
 id: 381ff852-c673-4193-90c2-b7f18dc2d75e
-published: false
 blueprint: session
 title: 'Stand 5-035 - Chado (Tradition of Tea)'
 start_time: '09:00'
