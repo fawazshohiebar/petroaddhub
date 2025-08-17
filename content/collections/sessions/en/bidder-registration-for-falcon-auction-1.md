@@ -7,9 +7,8 @@ end_time: '19:00'
 event_date: '2025-08-31'
 agendas:
   - event-programme
-  - arena-schedule
 halls: conference-room-a
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755458881
+updated_at: 1755459099
 duplicated_from: 8eb8f991-c8a5-4d68-82df-aa41f65b38bf
 ---
