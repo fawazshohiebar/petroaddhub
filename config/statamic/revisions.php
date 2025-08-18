@@ -25,6 +25,6 @@ return [
     |
     */
 
-    'path' => env('STATAMIC_REVISIONS_PATH', storage_path('content/revisions')),
+    'path' => env('STATAMIC_REVISIONS_PATH', base_path('content/revisions')),
 
 ];
