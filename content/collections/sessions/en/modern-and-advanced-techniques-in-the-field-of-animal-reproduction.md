@@ -6,5 +6,7 @@ start_time: '18:00'
 end_time: '18:45'
 event_date: '2025-08-30'
 updated_by: 1353420a-c76f-4594-9476-b140cd6ac39e
-updated_at: 1755255742
+updated_at: 1755524795
+agendas:
+  - knowledge-hub
 ---
