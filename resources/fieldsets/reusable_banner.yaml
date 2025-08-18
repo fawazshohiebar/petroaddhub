@@ -9,6 +9,9 @@ fields:
       display: Image
       localizable: false
       max_files: 1
+      validate:
+        - image
+        - 'mimes:png,jpg,jpeg,gif,webp'
   -
     handle: link
     field:
