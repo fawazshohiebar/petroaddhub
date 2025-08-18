@@ -27,6 +27,9 @@ tabs:
               type: assets
               display: 'Sponsors Logos'
               localizable: false
+              validate:
+                - image
+                - 'mimes:png,jpg,jpeg,gif,webp'
           -
             handle: sponsor_level
             field:
