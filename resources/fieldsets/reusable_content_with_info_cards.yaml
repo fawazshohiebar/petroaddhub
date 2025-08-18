@@ -78,6 +78,9 @@ fields:
                     localizable: false
                     if:
                       icon_type: 'equals image'
+                    validate:
+                      - image
+                      - 'mimes:png,jpg,jpeg,gif,webp'
                 -
                   handle: heading
                   field:
