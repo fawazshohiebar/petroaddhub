@@ -114,7 +114,7 @@ page_builder:
           tag: h2
           uppercase: false
         section_label: 'Organised by: Sharjah Kennel Club'
-        description: 'This is a beauty contest for hunting dogs where winners will be given prizes.'
+        description: 'This is a beauty contest for hunting dogs where winners will be given prizes'
   -
     type: set
     attrs:
