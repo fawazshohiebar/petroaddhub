@@ -1,5 +1,5 @@
-action: revision
-date: 1755519855
+action: publish
+date: 1755519857
 user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
 attributes:
   id: 3a1d90c6-4784-47df-bad6-97fcaab74063
@@ -57,4 +57,3 @@ attributes:
     header_scripts_available_on: {  }
     body_start_scripts_available_on: {  }
     body_end_scripts_available_on: {  }
-    parent: home
