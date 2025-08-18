@@ -40,7 +40,7 @@ class GetAgendaByDateController extends Controller
                 'slug' => $item->get('slug'),
                 'event_date' => $item->get('start_date'),
                 'start_time' => $item->get('start_time'),
-                'end_time' => $item->get('end_time'),
+                'end_time' => $item->get('end_time') ?? '22:00',
                 'show_time_duration' => AgendaHelper::shouldShowTimeDuration($item->get('start_time'), $item->get('end_time')),
                 'hall' => AgendaHelper::getHall($item->get('halls', [])),
                 'description' => $item->get('content'),

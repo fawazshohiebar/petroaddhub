@@ -98,6 +98,9 @@ class AgendaHelper
 
     public static function shouldShowTimeDuration($startTime, $endTime)
     {
+        if (empty($startTime) || empty($endTime)) {
+            return false;
+        }
         return Carbon::createFromFormat('H:i', $startTime)
                     ->diffInHours(Carbon::createFromFormat('H:i', $endTime)) > 1;
     }
