@@ -24,6 +24,21 @@ page_builder:
         section_label: 'Organised by: ADNEC Group'
         description: 'Witness the pinnacle of craftsmanship in falconry with the ‘Best and Most Beautiful Falcon Perch’ competition. This contest highlights the skill and attention to detail that goes into creating perches that are not only functional but also aesthetically pleasing. Judges will be looking for the quality of materials used, the perch’s functionality, and its visual appeal. A must-see for falconry enthusiasts!'
         image: competitions/318549e1-3569-a9ff-4c0a-2fbef1747244.jpg
+        buttons:
+          -
+            id: meh41bhi
+            dynamic_button:
+              button: 'https://forms.gle/ccvbSupH2YN5ucRj8'
+              text: 'Apply Here'
+              button_options:
+                style: filled
+                color: primary
+                size: large
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
   -
     type: set
     attrs:
@@ -44,6 +59,21 @@ page_builder:
         section_label: 'Organised by: ADNEC Group'
         description: "The 'Most Beautiful Falcon Hood' competition showcases the intricate craftsmanship and cultural significance of falconry. Competitors will present their finest falcon hoods, which will be judged on the quality of leather and materials used, as well as the craftsmanship and design intricacies. This competition is a tribute to the enduring tradition of falconry, a key element of the region's heritage."
         image: competitions/68fedb6a-2073-0b7a-db6c-1f9fc6aa80c9.jpg
+        buttons:
+          -
+            id: meh43cyi
+            dynamic_button:
+              button: 'https://forms.gle/CyUKJf738fK8NGbNA'
+              text: 'Apply Here'
+              button_options:
+                style: filled
+                color: primary
+                size: large
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
   -
     type: set
     attrs:
@@ -64,6 +94,21 @@ page_builder:
         section_label: 'Organised by: ADNEC Group'
         description: "The 'Best Set of Falconry Tools' competition is a celebration of the craftsmanship and practicality essential to successful hunting trips. Participants will be judged on the quality of materials used, the functionality of each tool, and the overall cohesion of the set. Participation is limited to manufacturers of handmade falconry tools. This event underscores the importance of tradition in falconry, making it a key highlight at ADIHEX."
         image: competitions/b5cf2fea-e6f6-cfdc-3f23-802d6237be7c.jpg
+        buttons:
+          -
+            id: meh44skx
+            dynamic_button:
+              button: 'https://forms.gle/hCY7rHXSArjLJy9m6'
+              text: 'Apply Here'
+              button_options:
+                style: filled
+                color: primary
+                size: large
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
   -
     type: set
     attrs:
@@ -84,6 +129,21 @@ page_builder:
         section_label: 'Organised by: ADNEC Group'
         description: "Showcasing the artistry and precision of blade-making, the 'Best Hunting Knife Contest' invites both individuals and companies to present their finest knives. This competition emphasizes the quality, durability, and design of each entry, reflecting the high standards of hunting gear used in the region."
         image: hunting-knife.jpeg
+        buttons:
+          -
+            id: meh45wlt
+            dynamic_button:
+              button: 'https://forms.gle/GHuizY82i2vnEDyK8'
+              text: 'Apply Here'
+              button_options:
+                style: filled
+                color: primary
+                size: large
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
   -
     type: set
     attrs:
@@ -104,6 +164,21 @@ page_builder:
         section_label: 'Organised by: ADNEC Group'
         description: "The 'Best Sculpture in Traditional Handicrafts' competition showcases the intricate craftsmanship and cultural heritage of the UAE. Open to both individuals and companies, this event celebrates the creativity and skill involved in producing traditional handicrafts, bringing the rich history of the region to life. The sculpture must be made in the year 2025, and displayed at ADIHEX 2025."
         image: handicrafts.jpg
+        buttons:
+          -
+            id: meh46iah
+            dynamic_button:
+              button: 'https://forms.gle/pVo4pnZpQQWYQoJH8'
+              text: 'Apply Here'
+              button_options:
+                style: filled
+                color: primary
+                size: large
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
   -
     type: set
     attrs:
@@ -124,6 +199,21 @@ page_builder:
         section_label: 'Organised by: ADNEC Group'
         description: "Innovation takes centre stage in the 'Most Unique Product Exhibited at ADIHEX' competition. Only products that have been launched or produced in 2025 are eligible, ensuring that visitors get a glimpse of the latest and most groundbreaking developments in the industry. Items must be manufactured using traditional materials used in Emirati handicrafts."
         image: products.jpeg
+        buttons:
+          -
+            id: meh47bvr
+            dynamic_button:
+              button: 'https://forms.gle/rGgZJuMP2cosQL228'
+              text: 'Apply Here'
+              button_options:
+                style: filled
+                color: primary
+                size: large
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
   -
     type: set
     attrs:
@@ -164,6 +254,21 @@ page_builder:
         section_label: 'Organised by: ADNEC Group'
         description: "Prepare to be amazed by the ingenuity and creativity on display at ADIHEX as exhibitors compete for the title of 'Best Stand Design in Each Sector'. Each stand will be judged on its sustainability, innovative use of environment-friendly materials, and overall design aesthetic. This competition is a true celebration of artistry and environmental consciousness, reflecting the high standards set by ADNEC Group."
         image: competitions/best-stand.jpg
+        buttons:
+          -
+            id: meh48bld
+            dynamic_button:
+              button: 'https://forms.gle/jk2GRkjKsAPyF9gPA'
+              text: 'Apply Here'
+              button_options:
+                style: filled
+                color: primary
+                size: large
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
   -
     type: set
     attrs:
@@ -204,5 +309,5 @@ body_end_scripts:
 fine_seo_title: 'Exhibitor Competitions'
 fine_seo_preview: 'Visitor Competitions'
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755520656
+updated_at: 1755521684
 ---

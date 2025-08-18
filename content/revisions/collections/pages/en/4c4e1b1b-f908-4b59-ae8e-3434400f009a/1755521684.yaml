@@ -1,6 +1,7 @@
-action: revision
-date: 1755521670
+action: publish
+date: 1755521684
 user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+message: 'added links'
 attributes:
   id: 4c4e1b1b-f908-4b59-ae8e-3434400f009a
   slug: exhibitor-competitions
@@ -320,4 +321,3 @@ attributes:
     header_scripts_available_on: {  }
     body_start_scripts_available_on: {  }
     body_end_scripts_available_on: {  }
-    parent: 32937b51-2a18-4ea4-9b8e-88d756c121c6
