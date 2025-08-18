@@ -30,6 +30,7 @@ fields:
               video: Video
               youtube: YouTube
             width: 33
+            localizable: false
         -
           handle: image
           field:
@@ -39,8 +40,12 @@ fields:
             max_files: 1
             folder: hero
             width: 33
+            localizable: false
             if:
               type: 'equals image'
+            validate:
+              - image
+              - 'mimes:png,jpg,jpeg,gif,webp'
         -
           handle: video_url
           field:
@@ -50,13 +55,13 @@ fields:
             width: 33
             if:
               type: 'not_equals image'
+            localizable: false
         -
           handle: alt_text
           field:
             type: text
             display: 'Alt Text'
             localizable: true
-            width: 100
   -
     handle: icons
     field:
