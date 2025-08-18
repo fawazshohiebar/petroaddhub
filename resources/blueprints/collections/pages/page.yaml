@@ -21,7 +21,7 @@ tabs:
               validate:
                 - image
                 - 'max_filesize:9216'
-                - 'mimes:png,jpg,jpeg,gif,tiff,webp,avif'
+                - 'mimes:png,jpg,jpeg,gif,webp'
               instructions: 'Used for inner pages behind the title'
           -
             handle: page_builder
