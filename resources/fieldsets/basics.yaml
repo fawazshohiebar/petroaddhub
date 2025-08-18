@@ -632,9 +632,9 @@ fields:
                         value: 'Bottom Left'
                       -
                         key: bottom_right
-                        value: Bottom right
+                        value: 'Bottom right'
                       -
-                        key: 'bottom_center'
+                        key: bottom_center
                         value: 'Bottom Center'
                     default: center
                     type: button_group
@@ -948,7 +948,7 @@ fields:
       validate:
         - image
         - 'max_filesize:9216'
-        - 'mimes:png,jpg,jpeg,gif,tiff,webp,avif'
+        - 'mimes:png,jpg,jpeg,gif,webp'
   -
     handle: video
     field:
