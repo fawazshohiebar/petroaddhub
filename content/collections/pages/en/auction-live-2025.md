@@ -18,7 +18,7 @@ page_builder:
             tag: p
             uppercase: false
           subheading:
-            text: ..
+            text: null
             size: small
             color: black
             tag: p
@@ -60,5 +60,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1755617339
+updated_at: 1755619332
 ---
