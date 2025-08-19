@@ -17,7 +17,12 @@ page_builder:
             color: black
             tag: p
             uppercase: false
-          subheading: null
+          subheading:
+            text: .
+            size: small
+            color: black
+            tag: p
+            uppercase: false
           focus_icon: false
           heading_focus_word: null
           icon: null
@@ -54,6 +59,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: c970e8d9-e297-424a-bad0-93b7dab4d61d
-updated_at: 1755353521
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1755616903
 ---
