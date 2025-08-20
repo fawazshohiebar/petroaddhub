@@ -1,13 +1,13 @@
 ---
-id: db6e22f3-0339-47dd-9269-82977503e6d2
+id: 4ef5a98f-a652-4e31-af08-3e6d63b5ac2c
 blueprint: session
-title: 'Falcon Beauty Contest'
-start_time: '13:00'
-end_time: '15:00'
+title: 'Elite Sports'
+start_time: '10:30'
+end_time: '10:45'
 event_date: '2025-09-04'
 agendas:
   - arena-schedule
 halls: arena
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755722270
+updated_at: 1755722138
 ---

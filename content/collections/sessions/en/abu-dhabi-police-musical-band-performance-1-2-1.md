@@ -1,14 +1,14 @@
 ---
-id: b092b96c-171b-4882-8ea2-04a43663f756
+id: 343e22fd-76dc-4515-917a-8877677a04c0
 blueprint: session
 title: 'Abu Dhabi Police Musical Band Performance'
-start_time: '18:00'
-end_time: '18:30'
+start_time: '10:45'
+end_time: '11:00'
 event_date: '2025-09-04'
 agendas:
   - arena-schedule
 halls: arena
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755722243
-duplicated_from: 647e6375-472d-4370-844d-83919850596b
+updated_at: 1755722217
+duplicated_from: b092b96c-171b-4882-8ea2-04a43663f756
 ---
