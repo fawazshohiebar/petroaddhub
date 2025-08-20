@@ -1,0 +1,14 @@
+---
+id: c90e469d-c4fb-45c2-a673-56fe0d5efa32
+blueprint: session
+title: 'Abu Dhabi Police Musical Band, Equine & K9 Units Show'
+start_time: '12:10'
+end_time: '12:30'
+event_date: '2025-09-02'
+agendas:
+  - arena-schedule
+halls: arena
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1755720814
+duplicated_from: 48b3e693-5ceb-4f92-a134-1cdaf9267d44
+---
