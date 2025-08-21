@@ -91,10 +91,9 @@ page_builder:
           tag: h2
           uppercase: false
         description: |-
-          مواقف السيارات العادية متوفرة في مواقف السيارات A، B، D، وE في ADNEC مقابل 20 درهم إماراتي.
-          المواقف متوفرة بنظام من يصل أولاً يُخدم أولاً – نوصي بالوصول مبكرًا.
+          مواقف السيارات العادية متوفرة في مواقف السيارات A وB في ADNEC مقابل 20 درهم إماراتي.
+          أو قم بالشراء عبر الإنترنت لتوفير الوقت والعناء من خلال الضغط أدناه.
 
-          السعر: 20 درهم إماراتي لكل مركبة (الدفع في الموقع)
           **تذاكر دخول ADIHEX**: غير مشمولة – يجب شراء التذاكر بشكل منفصل
 
           يرجى مراجعة <a href="https://www.adnec.ae/en/terms-and-conditions" target="_blank">الشروط والأحكام العامة لمواقف السيارات</a> قبل زيارتك.
@@ -103,6 +102,20 @@ page_builder:
         buttons:
           -
             id: mdy1leik
+            dynamic_button:
+              button: 'https://ecom.webhost.skidata.com/ecom/portal/home/adihex_parking/#/products'
+              text: 'احجز موقفاً عادياً لمواقف السيارات A وB'
+              button_options:
+                style: filled
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
+          -
+            id: mel3dnjj
             dynamic_button:
               button: 'https://goo.gl/maps/xE3kYSnrSB7jAE8g6'
               text: 'موقف السيارات A'
@@ -129,6 +142,37 @@ page_builder:
                 icon_position: start
             type: button
             enabled: true
+  -
+    type: set
+    attrs:
+      id: mel3fex8
+      values:
+        type: call_to_action
+        style_config:
+          padding: small
+          color: lite-primary
+          size: normal
+          variant: no_image
+        heading:
+          text: null
+          size: small
+          color: black
+          tag: h2
+          uppercase: false
+        description: |-
+          مواقف السيارات العادية الاضافية متوفرة في مواقف السيارات D وE في ADNEC مقابل 20 درهم إماراتي.
+          أو قم بالشراء عبر الإنترنت لتوفير الوقت والعناء من خلال الضغط أدناه.
+
+          المواقف متوفرة بنظام من يصل أولاً يُخدم أولاً – نوصي بالوصول مبكرًا.
+
+
+          السعر: 20 درهماً لكل مركبة (يُدفع في الموقع).
+          **تذاكر دخول ADIHEX**: غير مشمولة – يجب شراء التذاكر بشكل منفصل
+
+          يرجى مراجعة <a href="https://www.adnec.ae/en/terms-and-conditions" target="_blank">الشروط والأحكام العامة لمواقف السيارات</a> قبل زيارتك.
+
+          يرجى اختيار موقع وقوف السيارات المفضل لديك أدناه:
+        buttons:
           -
             id: mdy1nl92
             dynamic_button:
@@ -158,5 +202,5 @@ page_builder:
             type: button
             enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755060886
+updated_at: 1755762540
 ---
