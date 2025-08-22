@@ -4,8 +4,10 @@ blueprint: session
 title: Storytime
 start_time: '12:00'
 event_date: '2025-08-30'
-agendas: knowledge-hub
+agendas:
+  - knowledge-hub
 halls: hall-7
 updated_by: 1353420a-c76f-4594-9476-b140cd6ac39e
-updated_at: 1755255305
+updated_at: 1755867696
+end_time: '12:30'
 ---
