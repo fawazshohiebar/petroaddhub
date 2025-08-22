@@ -4,7 +4,7 @@ blueprint: activity
 title: 'ADIHEX 2025 Guidelines'
 heading:
   heading:
-    text: 'Exhibitor Promotional Materials 2025'
+    text: 'ADIHEX 2025 Guidelines'
     size: small
     color: black
     tag: p
@@ -17,36 +17,20 @@ main_activities:
   -
     id: madgpfr4
     icon: arrow-down-tray
-    title: '<a href="https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/05/ADIHEX-Logos-2025.zip" target="_blank">ADIHEX Logo in all Formats</a>'
+    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/guidelines-2025/english-guidelines/arts-&-crafts-guidelines_english.pdf" target="_blank">Arts and Crafts</a>'
   -
     id: mdoggmxs
     icon: arrow-down-tray
-    title: '<a href="https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/07/Exhibitor-Promo-Web-banner-updated.zip" target="_blank">Website Banners</a>'
+    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/guidelines-2025/english-guidelines/buying-selling-knives-guideline-english.pdf" target="_blank">Buying and Selling Knives Guidelines</a>'
   -
     id: mdoghf50
     icon: arrow-down-tray
-    title: '<a href="https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/07/Exhibitor-Editable-Banner-updated.zip" target="_blank">Website Banners (Editable stand no.)</a>'
-  -
-    id: mdogi6fy
-    icon: arrow-down-tray
-    title: '<a href="https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/07/Exhibitor-email-banner-updated.zip">Email Banners</a>'
-  -
-    id: mdogivma
-    icon: arrow-down-tray
-    title: '<a href="https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/07/Exhibitor-social-banner-editable.zip">Social Media Banners (Editable stand no.)</a>'
-  -
-    id: mdogjtkg
-    icon: arrow-down-tray
-    title: '<a href="https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/07/Social-sharing-banners.zip">Additional Social Media Banners</a>'
-  -
-    id: me89l5eq
-    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/adihex-partners-social-media-deliverables.pdf">Social Media Deliverables</a>'
-    icon: arrow-down-tray
+    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/guidelines-2025/english-guidelines/weaponry-participation-guideline_english.pdf" target="_blank">Weaponry Participation Guidelines</a>'
 featured_activities:
   -
     id: mdiqvg3h
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1755852227
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1755861596
 button_group:
   -
     id: mdirjamk
