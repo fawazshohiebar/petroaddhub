@@ -29,6 +29,7 @@ body_end_scripts:
   mode: htmlmixed
 fine_seo_title: Guidlines
 fine_seo_preview: Guidlines
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1755852360
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1755862285
+parent: home
 ---
