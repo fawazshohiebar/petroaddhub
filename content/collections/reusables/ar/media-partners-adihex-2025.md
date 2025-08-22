@@ -51,14 +51,6 @@ replicator_media_partners:
     type: new_set
     enabled: true
   -
-    id: meh38vx4
-    link: www.resourceworld.com
-    logo:
-      - partners/rwm-logo_2277x337.jpg
-    title: 'شريك إعلامي'
-    type: new_set
-    enabled: true
-  -
     id: memtuir5
     link: 'https://www.instagram.com/destinationabudhabi/'
     logo:
@@ -66,6 +58,14 @@ replicator_media_partners:
     title: 'شريك إعلامي'
     type: new_set
     enabled: true
+  -
+    id: meh38vx4
+    link: www.resourceworld.com
+    logo:
+      - partners/rwm-logo_2277x337.jpg
+    title: 'شريك إعلامي'
+    type: new_set
+    enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755866994
+updated_at: 1755868982
 ---
