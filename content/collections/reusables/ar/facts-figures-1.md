@@ -18,7 +18,7 @@ stats:
   -
     id: macfpfr4
     value: '347000'
-    label: 'عدد الزوار'
+    label: زائر
     icon: users
   -
     id: macfpg3f
@@ -28,7 +28,7 @@ stats:
   -
     id: mei76vg2
     value: '68'
-    label: 'الدول المشاركة'
+    label: 'دولة مشاركة'
     icon: globe-alt
   -
     id: macfphk2
@@ -41,5 +41,5 @@ stats:
     label: 'المشاركين والعلامات التجارية'
     icon: building-storefront
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755941874
+updated_at: 1755943352
 ---
