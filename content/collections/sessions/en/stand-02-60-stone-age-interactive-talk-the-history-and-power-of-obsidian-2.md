@@ -1,6 +1,5 @@
 ---
 id: 7e49ed9b-e07d-4c46-b3f7-a3a45c8ce35a
-published: false
 blueprint: session
 title: 'Stand 02-60 (Stone age) - Interactive Talk: “The History and Power of Obsidian”'
 start_time: '13:00'
