@@ -1,0 +1,15 @@
+---
+id: bf6dc4aa-f62a-4946-8015-de7d968915ac
+published: false
+blueprint: session
+title: 'International Falconry Highlights Presented by the IAF (Duplicated) (2)'
+start_time: '13:30'
+end_time: '14:00'
+event_date: '2025-09-02'
+agendas:
+  - event-programme
+halls: atrium
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1756173790
+duplicated_from: bab9a878-def8-4bf3-94d1-823ab480d70f
+---
