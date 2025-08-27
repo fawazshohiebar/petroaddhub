@@ -20,7 +20,7 @@ heading:
   icon: null
 card_style: compact
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754928970
+updated_at: 1756301385
 info_cards:
   -
     id: mdvtxk9v
@@ -95,7 +95,7 @@ info_cards:
   -
     id: mdvu3b2y
     icon_type: image
-    image: icons/icon-sectors_4-07.jpg
+    image: icons/icon-sectors_6-07.jpg
     heading: 'Fishing Equipment & Marine Sports'
     type: info_card
     enabled: true
@@ -111,6 +111,20 @@ info_cards:
     icon_type: image
     image: icons/icon-sectors_4-09.jpg
     heading: Saluki
+    type: info_card
+    enabled: true
+  -
+    id: meu0aben
+    icon_type: image
+    image: icons/icon-sectors_6-14.jpg
+    heading: Knives
+    type: info_card
+    enabled: true
+  -
+    id: meu0b2ki
+    icon_type: image
+    image: icons/icon-sectors_6-15.jpg
+    heading: Souk
     type: info_card
     enabled: true
 style_config:

@@ -91,7 +91,7 @@ info_cards:
   -
     id: mdvu3b2y
     icon_type: image
-    image: icons/marine.jpg
+    image: icons/icon-sectors_6-07.jpg
     heading: 'معدات صيد الأسماك والرياضات البحرية'
     type: info_card
     enabled: true
@@ -109,7 +109,21 @@ info_cards:
     heading: السلوقي
     type: info_card
     enabled: true
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754581976
+  -
+    id: meu0cnm9
+    icon_type: image
+    image: icons/icon-sectors_6-14.jpg
+    heading: السكاكين
+    type: info_card
+    enabled: true
+  -
+    id: meu0e317
+    icon_type: image
+    image: icons/icon-sectors_6-15.jpg
+    heading: السوق
+    type: info_card
+    enabled: true
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1756301294
 ---
 يجمع معرض أبوظبي الدولي للصيد والفروسية 2025 مجموعة متنوعة من القطاعات التي تحتفي بالتقاليد، وتُبرز الثقافة، وتربط المجتمعات من مختلف أنحاء العالم. من الصقارة والفروسية والمغامرات الخارجية إلى الفنون والحرف اليدوية والأسلحة والمحافظة على التراث — يقدّم كل قطاع تجربة فريدة لعشاق التراث، والمهنيين، والعائلات على حد سواء. اكتشف العمق والتنوّع الذي يجعل من المعرض وجهة لا مثيل لها.

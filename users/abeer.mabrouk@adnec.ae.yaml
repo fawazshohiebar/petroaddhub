@@ -8,6 +8,7 @@ preferences:
       per_page: 100
     collaterals:
       per_page: 100
+      mode: grid
   collections:
     sessions:
       columns:
