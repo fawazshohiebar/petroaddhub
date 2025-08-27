@@ -85,7 +85,7 @@ page_builder:
           size: normal
           variant: no_image
         heading:
-          text: 'مواقف  السيارات العاديه'
+          text: 'مواقف  السيارات العادية'
           size: small
           color: black
           tag: h2
@@ -104,7 +104,83 @@ page_builder:
             id: mdy1leik
             dynamic_button:
               button: 'https://ecom.webhost.skidata.com/ecom/portal/home/adihex_parking/#/products'
-              text: 'احجز موقفاً عادياً لمواقف السيارات A وB'
+              text: 'احجز موقفاً عادياً لمواقف السيارات A و B'
+              button_options:
+                style: filled
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
+          -
+            id: mel3dnjj
+            dynamic_button:
+              button: 'https://goo.gl/maps/xE3kYSnrSB7jAE8g6'
+              text: 'موقف السيارات A'
+              button_options:
+                style: outline
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
+          -
+            id: mdy1mihl
+            dynamic_button:
+              button: 'https://goo.gl/maps/MwF11vzQm1mWVFDf7'
+              text: 'موقف السيارات B'
+              button_options:
+                style: outline
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
+  -
+    type: set
+    attrs:
+      id: metnhf15
+      values:
+        type: call_to_action
+        style_config:
+          padding: small
+          color: white
+          size: normal
+          variant: no_image
+        heading:
+          text: 'حجز مواقف السيارات عبر الإنترنت'
+          size: small
+          color: black
+          tag: h2
+          uppercase: false
+        description: |-
+          عند الحجز عبر الإنترنت، ما عليك سوى تسجيل رقم لوحة سيارتك، وسيتم إرسال رمز QR إلى بريدك الإلكتروني لتسهيل الدخول والخروج من مرافق مواقف أدنيك.
+
+          **كيفية إدخال رقم لوحة السيارة:**
+          أبوظبي: الفئة 50، الرقم 12345 → أدخل: 5012345
+
+          دبي: الفئة A، الرقم 12345 → أدخل: A12345
+
+          الشارقة: الفئة 1، الرقم 12345 → أدخل: 112345
+
+          **ملاحظات مهمة:**
+          رمز الـ QR إلزامي للدخول إلى مرافق المواقف.
+
+          تذاكر دخول ADIHEX غير مشمولة مع حجز المواقف، ويجب شراؤها بشكل منفصل.
+
+          يرجى اختيار موقع وقوف السيارات المفضل لديك أدناه:
+        buttons:
+          -
+            id: mdy1leik
+            dynamic_button:
+              button: 'https://ecom.webhost.skidata.com/ecom/portal/home/adihex_parking/#/products'
+              text: 'احجز موقفاً عادياً لمواقف السيارات A و B'
               button_options:
                 style: filled
                 color: primary
@@ -150,25 +226,22 @@ page_builder:
         type: call_to_action
         style_config:
           padding: small
-          color: lite-primary
+          color: lite-secondary
           size: normal
           variant: no_image
         heading:
-          text: null
+          text: 'مواقف اضافية'
           size: small
           color: black
           tag: h2
           uppercase: false
         description: |-
-          مواقف السيارات العادية الاضافية متوفرة في مواقف السيارات D وE في ADNEC مقابل 20 درهم إماراتي.
-          أو قم بالشراء عبر الإنترنت لتوفير الوقت والعناء من خلال الضغط أدناه.
+          يتوفر موقف سيارات إضافي في مواقف D و E بمركز أدنيك — والأفضل من ذلك؟ المواقف الآن مجانية!
 
-          المواقف متوفرة بنظام من يصل أولاً يُخدم أولاً – نوصي بالوصول مبكرًا.
+           المواقف مجانية ومتاحة على أساس أسبقية الوصول، لذا نوصي بالحضور مبكرًا لضمان توفر موقف لك.
 
-
-          **السعر**: 20 درهماً لكل مركبة (يُدفع في الموقع).
-          **تذاكر دخول ADIHEX**: غير مشمولة – يجب شراء التذاكر بشكل منفصل
-
+           **تذاكر الدخول إلى المعرض:** يرجى ملاحظة أن المواقف لا تشمل تذاكر الدخول، ويجب شراء التذاكر بشكل منفصل.
+           
           يرجى مراجعة <a href="https://www.adnec.ae/en/terms-and-conditions" target="_blank">الشروط والأحكام العامة لمواقف السيارات</a> قبل زيارتك.
 
           يرجى اختيار موقع وقوف السيارات المفضل لديك أدناه:
@@ -202,5 +275,5 @@ page_builder:
             type: button
             enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755773894
+updated_at: 1756280308
 ---
