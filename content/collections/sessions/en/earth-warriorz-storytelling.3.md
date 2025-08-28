@@ -1,7 +1,7 @@
 ---
 id: a77c8578-293c-4a4e-b9f7-9109059ef503
 blueprint: session
-title: 'Earth Warriorz: Storytelling'
+title: 'Future Is Rooted in The Past'
 start_time: '13:00'
 end_time: '13:30'
 event_date: '2025-09-07'
@@ -12,5 +12,5 @@ agendas:
   - knowledge-hub
 halls: hall-7
 updated_by: 1353420a-c76f-4594-9476-b140cd6ac39e
-updated_at: 1755682201
+updated_at: 1756361837
 ---
