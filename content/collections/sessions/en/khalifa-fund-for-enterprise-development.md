@@ -7,10 +7,9 @@ end_time: '16:30'
 event_date: '2025-09-04'
 speakers:
   - f6c245a3-0990-421b-9561-68c2537ce21d
-  - 52833671-3335-4e15-99fd-735d353661ee
 agendas:
   - knowledge-hub
 halls: hall-7
 updated_by: 1353420a-c76f-4594-9476-b140cd6ac39e
-updated_at: 1755676325
+updated_at: 1756361011
 ---
