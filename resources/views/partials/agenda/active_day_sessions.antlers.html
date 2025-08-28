@@ -6,12 +6,12 @@
             <div class="w-full md:w-36 flex-shrink-0 mb-4 md:mb-0 sticky top-36 z-10 h-fit">
                 <div class="bg-[#F3F3F3] md:bg-[#838383]/10 rounded-xl px-4 py-3 flex items-center justify-center space-x-2">
                     {{heroicon:outline:clock class="text-gray-600 w-5 h-5 md:w-6 md:h-6 stroke-2"}}
-                    <span class="text-lg md:text-base font-semibold" x-text="timeSlot.time"></span>
+                    <span class="text-lg md:text-base font-semibold" style="unicode-bidi: plaintext;" x-text="timeSlot.time"></span>
                 </div>
             </div>
 
             {{# Events #}}
-            <div class="flex-1 md:ml-16">
+            <div class="flex-1 ltr:md:ml-16 rtl:md:mr-16">
                 {{# Mobile: Single column, Desktop: Grid layout #}}
                 <div class="flex flex-col gap-4 md:grid md:gap-4" :class="timeSlot.events.length > 1 ? 'lg:grid-cols-2' : 'lg:grid-cols-1'">
                     <template x-for="event in timeSlot.events" :key="event.id">
@@ -23,7 +23,7 @@
                                     <span class="text-lg md:text-xl font-medium" x-text="event.hall"></span>
                                 </div>
                                 <div x-show="event.duration" class="bg-white border border-white rounded-xl px-3 md:px-4 py-1 md:py-1.5 self-start sm:self-auto">
-                                    <span class="text-sm md:text-base flex-nowrap text-nowrap" x-text="event.duration"></span>
+                                    <span class="text-sm md:text-base flex-nowrap text-nowrap" style="unicode-bidi: plaintext;" x-text="event.duration"></span>
                                 </div>
                             </div>
 
