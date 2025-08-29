@@ -1,14 +1,14 @@
 ---
-id: 1d1560b3-e927-454a-91fc-e059245d4a5e
+id: 4af34697-6638-4f9e-b573-ed81623248d5
 blueprint: session
 title: 'Traditional Arabic Coffee Making Demonstrations'
 start_time: '11:00'
-end_time: '22:00'
-event_date: '2025-08-31'
+event_date: '2025-09-06'
 agendas:
   - event-programme
 halls: atrium
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756503014
-duplicated_from: b65d8e9b-7c57-47ee-9c33-1efaddac6a38
+updated_at: 1756503277
+end_time: '22:00'
+duplicated_from: d5054322-9536-497f-b04c-e6beeb1d75eb
 ---

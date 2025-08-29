@@ -1,14 +1,15 @@
 ---
-id: 54f6606d-e526-46b4-9268-f771ce2d66de
+id: efd84bd1-6606-4762-8576-b0287ac43a80
+published: false
 blueprint: session
 title: 'Traditional Burqa Design and Coloring Activity'
 start_time: '11:00'
 end_time: '22:00'
-event_date: '2025-09-01'
+event_date: '2025-09-02'
 agendas:
   - event-programme
 halls: atrium
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756503478
-duplicated_from: 68973c47-8a57-4b64-a11d-f8989dc4e450
+updated_at: 1756503580
+duplicated_from: 519b57e0-cc54-404a-8712-1bd1f1a345ed
 ---
