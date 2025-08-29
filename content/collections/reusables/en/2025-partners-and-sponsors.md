@@ -130,8 +130,8 @@ normal_sponsors:
     normal_sponsor_title: 'Fragrance Sponsor'
     type: new_set
     enabled: true
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756464543
+updated_by: c970e8d9-e297-424a-bad0-93b7dab4d61d
+updated_at: 1756464810
 heading_group:
   heading:
     text: '2025 PARTNERS AND SPONSORS'
