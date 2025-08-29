@@ -7,6 +7,27 @@ page_builder:
   -
     type: set
     attrs:
+      id: mex42dr9
+      values:
+        type: html_block
+        available_on:
+          - production
+          - local
+        code:
+          code: |-
+            <style>
+              #patronage {
+            	display:none;
+              }
+            </style>
+          mode: htmlmixed
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+  -
+    type: set
+    attrs:
       id: mewjpqb6
       values:
         type: parking_information_sec_version
@@ -40,7 +61,7 @@ page_builder:
               -
                 id: mews32n3
                 dynamic_button:
-                  button: null
+                  button: 'https://ecom.webhost.skidata.com/ecom/portal/home/adihex_parking/#/products'
                   text: 'Secure Standard Parking For Car Parks A & B'
                   button_options:
                     style: filled
@@ -53,6 +74,7 @@ page_builder:
                 enabled: true
             description: |-
               Standard Parking is available at ADNEC Car Parks A and B for AED 20.
+
               Parking is on a first-come, first-served basis – we recommend arriving early.
 
               **Parking details**
@@ -106,6 +128,7 @@ page_builder:
                 background_color: '#F5F5F1'
                 type: new_set
                 enabled: true
+                button: 'https://goo.gl/maps/xE3kYSnrSB7jAE8g6'
               -
                 id: mewtido8
                 text: 'Car Park B'
@@ -115,6 +138,7 @@ page_builder:
                 background_color: '#F5F5F1'
                 type: new_set
                 enabled: true
+                button: 'https://goo.gl/maps/MwF11vzQm1mWVFDf7'
           -
             id: mewkymwe
             parking_heading:
@@ -131,6 +155,7 @@ page_builder:
               uppercase: true
             description: |-
               Avoid the hassle and secure your spot by booking Premium Parking in advance.
+
               Enjoy guaranteed convenience with easy access to ADIHEX via the Grandstand or Central Plaza parking areas.
 
               **Parking details**
@@ -234,8 +259,6 @@ page_builder:
               - Before Your Visit: Make sure to review the General Terms & Conditions related to parking and entry.
 
               Please review the parking <a href="https://www.adnec.ae/en/terms-and-conditions" target="_blank">Terms & Conditions</a> before your visit 
-              Please select your preferred parking location below.
-
 
               **Directions**
             second_set_buttons:
@@ -353,6 +376,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1756473425
+updated_by: 437f7be4-645e-4361-9093-565db2600099
+updated_at: 1756488914
 ---
