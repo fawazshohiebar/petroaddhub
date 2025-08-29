@@ -1,8 +1,8 @@
 ---
-id: 417748ea-139b-4edd-a307-22f2da3bd8eb
-origin: dbea57bb-1f4d-42fe-9529-752c538a3fff
+id: 65da30e4-5ba9-46cf-a7c1-f3241ded8cd0
+origin: dee49740-4d5c-449f-aa4d-ca39b0d12762
 title: 'عرض كلاب السلوقي العربي مع تفاعل مباشر'
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756502337
+updated_at: 1756502253
 ---
 <p></p>
