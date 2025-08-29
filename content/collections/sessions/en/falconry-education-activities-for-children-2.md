@@ -1,6 +1,5 @@
 ---
 id: 0706596b-304a-4c13-be75-d1b5ceadad21
-published: false
 blueprint: session
 title: 'Falconry Education Activities for Children'
 start_time: '11:00'

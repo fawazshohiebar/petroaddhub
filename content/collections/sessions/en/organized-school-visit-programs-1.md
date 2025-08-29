@@ -1,5 +1,6 @@
 ---
 id: 545cef16-2213-4f86-9683-7688a143cc6d
+published: false
 blueprint: session
 title: 'Organized School Visit Programs'
 start_time: '12:40'
