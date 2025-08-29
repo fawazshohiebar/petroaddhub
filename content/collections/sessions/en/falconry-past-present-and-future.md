@@ -9,5 +9,5 @@ agendas:
   - knowledge-hub
 halls: hall-7
 updated_by: 0681df41-06fa-45f0-b06b-9d732b05b763
-updated_at: 1756467552
+updated_at: 1756467970
 ---

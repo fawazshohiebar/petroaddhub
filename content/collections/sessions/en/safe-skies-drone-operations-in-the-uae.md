@@ -7,8 +7,8 @@ end_time: '19:30'
 event_date: '2025-08-30'
 speakers:
   - 0j1k2l3m-4n5o-6p7q-8r9s-t0u1v2w3x4y5
-updated_by: 1353420a-c76f-4594-9476-b140cd6ac39e
-updated_at: 1755621304
+updated_by: 0681df41-06fa-45f0-b06b-9d732b05b763
+updated_at: 1756468031
 agendas:
   - knowledge-hub
 ---
