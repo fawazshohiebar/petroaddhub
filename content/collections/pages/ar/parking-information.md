@@ -6,6 +6,27 @@ page_builder:
   -
     type: set
     attrs:
+      id: mex5u1de
+      values:
+        type: html_block
+        available_on:
+          - production
+          - local
+        code:
+          code: |-
+            <style>
+              #patronage {
+            	display:none;
+              }
+            </style>
+          mode: htmlmixed
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+  -
+    type: set
+    attrs:
       id: mdy1jnfs
       values:
         type: call_to_action
@@ -274,6 +295,6 @@ page_builder:
                 icon_position: start
             type: button
             enabled: true
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756280308
+updated_by: 437f7be4-645e-4361-9093-565db2600099
+updated_at: 1756491759
 ---
