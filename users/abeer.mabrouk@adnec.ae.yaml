@@ -26,6 +26,7 @@ preferences:
             site:
               site: en
       per_page: 500
+      after_save: continue_editing
     sponsors:
       columns:
         - title
