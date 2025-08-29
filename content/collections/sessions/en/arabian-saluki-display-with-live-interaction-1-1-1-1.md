@@ -1,6 +1,5 @@
 ---
 id: f6aa3695-67ac-4295-ae1a-4f2756dc143d
-published: false
 blueprint: session
 title: 'Arabian Saluki Display with Live Interaction'
 start_time: '11:00'

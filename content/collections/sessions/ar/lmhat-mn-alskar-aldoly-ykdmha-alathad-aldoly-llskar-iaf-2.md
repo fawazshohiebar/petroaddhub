@@ -1,8 +1,9 @@
 ---
-id: 6e51c265-f39b-4ee0-8754-822a805b5fd9
-origin: f91b96b9-3798-4cc2-9fac-f0766a0ab036
+id: 780ee9a4-aba4-4c5f-ac3a-2d60d7dca82a
+origin: 310b2cd3-58a7-47d7-a250-95a3b5cf53c6
+published: false
 title: 'لمحات من الصقارة الدولية يقدمها الاتحاد الدولي للصقارة (IAF)'
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756502595
+updated_at: 1756502785
 ---
 <p></p>
