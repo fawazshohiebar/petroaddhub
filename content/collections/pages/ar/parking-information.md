@@ -272,7 +272,7 @@ page_builder:
 
               **تفاصيل المواقف**
 
-              - السعر: 20 درهماً لكل مركبة (يتم الدفع في الموقع) أو يمكن الشراء عبر الإنترنت لتجنب الإزعاج بالضغط على الرابط أدناه.
+              - السعر: 20 درهماً لكل مركبة (يتم الدفع في الموقع) أو يمكن الشراء عبر الإنترنت لتجنب الإزعاج بالضغط على <a href="https://ecom.webhost.skidata.com/ecom/portal/home/adihex_parking/#/products">الرابط</a> .
 
               - تذاكر دخول ADIHEX: غير مشمولة – يجب شراؤها بشكل منفصل.
 
@@ -393,7 +393,7 @@ page_builder:
                     icon: null
                     icon_position: start
                 type: button
-                enabled: true
+                enabled: false
             parking_prices: '<b>مجاناً</b>'
             description: |-
               يتوفر موقف سيارات إضافي في مواقف D و E بمركز ADNEC — والأفضل من ذلك؟ المواقف الآن مجاناً!
@@ -511,5 +511,5 @@ page_builder:
             type: button
             enabled: false
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1756535122
+updated_at: 1756541266
 ---

@@ -78,7 +78,7 @@ page_builder:
               Parking is on a first-come, first-served basis – we recommend arriving early.
 
               **Parking details**
-              - Price: AED 20 per vehicle (pay onsite) or buy online to save the hassle by clicking below.
+              - Price: AED 20 per vehicle (pay onsite) or buy online to save the hassle by clicking <a href="https://ecom.webhost.skidata.com/ecom/portal/home/adihex_parking/#/products">here</a>.
               - ADIHEX Entrance Tickets: Not included – tickets must be purchased separately
 
               Please review the parking <a href="https://www.adnec.ae/en/terms-and-conditions" target="_blank">Terms &amp; Conditions</a> before your visit
@@ -310,7 +310,7 @@ page_builder:
                     icon: null
                     icon_position: start
                 type: button
-                enabled: true
+                enabled: false
             buttons_v2:
               -
                 id: mews9qeh
@@ -379,5 +379,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1756535313
+updated_at: 1756541354
 ---
