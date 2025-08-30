@@ -1,0 +1,94 @@
+ 
+
+    
+    
+    
+<!-- Swiper CSS -->
+ 
+<section class="relative overflow-hidden">
+    <div class="absolute {{ $isCompact ? '-right-10 -top-10 w-40 h-40' : '-right-20 -top-20 w-72 h-72' }} rounded-full bg-[#827654] opacity-5"></div>
+    <div class="absolute {{ $isCompact ? '-left-10 -bottom-10 w-48 h-48' : '-left-20 -bottom-20 w-80 h-80' }} rounded-full bg-[#827654] opacity-5"></div>
+    <div class="adnec-container z-10">
+          <div class="showdailyswiper py-16">
+            <div class="swiper-wrapper{{ replicator_image_button | count == 2 ? ' center-two-slides' : '' }}">
+        {{replicator_image_button}}
+            
+                <div class="!flex !flex-col gap-4 swiper-slide">
+                     {{image}}
+                     <img class="w-full  object-cover h-auto lg:max-h-150 rounded-lg shadow-xl"  src="{{url}}" alt="">
+                     {{/image}}
+                            
+                     {{ if dynamic_button }}
+                             <div class="flex flex-col sm:flex-row {{ $isCompact ? 'gap-2' : 'gap-4' }} justify-center">
+                                 {{ dynamic_button }}
+                                     {{ partial:shared/button }}
+                                 {{ /dynamic_button }}
+                             </div>
+                         {{ /if }}
+                </div>
+           
+            
+        {{/replicator_image_button}} 
+         </div> 
+    <div class="flex justify-center gap-4 mt-4 md:hidden">
+      <button class="carousel-button-prev bg-white/90 hover:bg-primary-50 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center w-10 h-10" tabindex="0" aria-label="Previous slide">
+        <svg class="w-4 h-4 text-primary-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+        </svg>
+      </button>
+      <button class="carousel-button-next bg-white/90 hover:bg-primary-50 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center w-10 h-10" tabindex="0" aria-label="Next slide">
+        <svg class="w-4 h-4 text-primary-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+        </svg>
+      </button>
+    </div>
+        </div>
+    </div>
+
+    <!-- Swiper navigation buttons, only visible on mobile -->
+
+</section>
+
+<style>
+    @media only screen and (min-width: 767px) {
+
+  .center-two-slides {
+    justify-content: center !important;
+    display: flex !important;
+  }
+}
+</style>
+
+<!-- Swiper JS -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var slideCount = document.querySelectorAll('.showdailyswiper .swiper-slide').length;
+    var centered = slideCount === 1 ? true : false;
+    new Swiper(".showdailyswiper", {
+      slidesPerView: 1,
+      centeredSlides: centered,
+      spaceBetween: 20,
+      loop: true,
+      speed: 600,
+      autoplay: {
+        delay: 3000, 
+        disableOnInteraction: false,
+      },
+      allowTouchMove: true,
+      navigation: {
+        nextEl: '.carousel-button-next',
+        prevEl: '.carousel-button-prev',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          centeredSlides: centered,
+        },
+        1024: {
+          slidesPerView: 2,
+          centeredSlides: centered,
+        },
+      },
+    });
+  });
+</script>

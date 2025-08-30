@@ -1,0 +1,28 @@
+title: 'Image Button Carousel'
+fields:
+  -
+    handle: replicator_image_button
+    field:
+      type: replicator
+      display: 'Replicator Image Button'
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            carousel_item:
+              display: 'Carousel Item'
+              fields:
+                -
+                  handle: image
+                  field:
+                    container: collaterals
+                    folder: added-images
+                    type: assets
+                    display: Image
+                    localizable: false
+                -
+                  handle: dynamic_button
+                  field: basics.dynamic_button
+                  config:
+                    display: 'Pdf Reference Button'
