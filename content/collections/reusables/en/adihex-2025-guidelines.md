@@ -17,20 +17,24 @@ main_activities:
   -
     id: madgpfr4
     icon: arrow-down-tray
-    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/guidelines-2025/english-guidelines/arts-&-crafts-guidelines_english.pdf" target="_blank">Arts and Crafts</a>'
+    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/guidelines-2025/english-guidelines/5.-arts-&-crafts-guidelines_english.pdf" target="_blank">Arts and Crafts</a>'
   -
     id: mdoggmxs
     icon: arrow-down-tray
-    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/guidelines-2025/english-guidelines/buying-selling-knives-guideline-english.pdf" target="_blank">Buying and Selling Knives Guidelines</a>'
+    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/guidelines-2025/english-guidelines/5.-buying-selling-knives-guideline-english.pdf" target="_blank">Buying and Selling Knives Guidelines</a>'
   -
     id: mdoghf50
     icon: arrow-down-tray
-    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/guidelines-2025/english-guidelines/weaponry-participation-guideline_english.pdf" target="_blank">Weaponry Participation Guidelines</a>'
+    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/guidelines-2025/english-guidelines/weaponry-participation-guideline_english-1.pdf" target="_blank">Weaponry Participation Guidelines</a>'
+  -
+    id: mexyf74b
+    icon: arrow-down-tray
+    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/guidelines-2025/english-guidelines/3.-buying&selling-airguns-guidelines_english.pdf" target="_blank">AirGuns Guidelines</a>'
 featured_activities:
   -
     id: mdiqvg3h
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755861596
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1756540709
 button_group:
   -
     id: mdirjamk
