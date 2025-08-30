@@ -1,5 +1,5 @@
-action: revision
-date: 1756534833
+action: publish
+date: 1756535122
 user: ac775259-f1c4-4a12-b768-668149cb0e1a
 attributes:
   id: e45d483f-bb19-48ac-aedf-fc86ee574383
@@ -420,7 +420,7 @@ attributes:
                 buttons_v2:
                   -
                     id: mexvdk57
-                    button: 'https://www.google.com/maps/place/ADNEC+Parking+E+Marina+Hall/@24.4150569,54.4386641,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5e43af32ec2a69:0x5f843f9b6868b973!8m2!3d24.415052!4d54.441239!16s%2Fg%2F11kb46hk8d?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D'
+                    button: 'https://www.google.com/maps/place/ADNEC+Parking+D/@24.4181602,54.426636,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5e6901cb08d555:0x28c5964679352f94!8m2!3d24.4181553!4d54.4292109!16s%2Fg%2F11tsf87kkv?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D'
                     text: 'موقف السيارات D'
                     text_color: '#1e2939'
                     before_icon: map-pin
@@ -430,7 +430,7 @@ attributes:
                     enabled: true
                   -
                     id: mexve8o2
-                    button: 'https://maps.app.goo.gl/ZbNct3o5BnnCuBXN7'
+                    button: 'https://www.google.com/maps/place/ADNEC+Parking+E+Marina+Hall/@24.4150569,54.4386641,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5e43af32ec2a69:0x5f843f9b6868b973!8m2!3d24.415052!4d54.441239!16s%2Fg%2F11kb46hk8d?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D'
                     text: 'موقف السيارات E'
                     text_color: '#1e2939'
                     before_icon: map-pin

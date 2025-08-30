@@ -81,6 +81,8 @@ page_builder:
               - Price: AED 20 per vehicle (pay onsite) or buy online to save the hassle by clicking below.
               - ADIHEX Entrance Tickets: Not included – tickets must be purchased separately
 
+              Please review the parking <a href="https://www.adnec.ae/en/terms-and-conditions" target="_blank">Terms &amp; Conditions</a> before your visit
+
               **Directions**
 
               Please book your parking and find your preferred parking location below.
@@ -376,6 +378,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: 437f7be4-645e-4361-9093-565db2600099
-updated_at: 1756488914
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1756535313
 ---
