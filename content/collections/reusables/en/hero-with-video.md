@@ -4,8 +4,8 @@ blueprint: hero
 title: 'Hero With Video'
 heading: 'THE LEGACY LIVES ON'
 video: AXw-tpvjrVY
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1756648578
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1756653556
 icons:
   -
     id: mdwv396j
@@ -15,6 +15,10 @@ icons:
     id: mdwv6hil
     icon: clock
     label: '11 AM - 10 PM'
+  -
+    id: mezu34yp
+    icon: clock
+    label: 'Last Entry 9 PM'
   -
     id: mdwv2qob
     icon: map-pin
