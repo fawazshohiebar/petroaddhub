@@ -38,10 +38,8 @@ main_activities:
 featured_activities:
   -
     id: mdiqvg3h
-    title: 'Dress Code'
-    description: 'Traditional attire or smart casual is encouraged. To maintain the event’s cultural standards, visitors wearing shorts, sleeveless tops, or revealing clothing will not be permitted entry. We kindly ask all attendees to respect local customs and dress appropriately.'
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756655986
+updated_at: 1756656044
 button_group:
   -
     id: mdirjamk
@@ -54,7 +52,7 @@ button_group:
     url: holl
     dynamic_button:
       button: null
-      text: null
+      text: 'Dress Code: Traditional attire or smart casual is encouraged. To maintain the event’s cultural standards, visitors wearing shorts, sleeveless tops, or revealing clothing will not be permitted entry. We kindly ask all attendees to respect local customs and dress appropriately.'
       button_options:
         style: filled
         color: black

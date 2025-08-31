@@ -1,5 +1,5 @@
-action: revision
-date: 1756550712
+action: publish
+date: 1756656086
 user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
 attributes:
   id: 44cd9be8-fbe2-4241-93b4-47b5031ef7cc
@@ -36,7 +36,6 @@ attributes:
     fine_seo_title: Guidlines
     fine_seo_preview: Guidlines
     feature_banner_image: null
-    parent: home
     fine_seo_description: null
     fine_seo_image: null
     header_scripts_available_on: {  }
