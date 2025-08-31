@@ -175,6 +175,14 @@ tabs:
                       fields:
                         -
                           import: reusable_media_with_cta_sec_version
+                    image_button_carousel_set:
+                      display: 'Image button Carousel Set'
+                      instructions: null
+                      icon: null
+                      hide: null
+                      fields:
+                        -
+                          import: image_button_carousel
                 forms:
                   display: Forms
                   instructions: null
