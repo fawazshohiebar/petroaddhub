@@ -13,8 +13,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1756589393
 page_builder:
   -
     type: set
@@ -26,15 +24,15 @@ page_builder:
           -
             id: mey8n4j6
             image:
-              - added-images/main_cta.png
+              - added-images/screenshot-2025-08-31-142412.png
             dynamic_button:
-              button: sdasdas
-              text: 'first slide'
+              button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-day1-digital-2p_compressed-(1).pdf'
+              text: 'Show Daily - Day 1'
               button_options:
                 style: filled
                 color: primary
                 size: medium
-                new_tab: false
+                new_tab: true
                 icon: null
                 icon_position: start
             type: carousel_item
@@ -45,4 +43,6 @@ page_builder:
       textAlign: left
 fine_seo_title: 'New page'
 fine_seo_preview: 'New page'
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1756636074
 ---
