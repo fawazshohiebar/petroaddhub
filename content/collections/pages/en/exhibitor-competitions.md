@@ -286,7 +286,7 @@ page_builder:
           color: black
           tag: h2
           uppercase: false
-        section_label: 'Organised by: Emirates Kennel Club (EKC) & Showline'
+        section_label: 'Organised by: Arabian Saluki Center'
         description: |-
           Celebrate the elegance and heritage of the Arabian Saluki in this dedicated beauty contest. Open exclusively to Saluki dogs, the competition highlights two distinct coat types across male and female categories:
 
@@ -308,6 +308,6 @@ body_end_scripts:
   mode: htmlmixed
 fine_seo_title: 'Exhibitor Competitions'
 fine_seo_preview: 'Visitor Competitions'
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755521684
+updated_by: 070ddde5-0fa6-434d-abe9-7bfc92c53639
+updated_at: 1756648205
 ---
