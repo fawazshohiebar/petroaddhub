@@ -114,6 +114,16 @@ fields:
           display: Landing
           icon: addon-boxes-stack
           sets:
+            parking_information_sec_version:
+              display: 'Parking Information Sec Version'
+              fields:
+                -
+                  import: reusable_media_with_cta_sec_version
+            image_button_carousel_set:
+              display: 'Image button Carousel Set'
+              fields:
+                -
+                  import: image_button_carousel
             reusable_block:
               display: 'Reusable Block'
               icon: addon-boxes-stack
@@ -850,6 +860,12 @@ fields:
                     localizable: false
                     width: 50
                     placeholder: '1234123'
+                -
+                  handle: invisual_prefix
+                  field:
+                    type: text
+                    display: 'Invisual Prefix'
+                    localizable: false
             agenda_component:
               display: 'Agenda Component'
               fields:

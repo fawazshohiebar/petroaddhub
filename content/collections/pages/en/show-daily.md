@@ -43,6 +43,6 @@ page_builder:
       textAlign: left
 fine_seo_title: 'New page'
 fine_seo_preview: 'New page'
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756636074
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1756726168
 ---
