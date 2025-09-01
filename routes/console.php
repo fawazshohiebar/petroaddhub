@@ -8,4 +8,4 @@ Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');
 
-Schedule::command('statamic:git:commit')->everyTenMinutes();
+Schedule::command('statamic:git:commit')->everyMinute();
