@@ -1,8 +1,7 @@
 ---
 id: 44cd9be8-fbe2-4241-93b4-47b5031ef7cc
-published: false
 blueprint: page
-title: Guidlines
+title: '2025 Guidelines'
 page_builder:
   -
     type: set
@@ -30,6 +29,5 @@ body_end_scripts:
 fine_seo_title: Guidlines
 fine_seo_preview: Guidlines
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755862285
-parent: home
+updated_at: 1756702797
 ---

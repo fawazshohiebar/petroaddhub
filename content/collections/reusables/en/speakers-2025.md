@@ -67,7 +67,7 @@ speaker_replicator:
     type: new_set
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755759170
+updated_at: 1756616177
 speakers:
   - 1a2b3c4d-5e6f-7g8h-9i0j-k1l2m3n4o5p6
   - e5f0919d-1cc5-47d1-968f-781dcdd81bc8
@@ -102,4 +102,10 @@ speakers:
   - 5bd1dfcc-aa3b-41bf-a57f-f0a4f578cf45
   - 452be261-bac4-45f9-91d9-679a5306bcf8
   - b2532806-2b02-4bc8-b61e-15923b085429
+  - 82acc2c9-cc1f-4607-8998-fa6d02501e23
+  - 0796541f-d8ba-4c8a-ab9f-b7b20b313d49
+  - eb33968c-e342-4a80-a3e1-ae46fadf56e6
+  - ef315548-4d0f-4975-b66e-6576bfc128e7
+  - b4eedd8e-4115-45f8-bb8d-721f54c126f2
+  - 5d3caa19-b1f7-42b4-b80d-418b677c6be5
 ---

@@ -56,7 +56,7 @@ page_builder:
         code:
           code: |-
             <div class="flex items-center justify-center">
-            <iframe width="660" height="415" src="https://www.youtube.com/embed/mNpyNxON0es?si=OYuPszSviXiL5AJv&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="660" height="415" src="https://www.youtube.com/embed/E54By-cAAGs?si=UXwqFzLkBEh5xJpM&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           mode: htmlmixed
   -
@@ -83,6 +83,7 @@ page_builder:
     type: set
     attrs:
       id: me3vjibx
+      enabled: false
       values:
         type: banner
         image: banners/2.-falcon-auction-2000x400-1.jpg
@@ -304,6 +305,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756192234
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1756718429
 ---

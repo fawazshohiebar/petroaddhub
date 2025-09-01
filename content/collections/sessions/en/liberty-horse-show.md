@@ -3,11 +3,11 @@ id: d23ddab4-4ced-4456-b53d-910597bba84e
 blueprint: session
 title: 'Liberty Horse Show'
 start_time: '17:00'
-end_time: '17:30'
+end_time: '17:15'
 event_date: '2025-08-30'
 agendas:
   - arena-schedule
 halls: arena
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755718538
+updated_by: 3ed25610-b330-4ffc-9745-86cde3be2105
+updated_at: 1756448116
 ---

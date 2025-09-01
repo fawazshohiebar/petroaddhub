@@ -1,0 +1,99 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: first_name
+            field:
+              autocomplete: given-name
+              type: text
+              display: 'First Name'
+              localizable: false
+              width: 50
+              validate:
+                - required
+          -
+            handle: last_name
+            field:
+              autocomplete: family-name
+              type: text
+              display: 'Last Name'
+              localizable: false
+              width: 50
+              validate:
+                - required
+          -
+            handle: mobile
+            field:
+              input_type: tel
+              autocomplete: tel
+              type: text
+              display: Mobile
+              localizable: false
+              width: 50
+              validate:
+                - required
+          -
+            handle: email_address
+            field:
+              input_type: email
+              autocomplete: email
+              type: text
+              display: 'Email Address'
+              localizable: false
+              width: 50
+              validate:
+                - required
+          -
+            handle: country
+            field:
+              options:
+                -
+                  key: AE
+                  value: 'United Arab Emirates'
+              default: AE
+              type: select
+              display: Country
+              localizable: false
+              validate:
+                - required
+          -
+            handle: check_in
+            field:
+              input_type: date
+              type: text
+              display: 'Check In'
+              localizable: false
+              width: 33
+              validate:
+                - required
+          -
+            handle: check_out
+            field:
+              input_type: date
+              type: text
+              display: 'Check Out'
+              localizable: false
+              width: 33
+              validate:
+                - required
+                - 'after_or_equal:check_in'
+          -
+            handle: stars
+            field:
+              options:
+                -
+                  key: '4 stars'
+                  value: ⭐️⭐️⭐️⭐️
+                -
+                  key: '5 stars'
+                  value: ⭐️⭐️⭐️⭐️⭐️
+              type: select
+              display: 'preferred stars'
+              localizable: false
+              width: 33
+          -
+            handle: turnstile_token
+            field: basics.turnstile_token

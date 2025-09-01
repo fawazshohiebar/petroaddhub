@@ -29,6 +29,12 @@ tree:
       -
         id: 1d953d4f-1acc-4eee-98a2-ff53135c23c6
         entry: 8ab494c3-b905-44b4-b2f1-ec25f4fe8bed
+      -
+        id: 022b5eb1-6d2e-4f14-8ec9-d744af62f8cb
+        entry: 29e4849b-7da0-4465-a6e5-4e0a7338774c
+      -
+        id: 8c074637-f5a6-490b-8021-673bf656499c
+        entry: 44cd9be8-fbe2-4241-93b4-47b5031ef7cc
   -
     id: 6335cb86-1850-4d81-8b23-d369ab341ad2
     title: 'Exhibitor Information'
@@ -56,6 +62,9 @@ tree:
         id: d9944be0-0690-4285-ad19-22b2a51b5090
         entry: a5ad64aa-044c-4a7f-b60f-11303b9122e1
   -
+    id: b16ae774-3625-4155-a17d-475a3b2a5a1a
+    entry: 3a1d90c6-4784-47df-bad6-97fcaab74063
+  -
     id: 7ad6f69f-face-4a13-bbde-95f7ecebe911
     entry: 1b98c975-9c5c-43a1-bc8b-556c0370c838
     children:
@@ -65,9 +74,6 @@ tree:
       -
         id: d955a89e-a096-45eb-a20d-1d1d3f63728a
         entry: b9ed386b-c5e5-4a93-897c-05be9477c053
-      -
-        id: 9451580e-6608-4609-80b0-a29cc86ba96f
-        entry: 95868f89-d9b7-4b83-a09d-43ac1858e192
   -
     id: 4ef9c3f1-c540-49e3-973e-17e564658bc5
     entry: 8cc63d1c-8cec-40c0-9eff-689c72f40539

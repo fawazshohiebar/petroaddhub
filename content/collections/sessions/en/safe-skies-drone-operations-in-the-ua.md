@@ -1,7 +1,7 @@
 ---
 id: 63dcc98d-f836-4751-bba0-50287de4995b
 blueprint: session
-title: 'Safe Skies: Drone Operations in the UA'
+title: 'Safe Skies: Drone Operations in the UAE'
 start_time: '16:00'
 end_time: '16:45'
 event_date: '2025-09-03'
@@ -10,6 +10,6 @@ speakers:
 agendas:
   - knowledge-hub
 halls: hall-7
-updated_by: 1353420a-c76f-4594-9476-b140cd6ac39e
-updated_at: 1755675892
+updated_by: 0681df41-06fa-45f0-b06b-9d732b05b763
+updated_at: 1756470431
 ---

@@ -1,0 +1,31 @@
+action: revision
+date: 1756288393
+user: ac775259-f1c4-4a12-b768-668149cb0e1a
+attributes:
+  id: af83b987-e4a0-4c3f-a845-3e621474b0a8
+  slug: adihex-2025-packages
+  published: false
+  date: null
+  data:
+    title: 'ADIHEX 2025 Packages'
+    feature_banner_image: null
+    page_builder: null
+    parent: null
+    template: default
+    fine_seo_title: null
+    fine_seo_is_title_custom: false
+    fine_seo_description: null
+    fine_seo_image: null
+    fine_seo_preview: null
+    header_scripts_available_on: {  }
+    header_scripts:
+      code: null
+      mode: htmlmixed
+    body_start_scripts_available_on: {  }
+    body_start_scripts:
+      code: null
+      mode: htmlmixed
+    body_end_scripts_available_on: {  }
+    body_end_scripts:
+      code: null
+      mode: htmlmixed
