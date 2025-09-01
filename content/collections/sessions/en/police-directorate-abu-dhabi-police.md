@@ -1,5 +1,6 @@
 ---
 id: 8306882d-26af-4953-bb5e-ec189e101340
+published: false
 blueprint: session
 title: 'Safety Initiative for Off-Road Trips: Police Directorate - Abu Dhabi Police'
 start_time: '13:00'

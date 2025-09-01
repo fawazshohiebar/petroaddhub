@@ -1,5 +1,6 @@
 ---
 id: 5671c08b-24f0-4e0c-9aac-fbe5e88bd756
+published: false
 blueprint: session
 title: 'Medical Services Department - Abu Dhabi Police'
 start_time: '18:00'
