@@ -46,6 +46,7 @@ page_builder:
         show_contact_details: false
         links_id: '123456445'
         invisual_prefix: 'https://map.adihex.com/places/by-vendor-id/'
+        external_search_prefix: 'https://aisearch.adihex.com/'
   -
     type: paragraph
     attrs:
@@ -65,5 +66,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1756727140
+updated_at: 1756729762
 ---
