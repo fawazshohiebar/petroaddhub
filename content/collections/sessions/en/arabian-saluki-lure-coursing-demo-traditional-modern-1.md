@@ -1,5 +1,6 @@
 ---
 id: cad5e1fe-a387-440c-97ca-d69fd40d803c
+published: false
 blueprint: session
 title: 'Arabian Saluki Lure Coursing Demo'
 start_time: '14:20'

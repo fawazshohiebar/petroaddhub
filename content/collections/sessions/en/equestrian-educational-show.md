@@ -1,5 +1,6 @@
 ---
 id: 7853c37d-cf67-40f3-8911-b935f0a49880
+published: false
 blueprint: session
 title: 'Equestrian Educational Show'
 start_time: '12:40'
