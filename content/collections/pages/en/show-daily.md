@@ -37,38 +37,6 @@ page_builder:
                 icon_position: start
             type: carousel_item
             enabled: true
-          -
-            id: mf106j69
-            image:
-              - added-images/screenshot-2025-08-31-142412.png
-            dynamic_button:
-              button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-day1-digital-2p_compressed-(1).pdf'
-              text: 'Show Daily - Day 1'
-              button_options:
-                style: filled
-                color: primary
-                size: medium
-                new_tab: true
-                icon: null
-                icon_position: start
-            type: carousel_item
-            enabled: true
-          -
-            id: mf106hxo
-            image:
-              - added-images/screenshot-2025-08-31-142412.png
-            dynamic_button:
-              button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-day1-digital-2p_compressed-(1).pdf'
-              text: 'Show Daily - Day 1'
-              button_options:
-                style: filled
-                color: primary
-                size: medium
-                new_tab: true
-                icon: null
-                icon_position: start
-            type: carousel_item
-            enabled: true
   -
     type: paragraph
     attrs:
@@ -76,5 +44,5 @@ page_builder:
 fine_seo_title: 'New page'
 fine_seo_preview: 'New page'
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1756724277
+updated_at: 1756726168
 ---
