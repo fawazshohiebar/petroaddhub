@@ -35,9 +35,13 @@ main_activities:
     id: mexyxe0d
     title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/guidelines-2025/arabic-guidelines/3.-buying&selling-airguns-guidelines_arabic.pdf" target="_blank">إرشادات شراء وبيع الأسلحة الهوائية</a>'
     icon: arrow-down-tray
+  -
+    id: mf0nfv3s
+    title: 'الزي المعتمد'
+    description: 'يُشجَّع ارتداء اللباس التقليدي أو الملابس الكاجوال الأنيقة. لن يُسمح بدخول الزوار الذين يرتدون السراويل القصيرة أو القمصان بدون أكمام أو الملابس غير المحتشمة، وذلك حرصاً على احترام العادات والتقاليد المحلية. نرجو من جميع الزوار الالتزام بالزي المناسب.'
 featured_activities:
   -
     id: mdy7osn0
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756550769
+updated_at: 1756702788
 ---
