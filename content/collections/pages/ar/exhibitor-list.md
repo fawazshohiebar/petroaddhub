@@ -45,10 +45,12 @@ page_builder:
         scroll_margin_top: 500
         show_contact_details: false
         links_id: '123456445'
+        external_search_prefix: 'https://aisearch.adihex.com/'
+        invisual_prefix: 'https://map.adihex.com/places/by-vendor-id/'
   -
     type: paragraph
     attrs:
       textAlign: left
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754587825
+updated_at: 1756729790
 ---

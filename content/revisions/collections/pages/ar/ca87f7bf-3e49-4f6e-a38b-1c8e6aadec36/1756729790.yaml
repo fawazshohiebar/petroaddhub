@@ -1,6 +1,7 @@
-action: revision
-date: 1756729779
+action: publish
+date: 1756729790
 user: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+message: 'add invisual anbd ai search'
 attributes:
   id: ca87f7bf-3e49-4f6e-a38b-1c8e6aadec36
   slug: exhibitor-list
