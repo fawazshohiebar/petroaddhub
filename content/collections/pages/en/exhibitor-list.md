@@ -45,15 +45,25 @@ page_builder:
         scroll_margin_top: 500
         show_contact_details: false
         links_id: '123456445'
+        invisual_prefix: 'https://map.adihex.com/places/by-vendor-id/'
   -
     type: paragraph
     attrs:
       textAlign: left
 fine_seo_is_title_custom: false
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754587793
 fine_seo_title: 'Exhibitor List'
 fine_seo_preview: 'Exhibitor List'
 feature_banner_image: galleries/2024_gallery/2024_gallery_6.jpg
 template: default
+header_scripts:
+  code: null
+  mode: htmlmixed
+body_start_scripts:
+  code: null
+  mode: htmlmixed
+body_end_scripts:
+  code: null
+  mode: htmlmixed
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1756727140
 ---
