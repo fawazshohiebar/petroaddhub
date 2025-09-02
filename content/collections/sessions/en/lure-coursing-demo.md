@@ -1,5 +1,6 @@
 ---
 id: 98acbc17-1f03-41a2-a153-10fd039c685f
+published: false
 blueprint: session
 title: 'Lure Coursing Demo'
 start_time: '12:30'
