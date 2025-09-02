@@ -1,10 +1,8 @@
 ---
 id: dbdd62d3-b18f-4a14-bc68-971685780b33
 origin: 8ffdf610-863d-4554-944f-a8a9ebf31c87
-published: false
-title: 'عرض الخيول الفريزيان (Duplicated)'
+title: 'عرض الخيول الفريزيان'
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756796069
-duplicated_from: 39220499-8f88-40b1-8f1d-2e855538420e
+updated_at: 1756796112
 ---
 <p></p>
