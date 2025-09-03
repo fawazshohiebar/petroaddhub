@@ -58,10 +58,40 @@ page_builder:
                 icon_position: start
             type: carousel_item
             enabled: true
+          -
+            id: mf3i9vjr
+            image:
+              - show-daily/cover-images/screenshot-2025-09-03-085007.png
+            dynamic_button:
+              button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-day4-digital--(1).pdf'
+              text: 'النشرة اليومية - اليوم 4'
+              button_options:
+                style: filled
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: carousel_item
+            enabled: true
+          -
+            id: mf3iaz60
+            dynamic_button:
+              button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihexday-05-digital.pdf'
+              text: 'النشرة اليومية - اليوم 5'
+              button_options:
+                style: filled
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: carousel_item
+            enabled: true
   -
     type: paragraph
     attrs:
       textAlign: left
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756791018
+updated_at: 1756875560
 ---
