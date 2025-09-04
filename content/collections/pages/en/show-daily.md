@@ -72,7 +72,7 @@ page_builder:
           -
             id: mf3i5by7
             image:
-              - show-daily/cover-images/screenshot-2025-09-03-085036.png
+              - show-daily/cover-images/untitled-design-(8).png
             dynamic_button:
               button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-day4-digital--(1).pdf'
               text: 'Show Daily - Day 4'
@@ -124,5 +124,5 @@ page_builder:
 fine_seo_title: 'New page'
 fine_seo_preview: 'New page'
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757011565
+updated_at: 1757012066
 ---
