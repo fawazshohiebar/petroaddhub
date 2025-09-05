@@ -1,5 +1,6 @@
 ---
 id: da866d96-2417-4b1e-9714-5fbdc66c7244
+published: false
 blueprint: session
 title: 'Friday Prayer'
 start_time: '13:30'

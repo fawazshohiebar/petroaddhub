@@ -1,5 +1,6 @@
 ---
 id: 7f4f1f80-7a1e-4404-9809-92c06b3cc055
+published: false
 blueprint: session
 title: 'Horse Master Liberty Show'
 start_time: '13:00'

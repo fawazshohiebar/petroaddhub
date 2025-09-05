@@ -1,5 +1,6 @@
 ---
 id: bc1fb14a-78e2-4ad2-918e-423066ad2c4d
+published: false
 blueprint: session
 title: 'Arabian Horse Dressage Show'
 start_time: '12:45'

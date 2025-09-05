@@ -1,5 +1,6 @@
 ---
 id: 9d61d700-d732-477c-ab5c-44b15bfb21ef
+published: false
 blueprint: session
 title: 'End of Show'
 start_time: '21:00'

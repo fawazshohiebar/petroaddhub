@@ -1,5 +1,6 @@
 ---
 id: 4e90ab05-6e7c-42ac-841a-0f727c14ccb5
+published: false
 blueprint: session
 title: 'Abu Dhabi Police Musical Band, Equine & K9 Units Show'
 start_time: '10:45'

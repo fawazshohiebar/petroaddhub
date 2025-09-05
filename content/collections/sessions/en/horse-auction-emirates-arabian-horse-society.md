@@ -1,5 +1,6 @@
 ---
 id: f06ed6dd-0eab-48f9-aefe-73f45de6afbd
+published: false
 blueprint: session
 title: 'Horse Auction (Emirates Arabian Horse Society)'
 start_time: '14:00'

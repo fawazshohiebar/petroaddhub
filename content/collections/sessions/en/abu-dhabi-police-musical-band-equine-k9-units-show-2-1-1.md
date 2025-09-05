@@ -1,5 +1,6 @@
 ---
 id: fb03aa7d-cdb5-437e-bc1f-b1e9ec73c4f8
+published: false
 blueprint: session
 title: 'Abu Dhabi Police Musical Band Performance'
 start_time: '11:15'

@@ -1,5 +1,6 @@
 ---
 id: 282f525e-a0f9-47f6-a89f-a69084446ae3
+published: false
 blueprint: session
 title: 'Equine coaching demo'
 start_time: '11:20'
