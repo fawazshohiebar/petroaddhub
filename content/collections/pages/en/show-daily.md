@@ -133,6 +133,22 @@ page_builder:
                 icon_position: start
             type: carousel_item
             enabled: true
+          -
+            id: mf7xvq6i
+            image:
+              - show-daily/cover-images/untitled-design-(13).png
+            dynamic_button:
+              button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex-2025-show-daily-day-8-digital.pdf'
+              text: 'Show Daily - Day 8'
+              button_options:
+                style: filled
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: carousel_item
+            enabled: true
   -
     type: paragraph
     attrs:
@@ -140,5 +156,5 @@ page_builder:
 fine_seo_title: 'New page'
 fine_seo_preview: 'New page'
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757060833
+updated_at: 1757143599
 ---
