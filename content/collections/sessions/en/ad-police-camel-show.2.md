@@ -1,5 +1,6 @@
 ---
 id: f3d2b8fe-14e9-4bfe-b7da-49af30453373
+published: false
 blueprint: session
 title: 'AD Police Camel Show'
 start_time: '18:00'

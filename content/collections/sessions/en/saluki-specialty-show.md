@@ -1,5 +1,6 @@
 ---
 id: 1845a612-158e-48c0-a1b7-f639c6d669af
+published: false
 blueprint: session
 title: 'Saluki Specialty Show'
 start_time: '14:00'
