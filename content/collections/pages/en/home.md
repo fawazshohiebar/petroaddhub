@@ -24,7 +24,6 @@ page_builder:
     type: set
     attrs:
       id: meed4hzu
-      enabled: false
       values:
         type: heading_group
         heading:
@@ -47,7 +46,6 @@ page_builder:
     type: set
     attrs:
       id: meed4kfk
-      enabled: false
       values:
         type: html_block
         available_on:
@@ -56,14 +54,13 @@ page_builder:
         code:
           code: |-
             <div class="flex items-center justify-center">
-            <iframe width="660" height="415" src="https://www.youtube.com/embed/77yMnrYYrVs?si=f-I77ayD9eAICwal&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="660" height="415" src="https://www.youtube.com/embed/BxJVK58jwTc?si=f-I77ayD9eAICwal&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           mode: htmlmixed
   -
     type: set
     attrs:
       id: meed4rjd
-      enabled: false
       values:
         type: divider
         space_height: 180px
@@ -305,6 +302,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1757177155
+updated_by: 070ddde5-0fa6-434d-abe9-7bfc92c53639
+updated_at: 1757258870
 ---

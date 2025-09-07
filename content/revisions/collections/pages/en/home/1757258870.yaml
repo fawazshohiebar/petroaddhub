@@ -1,5 +1,5 @@
-action: revision
-date: 1757258797
+action: publish
+date: 1757258870
 user: 070ddde5-0fa6-434d-abe9-7bfc92c53639
 attributes:
   id: home
@@ -313,4 +313,3 @@ attributes:
     header_scripts_available_on: {  }
     body_start_scripts_available_on: {  }
     body_end_scripts_available_on: {  }
-    parent: null
