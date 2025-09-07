@@ -1,5 +1,6 @@
 ---
 id: 89824e45-ec38-42cc-bac1-e171fb1ae362
+published: false
 blueprint: session
 title: 'SHARJAH KENNEL CLUB'
 start_time: '10:00'
