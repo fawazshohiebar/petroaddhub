@@ -98,26 +98,6 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdygki3k
-      values:
-        type: banner
-        new_tab: true
-        is_div: false
-        use_image_height: false
-        image: banners/download-app-now-2025_ar2-(1).jpg
-        link: 'https://onelink.to/hbb8wm'
-        width: full
-        image_style: contain
-        heading:
-          text: null
-          size: small
-          color: white
-          tag: p
-          uppercase: true
-        image_height: 300
-  -
-    type: set
-    attrs:
       id: mdulw2yz
       values:
         type: reusable_block
@@ -172,6 +152,26 @@ page_builder:
           color: lite-secondary
           size: normal
           variant: style1
+  -
+    type: set
+    attrs:
+      id: mfb3985z
+      values:
+        type: banner
+        new_tab: true
+        is_div: false
+        use_image_height: false
+        image: banners/download-app-now-2025_ar2-(1).jpg
+        link: 'https://onelink.to/hbb8wm'
+        width: full
+        image_style: contain
+        heading:
+          text: null
+          size: small
+          color: white
+          tag: p
+          uppercase: true
+        image_height: 300
   -
     type: set
     attrs:
@@ -264,6 +264,6 @@ fine_seo_title: 'المعرض الدولي للصيد والفروسية - أب�
 fine_seo_is_title_custom: true
 fine_seo_description: 'تراث يتجدد يمثل التراث بوصلتنا التي تُشكّل قيمنا وممارساتنا، ولذا نقل إلينا أسلافنا ثقافتهم وحرفهم واهتماماتهم ومهاراتهم من جيل إلى آخر، وبالمثل يسعى معرض'
 fine_seo_preview: الرئيسية
-updated_by: 070ddde5-0fa6-434d-abe9-7bfc92c53639
-updated_at: 1757264241
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1757334100
 ---
