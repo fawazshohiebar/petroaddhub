@@ -1,7 +1,7 @@
 ---
 id: b8dfb5b2-2bfc-4db0-af0a-652b3946372f
 blueprint: content_with_info_cards
-title: 'ADIHEX 2025 Where Heritage Meets Business Opportunity'
+title: 'ADIHEX 2026 Where Heritage Meets Business Opportunity'
 style_config:
   padding: small
   color: white
@@ -62,7 +62,7 @@ info_cards:
     type: info_card
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757312199
+updated_at: 1757329697
 ---
 Position your brand at the heart of the world’s largest hunting, equestrian, and heritage conservation event. ADIHEX 2025 is expected to welcome over **347,000+ buyers, enthusiasts, and professionals** from more than **65 countries**, offering unrivaled access to a highly targeted, international audience.
 
