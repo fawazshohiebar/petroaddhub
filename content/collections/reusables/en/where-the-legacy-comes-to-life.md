@@ -4,7 +4,7 @@ blueprint: content_with_info_cards
 title: 'Where the Legacy Comes to Life'
 style_config:
   padding: small
-  color: white
+  color: lite-primary
   size: normal
   variant: carousel
 heading:
@@ -103,7 +103,7 @@ info_cards:
     type: info_card
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754923914
+updated_at: 1757312071
 cta_actions:
   -
     id: mdwr333i
