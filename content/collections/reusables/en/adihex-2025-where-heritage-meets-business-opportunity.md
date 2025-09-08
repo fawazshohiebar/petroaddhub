@@ -9,7 +9,7 @@ style_config:
   variant: full
 heading:
   heading:
-    text: 'ADIHEX 2025 WHERE HERITAGE MEETS BUSINESS OPPORTUNITY'
+    text: 'ADIHEX 2026 — WHERE HERITAGE MEETS BUSINESS OPPORTUNITY'
     size: small
     color: black
     tag: p
@@ -62,8 +62,8 @@ info_cards:
     type: info_card
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757329697
+updated_at: 1757330734
 ---
-Position your brand at the heart of the world’s largest hunting, equestrian, and heritage conservation event. ADIHEX 2025 is expected to welcome over **347,000+ buyers, enthusiasts, and professionals** from more than **65 countries**, offering unrivaled access to a highly targeted, international audience.
+Position your brand at the heart of the world’s largest hunting, equestrian, and heritage conservation event. ADIHEX 2026 is expected to welcome over **347,000+ buyers, enthusiasts, and professionals** from more than **65 countries**, offering unrivaled access to a highly targeted, international audience.
 
-Whether you’re entering the market or expanding your reach, ADIHEX provides the commercial gateway to the **UAE, GCC, and global markets**—with B2B networking platforms, live product showcases, and direct engagement with high-intent buyers.
+Whether you’re entering the market or expanding your global footprint, ADIHEX 2026 is the premier commercial gateway to the UAE, GCC, and beyond—featuring powerful B2B networking platforms, live product showcases, and direct engagement with high-intent buyers.
