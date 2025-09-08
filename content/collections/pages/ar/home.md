@@ -98,19 +98,31 @@ page_builder:
   -
     type: set
     attrs:
+      id: mfb3e3fv
+      values:
+        type: reusable_block
+        entry:
+          - 0f469012-e5d7-4cee-beb6-9b5f615fc6fc
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+  -
+    type: set
+    attrs:
+      id: mfb3khuc
+      values:
+        type: reusable_block
+        entry:
+          - bc822cf7-e053-48b9-821b-600f3ad7d9bd
+  -
+    type: set
+    attrs:
       id: mdulw2yz
       values:
         type: reusable_block
         entry:
           - ad03629a-055b-41ff-bf87-d3910e80a3fb
-  -
-    type: set
-    attrs:
-      id: mdwx3my7
-      values:
-        type: reusable_block
-        entry:
-          - bc822cf7-e053-48b9-821b-600f3ad7d9bd
   -
     type: set
     attrs:
@@ -265,5 +277,5 @@ fine_seo_is_title_custom: true
 fine_seo_description: 'تراث يتجدد يمثل التراث بوصلتنا التي تُشكّل قيمنا وممارساتنا، ولذا نقل إلينا أسلافنا ثقافتهم وحرفهم واهتماماتهم ومهاراتهم من جيل إلى آخر، وبالمثل يسعى معرض'
 fine_seo_preview: الرئيسية
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757334100
+updated_at: 1757334552
 ---
