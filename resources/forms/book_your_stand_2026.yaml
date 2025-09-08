@@ -1,0 +1,9 @@
+title: 'Book Your Stand 2026'
+email:
+  -
+    id: mamg6evf
+    to: khaled.taha@adnec.ae
+    mailer: smtp
+    markdown: true
+    subject: 'New Book Your Stand Enquiry'
+    html: emails/new_enquiry
