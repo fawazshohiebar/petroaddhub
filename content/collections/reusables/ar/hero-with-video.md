@@ -27,6 +27,6 @@ hero_actions:
         icon_position: start
     type: button
     enabled: true
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757310645
+updated_by: c970e8d9-e297-424a-bad0-93b7dab4d61d
+updated_at: 1757313257
 ---
