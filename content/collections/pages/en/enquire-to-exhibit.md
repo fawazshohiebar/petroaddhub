@@ -1,10 +1,8 @@
 ---
 id: 37949eb0-4e08-4fb8-8142-58b586022cd1
 blueprint: page
-title: 'Enquire to Exhibit'
+title: 'Book your Stand 2026'
 fine_seo_is_title_custom: false
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754679359
 page_builder:
   -
     type: set
@@ -23,14 +21,14 @@ page_builder:
         redirect_to_url: 'entry::275ecc1e-5364-4ceb-906a-16601a396d77'
         heading:
           heading:
-            text: 'Enquire to Exhibit'
+            text: 'BOOK YOUR STAND 2026'
             size: small
             color: black
             tag: p
             uppercase: false
           subheading: null
           focus_icon: false
-          heading_focus_word: 'ADIHEX 2025'
+          heading_focus_word: 'ADIHEX 2026'
           icon: null
   -
     type: set
@@ -74,4 +72,6 @@ header_scripts_available_on:
   - production
 body_start_scripts_available_on:
   - production
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1757310332
 ---
