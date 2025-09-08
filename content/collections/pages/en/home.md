@@ -80,20 +80,6 @@ page_builder:
     attrs:
       textAlign: left
   -
-    type: set
-    attrs:
-      id: me3vjibx
-      enabled: false
-      values:
-        type: banner
-        image: banners/2.-falcon-auction-2000x400-1.jpg
-        link: 'https://auction.adihex.com/en/register'
-        new_tab: true
-        width: full
-        image_style: contain
-        is_div: false
-        use_image_height: true
-  -
     type: paragraph
     attrs:
       textAlign: left
@@ -116,31 +102,11 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdygki3k
-      values:
-        type: banner
-        new_tab: true
-        is_div: false
-        use_image_height: false
-        image: banners/download-app-now-2025_ar2-(1).jpg
-        link: 'https://onelink.to/hbb8wm'
-        width: full
-        image_style: contain
-        heading:
-          text: null
-          size: small
-          color: white
-          tag: p
-          uppercase: true
-        image_height: 300
-  -
-    type: set
-    attrs:
-      id: mdulw2yz
+      id: mfaphf4x
       values:
         type: reusable_block
         entry:
-          - 9fe7d3ea-4903-4391-9f52-df30bd35a89e
+          - b8dfb5b2-2bfc-4db0-af0a-652b3946372f
   -
     type: set
     attrs:
@@ -152,11 +118,11 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdmol3og
+      id: mfapj4ag
       values:
         type: reusable_block
         entry:
-          - 424afcd4-bbf9-488d-bc21-fe1343478187
+          - 9fe7d3ea-4903-4391-9f52-df30bd35a89e
   -
     type: set
     attrs:
@@ -193,6 +159,14 @@ page_builder:
   -
     type: set
     attrs:
+      id: mfapjhe2
+      values:
+        type: reusable_block
+        entry:
+          - 424afcd4-bbf9-488d-bc21-fe1343478187
+  -
+    type: set
+    attrs:
       id: mdwr4uxy
       values:
         type: reusable_block
@@ -209,11 +183,23 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdms5pe8
+      id: mfapibza
       values:
-        type: reusable_block
-        entry:
-          - b8dfb5b2-2bfc-4db0-af0a-652b3946372f
+        type: banner
+        new_tab: true
+        is_div: false
+        use_image_height: false
+        image: banners/download-app-now-2025_ar2-(1).jpg
+        link: 'https://onelink.to/hbb8wm'
+        width: full
+        image_style: contain
+        heading:
+          text: null
+          size: small
+          color: white
+          tag: p
+          uppercase: true
+        image_height: 300
   -
     type: set
     attrs:
@@ -305,6 +291,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: 070ddde5-0fa6-434d-abe9-7bfc92c53639
-updated_at: 1757264215
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1757311042
 ---
