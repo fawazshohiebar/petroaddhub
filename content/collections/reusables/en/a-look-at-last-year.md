@@ -6,85 +6,105 @@ title_feild: 'A LOOK AT LAST YEAR'
 images_and_text_replicator:
   -
     id: mdo4dkg7
-    image: galleries/2024_gallery/2024_gallery_1.jpg
+    image: adiehx-2025-images/downloaded-image-(10).jpg
     type: new_set
     enabled: true
   -
     id: mdo4e5yb
-    image: galleries/2024_gallery/gallery_2024_riding.jpg
+    image: adiehx-2025-images/downloaded-image-(11).jpg
     type: new_set
     enabled: true
   -
     id: mdo4eo24
-    image: galleries/2024_gallery/2024_gallery_10.jpg
+    image: adiehx-2025-images/downloaded-image-(12).jpg
     type: new_set
     enabled: true
   -
     id: mdo4f3ub
-    image: galleries/2024_gallery/2024_gallery_11.jpg
+    image: adiehx-2025-images/downloaded-image-(13).jpg
     type: new_set
     enabled: true
   -
     id: mdo4f6mq
-    image: galleries/2024_gallery/2024_gallery_12.jpg
+    image: adiehx-2025-images/downloaded-image-(14).jpg
     type: new_set
     enabled: true
   -
     id: mdo4f5jk
-    image: galleries/2024_gallery/2024_gallery_13.jpg
+    image: adiehx-2025-images/downloaded-image-(15).jpg
     type: new_set
     enabled: true
   -
     id: me4059xe
-    image: galleries/2024_gallery/2024_gallery_2.jpg
+    image: adiehx-2025-images/downloaded-image-(16).jpg
     type: new_set
     enabled: true
   -
     id: me405iqz
-    image: galleries/2024_gallery/2024_gallery_3.jpg
+    image: adiehx-2025-images/downloaded-image-(17).jpg
     type: new_set
     enabled: true
   -
     id: me405qqk
-    image: galleries/2024_gallery/2024_gallery_4.jpg
+    image: adiehx-2025-images/downloaded-image-(18).jpg
     type: new_set
     enabled: true
   -
     id: me405zdp
-    image: galleries/2024_gallery/2024_gallery_5.jpg
+    image: adiehx-2025-images/downloaded-image-(2).jpg
     type: new_set
     enabled: true
   -
     id: me406aqr
-    image: galleries/2024_gallery/2024_gallery_6.jpg
+    image: adiehx-2025-images/downloaded-image-(21).jpg
     type: new_set
     enabled: true
   -
     id: me406ir2
-    image: galleries/2024_gallery/2024_gallery_7.jpg
+    image: adiehx-2025-images/downloaded-image-(22).jpg
     type: new_set
     enabled: true
   -
     id: me406pb1
-    image: galleries/2024_gallery/2024_gallery_8.jpg
+    image: adiehx-2025-images/downloaded-image-(23).jpg
     type: new_set
     enabled: true
   -
     id: me406w42
-    image: galleries/2024_gallery/2024_gallery_9.jpg
+    image: adiehx-2025-images/downloaded-image-(24).jpg
     type: new_set
     enabled: true
   -
     id: me408apx
-    image: galleries/2024_gallery/gallery_2024_auction.jpg
+    image: adiehx-2025-images/downloaded-image-(25).jpg
     type: new_set
     enabled: true
   -
     id: me408o8z
-    image: galleries/2024_gallery/gallery_24_people.jpg
+    image: adiehx-2025-images/downloaded-image-(26).jpg
+    type: new_set
+    enabled: true
+  -
+    id: mfceumfh
+    image: adiehx-2025-images/downloaded-image-(27).jpg
+    type: new_set
+    enabled: true
+  -
+    id: mfceuwas
+    image: adiehx-2025-images/downloaded-image-(8).jpg
+    type: new_set
+    enabled: true
+  -
+    id: mfcev76b
+    image: adiehx-2025-images/downloaded-image-(9).jpg
+    type: new_set
+    enabled: true
+  -
+    id: mfceveoz
+    image: adiehx-2025-images/downloaded-image.jpg
     type: new_set
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754926554
+updated_at: 1757413967
 background_color: '#F9FAFC'
 ---
