@@ -128,7 +128,7 @@ page_builder:
           size: normal
           variant: right_image
         heading:
-          text: 'The Young Falconers’ Village and Emirati Etiquette Learning Zone'
+          text: 'The Young Falconers’ Village'
           size: small
           color: black
           tag: p
@@ -309,5 +309,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757414691
+updated_at: 1757414847
 ---
