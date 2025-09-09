@@ -134,6 +134,14 @@ page_builder:
   -
     type: set
     attrs:
+      id: mfceo0df
+      values:
+        type: reusable_block
+        entry:
+          - ee31e894-fd13-4153-bcf9-5f4c896c0621
+  -
+    type: set
+    attrs:
       id: mdyloxip
       values:
         type: exhibiting_brand
@@ -200,14 +208,6 @@ page_builder:
         type: reusable_block
         entry:
           - 6444f21f-a94b-4af6-8e4c-3b5f7e586afb
-  -
-    type: set
-    attrs:
-      id: me79xsaj
-      values:
-        type: reusable_block
-        entry:
-          - ee31e894-fd13-4153-bcf9-5f4c896c0621
   -
     type: set
     attrs:
@@ -292,5 +292,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757333885
+updated_at: 1757414188
 ---

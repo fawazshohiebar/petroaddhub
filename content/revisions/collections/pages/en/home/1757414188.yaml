@@ -1,6 +1,7 @@
-action: revision
-date: 1757414169
+action: publish
+date: 1757414188
 user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+message: 'Updated the images'
 attributes:
   id: home
   slug: home
@@ -299,7 +300,6 @@ attributes:
       code: null
       mode: htmlmixed
     feature_banner_image: null
-    parent: null
     header_scripts_available_on: {  }
     body_start_scripts_available_on: {  }
     body_end_scripts_available_on: {  }
