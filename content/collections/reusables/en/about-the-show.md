@@ -13,9 +13,9 @@ description: |-
 
   As the ultimate meeting place for enthusiasts of hunting, equestrian pursuits, and cultural heritage, ADIHEX 2026 celebrates our shared passions while paying tribute to the rich traditions that define us.
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757330350
+updated_at: 1757414142
 flipped: false
-image: call_to_actions/main_cta.jpg
+image: adiehx-2025-images/downloaded-image-(1)-(1).jpg
 buttons:
   -
     id: mdvfk921
