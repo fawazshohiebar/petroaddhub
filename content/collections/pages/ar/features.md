@@ -261,6 +261,7 @@ page_builder:
     type: set
     attrs:
       id: mdy36lgt
+      enabled: false
       values:
         type: buttons
         style_config:
@@ -282,11 +283,11 @@ page_builder:
                 icon: ticket
                 icon_position: end
             type: button
-            enabled: true
+            enabled: false
   -
     type: paragraph
     attrs:
       textAlign: left
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757414818
+updated_at: 1757414964
 ---
