@@ -21,7 +21,7 @@ heading:
 stats:
   -
     id: macfpfr4
-    value: '347000'
+    value: '379572'
     label: Visitors
     icon: users
   -
@@ -45,6 +45,6 @@ stats:
     label: 'Exhibitors & Brands'
     icon: building-storefront
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755943306
+updated_at: 1757575979
 duplicated_from: e955ebf9-b57f-4438-9219-b44ef9f10681
 ---
