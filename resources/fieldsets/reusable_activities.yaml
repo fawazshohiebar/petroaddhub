@@ -43,20 +43,6 @@ fields:
             display: Image
             localizable: false
             width: 35
-        -
-          handle: btn_link
-          field:
-            type: link
-            display: 'Btn Link'
-            localizable: false
-            width: 50
-        -
-          handle: btn_t
-          field:
-            remove_empty_nodes: false
-            type: bard
-            display: 'Btn Text'
-            localizable: false
   -
     handle: featured_activities
     field:
