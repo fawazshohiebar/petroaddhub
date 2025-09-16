@@ -29,11 +29,11 @@ tabs:
               display: 'Video Previewer'
               localizable: false
               sets:
-                new_set_group:
-                  display: 'New Set Group'
+                video_set_group:
+                  display: 'Video Set Group'
                   sets:
-                    new_set:
-                      display: 'New Set'
+                    video_data:
+                      display: 'Video Data'
                       fields:
                         -
                           handle: video_source

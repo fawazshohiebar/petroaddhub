@@ -18,43 +18,31 @@ heading_group:
   focus_icon: false
   heading_focus_word: null
   icon: null
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1758029959
 video_previewer:
   -
-    id: mfdrusr1
+    id: mfmeelam
     video_source: youtube
     video_id: 'RJDWEAvohMY?si=emkRsmicC5SqW8NL'
-    type: new_set
+    type: video_data
     enabled: true
   -
-    id: mfdrv4mu
-    video_source: google-drive
-    video_id: 1-j7elHQaKJMS7E7uVWaHS-7Sow1C9oXn
-    type: new_set
-    enabled: true
-  -
-    id: mfdrv3ck
+    id: mfmln98r
     video_source: youtube
-    video_id: 'e0GiSIeItxU?si=SGqhaQxY8ZTlxqXz'
-    type: new_set
+    video_id: 'RJDWEAvohMY?si=emkRsmicC5SqW8NL'
+    type: video_data
     enabled: true
   -
-    id: mfdrvbhl
+    id: mfmef5aa
     video_source: google-drive
-    video_id: 1dykCL4Lai8aRvo9hZavIDqRT5Hfzen8N
-    type: new_set
+    video_id: 1z_T1uKvwgrasYlXNQO3HpizOyN6RNIk5
+    type: video_data
     enabled: true
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1757940227
-heading_groups:
-  heading:
-    text: bandarr
-    size: small
-    color: black
-    tag: p
-    uppercase: false
-  subheading: null
-  focus_icon: false
-  heading_focus_word: null
-  icon: null
+  -
+    id: mfmln80n
+    video_source: google-drive
+    video_id: 1z_T1uKvwgrasYlXNQO3HpizOyN6RNIk5
+    type: video_data
+    enabled: true
 ---
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown p
