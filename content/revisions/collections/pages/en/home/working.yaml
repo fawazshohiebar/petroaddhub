@@ -1,5 +1,5 @@
 action: revision
-date: 1757419155
+date: 1758086466
 user: ac775259-f1c4-4a12-b768-668149cb0e1a
 attributes:
   id: home
@@ -283,6 +283,14 @@ attributes:
             popup_position: center
             popup_image: banners/3.-falcon-auction-600x400-1.jpg
             popup_link: 'https://auction.adihex.com/'
+      -
+        type: set
+        attrs:
+          id: mfnja8t9
+          values:
+            type: reusable_block
+            entry:
+              - 1c0449e4-f8ee-4dc2-a95c-ed2cf6a143ee
       -
         type: paragraph
         attrs:
