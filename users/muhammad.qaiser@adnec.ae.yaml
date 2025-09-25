@@ -1,3 +1,11 @@
-name: 'Muhammad Ans'
+name: 'Ans kayser'
 super: true
-id: 070ddde5-0fa6-434d-abe9-7bfc92c53639
+id: 3c257898-4e0f-4175-874e-a27702748280
+password_hash: $2y$12$5pKIxNZDoH3BSPkcBIJFaOResYz8fmubQMn.igQBJjkXOKT2VfyDa
+preferences:
+  assets:
+    assets:
+      per_page: 500
+  collections:
+    speakers:
+      per_page: 500

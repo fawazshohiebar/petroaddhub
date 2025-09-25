@@ -208,12 +208,11 @@
                                     <label for="name"
                                         :class="{'text-gray-700': !checkingCaptcha, 'text-gray-400': checkingCaptcha}"
                                         class="block text-sm font-semibold mb-2">{{ display | trans }}
-                                        {{validate}}
-                                
-                                        {{ if value =='required' }}
-                                            <span class="text-red-500">*</span>
-                                        {{ /if }}
-                                {{/validate}}
+                                        {{ validate }}
+                                            {{ if value == 'required' }}
+                                                <span class="text-red-500">*</span>
+                                            {{ /if }}
+                                        {{ /validate }}
                                     </label>
                                     {{ if instructions }}
                                         <div class="text-xs text-gray-400 mb-1">
@@ -233,17 +232,12 @@
                     </div>
                     {{ partial:shared/form/turnstile_badge }}
                     <div class="mt-8 flex justify-end">
-                        {{ partial:shared/button 
-                            button_type="button"
-                            style="filled"
-                            size="medium"
-                            color="primary"
-                            icon=""
-                            }}
+                        {{ partial:shared/button button_type="button" style="filled" size="medium" color="primary" icon="" }}
                             {{ slot:attributes }}
                                 type="submit"
                                 x-bind:disabled="form.processing || checkingCaptcha || form.validating"
-                                x-bind:class="{'opacity-20 !cursor-not-allowed': form.processing || checkingCaptcha || form.validating}"
+                                x-bind:class="{'opacity-20 !cursor-not-allowed': form.processing || checkingCaptcha ||
+                                form.validating}"
                             {{ /slot:attributes }}
                             <div class="flex items-center gap-2">
                                 <template x-if="form.processing">
