@@ -1,116 +1,81 @@
+{{#
+    Footer Component
+    Complete footer with CTA banner and navi <h3
+        class="text-base sm:text-lg font-outfit font-bold leading-relaxed text-white">Support</h3>
+    <nav class="space-y-1 sm:space-y-2">
+        <a href="#"
+            class="block text-sm sm:text-base lg:text-lg font-outfit font-light leading-relaxed hover:text-gray-300 transition-colors">Privacy
+            Policy</a>
+        <a href="#"
+            class="block text-sm sm:text-base lg:text-lg font-outfit font-light leading-relaxed hover:text-gray-300 transition-colors">Terms
+            & Conditions</a>
+        <a href="#"
+            class="block text-sm sm:text-base lg:text-lg font-outfit font-light leading-relaxed hover:text-gray-300 transition-colors">Sitemap</a>
+    </nav> sections
+#}}
 
-
-
-
-
-
-<footer class="bg-[#827654] text-white">
-    <!-- Main Footer Content -->
-    <div class="adnec-container mx-auto py-[45px] md:py-[50px] lg:py-[70px] relative">
-        <div class="flex flex-col sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-[40px] gap-x-[15px] md:gap-[30px] ">
-            {{# Column 1: Logo & About #}}
-            <div class="space-y-6 col-span-2 md:col-span-1 flex flex-col items-start md:justify-start md:items-start justify-center">
-                {{ glide :src="brand:logo_dark" format="webp" }}
-                <img src="{{url}}" alt="{{alt ?? 'International Hunting & Equestrian Exhibition - Abu Dhabi' | trans}}"
-                    loading="lazy"
-                    width="{{width}}" height="{{height}}"
-                    class="max-h-16 w-auto">
-                {{ /glide }}
-
-                {{#
-                    <p class="text-gray-400 leading-relaxed">
-                        The premier exhibition celebrating the rich legacy of hunting and equestrianism in the Middle East.
-                    </p>
-                #}}
-
-                {{ partial:footer_social_media color="#fff"}}
-            </div>
-
-            {{# Column 2: Quick Links #}}
-            <div>
-                <h3 class="text-xl font-semibold mb-6 relative inline-block">
-                    {{'Quick Links' | trans}}
-                    <div class="absolute -bottom-2 rtl:right-0 ltr:left-0 w-12 h-1 bg-[#827654]"></div>
-                </h3>
-
-                <ul class="space-y-4">
-                    {{nav:footer_nav include_home="false" }}
-                        <li>
-                            <a href="{{ url }}"
-                                class="text-[#fff] text-sm   transition-all transform hover:translate-x-1 inline-block">
-                                {{ if url == '/' }}
-                                    <x-dynamic-component component="icons.home" class="h-4 w-4 inline-block mr-1 rtl:ml-1 rtl:mr-0" />
-                                {{ else }}
-                                {{heroicon variant="outline" icon="chevron-right" class="h-4 w-4 inline-block mr-1 rtl:ml-1 rtl:rotate-180 rtl:mr-0" /}}
-                                {{ /if }}
-                                {{ title }}
-                            </a>
-                        </li>
-                    {{ /nav:footer_nav }}
-                </ul>
-            </div>
-
-            {{# Column 3: Contact Info #}}
-            <div>
-                <h3 class="text-xl font-semibold mb-6 relative inline-block">
-                    {{'Contact Us' | trans}}
-                    <div class="absolute -bottom-2 rtl:right-0 ltr:left-0 w-12 h-1 bg-[#827654]"></div>
-                </h3>
-
-                <ul class="space-y-4">
-                    <li class="flex items-start">
-                        {{heroicon:outline:map-pin class="h-5 w-5 text-[#827654] rtl:ml-3 ltr:mr-3 mt-0.5" /}}
-                        <span class="text-[#fff] text-sm">
-                            {{'ADNEC Group'}}<br>
-                            {{ 'P.O. Box 5546' | trans }}<br>
-                            {{ 'Abu Dhabi, United Arab Emirates' | trans }}
-                        </span>
-                    </li>
-                    <li class="flex items-start">
-                        {{heroicon:outline:envelope class="h-5 w-5 text-[#827654] rtl:ml-3 ltr:mr-3 mt-0.5" /}}
-
-                        <span class="text-[#fff]">info@adihex.com</span>
-                    </li>
-                    {{ <li class="flex items-start">
-                        {{heroicon:outline:phone class="h-5 w-5 text-[#827654] rtl:ml-3 ltr:mr-3 mt-0.5" /}}
-                        <span class="text-[#fff]">+971 2 673 8888</span>
-                    </li> }}
-                </ul>
-            </div>
-
-            {{# {{ partial:partials/footer_newsletter }} #}}
-            <div class="col-span-2 md:col-span-3 lg:col-span-2 mt-0">
-                <div class="max-w-sm mx-auto">
-                    <div class="flex justify-between gap-4">
-                        {{brand:logos}}
-                            <a href="{{ url }}" class="group transition-all duration-300 hover:opacity-80">
-                                <img loading="lazy" src="{{ image }}" alt="{{ image:alt }}"
-                                    width="{{ image:width }}" height="{{ image:height }}"
-                                    class="h-14 object-contain mx-auto">
-                                    <div class="text-center ltr:text-sm rtl:text-lg text-[#fff] mt-2 group-hover:text-[#fff] transition-colors">{{title}}</div>
-                            </a>
-                        {{/brand:logos}}
+<footer class="bg-primary pt-5 lg:pt-16 ">
+    
+    <div class="bg-brand-black text-white adnec-container">
+        <div class="brand-container py-12 sm:py-16">
+            <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-8">
+                {{# Logo Section #}}
+                <div class="w-full lg:w-80 flex justify-center lg:justify-start">
+                    <div class="w-64 h-28  ">
+                        {{ brand:logos }}
+                            <img src="{{ image }}" alt="Olympia Logo" class="w-full h-full object-contain">
+                        {{ /brand:logos }}
                     </div>
+                </div>
+
+                {{# Navigation Columns #}}
+                <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
+                    {{# Dynamic Navigation Columns #}}
+                    {{ nav:footer_nav }}
+                        <div class="space-y-3 sm:space-y-4">
+                            <h3 class="text-base sm:text-lg font-outfit font-bold leading-relaxed text-white">
+                                {{ title }}
+                            </h3>
+                            {{ if children }}
+                                <nav class="space-y-1 sm:space-y-2">
+                                    {{ children }}
+                                        <a href="{{ url }}"
+                                            class="block text-sm sm:text-base lg:text-lg font-outfit font-light leading-relaxed hover:text-gray-300 transition-colors">{{ title }}</a>
+                                    {{ /children }}
+                                </nav>
+                            {{ /if }}
+                        </div>
+                    {{ /nav:footer_nav }}
+
+                    {{# Partner Logo Column #}}
+                    <div
+                        class="flex flex-col  space-y-3 sm:space-y-4  mt-8 sm:mt-0">
+                        <h3 class="text-base  sm:text-lg font-outfit font-bold leading-relaxed text-white">Enquiries</h3>
+                        <div class="flex flex-col">
+                        {{ brand:footer_sales }}
+                            <div class="flex-row flex gap-2">
+                                {{ heroicon variant="outline" :icon="icon" class="!h-5 !w-5 text-white" }}
+                                <a class="block text-sm sm:text-base lg:text-lg font-outfit font-light leading-relaxed hover:text-gray-300 transition-colors mb-2" href="{{ link }}"> {{ sales_text }} </a>
+                            </div>
+                        {{ /brand:footer_sales }}
+                        </div>
+
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
-        {{# <div class="mt-4 border-t border-gray-800 pt-6">
 
-        </div> #}}
-    </div>
-
-    <!-- Footer Bottom -->
-    <div class="bg-[#726642] py-6">
-        <div class="adnec-container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div class="text-[#fff] text-sm mb-4 md:mb-0">
-                &copy; {{'All rights reserved' | trans}} {{ now format="Y" }} <a class="text-white" href="https://www.adnecgroup.ae" target="_blank" rel="noopener noreferrer">
-                    {{'ADNEC Group' | trans}}
-                </a>
+        {{# Footer Bottom #}}
+        <div class="brand-container">
+            <div class="py-6 sm:py-8  flex md:flex-row flex-col  gap-5 justify-between border-t border-gray-200/10">
+                <p class="text-sm sm:text-base font-outfit font-light leading-relaxed text-white">
+                    © 2025. All rights reserved.
+                </p>
+                 {{ partial:footer_social_media }}
             </div>
-{{#
-            <div class="flex items-center">
-                <span class="text-gray-300">{{'ADNEC Group' | trans}}</span>
-            </div> #}}
         </div>
     </div>
 </footer>

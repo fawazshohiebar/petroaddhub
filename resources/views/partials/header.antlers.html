@@ -1,52 +1,87 @@
-<header class="sticky top-0 left-0 flex flex-col w-full z-40 h-34"
+<header class="sticky top-0 left-0 flex flex-col w-full z-40 h-auto"
     {{# x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 10 })" #}}
+class="opacity-60 bg-slate-900"
 >
-<!-- Patronage Banner -->
 {{ partial:patronage }}
-<!-- Navigation -->
-<nav class="w-full flex-grow transition-all duration-300 ease-in-out" x-data="{ scrolled: true }" x-cloak
-    :class="scrolled ? 'bg-white shadow-lg' : 'bg-transparent'">
+<nav class="w-full flex-grow transition-all duration-300 ease-in-out" x-data="{ scrolled: false }"
+    x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 10 })" x-cloak
+    :class="scrolled ? 'bg-primary ' : 'opacity-60 bg-slate-900 '">
     <div
-        class="adnec-container h-full py-4 mx-auto md:flex md:items-center md:justify-between grid grid-cols-[65%_35%]">
+        class="adnec-container h-full pt-0 pb-3 gap-2 mx-auto lg:flex md:items-center md:justify-between grid grid-cols-[65%_35%]">
         <!-- Logo and Event Info -->
+
         <div class="flex items-center">
             <a href="{{ site:url }}" class="">
-                <img :src="scrolled ? '{{ brand:logo }}' : '{{ brand:logo_dark }}'" width="{{ brand:logo:width }}"
-                    height="{{ brand:logo:height }}"
-                    alt="{{ 'International Hunting & Equestrian Exhibition - Abu Dhabi' | trans }}"
-                    class="h-12 md:h-16 transition-all object-contain duration-300" />
+                {{ brand:logo }}
+                    <img src="{{ url }}" alt="globalfoodweek Logo" class="xl:w-full w-40 h-full object-contain">
+                {{ /brand:logo }}
             </a>
-            {{ partial:partials/header/event_info_vertical }}
+
         </div>
+       <div class="lg:flex items-center py-4  gap-2 xl:gap-5 hidden">
+        <div class="flex flex-row xl:gap-4 gap-3">
+            {{ nav:main_nav }}
+                <div class="relative dropdown-item">
+                    {{ if children }}
+                        <!-- Hidden checkbox -->
+                        <input type="checkbox" id="dropdown-{{ index }}" class="dropdown-checkbox">
+
+                        <!-- Label acts as clickable parent -->
+                        <label for="dropdown-{{ index }}"
+                            class="dropdown-label text-white xl:text-base lg:text-sm font-medium leading-relaxed  cursor-pointer flex items-center gap-1">
+                            <p>{{ title }}</p>
+                            {{ heroicon variant="outline" icon="chevron-down" class="h-5 w-5 text-white" }}
+                        </label>
+
+                        <!-- Dropdown menu -->
+                        <div
+                            class="dropdown-content hidden absolute bg-white mt-2 rounded-lg shadow-lg min-w-[200px] z-10">
+                            {{ children }}
+                                <a href="{{ url }}"
+                                    class="block px-4 py-2 xl:text-base lg:text-sm text-gray-800 hover:bg-gray-100 transition-colors font-outfit font-light">
+                                    {{ title }}
+                                </a>
+                            {{ /children }}
+                        </div>
+                    {{ else }}
+                        <h3 class="text-white xl:text-base lg:text-sm font-medium">
+                            <a href="{{ url }}" class="hover:text-gray-300 transition-colors">
+                                {{ title }}
+                            </a>
+                        </h3>
+                    {{ /if }}
+                </div>
+            {{ /nav:main_nav }}
+        </div>
+        {{ brand:button_replicator }}
+            {{ partial:partials/sets/fancy_button }}
+        {{ /brand:button_replicator }}
+
+        </div>
+
 
         <!-- Mobile Menu Button -->
-        <div class="flex justify-end gap-2 lg:gap-4 items-center">
-            {{ partial:partials/sets/countdown_date_picker countdown_end="{brand:countdown_date_picker format='Y-m-d\TH:i:s'}" }}
-            <div class="hidden md:block">
-                {{ if brand:hero_dynamic_button }}
-                    <div class="flex flex-col sm:flex-row {{ $isCompact ? 'gap-2' : 'gap-4' }} justify-center">
-                        {{ brand:hero_dynamic_button }}
-                            {{ partial:shared/button url="{{button}}" }}
-                        {{ /brand:hero_dynamic_button }}
-                    </div>
+       <div class="lg:hidden items-center py-4 gap-2 block">
+
+            <div class="flex justify-end gap-2 lg:gap-4 items-center">
+                {{ partial:partials/sets/countdown_date_picker countdown_end="{brand:countdown_date_picker format='Y-m-d\TH:i:s'}" }}
+ 
+                {{ if brand:ai_search_url }}
+                    <a title="{{ 'AI Search' | trans }}" href="{{ brand:ai_search_url }}" target="_blank"
+                        class="text-white hover:underline flex gap-2 items-center">
+                        <span class="sr-only">{{ 'AI Search' | trans }}</span>
+                        {{ heroicon variant="outline" icon="magnifying-glass" class="w-8 h-8" /}}
+                    </a>
                 {{ /if }}
+                {{# {{ partial:language-switcher /}} #}}
+                <button command="show-modal" commandfor="drawer" class=" focus:outline-none"
+                    :class="scrolled ? 'text-white' : 'text-white'" aria-label="Toggle mobile menu">
+                    {{ heroicon variant="outline" icon="bars-3" class=" w-8 h-8" /}}
+                </button>
             </div>
-            {{ if brand:ai_search_url }}
-                <a title="{{ 'AI Search' | trans }}" href="{{ brand:ai_search_url }}" target="_blank"
-                    class="text-gray-800 hover:underline flex gap-2 items-center">
-                    <span class="sr-only">{{ 'AI Search' | trans }}</span>
-                    {{ heroicon variant="outline" icon="magnifying-glass" class="w-8 h-8" /}}
-                </a>
-            {{ /if }}
-            {{ partial:language-switcher /}}
-            <button command="show-modal" commandfor="drawer" class=" focus:outline-none"
-                :class="scrolled ? 'text-gray-800' : 'text-white'" aria-label="Toggle mobile menu">
-                {{ heroicon variant="outline" icon="bars-3" class=" w-8 h-8" /}}
-            </button>
-        </div>
+        {{ partial:partials/header/menu_drawer }}
     </div>
 
-    {{ partial:partials/header/menu_drawer }}
-    {{# {{ partial:partials/header/event_info_strip }} #}}
+   
 </nav>
 </header>

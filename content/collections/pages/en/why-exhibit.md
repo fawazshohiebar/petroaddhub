@@ -1,76 +1,41 @@
 ---
-id: 9e18dec0-de31-48d2-b91c-2ea4f28cfb0f
+id: 43a168e5-928c-4cab-af7e-a623dd9a0daa
 blueprint: page
 title: 'Why Exhibit'
+template: default
+fine_seo_is_title_custom: false
+header_scripts:
+  code: null
+  mode: htmlmixed
+body_start_scripts:
+  code: null
+  mode: htmlmixed
+body_end_scripts:
+  code: null
+  mode: htmlmixed
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760077721
 page_builder:
   -
     type: set
     attrs:
-      id: mdo9khbf
+      id: mgg4kkgx
       values:
         type: reusable_block
         entry:
-          - b8dfb5b2-2bfc-4db0-af0a-652b3946372f
-          - e955ebf9-b57f-4438-9219-b44ef9f10681
+          - 2540ef59-ee39-4163-a119-16c1f7a13f65
   -
     type: set
     attrs:
-      id: mdybtj44
-      values:
-        type: buttons
-        style_config:
-          padding: small
-          color: white
-          size: normal
-          variant: flex_centered
-        buttons:
-          -
-            id: mdybtmmg
-            dynamic_button:
-              button: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
-              text: null
-              button_options:
-                style: filled
-                color: primary
-                size: large
-                new_tab: false
-                icon: paper-airplane
-                icon_position: end
-            type: button
-            enabled: true
-  -
-    type: set
-    attrs:
-      id: mdyc912n
+      id: mgg4oec6
       values:
         type: reusable_block
         entry:
-          - 19c78f5c-f170-4bb6-809c-8dac466e09fc
-  -
-    type: set
-    attrs:
-      id: mdo96fjh
-      values:
-        type: reusable_block
-        entry:
-          - bc1eb7ab-3eff-461f-ad8d-22d4c7f75cbe
-  -
-    type: set
-    attrs:
-      id: mdo9c0kp
-      values:
-        type: reusable_block
-        entry:
-          - ee31e894-fd13-4153-bcf9-5f4c896c0621
+          - e484cb1a-d3c5-462e-935c-f34db8f71178
   -
     type: paragraph
     attrs:
       textAlign: left
-fine_seo_is_title_custom: false
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754587452
 fine_seo_title: 'Why Exhibit'
 fine_seo_preview: 'Why Exhibit'
-template: default
-feature_banner_image: galleries/2024_gallery/2024_gallery_6.jpg
 ---

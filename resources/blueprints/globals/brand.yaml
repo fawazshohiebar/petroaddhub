@@ -143,10 +143,20 @@ tabs:
               localizable: false
               width: 50
           -
-            handle: hero_dynamic_button
-            field: basics.dynamic_button
-            config:
-              display: 'Hero Dynamic Button'
+            handle: button_replicator
+            field:
+              type: replicator
+              display: 'Button  Replicator'
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    button:
+                      display: Button
+                      fields:
+                        -
+                          import: fancy_button
       -
         display: 'Footer Logos'
         fields:
@@ -206,3 +216,35 @@ tabs:
               display: 'Ai Search Url'
               instructions: 'Link will be used for AI Search'
               localizable: false
+          -
+            handle: footer_sales
+            field:
+              type: replicator
+              display: 'Footer Sales'
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    sales_set:
+                      display: 'Sales Set'
+                      fields:
+                        -
+                          handle: link
+                          field:
+                            type: link
+                            display: Link
+                            localizable: false
+                            width: 50
+                        -
+                          handle: sales_text
+                          field:
+                            type: text
+                            display: 'Sales Text'
+                            localizable: false
+                            width: 50
+                        -
+                          handle: icon
+                          field: basics.icon
+                          config:
+                            width: 33

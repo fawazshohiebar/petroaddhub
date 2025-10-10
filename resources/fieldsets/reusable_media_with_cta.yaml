@@ -1,31 +1,32 @@
 title: 'Reusable Media with CTA'
 fields:
   -
-    handle: style_config
+    handle: text_image_alignment
     field:
-      available_colors:
-        - white
-        - transparent
-        - gray
-        - lite-primary
-        - lite-secondary
-      variant_labels: |-
-        left_image|Left Image
-        right_image|Right Image
-        no_image|No Image
-        cover|Cover
-      default_variant: image_left
-      type: style_config
-      display: 'Style Config'
+      options:
+        -
+          key: v1
+          value: null
+        -
+          key: v2
+          value: null
+      type: button_group
+      display: 'Text Image Alignment'
       localizable: false
   -
-    handle: heading
+    handle: heading_text
     field:
-      type: colored_text
-      display: Heading
-      localizable: true
-      color: black
-      tag: h1
+      buttons:
+        - h1
+        - h2
+        - h3
+        - h4
+        - bold
+        - color
+      remove_empty_nodes: false
+      type: bard
+      display: 'Heading Text'
+      localizable: false
   -
     handle: section_label
     field:
@@ -48,12 +49,12 @@ fields:
       display: Description
       localizable: true
   -
-    handle: image
+    handle: section_image
     field:
       container: collaterals
       max_files: 1
       type: assets
-      display: Image
+      display: 'Section Image'
       localizable: false
       width: 50
       validate:
@@ -77,4 +78,18 @@ fields:
       width: 50
   -
     handle: buttons
-    field: basics.buttons
+    field:
+      type: replicator
+      display: Buttons
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            button_set:
+              display: 'Button Set'
+              fields:
+                -
+                  import: fancy_button
+  -
+    import: background_design

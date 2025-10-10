@@ -1,0 +1,39 @@
+  <div style="{{ if background == 'bgimg' }}background-size:cover; background-image: url('{{ image.url }}');{{ else }}background-color: {{ background_color }};{{ /if }}"
+      class="w-full  bg-cover bg-center ">
+      <div class="adnec-container gap-5  py-10 flex flex-col">
+          {{ partial:partials/sets/heading_group_component }}
+          <div class="grid lg:grid-cols-1 md:grid-cols-2 gap-5 lg:gap-0   ">
+              {{ group_info }}
+                  <div
+                      class=" group p-5 lg:p-0 flex flex-col gap-5 lg:gap-0 lg:grid grid-cols-[100px_40%_5vw_auto_0px] hover:grid-cols-[110px_40%_0px_auto_150px] lg:hover:bg-[#5C3A96]  lg:h-30 overflow-hidden transition-[grid-template-columns]   duration-500 ease-in-out bb-1 bg-white border-b border-[#5C3A96]  items-center">
+
+                      <div
+                          class="flex flex-row lg:h-full h-auto items-center justify-center lg:group-hover:bg-[#E08247]">
+                          {{ heroicon variant="outline" :icon="icon" class="w-10 h-10 text-indigo-950 lg:group-hover:w-12 lg:group-hover:h-12 lg:group-hover:text-white transition-colors" }}
+                      </div>
+                      <p
+                          class=" leading-[120%] text-lg font-semibold lg:group-hover:text-white text-center lg:text-left transition-colors lg:group-hover:px-5  ">
+
+                          {{ info_title }}
+                      </p>
+                      <div class="lg:block hidden"></div>
+                      <p
+                          class=" text-base font-normal lg:group-hover:text-white transition-colors lg:py-3 text-center lg:text-left lg:mr-5 lg:group-hover:mr-2">
+                          {{ info_description }}
+                      </p>
+                      {{ image }}
+                          <img class="lg:h-full hidden lg:block  float-right w-full object-cover overflow-auto "
+                              src="{{ url }}" alt="">
+                      {{ /image }}
+                  </div>
+              {{ /group_info }}
+          </div>
+
+          <p class="text-white text-base text-center "> {{ ending_text }}</p>
+          <div class="justify-center flex">
+          {{replicator_button}}
+          {{ partial:partials/sets/fancy_button }}
+          {{/replicator_button}}
+          </div>
+      </div>
+  </div>

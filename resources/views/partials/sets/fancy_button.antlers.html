@@ -1,0 +1,28 @@
+      <a class=" h-auto py-3  px-5 gap-4 w-fit 
+
+      {{if button_size == 'fit'}}
+        px-5
+      {{elseif button_size == 'lg'  }}
+      flex justify-center
+        px-10 lg:px-20    
+      {{/if}}
+
+        {{ if design == 'orangefilled' }} 
+          text-white text-base bg-gradient-to-br from-orange-400 via-amber-700 to-orange-400 leading-normal [text-shadow:_0px_0px_10px_rgb(0_0_0_/_0.30)]
+        {{ elseif design == 'whitefilled' }}
+          bg-white outline outline-1 outline-offset-[-1px] text-Blue-600 capitalize text-base font-medium leading-normal [text-shadow:_0px_0px_10px_rgb(0_0_0_/_0.30)]
+        {{ elseif design == 'whiteoutlined'}}
+            outline outline-1 outline-offset-[-1px] outline-white  text-white text-base font-medium  leading-normal [text-shadow:_0px_0px_10px_rgb(0_0_0_/_0.30)]
+        {{elseif design == 'purpleoutine' }}
+            outline outline-1 outline-offset-[-1px] outline-indigo-950 text-indigo-950 text-base
+        {{elseif design=='Orangenogradient'}}
+          text-white text-base bg-accent leading-normal 
+            {{ /if }}
+        font-bold flex flex-row
+         " {{ if open_new_tab }}target="_blank" rel="noopener noreferrer"{{ /if }} href="{{ link }}">
+
+          {{ label }}
+          {{ if icon != "none" }}
+              {{ heroicon variant="outline" icon="{{icon}}" class="w-5 h-6 " /}}
+          {{ /if }}
+      </a>

@@ -1,10 +1,8 @@
 ---
-id: 4de5b658-4561-4f87-b112-80934b1a5628
+id: 660c725b-57ab-4ab0-830c-327db4cb1730
 blueprint: sponsor
 title: 'Knowledge Partner'
-sponsor_link: 'https://www.ecssr.ae/ar/home'
-sponsors_logos: added-images/ecssr.png
-sponsor_level: normal-sponsor
+sponsors_logos: sponsors/award.png
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754645809
+updated_at: 1759406780
 ---

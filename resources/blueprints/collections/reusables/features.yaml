@@ -23,9 +23,11 @@ tabs:
                 new_set_group:
                   display: 'New Set Group'
                   sets:
-                    new_set:
-                      display: 'New Set'
+                    feature:
+                      display: Feature
                       fields:
+                        -
+                          import: background_design
                         -
                           handle: image
                           field:
@@ -34,33 +36,22 @@ tabs:
                             display: Image
                             localizable: false
                         -
+                          handle: caption_text
+                          field:
+                            type: text
+                            display: 'Caption Text'
+                            localizable: false
+                        -
                           handle: title
                           field:
                             type: text
                             display: Title
                             localizable: false
                         -
-                          handle: textarea_field
+                          handle: description
                           field:
-                            type: textarea
-                            display: 'Textarea Field'
-                            localizable: false
-                        -
-                          handle: background_color
-                          field:
-                            options:
-                              -
-                                key: '#f5f2eb'
-                                value: 'Light Brown'
-                              -
-                                key: '#f9fafc'
-                                value: 'Light Blue'
-                              -
-                                key: '#fff'
-                                value: White
-                            taggable: true
-                            type: select
-                            display: 'Background Color'
+                            type: markdown
+                            display: Description
                             localizable: false
   sidebar:
     display: Sidebar

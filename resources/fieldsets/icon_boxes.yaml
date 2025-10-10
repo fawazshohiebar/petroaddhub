@@ -1,0 +1,60 @@
+title: 'Icon Boxes'
+fields:
+  -
+    handle: icon_box_replicator
+    field:
+      type: replicator
+      display: 'Icon Box Replicator'
+      localizable: false
+      max_sets: 4
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            icon_box:
+              display: 'Icon Box'
+              fields:
+                -
+                  handle: icon_source
+                  field:
+                    options:
+                      -
+                        key: icon
+                        value: Icon
+                      -
+                        key: image
+                        value: Image
+                    type: select
+                    display: 'Icon Source'
+                    localizable: false
+                    width: 50
+                -
+                  handle: icon
+                  field: basics.icon
+                  config:
+                    width: 50
+                    if:
+                      icon_source: 'equals icon'
+                -
+                  handle: image
+                  field: basics.image
+                  config:
+                    validate:
+                      - image
+                      - 'max_filesize:9216'
+                      - 'mimes:png,jpg,jpeg,gif,webp,svg'
+                    width: 50
+                    if:
+                      icon_source: 'equals image'
+                -
+                  handle: caption
+                  field:
+                    type: text
+                    display: Caption
+                    localizable: false
+                -
+                  handle: description
+                  field:
+                    type: text
+                    display: Description
+                    localizable: false

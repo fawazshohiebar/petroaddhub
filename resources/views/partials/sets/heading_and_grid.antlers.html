@@ -1,59 +1,59 @@
-<section
-    class=" py-[45px] md:py-[50px] lg:py-[70px]  bg-gradient-to-b from-gray-50 to-gray-100 relative overflow-hidden">
+    <div style="{{ if background == 'bgimg' }}background-image: url('{{ image.url }}');{{ else }}background-color: var(--color-{{ background_color }});{{ /if }}"
+        class="w-full  bg-cover bg-center  py-10">
 
-    <div class="adnec-container">
-        <!-- Section Header -->
-        <div class="text-center mb-16"
-            x-data="{}" 
-            x-intersect="$el.classList.add('animate-fade-in')">
-            {{ partial:partials/sets/heading_group }}
-        </div>
+        <div class="adnec-container">
+            <!-- Section Header -->
+          
+            {{ partial:partials/sets/heading_group_component }}
+           
+            <div class="mx-auto flex flex-wrap justify-center gap-6  ">
+                {{ replicating_grid }}
+                    <div class="flex flex-col  justify-between   h-auto  items-start   gap-[10px]   bg-white/60 backdrop-blur-md rounded-xl p-6 text-center transform transition-all duration-500 hover:-translate-y-2 hover:shadow-lg border border-gray-200/50 shadow-sm w-[100%]  
+                    {{if grid_structure =="v1"}}
+                        md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]   2xl:w-[calc(25%-1.2rem)]
+                    {{elseif grid_structure =="v2"}}
+                        md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]   
+                    {{else}}
+                        md:w-[calc(50%-0.75rem)] 
+                    {{/if}}       
+                    ">
+                        <div class=" flex flex-col gap-[10px] items-start text-start">
+                            <p class="text-xl font-bold text-blue leading-[130%] ">{{ heading }}</p>
 
+                            <p class="text-base font-semibold text-gray-900 leading-[130%]">{{ sub_heading }}</p>
+                        </div>
+                        {{ if icon_or_button == "iconlist" }}
+                            <div class="flex flex-col gap-[10px]">
+                                {{ icon_list }}
+                                    <a href="{{ link }}" class="flex flex-row gap-[10px] flex-nowrap">
+                                        <div
+                                            class="w-[30px] h-[30px] bg-[#827654]/10 rounded-full flex items-center justify-center ">
+                                            {{ if icon }}
+                                                {{ icon }}
+                                                    {{ heroicon variant="outline" :icon="icon" class="h-[17px] w-[17px] text-primary" }}
+                                                {{ /icon }}
+                                            {{ else }}
+                                                {{ if image_upload }}
+                                                    {{ image_upload }}
+                                                {{ /if }}
+                                            {{ /if }}
+                                        </div>
+                                        <p class=" text-gray-700 break-all"
+                                            {{if icons=='phone'}}style="unicode-bidi: plaintext"{{/if}}>{{ text }}</p>
 
-        <div class="mx-auto flex flex-wrap justify-center gap-6  ">
-            {{ replicating_grid }}
-
-                <div
-                    class="flex flex-col  justify-between   h-auto  items-start items-start  gap-[10px]   bg-white/60 backdrop-blur-md rounded-xl p-6 text-center transform transition-all duration-500 hover:-translate-y-2 hover:shadow-lg border border-gray-200/50 shadow-sm    w-[100%]  md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]   2xl:w-[calc(25%-1.2rem)]">
-
-                    <div class=" flex flex-col gap-[10px] items-start">
-                        <p class="text-xl font-bold text-gray-900 leading-[130%] ">{{ heading }}</p>
-
-                        <p class="text-base font-semibold text-gray-900 leading-[130%]">{{ sub_heading }}</p>
-                    </div>
-
-                    <div class="flex flex-col gap-[10px]">
-                        {{ icon_list }}
-                            <a href="{{ link }}" class="flex flex-row gap-[10px] flex-nowrap">
-
-
-
-                                <div
-                                    class="w-[30px] h-[30px] bg-[#827654]/10 rounded-full flex items-center justify-center ">
-                                    {{ if icons }}
-                                        <!-- Show this if "icons" exists or is not empty -->
-                                        {{ icons }}
-                                            {{ heroicon variant="outline" :icon="icons" class="h-[17px] w-[17px] text-[#827654]" }}
-                                            <!-- your icon rendering logic -->
-                                        {{ /icons }}
-                                    {{ else }}
-                                        <!-- Show this if "icons" is not present or empty -->
-                                        {{ if image_upload }}
-                                            {{ image_upload }}
-                                        {{ /if }}
-                                    {{ /if }}
+                                    </a>
+                                {{ /icon_list }}
+                            </div>
+                        {{ else }}
+                            {{ button_list }}
+                                <div class="">
+                                    {{ partial:partials/sets/fancy_button }}
                                 </div>
-
-
-                                <p class=" text-gray-700" {{if icons=='phone'}}style="unicode-bidi: plaintext"{{/if}}>{{ text }}</p>
-
-                            </a>
-                        {{ /icon_list }}
+                            {{ /button_list }}
+                        {{ /if }}
                     </div>
+                {{ /replicating_grid }}
+            </div>
 
-                </div>
-            {{ /replicating_grid }}
         </div>
-
     </div>
-</section>

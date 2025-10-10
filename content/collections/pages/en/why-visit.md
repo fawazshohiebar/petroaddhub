@@ -1,85 +1,9 @@
 ---
-id: a51b31a8-d8c9-48b9-9fea-92afa0b3b9fc
+id: 12e72303-dafe-4298-8df7-8e6bdea3088d
 blueprint: page
 title: 'Why Visit'
-fine_seo_is_title_custom: false
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754728877
-page_builder:
-  -
-    type: set
-    attrs:
-      id: mdo3mfyy
-      values:
-        type: reusable_block
-        entry:
-          - 0cbfa9a5-39cd-4db4-8809-3589cf1c159f
-  -
-    type: set
-    attrs:
-      id: mdo3vcpj
-      values:
-        type: reusable_block
-        entry:
-          - db449970-0ac9-4d2d-8cb6-1fc600429e4e
-  -
-    type: set
-    attrs:
-      id: mdo4flbu
-      values:
-        type: reusable_block
-        entry:
-          - ee31e894-fd13-4153-bcf9-5f4c896c0621
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-  -
-    type: set
-    attrs:
-      id: mdo4qdrx
-      values:
-        type: reusable_block
-        entry:
-          - 0d039853-a2be-4f9d-80f7-03b6180cd30c
-  -
-    type: set
-    attrs:
-      id: mdy36lgt
-      values:
-        type: buttons
-        style_config:
-          padding: none
-          color: white
-          size: normal
-          variant: flex_centered
-        buttons:
-          -
-            id: mdy363wl
-            dynamic_button:
-              button: 'entry::b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7'
-              text: null
-              button_options:
-                style: filled
-                color: primary
-                size: large
-                new_tab: true
-                icon: ticket
-                icon_position: end
-            type: button
-            enabled: true
-  -
-    type: set
-    attrs:
-      id: mdo5ho2n
-      values:
-        type: divider
-        space_height: 25px
-        background_color: white
-fine_seo_title: 'Why Visit'
-fine_seo_preview: 'Why Visit'
-feature_banner_image: call_to_actions/main_cta.jpg
 template: default
+fine_seo_is_title_custom: false
 header_scripts:
   code: null
   mode: htmlmixed
@@ -89,4 +13,30 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760077699
+page_builder:
+  -
+    type: set
+    attrs:
+      id: mgeub8kk
+      values:
+        type: reusable_block
+        entry:
+          - 3f1aba39-bf9e-4b71-bf22-53f5c9ce863b
+  -
+    type: set
+    attrs:
+      id: mgeuu623
+      values:
+        type: reusable_block
+        entry:
+          - 8bb85d4a-fb5b-42eb-9ac2-a24a3f9fa739
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+fine_seo_title: 'Why Visit'
+fine_seo_preview: 'Why Visit'
+feature_banner_image: features/r3_9316-1-jpg-(1).png
 ---

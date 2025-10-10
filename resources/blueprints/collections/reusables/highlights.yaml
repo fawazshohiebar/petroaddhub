@@ -1,0 +1,47 @@
+title: Highlights
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: false
+              validate:
+                - required
+          -
+            handle: highlights_images
+            field:
+              type: replicator
+              display: 'Highlights Images'
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    highlighted_image:
+                      display: 'Highlighted Image'
+                      fields:
+                        -
+                          handle: image
+                          field: basics.image
+                          config:
+                            validate:
+                              - image
+                              - 'max_filesize:9216'
+                              - 'mimes:png,jpg,jpeg,gif,webp'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

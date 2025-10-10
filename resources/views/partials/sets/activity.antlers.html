@@ -1,69 +1,51 @@
 <section id="activities" class="py-[45px] md:py-[50px] lg:py-[70px] relative overflow-hidden bg-gray-50">
-    
-    <!-- Section Decoration -->
-    <div class="absolute left-0 top-1/4 w-64 h-64 bg-[#827654]/20 rounded-full blur-3xl -translate-x-1/2"></div>
-    <div class="absolute right-0 bottom-1/4 w-64 h-64 bg-[#827654]/20 rounded-full blur-3xl translate-x-1/2"></div>
 
+    <!-- Section Decoration -->
     <div class="adnec-container z-10">
         <!-- Section Header -->
-        <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto text-center mb-16"
-            x-data="{}" 
+        <div class="  text-center " x-data="{}"
             x-intersect="$el.classList.add('animate-fade-in')">
-            {{ partial:partials/sets/heading_group }}
+            {{ partial:partials/sets/heading_group_component}}            
         </div>
-        
+
         <!-- Main Activities -->
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
+        <div
+            class="flex  flex-row justify-center  gap-[20px]    flex-wrap grid-cols-1 md:grid-cols-2 xl:grid-cols-3  ">
             {{ main_activities }}
-                <div class="group relative rounded-xl overflow-hidden shadow-lg bg-white transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl"
-                    x-data="{}"
-                    x-intersect="$el.classList.add('animate-fade-in')"
-                    >
-                    <div class="p-6 bg-white">
-                        <div class="w-14 h-14 bg-[#827654]/10 rounded-full flex items-center justify-center mb-6">
-                            {{ heroicon variant="outline" :icon="icon" class="h-8 w-8 text-[#827654]" }}
+                <div class=" w-full md:w-[calc(50%-10px)] xl:w-[calc(33%-10px)] flex ">
+                    <div class="group relative rounded-xl overflow-hidden shadow-lg bg-white transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl w-full flex  "
+                        x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+                        <div class="p-6 bg-white flex flex-col justify-between">
+                            {{if  icon != "none"}}
+                            <div class="w-14 h-14 bg-accent rounded-full flex items-center justify-center mb-6">
+                                {{ heroicon variant="outline" :icon="icon" class="h-8 w-8 text-white" }}
+                            </div>
+                            {{/if}}
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ title }}</h3>
+                            <p class="text-gray-700 mb-4">{{ description }}</p>
+                            {{ if btn_text }}
+                                <div class="mt-5 ">
+                                    <a href="/{{ btn_link.url }}"
+                                        class="border-1  bg-brand-sky-blue rounded-lg !text-white py-2 px-6 text-base font-medium">
+                                        {{ btn_text }}
+                                    </a>
+                                </div>
+                            {{ else }}
+                                <div class="w-12  h-1 bg-blue"></div>
+                            {{ /if }}
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">{{ title }}</h3>
-                        <p class="text-gray-700 mb-4">{{ description }}</p>
-                        <div class="w-12 h-1 bg-[#827654]/20"></div>
                     </div>
                 </div>
             {{ /main_activities }}
         </div>
-        
-        <!-- Examples of Activities with Cards -->
-        <!-- <div class="mb-10">
-            <h3 class="text-2xl font-bold text-center mb-10">{{ 'Featured Activities' | trans }}</h3>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {{ featured_activities }}
-                    <div class="relative transform transition duration-300 overflow-hidden rounded-lg shadow-md bg-white p-6 group"
-                         x-data="{ show: false }"
-                         x-intersect="show = true"
-                         :class="show ? 'ease-linear motion-reduce:opacity-100 -translate-y-0' : 'opacity-0 translate-y-4'"
-                         style="transition-delay: {{ count * 200 }}ms">
-                        <div class="w-14 h-14 bg-[#827654]/10 rounded-full flex items-center justify-center mb-4">
-                            {{ heroicon variant="outline" icon="fire" class="text-[#827654] h-6 w-6 mb-2" }}
-                        </div>
-                        <h4 class="text-lg font-bold mb-3 text-gray-900 group-hover:text-[#827654] transition-colors duration-300">{{ title | widont }}</h4>
-                        <p class="text-gray-700">{{ description }}</p>
-                        <div class="w-12 h-1 bg-[#827654]/20 mt-4 group-hover:bg-[#827654]/40 transition-colors duration-300"></div>
-                    </div>
-                {{ /featured_activities }}
-            </div>
-        </div> -->
-        <div class="text-center">
- {{ button_group }}
-    {{ partial:shared/button 
-        label="{ label }"
-        size="{ size }"
-        color="{ color }"
-        type="{ style }"
-        icon="{ icon }"
-        url="{ url }"
-    }}
-{{ /button_group }}
-        </div>
-       
+
+{{if  buttons_groups}}
+     <div class="justify-center flex gap-5 mt-10">
+          {{buttons_groups}}
+          {{ partial:partials/sets/fancy_button }}
+          {{/buttons_groups}}
+    </div>
+    {{/if}}
+
     </div>
 </section>

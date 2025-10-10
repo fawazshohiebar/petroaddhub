@@ -69,4 +69,18 @@ fields:
     field: basics.buttons
     config:
       display: 'Hero Actions'
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          instructions: null
+          icon: null
+          sets:
+            button:
+              display: Button
+              instructions: null
+              icon: null
+              hide: null
+              fields:
+                -
+                  import: fancy_button
       width: 100

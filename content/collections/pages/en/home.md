@@ -11,286 +11,618 @@ page_builder:
   -
     type: set
     attrs:
-      id: meed7ocz
-      enabled: false
+      id: mgahf8eq
       values:
-        type: divider
-        space_height: 20px
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
+        type: reusable_block
+        entry:
+          - d4eb8f45-e6bc-4ac9-bad5-9039dd4a9eef
   -
     type: set
     attrs:
-      id: meed4hzu
-      enabled: false
+      id: mg7wafer
       values:
-        type: heading_group
+        type: heading_and_sponsors
         heading:
-          heading:
-            text: 'Watch Live Falcon Auction Now'
-            size: small
-            color: primary
-            tag: h1
-            uppercase: false
-          subheading:
-            text: null
-            size: small
-            color: black
-            tag: p
-            uppercase: false
-          focus_icon: false
-          heading_focus_word: null
-          icon: null
+          -
+            type: heading
+            attrs:
+              level: 1
+            content:
+              -
+                type: text
+                text: 'From farm to fork'
+              -
+                type: hardBreak
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: Orange
+                text: 'Shaping the future of food'
+        design: centered
+        sub_heading:
+          -
+            type: heading
+            attrs:
+              level: 3
+            content:
+              -
+                type: text
+                text: 'The UAE is at the forefront of advancing global food systems, driving innovation, sustainability, and resilience across the food value chain.'
+        description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: "Global Food Week 2025 unites five critical sectors shaping the future of food, from agriculture and food manufacturing to food security and hospitality. This powerful platform showcases the UAE’s leadership in food resilience and its role as a global hub for sourcing, investment, and innovation. Global Food Week offers business matchmaking,\_high-impact networking, and knowledge exchange all\_under one roof,"
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: "ensuring you maximise your ROI while\_exploring industry trends."
+        entries_field:
+          - 6dac910e-d26c-4a22-a38f-ec58c24ae101
+          - ed128775-d38c-4de9-a76a-39ee51e6474e
+        sponsors_entries:
+          - bf598fe8-be8d-4694-8f7a-e242fdcf461b
+          - a4e2fc64-7be6-48b8-9733-91df64fe0c2b
+          - ed128775-d38c-4de9-a76a-39ee51e6474e
+          - 61726213-0604-4085-bfd1-8da37d46e3d0
+        background: bgimg
+        image: backgrounds/vector-(3)-(1).png
   -
     type: set
     attrs:
-      id: meed4kfk
-      enabled: false
+      id: mg90cb8r
       values:
-        type: html_block
-        available_on:
-          - production
-          - local
-        code:
-          code: |-
-            <div class="flex items-center justify-center">
-            <iframe width="660" height="415" src="https://www.youtube.com/embed/BxJVK58jwTc?si=f-I77ayD9eAICwal&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          mode: htmlmixed
-  -
-    type: set
-    attrs:
-      id: meed4rjd
-      enabled: false
-      values:
-        type: divider
-        space_height: 180px
-  -
-    type: set
-    attrs:
-      id: meed4f77
-      values:
-        type: reusable_block
-        entry:
-          - 67e0641c-45df-420d-90f1-0a3bbe96b8f1
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-  -
-    type: set
-    attrs:
-      id: mapbduo9
-      values:
-        type: reusable_block
-        entry:
-          - 39f8c616-eb93-4ada-9310-0e1f4b0b324b
-  -
-    type: set
-    attrs:
-      id: mdyi906q
-      values:
-        type: reusable_block
-        entry:
-          - e955ebf9-b57f-4438-9219-b44ef9f10681
-  -
-    type: set
-    attrs:
-      id: mfaphf4x
-      values:
-        type: reusable_block
-        entry:
-          - b8dfb5b2-2bfc-4db0-af0a-652b3946372f
-  -
-    type: set
-    attrs:
-      id: mdvtzyvf
-      values:
-        type: reusable_block
-        entry:
-          - 4d6cabbc-3042-4ef0-879b-08c0e8ee4465
-  -
-    type: set
-    attrs:
-      id: mfapj4ag
-      values:
-        type: reusable_block
-        entry:
-          - 9fe7d3ea-4903-4391-9f52-df30bd35a89e
-  -
-    type: set
-    attrs:
-      id: mfarl9qm
-      values:
-        type: reusable_block
-        entry:
-          - 424afcd4-bbf9-488d-bc21-fe1343478187
-  -
-    type: set
-    attrs:
-      id: mfceo0df
-      values:
-        type: reusable_block
-        entry:
-          - ee31e894-fd13-4153-bcf9-5f4c896c0621
-  -
-    type: set
-    attrs:
-      id: mdyloxip
-      values:
-        type: exhibiting_brand
+        type: statistics_section
+        design: alignleft
         heading:
-          heading:
-            text: 'EXHIBITING BRANDS'
-            size: small
-            color: black
-            tag: p
-            uppercase: false
-          subheading: null
-          focus_icon: true
-          heading_focus_word: null
-          icon: globe-asia-australia
-        ezone_base_url: 'https://ezone.adihex.com/exhibitors-list-top-with-images-resource/'
-        event_id: 4
-        random: true
-        count: 10
-        in_random_order: true
-        pagination_count: 10
-        style_config_field:
-          padding: small
-          color: black
-          size: normal
-          variant: style1
-        style_config:
-          padding: small
-          color: lite-secondary
-          size: normal
-          variant: style1
+          -
+            type: heading
+            attrs:
+              level: 2
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+                text: '2024 Highlights'
+              -
+                type: hardBreak
+                marks:
+                  -
+                    type: bold
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textColor
+                    attrs:
+                      color: Orange
+                text: 'At a Glance'
+        description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+                text: 'Global Food Week 2025 unites five critical sectors shaping the future of food, from agriculture and food manufacturing to food security and hospitality.'
+        buttons:
+          -
+            id: mg90cpk5
+            label: 'Download 2024 Report'
+            design: whiteoutlined
+            open_new_tab: false
+            type: new_set
+            enabled: true
+        statistics:
+          -
+            id: mg90d633
+            icon: globe-asia-australia
+            numbers: '34437'
+            label: 'Global Attendees'
+            type: statistics_set
+            enabled: true
+          -
+            id: mg90dw5p
+            icon: globe-asia-australia
+            numbers: '34437'
+            label: 'Global Attendees'
+            type: statistics_set
+            enabled: true
+          -
+            id: mg90e116
+            icon: globe-asia-australia
+            numbers: '34437'
+            label: 'Global Attendees'
+            type: statistics_set
+            enabled: true
+          -
+            id: mg90e030
+            icon: globe-asia-australia
+            numbers: '34437'
+            label: 'Global Attendees'
+            type: statistics_set
+            enabled: true
+          -
+            id: mg90dz8d
+            icon: globe-asia-australia
+            numbers: '34437'
+            label: 'Global Attendees'
+            type: statistics_set
+            enabled: true
+          -
+            id: mg90f4gq
+            icon: globe-asia-australia
+            numbers: '34437'
+            label: 'Global Attendees'
+            type: statistics_set
+            enabled: true
+        background: bgimg
+        image: backgrounds/bg.png
   -
     type: set
     attrs:
-      id: mfarlx2j
+      id: mg93lza7
       values:
-        type: banner
-        new_tab: true
-        is_div: false
-        use_image_height: false
-        image: banners/download-app-now-2025_ar2-(1).jpg
-        link: 'https://onelink.to/hbb8wm'
-        width: full
-        image_style: contain
+        type: cta_visit
+        design: centered
         heading:
-          text: null
-          size: small
-          color: white
-          tag: p
-          uppercase: true
-        image_height: 300
+          -
+            type: heading
+            attrs:
+              level: 2
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+                text: 'Why visit: explore. '
+          -
+            type: heading
+            attrs:
+              level: 2
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: Orange
+                text: 'Connect. Transform'
+        description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+                text: 'Global Food Week is the region’s leading platform for driving dialogue, innovation, and partnerships around food security and agri-food systems.'
+        group_info:
+          -
+            id: mg93n4vv
+            icon: home-modern
+            info_title: 'Tackle Global Food Security Challenges'
+            info_description: 'Join high-level discussions focused on practical strategies and international cooperation to address global food security.'
+            image: rectangle-9.png
+            type: info
+            enabled: true
+          -
+            id: mg93vaym
+            icon: home-modern
+            info_title: 'Tackle Global Food Security Challenges'
+            info_description: 'Join high-level discussions focused on practical strategies and international cooperation to address global food security.'
+            image: rectangle-9.png
+            type: info
+            enabled: true
+          -
+            id: mg93vd8h
+            icon: home-modern
+            info_title: 'Tackle Global Food Security Challenges'
+            info_description: 'Join high-level discussions focused on practical strategies and international cooperation to address global food security.'
+            image: rectangle-9.png
+            type: info
+            enabled: true
+          -
+            id: mg93vess
+            icon: home-modern
+            info_title: 'Tackle Global Food Security Challenges'
+            info_description: 'Join high-level discussions focused on practical strategies and international cooperation to address global food security.'
+            image: rectangle-9.png
+            type: info
+            enabled: true
+          -
+            id: mg93vgis
+            icon: home-modern
+            info_title: 'Tackle Global Food Security Challenges'
+            info_description: 'Join high-level discussions focused on practical strategies and international cooperation to address global food security.'
+            image: rectangle-9.png
+            type: info
+            enabled: true
+        background: bgimg
+        image: backgrounds/backgr.png
+        ending_text: 'Global Food Week is the region’s leading platform for driving dialogue, innovation, and partnerships.'
+        replicator_button:
+          -
+            id: mgaqfpb8
+            label: 'Register to Visit'
+            design: whiteoutlined
+            open_new_tab: false
+            type: new_button
+            enabled: true
+            button_size: lg
   -
     type: set
     attrs:
-      id: mdwr4uxy
+      id: mgapd52p
       values:
-        type: reusable_block
-        entry:
-          - a1c926f4-9f14-404a-8bc4-fe0eb1bad1bd
-  -
-    type: set
-    attrs:
-      id: mdmra4mo
-      values:
-        type: reusable_block
-        entry:
-          - 6444f21f-a94b-4af6-8e4c-3b5f7e586afb
-  -
-    type: set
-    attrs:
-      id: mdmsh84j
-      values:
-        type: reusable_block
-        entry:
-          - bc1eb7ab-3eff-461f-ad8d-22d4c7f75cbe
-  -
-    type: set
-    attrs:
-      id: mdyt4esn
-      values:
-        type: banner_carousel
+        type: heading_and_box_icons
+        background: bgcolor
+        background_color: secondary
+        design: centered
         heading:
-          heading:
-            text: 'Our Somposers'
-            size: small
-            color: black
-            tag: p
-            uppercase: false
-          subheading: null
-          focus_icon: false
-          heading_focus_word: null
-          icon: null
-        images:
           -
-            id: hyke8hDT
-            image: banners/adpg_adihex_homepage-banner.jpg
-            link: 'https://www.adportsgroup.com/'
+            type: heading
+            attrs:
+              level: 2
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#211551'
+                text: Explore
+              -
+                type: text
+                text: ' '
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#E08247'
+                text: 'Future of Food'
+        description:
           -
-            id: mdyt6kjg
-            image: banners/gac_adihex_website_banner.jpg
-            link: 'https://www.gargashgacmotor.com/'
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#211551'
+                text: 'Global Food Week brings together diverse sectors that showcase the full spectrum of the food and agriculture value chain.'
+        icon_box_replicator:
           -
-            id: mdyt7ja3
-            image: banners/ranaka-banner.png
-            link: 'https://rakna.ae/'
+            id: mgafbg8g
+            icon_source: image
+            caption: 'Food Sourcing & Procurement'
+            description: 'Abu Dhabi International Food Exhibition (ADIFE)'
+            type: icon_box
+            enabled: true
+            image: svgs/vector.svg
           -
-            id: mdyt917c
-            image: banners/schiwywaffen.png
-            link: 'https://www.schiwywaffen.com/'
-        new_tab: true
-        width: contained
-        image_style: contain
-        is_div: false
-        use_image_height: true
+            id: mgafci4r
+            icon_source: icon
+            icon: home-modern
+            caption: 'Food Sourcing & Procurement'
+            description: 'Abu Dhabi International Food Exhibition (ADIFE)'
+            type: icon_box
+            enabled: true
+          -
+            id: mgafcjop
+            icon_source: icon
+            icon: home-modern
+            caption: 'Food Sourcing & Procurement'
+            description: 'Abu Dhabi International Food Exhibition (ADIFE)'
+            type: icon_box
+            enabled: true
+          -
+            id: mgafcn5m
+            icon_source: icon
+            icon: home-modern
+            caption: 'Food Sourcing & Procurement'
+            description: 'Abu Dhabi International Food Exhibition (ADIFE)'
+            type: icon_box
+            enabled: true
+        center_image: explore.png
   -
     type: set
     attrs:
-      id: mdn06z0s
+      id: mgape0g6
       values:
-        type: reusable_block
-        entry:
-          - 2551c9b8-1a0e-44d5-aec1-bbbdd94d386d
+        type: heading_and_image
+        background: bgcolor
+        background_color: secondary
+        design: centered
+        heading:
+          -
+            type: heading
+            attrs:
+              level: 2
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#211551'
+                text: 'Leaders Of'
+              -
+                type: text
+                text: ' '
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#E08247'
+                text: 'The Industry'
+        description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Global Food Week brings together diverse sectors that showcase the full spectrum of the food and agriculture value chain.'
+        image: leaders.png
   -
     type: set
     attrs:
-      id: me6z1rue
-      enabled: false
+      id: mgapc9el
       values:
-        type: popup_image
-        popup_width: 600
-        popup_height: 400
-        close_color: white
-        popup_position: center
-        popup_image: banners/3.-falcon-auction-600x400-1.jpg
-        popup_link: 'https://auction.adihex.com/'
+        type: heading_and_feature_grid
+        background: bgimg
+        design: devided
+        heading:
+          -
+            type: heading
+            attrs:
+              level: 1
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#211551'
+                text: 'Explore Features at'
+          -
+            type: heading
+            attrs:
+              level: 1
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#E08247'
+                text: 'Global Food Week'
+        description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Global Food Week brings together diverse sectors that showcase the full spectrum of the food and agriculture value chain.'
+        buttons:
+          -
+            id: mg9e8emm
+            label: 'Explore the Features'
+            design: purpleoutine
+            open_new_tab: false
+            type: new_set
+            enabled: true
+            button_size: lg
+        feature_entries:
+          - a43dad7b-915b-45c0-ba19-f86fddb4fb3c
+        image: backgrounds/vector-(3)-(1).png
   -
     type: set
     attrs:
-      id: mfnja8t9
-      enabled: false
+      id: mg95p9ul
       values:
-        type: reusable_block
-        entry:
-          - 1c0449e4-f8ee-4dc2-a95c-ed2cf6a143ee
+        type: cta_section
+        background: bgimg
+        image: backgrounds/background.png
+        heading:
+          -
+            type: heading
+            attrs:
+              level: 2
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+                text: 'Hosted Buyers '
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#E08247'
+                text: Program
+        description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+                text: 'The Hosted Buyers Program at Global Food Week is a premium networking initiative designed to maximize business opportunities for exhibitors and buyers alike.'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+                text: 'The program provides a structured environment for meaningful connections through pre-scheduled one-on-one meetings, personalized matchmaking, and exclusive access to high- level networking spaces.'
+        buttons:
+          -
+            id: mg95qtrl
+            label: 'Become a Hosted Buyer'
+            design: whiteoutlined
+            open_new_tab: false
+            type: new_set
+            enabled: true
+        design: centered
+  -
+    type: set
+    attrs:
+      id: mg9ai62k
+      values:
+        type: highlights_carousel
+        background: bgcolor
+        background_color: secondary
+        design: devided
+        heading:
+          -
+            type: heading
+            attrs:
+              level: 2
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#211551'
+                text: 'Highlights In Photos:'
+              -
+                type: hardBreak
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#211551'
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#E08247'
+                text: 'Global Food Week 2024'
+        description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#211551'
+                text: 'Global Food Week brings together diverse sectors that showcase the full spectrum of the food and agriculture value chain.'
+        highlights_entries:
+          - 54512af2-7793-4939-8c7e-0f8ff1d58f8e
+  -
+    type: set
+    attrs:
+      id: mg9cqwht
+      values:
+        type: heading_and_sponsors
+        heading:
+          -
+            type: heading
+            attrs:
+              level: 1
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#211551'
+                text: 'Partners &'
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#E08247'
+                text: ' Sponsors 2025'
+        design: centered
+        description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#211551'
+                text: 'Global Food Week brings together diverse sectors that showcase the full spectrum of the food and agriculture value chain.'
+        entries_field:
+          - 6dac910e-d26c-4a22-a38f-ec58c24ae101
+          - ed128775-d38c-4de9-a76a-39ee51e6474e
+        sponsors_entries:
+          - ed128775-d38c-4de9-a76a-39ee51e6474e
+          - a4e2fc64-7be6-48b8-9733-91df64fe0c2b
+          - bf598fe8-be8d-4694-8f7a-e242fdcf461b
+          - 61726213-0604-4085-bfd1-8da37d46e3d0
+          - 7b79933c-59d1-4bbf-aa0c-f2c266e18f65
+          - 9d9a8b49-cfb4-430c-a1db-5c2ff3dadb37
+          - 660c725b-57ab-4ab0-830c-327db4cb1730
   -
     type: paragraph
     attrs:
       textAlign: left
 fine_seo_description: 'Celebrate inherited values at ADIHEX 2025 — An immersive heritage &amp; innovation event merging ancestral traditions with cutting‑edge hunting, falconry & equestrian experiences.'
-fine_seo_image: brand/logos/adihex-logo-social.png
 header_scripts:
   code: null
   mode: htmlmixed
@@ -301,5 +633,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1758086500
+updated_at: 1760078973
 ---

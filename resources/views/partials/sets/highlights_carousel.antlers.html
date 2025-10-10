@@ -1,0 +1,106 @@
+<div style="{{ if background == 'bgimg' }}background-image: url('{{ image.url }}');{{ else }}background-color: var(--color-{{ background_color }});{{ /if }}"
+    class="w-full  bg-cover bg-center ">
+    <div class="py-10">
+        <div class="adnec-container  ">
+
+            {{ partial:partials/sets/heading_group_component }}
+        </div>
+        <div class="swiper myHighlightsSwiper ">
+            <div class="swiper-wrapper  ">
+
+                {{ highlights_entries }}
+                    {{ highlights_images }}
+                        <div class="swiper-slide">
+
+                            {{ image }}
+
+                                <img src="{{ url }}" alt="">
+                            {{ /image }}
+                        </div>
+                    {{ /highlights_images }}
+                {{ /highlights_entries }}
+            </div>
+            <div class=" flex flex-row h-auto md:static relative pt-20 md:pt-0 ">
+            <div class="swiper-button-prev !w-14 !h-14">
+                {{ heroicon variant="outline" icon="arrow-left" class="!h-5 !w-5 text-white" }}
+            </div>
+            <div class="swiper-button-next !w-14 !h-14">
+                {{ heroicon variant="outline" icon="arrow-right" class="!h-5 !w-5 text-white" }}
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<style>
+    .swiper.myHighlightsSwiper .swiper-button-next::after,
+    .swiper.myHighlightsSwiper .swiper-button-prev::after {
+        content: none !important;
+    }
+
+    .swiper.myHighlightsSwiper .swiper-button-next,
+    .swiper.myHighlightsSwiper .swiper-button-prev {
+        border: 1px solid #E08247;
+        border-radius: 50px;
+        background-color: #E08247;
+    }
+
+    .swiper.myHighlightsSwiper .swiper-button-next {
+        right: 5vw;
+    }
+
+    .swiper.myHighlightsSwiper .swiper-button-prev {
+        left: 5vw;
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+        .myHighlightsSwiper .swiper-slide {
+            transition: transform 0.3s ease;
+            transform: scale(0.9);
+        }
+
+        .myHighlightsSwiper .swiper-slide-active {
+            transform: scale(1.2);
+            /* enlarge center one */
+            z-index: 10;
+        }
+    }
+</style>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        new Swiper(".myHighlightsSwiper", {
+            loop: true,
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                    centeredSlides: false,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                    centeredSlides: true,
+
+                }
+            }
+        });
+    });
+</script>

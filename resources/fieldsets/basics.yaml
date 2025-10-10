@@ -5,6 +5,9 @@ fields:
     field:
       options:
         -
+          key: none
+          value: null
+        -
           key: home-modern
           value: null
         -
@@ -228,6 +231,267 @@ fields:
                 -
                   handle: buttons
                   field: basics.buttons
+            hp:
+              display: hp
+              fields:
+                -
+                  handle: toggle_field
+                  field:
+                    type: toggle
+                    display: 'Toggle Field'
+                    localizable: false
+            heading_and_sponsors:
+              display: 'Heading and sponsors'
+              fields:
+                -
+                  import: background_design
+                -
+                  import: heading_group_component
+                -
+                  handle: sponsors_entries
+                  field:
+                    collections:
+                      - sponsors
+                    type: entries
+                    display: 'Sponsors Entries'
+                    localizable: false
+            statistics_section:
+              display: 'Statistics Section'
+              fields:
+                -
+                  import: background_design
+                -
+                  import: heading_group_component
+                -
+                  handle: statistics
+                  field:
+                    type: replicator
+                    display: Statistics
+                    localizable: false
+                    max_sets: 6
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          statistics_set:
+                            display: 'Statistics Set'
+                            fields:
+                              -
+                                handle: icon
+                                field: basics.icon
+                                config:
+                                  width: 33
+                              -
+                                handle: numbers
+                                field:
+                                  type: text
+                                  display: Numbers
+                                  localizable: false
+                                  width: 33
+                              -
+                                handle: label
+                                field:
+                                  type: text
+                                  display: Label
+                                  localizable: false
+                                  width: 33
+            cta_visit:
+              display: 'Cta Visit'
+              fields:
+                -
+                  import: background_design
+                -
+                  import: heading_group_component
+                -
+                  handle: group_info
+                  field:
+                    type: replicator
+                    display: 'Group Info'
+                    localizable: false
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          info:
+                            display: Info
+                            fields:
+                              -
+                                handle: icon
+                                field: basics.icon
+                                config:
+                                  width: 50
+                              -
+                                handle: info_title
+                                field:
+                                  type: text
+                                  display: 'Info Title'
+                                  localizable: false
+                                  width: 50
+                              -
+                                handle: info_description
+                                field:
+                                  type: text
+                                  display: 'Info Description'
+                                  localizable: false
+                                  width: 50
+                              -
+                                handle: image
+                                field: basics.image
+                                config:
+                                  validate:
+                                    - image
+                                    - 'max_filesize:9216'
+                                    - 'mimes:png,jpg,jpeg,gif,webp'
+                                  width: 50
+                -
+                  handle: ending_text
+                  field:
+                    type: text
+                    display: 'Ending Text'
+                    localizable: false
+                -
+                  handle: replicator_button
+                  field:
+                    type: replicator
+                    display: 'Replicator Button'
+                    localizable: false
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_button:
+                            display: 'New Button'
+                            fields:
+                              -
+                                import: fancy_button
+            cta_section:
+              display: 'Cta Section'
+              fields:
+                -
+                  import: background_design
+                -
+                  import: heading_group_component
+            highlights_carousel:
+              display: 'Highlights Carousel'
+              fields:
+                -
+                  import: background_design
+                -
+                  import: heading_group_component
+                -
+                  handle: highlights_entries
+                  field:
+                    collections:
+                      - reusables
+                    type: entries
+                    display: 'Highlights Entries'
+                    localizable: false
+            heading_and_feature_grid:
+              display: 'Heading And Feature Grid'
+              fields:
+                -
+                  import: background_design
+                -
+                  import: heading_group_component
+                -
+                  handle: feature_entries
+                  field:
+                    collections:
+                      - reusables
+                    type: entries
+                    display: 'Feature Entries'
+                    localizable: false
+            heading_and_image:
+              display: 'Heading And Image'
+              fields:
+                -
+                  import: background_design
+                -
+                  import: heading_group_component
+                -
+                  handle: image
+                  field: basics.image
+                  config:
+                    validate:
+                      - image
+                      - 'max_filesize:9216'
+                      - 'mimes:png,jpg,jpeg,gif,webp'
+            heading_comp:
+              display: 'Heading Comp'
+              fields:
+                -
+                  import: background_design
+                -
+                  import: heading_group_component
+            heading_and_box_icons:
+              display: 'Heading And Box Icons'
+              fields:
+                -
+                  import: background_design
+                -
+                  import: heading_group_component
+                -
+                  handle: center_image
+                  field: basics.image
+                  config:
+                    display: 'Center Image'
+                    validate:
+                      - image
+                      - 'max_filesize:9216'
+                      - 'mimes:png,jpg,jpeg,gif,webp'
+                -
+                  import: icon_boxes
+            cta_grid:
+              display: 'Cta grid'
+              fields:
+                -
+                  import: background_design
+                -
+                  handle: grid_version
+                  field:
+                    options:
+                      -
+                        key: v1
+                        value: null
+                      -
+                        key: v2
+                        value: null
+                      -
+                        key: v3
+                        value: null
+                    type: button_group
+                    display: 'Grid Version'
+                    localizable: false
+                    default: v1
+                -
+                  handle: grid_heading
+                  field:
+                    buttons:
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - bold
+                      - color
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Grid Heading'
+                    localizable: false
+                -
+                  handle: grid_set_replicator
+                  field:
+                    type: replicator
+                    display: 'Grid Set Replicator'
+                    localizable: false
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          grid_set:
+                            display: 'Grid Set'
+                            fields:
+                              -
+                                import: images_grid_and_buttons
         forms:
           display: Forms
           icon: form-drop-down-menu
@@ -250,8 +514,8 @@ fields:
                 -
                   handle: heading
                   field: basics.heading_group
-        adihex_elements:
-          display: 'adihex elements'
+        global_food_elements:
+          display: 'Global Food elements'
           sets:
             heading_and_text:
               display: 'Heading And Text'
@@ -446,10 +710,26 @@ fields:
               display: 'Heading And Grid'
               fields:
                 -
-                  handle: heading
-                  field: basics.heading_group
-                  config:
-                    display: Heading
+                  import: background_design
+                -
+                  handle: grid_structure
+                  field:
+                    options:
+                      -
+                        key: v1
+                        value: null
+                      -
+                        key: v2
+                        value: null
+                      -
+                        key: v3
+                        value: null
+                    type: button_group
+                    display: 'Grid Structure'
+                    localizable: false
+                    default: v1
+                -
+                  import: heading_group_component
                 -
                   handle: replicating_grid
                   field:
@@ -460,8 +740,8 @@ fields:
                       new_set_group:
                         display: 'New Set Group'
                         sets:
-                          new_set:
-                            display: 'New Set'
+                          grid_item:
+                            display: 'Grid Item'
                             fields:
                               -
                                 handle: heading
@@ -472,21 +752,61 @@ fields:
                               -
                                 handle: sub_heading
                                 field:
-                                  type: text
+                                  buttons:
+                                    - h1
+                                    - h2
+                                    - h3
+                                    - h4
+                                    - bold
+                                    - color
+                                  remove_empty_nodes: false
+                                  type: bard
                                   display: 'Sub Heading'
                                   localizable: false
+                              -
+                                handle: icon_or_button
+                                field:
+                                  options:
+                                    -
+                                      key: iconlist
+                                      value: Icon
+                                    -
+                                      key: buttonlist
+                                      value: Button
+                                  type: button_group
+                                  display: 'Icon Or Button'
+                                  localizable: false
+                              -
+                                handle: button_list
+                                field:
+                                  type: replicator
+                                  display: 'Button List'
+                                  localizable: false
+                                  if:
+                                    icon_or_button: 'equals buttonlist'
+                                  sets:
+                                    new_set_group:
+                                      display: 'New Set Group'
+                                      sets:
+                                        button_set:
+                                          display: 'Button Set'
+                                          fields:
+                                            -
+                                              import: fancy_button
                               -
                                 handle: icon_list
                                 field:
                                   type: replicator
                                   display: 'Icon List'
                                   localizable: false
+                                  if:
+                                    icon_or_button: 'equals iconlist'
                                   sets:
                                     new_set_group:
                                       display: 'New Set Group'
                                       sets:
-                                        new_set:
-                                          display: 'New Set'
+                                        icon_list_item:
+                                          display: 'Icon List Item'
                                           fields:
                                             -
                                               handle: text
@@ -501,19 +821,8 @@ fields:
                                                 display: Link
                                                 localizable: false
                                             -
-                                              handle: icons
-                                              field:
-                                                options:
-                                                  -
-                                                    key: envelope
-                                                    value: Email
-                                                  -
-                                                    key: phone
-                                                    value: 'Phone number'
-                                                taggable: true
-                                                type: select
-                                                display: Icons
-                                                localizable: false
+                                              handle: icon
+                                              field: basics.icon
                                             -
                                               handle: image_upload
                                               field:
@@ -967,7 +1276,7 @@ fields:
       validate:
         - image
         - 'max_filesize:9216'
-        - 'mimes:png,jpg,jpeg,gif,webp'
+        - 'mimes:png,jpg,jpeg,gif,webp,svg'
   -
     handle: video
     field:
@@ -1032,3 +1341,25 @@ fields:
       display: Template
       localizable: true
       default: default
+  -
+    handle: colors
+    field:
+      options:
+        -
+          key: primary
+          value: Primary
+        -
+          key: secondary
+          value: Secondary
+        -
+          key: accent
+          value: Accent
+        -
+          key: light-secondary
+          value: Light-Secondary
+        -
+          key: light-accent
+          value: Light-accent
+      type: select
+      display: Colors
+      localizable: false

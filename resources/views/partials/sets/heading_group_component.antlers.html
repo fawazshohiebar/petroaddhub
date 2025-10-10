@@ -1,0 +1,40 @@
+<div
+    class=" gap-5   md:gap-10   pb-5 md:pb-10
+   {{ if design == 'devided' }} 
+        pb-5 md:pb-10  grid xl:grid-cols-[50%_35%]  md:grid-cols-[50%_40%] md:gap-0 gap-5  justify-between 
+        {{ elseif design == 'alignleft' }}  
+        flex-col justify-start
+        md:w-[330px] lg:w-[450px]
+        flex
+        {{else }}
+        items-center
+        flex-col
+        text-center
+        flex
+        
+    {{/if}}">
+
+    <div class=" custom">{{ heading }}</div>
+
+    {{ if sub_heading || description ||buttons }} 
+    <div class=" flex flex-col md:gap-10 gap-5
+   {{ if design == 'centered'}}
+   items-center
+   {{/if}}
+   ">
+        {{ if sub_heading }}
+            <div class="custom max-w-xl md:max-w-3xl">{{ sub_heading }}</div>
+        {{ /if }}
+        {{ if description }}
+            <div class="custom ">{{ description }}</div>
+        {{ /if }}
+        {{ if buttons }}
+        <div class="flex flex-row gap-5">
+            {{ buttons }}
+                {{ partial:partials/sets/fancy_button }}
+            {{ /buttons }}
+            </div>
+        {{ /if }}
+    </div>
+    {{/if}}
+</div>

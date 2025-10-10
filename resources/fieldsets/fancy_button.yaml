@@ -1,0 +1,65 @@
+title: 'Fancy Button'
+fields:
+  -
+    handle: link
+    field:
+      type: link
+      display: Link
+      localizable: false
+      width: 50
+  -
+    handle: label
+    field:
+      type: text
+      display: Label
+      localizable: false
+      width: 50
+  -
+    handle: design
+    field:
+      options:
+        -
+          key: orangefilled
+          value: 'Orange Filled'
+        -
+          key: whitefilled
+          value: 'White Filled'
+        -
+          key: whiteoutlined
+          value: 'White Outlined'
+        -
+          key: purpleoutine
+          value: 'Purple Outline'
+        -
+          key: Orangenogradient
+          value: 'Orange without gradient'
+      type: select
+      display: Design
+      localizable: false
+      width: 25
+  -
+    handle: icon
+    field: basics.icon
+    config:
+      width: 25
+  -
+    handle: open_new_tab
+    field:
+      type: toggle
+      display: 'Open New Tab'
+      localizable: false
+      width: 25
+  -
+    handle: button_size
+    field:
+      options:
+        -
+          key: fit
+          value: Fit
+        -
+          key: lg
+          value: Large
+      type: select
+      display: 'Button Size'
+      localizable: false
+      width: 25

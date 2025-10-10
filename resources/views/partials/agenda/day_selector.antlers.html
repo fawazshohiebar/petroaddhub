@@ -3,7 +3,7 @@
             <div 
                 class="flex-shrink-0 h-full min-w-[80px] sm:min-w-[100px] lg:flex-1 relative cursor-pointer transition-all duration-200"
                 :class="{
-                    'bg-gradient-to-br from-[#956246] to-[#741330]': selectedDay === day.number,
+                    'bg-light-accent': selectedDay === day.number,
                     'bg-white hover:bg-gray-50': selectedDay !== day.number
                 }"
                 @click="selectedDay = day.number"
@@ -13,7 +13,7 @@
                     <div 
                         class="text-center transition-colors duration-200 text-sm sm:text-base md:text-lg"
                         :class="{
-                            'font-semibold text-white': selectedDay === day.number,
+                            'font-semibold text-blue': selectedDay === day.number,
                             'text-gray-500': selectedDay !== day.number
                         }"
                     >
@@ -24,7 +24,7 @@
                     <div 
                         class="font-normal text-center whitespace-nowrap transition-colors duration-200 text-xs sm:text-sm lg:text-base mt-0.5 sm:mt-1"
                         :class="{
-                            'text-white': selectedDay === day.number,
+                            'text-accent': selectedDay === day.number,
                             'text-gray-500': selectedDay !== day.number
                         }"
                     >

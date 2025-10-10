@@ -1,0 +1,55 @@
+title: 'Background Design'
+fields:
+  -
+    handle: background
+    field:
+      options:
+        -
+          key: bgimg
+          value: 'Background Image'
+        -
+          key: bgcolor
+          value: 'Background Color'
+      type: select
+      display: Background
+      localizable: false
+      width: 50
+  -
+    handle: image
+    field: basics.image
+    config:
+      display: 'Background Image'
+      validate:
+        - image
+        - 'max_filesize:9216'
+        - 'mimes:png,jpg,jpeg,gif,webp'
+      width: 50
+      if:
+        background: 'equals bgimg'
+  -
+    handle: background_color
+    field: basics.colors
+    config:
+      options:
+        -
+          key: white
+          value: White
+        -
+          key: primary
+          value: Primary
+        -
+          key: secondary
+          value: Secondary
+        -
+          key: accent
+          value: Accent
+        -
+          key: light-secondary
+          value: Light-Secondary
+        -
+          key: light-accent
+          value: Light-accent
+      display: 'Background Color'
+      if:
+        background: 'equals bgcolor'
+      width: 50

@@ -1,11 +1,7 @@
 title: 'Reusable Activities'
 fields:
   -
-    handle: heading
-    field: basics.heading_group
-    config:
-      display: 'Section Heading'
-      localizable: true
+    import: heading_group_component
   -
     handle: main_activities
     field:
@@ -34,6 +30,7 @@ fields:
           config:
             width: 15
             instructions: 'Icon to display with this activity'
+            default: none
         -
           handle: image
           field:
@@ -77,5 +74,17 @@ fields:
             localizable: false
             width: 33
   -
-    handle: button_group
-    field: basics.buttons
+    handle: buttons_groups
+    field:
+      type: replicator
+      display: 'Buttons Groups'
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            button:
+              display: Button
+              fields:
+                -
+                  import: fancy_button

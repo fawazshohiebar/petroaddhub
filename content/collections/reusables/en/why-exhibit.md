@@ -1,72 +1,27 @@
 ---
-id: 7e56d7a4-208b-4cb7-b85d-b5535c35aef3
-blueprint: activity
-title: 'WHY EXHIBIT?'
-heading:
-  heading:
-    text: 'WHY EXHIBIT?'
-    size: small
-    color: primary
-    tag: p
-    uppercase: false
-  subheading:
-    text: 'Secure your stand at ADIHEX 2025 and unlock the full potential of the region’s most dynamic heritage and outdoor industry marketplace.'
-    size: small
-    color: primary
-    tag: p
-    uppercase: false
-  focus_icon: false
-  heading_focus_word: null
-  icon: null
-main_activities:
+id: 2540ef59-ee39-4163-a119-16c1f7a13f65
+blueprint: media_with_cta
+title: 'Why Exhibit'
+text_image_alignment: v1
+heading_text:
   -
-    id: madgpfr4
-    description: 'Connect with over 347,000 qualified visitors with strong purchasing power and niche interests'
-    icon: user-group
-  -
-    id: madgpg3f
-    description: 'Generate premium business leads and secure high-value sales on-site'
-    icon: trophy
-  -
-    id: mdodgr9u
-    description: 'Showcase your brand in front of a global community passionate about hunting, equestrian sports, outdoor adventure, weaponry, falconry, conservation, and heritage'
-    icon: trophy
-  -
-    id: mdodgwq8
-    description: 'Engage with key decision-makers, VIP buyers, and government stakeholders actively sourcing products and partnerships'
-    icon: trophy
-  -
-    id: mdodh2fj
-    description: 'Maximize your exposure through our integrated marketing support—online, onsite, and in media'
-    icon: trophy
-  -
-    id: mdodh7or
-    description: 'Establish your presence in a market known for high-value spending and a deep respect for tradition and innovation'
-    icon: trophy
-featured_activities:
-  -
-    id: mdiqvg3h
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754386474
-button_group:
-  -
-    id: mdirjamk
-    label: 'Enquire to exhibit'
-    size: medium
-    color: secondary
-    style: filled
-    type: button
-    enabled: true
-    url: holl
-    dynamic_button:
-      button: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
-      text: null
-      button_options:
-        style: filled
-        color: primary
-        size: large
-        new_tab: false
-        icon: null
-        icon_position: start
-duplicated_from: d3542e34-4109-478a-9525-8739e1c13af5
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'FUELING THE FUTURE OF FOOD'
+description: |-
+  Global Food Week 2025 offers a unique opportunity to showcase your brand to global leaders in the food industry. With thousands of visitors, including chefs, distributors, and investors, it’s the perfect platform to expand your network, increase visibility, and explore new markets.
+
+  Exhibiting gives you access to targeted networking opportunities and the chance to present your innovative products to an eager audience. Whether you’re launching a new product or forming key partnerships, Global Food Week provides the ideal environment to grow your business and position your brand as a leader in the food industry.
+section_image: features/exhibit.png
+background: bgcolor
+background_color: light-secondary
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1759815411
 ---

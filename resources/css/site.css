@@ -12,34 +12,50 @@ html {
   scroll-padding-top: 100px;
   /* Offset for sticky header */
 }
+ :root{
 
+  --color-primary:#211551;
+  --color-secondary:#F2F9FC;
+  --color-accent:#f47832;
+  --color-blue:#2d4ea2;
+  --color-light-accent:#fff7ef;
+  --color-light-secondary:#f0f5ff;
+ }
 
 @theme {
   --font-mont: "montserrat", sans-serif;
   --font-noto: "noto-sans-arabic", sans-serif;
-  --color-primary-50: #f5f5f1;
-  --color-primary-100: #e7e7da;
-  --color-primary-200: #d1d0b7;
-  --color-primary-300: #b6b28e;
-  --color-primary-400: #a19a6e;
-  --color-primary-500: #928960;
-  --color-primary-600: #827654;
-  --color-primary-700: #655943;
-  --color-primary-800: #574c3c;
-  --color-primary-900: #4c4237;
-  --color-primary-950: #2b241d;
 
-  --color-secondary-50: #f3f6f8;
-  --color-secondary-100: #e1e9ec;
-  --color-secondary-200: #c7d4da;
-  --color-secondary-300: #a0b6c0;
-  --color-secondary-400: #728f9e;
-  --color-secondary-500: #5b7a8a;
-  --color-secondary-600: #4b616f;
-  --color-secondary-700: #41525d;
-  --color-secondary-800: #3b464f;
-  --color-secondary-900: #343d45;
-  --color-secondary-950: #1f262d;
+  --color-primary:#211551;
+  --color-secondary:#F2F9FC;
+  --color-accent:#f47832;
+  --color-blue:#2d4ea2;
+  --color-light-accent:#fff7ef;
+  --color-light-secondary:#f0f5ff;
+
+  --color-primary-50: #211551;
+  --color-primary-100: #211551;
+  --color-primary-200: #211551;
+  --color-primary-300: #211551;
+  --color-primary-400: #211551;
+  --color-primary-500: #211551;
+  --color-primary-600: #211551;
+  --color-primary-700: #211551;
+  --color-primary-800: #211551;
+  --color-primary-900: #211551;
+  --color-primary-950: #211551;
+
+  --color-secondary-50: #F2F9FCz; 
+   --color-secondary-100:#F2F9FCz;
+  --color-secondary-200:#F2F9FCz;
+  --color-secondary-300:#F2F9FCz;
+  --color-secondary-400:#F2F9FCz;
+  --color-secondary-500:#F2F9FCz;
+  --color-secondary-600:#F2F9FCz;
+  --color-secondary-700:#F2F9FCz;
+  --color-secondary-800:#F2F9FCz;
+  --color-secondary-900:#F2F9FCz;
+  --color-secondary-950:#F2F9FCz;
 
   /* Custom Animations */
   --animate-fade-slide-right: fade-slide-right 1s ease forwards;
@@ -105,8 +121,9 @@ html {
 }
 
 @layer utilities {
-  .adnec-container {
-    @apply container mx-auto px-4 md:px-6 relative;
+    .adnec-container,
+  .umex-stata {
+    @apply mx-auto px-[5%] md:px-[5%] xl:px-[5%] max-w-[1536px] relative;
   }
   .colored-text-secondary {
     @apply text-secondary-500;
@@ -144,4 +161,36 @@ html {
   .rtl\:animate-fade-slide-left:where([dir="rtl"], [dir="rtl"] *) {
     animation: fade-slide-left 1s ease forwards;
   }
+}
+
+
+
+.custom h1 {
+  @apply xl:text-6xl md:text-5xl text-3xl font-semibold ; 
+}
+
+.custom h2 {
+  @apply xl:text-5xl md:text-4xl text-3xl font-semibold ;
+}
+
+.custom h3 {
+  @apply xl:text-4xl md:text-3xl text-2xl  ;
+}
+
+.custom h4 {
+  @apply xl:text-2xl md:text-xl text-lg  ;
+}
+
+.custom p {
+  @apply xl:text-base  text-sm ;
+}
+
+
+
+.dropdown-checkbox {
+  display: none;
+}
+
+.dropdown-checkbox:checked + .dropdown-label + .dropdown-content {
+  display: block;
 }

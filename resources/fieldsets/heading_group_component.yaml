@@ -1,0 +1,79 @@
+title: 'Heading Group Component'
+fields:
+  -
+    handle: design
+    field:
+      options:
+        -
+          key: devided
+          value: Divided
+        -
+          key: alignleft
+          value: 'Left Alignment'
+        -
+          key: centered
+          value: Centered
+      type: select
+      display: Design
+      localizable: false
+  -
+    handle: heading
+    field:
+      buttons:
+        - h1
+        - h2
+        - h3
+        - h4
+        - bold
+        - color
+        - anchor
+      remove_empty_nodes: false
+      type: bard
+      display: Heading
+      localizable: false
+  -
+    handle: sub_heading
+    field:
+      buttons:
+        - h1
+        - h2
+        - h3
+        - h4
+        - bold
+        - color
+        - anchor
+      remove_empty_nodes: false
+      type: bard
+      display: 'Sub Heading'
+      localizable: false
+  -
+    handle: description
+    field:
+      buttons:
+        - h1
+        - h2
+        - h3
+        - h4
+        - bold
+        - color
+        - unorderedlist
+        - anchor
+      remove_empty_nodes: false
+      type: bard
+      display: Description
+      localizable: false
+  -
+    handle: buttons
+    field:
+      type: replicator
+      display: Buttons
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  import: fancy_button

@@ -1,0 +1,83 @@
+title: 'images Grid and Buttons'
+fields:
+  -
+    handle: grid_images
+    field: basics.image
+    config:
+      display: 'Grid Images'
+      validate:
+        - image
+        - 'max_filesize:9216'
+        - 'mimes:png,jpg,jpeg,gif,webp,svg'
+  -
+    handle: number_of_stars
+    field:
+      options:
+        -
+          key: 0
+          value: null
+        -
+          key: 1
+          value: null
+        -
+          key: 2
+          value: null
+        -
+          key: 3
+          value: null
+        -
+          key: 4
+          value: null
+        -
+          key: 5
+          value: null
+      type: select
+      display: 'Number Of Stars'
+      localizable: false
+      width: 50
+      default: '0'
+  -
+    handle: grid_heading
+    field:
+      buttons:
+        - h1
+        - h2
+        - h3
+        - h4
+        - bold
+        - color
+      remove_empty_nodes: false
+      type: bard
+      display: 'Grid Heading'
+      localizable: false
+  -
+    handle: grid_text
+    field:
+      buttons:
+        - h1
+        - h2
+        - h3
+        - h4
+        - bold
+        - color
+        - unorderedlist
+      remove_empty_nodes: false
+      type: bard
+      display: 'Grid Text'
+      localizable: false
+  -
+    handle: book_button
+    field:
+      max_sets: 2
+      type: replicator
+      display: 'Book Button'
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            button_set:
+              display: 'Button Set'
+              fields:
+                -
+                  import: fancy_button

@@ -10,7 +10,7 @@
                 class="rtl:mr-auto rtl:ml-0 ltr:ml-auto block size-full max-w-sm sm:max-w-md transform transition duration-500 ease-in-out rtl:data-closed:-translate-x-full data-closed:translate-x-full sm:duration-700">
                 <div class="flex h-full flex-col overflow-y-auto bg-white shadow-2xl">
                     <!-- Header -->
-                    <div class="bg-gradient-to-r from-[#827654] to-[#9d8b65] px-6 py-4">
+                    <div class="bg-blue px-6 py-4">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <div class="h-8 w-8 bg-white/20 rounded-lg flex items-center justify-center">
@@ -45,14 +45,14 @@
                                                         class="h-5 w-5 text-gray-400 group-hover:text-[#827654] transition-colors" />
                                                 {{ else }}
                                                     <div
-                                                        class="h-2 w-2 bg-gray-300 rounded-full group-hover:bg-[#827654] transition-colors">
+                                                        class="h-2 w-2 bg-gray-300 rounded-full group-hover:bg-blue transition-colors">
                                                     </div>
                                                 {{ /if }}
                                                 <span
-                                                    class="text-gray-900 group-hover:text-[#827654] text-base">{{ title }}</span>
+                                                    class="text-blue group-hover:text-blue text-base">{{ title }}</span>
                                             </span>
                                             <div class="flex items-center">
-                                                {{ heroicon:ouline:chevron-down class="h-5 w-5 text-gray-400 transition-all duration-200 group-hover:text-[#827654]" x-bind:class="open ? 'rotate-180' : ''" }}
+                                                {{ heroicon:ouline:chevron-down class="h-5 w-5 text-gray-400 transition-all duration-200 group-hover:text-blue" x-bind:class="open ? 'rotate-180' : ''" }}
                                             </div>
                                         </button>
 
@@ -66,10 +66,10 @@
                                             class="pb-3 rtl:pr-8 ltr:pl-8 space-y-1 bg-gray-50/50 -mx-3 rounded-b-lg">
                                             {{ children }}
                                                 <a href="{{ url }}"
-                                                    class="{{ is_current ? 'text-[#827654] font-medium bg-amber-100' : 'text-gray-600 hover:text-[#827654] hover:bg-white' }} block py-2.5 px-3 text-sm transition-all duration-200 relative rounded-md group">
+                                                    class="{{ is_current ? 'text-blue font-medium bg-amber-100' : 'text-gray-600 hover:text-blue hover:bg-white' }} block py-2.5 px-3 text-sm transition-all duration-200 relative rounded-md group">
                                                     {{ if is_current }}
                                                         <div
-                                                            class="absolute rtl:right-0 ltr:left-0 top-1/2 transform -translate-y-1/2 w-1 h-4 bg-[#827654] rtl:rounded-l ltr:rounded-r">
+                                                            class="absolute rtl:right-0 ltr:left-0 top-1/2 transform -translate-y-1/2 w-1 h-4 bg-[#82765] rtl:rounded-l ltr:rounded-r">
                                                         </div>
                                                     {{ /if }}
                                                     <span class="block truncate">{{ title }}</span>
@@ -83,20 +83,20 @@
                                 {{ else }}
                                     <!-- Single Item -->
                                     <a href="{{ url }}"
-                                        class="{{ is_current || is_parent ? 'text-[#827654] font-semibold' : 'text-gray-700 hover:text-[#827654] hover:bg-gray-50 border-transparent' }} flex items-center gap-3 py-4 px-3 -mx-3 rounded-lg transition-all duration-200 relative group">
+                                        class="{{ is_current || is_parent ? 'text-[#827654] font-semibold' : 'text-gray-700 hover:text-blue hover:bg-gray-50 border-transparent' }} flex items-center gap-3 py-4 px-3 -mx-3 rounded-lg transition-all duration-200 relative group">
                                         {{ if url == '/' }}
                                             <x-dynamic-component component="icons.home"
-                                                class="h-5 w-5 {{ is_current || is_parent ? 'text-[#827654]' : 'text-gray-400 group-hover:text-[#827654]' }} transition-colors" />
+                                                class="h-5 w-5 {{ is_current || is_parent ? 'text-blue' : 'text-gray-400 group-hover:text-blue' }} transition-colors" />
                                         {{ else }}
                                             <div
-                                                class="h-2 w-2 {{ is_current || is_parent ? 'bg-[#827654]' : 'bg-gray-300 group-hover:bg-[#827654]' }} rounded-full transition-colors">
+                                                class="h-2 w-2 {{ is_current || is_parent ? 'bg-[#827654]' : 'bg-gray-300 group-hover:bg-blue' }} rounded-full transition-colors">
                                             </div>
                                         {{ /if }}
                                         <span class="text-base flex-1">{{ title }}</span>
                                         {{ if is_current || is_parent }}
-                                            {{# {{heroicon:outline:check-circle class="h-4 w-4 text-[#827654]" /}} #}}
+                                            {{# {{heroicon:outline:check-circle class="h-4 w-4 text-blue" /}} #}}
                                         {{ else }}
-                                            {{ heroicon:outline:chevron-right class="h-5 w-5 rtl:rotate-180 text-gray-300 group-hover:text-gray-400 transition-colors" /}}
+                                            {{ heroicon:outline:chevron-right class="h-5 w-5 rtl:rotate-180 text-gray-300 group-hover:text-blue transition-colors" /}}
                                         {{ /if }}
                                     </a>
                                 {{ /if }}
@@ -105,11 +105,11 @@
                             <!-- Call to Action Button for Mobile -->
                             <div class="mt-8 pt-6 border-t border-gray-200">
                                 <div class="space-y-4">
-                                    <div class="md:hidden flex flex-col">
+                                    {{# <div class="md:hidden flex flex-col">
                                         {{ partial:shared/button url="{{link id="b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7"}}" style="outline" color="secondary" icon="paper-airplane" }}
                                             {{ 'Buy Your Ticket' | trans }}
                                         {{ /partial:shared/button }}
-                                    </div>
+                                    </div> #}}
 
                                     <!-- Quick Links -->
                                     {{# <div class="grid grid-cols-2 gap-3 pt-2">

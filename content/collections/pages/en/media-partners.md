@@ -1,21 +1,33 @@
 ---
-id: 7ea32775-fe59-4926-ae0a-da035129a2bf
+id: 4a871183-2799-426d-aebb-e60e255a11e9
 blueprint: page
 title: 'Media Partners'
+template: default
 fine_seo_is_title_custom: false
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754592527
+header_scripts:
+  code: null
+  mode: htmlmixed
+body_start_scripts:
+  code: null
+  mode: htmlmixed
+body_end_scripts:
+  code: null
+  mode: htmlmixed
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760077753
 page_builder:
   -
     type: set
     attrs:
-      id: mdoiuc6x
+      id: mggfydcr
       values:
         type: reusable_block
         entry:
-          - 33fb2908-8c00-4093-824f-5a8dfe59588f
+          - b33a019c-c587-40a1-bcb5-8abc29c356b7
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
 fine_seo_title: 'Media Partners'
 fine_seo_preview: 'Media Partners'
-feature_banner_image: galleries/2024_gallery/2024_gallery_5.jpg
-template: default
 ---

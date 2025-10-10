@@ -1,0 +1,30 @@
+<div class="">
+    <div class="bg-white rounded-2xl overflow-hidden  shadow-[0_14px_36px_rgba(15,23,42,0.10)]  flex flex-col h-full">
+        {{if grid_images}}
+        {{ grid_images }}
+            <img class="h-65 object-cover" src="{{ url }}" alt="">
+        {{ /grid_images }}
+        {{/if}}
+      <div class=" flex-col flex p-4 gap-2">
+        <div class="custom">
+            {{ grid_heading }}
+        </div>
+        {{if grid_text}}
+        <div class="custom prose prose-sm max-w-none">
+            {{ grid_text }}
+        </div>
+        {{/if}}
+        
+        {{if number_of_stars !="0" }}       
+         <div class="flex flex-row">
+        {{ range from="1" to="{ number_of_stars }" }}
+            {{ heroicon variant="outline" icon="star" class="!h-5 !w-5 text-[#F0AD4E]" }}
+        {{ /range }}        </div>
+        {{/if}}
+        {{ book_button }}
+            {{ partial:partials/sets/fancy_button }}
+        {{ /book_button }}
+        </div>
+    </div>
+
+</div>

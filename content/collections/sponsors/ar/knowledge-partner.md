@@ -1,7 +1,0 @@
----
-id: 6f4c5513-4418-4d70-9574-4fb8bed7e4d3
-origin: 4de5b658-4561-4f87-b112-80934b1a5628
-title: 'الشريك المعرفي'
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755070346
----

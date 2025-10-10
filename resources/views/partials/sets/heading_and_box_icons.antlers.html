@@ -1,0 +1,65 @@
+<div style="{{ if background == 'bgimg' }}background-image: url('{{ image.url }}');{{ else }}background-color: var(--color-{{ background_color }});{{ /if }}"
+    class="w-full  bg-cover bg-center ">
+
+    <div class="adnec-container py-10 md:py-20">
+
+        {{ partial:partials/sets/heading_group_component }}
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="flex flex-col gap-2 ">
+                {{ icon_box_replicator limit="2" }}
+                    <div
+                        class="flex flex-col  xl:gap-5 gap-3 lg:p-6 p-4 bg-gradient-to-l from-white/0 to-white shadow-[-8px_8px_17.700000762939453px_0px_rgba(0,0,0,0.05)]  outline-0 outline-offset-[-1px]">
+                        {{ if icon_source == 'icon' }}
+                            <div
+                                class="border border-accent rounded-[50px] bg-accent w-10 h-10 lg:w-14 lg:h-14 flex justify-center items-center ">
+                                {{ heroicon variant="outline" :icon="icon" class=" w-5 h-5 lg:w-7 lg:h-7 text-white" }}
+                            </div>
+                        {{ elseif  icon_source == 'image' }}
+                            <div
+                                class="border border-accent rounded-[50px] bg-accent w-10 h-10 lg:w-14 lg:h-14 flex justify-center items-center ">
+                                {{ image }}
+                                    <img src="{{ url }}" class=" w-5 h-5 lg:w-7 lg:h-7" alt="">
+                                {{ /image }}
+                            </div>
+                        {{ /if }}
+                        <p class="text-primary text-sm font-medium leading-[120%]  ">{{ caption }}</p>
+                        <p class="text-primary xl:text-lg text-base font-bold leading-[130%]">{{ description }}</p>
+                    </div>
+                {{ /icon_box_replicator }}
+            </div>
+
+            <div class="hidden lg:flex flex-col justify-center">
+                {{ center_image }}
+                    <img  class="object-contain " src="{{ url }}" />
+                {{ /center_image }}
+            </div>
+            <div class="flex flex-col gap-2">
+                {{ icon_box_replicator offset="2" }}
+                    <div
+                        class="flex flex-col xl:gap-5 gap-3 lg:p-6 p-4   bg-gradient-to-l from-white to-white/0 shadow-[8px_8px_17.700000762939453px_0px_rgba(0,0,0,0.05)]  outline-0 outline-offset-[-1px]">
+                        {{ if icon_source == 'icon' }}
+                            <div
+                                class="border border-accent rounded-[50px]  bg-accent w-10 h-10 lg:w-14 lg:h-14 flex justify-center items-center ">
+                                {{ heroicon variant="outline" :icon="icon" class=" w-5 h-5 lg:w-7 lg:h-7 text-white" }}
+                            </div>
+                        {{ elseif  icon_source == 'image' }}
+                            <div
+                                class="border border-accent rounded-[50px] bg-accent w-10 h-10 lg:w-14 lg:h-14 flex justify-center items-center ">
+                                {{ image }}
+                                    <img src="{{ url }}" class=" w-5 h-5 lg:w-7 lg:h-7" alt="">
+                                {{ /image }}
+                            </div>
+                        {{ /if }}
+                        <p class="text-primary text-sm font-medium leading-[120%] ">{{ caption }}</p>
+                        <p class="text-primary xl:text-lg text-base font-bold leading-[130%]">{{ description }}</p>
+                    </div>
+                {{ /icon_box_replicator }}
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</div>

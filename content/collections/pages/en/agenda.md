@@ -1,41 +1,14 @@
 ---
-id: 3a1d90c6-4784-47df-bad6-97fcaab74063
+id: 8c3b3e06-b899-4532-9c0c-5b9c006107c2
 blueprint: page
 title: Agenda
-fine_seo_is_title_custom: false
-fine_seo_title: Agenda
-fine_seo_preview: Agenda
-template: default
-feature_banner_image: galleries/2024_gallery/2024_gallery_8.jpg
 page_builder:
   -
-    type: set
-    attrs:
-      id: me7dcj0b
-      enabled: false
-      values:
-        type: redirect_to
-        redirect_to: 'entry::home'
-  -
     type: paragraph
     attrs:
       textAlign: left
-  -
-    type: set
-    attrs:
-      id: me17i7v1
-      values:
-        type: agenda_component
-        start_date: '2025-08-30'
-        end_date: '2025-09-07'
-        agendas:
-          - event-programme
-          - arena-schedule
-          - knowledge-hub
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
+template: default
+fine_seo_is_title_custom: false
 header_scripts:
   code: null
   mode: htmlmixed
@@ -45,6 +18,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756377591
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760076645
+fine_seo_title: Agenda
+fine_seo_preview: Agenda
 ---

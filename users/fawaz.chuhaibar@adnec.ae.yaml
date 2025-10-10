@@ -13,3 +13,13 @@ preferences:
         - slug
         - status
         - sponsor_level
+      after_save: continue_editing
+    sessions:
+      columns:
+        - title
+        - site
+        - slug
+        - status
+        - agendas
+    reusables:
+      after_save: continue_editing

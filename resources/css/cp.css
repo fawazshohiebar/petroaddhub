@@ -1,4 +1,10 @@
+
 @theme {
+
+
+      --color-primary:#211551;
+  --color-secondary:#F2F9FC;
+  --color-accent:#E08247;
     --color-primary-50: #f5f5f1;
     --color-primary-100: #e7e7da;
     --color-primary-200: #d1d0b7;
@@ -68,4 +74,12 @@
 
 .bg-secondary-50 {
     @apply bg-secondary-50;
+}
+
+
+ .bard-fieldtype-wrapper .bard-editor .tiptap.ProseMirror.bard-content {
+  min-height: fit-content;        
+  overflow: auto;           
+  resize: vertical;     
+  overflow: scroll;    
 }

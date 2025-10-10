@@ -30,17 +30,6 @@ tabs:
               validate:
                 - image
                 - 'mimes:png,jpg,jpeg,gif,webp'
-          -
-            handle: sponsor_level
-            field:
-              max_items: 1
-              mode: select
-              taxonomies:
-                - sponsor_level
-              type: terms
-              display: 'Sponsor Level'
-              localizable: false
-              create: false
   sidebar:
     display: Sidebar
     sections:
