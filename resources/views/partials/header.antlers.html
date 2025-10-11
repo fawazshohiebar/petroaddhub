@@ -7,24 +7,24 @@ class="opacity-60 bg-slate-900"
     x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 10 })" x-cloak
     :class="scrolled ? 'bg-primary ' : 'opacity-60 bg-slate-900 '">
     <div
-        class="adnec-container h-full pt-0 pb-3 gap-2 mx-auto lg:flex md:items-center md:justify-between grid grid-cols-[65%_35%]">
+        class="adnec-container h-full pt-0 pb-3 gap-2 mx-auto lg:grid lg:grid-cols-[250px_auto] md:items-center md:justify-between grid grid-cols-[65%_35%]">
         <!-- Logo and Event Info -->
 
         <div class="flex items-center">
             <a href="{{ site:url }}" class="">
                 {{ brand:logo }}
-                    <img src="{{ url }}" alt="globalfoodweek Logo" class="xl:w-full w-40 h-full object-contain">
+                    <img src="{{ url }}" alt="globalfoodweek Logo" class="xl:w-80 md:w-55 w-40 h-full object-contain">
                 {{ /brand:logo }}
             </a>
 
         </div>
        <div class="lg:flex items-center py-4  gap-2 xl:gap-5 hidden">
-        <div class="flex flex-row xl:gap-4 gap-3">
+        <div class="flex flex-row  flex-wrap xl:gap-4 gap-3">
             {{ nav:main_nav }}
                 <div class="relative dropdown-item">
                     {{ if children }}
                         <!-- Hidden checkbox -->
-                        <input type="checkbox" id="dropdown-{{ index }}" class="dropdown-checkbox">
+                        <input type="radio" name="nav-dropdown" id="dropdown-{{ index }}" class="dropdown-checkbox">
 
                         <!-- Label acts as clickable parent -->
                         <label for="dropdown-{{ index }}"

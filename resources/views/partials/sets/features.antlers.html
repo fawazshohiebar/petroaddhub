@@ -5,10 +5,10 @@
 
             <div class=" adnec-container mx-auto py-8 md:py-12 lg:py-16  overflow-hidden">
                 <div
-                    class="flex flex-col lg:{{ if index % 2 == 0 }}
-                    flex-row
+                    class="flex flex-col {{ if index % 2 == 0 }}
+                    lg:flex-row
                     {{ else }}
-                    flex-row-reverse
+                    lg:flex-row-reverse
                     {{ /if }} 
                     items-center lg:gap-12 gap-0   ">
                     {{ image }}

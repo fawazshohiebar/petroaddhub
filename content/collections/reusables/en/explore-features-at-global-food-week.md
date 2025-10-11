@@ -18,7 +18,7 @@ features_replicator:
   -
     id: mg9f3na3
     image:
-      - features/worldgourmetshow.png
+      - features/jp1_1988-jpg.png
     title: 'Brew Bar'
     textarea_field: 'A dedicated tasting bar curated under SCA guidelines, where visitors can explore signature brews, compare methods (pour-over, immersion, espresso), and discover beans and roasters through guided live demos.'
     type: feature
@@ -30,7 +30,7 @@ features_replicator:
   -
     id: mg9f3mfd
     image:
-      - features/worldgourmetshow.png
+      - al4a6289-2-scaled-1.jpg
     title: 'National Cup Tasters Championship'
     textarea_field: 'A high-intensity competition sanctioned by SCA, where top baristas from across the region test their sensory skills to identify taste differences at speed. The championship raises the bar for coffee excellence and celebrates industry talent.'
     type: feature
@@ -42,7 +42,7 @@ features_replicator:
   -
     id: mg9f3l7h
     image:
-      - features/worldgourmetshow.png
+      - featured2.webp
     title: 'Honey Pavilion'
     textarea_field: 'A dedicated showcase for local honey producers to exhibit regional varieties, share production stories, and connect with buyers seeking authentic, high-quality products rooted in heritage and terroir.'
     type: feature
@@ -54,7 +54,7 @@ features_replicator:
   -
     id: mg9f3k84
     image:
-      - features/worldgourmetshow.png
+      - feature5.webp
     title: 'Proteins Alternative (PALT)'
     textarea_field: |-
       A flagship initiative of ADIO’s AGWA cluster, PALT convenes the global alternative protein ecosystem — from pioneering start-ups and major F&B players to regulators and future-focused consumers — to explore how alternative proteins are reshaping the future of food.
@@ -76,7 +76,7 @@ features_replicator:
   -
     id: mg9f3iza
     image:
-      - features/worldgourmetshow.png
+      - feature6.webp
     title: 'Announcements Stage'
     textarea_field: 'A dedicated platform for high-visibility moments: MoU signings, strategic partnership agreements, major product launches, and press briefings. Professionally stage-managed time slots, branded backdrops, and coordinated media support ensure maximum exposure for exhibitors and partners.'
     type: feature
@@ -86,5 +86,5 @@ features_replicator:
     background: bgcolor
     background_color: light-accent
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1759907379
+updated_at: 1760140204
 ---

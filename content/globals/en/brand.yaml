@@ -1,6 +1,5 @@
 title: 'International Hunting & Equestrian Exhibition - Abu Dhabi'
-logo: brand/image-(1).svg
-logo_dark: brand/image-(2).svg
+logo: footer-logo/picture2.png.png
 patronage: 'Held under the patronage of His Highness Sheikh Hamdan bin Zayed Al Nahyan, Ruler’s Representative in Al Dhafra Region.'
 social_media:
   -
@@ -32,29 +31,36 @@ location: 'ADNEC Centre Abu Dhabi'
 location_link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
 date: '29 Aug - 6 Sept'
 time: '11 AM - 10 PM'
-hero_dynamic_button:
-  button: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
-  text: 'Book Your Stand'
-  button_options:
-    style: filled
-    color: primary
-    size: medium
-    new_tab: false
-    icon: null
-    icon_position: start
+button_replicator:
+  -
+    id: mglevgrk
+    label: 'Register to Visit'
+    design: Orangenogradient
+    open_new_tab: false
+    button_size: fit
+    type: button
+    enabled: true
 logos:
   -
     id: mafjvh3f
     title: 'Strategic Partner & Organiser'
-    image: added-images/adnec-group_logo_modon_white-1024x580-(1).png
+    image: footer-logo/picture2.png.png
     url: 'https://adnecgroup.ae'
     type: logo
     enabled: true
-  -
-    id: mafjy4ai
-    title: 'Owned by'
-    image: brand/logos/efc-logo_white.png
-    url: '#'
-    type: logo
-    enabled: true
 ai_search_url: 'https://aisearch.adihex.com/'
+footer_sales:
+  -
+    id: mglex50w
+    sales_text: 'Sales : sales@globalfoodweek.ae'
+    icon: chat-bubble-left-right
+    type: sales_set
+    enabled: true
+    link: 'mailto:sales@globalfoodweek.ae'
+  -
+    id: mglexqz2
+    sales_text: 'Marketing : marketing@globalfoodweek.ae'
+    icon: megaphone
+    type: sales_set
+    enabled: true
+    link: 'mailto:marketing@globalfoodweek.ae'

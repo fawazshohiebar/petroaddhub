@@ -14,7 +14,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760077699
+updated_at: 1760136490
 page_builder:
   -
     type: set
@@ -36,7 +36,8 @@ page_builder:
     type: paragraph
     attrs:
       textAlign: left
-fine_seo_title: 'Why Visit'
+fine_seo_title: 'Why Visit Global Food Week 2025 | Discover Innovation, Networking & Food Security'
 fine_seo_preview: 'Why Visit'
 feature_banner_image: features/r3_9316-1-jpg-(1).png
+fine_seo_description: 'Explore why Global Food Week 2025 in Abu Dhabi is a must-attend: meet industry leaders, uncover food & agritech innovations, access exclusive buyer programmes, and shape solutions for sustainable global food system'
 ---

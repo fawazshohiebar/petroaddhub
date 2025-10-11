@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-fine_seo_title: 'International Hunting & Equestrian Exhibition - Abu Dhabi 2025'
+fine_seo_title: 'Global Food Week UAE 2025 | Food Security, Innovation & Sustainability in Abu Dhabi'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
 page_builder:
@@ -622,7 +622,7 @@ page_builder:
     type: paragraph
     attrs:
       textAlign: left
-fine_seo_description: 'Celebrate inherited values at ADIHEX 2025 — An immersive heritage &amp; innovation event merging ancestral traditions with cutting‑edge hunting, falconry & equestrian experiences.'
+fine_seo_description: 'Join Global Food Week 2025 at ADNEC, Abu Dhabi — the leading event uniting global food leaders, agritech innovators, and policymakers to shape the future of food security, trade, and sustainable production worldwide.'
 header_scripts:
   code: null
   mode: htmlmixed
@@ -633,5 +633,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760078973
+updated_at: 1760136382
+fine_seo_image: favicon/ms-icon-70x70.png
 ---
