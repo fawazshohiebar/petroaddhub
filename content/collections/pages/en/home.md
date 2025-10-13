@@ -513,6 +513,7 @@ page_builder:
             open_new_tab: false
             type: new_set
             enabled: true
+            link: 'https://registration.xporience.com/registration/?badge_name=hosted-buyer&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTQzMDQxODgsImRhdGEiOnsiZXZlbnQiOiIxNyIsImZvcm0iOiIxMDYiLCJsYW5nIjoiZW4ifX0.yBQ_CrAdWwx7LjA4XVS9688uSKaU1xLVT19fQq6fy04'
         design: centered
   -
     type: set
@@ -627,32 +628,6 @@ page_builder:
         entry:
           - a233c58e-ef66-4705-8e9f-32b8a638e1b5
   -
-    type: set
-    attrs:
-      id: mgow41xs
-      values:
-        type: buttons
-        style_config:
-          padding: small
-          color: transparent
-          size: normal
-          variant: flex_centered
-        buttons:
-          -
-            id: mgow43md
-            dynamic_button:
-              button: null
-              text: deasdasdsa
-              button_options:
-                style: filled
-                color: black
-                size: large
-                new_tab: false
-                icon: null
-                icon_position: start
-            type: button
-            enabled: true
-  -
     type: paragraph
     attrs:
       textAlign: left
@@ -667,6 +642,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760345258
+updated_at: 1760346340
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
