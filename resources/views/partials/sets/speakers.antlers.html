@@ -2,21 +2,22 @@
 
   <section class="adnec-container mx-auto py-[50px] ">
 
-    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-8">
+    <div class="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 row  gap-5 ">
       <!-- Speaker Card -->
       {{ speakers }}
 
         <div
-          class="bg-white shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-2xl  hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+          class="bg-white shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[5px]  hover:shadow-xl transition-shadow duration-300 overflow-hidden">
           {{ image }}
             <img src="{{ url }}" alt="{{alt ?? title}}" 
             style="object-position: {{focus_css}};"
-            class="w-full h-[250px] lg:h-[400px] object-cover rounded-t-2xl">
+            class="w-full  h-auto  aspect-[0.7] object-cover rounded-[5px]">
+          
           {{ /image }}
           <div class="py-5 px-2 text-center">
-            <h3 class="text-xl font-semibold text-[#1a1a1a] mb-[20px]">{{ title | widont }}</h3>
-            <p class="text-sm text-gray-400 mt-2 leading-snug mb-[20px]">{{ position | widont }}</p>
-            <p class="text-base text-primary-600 mt-2 leading-snug">{{ company | widont }}</p>
+            <h3 class="md:text-xl text-md font-semibold text-[#1a1a1a] mb-[20px]">{{ title | widont }}</h3>
+            <p class="md:text-sm text-xs text-gray-400 mt-2 leading-snug mb-[20px]">{{ position | widont }}</p>
+            <p class="md:text-base text-sm text-primary-600 mt-2 leading-snug">{{ company | widont }}</p>
           </div>
         </div>
       {{ /speakers }}
@@ -27,3 +28,8 @@
 
   </section>
 </div>
+
+
+
+
+  {{# h-[250px] lg:h-[400px] #}}
