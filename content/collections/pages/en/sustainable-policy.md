@@ -11,7 +11,7 @@ page_builder:
         type: image_and_text
         image: capital-events-colored-en-ar-logo.png
         text_field: |-
-          Capital Events LLC is a government owned business, a part of the ADNEC Group, specializing in the management of events across a variety of business sectors.
+          [Capital Events LLC](https://www.adnecgroup.ae/the-group#events) is a government owned business, a part of the ADNEC Group, specializing in the management of events across a variety of business sectors.
 
           Our core values are Work Together, Strive for Excellence, Create and Innovate and be Passionate about what we do. Under these values, we are committed to lead by example in organizing sustainable events that satisfy all stakeholders and operate within all relevant regulatory frameworks.
 
@@ -46,5 +46,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760341538
+updated_at: 1760341582
 ---
