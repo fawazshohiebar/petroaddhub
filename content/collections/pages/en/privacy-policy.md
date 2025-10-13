@@ -140,7 +140,27 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: 'Partners & Sponsors 2025'
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#2d4ea2'
+                text: 'Partners &'
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: ' '
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#f47832'
+                text: 'Sponsors 2025'
         sponsors_entries:
           - f6259b32-4d11-4ffe-9a0e-ee7404bc3523
           - a4e2fc64-7be6-48b8-9733-91df64fe0c2b
@@ -169,5 +189,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760341067
+updated_at: 1760341116
 ---
