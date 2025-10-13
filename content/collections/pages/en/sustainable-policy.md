@@ -26,6 +26,7 @@ page_builder:
           - Engaging with the interested parties who run their businesses with sustainability as an important consideration.
           - Supporting our exhibitors and sponsors to become more sustainable.
           - Taking into consideration the needs of our stakeholders including the end users and the wider community in all that we do.
+
           ADNEC recognizes that the continued success of its developments is dependent upon commitment to the Event Sustainability Management System requirements and all those who endeavor to carry it out. We understand that our interested parties are who we serve and depend upon for our company’s continued financial success.
   -
     type: paragraph
@@ -45,5 +46,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760341347
+updated_at: 1760341389
 ---
