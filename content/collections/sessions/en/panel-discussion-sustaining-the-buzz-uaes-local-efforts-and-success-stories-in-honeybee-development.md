@@ -8,6 +8,6 @@ event_date: '2025-10-22'
 agendas:
   - global-food-talks
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760363997
+updated_at: 1760365973
 ---
-<p>To showcase national initiatives, research programs, and innovative practices that support honeybee health, improve local honey production, and promote sustainable beekeeping in the UAE - while highlighting inspiring stories from successful Emirati beekeeper.</p><p>Dr. Saad Al Masari</p><p>Dr. Zuahira</p><p>Mahara Al Naqbi</p><p>Dr. Ihsan Juma</p>
+<p>To showcase national initiatives, research programs, and innovative practices that support honeybee health, improve local honey production, and promote sustainable beekeeping in the UAE - while highlighting inspiring stories from successful Emirati beekeeper.</p>
