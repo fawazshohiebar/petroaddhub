@@ -5,6 +5,7 @@ title: 'Speakers 2025'
 speakers:
   - d5c1fafe-fbd2-42b4-a557-387c5754761a
   - 1c2e3066-89d5-4c13-a822-aefdcdf4610d
+  - c29a056c-4ac9-456f-935c-c5a3b9934288
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760349335
+updated_at: 1760349428
 ---
