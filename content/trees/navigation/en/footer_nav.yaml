@@ -9,16 +9,10 @@ tree:
       -
         id: e9b4bc6e-c060-4aba-bcec-867205442809
         entry: c26d7e50-89b5-45ef-a614-6ae48f876eb0
-      -
-        id: 67b8ff46-b809-4190-99ef-43e1777b3e12
-        entry: home
-      -
-        id: 7babd278-c194-49e6-8c88-92b717292dde
-        title: 'LInk 2'
   -
-    id: 8bec28b0-db33-454f-ae9b-f4edeb5a9788
-    entry: afbfc32a-ea2a-4b23-9c47-0437490f858c
+    id: 73b74a92-f2e3-4e96-a02c-c11d3e4c76a7
+    title: Support
     children:
       -
-        id: 73b74a92-f2e3-4e96-a02c-c11d3e4c76a7
-        title: Support
+        id: 8bec28b0-db33-454f-ae9b-f4edeb5a9788
+        entry: afbfc32a-ea2a-4b23-9c47-0437490f858c
