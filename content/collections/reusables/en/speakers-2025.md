@@ -9,5 +9,5 @@ speakers:
   - f467e4ee-a0f5-4449-a59b-6e8492525fe4
   - 36d6f5e6-3d02-448d-aa4c-0303b976c8b2
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760359875
+updated_at: 1760359931
 ---
