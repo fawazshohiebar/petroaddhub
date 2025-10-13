@@ -9,6 +9,8 @@ page_builder:
       id: mgoydiu9
       values:
         type: reusable_block
+        entry:
+          - 929e6a25-f3f6-40c9-a833-124c7affc0b2
   -
     type: paragraph
     attrs:
@@ -27,5 +29,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760349136
+updated_at: 1760349149
 ---
