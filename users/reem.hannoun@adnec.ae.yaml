@@ -2,3 +2,13 @@ name: 'Reem Hannoun'
 roles:
   - editor
 id: 7fed8dcc-a53f-489c-b670-4be3392dc465
+preferences:
+  collections:
+    sessions:
+      columns:
+        - title
+        - site
+        - agendas
+        - content
+        - event_date
+        - start_time
