@@ -143,36 +143,36 @@ page_builder:
           -
             id: mg90dw5p
             icon: globe-asia-australia
-            numbers: '34437'
-            label: 'Global Attendees'
+            numbers: '3500'
+            label: 'Conference Delegates'
             type: statistics_set
             enabled: true
           -
             id: mg90e116
             icon: globe-asia-australia
-            numbers: '34437'
-            label: 'Global Attendees'
+            numbers: '80'
+            label: 'Global & Local Speakers'
             type: statistics_set
             enabled: true
           -
             id: mg90e030
             icon: globe-asia-australia
-            numbers: '34437'
-            label: 'Global Attendees'
+            numbers: '1900'
+            label: 'Exhibitors & Brands'
             type: statistics_set
             enabled: true
           -
             id: mg90dz8d
             icon: globe-asia-australia
-            numbers: '34437'
-            label: 'Global Attendees'
+            numbers: '67'
+            label: 'Participating Countries'
             type: statistics_set
             enabled: true
           -
             id: mg90f4gq
             icon: globe-asia-australia
-            numbers: '34437'
-            label: 'Global Attendees'
+            numbers: 6.2B
+            label: 'Deals & MOUs'
             type: statistics_set
             enabled: true
         background: bgimg
@@ -642,7 +642,7 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760346450
+updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
+updated_at: 1760349053
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
