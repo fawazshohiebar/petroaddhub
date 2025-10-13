@@ -276,6 +276,7 @@ page_builder:
             type: new_button
             enabled: true
             button_size: lg
+            link: 'https://registration.xporience.com/registration/?badge_name=visitor&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTM3MDI1OTMsImRhdGEiOnsiZXZlbnQiOiIxNyIsImZvcm0iOiIxMDQiLCJsYW5nIjoiZW4ifX0.jZrm5yyl9xOXHHDD5gjH5FmeBMQjdpR8GuJVzStmyLc'
   -
     type: set
     attrs:
@@ -642,6 +643,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760346352
+updated_at: 1760346450
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
