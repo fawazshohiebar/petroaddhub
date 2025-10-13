@@ -619,6 +619,14 @@ page_builder:
           - 9d9a8b49-cfb4-430c-a1db-5c2ff3dadb37
           - 660c725b-57ab-4ab0-830c-327db4cb1730
   -
+    type: set
+    attrs:
+      id: mgovvhlq
+      values:
+        type: reusable_block
+        entry:
+          - a233c58e-ef66-4705-8e9f-32b8a638e1b5
+  -
     type: paragraph
     attrs:
       textAlign: left
@@ -633,6 +641,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760136382
+updated_at: 1760344864
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
