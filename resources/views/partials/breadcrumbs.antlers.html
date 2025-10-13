@@ -8,7 +8,7 @@
                 class="transition-all duration-300 ease-out">
                 <ol class="flex items-center space-x-1 rtl:space-x-reverse text-sm">
                     <li class="flex items-center">
-                        <a href="{{ site:url }}" class="{{isFeatureBannerImage ? 'text-white/50 hover:text-white' : 'text-[#827654] hover:text-[#827654]/80'}} transition-colors duration-200">
+                        <a href="{{ site:url }}" class="{{isFeatureBannerImage ? 'text-white/50 hover:text-white' : 'text-primary hover:text-primary/80'}} transition-colors duration-200">
                             {{heroicon variant="outline" icon="home" class="h-4 w-4"}}
                             <span class="sr-only">{{ site:name }}</span>
                         </a>
@@ -20,11 +20,11 @@
                                 {{heroicon variant="outline" icon="chevron-right" class="h-3 w-3 rtl:rotate-180"}}
                             </span>
                             {{ if !is_current }}
-                                <a href="{{ url }}" class="{{isFeatureBannerImage ? 'text-white/85 hover:text-white' : 'text-gray-600 hover:text-[#827654]'}} transition-colors duration-200">
+                                <a href="{{ url }}" class="{{isFeatureBannerImage ? 'text-white/85 hover:text-white' : 'text-gray-600 hover:text-primary'}} transition-colors duration-200">
                                     {{ title }}
                                 </a>
                             {{ else }}
-                                <span class="font-medium {{isFeatureBannerImage ? 'text-white/50' : 'text-[#827654]'}}">{{ title }}</span>
+                                <span class="font-medium {{isFeatureBannerImage ? 'text-white/50' : 'text-primary'}}">{{ title }}</span>
                             {{ /if }}
                         </li>
                     {{ /nav:breadcrumbs }}
