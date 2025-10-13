@@ -5,6 +5,8 @@ title: 'Closing Remarks'
 start_time: '16:50'
 end_time: '17:00'
 event_date: '2025-10-21'
+agendas:
+  - global-food-talks
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760362665
+updated_at: 1760362706
 ---
