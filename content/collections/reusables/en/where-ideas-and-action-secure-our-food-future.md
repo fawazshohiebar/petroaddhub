@@ -2,6 +2,7 @@
 id: d4eb8f45-e6bc-4ac9-bad5-9039dd4a9eef
 blueprint: hero
 title: 'WHERE POLICY, INNOVATION & PROCUREMENT SHAPE THE FUTURE OF FOOD SECURITY'
+heading: 'WHERE POLICY, INNOVATION & PROCUREMENT SHAPE THE FUTURE OF FOOD SECURITY'
 video: '-7UEOvhBAt8'
 icons:
   -
@@ -13,7 +14,7 @@ icons:
     icon: calendar-days
     label: '21 - 23 October 2025'
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760421990
+updated_at: 1760422171
 hero_actions:
   -
     id: mgaip1jp
