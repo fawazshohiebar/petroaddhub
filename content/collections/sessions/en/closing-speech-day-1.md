@@ -1,5 +1,6 @@
 ---
 id: closing-speech-day-1
+published: false
 blueprint: session
 title: 'Closing Speech'
 start_time: '16:20'
