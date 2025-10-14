@@ -219,7 +219,7 @@ page_builder:
         group_info:
           -
             id: mg93n4vv
-            icon: home-modern
+            icon: shield-check
             info_title: 'Tackle Global Food Security Challenges'
             info_description: 'Join high-level discussions focused on practical strategies and international cooperation to address global food security.'
             type: info
@@ -587,6 +587,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760446516
+updated_at: 1760446667
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
