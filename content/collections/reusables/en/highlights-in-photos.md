@@ -10,12 +10,12 @@ highlights_images:
     enabled: true
   -
     id: mg98b2gu
-    image: highlights/highlights-image.png
+    image: al4a7103-scaled.png
     type: highlighted_image
     enabled: true
   -
     id: mg98b7qu
-    image: highlights/highlights-image.png
+    image: dsc05699-scaled.png
     type: highlighted_image
     enabled: true
   -
@@ -34,5 +34,5 @@ highlights_images:
     type: highlighted_image
     enabled: true
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760440302
+updated_at: 1760441767
 ---
