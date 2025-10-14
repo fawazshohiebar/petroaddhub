@@ -8,5 +8,7 @@ event_date: '2025-10-21'
 agendas:
   - agritech-forum
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760427024
+updated_at: 1760427045
+speakers:
+  - 12adeae0-c9b9-404c-a3be-a287987a5a30
 ---
