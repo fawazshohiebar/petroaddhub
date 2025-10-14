@@ -257,6 +257,13 @@ page_builder:
             image: rectangle-9.png
             type: info
             enabled: true
+          -
+            id: mgq7ln62
+            icon: home-modern
+            info_title: 'Forge Meaningful Partnerships'
+            info_description: 'Connect with organizations, government bodies, and investors driving progress in food security and sustainable development.'
+            type: info
+            enabled: true
         background: bgimg
         image: backgrounds/backgr.png
         ending_text: 'Global Food Week is the region’s leading platform for driving dialogue, innovation, and partnerships.'
@@ -636,6 +643,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760424971
+updated_at: 1760425066
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
