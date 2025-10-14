@@ -5,8 +5,10 @@ title: 'The Agricultural Investment Landscape in Abu Dhabi - Opportunities, Ince
 start_time: '10:10'
 end_time: '10:45'
 event_date: '2025-10-22'
+speakers:
+  - 57479b53-f3ca-4cb8-bda2-7e7b837215a4
 agendas:
   - agritech-forum
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760427729
+updated_at: 1760427816
 ---
