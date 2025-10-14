@@ -123,14 +123,14 @@ page_builder:
         statistics:
           -
             id: mg90d633
-            icon: globe-asia-australia
+            icon: user-group
             numbers: '34,437'
             label: 'Global Attendees'
             type: statistics_set
             enabled: true
           -
             id: mg90dw5p
-            icon: user-group
+            icon: users
             numbers: '3,500'
             label: 'Conference Delegates'
             type: statistics_set
@@ -587,6 +587,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760445331
+updated_at: 1760445519
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
