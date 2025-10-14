@@ -13,16 +13,17 @@ icons:
     id: mgahe18v
     icon: calendar-days
     label: '21 - 23 October 2025'
-updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760422604
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1760441117
 hero_actions:
   -
     id: mgaip1jp
-    label: 'Learn More'
+    label: 'Register to visit'
     design: whitefilled
     open_new_tab: false
     type: button
     enabled: true
+    link: 'entry::89c7e639-b0f5-446a-aab4-b7981d52edc8'
   -
     id: mgaipa2f
     label: 'Watch Video'
