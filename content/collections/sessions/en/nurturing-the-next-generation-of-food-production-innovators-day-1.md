@@ -1,5 +1,6 @@
 ---
 id: nurturing-the-next-generation-of-food-production-innovators-day-1
+published: false
 blueprint: session
 title: 'Nurturing the Next Generation of Food Production Innovators'
 start_time: '12:40'
