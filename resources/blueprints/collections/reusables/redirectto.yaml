@@ -2,4 +2,25 @@ title: RedirectTo
 tabs:
   main:
     display: Main
-    fields: {  }
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+          -
+            handle: redirect_to_url
+            field: form_box.redirect_to_url
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
