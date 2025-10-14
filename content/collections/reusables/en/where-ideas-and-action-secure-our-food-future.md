@@ -1,9 +1,7 @@
 ---
 id: d4eb8f45-e6bc-4ac9-bad5-9039dd4a9eef
 blueprint: hero
-title: 'Where Ideas and Action Secure Our Food Future'
-heading: 'Where Ideas and Action Secure Our Food Future'
-subheading: 'Where policy, innovation & Procurement shape the future of food security'
+title: 'WHERE POLICY, INNOVATION & PROCUREMENT SHAPE THE FUTURE OF FOOD SECURITY'
 video: '-7UEOvhBAt8'
 icons:
   -
@@ -14,8 +12,8 @@ icons:
     id: mgahe18v
     icon: calendar-days
     label: '21 - 23 October 2025'
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1759476792
+updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
+updated_at: 1760421943
 hero_actions:
   -
     id: mgaip1jp
