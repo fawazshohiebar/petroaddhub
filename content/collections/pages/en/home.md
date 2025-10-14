@@ -405,12 +405,7 @@ page_builder:
                     type: textColor
                     attrs:
                       color: '#211551'
-                text: 'Explore Features at'
-          -
-            type: heading
-            attrs:
-              level: 1
-            content:
+                text: 'Features at '
               -
                 type: text
                 marks:
@@ -419,13 +414,6 @@ page_builder:
                     attrs:
                       color: '#E08247'
                 text: 'Global Food Week'
-        description:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Global Food Week brings together diverse sectors that showcase the full spectrum of the food and agriculture value chain.'
         buttons:
           -
             id: mg9e8emm
@@ -628,6 +616,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760437667
+updated_at: 1760437771
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
