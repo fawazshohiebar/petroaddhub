@@ -63,13 +63,7 @@ page_builder:
                 text: 'Global Food Week 2025'
               -
                 type: text
-                text: " unites five critical sectors shaping the future of food, from agriculture and food manufacturing to food security and hospitality. This powerful platform showcases the UAE’s leadership in food resilience and its role as a global hub for sourcing, investment, and innovation. Global Food Week offers business matchmaking,\_high-impact networking, and knowledge exchange all\_under one roof,"
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: "ensuring you maximise your ROI while\_exploring industry trends."
+                text: " unites five critical sectors shaping the future of food, from agriculture and food manufacturing to food security and hospitality. This powerful platform showcases the UAE’s leadership in food resilience and its role as a global hub for sourcing, investment, and innovation. Global Food Week offers business matchmaking,\_high-impact networking, and knowledge exchange all\_under one roof, ensuring you maximize your ROI while\_exploring industry trends."
         entries_field:
           - 6dac910e-d26c-4a22-a38f-ec58c24ae101
           - ed128775-d38c-4de9-a76a-39ee51e6474e
@@ -203,7 +197,7 @@ page_builder:
                     type: textColor
                     attrs:
                       color: '#fff'
-                text: 'Why visit: explore. '
+                text: 'Why visit'
           -
             type: heading
             attrs:
@@ -215,20 +209,20 @@ page_builder:
                   -
                     type: textColor
                     attrs:
-                      color: Orange
-                text: 'Connect. Transform'
+                      color: '#f47832'
+                text: 'Explore. Connect. Transform'
         description:
           -
             type: paragraph
             content:
               -
                 type: text
-                marks:
-                  -
-                    type: textColor
-                    attrs:
-                      color: '#fff'
-                text: 'Global Food Week is the region’s leading platform for driving dialogue, innovation, and partnerships around food security and agri-food systems.'
+                text: 'Global Food Week is the region’s leading platform for driving dialogue, innovation, and partnerships around food security and agri-food systems. Whether you’re a policymaker, industry expert, investor, or entrepreneur, this is your opportunity to connect with global change-makers, discover transformative solutions, and play a part in shaping a more resilient food future. Here’s why you should be there.'
+          -
+            type: paragraph
+            content:
+              -
+                type: hardBreak
         group_info:
           -
             id: mg93n4vv
@@ -649,6 +643,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760422409
+updated_at: 1760423909
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
