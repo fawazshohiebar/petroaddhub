@@ -13,7 +13,7 @@ icons:
     icon: calendar-days
     label: '21 - 23 October 2025'
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760421943
+updated_at: 1760421990
 hero_actions:
   -
     id: mgaip1jp
