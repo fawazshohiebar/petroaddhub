@@ -112,18 +112,6 @@ page_builder:
                     attrs:
                       color: Orange
                 text: 'At a Glance'
-        description:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                marks:
-                  -
-                    type: textColor
-                    attrs:
-                      color: '#fff'
-                text: 'Global Food Week 2025 unites five critical sectors shaping the future of food, from agriculture and food manufacturing to food security and hospitality.'
         buttons:
           -
             id: mg90cpk5
@@ -648,6 +636,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760423968
+updated_at: 1760424029
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
