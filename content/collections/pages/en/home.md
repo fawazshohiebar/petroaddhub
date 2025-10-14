@@ -266,7 +266,6 @@ page_builder:
             enabled: true
         background: bgimg
         image: backgrounds/backgr.png
-        ending_text: 'Global Food Week is the region’s leading platform for driving dialogue, innovation, and partnerships.'
         replicator_button:
           -
             id: mgaqfpb8
@@ -296,33 +295,19 @@ page_builder:
                 type: text
                 marks:
                   -
-                    type: textColor
-                    attrs:
-                      color: '#211551'
-                text: Explore
-              -
-                type: text
-                text: ' '
-              -
-                type: text
-                marks:
+                    type: bold
                   -
                     type: textColor
                     attrs:
-                      color: '#E08247'
-                text: 'Future of Food'
+                      color: '#2d4ea2'
+                text: 'EXPLORE THE SECTORS SHAPING THE FUTURE OF FOOD'
         description:
           -
             type: paragraph
             content:
               -
                 type: text
-                marks:
-                  -
-                    type: textColor
-                    attrs:
-                      color: '#211551'
-                text: 'Global Food Week brings together diverse sectors that showcase the full spectrum of the food and agriculture value chain.'
+                text: 'Global Food Week brings together diverse sectors that showcase the full spectrum of the food and agriculture value chain. From sourcing and heritage to innovation and sustainable farming, each sector offers a dedicated platform for exhibitors and buyers to connect, discover opportunities, and explore cutting-edge solutions driving the industry forward.'
         icon_box_replicator:
           -
             id: mgafbg8g
@@ -643,6 +628,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760425066
+updated_at: 1760425316
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
