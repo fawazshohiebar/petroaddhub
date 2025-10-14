@@ -20,19 +20,24 @@ highlights_images:
     enabled: true
   -
     id: mg98baab
-    image: highlights/highlights-image.png
+    image: dsc09503-scaled.png
     type: highlighted_image
     enabled: true
   -
     id: mg98b9b5
-    image: highlights/highlights-image.png
+    image: kok0210-2-scaled.png
     type: highlighted_image
     enabled: true
   -
     id: mg98bde6
-    image: highlights/highlights-image.png
+    image: 1.png
+    type: highlighted_image
+    enabled: true
+  -
+    id: mgqhv20o
+    image: 2.png
     type: highlighted_image
     enabled: true
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760441767
+updated_at: 1760442490
 ---
