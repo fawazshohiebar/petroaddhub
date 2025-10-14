@@ -252,8 +252,8 @@ page_builder:
           -
             id: mg93vgis
             icon: home-modern
-            info_title: 'Tackle Global Food Security Challenges'
-            info_description: 'Join high-level discussions focused on practical strategies and international cooperation to address global food security.'
+            info_title: 'Stay Ahead of Industry Trends'
+            info_description: 'Gain insights into sustainable practices, technological advancements, and policy updates shaping the future of food systems.'
             image: rectangle-9.png
             type: info
             enabled: true
@@ -636,6 +636,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760424703
+updated_at: 1760424971
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
