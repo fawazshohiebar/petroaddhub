@@ -584,13 +584,15 @@ page_builder:
           -
             type: heading
             attrs:
-              level: 2
+              level: 1
             content:
               -
                 type: text
                 marks:
                   -
-                    type: bold
+                    type: textColor
+                    attrs:
+                      color: '#2d4ea2'
                 text: 'Alternative Proteins (PALT)'
         description: |-
           Proteins Alternative (PALT) – a flagship initiative of Abu Dhabi Investment Office’s AGWA (AgriFood Growth and Water Abundance) cluster – will take place as a key feature at Global Food Week 2025.
@@ -621,6 +623,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760516949
+updated_at: 1760517009
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
