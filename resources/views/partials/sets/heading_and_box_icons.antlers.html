@@ -12,7 +12,7 @@
                         {{ if icon_source == 'icon' }}
                             <div
                                 class="border border-accent rounded-[50px] bg-accent w-10 h-10 lg:w-14 lg:h-14 flex justify-center items-center ">
-                                {{ heroicon variant="outline" :icon="icon" class=" w-5 h-5 lg:w-7 lg:h-7 text-white" }}
+                                {{ heroicon variant="outline" :icon="icon_bx" class=" w-5 h-5 lg:w-7 lg:h-7 text-white" }}
                             </div>
                         {{ elseif  icon_source == 'image' }}
                             <div
@@ -24,6 +24,9 @@
                         {{ /if }}
                         <p class="text-primary text-sm font-medium leading-[120%]  ">{{ caption }}</p>
                         <p class="text-primary xl:text-lg text-base font-bold leading-[130%]">{{ description }}</p>
+                        {{icon_box_button}}
+                        {{ partial:partials/sets/fancy_button }}
+                        {{/icon_box_button}}
                     </div>
                 {{ /icon_box_replicator }}
             </div>
@@ -40,7 +43,7 @@
                         {{ if icon_source == 'icon' }}
                             <div
                                 class="border border-accent rounded-[50px]  bg-accent w-10 h-10 lg:w-14 lg:h-14 flex justify-center items-center ">
-                                {{ heroicon variant="outline" :icon="icon" class=" w-5 h-5 lg:w-7 lg:h-7 text-white" }}
+                                {{ heroicon variant="outline" :icon="icon_bx" class=" w-5 h-5 lg:w-7 lg:h-7 text-white" }}
                             </div>
                         {{ elseif  icon_source == 'image' }}
                             <div
@@ -52,6 +55,9 @@
                         {{ /if }}
                         <p class="text-primary text-sm font-medium leading-[120%] ">{{ caption }}</p>
                         <p class="text-primary xl:text-lg text-base font-bold leading-[130%]">{{ description }}</p>
+                        {{icon_box_button}}
+                        {{ partial:partials/sets/fancy_button }}
+                        {{/icon_box_button}}
                     </div>
                 {{ /icon_box_replicator }}
             </div>

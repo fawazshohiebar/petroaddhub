@@ -312,6 +312,15 @@ page_builder:
             type: icon_box
             enabled: true
             image: svgs/vector.svg
+            icon_box_b:
+              -
+                id: mgry5lzf
+                label: sdasdas
+                open_new_tab: false
+                type: btn_set
+                enabled: true
+                design: Orangenogradient
+                button_size: fit
           -
             id: mgafci4r
             icon_source: icon
@@ -626,6 +635,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760517173
+updated_at: 1760530213
 fine_seo_image: favicon/ms-icon-70x70.png
 ---

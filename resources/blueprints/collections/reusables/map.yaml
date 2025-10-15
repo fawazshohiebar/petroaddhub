@@ -14,16 +14,18 @@ tabs:
               validate:
                 - required
           -
+            import: heading_group_component
+          -
             handle: iframe
             field:
               type: text
               display: Iframe
               localizable: false
           -
-            handle: buttons
+            handle: map_button
             field:
               type: replicator
-              display: Buttons
+              display: 'Map Button'
               localizable: false
               sets:
                 new_set_group:

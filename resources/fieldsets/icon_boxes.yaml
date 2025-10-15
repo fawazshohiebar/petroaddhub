@@ -29,9 +29,10 @@ fields:
                     localizable: false
                     width: 50
                 -
-                  handle: icon
+                  handle: icon_bx
                   field: basics.icon
                   config:
+                    display: 'Icon Bx'
                     width: 50
                     if:
                       icon_source: 'equals icon'
@@ -58,3 +59,18 @@ fields:
                     type: text
                     display: Description
                     localizable: false
+                -
+                  handle: icon_box_button
+                  field:
+                    type: replicator
+                    display: 'Icon Box Button'
+                    localizable: false
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          btn_set:
+                            display: 'Btn Set'
+                            fields:
+                              -
+                                import: fancy_button
