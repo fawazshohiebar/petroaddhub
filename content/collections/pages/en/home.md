@@ -418,6 +418,7 @@ page_builder:
             type: new_set
             enabled: true
             button_size: lg
+            link: 'entry::67612587-fdbe-4ebd-9632-c72655470656'
         feature_entries:
           - a43dad7b-915b-45c0-ba19-f86fddb4fb3c
         image: backgrounds/vector-(3)-(1).png
@@ -586,7 +587,7 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760446667
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760512786
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
