@@ -1,2 +1,61 @@
 redirects:
-  
+  -
+    id: mgtn2hey
+    url_old: /speakers/
+    internal_url: 1ff334dc-c1f5-4d1e-9348-98be5997681a
+    response: 302
+  -
+    id: mgtnfonf
+    url_old: /global-food-talks-agenda/
+    internal_url: e8c74d7b-e6bd-4fdc-be91-05c0d9b00e40
+    response: 302
+  -
+    id: mgtnhfs5
+    url_old: /hotel-booking/
+    internal_url: 55a17f59-7802-4340-a541-fc27e4615018
+    response: 302
+  -
+    id: mgtnliym
+    url_old: /visitor-information/all-features/
+    internal_url: 67612587-fdbe-4ebd-9632-c72655470656
+    response: 302
+  -
+    id: mgtnm4xu
+    url_old: /visitor-information/why-visit/
+    internal_url: 12e72303-dafe-4298-8df7-8e6bdea3088d
+    response: 302
+  -
+    id: mgtnn38w
+    url_old: /visitor-information/hosted-buyers-program/
+    internal_url: 6eb3d5b6-4605-4436-8539-01fee306192b
+    response: 302
+  -
+    id: mgtnnmn1
+    url_old: /partners-and-sponsors/
+    internal_url: 2242832a-d5e0-4f11-8327-9d08ac235a08
+    response: 302
+  -
+    id: mgtnp05s
+    url_old: /parking-information/
+    internal_url: 3b8833f8-7ff4-4191-a6b8-bb94ada3ceb1
+    response: 302
+  -
+    id: mgtnqq4k
+    url_old: /exhibitor-information/why-exhibit/
+    internal_url: 43a168e5-928c-4cab-af7e-a623dd9a0daa
+    response: 302
+  -
+    id: mgtnrdol
+    url_old: /exhibitor-information/https-ce-food-week-s3-me-central-1-amazonaws-com-food-week-assets-uploads-2025-03-gfw24_post-show-report-pdf/
+    internal_url: 88838183-4858-451f-84a0-cac416bbd878
+    response: 302
+  -
+    id: mgtns6j0
+    url_old: /sectors-2025-2/sectors-2025/
+    internal_url: 689cc08b-acde-43af-93aa-531f386a48fe
+    response: 302
+  -
+    id: mgtnu0j2
+    url_old: /sectors-2025-2/abu-dhabi-date-palm-exhibition/
+    internal_url: f834f13f-bd81-4b52-a459-5e9db1442de1
+    response: 302
