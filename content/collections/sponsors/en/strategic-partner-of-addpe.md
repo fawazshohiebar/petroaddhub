@@ -3,6 +3,7 @@ id: bf598fe8-be8d-4694-8f7a-e242fdcf461b
 blueprint: sponsor
 title: 'Strategic Partner of ADDPE'
 sponsors_logos: sponsors/award.png
-updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760423590
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1760611759
+sponsor_link: 'https://www.kiaai.ae/'
 ---
