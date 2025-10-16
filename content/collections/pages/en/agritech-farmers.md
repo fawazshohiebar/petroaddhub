@@ -13,8 +13,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760605224
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1760617721
 page_builder:
   -
     type: set
@@ -77,7 +77,7 @@ page_builder:
             content:
               -
                 type: text
-                text: 'AgriTech & Farmers is a comprehensive platform that connects innovators, solution providers, and producers shaping the future of farming. From smart technologies and advanced systems to sustainable practices and long-term food security, the platform brings together the latest tools and insights designed for real-world agricultural operations—covering both crop and livestock production.'
+                text: 'The first and largest platform for agri-food startups, showcasing cutting-edge innovations in modern agricultural technologies, environmental sustainability, and smart supply chains. The zone will also feature a dedicated display area for farmers and an AgriTech Forum with a three-day agenda of discussions and sessions. Bringing together entrepreneurs, investors, and experts, the event aims to accelerate digital transformation in the agricultural sector and strengthen food security.'
         buttons:
           -
             id: mggkw2zs
@@ -86,7 +86,7 @@ page_builder:
             open_new_tab: false
             button_size: fit
             type: new_set
-            enabled: true
+            enabled: false
           -
             id: mggkwr4m
             label: 'Register to Visit'
@@ -138,6 +138,44 @@ page_builder:
                 text: Activities
         grid_set_replicator:
           -
+            id: mggkdao4
+            number_of_stars: '0'
+            grid_heading:
+              -
+                type: heading
+                attrs:
+                  level: 4
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                      -
+                        type: textColor
+                        attrs:
+                          color: '#2d4ea2'
+                    text: 'AgriTech Forum '
+            grid_text:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'The AgriTech Forum at Global Food Week 2025 brings together experts, innovators, and policymakers to explore the future of agriculture through innovation, investment, and education. Over three dynamic days, the forum will spotlight pioneering technologies, sustainable farming practices, and transformative research shaping the UAE’s food security landscape. From next-generation farming solutions and AI-driven production models to success stories in agricultural investment and youth engagement initiatives, the sessions aim to foster collaboration and inspire progress across the entire agricultural value chain.'
+            type: grid_set
+            enabled: true
+            grid_images: al4a6162-min.jpg
+            book_button:
+              -
+                id: mgte3awy
+                link: 'entry::c0ecfcb7-2f12-404e-9749-342dee459ec1'
+                label: 'View AgriTech Forum agenda'
+                design: Orangenogradient
+                open_new_tab: false
+                type: button_set
+                enabled: true
+          -
             id: mggkch91
             number_of_stars: '0'
             grid_heading:
@@ -150,6 +188,8 @@ page_builder:
                     type: text
                     marks:
                       -
+                        type: bold
+                      -
                         type: textColor
                         attrs:
                           color: '#2d4ea2'
@@ -160,37 +200,10 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'A dedicated platform for award winners to showcase innovations, projects, and products—featuring participation from 150+ farmers and livestock breeders.'
+                    text: 'The largest gathering of outstanding farmers, livestock breeders, and honey producers in the United Arab Emirates. The platform brings together a distinguished group of award winners and participants in the agricultural innovation ecosystem. It serves as an interactive space to celebrate the achievements of the agricultural sector, highlight success stories, and exchange experiences and knowledge with pioneering leaders in the field. The platform contributes to enhancing the sustainability of agricultural production and reinforces the position of Abu Dhabi and the UAE as a regional hub for agricultural excellence.'
             type: grid_set
             enabled: true
-            grid_images: features/exhibit.png
-          -
-            id: mggkcvqg
-            number_of_stars: '0'
-            grid_heading:
-              -
-                type: heading
-                attrs:
-                  level: 4
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: textColor
-                        attrs:
-                          color: '#2d4ea2'
-                    text: 'Abu Dhabi Agricultural Club Council'
-            grid_text:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'A gathering for members and farmers to present projects, share insights, and discuss future opportunities across the sector.'
-            type: grid_set
-            enabled: true
-            grid_images: features/exhibit.png
+            grid_images: 29013f22-18aa-4a7f-804a-48fa7f8ec369.png
           -
             id: mggkd327
             number_of_stars: '0'
@@ -204,51 +217,32 @@ page_builder:
                     type: text
                     marks:
                       -
-                        type: textColor
-                        attrs:
-                          color: '#2d4ea2'
-                    text: 'Farm Economic Activities Zone'
-            grid_text:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'A practical zone focused on plant-based agriculture and livestock production—from inputs and on-farm tech to post-harvest solutions.'
-            type: grid_set
-            enabled: true
-            grid_images: features/exhibit.png
-          -
-            id: mggkdao4
-            number_of_stars: '0'
-            grid_heading:
-              -
-                type: heading
-                attrs:
-                  level: 4
-                content:
-                  -
-                    type: text
-                    marks:
+                        type: bold
                       -
                         type: textColor
                         attrs:
                           color: '#2d4ea2'
-                    text: 'AgriTech Forum Platform'
+                    text: 'Farmers Zone'
             grid_text:
               -
                 type: paragraph
                 content:
                   -
                     type: text
-                    text: 'A space for farmers to exchange dialogue, discuss practical challenges, and learn from case studies that improve on-field outcomes.'
+                    text: 'We’re proud to host local farmers at Global Food Week 2025, providing them with a dedicated platform to showcase the richness and diversity of local produce, and to highlight the vital role they play in strengthening the UAE’s food security ecosystem. Through this initiative, farmers will have the opportunity to present their products to international buyers, major distributors, and hospitality groups, while engaging in direct networking that encourages growth, knowledge exchange, and long-term partnerships.'
+                  -
+                    type: hardBreak
+                  -
+                    type: text
+                    text: 'Their participation reflects our continued commitment to empowering the agricultural community and supporting sustainable farming practices that contribute to the nation’s vision for a secure and innovative food future.'
             type: grid_set
             enabled: true
-            grid_images: features/exhibit.png
+            grid_images: uae-farmers-768x512.jpg
   -
     type: paragraph
     attrs:
       textAlign: left
 fine_seo_title: 'AgriTech & Farmers'
 fine_seo_preview: 'AgriTech & Farmers'
+feature_banner_image: pexels-jeshoots-com-147458-442589.jpg
 ---
