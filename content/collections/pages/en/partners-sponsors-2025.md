@@ -77,6 +77,7 @@ page_builder:
             link: 'https://www.kiaai.ae/'
         background: bgcolor
         background_color: light-secondary
+        section_image: khalifa-date-logo.png
   -
     type: set
     attrs:
@@ -470,8 +471,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760605228
+updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
+updated_at: 1760608534
 fine_seo_title: 'Partners & Sponsors 2025'
 fine_seo_preview: 'Partners & Sponsors 2025'
 ---
