@@ -36,6 +36,7 @@ page_builder:
             button_size: fit
             type: button_set
             enabled: true
+            link: 'https://www.adafsa.gov.ae/en/pages/default.aspx'
         background: bgcolor
         background_color: light-accent
         section_image: partners/untitled-design-25-768x768.png
@@ -471,8 +472,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760608951
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760615289
 fine_seo_title: 'Partners & Sponsors 2025'
 fine_seo_preview: 'Partners & Sponsors 2025'
 feature_banner_image: 8.png
