@@ -3,24 +3,66 @@
           <div class="adnec-container py-10 mx-auto relative">
                   {{ partial:partials/sets/heading_group_component }}
                   <div class=" flex flex-row md:gap-6 gap-4 flex-wrap justify-center">
-                          {{ sponsors_entries }}
+                          {{#
+                                  {{ sponsors_entries }}
+                                          <div
+                                                  class=" items-center w-[calc(50%-0.75rem)] sm:w-[calc(50%-1.2rem)]  md:w-[calc(33.33%-1.2rem)]  xl:w-[calc(25%-1.2rem)]">
+                                                  <a href="{{ sponsor_link }}" class="flex flex-col gap-5">
+                                                          <p class="text-sm  md:text-base font-semibold text-[#08273d] text-center">
+                                                                  {{ title }}
+                                                          </p>
+                                                          {{ sponsors_logos }}
+                                                                  <img loading="lazy" src="{{ url }}" width="{{ width }}" height="{{ height }}"
+                                                                          alt="{{ alt ?? title }}" class="h-30 mb-2 object-contain mx-auto">
+                                                          {{ /sponsors_logos }}
+                                                  </a>
+                                          </div>
+                                  {{ /sponsors_entries }}
+                          #}}
 
-                                  <div
-                                          class=" items-center w-[calc(50%-0.75rem)] sm:w-[calc(50%-1.2rem)]  md:w-[calc(33.33%-1.2rem)]  xl:w-[calc(25%-1.2rem)]">
-                                          <a href="{{ sponsor_link }}" class="flex flex-col gap-5">
-                                                  <p
-                                                          class="text-sm  md:text-base font-semibold text-[#08273d] text-center">
-                                                          {{ title }}
-                                                  </p>
-                                                  {{ sponsors_logos }}
-                                                          <img loading="lazy" src="{{ url }}" width="{{ width }}"
-                                                                  height="{{ height }}" alt="{{ alt ?? title }}"
-                                                                  class="h-30 mb-2 object-contain mx-auto">
-                                                  {{ /sponsors_logos }}
 
-                                          </a>
-                                  </div>
-                          {{ /sponsors_entries }}
+                          {{ taxonomy:sponsor_level sort="order:asc" }}
+                                  {{ sponsors_entries :sponsor_level:contains="slug" as="sponsors" sort="order:asc" }}
+                                          {{ if sponsors | length > 0 }}
+                                                  <div class="mb-5" x-data="{}"
+                                                          x-intersect="$el.classList.add('animate-fade-in')">
+                                                          <div
+                                                                  class="mx-auto flex flex-wrap justify-center gap-6 mb-5">
+                                                                  {{ sponsors }}
+                                                                        
+                                                                  <div  class=" items-center w-[calc(50%-0.75rem)] sm:w-[calc(50%-1.2rem)]  md:w-[calc(33.33%-1.2rem)]  xl:w-[calc(25%-1.2rem)]">
+                                                                                  <a href="{{ sponsor_link }}">
+                                                                                         <p class="text-sm  md:text-base font-semibold text-[#08273d] text-center"> {{ title }}</p>  
+                                                                                        {{ glide:sponsors_logos preset="medium" }}
+                                                                                                  <img loading="lazy"
+                                                                                                          src="{{ url }}"
+                                                                                                          width="{{ width }}"
+                                                                                                          height="{{ height }}"
+                                                                                                          alt="{{ alt ?? title }}"
+                                                                                                          class="h-30 mb-2 object-contain mx-auto">
+                                                                                          {{ /glide:sponsors_logos }}
+                                                                                         
+                                                                                  </a>
+                                                                          </div>
+                                                                  {{ /sponsors }}
+                                                          </div>
+                                                  </div>
+
+
+
+
+
+
+
+
+                                          {{ else }}
+                                                 <div class="hidden">No sponsors found for {{ title }} ({{ slug }})
+                                                 </div>
+                                          {{ /if }}
+                                  {{ /sponsors_entries }}
+                          {{ /taxonomy:sponsor_level }}
+
+
 
                   </div>
           </div>
