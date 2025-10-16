@@ -14,7 +14,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760611963
+updated_at: 1760611991
 page_builder:
   -
     type: set
@@ -137,7 +137,7 @@ page_builder:
                     type: textColor
                     attrs:
                       color: '#f47832'
-                text: 'Global Food Talk'
+                text: 'Global Food Talks'
         replicating_grid:
           -
             id: mggjc0za
