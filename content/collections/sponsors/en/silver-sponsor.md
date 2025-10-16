@@ -4,8 +4,8 @@ blueprint: sponsor
 title: 'Silver Sponsor'
 sponsor_link: 'https://royal-horizon.com/horizon.php'
 sponsors_logos: royal-horizon-jpg-(2).png
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760618427
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1760620718
 sponsor_level:
-  - premium-sponsor
+  - weaponry-sponsor
 ---
