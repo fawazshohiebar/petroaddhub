@@ -472,7 +472,8 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760608534
+updated_at: 1760608785
 fine_seo_title: 'Partners & Sponsors 2025'
 fine_seo_preview: 'Partners & Sponsors 2025'
+feature_banner_image: 3.png
 ---
