@@ -4,6 +4,8 @@ blueprint: sponsor
 title: 'Host Sponsor'
 sponsor_link: 'https://www.moccae.gov.ae/en/home.aspx'
 sponsors_logos: moccae.png
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760613332
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760618421
+sponsor_level:
+  - weaponry-sponsor
 ---
