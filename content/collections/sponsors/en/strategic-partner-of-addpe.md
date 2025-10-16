@@ -4,8 +4,8 @@ blueprint: sponsor
 title: 'Strategic Partner of ADDPE'
 sponsors_logos: sponsors/award.png
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760620111
+updated_at: 1760620513
 sponsor_link: 'https://www.kiaai.ae/'
 sponsor_level:
-  - top-sposnors
+  - premium-sponsor
 ---
