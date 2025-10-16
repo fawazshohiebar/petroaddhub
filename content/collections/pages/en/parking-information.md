@@ -14,7 +14,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760614874
+updated_at: 1760614928
 page_builder:
   -
     type: set
@@ -103,6 +103,7 @@ page_builder:
                 type: button_set
                 enabled: true
                 icon: arrow-up-right
+                link: 'https://www.google.com/maps/place/ADNEC+Parking+A/@24.4211908,54.4363941,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5e4382cde695f5:0x3dc2fe512e00737a!8m2!3d24.4211859!4d54.4385828!16s%2Fg%2F11pdxsc3bv?coh=164777&entry=tt&shorturl=1'
             type: grid_item
             enabled: true
           -
@@ -146,6 +147,7 @@ page_builder:
                 type: button_set
                 enabled: true
                 icon: arrow-up-right
+                link: 'https://www.google.com/maps/place/ADNEC+Parking+B/@24.4209138,54.4324456,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5e427623cacc8d:0xf2ebdec968c972bd!8m2!3d24.4209089!4d54.4346343!16s%2Fg%2F11btrrybdb?coh=164777&entry=tt&shorturl=1'
             type: grid_item
             enabled: true
         background: bgcolor
