@@ -4,6 +4,7 @@ blueprint: sponsor
 title: 'Organized By'
 sponsors_logos: sponsors/adnec.png
 sponsor_level: normal-sponsor
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1759406524
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1760611634
+sponsor_link: 'https://www.adnec.ae/en'
 ---
