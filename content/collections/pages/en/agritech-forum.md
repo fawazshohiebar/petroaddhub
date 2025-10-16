@@ -16,17 +16,17 @@ page_builder:
         replicator_titles:
           -
             id: mgqg28p1
-            title_field: helloooo
+            title_field: 'Farming Innovation'
             type: title_set
             enabled: true
           -
             id: mgqg2aag
-            title_field: world
+            title_field: Investment
             type: title_set
             enabled: true
           -
             id: mgqg2c1s
-            title_field: 'ali awwad'
+            title_field: Education
             type: title_set
             enabled: true
   -
@@ -44,8 +44,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760605328
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1760617758
 fine_seo_title: 'AgriTech Forum'
 fine_seo_preview: 'AgriTech Forum'
 ---
