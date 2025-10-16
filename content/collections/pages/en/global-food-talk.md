@@ -14,7 +14,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760611916
+updated_at: 1760611963
 page_builder:
   -
     type: set
@@ -51,7 +51,7 @@ page_builder:
                     type: textColor
                     attrs:
                       color: '#f47832'
-                text: 'Food Talk'
+                text: 'Food Talks'
         description:
           -
             type: paragraph
