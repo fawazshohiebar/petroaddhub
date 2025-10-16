@@ -40,6 +40,7 @@ button_replicator:
     button_size: fit
     type: button
     enabled: true
+    link: 'entry::89c7e639-b0f5-446a-aab4-b7981d52edc8'
 logos:
   -
     id: mafjvh3f
