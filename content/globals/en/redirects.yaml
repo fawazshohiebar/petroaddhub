@@ -99,3 +99,33 @@ redirects:
     url_old: /contact-us/
     internal_url: afbfc32a-ea2a-4b23-9c47-0437490f858c
     response: 302
+  -
+    id: mgtrm4g8
+    url_old: /sustainable-policy/
+    internal_url: c26d7e50-89b5-45ef-a614-6ae48f876eb0
+    response: 302
+  -
+    id: mgtrnghz
+    url_old: /visitor-information/
+    internal_url: 45b8e073-62c1-4553-8240-64c197228f90
+    response: 302
+  -
+    id: mgtrolvk
+    url_old: /enquire-to-sponsor/
+    internal_url: 9b184505-3426-42c2-a3f9-8a3418e0e629
+    response: 302
+  -
+    id: mgtrqnt0
+    url_old: /enquire-to-exhibit/
+    internal_url: 9b184505-3426-42c2-a3f9-8a3418e0e629
+    response: 302
+  -
+    id: mgtrrlg4
+    url_old: /register-to-visit/
+    internal_url: 89c7e639-b0f5-446a-aab4-b7981d52edc8
+    response: 302
+  -
+    id: mgtrt027
+    url_old: /gfw-privacy-policy/
+    internal_url: 070fa963-44a4-44f5-8091-5d2b360f9ba4
+    response: 302
