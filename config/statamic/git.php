@@ -79,7 +79,7 @@ return [
 
     'user' => [
         'name' => env('STATAMIC_GIT_USER_NAME', 'WebUser'),
-        'email' => env('STATAMIC_GIT_USER_EMAIL', 'WebUser@adihex.com'),
+        'email' => env('STATAMIC_GIT_USER_EMAIL', 'WebUser@globalgoodweek.ae'),
     ],
 
     /*
