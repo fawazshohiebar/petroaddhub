@@ -5,6 +5,6 @@ title: 'Shaker Farid Abdulrahman Zanil'
 image: speakers/photo-22.jpg
 company: 'Emirates Development Bank'
 updated_by: d832e06b-c283-46c1-8e6b-6bad25b4dc42
-updated_at: 1760704899
+updated_at: 1760704902
 position: 'Chief Business Officer & Deputy Chief Executive Officer'
 ---
