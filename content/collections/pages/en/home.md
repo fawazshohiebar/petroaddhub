@@ -553,6 +553,26 @@ page_builder:
   -
     type: set
     attrs:
+      id: mgur89s8
+      values:
+        type: banner
+        new_tab: true
+        width: full
+        image_style: contain
+        is_div: false
+        use_image_height: false
+        image: gfw25_download-app-now-(2)-1760692402.jpg
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+  -
+    type: set
+    attrs:
       id: mgtdd0n6
       values:
         type: reusable_block
@@ -649,18 +669,6 @@ page_builder:
           - 660c725b-57ab-4ab0-830c-327db4cb1730
           - c21960cf-dddb-492e-aa3f-0e584bfaab59
   -
-    type: set
-    attrs:
-      id: mgumoeyo
-      values:
-        type: banner
-        new_tab: true
-        width: full
-        image_style: contain
-        is_div: false
-        use_image_height: false
-        image: gfw25_download-app-now-(2)-1760692402.jpg
-  -
     type: paragraph
     attrs:
       textAlign: left
@@ -674,7 +682,7 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760692404
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1760699909
 fine_seo_image: global-food-week-logo-coloured-(1).png
 ---
