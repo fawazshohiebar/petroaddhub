@@ -679,6 +679,43 @@ page_builder:
           - 660c725b-57ab-4ab0-830c-327db4cb1730
           - c21960cf-dddb-492e-aa3f-0e584bfaab59
   -
+    type: set
+    attrs:
+      id: mgusrful
+      values:
+        type: speaker_section
+        design: centered
+        heading:
+          -
+            type: heading
+            attrs:
+              level: 2
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#2d4ea2'
+                text: 'Speaker 2025'
+        speakers_entries:
+          - 93d9d6f6-7f5d-4219-8b5c-f04b29c2e029
+          - f1d0408d-8dc1-442f-8ec3-692bc69a89ac
+          - 574bbbbc-ebe6-4d9c-9f44-a038ba84fe96
+          - 850cf28c-a9e1-4d27-bbb0-4ff9512e78d8
+          - b26a5cf0-c22b-4dd3-991d-d16d646881ab
+          - 7283a407-82dc-4a7d-bca8-55b995c1a969
+          - 697d9187-d95e-4085-bdb4-b92ac32e8cc9
+          - eb11d88a-8534-460d-b96e-8599ea8463b5
+          - 551be99d-26ee-4e98-95d1-f12e35e81dea
+          - b0657e1d-2498-4a94-938c-58068df2fa0e
+          - b6d7efe4-8cb2-4b8b-bca9-a9a826ab780c
+          - 2350c67f-5361-48f9-9929-245f751e5ba6
+          - e705d1f1-719b-408e-8e0e-b2390c07cb17
+          - 3bd7e205-2dae-4a0b-86df-11767b9f5499
+          - 71532e81-a025-472f-a95b-b2d58ce6e55f
+  -
     type: paragraph
     attrs:
       textAlign: left
@@ -692,7 +729,7 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760701701
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760702512
 fine_seo_image: global-food-week-logo-coloured-(1).png
 ---
