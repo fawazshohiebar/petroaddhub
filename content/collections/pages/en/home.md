@@ -649,6 +649,18 @@ page_builder:
           - 660c725b-57ab-4ab0-830c-327db4cb1730
           - c21960cf-dddb-492e-aa3f-0e584bfaab59
   -
+    type: set
+    attrs:
+      id: mgumoeyo
+      values:
+        type: banner
+        image: banners/gfw25_download-app-now-(2).jpg
+        new_tab: true
+        width: full
+        image_style: contain
+        is_div: false
+        use_image_height: false
+  -
     type: paragraph
     attrs:
       textAlign: left
@@ -662,7 +674,7 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1760684070
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760692266
 fine_seo_image: global-food-week-logo-coloured-(1).png
 ---
