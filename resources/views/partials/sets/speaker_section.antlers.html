@@ -1,0 +1,134 @@
+               <div class="adnec-container py-10">
+
+                   {{ partial:partials/sets/heading_group_component }}
+                   <div class="">
+                       <div class="slider-speakerss relative" x-data="{ 
+                     swiper: null,
+                     initSwiper() {
+                         this.$nextTick(() => {
+                             if (window.Swiper && this.$refs.swiperContainer) {
+                                 this.swiper = new window.Swiper(this.$refs.swiperContainer, {
+                                     slidesPerView: 1,
+                                     spaceBetween: 20,
+                                     grabCursor: true,
+                                     autoHeight: true,
+                                     centeredSlides: false,
+                                     loop: true,
+                                     autoplay: {
+                                         delay: 6000,
+                                         disableOnInteraction: false,
+                                     },
+                                     pagination: {
+                                         el: '.speakerss-pagination',
+                                         clickable: true,
+                                         dynamicBullets: false,
+                                         bulletClass: 'swiper-pagination-bullet speakerss-bullets',
+                                         bulletActiveClass: 'swiper-pagination-bullet-active speakerss-bullets-active',
+                                     },
+                                      navigation: {
+        nextEl: '.speakerss-pagination-next',
+        prevEl: '.speakerss-pagination-prev',
+    },
+    breakpoints: {
+        1024: { 
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+         500: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        }
+    }
+
+                                 });
+                             }
+                         });
+                     }
+                 }" x-init="initSwiper()">
+
+                           <div class="swiper" x-ref="swiperContainer">
+                               <div class="swiper-wrapper">
+
+                                   {{ speakers_entries }}
+                                       <div class="swiper-slide">
+                                           <div class="!flex flex-col  h-full ">
+                                               <div class=" bg-gradient-to-l from-sky-800 via-blue-950 to-black">
+                                                   {{ image }}
+                                                       <img src="{{ url }}" alt="{{ alt ?? 'Speaker Image' }}" class="
+                                                        w-full h-auto aspect-[0.9] lg:aspect-[0.8] object-cover rounded-[5px]                                                        
+                                                        "
+                                                           {{if focus_css}}style="object-position: {{focus_css}};"{{/if}}>
+                                                   {{ /image }}
+                                               </div>
+                                               <div class="py-3 flex flex-col gap-0.5">
+
+                                                   <p class=" text-start  text-lg font-medium leading-snug">
+                                                       {{ title }}
+                                                   </p>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   {{ /speakers_entries }}
+
+
+                               </div>
+                           </div>
+
+
+                           <!-- Pagination with custom styling -->
+                           <div
+                               class=" mx-auto gap-5 justify-center max-w-md flex flex-row flex-nowrap items-baseline  xl:mt-16 lg:mt-12 md:mt-8  mt-5 ">
+                               <div
+                                   class="swiper-button-prev speakerss-pagination-prev  py-[8px] px-[8px] overflow-hidden !w-9 !h-9 bg-primary rounded-sm rtl:rotate-180 ">
+                               </div>
+                               <div class="speakerss-pagination text-center "></div>
+                               <div
+                                   class="swiper-button-next speakerss-pagination-next  py-[8px] px-[8px] overflow-hidden !w-9 !h-9 bg-primary rounded-sm rtl:rotate-180 ">
+                               </div>
+                           </div>
+                           <!-- Custom pagination styles -->
+                           <style>
+                               .swiper-button-prev.speakerss-pagination-prev,
+                               .swiper-button-next.speakerss-pagination-next {
+                                   position: static;
+                                   margin-top: 0px;
+
+                               }
+
+                               .swiper-button-prev.speakerss-pagination-prev::after,
+                               .swiper-button-next.speakerss-pagination-next::after {
+                                   color: white;
+                                   font-size: 15px;
+                               }
+
+
+                               .speakerss-pagination {}
+
+                               .speakerss-pagination {
+                                   width: auto !important;
+                               }
+
+                               .speakerss-pagination .speakerss-bullets {
+                                   width: 15px;
+                                   border-radius: 5px;
+                                   height: 3px;
+
+                               }
+
+                               .speakerss-pagination .speakerss-bullets-active {
+                                   width: 50px;
+                                   border-radius: 5px;
+                                   height: 3px;
+                                   {{# the background is in style .css #}}
+                               }
+                           </style>
+                       </div>
+
+
+                   </div>
+
+               </div>

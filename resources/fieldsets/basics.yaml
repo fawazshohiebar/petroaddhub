@@ -503,6 +503,8 @@ fields:
                     type: entries
                     display: 'Speakers Entries'
                     localizable: false
+                    collections:
+                      - speakers
         forms:
           display: Forms
           icon: form-drop-down-menu
