@@ -571,6 +571,7 @@ page_builder:
         is_div: false
         use_image_height: false
         image: gfw25_download-app-now-(2)-1760692402.jpg
+        link: 'https://onelink.to/qh4jpg'
   -
     type: paragraph
     attrs:
@@ -692,6 +693,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760701565
+updated_at: 1760701701
 fine_seo_image: global-food-week-logo-coloured-(1).png
 ---
