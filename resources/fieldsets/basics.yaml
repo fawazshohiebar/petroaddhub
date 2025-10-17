@@ -492,6 +492,17 @@ fields:
                             fields:
                               -
                                 import: images_grid_and_buttons
+            speaker_section:
+              display: 'Speaker Section'
+              fields:
+                -
+                  import: heading_group_component
+                -
+                  handle: speakers_entries
+                  field:
+                    type: entries
+                    display: 'Speakers Entries'
+                    localizable: false
         forms:
           display: Forms
           icon: form-drop-down-menu
