@@ -13,8 +13,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760611991
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1760691570
 page_builder:
   -
     type: set
@@ -192,16 +192,39 @@ page_builder:
                     type: hardBreak
             type: grid_item
             enabled: true
+          -
+            id: mgul1s2k
+            icon_or_button: buttonlist
+            type: grid_item
+            enabled: false
         buttons:
           -
             id: mggjvxlr
             label: 'View Global Food Talks Agenda'
-            open_new_tab: false
+            open_new_tab: true
             type: new_set
             enabled: true
             design: Orangenogradient
             button_size: lg
             link: 'entry::e8c74d7b-e6bd-4fdc-be91-05c0d9b00e40'
+          -
+            id: mgukyzg6
+            label: 'View Speakers'
+            open_new_tab: true
+            type: new_set
+            enabled: true
+            design: Orangenogradient
+            button_size: lg
+            link: 'entry::1ff334dc-c1f5-4d1e-9348-98be5997681a'
+          -
+            id: mgum8uk4
+            label: 'Global Food Talks Location'
+            open_new_tab: true
+            type: new_set
+            enabled: true
+            design: Orangenogradient
+            button_size: lg
+            link: 'https://map.globalfoodweek.ae/places/global-food-week-conference-talks?mapId=dX6zGKA0a7jNW'
   -
     type: set
     attrs:
