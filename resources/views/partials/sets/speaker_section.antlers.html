@@ -58,7 +58,7 @@
                                            <div class="!flex flex-col  h-full ">
                                                <div class=" bg-gradient-to-l from-sky-800 via-blue-950 to-black">
                                                    {{ image }}
-                                                       <img src="{{ url }}" alt="{{ alt ?? 'Speaker Image' }}" class="
+                                                       <img src="{{ glide:url format='webp'  }}" alt="{{ alt ?? 'Speaker Image' }}" class="
                                                         w-full h-auto aspect-[0.9] lg:aspect-[0.8] object-cover rounded-[5px]                                                        
                                                         "
                                                            {{if focus_css}}style="object-position: {{focus_css}};"{{/if}}>
