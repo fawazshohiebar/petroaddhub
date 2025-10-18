@@ -1,5 +1,6 @@
 ---
 id: 129ec19b-2d3f-4a52-addf-16e2f63e0b66
+published: false
 blueprint: session
 title: 'Senegal Ministry'
 start_time: '10:10'
