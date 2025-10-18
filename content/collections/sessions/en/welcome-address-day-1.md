@@ -7,7 +7,9 @@ end_time: '10:20'
 event_date: '2025-10-21'
 agendas:
   - global-food-talks
-updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760365390
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760793788
+speakers:
+  - b4c130d8-c6af-4fbd-bf68-634325566f39
 ---
 <p></p>
