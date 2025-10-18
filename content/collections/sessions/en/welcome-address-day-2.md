@@ -1,5 +1,6 @@
 ---
 id: b54a9767-7a31-4fe6-acf8-910334663aac
+published: false
 blueprint: session
 title: 'Welcome Address'
 start_time: '10:10'
