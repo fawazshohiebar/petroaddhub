@@ -2,11 +2,11 @@
 id: 19ba080a-a0ad-47eb-b468-d91f21311bbf
 blueprint: session
 title: 'Closing Remarks'
-start_time: '16:50'
-end_time: '17:00'
+start_time: '16:00'
+end_time: '16:05'
 event_date: '2025-10-21'
 agendas:
   - global-food-talks
-updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760362706
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760802101
 ---
