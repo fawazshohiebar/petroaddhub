@@ -106,6 +106,7 @@ speakers:
   - 8bad1b63-6c43-4005-9028-989acdb22441
   - 2200bcb5-2b70-47dc-b655-a9132e55924a
   - 4d1bc979-22f1-4c67-a73d-da3de1a442b1
+  - e7e79bd0-c77c-46df-a2b1-8232ad859fa4
 updated_by: d832e06b-c283-46c1-8e6b-6bad25b4dc42
-updated_at: 1760716138
+updated_at: 1760777195
 ---
