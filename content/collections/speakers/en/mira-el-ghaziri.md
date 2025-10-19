@@ -2,11 +2,11 @@
 id: 6ff2c15c-6250-43a7-8f3e-2867644051bb
 blueprint: speaker
 title: 'Mira El Ghaziri'
-image: speakers/photo-13.jpeg
+image: speakers/photo.jpeg.jpg
 position: 'Managing Director'
 company: HealthyPath
 updated_by: d832e06b-c283-46c1-8e6b-6bad25b4dc42
-updated_at: 1760433403
+updated_at: 1760864385
 ---
 Mira El Ghaziri is the Managing Director of HealthyPath, a consultancy dedicated to advancing nutrition policy, food sustainability, and research to transform global food systems. She supports public and private sectors in addressing the critical connection between nutrition security and food security by providing advisory on food innovations and food policies.
 
