@@ -1,12 +1,12 @@
 ---
 id: bio-innovation-for-secure-and-sustainable-food-systems-day-3
 blueprint: session
-title: 'Bio-Innovation for Secure and Sustainable Food systems'
+title: 'Prayer and Lunch Break'
 start_time: '12:50'
-end_time: '13:05'
+end_time: '14:00'
 event_date: '2025-10-23'
 agendas:
   - agritech-forum
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760430570
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760950721
 ---
