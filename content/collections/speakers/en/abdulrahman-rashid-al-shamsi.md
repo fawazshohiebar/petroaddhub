@@ -1,10 +1,9 @@
 ---
 id: f1d0408d-8dc1-442f-8ec3-692bc69a89ac
-published: false
 blueprint: speaker
 title: 'Abdulrahman Rashid Al Shamsi'
 image: 'speakers/2,500--profile-image-placeholder-stock-illustrations____.png'
 company: 'Abu Dhabi Agricultural Club'
-updated_by: d832e06b-c283-46c1-8e6b-6bad25b4dc42
-updated_at: 1760704509
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760948125
 ---
