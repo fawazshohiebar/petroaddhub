@@ -29,3 +29,12 @@ preferences:
               agendas:
                 operator: like
                 term: agritech-forum
+      columns:
+        - title
+        - site
+        - slug
+        - status
+        - event_date
+        - start_time
+        - end_time
+        - agendas
