@@ -11,6 +11,6 @@ speakers:
 agendas:
   - global-food-talks
 updated_by: 8ba12c9a-1cdf-4f65-abaf-584b7ddd4984
-updated_at: 1760990846
+updated_at: 1760990938
 ---
 <p>Objective: To highlight the Authority&#039;s experience in proactive planning for food crises and strengthening the food security system.</p>
