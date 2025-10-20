@@ -7,6 +7,8 @@ end_time: '10:50'
 event_date: '2025-10-23'
 agendas:
   - agritech-forum
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760431170
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760948571
+speakers:
+  - d926a016-9045-4d3c-8ab2-08b131cc27aa
 ---
