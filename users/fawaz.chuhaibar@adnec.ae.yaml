@@ -34,5 +34,14 @@ preferences:
               agendas:
                 operator: like
                 term: global-food-talks
+        agritech:
+          display: Agritech
+          filters:
+            site:
+              site: en
+            fields:
+              agendas:
+                operator: like
+                term: agritech-forum
     reusables:
       after_save: continue_editing
