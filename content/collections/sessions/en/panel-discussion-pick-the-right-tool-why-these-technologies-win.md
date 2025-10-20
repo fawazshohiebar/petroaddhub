@@ -11,7 +11,9 @@ speakers:
   - 7cf107ac-1da7-4dd0-9009-fbefe08c3b3a
   - efeba7ea-0c27-4448-93d1-8cda28b25d53
   - 0ed72e79-0ace-4195-8740-1c3c8cdfd729
+agendas:
+  - palt
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760953659
+updated_at: 1760953674
 ---
 <p>There is no single path to alternative proteins. Plant-based, precision fermentation, cultivated meat, and hybrid approaches each have different strengths, costs, and consumer appeal. This session explores why founders and investors back one technology over another, the trade-offs they make, and which models are most likely to succeed in the market.</p>
