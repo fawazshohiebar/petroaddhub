@@ -1,5 +1,6 @@
 ---
 id: unlocking-the-power-of-ai-for-small-scale-farmers-day-1
+published: false
 blueprint: session
 title: 'Unlocking the Power of AI For Small Scale Farmers'
 start_time: '14:40'
