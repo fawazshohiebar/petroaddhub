@@ -2,8 +2,8 @@
 id: 2b2171d4-d4cb-4280-881a-5ad21c98271c
 blueprint: session
 title: 'Panel Discussion - Abu Dhabi’s Food Innovation Engine'
-start_time: '22:30'
-end_time: '23:10'
+start_time: '10:30'
+end_time: '11:10'
 event_date: '2025-10-22'
 speakers:
   - 9924d0de-0119-4075-b60e-dedf7530992e
@@ -14,6 +14,6 @@ speakers:
 agendas:
   - palt
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760953937
+updated_at: 1760954062
 ---
 <p>From labs to launchpads, Abu Dhabi’s universities and research centres are driving discovery, while innovation hubs and ecosystems translate breakthroughs into scalable solutions. This session explores how aligning research, innovation hubs and intellectual property is creating a science-to-market pipeline that positions Abu Dhabi as a global hub for food-tech innovation.</p>
