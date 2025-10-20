@@ -7,9 +7,9 @@ end_time: '12:00'
 event_date: '2025-10-21'
 agendas:
   - global-food-talks
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760798844
+updated_by: 8ba12c9a-1cdf-4f65-abaf-584b7ddd4984
+updated_at: 1760981361
 speakers:
   - 151a63ac-fe4f-46b6-939f-6327740b6933
 ---
-<p></p>
+<p>H. E Dhafer Al Qasimi, Group Chief Executive Officer, Silal</p>
