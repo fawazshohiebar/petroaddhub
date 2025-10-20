@@ -7,10 +7,10 @@ end_time: '10:50'
 event_date: '2025-10-21'
 agendas:
   - global-food-talks
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760798384
+updated_by: 8ba12c9a-1cdf-4f65-abaf-584b7ddd4984
+updated_at: 1760981206
 speakers:
   - 04f7ac5e-36e7-4a89-b6e8-f249b11d796c
 duplicated_from: opening-address
 ---
-<p></p>
+<p>Dr Ahmad Mukhtar, FAO Representative Ad Interim to the United Arab Emirates</p>
