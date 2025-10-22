@@ -4,6 +4,7 @@ blueprint: speaker
 title: 'Dr Ibtesam Saeed'
 position: 'Senior Food Analyst'
 company: 'Abu Dhabi Quality & Conformity Council (UAE)'
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760946576
+updated_by: d832e06b-c283-46c1-8e6b-6bad25b4dc42
+updated_at: 1761115497
+image: speakers/photo-35.jpg
 ---
