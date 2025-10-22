@@ -4,6 +4,7 @@ blueprint: speaker
 title: 'Ajith Kamaludeen'
 position: 'R&D Manager'
 company: 'National Feed and Flour Production & Marketing'
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760954826
+updated_by: d832e06b-c283-46c1-8e6b-6bad25b4dc42
+updated_at: 1761115391
+image: speakers/face_photo_1760957918_7e123dc44ef7fdfff8db-(1).jpg
 ---
