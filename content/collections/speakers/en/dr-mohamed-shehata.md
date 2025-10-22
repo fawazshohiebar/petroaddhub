@@ -4,6 +4,7 @@ blueprint: speaker
 title: 'Dr. Mohamed Shehata'
 position: 'Lead Researcher'
 company: ADAFSA
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760948899
+updated_by: d832e06b-c283-46c1-8e6b-6bad25b4dc42
+updated_at: 1761115562
+image: speakers/screenshot-2025-10-2..._imresizer-(1).jpg
 ---
