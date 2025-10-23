@@ -14,7 +14,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760607525
+updated_at: 1761203461
 page_builder:
   -
     type: set
@@ -451,4 +451,7 @@ page_builder:
 fine_seo_title: 'Hosted Buyers Program'
 fine_seo_preview: 'Hosted Buyers Program'
 feature_banner_image: r3_9316-1-jpg.png
+reusable_popup: true
+popup:
+  - 7d7fced4-32e8-4278-af51-3c6cd8fb79cf
 ---
