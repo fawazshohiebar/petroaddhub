@@ -1,0 +1,5 @@
+title: 'Reusable popup'
+tabs:
+  main:
+    display: Main
+    fields: {  }
