@@ -1,2 +1,89 @@
 title: 'Popup Image'
-fields: {  }
+fields:
+  -
+    handle: popup_width
+    field:
+      default: '600'
+      type: integer
+      display: 'Popup Width'
+      localizable: false
+      width: 50
+  -
+    handle: popup_height
+    field:
+      default: '300'
+      type: integer
+      display: 'Popup Height'
+      localizable: false
+      width: 50
+  -
+    handle: close_color
+    field:
+      options:
+        -
+          key: white
+          value: White
+        -
+          key: black
+          value: Black
+      default: white
+      type: button_group
+      display: 'Close Color'
+      localizable: false
+      width: 33
+  -
+    handle: popup_position
+    field:
+      options:
+        -
+          key: center
+          value: Center
+        -
+          key: bottom_left
+          value: 'Bottom Left'
+        -
+          key: bottom_right
+          value: 'Bottom right'
+        -
+          key: bottom_center
+          value: 'Bottom Center'
+      type: button_group
+      display: 'Popup Position'
+      localizable: false
+      width: 66
+  -
+    handle: popup_image
+    field: basics.image
+    config:
+      validate:
+        - image
+        - 'max_filesize:9216'
+        - 'mimes:png,jpg,jpeg,gif,webp,svg'
+      width: 50
+  -
+    handle: popup_link
+    field:
+      type: link
+      display: 'Popup Link'
+      localizable: false
+      width: 50
+  -
+    handle: popup_text
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - color
+      remove_empty_nodes: false
+      type: bard
+      display: 'Popup Text'
+      localizable: false
