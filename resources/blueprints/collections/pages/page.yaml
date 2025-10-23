@@ -49,6 +49,22 @@ tabs:
           -
             handle: template
             field: basics.template
+          -
+            handle: reusable_popup
+            field:
+              type: toggle
+              display: 'Reusable Popup'
+              localizable: false
+          -
+            handle: popup
+            field:
+              collections:
+                - reusables
+              type: entries
+              display: PopUp
+              localizable: false
+              if:
+                reusable_popup: 'equals true'
   fineSeo:
     display: 'Fine SEO'
     sections:
