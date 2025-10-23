@@ -14,7 +14,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760984106
+updated_at: 1761203780
 page_builder:
   -
     type: set
@@ -245,4 +245,7 @@ page_builder:
 fine_seo_title: 'AgriTech & Farmers'
 fine_seo_preview: 'AgriTech & Farmers'
 feature_banner_image: pexels-jeshoots-com-147458-442589.jpg
+reusable_popup: true
+popup:
+  - 7d7fced4-32e8-4278-af51-3c6cd8fb79cf
 ---

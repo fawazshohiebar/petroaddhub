@@ -74,5 +74,5 @@ popup_text:
               color: '#fff'
         text: 'Location: Halls 4–10 & Atrium, ADNEC Centre Abu Dhabi'
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1761202168
+updated_at: 1761203383
 ---

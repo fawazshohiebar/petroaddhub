@@ -14,7 +14,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760605206
+updated_at: 1761203389
 page_builder:
   -
     type: set
@@ -61,4 +61,7 @@ fine_seo_preview: 'All Features'
 fine_seo_description: 'Learn about all the features of Global Food Week 2025: immersive exhibits, innovation labs, business matchmaking, live demos, competitions, and policy roundtables. Maximize your visit in Abu Dhabi’s leading food & agritech event.'
 fine_seo_image: favicon/android-icon-144x144.png
 feature_banner_image: r3_9316-1-jpg.png
+reusable_popup: true
+popup:
+  - 7d7fced4-32e8-4278-af51-3c6cd8fb79cf
 ---

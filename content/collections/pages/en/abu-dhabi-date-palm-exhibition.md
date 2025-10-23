@@ -14,7 +14,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1761050459
+updated_at: 1761203754
 page_builder:
   -
     type: set
@@ -410,4 +410,7 @@ page_builder:
           - cc11d83b-e2ee-4b72-8927-b459d93918df
 fine_seo_title: 'Abu Dhabi Date Palm Exhibition'
 fine_seo_preview: 'Abu Dhabi Date Palm Exhibition'
+reusable_popup: true
+popup:
+  - 7d7fced4-32e8-4278-af51-3c6cd8fb79cf
 ---
