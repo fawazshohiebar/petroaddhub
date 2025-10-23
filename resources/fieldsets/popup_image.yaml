@@ -71,17 +71,13 @@ fields:
     handle: popup_text
     field:
       buttons:
+        - h1
         - h2
         - h3
+        - h4
+        - h5
+        - h6
         - bold
-        - italic
-        - unorderedlist
-        - orderedlist
-        - removeformat
-        - quote
-        - anchor
-        - image
-        - table
         - color
       remove_empty_nodes: false
       type: bard
