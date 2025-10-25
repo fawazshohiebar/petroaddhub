@@ -13,8 +13,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1761203793
+updated_by: 8ba12c9a-1cdf-4f65-abaf-584b7ddd4984
+updated_at: 1761388179
 page_builder:
   -
     type: set
@@ -30,7 +30,5 @@ page_builder:
       textAlign: left
 fine_seo_title: 'Media Partners'
 fine_seo_preview: 'Media Partners'
-reusable_popup: true
-popup:
-  - 7d7fced4-32e8-4278-af51-3c6cd8fb79cf
+reusable_popup: false
 ---
