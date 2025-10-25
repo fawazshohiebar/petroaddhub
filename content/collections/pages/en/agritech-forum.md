@@ -45,11 +45,9 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1761203842
+updated_at: 1761388560
 fine_seo_title: 'AgriTech Forum'
 fine_seo_preview: 'AgriTech Forum'
 feature_banner_image: pexels-tomfisk-1595108.jpg
-reusable_popup: true
-popup:
-  - 7d7fced4-32e8-4278-af51-3c6cd8fb79cf
+reusable_popup: false
 ---
