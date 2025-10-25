@@ -107,7 +107,7 @@ page_builder:
           -
             id: mg90d633
             icon: user-group
-            numbers: '34,437+'
+            numbers: '40,000+'
             label: 'Global Attendees'
             type: statistics_set
             enabled: true
@@ -121,14 +121,14 @@ page_builder:
           -
             id: mg90e116
             icon: microphone
-            numbers: '80'
+            numbers: '148'
             label: 'Global & Local Speakers'
             type: statistics_set
-            enabled: false
+            enabled: true
           -
             id: mg90e030
             icon: building-office
-            numbers: '543'
+            numbers: '639'
             label: 'New Companies & Brands'
             type: statistics_set
             enabled: true
@@ -142,7 +142,7 @@ page_builder:
           -
             id: mg90f4gq
             icon: check-circle
-            numbers: '2,070'
+            numbers: '2186'
             label: 'Companies & Brands'
             type: statistics_set
             enabled: true
@@ -809,7 +809,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1761199247
+updated_by: 8ba12c9a-1cdf-4f65-abaf-584b7ddd4984
+updated_at: 1761386423
 fine_seo_image: global-food-week-logo-coloured-(1).png
+reusable_popup: false
 ---
