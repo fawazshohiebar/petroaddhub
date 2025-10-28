@@ -14,11 +14,11 @@ icons:
     icon: calendar-days
     label: '24 - 26 November 2026'
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1761657257
+updated_at: 1761657286
 hero_actions:
   -
     id: mgaip1jp
-    label: 'Register to visit'
+    label: 'Book Your Stand'
     design: whitefilled
     open_new_tab: true
     type: button
