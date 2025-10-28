@@ -37,8 +37,8 @@ main_activities:
 featured_activities:
   -
     id: GGaWQZW5
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760691673
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1761657418
 heading:
   -
     type: heading
@@ -68,7 +68,7 @@ buttons_groups:
     label: 'Register to visit'
     open_new_tab: true
     type: button
-    enabled: true
+    enabled: false
     design: Orangenogradient
     button_size: lg
 ---
