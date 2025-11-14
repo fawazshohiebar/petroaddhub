@@ -13,7 +13,7 @@ page_builder:
           -
             id: mhyl29m9
             image:
-              - al4a7103-scaled.png
+              - added-images/show-daily-cover-page-(day-1).png
             dynamic_button:
               button: null
               text: sdkasjd
@@ -36,7 +36,7 @@ page_builder:
           -
             id: mhyl3hrj
             image:
-              - al4a7103-scaled.png
+              - added-images/show-daily-cover-page-(day-2).png
             dynamic_button:
               button: null
               text: sdkasjd
@@ -59,7 +59,7 @@ page_builder:
           -
             id: mhylnjm0
             image:
-              - al4a7103-scaled.png
+              - added-images/show-daily-cover-page-(day-3).png
             dynamic_button:
               button: null
               text: sdkasjd
@@ -96,7 +96,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1763115636
+updated_at: 1763118492
 fine_seo_title: 'Show Daily'
 fine_seo_preview: 'Show Daily'
 ---
