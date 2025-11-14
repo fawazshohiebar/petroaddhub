@@ -26,22 +26,13 @@ page_builder:
                 icon_position: start
             type: carousel_item
             enabled: true
-          -
-            id: mhyl3fl8
-            image:
-              - al4a7103-scaled.png
-            dynamic_button:
-              button: null
-              text: sdkasjd
-              button_options:
-                style: filled
-                color: black
-                size: large
-                new_tab: false
-                icon: null
-                icon_position: start
-            type: carousel_item
-            enabled: true
+            pdf_reference_button:
+              link: null
+              label: laskndlas
+              design: purpleoutine
+              icon: none
+              open_new_tab: false
+              button_size: fit
           -
             id: mhyl3hrj
             image:
@@ -58,6 +49,36 @@ page_builder:
                 icon_position: start
             type: carousel_item
             enabled: true
+            pdf_reference_button:
+              link: null
+              label: bandar
+              design: purpleoutine
+              icon: null
+              open_new_tab: false
+              button_size: null
+          -
+            id: mhylnjm0
+            image:
+              - al4a7103-scaled.png
+            dynamic_button:
+              button: null
+              text: sdkasjd
+              button_options:
+                style: filled
+                color: black
+                size: large
+                new_tab: false
+                icon: null
+                icon_position: start
+            type: carousel_item
+            enabled: true
+            pdf_reference_button:
+              link: null
+              label: bandar
+              design: purpleoutine
+              icon: null
+              open_new_tab: false
+              button_size: null
   -
     type: paragraph
     attrs:
@@ -75,5 +96,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1763108196
+updated_at: 1763109301
+fine_seo_title: 'Show Daily'
+fine_seo_preview: 'Show Daily'
 ---
