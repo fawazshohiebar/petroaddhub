@@ -28,7 +28,7 @@ page_builder:
             enabled: true
             pdf_reference_button:
               link: null
-              label: laskndlas
+              label: 'Show Daily-Day 1'
               design: purpleoutine
               icon: none
               open_new_tab: false
@@ -95,8 +95,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1763109301
+updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
+updated_at: 1763115636
 fine_seo_title: 'Show Daily'
 fine_seo_preview: 'Show Daily'
 ---
