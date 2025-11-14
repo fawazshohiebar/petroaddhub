@@ -73,7 +73,7 @@ page_builder:
             type: carousel_item
             enabled: true
             pdf_reference_button:
-              link: null
+              link: 'https://www.globalfoodweek.ae/assets/show-daily/gfw2025-show-daily-day-3-(1).pdf'
               label: bandar
               design: purpleoutine
               icon: null
@@ -96,7 +96,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1763118732
+updated_at: 1763118796
 fine_seo_title: 'Show Daily'
 fine_seo_preview: 'Show Daily'
 ---
