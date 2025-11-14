@@ -22,7 +22,11 @@ fields:
                     display: Image
                     localizable: false
                 -
-                  handle: dynamic_button
-                  field: basics.dynamic_button
-                  config:
+                  handle: pdf_reference_button
+                  field:
+                    type: group
                     display: 'Pdf Reference Button'
+                    localizable: false
+                    fields:
+                      -
+                        import: fancy_button
