@@ -38,3 +38,6 @@ preferences:
         - start_time
         - end_time
         - agendas
+  forms:
+    book_your_stand:
+      per_page: 100
