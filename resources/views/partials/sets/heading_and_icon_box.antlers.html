@@ -1,0 +1,134 @@
+<div style="{{ if background == 'bgimg' }}background-image: url('{{ image.url }}');{{ else }}background-color: var(--color-{{ background_color }});{{ /if }}"
+    class="w-full bg-cover bg-center py-16 relative overflow-hidden">
+    <!-- Background gradient overlay -->
+
+    <div class="adnec-container relative z-10">
+        {{ partial:partials/sets/heading_group_component }}
+        <!-- Desktop Grid (static) -->
+        <div class="hidden lg:grid lg:grid-cols-4 gap-8 mt-12 relative">
+            {{ icon_box_rep }}
+                <div class="text-center relative">
+                    <!-- Connection arrows (hidden on mobile, shown on larger screens) -->
+                    {{ unless last }}
+                        {{ if (index % 2) == 1 }}
+                            <div class="block absolute top-10 -right-15 w-25 h-8 z-20">
+                                <img src="/assets/svgs/vector-(2).svg" alt="">
+                            </div>
+                        {{ else }}
+                            <div class="block absolute -top-10 -right-15 w-25 h-8 z-20">
+                                <img src="/assets/svgs/vector-(1).svg" alt="">
+                            </div>
+                        {{ /if }}
+                    {{ /unless }}
+                    <!-- Icon circle -->
+                    <div
+                        class="w-20 h-20 bg-gradient-to-br from-red-600 to-red-800 rounded-full flex justify-center items-center mx-auto mb-6 shadow-lg border-4 border-white/10">
+                        {{ icon_image }}
+                            <img class="w-10 h-10 filter brightness-0 invert" src="{{ url }}" alt="">
+                        {{ /icon_image }}
+                    </div>
+
+                    <!-- Content -->
+                    <div class="text-white">
+                        <h3 class="text-lg font-bold mb-3 leading-tight">{{ icon_box_heading }}</h3>
+                        <p class="text-sm text-gray-300 leading-relaxed max-w-xs mx-auto">{{ icon_box_description }}
+                        </p>
+                    </div>
+                </div>
+            {{ /icon_box_rep }}
+        </div>
+
+
+        <div class="lg:hidden mt-12 overflow-hidden">
+    <div class="marquee-track">
+        <div class="marquee-group">
+            <!-- ORIGINAL CONTENT -->
+            {{ icon_box_rep }}
+                <div class="text-center relative  inline-block w-64">
+   
+                    {{ unless last }}
+                        {{ if (index % 2) == 1 }}
+                            <div class="block absolute top-10 -right-15 w-25 h-8 z-20">
+                                <img src="/assets/svgs/vector-(2).svg" alt="">
+                            </div>
+                        {{ else }}
+                            <div class="block absolute top-5 -right-15 w-25 h-8 z-20">
+                                <img src="/assets/svgs/vector-(1).svg" alt="">
+                            </div>
+                        {{ /if }}
+                    {{ /unless }}
+                     <div class="w-20 h-20 bg-gradient-to-br from-red-600 to-red-800 rounded-full flex justify-center items-center mx-auto mb-6 shadow-lg border-4 border-white/10">
+                        {{ icon_image }}
+                            <img class="w-10 h-10 filter brightness-0 invert" src="{{ url }}" alt="">
+                        {{ /icon_image }}
+                    </div>
+
+                    <div class="text-white">
+                        <h3 class="text-lg font-bold mb-3 leading-tight">{{ icon_box_heading }}</h3>
+                        <p class="text-sm text-gray-300 leading-relaxed max-w-xs mx-auto">{{ icon_box_description }}</p>
+                    </div>
+                </div>
+            {{ /icon_box_rep }}
+
+            <!-- DUPLICATED CONTENT -->
+            {{ icon_box_rep }}
+                <div class="text-center relative inline-block w-64">
+                    <!-- Connection arrows -->
+                    {{ unless last }}
+                        {{ if (index % 2) == 1 }}
+                            <div class="block absolute top-10 -right-15 w-25 h-8 z-20">
+                                <img src="/assets/svgs/vector-(2).svg" alt="">
+                            </div>
+                        {{ else }}
+                            <div class="block absolute top-5 -right-15 w-25 h-8 z-20">
+                                <img src="/assets/svgs/vector-(1).svg" alt="">
+                            </div>
+                        {{ /if }}
+                    {{ /unless }}
+                    <div class="w-20 h-20 bg-gradient-to-br from-red-600 to-red-800 rounded-full flex justify-center items-center mx-auto mb-6 shadow-lg border-4 border-white/10">
+                        {{ icon_image }}
+                            <img class="w-10 h-10 filter brightness-0 invert" src="{{ url }}" alt="">
+                        {{ /icon_image }}
+                    </div>
+
+                    <div class="text-white">
+                        <h3 class="text-lg font-bold mb-3 leading-tight">{{ icon_box_heading }}</h3>
+                        <p class="text-sm text-gray-300 leading-relaxed max-w-xs mx-auto">{{ icon_box_description }}</p>
+                    </div>
+                </div>
+            {{ /icon_box_rep }}
+        </div>
+    </div>
+</div>
+    </div>
+
+    
+
+
+<style>
+
+.marquee-track {
+    overflow: hidden;
+    white-space: wrap;
+}
+
+.marquee-group {
+    display: inline-flex;
+    gap: 32px;
+    animation: marquee 18s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+</style>
+
+</div>

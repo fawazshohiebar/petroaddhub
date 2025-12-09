@@ -33,6 +33,12 @@ fields:
         -
           key: Orangenogradient
           value: 'Orange without gradient'
+        -
+          key: redgradient
+          value: 'Red Gradient'
+        -
+          key: whiterounded
+          value: 'White Filled Rounded'
       type: select
       display: Design
       localizable: false

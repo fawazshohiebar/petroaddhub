@@ -17,6 +17,10 @@
             outline outline-1 outline-offset-[-1px] outline-indigo-950 text-indigo-950 text-base
         {{elseif design=='Orangenogradient'}}
           text-white text-base bg-accent leading-normal 
+        {{elseif design == 'redgradient' }}
+        text-base font-bold text-white bg-gradient-to-br from-red-600 to-slate-900 rounded-[70px]
+{{elseif design == 'whiterounded' }}
+  text-black text-base font-bold bg-white rounded-[70px]
             {{ /if }}
         font-bold flex flex-row
          " {{ if open_new_tab }}target="_blank" rel="noopener noreferrer"{{ /if }} href="{{ link }}">

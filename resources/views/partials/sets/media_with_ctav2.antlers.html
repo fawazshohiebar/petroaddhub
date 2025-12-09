@@ -1,0 +1,99 @@
+
+<section id="{{ slug }}" class=" relative overflow-hidden ] 
+    
+    {{if spaces=="p"}}
+        py-10
+      {{elseif  spaces=="pt" }}
+        pt-10
+      {{elseif  spaces=="pb" }}
+        pb-10
+      {{/if}}
+    "
+    style="{{ if background == 'bgimg' }}background-size:cover; background-image: url('{{ image.url }}');{{ else }}background-color: var(--color-{{ background_color }});{{ /if }}">
+    <div class="adnec-container z-10">
+        <div class="
+            gap-10
+             items-center 
+            {{if text_image_alignment == "v1"}}
+            lg:flex-row  flex flex-col
+            {{elseif text_image_alignment == "v2"}}
+            lg:flex-row-reverse flex flex-col
+            {{else}}X
+            lg:flex-row  flex-col flex
+            {{/if}}
+            ">
+            <div class="lg:w-1/2 w-full">
+                <div class="relative md:h-[500px] h-[400px] swiper media-swiper-{{ heading | striptags | slugify }}">
+                    <div class="swiper-wrapper">
+                        {{ images_sliders }}
+                            {{ image }}
+                                <div class="swiper-slide">
+                                    <img src="{{ url }}" class="w-full h-full object-cover" alt="{{ alt }}">
+                                </div>
+                            {{ /image }}
+                        {{ /images_sliders }}
+                    </div>
+
+                    <!-- Navigation buttons -->
+                    <div
+                        class="swiper-button-next swiper-button-next-{{ heading | striptags | slugify }} border-1 border-white bg-white opacity-55 rounded-3xl overflow-hidden !w-[40px] !h-[40px]">
+                        {{ heroicon variant="outline" icon="chevron-right" class="!h-6 !w-6 !text-black rtl:rotate-180" }}
+                    </div>
+                    <div
+                        class="swiper-button-prev swiper-button-prev-{{ heading | striptags | slugify }} border-1 border-white bg-white opacity-55 rounded-3xl overflow-hidden !w-[40px] !h-[40px]">
+                        {{ heroicon variant="outline" icon="chevron-left" class="!h-6 !w-6 !text-black rtl:rotate-180" }}
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination swiper-pagination-{{ heading | striptags | slugify }}"></div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 w-full py-10 flex flex-col lg:gap-6 md:gap-4 gap-2 ">
+
+                {{ partial:partials/sets/heading_group_component }}
+            </div>
+        </div>
+</section>
+
+<script>
+    const swiper_{{ heading | striptags | slugify | replace:'-':'_' }} = new Swiper('.media-swiper-{{ heading | striptags | slugify }}', {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next-{{ heading | striptags | slugify }}',
+            prevEl: '.swiper-button-prev-{{ heading | striptags | slugify }}',
+        },
+        pagination: {
+            el: '.swiper-pagination-{{ heading | striptags | slugify }}',
+            clickable: true,
+        },
+        // Responsive breakpoints
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 1,
+            },
+            1024: {
+                slidesPerView: 1,
+            },
+        }
+    });
+</script>
+<style>
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        display: none;
+    }
+
+
+
+    .swiper-pagination .swiper-pagination-bullet{
+        background-color:   #a41f28;
+
+    }
+</style>

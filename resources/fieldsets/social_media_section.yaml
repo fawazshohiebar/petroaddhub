@@ -1,0 +1,85 @@
+title: 'Social media Section'
+fields:
+  -
+    handle: social_title
+    field:
+      type: text
+      display: 'Social Title'
+      localizable: true
+  -
+    handle: social_description
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - color
+        - h1
+        - h4
+        - h5
+        - h6
+      remove_empty_nodes: false
+      type: bard
+      display: 'Social Description'
+      localizable: true
+  -
+    handle: social_media_hp
+    field:
+      type: grid
+      display: 'Social Media Hp'
+      localizable: false
+      fields:
+        -
+          handle: platformsocial
+          field:
+            options:
+              -
+                key: facebook
+                value: null
+              -
+                key: twitter
+                value: null
+              -
+                key: instagram
+                value: null
+              -
+                key: linkedin
+                value: null
+              -
+                key: youtube
+                value: null
+              -
+                key: tiktok
+                value: null
+            type: select
+            display: Platform
+            localizable: false
+            width: 50
+        -
+          handle: social_media_link
+          field:
+            type: text
+            display: 'Social Media Link'
+            localizable: false
+            width: 50
+  -
+    handle: social_image_rep
+    field:
+      type: replicator
+      display: 'Social Image Rep'
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            images:
+              display: Images
+              fields:
+                -
+                  handle: social_image
+                  field:
+                    container: assets
+                    type: assets
+                    display: 'Social Image'
+                    localizable: false
+                    max_files: 1

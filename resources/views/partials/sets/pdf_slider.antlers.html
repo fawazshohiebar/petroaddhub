@@ -1,0 +1,78 @@
+<section class="adnec-container relative py-10">
+
+    <div class="grid grid-cols-[15%_auto] gap-20">
+
+        <div
+            class="flex flex-col gap-2 sticky top-30 h-fit bg-white rounded-[5px] overflow-hidden  shadow-[0_14px_36px_rgba(15,23,42,0.10)]   p-5">
+            {{ pdf_replicator }}
+                <div class="text-primary cursor-pointer  transition-colors pdf-tab  p-2 
+     border-b-1 border-dashed border-[#D1D1D1]" data-target="{{ pdf_title | strip_tags | lower | replace:'-' }}">
+                    {{ pdf_title }}
+                </div>
+            {{ /pdf_replicator }}
+        </div>
+
+
+
+        <div class="flex flex-col">
+
+            {{ pdf_replicator }}
+                <div id="{{ pdf_title | strip_tags | lower | replace:'-' }}"
+                    class="pdf-content {{ if index == 0 }}block{{ else }}hidden{{ /if }}">
+                    {{ pdf_file }}
+                        <a href="{{ url }}" target="blank">
+                    {{ /pdf_file }}
+                    <img class="w-full" src="{{ featured_image.url }}" alt="">
+                    </a>
+                </div>
+            {{ /pdf_replicator }}
+
+        </div>
+
+
+    </div>
+
+    <script>
+        (function() {
+            'use strict';
+
+            // Get this specific section
+            const pdfSliderSection = document.currentScript.closest('section');
+
+            // Add event listener to this section only
+            pdfSliderSection.addEventListener('click', function(event) {
+                // Check if the clicked element is a PDF tab
+                if (event.target.classList.contains('pdf-tab')) {
+                    const targetId = event.target.getAttribute('data-target');
+
+                    // Hide all PDF content within this section only
+                    const allPdfContent = pdfSliderSection.querySelectorAll('.pdf-content');
+                    allPdfContent.forEach(content => {
+                        content.classList.add('hidden');
+                        content.classList.remove('block');
+                    });
+
+                    // Show the target PDF content within this section
+                    const targetContent = pdfSliderSection.querySelector('#' + targetId);
+                    if (targetContent) {
+                        targetContent.classList.remove('hidden');
+                        targetContent.classList.add('block');
+                    }
+
+                    // Update active state on tabs within this section only
+                    const allTabs = pdfSliderSection.querySelectorAll('.pdf-tab');
+                    allTabs.forEach(tab => {
+                        // Remove all active styling from all tabs
+                        tab.classList.remove('font-bold', 'text-white', 'bg-gradient-to-br', 'from-red-600', 'to-slate-900', 'rounded-[5px]');
+                        tab.classList.add('text-primary');
+                    });
+
+                    // Highlight the clicked tab
+                    event.target.classList.remove('text-primary');
+                    event.target.classList.add('text-white', 'bg-gradient-to-br', 'from-red-600', 'to-slate-900', 'rounded-[5px]', 'font-bold');
+                }
+            });
+        })();
+    </script>
+
+</section>

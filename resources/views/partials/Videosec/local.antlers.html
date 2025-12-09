@@ -1,0 +1,82 @@
+<section class="relative md:min-h-[700px] min-h-[50dvh] overflow-hidden  pt-34 flex items-center ">
+    <!-- Local Video Background -->
+     
+        <video id="local-video" class="local-video" autoplay muted loop playsinline>
+            <source src="{{video}}" type="video/{{ video | explode('.') | last }}">
+            <!-- You can add fallback formats here if needed -->
+            <!-- <source src="/videos/video.mp4" type="video/mp4"> -->
+            Your browser does not support the video tag.
+        </video>
+     
+   
+
+
+</section>
+
+<script>
+    // Function to ensure video fully covers the container
+    function ensureVideoCoverage() {
+        var video = document.querySelector('#local-video');
+        if (!video) return;
+        
+        // Force a recalculation of object-fit if needed
+        video.classList.add('force-cover');
+        setTimeout(() => {
+            video.classList.remove('force-cover');
+        }, 10);
+    }
+
+    // Initialize video and resize handling
+    document.addEventListener('DOMContentLoaded', function() {
+        var video = document.querySelector('#local-video');
+        
+        if (video) {
+            // Ensure video is properly sized when metadata is loaded
+            video.addEventListener('loadedmetadata', ensureVideoCoverage);
+            
+            // Ensure video is properly sized when it starts playing
+            video.addEventListener('playing', ensureVideoCoverage);
+            
+            // Handle window resize events
+            window.addEventListener('resize', ensureVideoCoverage);
+            
+            // Handle orientation change on mobile
+            window.addEventListener('orientationchange', ensureVideoCoverage);
+            
+            // Handle video end (although we have loop attribute, this is a fallback)
+            video.addEventListener('ended', function() {
+                video.play();
+                ensureVideoCoverage();
+            });
+            
+            // Initial sizing check
+            ensureVideoCoverage();
+        }
+
+        // CSS Animation for the hero section
+        document.head.insertAdjacentHTML('beforeend', `
+            <style>
+                .video-container {
+                    overflow: hidden;
+                }
+                
+                .local-video {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    min-width: 100%;
+                    min-height: 100%;
+                    width: auto;
+                    height: auto;
+                    transform: translateX(-50%) translateY(-50%);
+                    object-fit: cover;
+                    z-index: 0;
+                }
+                
+                .force-cover {
+                    object-fit: cover !important;
+                }
+            </style>
+        `);
+    });
+</script>

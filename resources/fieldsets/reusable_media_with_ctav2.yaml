@@ -1,0 +1,54 @@
+title: 'Reusable Media with CTAv2'
+fields:
+  -
+    handle: text_image_alignment
+    field:
+      options:
+        -
+          key: v1
+          value: null
+        -
+          key: v2
+          value: null
+      type: button_group
+      display: 'Text Image Alignment'
+      localizable: false
+      width: 50
+  -
+    handle: spaces
+    field:
+      options:
+        -
+          key: p
+          value: null
+        -
+          key: pt
+          value: null
+        -
+          key: pb
+          value: null
+      type: button_group
+      display: Spaces
+      localizable: false
+      width: 50
+      default: p
+  -
+    import: heading_group_component
+  -
+    handle: images_sliders
+    field:
+      type: replicator
+      display: 'Images Sliders'
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            image:
+              display: image
+              fields:
+                -
+                  handle: image
+                  field: basics.image
+  -
+    import: background_design

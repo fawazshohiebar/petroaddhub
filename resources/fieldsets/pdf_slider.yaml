@@ -1,0 +1,40 @@
+title: 'Pdf Slider'
+fields:
+  -
+    handle: pdf_replicator
+    field:
+      type: replicator
+      display: 'Pdf Replicator'
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: pdf_title
+                  field:
+                    type: text
+                    display: 'PDf Title'
+                    localizable: false
+                -
+                  handle: featured_image
+                  field: basics.image
+                  config:
+                    display: 'Featured Image'
+                    validate:
+                      - image
+                      - 'max_filesize:9216'
+                      - 'mimes:png,jpg,jpeg,gif,webp,svg'
+                -
+                  handle: pdf_file
+                  field:
+                    container: assets
+                    folder: pdf
+                    type: assets
+                    display: 'PDF File'
+                    localizable: false
+                    validate:
+                      - 'mimes:pdf'

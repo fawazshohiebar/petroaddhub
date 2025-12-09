@@ -1,0 +1,81 @@
+title: 'images Grid and Buttons Sport'
+fields:
+  -
+    handle: grid_images
+    field: basics.image
+    config:
+      display: 'Grid Images'
+      validate:
+        - image
+        - 'max_filesize:9216'
+        - 'mimes:png,jpg,jpeg,gif,webp,svg'
+  -
+    handle: grid_heading
+    field:
+      buttons:
+        - h1
+        - h2
+        - h3
+        - h4
+        - bold
+        - color
+        - horizontalrule
+        - h5
+        - h6
+        - italic
+        - underline
+      remove_empty_nodes: false
+      type: bard
+      display: 'Grid Heading'
+      localizable: false
+      save_html: true
+  -
+    handle: sport_rep
+    field:
+      type: replicator
+      display: 'Sport Rep'
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            sport:
+              display: Sport
+              fields:
+                -
+                  handle: sport_icon
+                  field:
+                    container: assets
+                    type: assets
+                    display: 'Sport Icon'
+                    localizable: false
+                    width: 33
+                -
+                  handle: sport_title
+                  field:
+                    type: text
+                    display: 'Sport Title'
+                    localizable: false
+                    width: 33
+                -
+                  handle: sport_distance
+                  field:
+                    type: text
+                    display: 'Sport Distance'
+                    localizable: false
+                    width: 33
+  -
+    handle: sport_button
+    field:
+      type: replicator
+      display: 'Sport Button'
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  import: fancy_button

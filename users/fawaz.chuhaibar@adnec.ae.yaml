@@ -55,3 +55,6 @@ preferences:
               'null': null
     reusables:
       after_save: continue_editing
+  assets:
+    assets:
+      per_page: 500

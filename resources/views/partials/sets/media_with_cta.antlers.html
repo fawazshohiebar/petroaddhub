@@ -1,36 +1,15 @@
-{{?
-  $blockStyles = [
-    'primary' => 'bg-primary text-white ',
-    'secondary' => 'bg-secondary text-white ',
-    'gray' => 'bg-gray-200 text-gray-800',
-    'lite-primary' => 'bg-primary text-primar',
-    'lite-secondary' => 'bg-secondary text-secondary',
-    'transparent' => 'bg-transparent text-gray-800 border border-[#ebe6e752] border-b ',
-    'black' => 'bg-black text-white ',
-    'white' => 'bg-white text-gray-900',
-    'default' => 'bg-white text-gray-900',
-];
-$blockPadding = [
-  'xlarge' => 'py-16 md:py-20 lg:py-24',
-  'large' => 'py-14 md:py-18 lg:py-22',
-  'medium' => 'py-8 md:py-10 lg:py-12',
-  'small' => 'py-8 md:py-12 lg:py-16',
-  'none' => 'py-0',
-];
-
-?}}
-{{ $size = style_config:size ?? 'normal'; $isCompact = $size === 'compact'; $variant = style_config:variant ?? 'left_image';
- }}
 {{# style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image' #}}
-<section id="{{ slug }}"
-    class="{{ blockPadding[{style_config:padding ?? 'medium'}] }} {{ blockStyles[{style_config:color ?? 'default'}] }} relative overflow-hidden "
+<section id="{{ slug }}" class=" relative overflow-hidden ] 
+    
+    {{if spaces=="p"}}
+        py-10
+      {{elseif  spaces=="pt" }}
+        pt-10
+      {{elseif  spaces=="pb" }}
+        pb-10
+      {{/if}}
+    "
     style="{{ if background == 'bgimg' }}background-size:cover; background-image: url('{{ image.url }}');{{ else }}background-color: var(--color-{{ background_color }});{{ /if }}">
-
-
-    <!-- Cover variant with background image -->
-
-
-
     <div class="adnec-container z-10">
         <div class="
             gap-10
@@ -39,19 +18,18 @@ $blockPadding = [
             lg:flex-row  flex flex-col
             {{elseif text_image_alignment == "v2"}}
             lg:flex-row-reverse flex flex-col
-            {{else}}
+            {{else}}X
             lg:flex-row  flex-col flex
             {{/if}}
             ">
-            <!-- Image Section -->
-            <div class="w-full  {{ $isCompact ? 'lg:w-2/5' : 'lg:w-1/2' }}" x-data="{}"
+            <div class="w-full self-center  {{ $isCompact ? 'lg:w-2/5' : 'lg:w-1/2' }}" x-data="{}"
                 x-intersect="$el.classList.add('{{ $variant == 'right_image' ? 'ltr:animate-fade-slide-left' : 'ltr:animate-fade-slide-right' }}', '{{ $variant == 'right_image' ? 'rtl:animate-fade-slide-right' : 'rtl:animate-fade-slide-left' }}')">
                 <div class="relative">
                     {{ if section_image }}
                         {{ glide:section_image preset="{{ $isCompact ? 'medium' : 'large' }}" }}
                             <img loading="lazy" src="{{ url }}" alt="{{ alt ?? title }}" width="{{ width }}"
                                 height="{{ height }}" style="object-position: {{ focus_css ?? 'center' }};"
-                                class="w-full max-h-96 object-cover h-auto {{ $isCompact ? 'lg:max-h-96 rounded-md shadow-lg' : 'lg:max-h-max rounded-lg shadow-xl' }}" />
+                                class="w-full   object-cover  rounded-md shadow-lg  md:h-[500px] h-[400px] }}" />
                         {{ /glide:section_image }}
                     {{ /if }}
                     {{ if badge_text }}
@@ -69,29 +47,28 @@ $blockPadding = [
                     {{ /if }}
                 </div>
             </div>
-
-            <!-- Content Section -->
-            <!-- Content Section -->
-            <div class="w-full {{ $isCompact ? 'lg:w-3/5' : 'lg:w-1/2' }}" x-data="{}"
+            <div class="w-full py-10 flex flex-col lg:gap-6 md:gap-4 gap-2 {{ $isCompact ? 'lg:w-3/5' : 'lg:w-1/2' }}"
+                x-data="{}"
                 x-intersect="$el.classList.add('{{ $variant == 'right_image' ? 'ltr:animate-fade-slide-right' : 'ltr:animate-fade-slide-left' }}', '{{ $variant == 'right_image' ? 'rtl:animate-fade-slide-left' : 'rtl:animate-fade-slide-right' }}')">
-               {{if section_label}}
-                <div class="flex items-center gap-5 {{ $isCompact ? 'mb-2' : 'mb-4' }}">
-                    <div class="w-12 h-1 
-                   {{ if  background_color == 'primary'}}
-                    bg-white
-                    {{else}}
-                    bg-primary
-                    {{/if}}
-                    "></div>
-                    <span
-                        class="  text-brand-sky-blue font-medium uppercase ltr:tracking-wider ">{{ section_label }}</span>
-                </div>
-                {{/if}}
-
+                {{ if section_label }}
+                    <div class="flex items-center gap-5 {{ $isCompact ? 'mb-2' : 'mb-4' }}">
+                        {{#
+                             <div class="w-12 h-1
+                                               {{ if  background_color == 'primary'}}
+                                                bg-white
+                                                {{else}}
+                                                bg-primary
+                                                {{/if}}
+                                                "></div>
+                        #}}
+                        <span
+                            class="  text-brand-sky-blue font-medium uppercase ltr:tracking-wider ">{{ section_label }}</span>
+                    </div>
+                {{ /if }}
                 <div class="custom mb-2"> {{ heading_text }}</div>
 
                 <div
-                    class="text-gray-700 {{ $isCompact ? 'mb-3' : 'mb-6' }} leading-relaxed prose {{ $isCompact ? 'prose-sm' : 'prose-lg' }}">
+                    class="text-gray-700  custom  prose prose-sm  ">
                     {{ description }}
                 </div>
                 {{ if buttons }}

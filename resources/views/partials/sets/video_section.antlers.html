@@ -1,0 +1,5 @@
+{{if video | contains('/')}}
+    {{ partial:videosec/local }}
+{{else}}
+    {{ partial:videosec/youtube }}
+{{/if}}

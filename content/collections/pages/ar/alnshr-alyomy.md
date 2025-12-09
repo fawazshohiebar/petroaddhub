@@ -1,6 +1,6 @@
 ---
 id: d675b12a-8d3a-4ff1-9a95-937a8ffba09c
-origin: 1684786d-77e7-426e-82b0-5d913e2ead6f
+blueprint: page
 title: 'النشرة اليومية'
 page_builder:
   -
@@ -83,6 +83,20 @@ page_builder:
     type: paragraph
     attrs:
       textAlign: left
+template: default
+reusable_popup: false
+fine_seo_is_title_custom: false
+header_scripts:
+  code: null
+  mode: htmlmixed
+body_start_scripts:
+  code: null
+  mode: htmlmixed
+body_end_scripts:
+  code: null
+  mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
 updated_at: 1763128166
+fine_seo_title: 'Show Daily'
+fine_seo_preview: 'Show Daily'
 ---

@@ -77,6 +77,14 @@
 }
 
 
+.ndx-text-color-swatches button:last-of-type{
+  background: linear-gradient(to right, #E2001A, #0F193C);
+ /* For Safari & Chrome */
+ 
+ 
+}
+
+
  .bard-fieldtype-wrapper .bard-editor .tiptap.ProseMirror.bard-content {
   min-height: fit-content;        
   overflow: auto;           

@@ -26,6 +26,8 @@ tabs:
           -
             handle: page_builder
             field: basics.page_builder
+            config:
+              collapse: true
   sidebar:
     display: Sidebar
     sections:

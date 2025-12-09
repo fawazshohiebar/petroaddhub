@@ -1,0 +1,36 @@
+<div class="">
+    <div class="bg-white rounded-2xl overflow-hidden  shadow-[0_14px_36px_rgba(15,23,42,0.10)] flex flex-col h-full p-1">
+        {{ if grid_images }}
+            {{ grid_images }}
+                <img class="h-65 object-cover rounded-2xl" src="{{ url }}" alt="">
+            {{ /grid_images }}
+        {{ /if }}
+        <div class="flex-col flex p-4 gap-2 text-center font-semibold text-xl">
+            <div class="bg-gradient-to-r from-[#E2001A] to-[#0F193C] bg-clip-text text-transparent mb-5">
+                {{ grid_heading | nl2br }}
+            </div>
+            {{ sport_rep }}
+                <div class="grid grid-cols-[45px_25%_58%] items-center pb-1 
+     {{ if !last }}border-b-1 border-dashed border-[#D1D1D1]{{ /if }}">
+                    {{ sport_icon }}
+                        <img src="{{ url }}" alt="">
+                    {{ /sport_icon }}
+
+                    <p class="text-black text-base font-light">{{ sport_title }}</p>
+                    <p class=" text-black text-base font-bold justify-end flex">{{ sport_distance }}</p>
+
+                </div>
+                
+            {{ /sport_rep }}
+            {{ if sport_button }}
+            <div class="flex justify-center">
+                {{ sport_button }}
+                    {{ partial:partials/sets/fancy_button }}
+                {{ /sport_button }}
+                </div>
+            {{ /if }}
+ 
+        </div>
+    </div>
+
+</div>

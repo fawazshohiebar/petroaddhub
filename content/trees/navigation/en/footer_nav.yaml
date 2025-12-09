@@ -1,21 +1,9 @@
 tree:
   -
-    id: ccb3d63a-42b2-4e45-ba71-a98a3cec5e6c
-    title: 'Quick Links'
-    children:
-      -
-        id: 5a7f4e90-fc7a-4f9b-b724-925412205d56
-        entry: home
-      -
-        id: 3098e49c-128a-473d-9e81-0250be80a1b2
-        entry: 070fa963-44a4-44f5-8091-5d2b360f9ba4
-      -
-        id: e9b4bc6e-c060-4aba-bcec-867205442809
-        entry: c26d7e50-89b5-45ef-a614-6ae48f876eb0
+    id: 86443cd0-df06-4b9b-bef7-59f41dc55745
+    title: 'Terms & Conditions'
+    url: '#'
   -
-    id: 73b74a92-f2e3-4e96-a02c-c11d3e4c76a7
-    title: Support
-    children:
-      -
-        id: 8bec28b0-db33-454f-ae9b-f4edeb5a9788
-        entry: afbfc32a-ea2a-4b23-9c47-0437490f858c
+    id: 3463c7ab-f011-4121-b116-d5ea44634861
+    title: 'Privacy & Policy'
+    url: '#'

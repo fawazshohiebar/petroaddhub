@@ -19,8 +19,10 @@ html {
   --color-secondary: #F2F9FC;
   --color-accent: #f47832;
   --color-blue: #2d4ea2;
-  --color-light-accent: #fff7ef;
+  --color-light-accent: #f7f7f7;
   --color-light-secondary: #f0f5ff;
+  --color-gradient : linear-gradient(275deg, #0F193C, #4C1333);
+
 }
 
 @theme {
@@ -31,8 +33,10 @@ html {
   --color-secondary: #F2F9FC;
   --color-accent: #f47832;
   --color-blue: #2d4ea2;
-  --color-light-accent: #fff7ef;
+  --color-light-accent: #f7f7f7;
   --color-light-secondary: #f0f5ff;
+  --color-gradient : linear-gradient(275deg, #0F193C, #4C1333);
+
 
   --color-primary-50: #211551;
   --color-primary-100: #211551;
@@ -178,23 +182,23 @@ html {
 
 
 .custom h1 {
-  @apply xl:text-6xl md:text-5xl text-3xl font-semibold;
+  @apply xl:text-6xl md:text-5xl text-3xl  font-semibold;
 }
 
 .custom h2 {
-  @apply xl:text-5xl md:text-4xl text-3xl font-semibold;
+  @apply xl:text-5xl md:text-4xl text-3xl  font-semibold;
 }
 
 .custom h3 {
-  @apply xl:text-4xl md:text-3xl text-2xl;
+  @apply xl:text-4xl md:text-3xl  text-2xl;
 }
 
 .custom h4 {
-  @apply xl:text-2xl md:text-xl text-lg;
+  @apply xl:text-2xl md:text-xl  text-lg;
 }
 
 .custom p {
-  @apply xl:text-base text-sm;
+  @apply xl:!text-base  !text-sm;
 }
 
 .speakerss-pagination .speakerss-bullets-active {
@@ -202,6 +206,10 @@ html {
 
 }
 
+
+.customcolors{
+   @apply  bg-gradient-to-r from-[#E2001A] to-[#0F193C] bg-clip-text text-transparent ;
+}
 
 /* 
 .dropdown-checkbox {

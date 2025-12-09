@@ -2,7 +2,7 @@
     {{# x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 10 })" #}}
 class="opacity-60 bg-slate-900"
 >
-{{ partial:patronage }}
+{{# {{ partial:patronage }} #}}
 <nav class="w-full {{if !is_homepage}} bg-primary {{/if}} flex-grow transition-all duration-300 ease-in-out" x-data="{ scrolled: false }"
     x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 10 })" x-cloak
     {{if is_homepage}}

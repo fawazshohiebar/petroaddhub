@@ -13,6 +13,22 @@ fields:
       display: Subheading
       localizable: true
   -
+    handle: description_text
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - color
+        - h1
+        - h4
+        - h5
+        - h6
+      remove_empty_nodes: false
+      type: bard
+      display: 'Description Text'
+      localizable: false
+  -
     handle: video
     field:
       type: text

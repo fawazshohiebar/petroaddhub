@@ -1,0 +1,10 @@
+title: 'Video Section'
+fields:
+  -
+    handle: video
+    field:
+      default: 'https:// or YOUTUBE_ID'
+      type: text
+      display: Video
+      instructions: 'Can be URL or YouTube ID'
+      localizable: false

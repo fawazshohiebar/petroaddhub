@@ -50,57 +50,6 @@ tabs:
               display: Patronage
               localizable: true
           -
-            handle: social_media
-            field:
-              type: grid
-              display: 'Social Media'
-              localizable: false
-              fields:
-                -
-                  handle: platform
-                  field:
-                    options:
-                      -
-                        key: facebook
-                        value: null
-                      -
-                        key: twitter
-                        value: null
-                      -
-                        key: instagram
-                        value: null
-                      -
-                        key: linkedin
-                        value: null
-                      -
-                        key: youtube
-                        value: null
-                      -
-                        key: snapchat
-                        value: null
-                      -
-                        key: tiktok
-                        value: null
-                    type: select
-                    display: Platform
-                    localizable: false
-                    width: 50
-                -
-                  handle: social_media_link
-                  field:
-                    type: text
-                    display: 'Social Media Link'
-                    localizable: false
-                    width: 50
-          -
-            handle: countdown_date_picker
-            field:
-              time_enabled: true
-              time_seconds_enabled: true
-              type: date
-              display: 'Countdown Date Picker'
-              localizable: false
-          -
             handle: location
             field:
               type: text
@@ -180,8 +129,6 @@ tabs:
                             display: Title
                             localizable: false
                             width: 33
-                            validate:
-                              - required
                         -
                           handle: image
                           field:
@@ -192,7 +139,6 @@ tabs:
                             localizable: false
                             width: 33
                             validate:
-                              - required
                               - image
                         -
                           handle: url
@@ -202,8 +148,6 @@ tabs:
                             display: Url
                             localizable: false
                             width: 33
-                            validate:
-                              - required
       -
         display: 'Extra Event Info'
         fields:

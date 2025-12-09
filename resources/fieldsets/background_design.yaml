@@ -49,6 +49,9 @@ fields:
         -
           key: light-accent
           value: Light-accent
+        -
+          key: gradient
+          value: null
       display: 'Background Color'
       if:
         background: 'equals bgcolor'

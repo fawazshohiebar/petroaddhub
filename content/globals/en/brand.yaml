@@ -1,28 +1,6 @@
-title: 'Global Good Week'
-logo: footer-logo/picture2.png.png
+title: 'Challenge Sir Bani Yas'
+logo: brand/d314715949800652df7c75645a976b97fa619889.png
 patronage: 'Held Under the Patronage of H.H Sheikh Mansour Bin Zayed Al Nahyan, Vice President, Deputy Prime Minister, Chairman of the Presidential Court, and Chairman of the Board of Directors of the Abu Dhabi Agriculture and Food Safety Authority (ADAFSA)'
-social_media:
-  -
-    id: macihl2y
-    platform: instagram
-    social_media_link: 'https://www.instagram.com/globalfoodweek.ae/?igsh=MXNva2p3aTFzZGk1eA%3D%3D#'
-  -
-    id: map2nygi
-    platform: facebook
-    social_media_link: 'https://www.facebook.com/people/Global-Food-Week/61566508043880/?mibextid=LQQJ4d'
-  -
-    id: map2of2t
-    platform: linkedin
-    social_media_link: 'https://www.linkedin.com/company/global-food-week/'
-  -
-    id: map2oq30
-    platform: youtube
-    social_media_link: 'https://www.youtube.com/@globalfoodweek'
-  -
-    id: mdsjn9cm
-    platform: twitter
-    social_media_link: 'https://x.com/gfoodweek'
-countdown_date_picker: '2025-08-30 08:00:00'
 location: 'ADNEC Centre Abu Dhabi'
 location_link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
 date: '29 Aug - 6 Sept'
@@ -35,38 +13,30 @@ button_replicator:
     open_new_tab: false
     button_size: fit
     type: button
-    enabled: true
-    link: 'entry::2e6b47be-50f5-4525-8f15-50a33a601800'
+    enabled: false
 logos:
   -
     id: mafjvh3f
     title: 'Strategic Partner & Organiser'
-    image: footer-logo/picture2.png.png
+    image: 6207aea41e28e3aa10c4113cb87c9c09e2933897-(1).png
     url: 'https://adnecgroup.ae'
+    type: logo
+    enabled: true
+  -
+    id: mih2xfv1
+    image: 6207aea41e28e3aa10c4113cb87c9c09e2933897-(2).png
     type: logo
     enabled: true
 footer_sales:
   -
-    id: mglex50w
-    sales_text: '24 November 2026 | 09:30 – 18:00'
-    icon: calendar-days
-    type: sales_set
-    enabled: true
-  -
     id: mglexqz2
-    sales_text: '25 November 2026 | 09:30 – 18:00'
-    icon: calendar-days
+    sales_text: info@challenge-sirbaniyas.com
+    icon: envelope
     type: sales_set
     enabled: true
   -
-    id: mgt7o397
-    sales_text: '26 November 2026 | 09:30 – 17:00'
-    icon: calendar-days
-    type: sales_set
-    enabled: true
-  -
-    id: mgt7o8uf
-    sales_text: 'ADNEC Centre Abu Dhabi'
-    icon: map-pin
+    id: mih2vsf6
+    sales_text: '+97124063839'
+    icon: phone
     type: sales_set
     enabled: true

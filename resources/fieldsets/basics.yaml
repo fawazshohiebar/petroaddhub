@@ -112,16 +112,12 @@ fields:
       type: bard
       display: 'Page Builder'
       localizable: true
+      allow_source: false
       sets:
         landing:
           display: Landing
           icon: addon-boxes-stack
           sets:
-            parking_information_sec_version:
-              display: 'Parking Information Sec Version'
-              fields:
-                -
-                  import: reusable_media_with_cta_sec_version
             image_button_carousel_set:
               display: 'Image button Carousel Set'
               fields:
@@ -145,8 +141,8 @@ fields:
               fields:
                 -
                   import: reusable_hero
-            about:
-              display: About
+            ctav1:
+              display: ctav1
               icon: text-box-multiple
               fields:
                 -
@@ -441,6 +437,59 @@ fields:
                       - 'mimes:png,jpg,jpeg,gif,webp'
                 -
                   import: icon_boxes
+            cta_grid_sport:
+              display: 'Cta grid sport'
+              fields:
+                -
+                  import: background_design
+                -
+                  handle: grid_version
+                  field:
+                    options:
+                      -
+                        key: v1
+                        value: null
+                      -
+                        key: v2
+                        value: null
+                      -
+                        key: v3
+                        value: null
+                    type: button_group
+                    display: 'Grid Version'
+                    localizable: false
+                    default: v1
+                -
+                  handle: grid_heading
+                  field:
+                    buttons:
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - bold
+                      - color
+                      - horizontalrule
+                      - code
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Grid Heading'
+                    localizable: false
+                -
+                  handle: grid_set_replicator
+                  field:
+                    type: replicator
+                    display: 'Grid Set Replicator'
+                    localizable: false
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          grid_set:
+                            display: 'Grid Set'
+                            fields:
+                              -
+                                import: images_grid_and_buttons_sport
             cta_grid:
               display: 'Cta grid'
               fields:
@@ -505,6 +554,84 @@ fields:
                     localizable: false
                     collections:
                       - speakers
+            social_media_sec:
+              display: 'Social media Sec'
+              fields:
+                -
+                  import: social_media_section
+            heading_and_icon_box:
+              display: 'Heading And  Icon Box'
+              fields:
+                -
+                  import: background_design
+                -
+                  import: heading_group_component
+                -
+                  handle: icon_box_rep
+                  field:
+                    type: replicator
+                    display: 'Icon Box Rep'
+                    localizable: false
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          icon_box_set:
+                            display: 'Icon Box Set'
+                            fields:
+                              -
+                                handle: icon_image
+                                field:
+                                  container: assets
+                                  type: assets
+                                  display: 'Icon Image'
+                                  localizable: false
+                              -
+                                handle: icon_box_heading
+                                field:
+                                  buttons:
+                                    - h2
+                                    - h3
+                                    - color
+                                    - h1
+                                    - h4
+                                    - h5
+                                    - h6
+                                    - bold
+                                  remove_empty_nodes: false
+                                  type: bard
+                                  display: 'Icon Box Heading'
+                                  localizable: false
+                              -
+                                handle: icon_box_description
+                                field:
+                                  buttons:
+                                    - h2
+                                    - h3
+                                    - color
+                                    - h1
+                                    - h4
+                                    - h5
+                                    - h6
+                                  remove_empty_nodes: false
+                                  type: bard
+                                  display: 'Icon Box Description'
+                                  localizable: false
+            ctav2:
+              display: ctav2
+              fields:
+                -
+                  import: reusable_media_with_ctav2
+            pdf_viewer:
+              display: 'PDF Viewer'
+              fields:
+                -
+                  import: pdf_slider
+            video_sec:
+              display: 'Video Sec'
+              fields:
+                -
+                  import: video_section
         forms:
           display: Forms
           icon: form-drop-down-menu
