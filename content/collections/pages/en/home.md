@@ -2,7 +2,8 @@
 id: home
 blueprint: pages
 title: Home
-template: home
+template: default
+layout: layout_no_heading
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -15,6 +16,14 @@ page_builder:
         type: reusable_block
         entry:
           - d4eb8f45-e6bc-4ac9-bad5-9039dd4a9eef
+  -
+    type: set
+    attrs:
+      id: mj9nsz85
+      values:
+        type: reusable_block
+        entry:
+          - 68c321bc-fcbf-4e0d-9c33-f7118372d5ba
   -
     type: set
     attrs:
@@ -78,13 +87,7 @@ page_builder:
           -
             id: miecfbhh
             number_of_stars: '0'
-            grid_heading:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Long Distance'
+            grid_heading: '<p>Long Distance</p>'
             type: grid_set
             enabled: true
             grid_images: features/challenge1-(1).png
@@ -93,33 +96,62 @@ page_builder:
                 id: miwry2f3
                 sport_icon:
                   - svgs/swimming.svg
-                sport_title: askasjdh
-                sport_distance: dslfkhjsd
+                sport_title: SWIM
+                sport_distance: 3.8KM
                 type: sport
                 enabled: true
+              -
+                id: mj9wsspi
+                sport_title: BIKE
+                sport_distance: 180KM
+                type: sport
+                enabled: true
+                sport_icon:
+                  - svgs/tricycle.svg
+              -
+                id: mj9wt14f
+                sport_title: RUN
+                sport_distance: 42.2KM
+                type: sport
+                enabled: true
+                sport_icon:
+                  - svgs/runner-on-the-start.svg
           -
             id: miecfm02
             number_of_stars: '0'
-            grid_heading:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Middle Distance'
+            grid_heading: '<p>Middle Distance</p>'
             type: grid_set
             enabled: true
             grid_images: features/challenge1-(1).png
+            sport_rep:
+              -
+                id: mj9wtx4j
+                sport_title: SWIM
+                sport_distance: 1.9KM
+                type: sport
+                enabled: true
+                sport_icon:
+                  - svgs/swimming.svg
+              -
+                id: mj9wu9y5
+                sport_title: BIKE
+                sport_distance: 96KM
+                type: sport
+                enabled: true
+                sport_icon:
+                  - svgs/tricycle.svg
+              -
+                id: mj9wuh37
+                sport_title: RUN
+                sport_distance: 21.1KM
+                type: sport
+                enabled: true
+                sport_icon:
+                  - svgs/runner-on-the-start.svg
           -
             id: miecfunz
             number_of_stars: '0'
-            grid_heading:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Olympic Distance'
+            grid_heading: '<p>Olympic Distance</p>'
             type: grid_set
             enabled: true
             grid_images: features/challenge1-(1).png
@@ -129,35 +161,29 @@ page_builder:
                 sport_icon:
                   - svgs/swimming.svg
                 sport_title: Swim
-                sport_distance: 3.8KM
+                sport_distance: 1.5KM
                 type: sport
                 enabled: true
               -
                 id: mieekfo0
                 sport_icon:
-                  - svgs/swimming.svg
-                sport_title: Swim
-                sport_distance: 3.8KM
+                  - svgs/tricycle.svg
+                sport_title: BIKE
+                sport_distance: 45KM
                 type: sport
                 enabled: true
               -
                 id: mihbgilf
                 sport_icon:
-                  - svgs/swimming.svg
-                sport_title: Swim
-                sport_distance: 3.8KM
+                  - svgs/runner-on-the-start.svg
+                sport_title: RUN
+                sport_distance: 10KM
                 type: sport
                 enabled: true
           -
             id: miecg1my
             number_of_stars: '0'
-            grid_heading:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Community Races'
+            grid_heading: '<p>Community Races</p>'
             type: grid_set
             enabled: true
             grid_images: features/challenge1-(1).png
@@ -166,10 +192,23 @@ page_builder:
                 id: miee9o91
                 sport_icon:
                   - svgs/swimming.svg
-                sport_title: Swim
-                sport_distance: 3.8KM
+                sport_title: SWIM
                 type: sport
                 enabled: true
+              -
+                id: mj9wvn9n
+                sport_title: BIKE
+                type: sport
+                enabled: true
+                sport_icon:
+                  - svgs/tricycle.svg
+              -
+                id: mj9wvp7e
+                sport_title: RUN
+                type: sport
+                enabled: true
+                sport_icon:
+                  - svgs/runner-on-the-start.svg
         image: vector-(5)-(1).png
   -
     type: set
@@ -258,14 +297,6 @@ page_builder:
             type: button_set
             enabled: true
             design: redgradient
-            button_size: fit
-          -
-            id: mifl2ll2
-            label: 'Learn More'
-            open_new_tab: false
-            type: button_set
-            enabled: true
-            design: whiterounded
             button_size: fit
         background: bgimg
         image: backgrounds/image-(37).png
@@ -390,7 +421,7 @@ page_builder:
           -
             id: mifzortr
             icon_image:
-              - svgs/cruise-ship.svg
+              - mulled-wine.svg
             icon_box_heading:
               -
                 type: heading
@@ -424,7 +455,7 @@ page_builder:
           -
             id: mifzouo3
             icon_image:
-              - svgs/cruise-ship.svg
+              - runners-crossing-finish-line.svg
             icon_box_heading:
               -
                 type: heading
@@ -453,7 +484,7 @@ page_builder:
           -
             id: mifzowg5
             icon_image:
-              - svgs/cruise-ship.svg
+              - confetti.svg
             icon_box_heading:
               -
                 type: heading
@@ -523,6 +554,7 @@ page_builder:
             open_new_tab: false
             type: new_set
             enabled: true
+            button_size: fit
           -
             id: mifzzntz
             label: 'Book Now'
@@ -530,10 +562,7 @@ page_builder:
             open_new_tab: false
             type: new_set
             enabled: true
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
+            button_size: fit
 header_scripts:
   code: null
   mode: htmlmixed
@@ -544,7 +573,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1765175599
+updated_at: 1765970696
 fine_seo_image: global-food-week-logo-coloured-(1).png
 reusable_popup: false
 fine_seo_title: 'Challenge Sir Bani Yas'

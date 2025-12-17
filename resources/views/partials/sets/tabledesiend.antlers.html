@@ -1,0 +1,166 @@
+{{?
+  $blockStyles = [
+    'primary' => 'bg-primary-600 text-white kinda-dark',
+    'secondary' => 'bg-secondary-600 text-white kinda-dark',
+    'gray' => 'bg-gray-200 text-gray-800',
+    'lite-primary' => 'bg-primary-50 text-primary-600',
+    'lite-secondary' => 'bg-secondary-50 text-secondary-600',
+    'transparent' => 'bg-transparent text-gray-800',
+    'black' => 'bg-black text-white kinda-dark',
+    'white' => 'bg-white text-gray-900',
+    'blue' => 'bg-blue text-white kinda-dark',
+    'default' => 'bg-white text-gray-900',
+  ];
+  $blockPadding = [
+    'xlarge' => 'py-16 md:py-20 lg:py-24',
+    'large' => 'py-14 md:py-18 lg:py-22',
+    'medium' => 'py-10 md:py-14 lg:py-18',
+    'small' => 'py-8 md:py-12 lg:py-16',
+    'none' => 'py-0',
+  ];
+?}}
+
+<!-- Cabin Categories & Prices Section -->
+<section class="{{ blockPadding[{style_config:padding ?? 'medium'}] }} {{ blockStyles[{style_config:color ?? 'default'}] }} relative overflow-hidden">
+  
+  <!-- Decorative Background Elements -->
+  <div class="absolute left-0 top-1/4 w-64 h-64 bg-blue/10 rounded-full blur-3xl -translate-x-1/2"></div>
+  <div class="absolute right-0 bottom-1/4 w-64 h-64 bg-blue/10 rounded-full blur-3xl translate-x-1/2"></div>
+
+  <div class="adnec-container relative z-10">
+    
+    <!-- Section Header -->
+    {{ if heading }}
+    <div class="text-center mb-12" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+        {{ heading }}
+      </h2>
+      {{ if subheading }}
+      <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+        {{ subheading }}
+      </p>
+      {{ /if }}
+    </div>
+    {{ /if }}
+
+    <!-- Table Container -->
+    <div class="max-w-5xl mx-auto" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+      
+      <!-- Desktop Table -->
+      <div class="hidden md:block bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+        
+        <!-- Table Header -->
+        <div class="bg-blue text-white">
+          <div class="grid {{ table_has_price ? 'grid-cols-2' : 'grid-cols-1' }} gap-4 px-8 py-6">
+            <div class="text-lg font-semibold">
+              {{ table_header_column_1 ?? 'Category' }}
+            </div>
+            {{ if table_has_price }}
+            <div class="text-lg font-semibold text-right">
+              {{ table_header_column_2 ?? 'Price' }}
+            </div>
+            {{ /if }}
+          </div>
+        </div>
+
+        <!-- Table Rows -->
+        <div class="divide-y divide-gray-100">
+          {{ table_rows }}
+          <div class="grid {{ ^table_has_price ? 'grid-cols-2' : 'grid-cols-1' }} gap-4 px-8 py-5 hover:bg-gray-50 transition-colors duration-200">
+            <div class="flex items-center">
+              <div>
+                <p class="text-base font-medium text-gray-900">{{ row_title }}</p>
+                {{ if row_description }}
+                <p class="text-sm text-gray-600 mt-1">{{ row_description }}</p>
+                {{ /if }}
+              </div>
+            </div>
+            {{ if ^table_has_price }}
+            <div class="flex items-center justify-end">
+              <span class="text-lg font-semibold text-blue">{{ row_price }}</span>
+            </div>
+            {{ /if }}
+          </div>
+          {{ /table_rows }}
+        </div>
+
+        <!-- Table Footer Note -->
+        {{ if table_footer_note }}
+        <div class="bg-gray-50 px-8 py-4 border-t border-gray-100">
+          <p class="text-sm text-gray-600 text-center">{{ table_footer_note }}</p>
+        </div>
+        {{ /if }}
+      </div>
+
+      <!-- Mobile Card View -->
+      <div class="md:hidden space-y-4">
+        {{ table_rows }}
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-200">
+          <div class="bg-blue text-white px-6 py-4">
+            <h3 class="text-lg font-semibold">{{ row_title }}</h3>
+          </div>
+          <div class="px-6 py-4 space-y-3">
+            {{ if row_description }}
+            <p class="text-sm text-gray-600">{{ row_description }}</p>
+            {{ /if }}
+            {{ if ^table_has_price }}
+            <div class="flex justify-between items-center pt-2 border-t border-gray-100">
+              <span class="text-sm font-medium text-gray-700">{{ ^table_header_column_2 ?? 'Price' }}</span>
+              <span class="text-xl font-bold text-blue">{{ row_price }}</span>
+            </div>
+            {{ /if }}
+          </div>
+        </div>
+        {{ /table_rows }}
+        
+        <!-- Mobile Footer Note -->
+        {{ if table_footer_note }}
+        <div class="bg-white rounded-xl px-6 py-4 border border-gray-100 mt-6">
+          <p class="text-sm text-gray-600 text-center">{{ table_footer_note }}</p>
+        </div>
+        {{ /if }}
+      </div>
+
+    </div>
+
+    <!-- Optional CTA Section -->
+    {{ if cta_actions }}
+    <div class="text-center mt-12" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        {{ cta_actions }}
+          {{ partial:shared/button }}
+        {{ /cta_actions }}
+      </div>
+    </div>
+    {{ /if }}
+
+  </div>
+</section>
+
+<style>
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.kinda-dark h1,
+.kinda-dark h2,
+.kinda-dark h3,
+.kinda-dark h4,
+.kinda-dark h5,
+.kinda-dark h6,
+.kinda-dark p,
+.kinda-dark span {
+  color: white !important;
+}
+</style>

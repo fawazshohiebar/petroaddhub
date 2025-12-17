@@ -38,6 +38,9 @@ fields:
           key: primary
           value: Primary
         -
+          key: blue
+          value: blue
+        -
           key: secondary
           value: Secondary
         -

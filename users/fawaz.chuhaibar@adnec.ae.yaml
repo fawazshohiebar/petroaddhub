@@ -55,6 +55,10 @@ preferences:
               'null': null
     reusables:
       after_save: continue_editing
+    speakers:
+      per_page: 500
   assets:
     assets:
       per_page: 500
+    collaterals:
+      per_page: 100

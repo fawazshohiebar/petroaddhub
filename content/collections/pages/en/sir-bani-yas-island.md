@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1765263225
+updated_at: 1765787314
 page_builder:
   -
     type: set
@@ -147,6 +147,7 @@ page_builder:
                 button_size: fit
                 type: button_set
                 enabled: true
+                link: 'entry::a57dd83b-fdd3-4339-bcc3-ca56d7744cfb'
             type: grid_set
             enabled: true
             grid_images: challenge-sir-bin-yas/abu-dhabi-city-guide-feature.jpg
@@ -194,12 +195,9 @@ page_builder:
                 button_size: fit
                 type: button_set
                 enabled: true
+                link: 'entry::9901b9db-52d6-4468-924c-ce11c06f9bfa'
             type: grid_set
             enabled: true
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
 fine_seo_title: 'Sir Bani Yas Island'
 fine_seo_preview: 'Sir Bani Yas Island'
 ---

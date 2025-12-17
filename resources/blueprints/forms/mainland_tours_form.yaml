@@ -1,0 +1,114 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: first_name
+            field:
+              autocomplete: given-name
+              type: text
+              display: 'First Name'
+              localizable: false
+              width: 50
+          -
+            handle: last_name
+            field:
+              autocomplete: family-name
+              type: text
+              display: 'Last Name'
+              localizable: false
+              width: 50
+          -
+            handle: email
+            field:
+              input_type: email
+              autocomplete: email
+              type: text
+              display: Email
+              localizable: false
+              width: 50
+          -
+            handle: mobile
+            field:
+              input_type: tel
+              autocomplete: tel
+              type: text
+              display: Mobile
+              localizable: false
+              width: 50
+          -
+            handle: abu_dhabi_tours
+            field:
+              options:
+                -
+                  key: 'Abu Dhabi City Tour ( Half Day)'
+                  value: null
+                -
+                  key: 'Louvre Abu Dhabi ( Full Day)'
+                  value: null
+                -
+                  key: 'Abu Dhabi Desert Safari with BBQ Dinner'
+                  value: null
+                -
+                  key: 'Qasr Al Watan'
+                  value: null
+                -
+                  key: 'Ferrari World Abu Dhabi'
+                  value: null
+                -
+                  key: 'SeaWorld Abu Dhabi'
+                  value: null
+                -
+                  key: 'Yas Waterworld in Abu Dhabi'
+                  value: null
+                -
+                  key: 'Full Day Al Ain City Tour with Lunch'
+                  value: null
+                -
+                  key: 'Not Interested'
+                  value: null
+              type: checkboxes
+              display: 'Abu Dhabi Tours'
+              localizable: false
+              width: 50
+          -
+            handle: dubai_toursrequired
+            field:
+              options:
+                -
+                  key: 'Dubai City Tour ( Half Day)'
+                  value: null
+                -
+                  key: 'Dubai City Tour ( Full Day)'
+                  value: null
+                -
+                  key: 'Burj Khalifa'
+                  value: null
+                -
+                  key: 'Dubai Aquarium and Underwater Zoo'
+                  value: null
+                -
+                  key: 'Dubai Desert Safari with BBQ Dinner'
+                  value: null
+                -
+                  key: 'Marina Dinner Cruise'
+                  value: null
+                -
+                  key: 'Not Interested'
+                  value: null
+              type: checkboxes
+              display: 'Dubai Tours'
+              localizable: false
+              width: 50
+          -
+            handle: comments
+            field:
+              type: textarea
+              display: Comments
+              instructions: "Please let us know what's on your mind. Have a question for us? Ask away."
+              localizable: false
+          -
+            handle: turnstile_token
+            field: basics.turnstile_token

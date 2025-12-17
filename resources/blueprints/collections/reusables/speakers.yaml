@@ -14,7 +14,7 @@ tabs:
               validate:
                 - required
           -
-            handle: speakers
+            handle: Speakers
             field:
               collections:
                 - speakers

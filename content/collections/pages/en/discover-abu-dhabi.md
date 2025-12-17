@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1765261340
+updated_at: 1765444172
 page_builder:
   -
     type: set
@@ -166,9 +166,19 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'For visa requirements, refer to this link: Getting a visa for Abu Dhabi'
+                    text: 'For visa requirements, refer to this link: '
             type: grid_item
             enabled: true
+            icon_or_button: buttonlist
+            button_list:
+              -
+                id: mj17ur8q
+                link: 'entry::9ac674db-6f30-449e-a907-bf7e97055284'
+                label: 'Getting a visa for Abu Dhabi'
+                design: redgradient
+                open_new_tab: false
+                type: button_set
+                enabled: true
         buttons:
           -
             id: misruykg

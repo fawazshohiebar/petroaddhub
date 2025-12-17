@@ -1,0 +1,87 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: first_name
+            field:
+              autocomplete: given-name
+              type: text
+              display: 'First Name'
+              localizable: false
+              width: 50
+          -
+            handle: last_name
+            field:
+              autocomplete: family-name
+              type: text
+              display: 'Last Name'
+              localizable: false
+              width: 50
+          -
+            handle: email
+            field:
+              input_type: email
+              autocomplete: email
+              type: text
+              display: Email
+              localizable: false
+              width: 50
+          -
+            handle: mobile
+            field:
+              input_type: tel
+              autocomplete: tel
+              type: text
+              display: Mobile
+              localizable: false
+              width: 50
+          -
+            handle: island_excursions
+            field:
+              options:
+                -
+                  key: 'Wild Safari Drive'
+                  value: null
+                -
+                  key: 'Nature Walk Experience'
+                  value: null
+                -
+                  key: 'Island Nature and Wildlife Safari Drive in Game Viewer Truck'
+                  value: null
+                -
+                  key: 'Island Biking (Cycle)'
+                  value: null
+                -
+                  key: 'Kayaking Experience: Single'
+                  value: null
+                -
+                  key: 'Kayaking Experience: Double'
+                  value: null
+                -
+                  key: 'Stand Up Paddle Boarding'
+                  value: null
+                -
+                  key: 'Water Bike Experience'
+                  value: null
+                -
+                  key: 'Hydro Bike Experience: 2- Seater'
+                  value: null
+                -
+                  key: 'Swan Boat Experience: 4-Seater'
+                  value: null
+              type: checkboxes
+              display: 'Island Excursions'
+              localizable: false
+          -
+            handle: comments
+            field:
+              type: textarea
+              display: Comments
+              instructions: "Please let us know what's on your mind. Have a question for us? Ask away."
+              localizable: false
+          -
+            handle: turnstile_token
+            field: basics.turnstile_token

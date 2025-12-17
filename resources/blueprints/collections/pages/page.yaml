@@ -14,16 +14,6 @@ tabs:
               validate:
                 - required
           -
-            handle: feature_banner_image
-            field: basics.image
-            config:
-              display: 'Feature Banner Image'
-              validate:
-                - image
-                - 'max_filesize:9216'
-                - 'mimes:png,jpg,jpeg,gif,webp'
-              instructions: 'Used for inner pages behind the title'
-          -
             handle: page_builder
             field: basics.page_builder
             config:
@@ -49,8 +39,18 @@ tabs:
               listable: false
               localizable: true
           -
-            handle: template
+            handle: layout
             field: basics.template
+            config:
+              options:
+                -
+                  key: layout
+                  value: 'Inner Layout'
+                -
+                  key: layout_no_heading
+                  value: 'Home Layout'
+              display: Layout
+              default: layout
           -
             handle: reusable_popup
             field:
@@ -67,6 +67,9 @@ tabs:
               localizable: false
               if:
                 reusable_popup: 'equals true'
+          -
+            handle: template
+            field: basics.template
   fineSeo:
     display: 'Fine SEO'
     sections:

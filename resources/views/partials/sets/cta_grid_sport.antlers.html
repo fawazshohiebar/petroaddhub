@@ -3,7 +3,10 @@
         <div class="adnec-container py-10">
 
        {{ if grid_heading}}
-            <div class="custom pb-10 text-center">{{grid_heading}}</div>
+            <div class="custom pb-10 text-center">{{grid_heading    | replace('<p></p>', '<br>')
+    | replace('<p>&nbsp;</p>', '<br>')
+    | replace('<p><br></p>', '<br>')
+    | raw}}</div>
             {{/if}}
 
             <div class="grid gap-5 

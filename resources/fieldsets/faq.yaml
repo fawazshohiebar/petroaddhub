@@ -1,0 +1,46 @@
+title: Faq
+fields:
+  -
+    handle: faq_title
+    field:
+      remove_empty_nodes: false
+      type: bard
+      display: 'Faq Title'
+      localizable: false
+      buttons:
+        - h2
+        - h3
+        - bold
+        - orderedlist
+        - anchor
+        - image
+        - table
+        - color
+        - h1
+        - h4
+  -
+    handle: faq_rep
+    field:
+      type: replicator
+      display: 'Faq Rep'
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: question
+                  field:
+                    type: text
+                    display: Question
+                    localizable: false
+                -
+                  handle: answer
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Answer
+                    localizable: false

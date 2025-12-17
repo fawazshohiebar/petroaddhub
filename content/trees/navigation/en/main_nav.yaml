@@ -1,33 +1,86 @@
 tree:
   -
-    id: 70307046-87d8-4280-905b-bd856e252beb
+    id: 6a9b4c74-472a-46db-9df0-d0a67202db26
     title: 'Athlete Info'
     children:
       -
-        id: 1a72a4e6-e268-42ae-b2a4-279b0f07465b
-        title: 'Exhibitor List'
-        url: 'https://exhibitors.globalfoodweek.ae/global-food-week-2025/Exhibitor'
+        id: c3a01734-6ea0-483b-aaa6-a11de03ee083
+        entry: 293a92b7-6802-4101-b552-98aab113b7fd
       -
-        id: 17e6116c-43cc-431e-9008-34d5f37321d5
-        title: 'Interactive Map'
-        url: 'https://map.globalfoodweek.ae/?mapId=dX6zGKA0a7jNW'
+        id: d0ebbc2b-9f79-4484-ba15-de98446b299c
+        entry: b6a9aa3a-0057-4316-b627-dc89df32b2f4
+      -
+        id: aca0aa3e-c813-41bd-b8fa-b665a4bf4711
+        entry: 3ca37afb-8a18-4994-8460-627d9cd48a78
+      -
+        id: 0c0c3a15-866a-4acf-9e60-880580d3a317
+        entry: a5300c6c-be86-4fc7-a53a-6f4e2106bc7f
+      -
+        id: a1f1eaa3-3823-4185-827e-3e8b3596e33f
+        entry: 42341a4e-2c17-4124-938f-c8155fa794a5
+      -
+        id: a2a2f5b5-e4d1-4b74-835e-1e69486034be
+        entry: 96bd3400-787a-44c4-8e66-78874cf6a826
+      -
+        id: 6e874adf-c3f1-479f-9453-d55d952ffb14
+        entry: c8c8fa3a-9c2f-489e-9d16-4f419e325c64
   -
-    id: 9fdcb5f9-b730-4c15-9264-d64cc314ff74
+    id: 0aa138a5-52dd-4e32-a0a1-ae31a133d5a2
     title: Spectator
+    children:
+      -
+        id: 20692e19-c7fe-4253-8355-ef3a944650f0
+        entry: df9b5a02-9de1-4c84-9c19-a674c44b9b80
+      -
+        id: 50f6e59f-0715-49d5-af70-1b41d0c50d2c
+        entry: 2a70f368-3d6a-45a2-a1b9-180319c73fe0
+      -
+        id: 546efd94-67b9-471b-8a58-86535dff2b82
+        entry: 36e7bd6b-477a-4135-8611-13dc14492560
+      -
+        id: d2260f6e-5779-4a77-b4d9-e7ce49499fb4
+        entry: a57dd83b-fdd3-4339-bcc3-ca56d7744cfb
+      -
+        id: 423ae368-414d-4888-9d65-f9685ec7cf22
+        entry: bd0baead-3a68-40ca-8dfc-aeab76e319e2
+      -
+        id: fb1a315a-72b4-446d-8858-9d28825aa12a
+        entry: 9ac674db-6f30-449e-a907-bf7e97055284
+      -
+        id: 9ebfc144-6b4b-48fd-9921-1a1978945599
+        entry: 9901b9db-52d6-4468-924c-ce11c06f9bfa
+      -
+        id: c53da313-689a-461b-92ff-f131515e09ff
+        entry: edde7465-0097-4b93-9ca6-3177e2361120
   -
-    id: c8d6b9fa-e3bb-49e3-920a-1fd39e95ea3f
-    title: Partners
+    id: df3885dc-0089-4a3d-bc7b-ad3a3bec051c
+    entry: 7a400399-db20-448a-8f0c-afa2f844663e
   -
-    id: 085df7f7-9a65-45bc-b97e-02d2c0f18d62
+    id: 030a1151-5383-45f3-9761-bf2a7d9b4912
     title: 'Cruise Ship'
+    children:
+      -
+        id: e93c84f1-bda8-42cc-8e65-daec8017b6c1
+        entry: 39b5ad90-5e18-46ec-8ff8-34db0178ebd5
+      -
+        id: 2286cc94-d25f-4ba8-a74f-2d280cdfa16e
+        entry: 356adf90-fb66-4c93-8ebd-e780a07a16e9
   -
-    id: f22b4d21-6403-43c7-8bf1-10dc8887c1dc
+    id: 25c88e28-df4f-4b0c-874c-d95de3b3fc9a
     title: '2025 Edition'
     children:
       -
-        id: 0a4043af-209d-4c41-95c0-60eab5be7039
-        title: 'Media Registration'
-        url: 'https://registration.xporience.com/registration/?badge_name=media&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTQzMDQxODgsImRhdGEiOnsiZXZlbnQiOiIxNyIsImZvcm0iOiIxMDciLCJsYW5nIjoiZW4ifX0._703pf69jiv7Z3vXzdYkE1Xl2n3rZU3XwJ_kHlr-qc0'
+        id: afb878a2-8706-4da9-949d-232814572d7f
+        entry: cc5ab587-382b-4f8a-89ff-96e08dff7a96
+      -
+        id: f2a78cf2-229f-4066-a98e-ede4882d7ad6
+        entry: 2b6e70aa-075b-4ed5-828c-829b048ba0e2
+      -
+        id: fe2f2c22-3798-40b7-b5d8-246e9e536d8e
+        entry: 486f39d8-f045-45d9-955c-3ef61f9e8750
   -
-    id: 1abc2488-d516-476b-be46-64fbd9ff2875
-    title: FAQs
+    id: 2bffb35d-fa46-47a4-b97b-621431fd8ee4
+    entry: 4f4f2d66-0516-44cf-a601-6d8ab15bd9bb
+  -
+    id: 8e233485-167c-48a3-9816-f9d6450319a1
+    entry: ebbe4797-01fc-4cf0-bf10-b752544bb3b9

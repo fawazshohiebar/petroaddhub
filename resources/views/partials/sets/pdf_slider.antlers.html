@@ -6,7 +6,7 @@
             class="flex flex-col gap-2 sticky top-30 h-fit bg-white rounded-[5px] overflow-hidden  shadow-[0_14px_36px_rgba(15,23,42,0.10)]   p-5">
             {{ pdf_replicator }}
                 <div class="text-primary cursor-pointer  transition-colors pdf-tab  p-2 
-     border-b-1 border-dashed border-[#D1D1D1]" data-target="{{ pdf_title | strip_tags | lower | replace:'-' }}">
+     border-b-1 border-dashed border-[#D1D1D1]" data-target="{{ pdf_title | strip_tags | lower | regex_replace:'[^a-z0-9\s]':'' | replace:' ':'_' }}">
                     {{ pdf_title }}
                 </div>
             {{ /pdf_replicator }}
@@ -17,7 +17,7 @@
         <div class="flex flex-col">
 
             {{ pdf_replicator }}
-                <div id="{{ pdf_title | strip_tags | lower | replace:'-' }}"
+                <div id="{{ pdf_title | strip_tags | lower | regex_replace:'[^a-z0-9\s]':'' | replace:' ':'_' }}"
                     class="pdf-content {{ if index == 0 }}block{{ else }}hidden{{ /if }}">
                     {{ pdf_file }}
                         <a href="{{ url }}" target="blank">

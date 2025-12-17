@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1765268304
+updated_at: 1765444285
 page_builder:
   -
     type: set
@@ -24,7 +24,7 @@ page_builder:
       values:
         type: heading_comp
         background: bgcolor
-        background_color: gradient
+        background_color: light-accent
         design: centered
         heading:
           -
@@ -40,7 +40,7 @@ page_builder:
                   -
                     type: textColor
                     attrs:
-                      color: '#fff'
+                      color: redgrad
                 text: 'On Arrival Visas'
         description:
           -
@@ -52,7 +52,7 @@ page_builder:
                   -
                     type: textColor
                     attrs:
-                      color: '#fff'
+                      color: '#000000'
                 text: 'A visa is required to enter the UAE except for Nationals (Citizens) from the following countries that will be issued entry permits upon arrival at the airport in the UAE.'
   -
     type: paragraph
@@ -1243,7 +1243,7 @@ page_builder:
       values:
         type: heading_comp
         background: bgcolor
-        background_color: light-secondary
+        background_color: light-accent
         design: centered
         heading:
           -
@@ -1289,6 +1289,8 @@ page_builder:
             open_new_tab: false
             type: new_set
             enabled: true
+            link: 'https://u.ae/en/information-and-services/visa-and-emirates-id/do-you-need-an-entry-permit-or-a-visa-to-enter-the-uae'
+            button_size: fit
 fine_seo_title: 'Visa Information'
 fine_seo_preview: 'Visa Information'
 ---

@@ -10,6 +10,13 @@ replicator_media_partners:
     title: 'Presented By'
     type: new_set
     enabled: true
+  -
+    id: mj6pqhlt
+    logo:
+      - partners/adsc-logo.png
+    title: 'Presented By'
+    type: new_set
+    enabled: true
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1765279684
+updated_at: 1765777365
 ---

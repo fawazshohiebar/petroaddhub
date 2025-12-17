@@ -50,5 +50,11 @@ fields:
                 -
                   handle: image
                   field: basics.image
+                  config:
+                    validate:
+                      - image
+                      - 'max_filesize:9216'
+                      - 'mimes:png,jpg,jpeg,gif,webp,svg'
+                    folder: challenge-sir-bin-yas
   -
     import: background_design

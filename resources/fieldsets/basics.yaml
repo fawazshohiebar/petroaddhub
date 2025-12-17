@@ -632,6 +632,37 @@ fields:
               fields:
                 -
                   import: video_section
+            faq_section:
+              display: 'Faq Section'
+              fields:
+                -
+                  import: faq
+            table_design:
+              display: 'Table Design'
+              fields:
+                -
+                  import: background_design
+                -
+                  handle: table_fields
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Table Fields'
+                    localizable: false
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - image
+                      - table
+                      - h1
+                      - h4
+                      - alignleft
+                      - aligncenter
+                      - alignright
         forms:
           display: Forms
           icon: form-drop-down-menu
@@ -741,10 +772,20 @@ fields:
                     display: Image
                     localizable: false
                 -
-                  handle: width
+                  handle: image_width
                   field:
-                    type: text
-                    display: Width
+                    options:
+                      -
+                        key: md
+                        value: small
+                      -
+                        key: 1/2
+                        value: medium
+                      -
+                        key: full
+                        value: full
+                    type: select
+                    display: 'Image Width'
                     localizable: false
                 -
                   handle: align_image
@@ -1519,3 +1560,9 @@ fields:
       type: select
       display: Colors
       localizable: false
+  -
+    handle: date_picker
+    field:
+      type: date
+      display: 'Date Picker'
+      localizable: true

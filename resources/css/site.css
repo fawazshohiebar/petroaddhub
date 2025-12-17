@@ -18,10 +18,10 @@ html {
   --color-primary: #211551;
   --color-secondary: #F2F9FC;
   --color-accent: #f47832;
-  --color-blue: #2d4ea2;
+  --color-blue: #0F193C;
   --color-light-accent: #f7f7f7;
   --color-light-secondary: #f0f5ff;
-  --color-gradient : linear-gradient(275deg, #0F193C, #4C1333);
+  --color-gradient : linear-gradient(275deg, #0F193C, #dd001c);
 
 }
 
@@ -32,10 +32,10 @@ html {
   --color-primary: #211551;
   --color-secondary: #F2F9FC;
   --color-accent: #f47832;
-  --color-blue: #2d4ea2;
+  --color-blue: #0F193C;
   --color-light-accent: #f7f7f7;
   --color-light-secondary: #f0f5ff;
-  --color-gradient : linear-gradient(275deg, #0F193C, #4C1333);
+  --color-gradient : linear-gradient(275deg, #0F193C, #dd001c);
 
 
   --color-primary-50: #211551;
@@ -137,6 +137,10 @@ html {
     @apply mx-auto px-[5%] md:px-[5%] xl:px-[5%] max-w-[1536px] relative;
   }
 
+  .bg-back-gradient {
+    background: var(--color-gradient);
+  }
+
   .colored-text-secondary {
     @apply text-secondary-500;
   }
@@ -206,6 +210,21 @@ html {
 
 }
 
+/* body ul{
+      list-style: auto!important; 
+}
+li{
+  padding: 0 20px!important;
+  margin-left: 20px!important;
+}
+
+@media screen and (max-width: 600px) {
+li{
+  padding: 0 5px!important;
+  margin-left: 20px!important;
+}
+
+} */
 
 .customcolors{
    @apply  bg-gradient-to-r from-[#E2001A] to-[#0F193C] bg-clip-text text-transparent ;
@@ -273,4 +292,41 @@ html {
 .dropdown-checkbox:checked+.dropdown-label svg {
   transform: rotate(180deg);
   transition: transform .2s ease;
+}
+
+
+.table-containerr table {
+
+  background-color: white;
+}
+
+.table-containerr thead  th{
+    font-size: 18px;
+}
+
+
+.table-containerr table{
+  width: 100%;
+  border: 1px solid #333;
+  padding: 20px ;
+border-radius:20px;
+    border-collapse: initial!important
+    ;
+}
+
+.table-containerr table thead tr ,  .table-containerr table tbody tr  {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    width: 100% !important;
+    flex-direction: row;
+  padding: 10px 0px;
+  }
+
+
+  custm:lang(ar) {
+  direction: rtl;
+  text-align: right;
 }

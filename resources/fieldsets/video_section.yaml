@@ -8,3 +8,16 @@ fields:
       display: Video
       instructions: 'Can be URL or YouTube ID'
       localizable: false
+  -
+    handle: video_width
+    field:
+      options:
+        -
+          key: contained
+          value: null
+        -
+          key: full
+          value: null
+      type: select
+      display: 'Video Width'
+      localizable: false

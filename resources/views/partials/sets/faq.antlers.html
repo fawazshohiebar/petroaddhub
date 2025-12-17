@@ -1,0 +1,39 @@
+<section class=" bg-light-accent  w-full relative">
+    <div class=" xl:py-16 md:py-12 py-10   adnec-container">
+
+        <div class="   inline-flex flex-col justify-start items-start gap-2.5 w-full">
+            <div class="w-full   flex flex-col lg:gap-20  gap-15">
+                <div class=" flex flex-col gap-5 ">
+                   <div class="custom"> {{ faq_title }}</div>
+                    <section class="w-full ">
+                        {{ faq_rep }}
+                            <div class="relative border-b border-neutral-300 overflow-hidden">
+                                <input type="checkbox" id="{{ question }}" class="absolute opacity-0 z-[-1] peer" />
+
+                                <label for="{{ question }}"
+                                    class="cursor-pointer inline-flex justify-between items-center w-full py-6  transition-all duration-500 ease-in-out  peer-checked:pb-2">
+                                    <span class="text-blue-950 xl:text-2xl lg:text-xl text-lg font-medium leading-7">
+                                        {{ question }}
+                                    </span>
+
+                                    <!-- plus/minus -->
+                                    <div class="relative w-4 h-4 flex items-center justify-center">
+                                        <div class="absolute w-4 h-0.5 bg-blue-950"></div>
+                                        <div
+                                            class="ver absolute w-0.5 h-4 bg-blue-950 transition-opacity duration-300 ">
+                                        </div>
+                                    </div>
+                                </label>
+                                <div
+                                    class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out accordion-content peer-checked:max-h-[fit-content] peer-checked:pb-3  peer-checked:opacity-100 opacity-0">
+                                    <div class="text-neutral-500 md:text-lg text-sm font-normal leading-relaxed px-2">
+                                        {{ answer }}
+                                    </div>
+                                </div>
+                            </div>
+                        {{ /faq_rep }}
+                    </section>
+                </div>
+            </div>
+        </div>
+</section>

@@ -1,0 +1,45 @@
+title: 'Courses Grid'
+fields:
+  -
+    handle: courses_grid_set
+    field:
+      type: replicator
+      display: 'Courses Grid Set'
+      localizable: false
+      max_sets: 3
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            course_set:
+              display: 'Course Set'
+              fields:
+                -
+                  handle: courses_heading
+                  field:
+                    type: text
+                    display: 'Courses Heading'
+                    localizable: false
+                -
+                  handle: courses
+                  field:
+                    type: text
+                    display: 'Courses Description'
+                    localizable: false
+                -
+                  import: fancy_button
+  -
+    handle: youtube_thumbnail
+    field:
+      container: collaterals
+      type: assets
+      display: 'Youtube Thumbnail'
+      localizable: false
+  -
+    handle: video_link
+    field:
+      placeholder: YOUTUBE_ID
+      type: text
+      display: 'Video Link'
+      instructions: 'YouTube ID'
+      localizable: false

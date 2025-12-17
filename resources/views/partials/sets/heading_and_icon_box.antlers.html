@@ -1,4 +1,4 @@
-<div style="{{ if background == 'bgimg' }}background-image: url('{{ image.url }}');{{ else }}background-color: var(--color-{{ background_color }});{{ /if }}"
+<div style="{{ if background == 'bgimg' }}background-image: url('{{ image.url }}');{{ else }}background: var(--color-{{ background_color }});{{ /if }}"
     class="w-full bg-cover bg-center py-16 relative overflow-hidden">
     <!-- Background gradient overlay -->
 
@@ -30,7 +30,7 @@
 
                     <!-- Content -->
                     <div class="text-white">
-                        <h3 class="text-lg font-bold mb-3 leading-tight">{{ icon_box_heading }}</h3>
+                        <div class="text-lg custom font-bold mb-3 leading-tight">{{ icon_box_heading }}</div>
                         <p class="text-sm text-gray-300 leading-relaxed max-w-xs mx-auto">{{ icon_box_description }}
                         </p>
                     </div>
@@ -64,7 +64,7 @@
                     </div>
 
                     <div class="text-white">
-                        <h3 class="text-lg font-bold mb-3 leading-tight">{{ icon_box_heading }}</h3>
+                        <div class="text-lg custom font-bold mb-3 leading-tight">{{ icon_box_heading }}</div>
                         <p class="text-sm text-gray-300 leading-relaxed max-w-xs mx-auto">{{ icon_box_description }}</p>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                     </div>
 
                     <div class="text-white">
-                        <h3 class="text-lg font-bold mb-3 leading-tight">{{ icon_box_heading }}</h3>
+                        <div class="text-lg custom font-bold mb-3 leading-tight">{{ icon_box_heading }}</div>
                         <p class="text-sm text-gray-300 leading-relaxed max-w-xs mx-auto">{{ icon_box_description }}</p>
                     </div>
                 </div>

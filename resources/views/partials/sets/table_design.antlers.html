@@ -1,0 +1,6 @@
+    <div style="{{ if background == 'bgimg' }}background-size:cover; background-image: url('{{ image.url }}');{{ else }}background-color:var(--color-{{ background_color }}){{ /if }}"
+        class="w-full  bg-cover bg-center ">
+
+        <div class=" adnec-container flex py-10 flex-col gap-5 custom !text-sm md:!text-lg table-containerr">{{ table_fields }}</div>
+
+    </div>

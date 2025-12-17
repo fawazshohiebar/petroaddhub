@@ -1,4 +1,15 @@
-<div class="adnec-container py-10">
+<div class=" 
+
+{{if  {{video_width}} == "contained"}}
+adnec-container py-10
+{{elseif {{video_width}} == "full"}}
+w-full
+{{else}}
+adnec-container
+pt-34
+{{/if}}
+
+">
 {{ partial:partials/sets/video_section }}
 
 </div>

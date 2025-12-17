@@ -1,0 +1,58 @@
+---
+id: 3278f816-c3c3-4b97-bdd3-f3cb179c7519
+blueprint: professionals
+title: 'Proffesionals 2025'
+professionals:
+  - 7bca214d-8219-41de-9b50-af9ca85b8c09
+  - 397bc4f1-a674-4f6d-bab4-45f00b995ca1
+  - d3696504-dfdd-4bef-bb31-ce45e623795f
+  - af119c83-3a89-45a2-bfb8-69a3fb1c0288
+  - 0d2a3aa8-ede0-4c53-8b8d-d700018ca5bf
+  - be880ec9-b705-4a5b-9c03-49c9e95f7d53
+  - d7fa1972-3303-46a5-a6c4-7e3ff08ac0a3
+  - 8bc5ee71-17ac-4f85-b4ae-a635bd08907e
+  - ccb482d6-a9eb-4afa-92e2-2c422b55c6a1
+  - dca4c7a1-ae6c-4c51-97af-1620737b05f1
+  - adb6ecf2-6248-4f69-9433-f002b9ae10d9
+  - 9f26031d-a7f4-4088-be2d-7528f7b9febf
+  - 095ab4df-1e67-49d4-9d08-308174f4b8b5
+  - 54d7ff0a-4aef-4279-a36e-a677057b56e2
+  - 05fc0148-8879-4506-a79d-2cac2abc360c
+  - d03d5225-a7c3-4a30-acee-61698ee01fff
+  - 33ea2ff0-c5c6-4f90-b0c3-b7075ba11c21
+  - 918dc489-ad6e-450a-8a07-b72a697a77a7
+  - 9186b684-d2f2-4da5-aaf6-9e506745de12
+  - 1dd07641-a368-442d-a6ac-00059e9cb032
+  - 26a45773-5b72-452f-a0eb-e2382604c4a1
+  - b4dbbf3d-6cad-4d05-9d85-5ccb9f6cb255
+  - 5a0c62a2-938f-471d-9a33-3e5de3c01af1
+  - 5dede191-00d9-4b05-8b2e-cfb37a2db5a6
+  - eca03c0b-de7e-45f5-9b14-8c66cddbdafc
+  - 9266c064-06bf-4325-836b-77175cd5285e
+  - 1e5b161d-d112-4659-b67d-eb3d6919f098
+  - 381f13ee-5a53-47f6-8e7b-5e0eacb6e13f
+  - dd72f41f-46f9-4e37-8b2f-2f2b4eacafbd
+  - 9d40d2ee-d5a8-480e-aae5-3a5519cf7169
+  - 791b1b4d-d725-4636-bcb6-86fa341576de
+  - eab7354a-446a-40f2-8648-2363e73ffab7
+  - 3cf0c81f-4dc7-4bb6-b347-07f76fb34ee5
+  - 7e70280a-ede4-424b-8169-71bed862755a
+  - cb771fa9-ff9d-4532-b601-2f046e0bf320
+  - 80769f16-f3db-4eb9-9f2c-1d0e62f8d2ba
+  - 7e39a49f-2c51-46f8-888c-950461410c7c
+  - ad95edfc-caf5-45bc-adf6-6653fa649050
+  - 4afe368f-eb87-44d5-92db-ef70eb3dacea
+  - e3461bcc-7ff5-410c-8ae8-aa447aaab5bf
+  - e60f1b09-ebc2-48e3-bcff-18045c2040dd
+  - 60d4e00a-af02-4498-9640-a553f3821471
+  - c9ff19ff-32cc-4fc6-82c3-f664d0edd69d
+  - d24fb7b7-530b-42e4-96b4-a0164b373bc8
+  - 7bf1741f-8fd4-4215-9941-7bef7af30e48
+  - cf935d33-5f69-4f7e-8f0d-19078d9e84e7
+  - af9896f1-5dea-4ac6-a4bd-8d9d6115f71e
+  - 5f3c25a1-fedb-4f44-a1ab-3d7486b35c85
+  - 7a0fb357-ab71-4d9a-a389-9191ce70f9b5
+  - fbea884b-ee3f-4fa7-8771-1128383e71c3
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1765434788
+---

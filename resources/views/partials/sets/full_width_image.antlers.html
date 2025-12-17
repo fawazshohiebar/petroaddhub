@@ -3,7 +3,7 @@
 <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto ">
 
 {{image}}
-    <img class="w-full h-auto" src="{{url}}" alt="">
+    <img  class="mx-auto w-full {{ if  image_width == 'md' }}md:w-3xl{{ elseif image_width == '1/2' }}md:w-[80%]{{ elseif image_width == 'full' }}md:w-full{{ else }}md:w-auto{{ /if }} h-auto" src="{{url}}" alt="" >
 {{/image}}
 
 </div>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}" dir="{{ site:direction }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ partial:favicon /}}
+  {{ partial:fonts /}}
+  {{ partial:tracking_scripts_head /}}
+  {{ partial:additional_scripts_head /}}
+  {{ partial:meta /}}
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <link rel="stylesheet" href="https://use.typekit.net/slb6fmc.css">
+  {{ vite src="resources/js/site.js|resources/css/site.css" }}
+</head>
+<body class="leading-normal text-gray-800 antialiased {{ site:short_locale === 'ar' ? 'font-noto' : 'font-mont' }}">
+  {{ partial:tracking_scripts_body /}}
+  {{ partial:additional_scripts_body_start /}}
+
+  {{ partial:partials/header }}
+  <main class="relative">
+    {{ template_content }}
+  </main>
+
+  {{ partial:partials/footer }}
+
+  {{# {{ partial:partials/sets/ai_banner }} #}}
+
+  {{ partial:additional_scripts_body_end /}}
+</body>
+</html>

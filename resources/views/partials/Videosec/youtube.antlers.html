@@ -1,4 +1,4 @@
-<section class="relative xl:min-h-[725px] min-h-[50vw] overflow-hidden  pt-34 flex items-center ">    <!-- YouTube Video Background -->
+<section class="relative xl:min-h-[725px] min-h-[50vw] overflow-hidden   flex items-center ">    <!-- YouTube Video Background -->
   
         <div class="youtube-player" id="youtube-player" data-video-id="{{video}}" data-start-time="{{starting_time}}" data-end-time="{{ending_time}}">
             <!-- YouTube iframe will be inserted here -->
@@ -109,14 +109,11 @@
     }
     
     .youtube-player {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 101%;
-        min-height: 101%;
-        width: auto;
-        height: auto;
-        transform: translateX(-50%) translateY(-50%);
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
         z-index: 0;
     }
     
@@ -127,50 +124,6 @@
         width: 100%;
         height: 100%;
         pointer-events: none;
-    }
-    
-    @media (min-aspect-ratio: 16/9) {
-        .youtube-player iframe {
-
-            width: 100%;
-            height: 100%;
-            left: 0%;
-            top: 0%;
-        
-        }
-    }
-    
-    @media (max-aspect-ratio: 16/9) {
-        .youtube-player iframe {
-            width: 100%;
-            height: 100%;
-            left: 0%;
-            top: 0%;
-        }
-    }
-    
-    /* Additional mobile coverage */
-    @media (max-width: 768px) {
-        .youtube-player iframe {
-
-            width: 100%;
-            height: 100%;
-            left: 0%;
-            top: 0%;
-
-
-
-        }
-    }
-    
-    /* For very tall mobile screens */
-    @media (max-aspect-ratio: 9/16) {
-        .youtube-player iframe {
-            width: 100%;
-            height: 100%;
-            left: 0%;
-            top: 0%;
-        }
     }
 </style>
 

@@ -1,0 +1,109 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: check_in_date
+            field:
+              type: date
+              display: 'Check-in Date'
+              width: 50
+              localizable: false
+              validate:
+                - required
+                - date
+                - 'after:today'
+          -
+            handle: check_out_date
+            field:
+              type: date
+              display: 'Check-out Date'
+              width: 50
+              localizable: false
+              validate:
+                - required
+                - date
+                - 'after:check_in_date'
+          -
+            handle: number_of_rooms
+            field:
+              type: integer
+              display: 'Number of Rooms'
+              localizable: false
+              width: 50
+              validate:
+                - required
+                - integer
+                - 'min:1'
+          -
+            handle: number_of_guests
+            field:
+              type: integer
+              display: 'Number of Guests'
+              localizable: false
+              width: 50
+              validate:
+                - required
+                - integer
+                - 'min:1'
+          -
+            handle: first_name
+            field:
+              autocomplete: given-name
+              type: text
+              display: 'First Name'
+              localizable: false
+              width: 50
+              validate:
+                - required
+          -
+            handle: last_name
+            field:
+              autocomplete: family-name
+              type: text
+              display: 'Last Name'
+              localizable: false
+              width: 50
+              validate:
+                - required
+          -
+            handle: email_address
+            field:
+              input_type: email
+              autocomplete: email
+              type: text
+              display: 'Email Address'
+              localizable: false
+              width: 50
+              validate:
+                - required
+                - email
+          -
+            handle: mobile
+            field:
+              input_type: tel
+              autocomplete: tel
+              type: text
+              display: Mobile
+              localizable: false
+              width: 50
+              validate:
+                - required
+          -
+            handle: preferred_hotel_optional
+            field:
+              type: text
+              display: 'Preferred Hotel (Optional)'
+              localizable: false
+          -
+            handle: any_special_requests
+            field:
+              placeholder: "Please let us know what's on your mind. Have a question for us? Ask away."
+              type: textarea
+              display: 'Any Special Requests'
+              localizable: false
+          -
+            handle: turnstile_token
+            field: basics.turnstile_token

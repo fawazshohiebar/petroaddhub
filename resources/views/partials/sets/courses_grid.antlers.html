@@ -1,0 +1,231 @@
+<div class="py-10  " style="background:var(--color-gradient);">
+    <div class="grid gap-8 xl:gap-5 grid-cols-2 xl:grid-cols-4 adnec-container ">
+
+        {{ courses_grid_set }}
+            <div class="flex flex-col gap-5 grid-items-course relative">
+                <div class="text-white  xl:text-3xl md:text-2xl text-xl font-semibold">
+                    {{ courses_heading }}
+                </div>
+                <div class="text-white md:text-base  text-sm font-light">
+                    {{ courses }}
+                </div>
+                <div>
+                    {{ partial:partials/sets/fancy_button }}
+                </div>
+            </div>
+        {{ /courses_grid_set }}
+
+        <div>
+            {{ glide:youtube_thumbnail }}
+                <img src="{{ url }}" alt="" class=" object-cover w-full h-full sm:w-auto sm:h-auto cursor-pointer"
+                    onclick="openVideoPopup()">
+            {{ /glide:youtube_thumbnail }}
+            {{# <img src="aloha.png" alt="" class="cursor-pointer" onclick="openVideoPopup()"> #}}
+        </div>
+
+    </div>
+</div>
+
+<!-- Video Popup Modal -->
+<div id="videoPopup" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden items-center justify-center"
+    onclick="closeVideoPopup(event)">
+    <div class="relative w-full max-w-5xl mx-4" onclick="event.stopPropagation()">
+        <!-- Close Button -->
+        <button onclick="closeVideoPopup()"
+            class="absolute -top-12 right-0 text-white text-4xl hover:text-gray-300 transition z-10">
+            &times;
+        </button>
+
+        <!-- Video Container -->
+        <section class="relative xl:min-h-[725px] min-h-[50vw] overflow-hidden flex items-center bg-black rounded-lg">
+            <div class="youtube-playerpopupp xl:!h-[725px] !h-[50vw" id="popup-youtube-player"
+                data-video-id="{{ video_link }}" data-start-time="{{ starting_time }}" data-end-time="{{ ending_time }}">
+                <!-- YouTube iframe will be inserted here -->
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- Load YouTube IFrame API for timing control -->
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<script>
+    var startTime = 10;
+    var endTime = 60;
+    var videoId = '';
+    var player;
+    var timeCheckInterval;
+    var isPopupInitialized = false;
+
+    function openVideoPopup() {
+        var popup = document.getElementById('videoPopup');
+        popup.classList.remove('hidden');
+        popup.classList.add('flex');
+
+        if (!isPopupInitialized) {
+            initializeVideoPlayer();
+            isPopupInitialized = true;
+        }
+    }
+
+    function closeVideoPopup(event) {
+        if (event && event.target.id !== 'videoPopup') return;
+
+        var popup = document.getElementById('videoPopup');
+        popup.classList.add('hidden');
+        popup.classList.remove('flex');
+
+        // Stop the video
+        if (player && player.pauseVideo) {
+            player.pauseVideo();
+        }
+
+        // Clear the iframe
+        var playerElement = document.getElementById('popup-youtube-player');
+        if (playerElement) {
+            playerElement.innerHTML = '';
+        }
+
+        // Clear interval
+        if (timeCheckInterval) {
+            clearInterval(timeCheckInterval);
+        }
+
+        isPopupInitialized = false;
+    }
+
+    function initializeVideoPlayer() {
+        var playerElement = document.getElementById('popup-youtube-player');
+        if (!playerElement) return;
+
+        videoId = playerElement.getAttribute('data-video-id');
+        startTime = parseInt(playerElement.getAttribute('data-start-time')) || 10;
+        endTime = parseInt(playerElement.getAttribute('data-end-time')) || 60;
+
+        if (!videoId) return;
+
+        // Create the iframe
+        createIframe();
+
+        // Initialize YouTube API for timing control
+        if (window.YT && window.YT.Player) {
+            initTimingControl();
+        } else {
+            window.onYouTubeIframeAPIReady = initTimingControl;
+        }
+    }
+
+    function createIframe() {
+        var playerElement = document.getElementById('popup-youtube-player');
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId +
+            '?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=' + videoId + '&start=' + startTime +
+            '&end=' + endTime + '&enablejsapi=1');
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('title', 'YouTube video player');
+        iframe.setAttribute('allowfullscreen', '1');
+        iframe.setAttribute('id', 'youtube-iframe-popup');
+
+        playerElement.appendChild(iframe);
+    }
+
+    function initTimingControl() {
+        // Create a hidden player for timing control
+        var hiddenDiv = document.createElement('div');
+        hiddenDiv.style.display = 'none';
+        hiddenDiv.id = 'hidden-player-popup';
+        document.body.appendChild(hiddenDiv);
+
+        player = new YT.Player('hidden-player-popup', {
+            height: '1',
+            width: '1',
+            videoId: videoId,
+            playerVars: {
+                'autoplay': 1,
+                'controls': 0,
+                'mute': 1
+            },
+            events: {
+                'onReady': function(event) {
+                    event.target.seekTo(startTime);
+                    startTimeMonitoring();
+                }
+            }
+        });
+    }
+
+    function startTimeMonitoring() {
+        timeCheckInterval = setInterval(function() {
+            if (player && player.getCurrentTime) {
+                var currentTime = player.getCurrentTime();
+                if (currentTime >= endTime) {
+                    restartVideo();
+                }
+            }
+        }, 500);
+    }
+
+    function restartVideo() {
+        // Restart the visible iframe
+        var iframe = document.getElementById('youtube-iframe-popup');
+        if (iframe) {
+            var src = iframe.src;
+            iframe.src = src;
+        }
+
+        // Restart the hidden timing player
+        if (player && player.seekTo) {
+            player.seekTo(startTime);
+        }
+    }
+</script>
+
+<style>
+    .youtube-playerpopupp {
+        position: relative;
+        width: 100%;
+        /*padding-bottom: 56.25%;*/
+        height: 55vw;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    .youtube-playerpopupp iframe {
+        top: auto;
+        height: 100% !important;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+
+
+    .grid-items-course::after {
+        content: "";
+        position: absolute;
+        background: #ffffff45;
+        right: 10%;
+        top: 0px;
+        height: 80%;
+        display: block;
+        width: 1px;
+    }
+@media only screen and (max-width: 1279px) {
+
+.grid-items-course:nth-of-type(2)::after{
+    display: none;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+      .grid-items-course::after {
+        right: -15px;
+    }  
+}
+
+
+
+
+</style>

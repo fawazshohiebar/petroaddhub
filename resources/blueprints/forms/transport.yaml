@@ -1,0 +1,93 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: first_name
+            field:
+              autocomplete: given-name
+              type: text
+              display: 'First Name'
+              localizable: false
+              width: 50
+          -
+            handle: last_name
+            field:
+              autocomplete: family-name
+              type: text
+              display: 'Last Name'
+              localizable: false
+              width: 50
+          -
+            handle: email
+            field:
+              input_type: email
+              autocomplete: email
+              type: text
+              display: Email
+              localizable: false
+              width: 50
+          -
+            handle: mobile
+            field:
+              input_type: tel
+              autocomplete: tel
+              type: text
+              display: Mobile
+              localizable: false
+              width: 50
+          -
+            handle: trans
+            field:
+              options:
+                -
+                  key: 'Dubai International Airport to Dhannah Ferry Point'
+                  value: null
+                -
+                  key: 'Dhannah Ferry Point to Dubai International Airport'
+                  value: null
+                -
+                  key: 'Dubai Hotel to Dhannah Ferry Point'
+                  value: null
+                -
+                  key: 'Dhannah Ferry Point to Dubai Hotel'
+                  value: null
+                -
+                  key: 'Abu Dhabi International Airport to Dhannah Ferry Point'
+                  value: null
+                -
+                  key: 'Dhannah Ferry Point to Abu Dhabi International Airport'
+                  value: null
+                -
+                  key: 'Abu Dhabi Hotel to Dhannah Ferry Point'
+                  value: null
+                -
+                  key: 'Dhannah Ferry Point to Abu Dhabi Hotel'
+                  value: null
+              type: checkboxes
+              display: Transport
+              localizable: false
+          -
+            handle: comments
+            field:
+              type: textarea
+              display: Comments
+              instructions: "Please let us know what's on your mind. Have a question for us? Ask away."
+              localizable: false
+          -
+            handle: consent
+            field:
+              options:
+                -
+                  key: 'I agree to the privacy policy.'
+                  value: null
+              type: checkboxes
+              display: Consent
+              localizable: false
+              validate:
+                - required
+          -
+            handle: turnstile_token
+            field: basics.turnstile_token
