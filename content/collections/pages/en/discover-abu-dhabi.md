@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1765444172
+updated_at: 1765972533
 page_builder:
   -
     type: set
@@ -267,7 +267,7 @@ page_builder:
             enabled: true
           -
             id: mist0tyj
-            grid_images: cruise-ship-experience/louvre-abu-dhabi-768x576.jpg
+            grid_images: sheikh-zayed-grand-mosque.jpg
             number_of_stars: '0'
             grid_heading:
               -
@@ -282,14 +282,14 @@ page_builder:
                         type: textColor
                         attrs:
                           color: redgrad
-                    text: 'The Louvre Abu Dhabi'
+                    text: "Sheikh Zayed Grand Mosque\_"
             grid_text:
               -
                 type: paragraph
                 content:
                   -
                     type: text
-                    text: 'The Louvre Abu Dhabi is an art museum located on Saadiyat Island in Abu Dhabi, United Arab Emirates. It runs under an agreement between the UAE and France, signed in March 2007, that allows it to use the Louvre’s name until 2047, and has been described by the Louvre as “France’s largest cultural project abroad.'
+                    text: 'The Sheikh Zayed Grand Mosque is one of the world’s largest and uniquely showcases the connection between Islam and global cultures. Inspired by Sheikh Zayed’s vision, it blends styles from various Muslim civilizations. Designed by British, Italian, and Emirati architects, with influences from Turkey, Morocco, Pakistan, and Egypt, it welcomes 40,000 worshippers and visitors.'
             book_button:
               -
                 id: missyzf3
@@ -304,7 +304,7 @@ page_builder:
             enabled: true
           -
             id: mist0vw2
-            grid_images: cruise-ship-experience/louvre-abu-dhabi-768x576.jpg
+            grid_images: qasr-al-hosn-768x512.jpg
             number_of_stars: '0'
             grid_heading:
               -
@@ -319,14 +319,14 @@ page_builder:
                         type: textColor
                         attrs:
                           color: redgrad
-                    text: 'The Louvre Abu Dhabi'
+                    text: 'Qasr Al Hosn'
             grid_text:
               -
                 type: paragraph
                 content:
                   -
                     type: text
-                    text: 'The Louvre Abu Dhabi is an art museum located on Saadiyat Island in Abu Dhabi, United Arab Emirates. It runs under an agreement between the UAE and France, signed in March 2007, that allows it to use the Louvre’s name until 2047, and has been described by the Louvre as “France’s largest cultural project abroad.'
+                    text: 'Qasr Al Hosn is Abu Dhabi’s oldest and most important building, home to the city’s first permanent structure—the watchtower. Built in the 1790s to guard coastal trade routes, it became a museum in 2018 after over a decade of restoration. It traces Abu Dhabi’s journey from fishing village to global city, with artefacts from 6000 BC.'
             book_button:
               -
                 id: missyzf3
@@ -345,4 +345,5 @@ page_builder:
       textAlign: left
 fine_seo_title: 'Discover Abu Dhabi'
 fine_seo_preview: 'Discover Abu Dhabi'
+layout: layout
 ---

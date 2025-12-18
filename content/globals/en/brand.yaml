@@ -34,9 +34,11 @@ footer_sales:
     icon: envelope
     type: sales_set
     enabled: true
+    link: 'mailto:info@challenge-sirbaniyas.com'
   -
     id: mih2vsf6
     sales_text: '+97124063839'
     icon: phone
     type: sales_set
     enabled: true
+    link: 'tel:+97124063839'

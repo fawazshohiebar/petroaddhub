@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1765805463
+updated_at: 1765975304
 page_builder:
   -
     type: set
@@ -236,22 +236,22 @@ page_builder:
         pdf_replicator:
           -
             id: mix0700m
-            pdf_title: 'SWIM - 1.5km'
-            featured_image: 12_csby_swim_olympic-distance-1.5km-pdf-(1).jpg
+            pdf_title: 'SWIM - 1.9km'
+            featured_image: 11_csby_swim_middle-distance-1.9km-pdf-(1).jpg
             type: new_set
             enabled: true
             pdf_file:
               - pdf/11_csby_swim_middle-distance-1.9km.pdf
           -
             id: mix07fcx
-            pdf_title: 'BIKE - 45km'
-            featured_image: 06_csby_bike_olympic-distance-45km-pdf-(1).jpg
+            pdf_title: 'BIKE - 96km'
+            featured_image: 03_csby_bike_middle-distance-96km-1536x1161.jpg
             type: new_set
             enabled: true
           -
             id: mix07pqp
-            pdf_title: 'RUN - 10km'
-            featured_image: run_long-middle-olympic-distance_050425-2048x1152-(1).jpg
+            pdf_title: 'RUN - 21.1km'
+            featured_image: run_long-middle-olympic-distance_050425-1-1536x864.jpg
             type: new_set
             enabled: true
   -
@@ -281,10 +281,7 @@ page_builder:
             featured_image: run_long-middle-olympic-distance_050425-2-2048x1152.jpg
             type: new_set
             enabled: true
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
 fine_seo_title: 'Races Courses'
 fine_seo_preview: 'Races Courses'
+layout: layout
 ---

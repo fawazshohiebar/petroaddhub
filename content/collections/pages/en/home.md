@@ -66,6 +66,7 @@ page_builder:
             button_size: fit
             type: new_set
             enabled: true
+            link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*1rxzvz8*_gcl_au*MTYwMTE0MzU3NS4xNzY1OTcxMTUx*_ga*Mjk1OTQwNjA1LjE3NjU5NzExNTE.*_ga_4JZJXK51X7*czE3NjU5NzExNTAkbzEkZzEkdDE3NjU5NzU1NTUkajI4JGwwJGgw&inviteId=8cc3403c-5a6f-4641-a479-d0290710927c&error=login_required&state=76be8831-171f-4c07-9cb9-b2c5608e3e56&_p=35657651042073313'
           -
             id: mihblris
             label: 'Athletes Registration'
@@ -75,6 +76,7 @@ page_builder:
             button_size: fit
             type: new_set
             enabled: true
+            link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*15g0yib*_gcl_au*MTYwMTE0MzU3NS4xNzY1OTcxMTUx*_ga*Mjk1OTQwNjA1LjE3NjU5NzExNTE.*_ga_4JZJXK51X7*czE3NjU5NzExNTAkbzEkZzEkdDE3NjU5NzU1NTIkajMxJGwwJGgw&error=login_required&state=bb53f323-0ba2-482d-9bdf-a38395c5a37f&_p=20332737904846798'
   -
     type: set
     attrs:
@@ -122,7 +124,7 @@ page_builder:
             grid_heading: '<p>Middle Distance</p>'
             type: grid_set
             enabled: true
-            grid_images: features/challenge1-(1).png
+            grid_images: cruise-ship-experience/881c94b60f3a007ed04fcec1f68589a88b53e55e.png
             sport_rep:
               -
                 id: mj9wtx4j
@@ -154,7 +156,7 @@ page_builder:
             grid_heading: '<p>Olympic Distance</p>'
             type: grid_set
             enabled: true
-            grid_images: features/challenge1-(1).png
+            grid_images: challenge-sir-bin-yas/image-8.png
             sport_rep:
               -
                 id: mieealnv
@@ -186,7 +188,7 @@ page_builder:
             grid_heading: '<p>Community Races</p>'
             type: grid_set
             enabled: true
-            grid_images: features/challenge1-(1).png
+            grid_images: challenge-sir-bin-yas/image-8-(1).png
             sport_rep:
               -
                 id: miee9o91
@@ -367,13 +369,15 @@ page_builder:
           -
             id: mift57vv
             platformsocial: instagram
-            social_media_link: ii
+            social_media_link: 'https://www.instagram.com/challenge_sby/'
           -
             id: mift5fry
-            platformsocial: tiktok
+            platformsocial: twitter
+            social_media_link: 'https://x.com/Challenge_SBY'
           -
             id: mift56lk
             platformsocial: facebook
+            social_media_link: 'https://www.facebook.com/ChallengeSirBaniYas'
           -
             id: mift5az2
             platformsocial: youtube
@@ -555,6 +559,7 @@ page_builder:
             type: new_set
             enabled: true
             button_size: fit
+            link: 'entry::39b5ad90-5e18-46ec-8ff8-34db0178ebd5'
           -
             id: mifzzntz
             label: 'Book Now'
@@ -563,6 +568,7 @@ page_builder:
             type: new_set
             enabled: true
             button_size: fit
+            link: 'https://booking.celestyal.com/touchb2c/#/ctg-search-route'
 header_scripts:
   code: null
   mode: htmlmixed
@@ -573,7 +579,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1765970696
+updated_at: 1766036291
 fine_seo_image: global-food-week-logo-coloured-(1).png
 reusable_popup: false
 fine_seo_title: 'Challenge Sir Bani Yas'

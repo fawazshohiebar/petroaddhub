@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1765863438
+updated_at: 1765972757
 page_builder:
   -
     type: set
@@ -122,10 +122,12 @@ page_builder:
             button_size: fit
             type: new_set
             enabled: true
+            link: 'https://app.bikerentalmanager.com/book.html?shop=adcchud&event_ref=Sir%20Bani%20Yas'
   -
     type: paragraph
     attrs:
       textAlign: left
 fine_seo_title: 'Bike Rental'
 fine_seo_preview: 'Bike Rental'
+layout: layout
 ---
