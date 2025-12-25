@@ -4,7 +4,7 @@ namespace App\Modifiers;
 
 use Statamic\Modifiers\Modifier;
 
-class redgradColors extends Modifier
+class BandarColors extends Modifier
 {
     /**
      * Transform inline styles with color: redgrad to customcolors class
