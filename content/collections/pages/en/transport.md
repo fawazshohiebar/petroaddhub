@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1765787935
+updated_at: 1766651266
 page_builder:
   -
     type: set
@@ -25,17 +25,6 @@ page_builder:
         type: ctav1
         spaces: p
         description:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                marks:
-                  -
-                    type: textColor
-                    attrs:
-                      color: '#000000'
-                text: "We offer a versatile fleet to accommodate any group size or preference, from premium sedans to luxury coaches. Safety, comfort, and punctuality are at the core of our transportation services, ensuring every journey is smooth and enjoyable.\_"
           -
             type: bulletList
             content:
@@ -182,6 +171,13 @@ page_builder:
         section_image: challenge-sir-bin-yas/dsc04156-edit-2048x1365.jpg
         background: bgcolor
         background_color: light-secondary
+        heading_text:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: "We offer a versatile fleet to accommodate any group size or preference, from premium sedans to luxury coaches. Safety, comfort, and punctuality are at the core of our transportation services, ensuring every journey is smooth and enjoyable.\_"
   -
     type: set
     attrs:
@@ -211,4 +207,5 @@ page_builder:
       textAlign: left
 fine_seo_title: Transport
 fine_seo_preview: Transport
+layout: layout
 ---

@@ -39,7 +39,7 @@ tabs:
               localizable: false
               width: 50
           -
-            handle: trans
+            handle: transport_options
             field:
               options:
                 -
