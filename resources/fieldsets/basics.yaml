@@ -1566,3 +1566,186 @@ fields:
       type: date
       display: 'Date Picker'
       localizable: true
+  -
+    handle: mobile_builder
+    field:
+      type: replicator
+      display: 'Mobile Builder'
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            media_with_text:
+              display: 'Media With Text'
+              fields:
+                -
+                  handle: card_style
+                  field:
+                    options:
+                      -
+                        key: style1
+                        value: Style1
+                      -
+                        key: style2
+                        value: Style2
+                      -
+                        key: style3
+                        value: Style3
+                    default: style1
+                    type: button_group
+                    display: 'Card Style'
+                    localizable: false
+                    width: 50
+                -
+                  handle: card_design
+                  field:
+                    options:
+                      -
+                        key: side
+                        value: Side
+                      -
+                        key: cover
+                        value: Cover
+                    default: side
+                    type: button_group
+                    display: 'Card Design'
+                    localizable: false
+                    width: 50
+                -
+                  handle: card_heading
+                  field:
+                    type: text
+                    display: 'Card Heading'
+                    localizable: false
+                -
+                  handle: card_content
+                  field:
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - quote
+                      - link
+                      - table
+                      - strikethrough
+                    type: markdown
+                    display: 'Card Content'
+                    localizable: false
+                -
+                  handle: card_image
+                  field: basics.image
+                  config:
+                    display: 'Card Image'
+                    validate:
+                      - image
+                      - 'max_filesize:9216'
+                      - 'mimes:png,jpg,jpeg,gif,webp,svg'
+                -
+                  handle: card_links
+                  field:
+                    type: replicator
+                    display: 'Card Links'
+                    localizable: false
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          card_link_set:
+                            display: 'Card Link Set'
+                            fields:
+                              -
+                                handle: card_item_link
+                                field:
+                                  type: link
+                                  display: 'Card Item Link'
+                                  localizable: false
+                                  width: 50
+                              -
+                                handle: card_item_label
+                                field:
+                                  type: text
+                                  display: 'Card Item Label'
+                                  localizable: false
+                                  width: 50
+            grid_card:
+              display: 'Grid Card'
+              fields:
+                -
+                  handle: card_heading
+                  field:
+                    type: text
+                    display: 'Card Heading'
+                    localizable: false
+                -
+                  handle: card_content
+                  field:
+                    buttons:
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - quote
+                      - link
+                      - table
+                      - strikethrough
+                    type: markdown
+                    display: 'Card Content'
+                    localizable: false
+                -
+                  handle: account_details
+                  field:
+                    type: grid
+                    display: 'Account Details'
+                    localizable: false
+                    fields:
+                      -
+                        handle: label_en
+                        field:
+                          type: text
+                          display: 'Label EN'
+                          localizable: false
+                          width: 33
+                      -
+                        handle: label_ar
+                        field:
+                          type: text
+                          display: 'Label Ar'
+                          localizable: false
+                          width: 33
+                      -
+                        handle: detail
+                        field:
+                          type: text
+                          display: Detail
+                          localizable: false
+                          width: 33
+                -
+                  handle: category_prices
+                  field:
+                    type: grid
+                    display: 'Category Prices'
+                    localizable: false
+                    fields:
+                      -
+                        handle: price_code
+                        field:
+                          type: text
+                          display: 'Price Code'
+                          localizable: false
+                          width: 33
+                      -
+                        handle: price_label
+                        field:
+                          type: text
+                          display: 'Price Label'
+                          localizable: false
+                          width: 33
+                      -
+                        handle: price
+                        field:
+                          type: text
+                          display: Price
+                          localizable: false
+                          width: 33

@@ -42,4 +42,6 @@ return [
         'proxy' => env('PROXY')  // optionally
     ],
 
+    'api_key' => env('API_KEY', '2211'),
+
 ];

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use Dedoc\Scramble\Attributes\HeaderParameter;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Statamic\Facades\Entry;
@@ -12,84 +13,82 @@ class TransportController extends Controller
 {
     //
 
-    public function index(): JsonResponse{
-       $entry = Entry::query()
-        ->where('slug', 'transport')
-        ->first();
+    public function index(): JsonResponse
+    {
+        $entry = Entry::query()
+            ->where('slug', 'transport')
+            ->first();
 
-    if (! $entry) {
-        return response()->json([
-            'success' => false,
-            'message' => 'Transport page not found',
-        ], 404);
-    }
-
-    $pageBuilder = $entry->get('page_builder', []);
-    $ctav1Data = null;
-
-    foreach ($pageBuilder as $block) {
-        if (
-            isset($block['type']) &&
-            $block['type'] === 'set' &&
-            isset($block['attrs']['values']['type']) &&
-            $block['attrs']['values']['type'] === 'ctav1'
-        ) {
-            $ctav1Data = $block['attrs']['values'];
-            break;
+        if (! $entry) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Transport page not found',
+            ], 404);
         }
-    }
 
-    if (! $ctav1Data) {
-        return response()->json([
-            'success' => false,
-            'message' => 'CTAv1 block not found',
-        ], 404);
-    }
+        $pageBuilder = $entry->get('page_builder', []);
+        $ctav1Data = null;
 
-    // Extract Transport Options
-    $transportOptions = [];
-    if (isset($ctav1Data['description'][0]['content'])) {
-        foreach ($ctav1Data['description'][0]['content'] as $item) {
-            // Each item is a listItem > paragraph > text
-            $text = $item['content'][0]['content'][0]['text'] ?? null;
-            if ($text) {
-                $transportOptions[] = $text;
+        foreach ($pageBuilder as $block) {
+            if (
+                isset($block['type']) &&
+                $block['type'] === 'set' &&
+                isset($block['attrs']['values']['type']) &&
+                $block['attrs']['values']['type'] === 'ctav1'
+            ) {
+                $ctav1Data = $block['attrs']['values'];
+                break;
             }
         }
-    }
 
-    // Convert heading_text to simple HTML
-    $contentHtml = '';
-    if (isset($ctav1Data['heading_text'])) {
-        foreach ($ctav1Data['heading_text'] as $block) {
-            if (isset($block['content'][0]['text'])) {
-                $contentHtml .= '<p>' . $block['content'][0]['text'] . '</p>';
+        if (! $ctav1Data) {
+            return response()->json([
+                'success' => false,
+                'message' => 'CTAv1 block not found',
+            ], 404);
+        }
+
+        // Extract Transport Options
+        $transportOptions = [];
+        if (isset($ctav1Data['description'][0]['content'])) {
+            foreach ($ctav1Data['description'][0]['content'] as $item) {
+                // Each item is a listItem > paragraph > text
+                $text = $item['content'][0]['content'][0]['text'] ?? null;
+                if ($text) {
+                    $transportOptions[] = $text;
+                }
             }
         }
+
+        // Convert heading_text to simple HTML
+        $contentHtml = '';
+        if (isset($ctav1Data['heading_text'])) {
+            foreach ($ctav1Data['heading_text'] as $block) {
+                if (isset($block['content'][0]['text'])) {
+                    $contentHtml .= '<p>' . $block['content'][0]['text'] . '</p>';
+                }
+            }
+        }
+
+        // Prepare images array
+        $images = [];
+        if (!empty($ctav1Data['section_image'])) {
+            $images[] = $ctav1Data['section_image'];
+        }
+
+        return response()->json([
+            'success' => true,
+            'Response' => [
+                'Title' => $entry->get('title') ?? 'Transport',
+                'Images' => $images,
+                'Content' => $contentHtml,
+                'TransportOptions' => $transportOptions,
+            ],
+        ]);
     }
 
-    // Prepare images array
-    $images = [];
-    if (!empty($ctav1Data['section_image'])) {
-        $images[] = $ctav1Data['section_image'];
-    }
 
-    return response()->json([
-        'success' => true,
-        'Response' => [
-            'Title' => $entry->get('title') ?? 'Transport',
-            'Images' => $images,
-            'Content' => $contentHtml,
-            'TransportOptions' => $transportOptions,
-        ],
-    ]);
-}
-
-
-
-
-
-
+    #[HeaderParameter(name: 'x-api-key', description: 'API key for authentication', required: true, example: '1234')]
     public function formSubmission(Request $request): JsonResponse
     {
         // Validate incoming request
@@ -145,13 +144,4 @@ class TransportController extends Controller
             ], 500);
         }
     }
-
-
-
-
-
-
-
-
 }
-
