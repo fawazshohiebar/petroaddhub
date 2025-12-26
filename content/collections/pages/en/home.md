@@ -578,9 +578,10 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1766036291
-fine_seo_image: global-food-week-logo-coloured-(1).png
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1766745384
+fine_seo_image: brand/screenshot-2025-12-26-at-2.31.54-pm.png
 reusable_popup: false
 fine_seo_title: 'Challenge Sir Bani Yas'
+fine_seo_description: "31 January & 1 February. The UAE's first long distance triathlon, set in one of triathlons most enviable destinations."
 ---
