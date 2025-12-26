@@ -15,13 +15,12 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1766740837
+updated_at: 1766740846
 page_builder:
   -
     type: set
     attrs:
       id: mj88cmpw
-      enabled: false
       values:
         type: video_sec
         video: uGw2DmkjByQ
