@@ -43,7 +43,7 @@ class AppServiceProvider extends ServiceProvider
             // ])) {
             //     return true;
             // }
-            return false;
+            return true;
         });
 
         Statamic::vite('app', [
