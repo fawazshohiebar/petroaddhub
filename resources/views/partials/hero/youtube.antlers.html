@@ -1,7 +1,7 @@
 <section class="relative min-h-dvh md:min-h-[800px] h-dvh overflow-hidden -mt-34 pt-46.3 flex items-center ">    <!-- YouTube Video Background -->
     <div class="absolute inset-0 w-full h-full z-0 video-container">
-        <div class="youtube-player" id="youtube-player" data-video-id="{{video}}" data-start-time="{{starting_time}}" data-end-time="{{ending_time}}">
-            <!-- YouTube iframe will be inserted here -->
+        <div class="youtube-player" id="youtube-player" data-video-id="{{ video }}" data-start-time="{{ starting_time }}" data-end-time="{{ ending_time }}">
+            <!-- YouTube iframe will be inserted here by the API -->
         </div>
         <!-- Dark Overlay -->
         <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30 z-10"></div>
@@ -12,99 +12,129 @@
     {{ partial:hero/scroll }}
 </section>
 
-<!-- Load YouTube IFrame API for timing control -->
+<!-- Load YouTube IFrame API -->
 <script src="https://www.youtube.com/iframe_api"></script>
 
 <script>
+(function() {
     var startTime = 10;
     var endTime = 60;
     var videoId = '';
-    var player;
-    var timeCheckInterval;
+    var player = null;
+    var timeCheckInterval = null;
+    var isReady = false;
     
-    document.addEventListener('DOMContentLoaded', function() {
+    function initPlayer() {
         var playerElement = document.getElementById('youtube-player');
-        if (!playerElement) return;
+        if (!playerElement) {
+            console.warn('YouTube player element not found');
+            return;
+        }
         
         videoId = playerElement.getAttribute('data-video-id');
-        startTime = parseInt(playerElement.getAttribute('data-start-time')) || 10;
-        endTime = parseInt(playerElement.getAttribute('data-end-time')) || 60;
+        startTime = parseInt(playerElement.getAttribute('data-start-time')) || 0;
+        endTime = parseInt(playerElement.getAttribute('data-end-time')) || 0;
         
-        if (!videoId) return;
-        
-        // Create the original iframe approach for perfect coverage
-        createIframe();
-        
-        // Initialize YouTube API for timing control
-        if (window.YT && window.YT.Player) {
-            initTimingControl();
-        } else {
-            window.onYouTubeIframeAPIReady = initTimingControl;
+        if (!videoId) {
+            console.warn('No YouTube video ID provided');
+            return;
         }
-    });
-    
-    function createIframe() {
-        var playerElement = document.getElementById('youtube-player');
-        var iframe = document.createElement('iframe');
-        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=' + videoId + '&start=' + startTime + '&end=' + endTime + '&enablejsapi=1');
-        iframe.setAttribute('frameborder', '0');
-        iframe.setAttribute('title', 'YouTube video player');
-        iframe.setAttribute('allowfullscreen', '1');
-        iframe.setAttribute('id', 'youtube-iframe');
         
-        playerElement.appendChild(iframe);
-    }
-    
-    function initTimingControl() {
-        // Create a hidden player for timing control
-        var hiddenDiv = document.createElement('div');
-        hiddenDiv.style.display = 'none';
-        hiddenDiv.id = 'hidden-player';
-        document.body.appendChild(hiddenDiv);
-        
-        player = new YT.Player('hidden-player', {
-            height: '1',
-            width: '1',
+        // Create the YouTube player using the API (better control & autoplay support)
+        player = new YT.Player('youtube-player', {
             videoId: videoId,
             playerVars: {
                 'autoplay': 1,
                 'controls': 0,
-                'mute': 1
+                'showinfo': 0,
+                'rel': 0,
+                'mute': 1,
+                'loop': 1,
+                'playlist': videoId,
+                'start': startTime,
+                'modestbranding': 1,
+                'playsinline': 1,
+                'enablejsapi': 1,
+                'origin': window.location.origin
             },
             events: {
-                'onReady': function(event) {
-                    event.target.seekTo(startTime);
-                    startTimeMonitoring();
-                }
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange,
+                'onError': onPlayerError
             }
         });
     }
     
+    function onPlayerReady(event) {
+        isReady = true;
+        event.target.mute();
+        event.target.playVideo();
+        
+        // Start time monitoring for custom end time looping
+        if (endTime > startTime) {
+            startTimeMonitoring();
+        }
+    }
+    
+    function onPlayerStateChange(event) {
+        // If video ended naturally, restart from start time
+        if (event.data === YT.PlayerState.ENDED) {
+            player.seekTo(startTime);
+            player.playVideo();
+        }
+        
+        // If video is paused unexpectedly, try to play it
+        if (event.data === YT.PlayerState.PAUSED && isReady) {
+            setTimeout(function() {
+                if (player && player.getPlayerState() === YT.PlayerState.PAUSED) {
+                    player.playVideo();
+                }
+            }, 100);
+        }
+    }
+    
+    function onPlayerError(event) {
+        console.error('YouTube Player Error:', event.data);
+        // Error codes: 2 = invalid video ID, 5 = HTML5 error, 100 = not found, 101/150 = embedding disabled
+    }
+    
     function startTimeMonitoring() {
+        if (timeCheckInterval) {
+            clearInterval(timeCheckInterval);
+        }
+        
         timeCheckInterval = setInterval(function() {
-            if (player && player.getCurrentTime) {
+            if (player && typeof player.getCurrentTime === 'function') {
                 var currentTime = player.getCurrentTime();
                 if (currentTime >= endTime) {
-                    // Restart both players
-                    restartVideo();
+                    player.seekTo(startTime);
+                    player.playVideo();
                 }
             }
         }, 500);
     }
     
-    function restartVideo() {
-        // Restart the visible iframe
-        var iframe = document.getElementById('youtube-iframe');
-        if (iframe) {
-            var src = iframe.src;
-            iframe.src = src;
-        }
-        
-        // Restart the hidden timing player
-        if (player && player.seekTo) {
-            player.seekTo(startTime);
+    // Handle YouTube API ready state
+    function onYouTubeReady() {
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initPlayer);
+        } else {
+            initPlayer();
         }
     }
+    
+    // Check if YouTube API is already loaded
+    if (window.YT && window.YT.Player) {
+        onYouTubeReady();
+    } else {
+        // Store previous callback if exists
+        var previousCallback = window.onYouTubeIframeAPIReady;
+        window.onYouTubeIframeAPIReady = function() {
+            if (previousCallback) previousCallback();
+            onYouTubeReady();
+        };
+    }
+})();
 </script>
 
 <style>
@@ -112,58 +142,47 @@
         overflow: hidden;
     }
     
-    .youtube-player {
+    .video-container iframe {
         position: absolute;
         top: 50%;
         left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        transform: translateX(-50%) translateY(-50%);
+        width: 100vw;
+        height: 56.25vw; /* 16:9 aspect ratio */
+        min-height: 100vh;
+        min-width: 177.77vh; /* 16:9 aspect ratio */
+        transform: translate(-50%, -50%);
+        pointer-events: none;
         z-index: 0;
     }
     
-    .youtube-player iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
+    /* Ensure video covers on all screen sizes */
+    @media (max-aspect-ratio: 16/9) {
+        .video-container iframe {
+            width: 177.77vh;
+            height: 100vh;
+        }
     }
     
     @media (min-aspect-ratio: 16/9) {
-        .youtube-player iframe {
-            height: 300%;
-            top: -100%;
+        .video-container iframe {
+            width: 100vw;
+            height: 56.25vw;
         }
     }
     
-    @media (max-aspect-ratio: 16/9) {
-        .youtube-player iframe {
-            width: 300%;
-            left: -100%;
+    /* Mobile portrait - ensure coverage */
+    @media (max-aspect-ratio: 1/1) {
+        .video-container iframe {
+            width: 200vh;
+            height: 112.5vh;
         }
     }
     
-    /* Additional mobile coverage */
-    @media (max-width: 768px) {
-        .youtube-player iframe {
-            width: 300%;
-            height: 300%;
-            left: -100%;
-            top: -100%;
-        }
-    }
-    
-    /* For very tall mobile screens */
+    /* Very tall mobile screens */
     @media (max-aspect-ratio: 9/16) {
-        .youtube-player iframe {
-            width: 400%;
-            height: 400%;
-            left: -150%;
-            top: -150%;
+        .video-container iframe {
+            width: 250vh;
+            height: 140.625vh;
         }
     }
 </style>
