@@ -3,6 +3,8 @@
 use App\Http\Controllers\Api\FaqController;
 use App\Http\Controllers\Api\TransportController;
 use App\Http\Controllers\Api\ContactusController;
+use App\Http\Controllers\API\GetPageController;
+use App\Http\Middleware\EnsureApiKeyExists;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,16 +18,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('v1')->group(function () {
- 
-//     Route::get('/faq', [FaqController::class, 'index'])
-//         ->name('api.faq.index');
-
-// Route::get('/page/{slug}', [FaqController::class, 'testing']);
+Route::prefix('v1')
+->middleware(EnsureApiKeyExists::class)
+->group(function () {
+    Route::get('/page/{slug}', GetPageController::class);
 
 
-Route::get('transport', [TransportController::class, 'index']);
-Route::post('transport', [TransportController::class, 'formSubmission']);
-Route::post('contactus', [ContactusController::class, 'formSubmission']);
-
+    // Route::get('transport', [TransportController::class, 'index']);
+    Route::post('transport', [TransportController::class, 'formSubmission']);
+    Route::post('contactus', [ContactusController::class, 'formSubmission']);
 });
