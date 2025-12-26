@@ -3,7 +3,7 @@
 use App\Http\Controllers\Api\FaqController;
 use App\Http\Controllers\Api\TransportController;
 use App\Http\Controllers\Api\ContactusController;
-use App\Http\Controllers\API\GetPageController;
+use App\Http\Controllers\Api\GetPageController;
 use App\Http\Middleware\EnsureApiKeyExists;
 use Illuminate\Support\Facades\Route;
 
