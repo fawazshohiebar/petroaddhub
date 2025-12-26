@@ -4,27 +4,6 @@ blueprint: mobile_page
 title: 'Mobile Transport'
 mobile_builder:
   -
-    id: mjmjeh2y
-    card_heading: 'Cabin Categories & Prices'
-    card_content: |-
-      **Infants** (12 months-1.99 years): USD 200
-      **Children** from 2 years – 11.99 - USD 200
-      **Adults** from 12 years and above -3rd adult: USD 350 / 4th adult: USD 300
-    account_details:
-      -
-        id: mjmjf18f
-        label_en: 'Account Number'
-        label_ar: 'اسم الحساب'
-        detail: '4021003477185024'
-    type: grid_card
-    enabled: false
-    category_prices:
-      -
-        id: mjmjjhfi
-        price_code: IA
-        price_label: 'Interior Cosmos cabins'
-        price: 'USD 790.00'
-  -
     id: mjmis0j4
     card_heading: 'Your way to the Show'
     card_content: |-
@@ -46,5 +25,5 @@ mobile_builder:
     card_style: style1
     card_design: side
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1766740676
+updated_at: 1766742476
 ---
