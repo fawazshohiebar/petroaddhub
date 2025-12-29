@@ -35,7 +35,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "1\_\_\_\_\_\_ Introduction"
+                text: '1 Introduction'
           -
             type: paragraph
             content:
@@ -88,7 +88,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "2\_\_\_\_\_\_ Information We Collect"
+                text: '2 Information We Collect'
           -
             type: paragraph
             content:
@@ -103,7 +103,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "2.1\_\_\_\_\_\_ Contact Information"
+                text: "2.1\_\_Contact Information"
           -
             type: paragraph
             content:
@@ -118,7 +118,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "2.2\_\_\_\_\_\_ Event Registration Information"
+                text: "2.2\_Event Registration Information"
           -
             type: paragraph
             content:
@@ -145,7 +145,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "2.3\_\_\_\_\_\_ Payment Information"
+                text: "2.3\_Payment Information"
           -
             type: paragraph
             content:
@@ -160,7 +160,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "2.4\_\_\_\_\_\_ Communication Data"
+                text: '2.4 Communication Data'
           -
             type: paragraph
             content:
@@ -175,7 +175,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "2.5\_\_\_\_\_\_ Technical Information"
+                text: '2.5 Technical Information'
           -
             type: paragraph
             content:
@@ -190,7 +190,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "2.6\_\_\_\_\_\_ Cookies and Tracking Technologies"
+                text: '2.6 Cookies and Tracking Technologies'
           -
             type: paragraph
             content:
@@ -205,7 +205,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "2.7\_\_\_\_\_\_ Media Personnel Registration"
+                text: '2.7 Media Personnel Registration'
           -
             type: paragraph
             content:
@@ -222,7 +222,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "3\_\_\_\_\_\_ How We Use Your Information"
+                text: "3\_How We Use Your Information"
           -
             type: paragraph
             content:
@@ -237,7 +237,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "3.1\_\_\_\_\_\_ Recording an interest in an event"
+                text: '3.1 Recording an interest in an event'
           -
             type: paragraph
             content:
@@ -252,7 +252,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "3.2\_\_\_\_\_\_ Event Registration"
+                text: '3.2 Event Registration'
           -
             type: paragraph
             content:
@@ -267,7 +267,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "3.3\_\_\_\_\_\_ Customer Support"
+                text: "3.3\_Customer Support"
           -
             type: paragraph
             content:
@@ -282,7 +282,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "3.4\_\_\_\_\_\_ Marketing and Promotions"
+                text: "3.4\_Marketing and Promotions"
           -
             type: paragraph
             content:
@@ -297,7 +297,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "3.5\_\_\_\_\_\_ Analytics"
+                text: "3.5\_Analytics"
           -
             type: paragraph
             content:
@@ -318,7 +318,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "3.6\_\_\_\_\_\_ Payment Processing"
+                text: '3.6 Payment Processing'
           -
             type: paragraph
             content:
@@ -335,7 +335,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "4\_\_\_\_\_\_ How We Share Your Information"
+                text: '4 How We Share Your Information'
           -
             type: paragraph
             content:
@@ -350,7 +350,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "4.1\_\_\_\_\_\_ Service Providers"
+                text: '4.1 Service Providers'
           -
             type: paragraph
             content:
@@ -365,7 +365,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "4.2\_\_\_\_\_\_ Legal Compliance"
+                text: '4.2  Legal Compliance'
           -
             type: paragraph
             content:
@@ -380,7 +380,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "4.3\_\_\_\_\_\_ Event Partners"
+                text: '4.3  Event Partners'
           -
             type: paragraph
             content:
@@ -395,7 +395,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "4.4\_\_\_\_\_\_ ADNEC Group Marketing"
+                text: '4.4  ADNEC Group Marketing'
           -
             type: paragraph
             content:
@@ -418,7 +418,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "5\_\_\_\_\_\_ Data Security"
+                text: "5\_Data Security"
           -
             type: paragraph
             content:
@@ -435,7 +435,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "6\_\_\_\_\_\_ Your Data Rights"
+                text: "6\_Your Data Rights"
           -
             type: paragraph
             content:
@@ -444,7 +444,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "6.1\_\_\_\_\_\_ Access and Correction"
+                text: "6.1\_Access and Correction"
           -
             type: paragraph
             content:
@@ -459,7 +459,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "6.2\_\_\_\_\_\_ Opt-Out"
+                text: '6.2 Opt-Out'
           -
             type: paragraph
             content:
@@ -476,7 +476,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "7\_\_\_\_\_\_ Changes to this Privacy Policy"
+                text: "7\_ Changes to this Privacy Policy"
           -
             type: paragraph
             content:
@@ -493,7 +493,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "8\_\_\_\_\_\_ The Data Controller"
+                text: '8 The Data Controller'
           -
             type: paragraph
             content:
@@ -510,7 +510,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "9\_\_\_\_\_\_ Contact Us"
+                text: '9 Contact Us'
           -
             type: paragraph
             content:
@@ -527,7 +527,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "10\_\_ Acceptance of Terms"
+                text: "10\_ Acceptance of Terms"
           -
             type: paragraph
             content:
@@ -554,5 +554,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1766988127
+updated_at: 1766988322
 ---
