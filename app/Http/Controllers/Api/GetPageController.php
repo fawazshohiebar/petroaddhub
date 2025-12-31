@@ -19,10 +19,34 @@ class GetPageController extends Controller
             ->where('slug', $slug)
             ->select(['title', 'mobile_builder'])
             ->first();
+        if (!$entry) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Page not found',
+            ], 404);
+        }
+
+        // Get mobile_builder as augmented array
+        $mobileBuilder = collect($entry->toAugmentedArray()['mobile_builder'] ?? [])
+            ->map(function ($block) {
+                // Convert block to array recursively
+                $blockArray = json_decode(json_encode($block->toArray()), true);
+                
+                // Replace card_image with just the permalink
+                if (isset($blockArray['card_image']['permalink'])) {
+                    $blockArray['card_image'] = $blockArray['card_image']['permalink'];
+                }
+                
+                return $blockArray;
+            })
+            ->values(); // reindex array
 
         return response()->json([
             'success' => true,
-            'data' => $entry,
+            'data' => [
+                'title' => $entry->value('title'),
+                'mobile_builder' => $mobileBuilder,
+            ],
         ]);
     }
 }
