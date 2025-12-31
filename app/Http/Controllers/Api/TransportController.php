@@ -101,7 +101,6 @@ class TransportController extends Controller
             'transport_options.*' => 'string',
             'comments' => 'nullable|string',
             'consent' => 'required|array',
-            'turnstile_token' => 'nullable|string',
         ]);
 
         try {
@@ -125,7 +124,6 @@ class TransportController extends Controller
                 'transport_options' => $validated['transport_options'],
                 'comments' => $validated['comments'] ?? '',
                 'consent' => $validated['consent'],
-                'turnstile_token' => $validated['turnstile_token'] ?? '',
             ]);
             $submission->save();
 
