@@ -1749,3 +1749,25 @@ fields:
                           display: Price
                           localizable: false
                           width: 33
+            form_options:
+              display: 'Form Options'
+              fields:
+                -
+                  handle: options_rep
+                  field:
+                    type: replicator
+                    display: 'Options Rep'
+                    localizable: false
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: 'New Set'
+                            fields:
+                              -
+                                handle: option
+                                field:
+                                  type: text
+                                  display: Option
+                                  localizable: false
