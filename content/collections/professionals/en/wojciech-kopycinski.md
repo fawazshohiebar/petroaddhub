@@ -1,5 +1,6 @@
 ---
 id: fbea884b-ee3f-4fa7-8771-1128383e71c3
+published: false
 blueprint: professional
 title: 'Wojciech Kopyciński'
 image: speakers/img_5209-300x200.jpeg
