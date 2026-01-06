@@ -1,5 +1,6 @@
 ---
 id: 1dd07641-a368-442d-a6ac-00059e9cb032
+published: false
 blueprint: professional
 title: 'Hanni van Wyk'
 image: speakers/hanni-van-der-vyver-300x200.jpg
