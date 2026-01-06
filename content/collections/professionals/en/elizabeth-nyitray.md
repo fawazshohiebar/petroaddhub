@@ -1,5 +1,6 @@
 ---
 id: 9f26031d-a7f4-4088-be2d-7528f7b9febf
+published: false
 blueprint: professional
 title: 'Elizabeth Nyitray'
 image: speakers/elizabeth-nyitray-e1741581877558-300x268.jpg
