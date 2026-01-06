@@ -1,5 +1,6 @@
 ---
 id: af119c83-3a89-45a2-bfb8-69a3fb1c0288
+published: false
 blueprint: professional
 title: 'Aurélia Boulanger'
 image: speakers/449579566_10233218964924811_7639845519591858984_n-300x300.jpg
