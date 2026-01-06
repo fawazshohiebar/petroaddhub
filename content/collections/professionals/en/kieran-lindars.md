@@ -1,5 +1,6 @@
 ---
 id: 9266c064-06bf-4325-836b-77175cd5285e
+published: false
 blueprint: professional
 title: 'Kieran Lindars'
 image: speakers/ppq0817-300x200.jpg
