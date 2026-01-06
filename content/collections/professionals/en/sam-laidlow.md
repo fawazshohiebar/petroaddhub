@@ -1,5 +1,6 @@
 ---
 id: e60f1b09-ebc2-48e3-bcff-18045c2040dd
+published: false
 blueprint: professional
 title: 'Sam Laidlow'
 image: speakers/sam-t100-london-300x200.jpg
