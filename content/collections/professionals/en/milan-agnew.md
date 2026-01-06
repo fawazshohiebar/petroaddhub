@@ -1,5 +1,6 @@
 ---
 id: cb771fa9-ff9d-4532-b601-2f046e0bf320
+published: false
 blueprint: professional
 title: 'Milan Agnew'
 image: speakers/milan-pic-2-200x300.jpeg
