@@ -1,5 +1,6 @@
 ---
 id: 8bc5ee71-17ac-4f85-b4ae-a635bd08907e
+published: false
 blueprint: professional
 title: 'Csongor Lehmann'
 image: speakers/whatsapp-image-2025-02-21-at-09.27.58-1-e1741338816607-300x294.jpeg
