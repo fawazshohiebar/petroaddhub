@@ -1,5 +1,6 @@
 ---
 id: 54d7ff0a-4aef-4279-a36e-a677057b56e2
+published: false
 blueprint: professional
 title: 'Emmanuel Lejeune'
 image: speakers/emmanuel-lejeune-e1741344505682-300x300.jpg
