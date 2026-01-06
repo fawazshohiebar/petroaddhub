@@ -1,5 +1,6 @@
 ---
 id: 0d2a3aa8-ede0-4c53-8b8d-d700018ca5bf
+published: false
 blueprint: professional
 title: 'Ben Goodfellow'
 image: speakers/ben-goodfellow-300x300.jpg
