@@ -1,5 +1,6 @@
 ---
 id: 095ab4df-1e67-49d4-9d08-308174f4b8b5
+published: false
 blueprint: professional
 title: 'Emil Holm'
 image: speakers/emil-holm-e1740530269666-236x300.jpg
