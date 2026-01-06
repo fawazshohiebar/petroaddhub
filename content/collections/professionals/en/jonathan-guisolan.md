@@ -1,5 +1,6 @@
 ---
 id: 5dede191-00d9-4b05-8b2e-cfb37a2db5a6
+published: false
 blueprint: professional
 title: 'Jonathan Guisolan'
 image: speakers/2f3a7919-200x300.jpg
