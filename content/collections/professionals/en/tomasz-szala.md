@@ -1,5 +1,6 @@
 ---
 id: af9896f1-5dea-4ac6-a4bd-8d9d6115f71e
+published: false
 blueprint: professional
 title: 'Tomasz Szala'
 image: speakers/img_2337-169x300.jpeg
