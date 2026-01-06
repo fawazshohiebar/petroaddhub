@@ -1,5 +1,6 @@
 ---
 id: 80769f16-f3db-4eb9-9f2c-1d0e62f8d2ba
+published: false
 blueprint: professional
 title: 'Nick Thijs'
 image: speakers/picture_nickthijs-200x300.jpg
