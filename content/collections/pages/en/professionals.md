@@ -4,7 +4,7 @@ blueprint: page
 title: Professionals
 template: default
 reusable_popup: false
-fine_seo_is_title_custom: false
+fine_seo_is_title_custom: true
 header_scripts:
   code: null
   mode: htmlmixed
@@ -15,8 +15,8 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767696876
-fine_seo_title: Speakers
+updated_at: 1767696894
+fine_seo_title: Professionals
 fine_seo_preview: Speakers
 page_builder:
   -
