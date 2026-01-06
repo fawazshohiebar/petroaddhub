@@ -1,5 +1,6 @@
 ---
 id: 7bca214d-8219-41de-9b50-af9ca85b8c09
+published: false
 blueprint: professional
 title: 'Albert Askengren'
 image: speakers/albert-284x300.jpg
