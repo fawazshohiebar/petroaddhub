@@ -1,5 +1,6 @@
 ---
 id: d03d5225-a7c3-4a30-acee-61698ee01fff
+published: false
 blueprint: professional
 title: 'Margrit Elfers'
 image: speakers/margrit-pic-169x300.jpg
