@@ -1,5 +1,6 @@
 ---
 id: 5a0c62a2-938f-471d-9a33-3e5de3c01af1
+published: false
 blueprint: professional
 title: 'Jesper Svensson'
 image: speakers/jesper-pic-e1741336711554-300x289.jpg
