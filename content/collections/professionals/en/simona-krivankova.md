@@ -1,5 +1,6 @@
 ---
 id: 7bf1741f-8fd4-4215-9941-7bef7af30e48
+published: false
 blueprint: professional
 title: 'Simona Krivankova'
 image: speakers/fb_img_1723903393016-300x200.jpg
