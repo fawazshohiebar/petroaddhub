@@ -1,5 +1,6 @@
 ---
 id: d3696504-dfdd-4bef-bb31-ce45e623795f
+published: false
 blueprint: professional
 title: 'Antoine Muller'
 image: speakers/cagnes-3-e1741338775988-293x300.jpg
