@@ -1,5 +1,6 @@
 ---
 id: 1e5b161d-d112-4659-b67d-eb3d6919f098
+published: false
 blueprint: professional
 title: 'Lauren Hume'
 image: speakers/lauren-hume-e1741344405262-300x261.jpg
