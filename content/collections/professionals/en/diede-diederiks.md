@@ -1,5 +1,6 @@
 ---
 id: ccb482d6-a9eb-4afa-92e2-2c422b55c6a1
+published: false
 blueprint: professional
 title: 'Diede Diederiks'
 image: speakers/1000005267-300x221.jpg
