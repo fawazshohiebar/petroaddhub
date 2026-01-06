@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767687756
+updated_at: 1767687779
 fine_seo_title: Speakers
 fine_seo_preview: Speakers
 page_builder:
@@ -68,32 +68,6 @@ page_builder:
     content:
       -
         type: text
-        text: dsdasds
-  -
-    type: set
-    attrs:
-      id: mk2bn7eo
-      values:
-        type: image_button_carousel_set
-        replicator_image_button:
-          -
-            id: mk2bn8ys
-            pdf_reference_button:
-              link: null
-              label: sdkjasnbdkas
-              design: redgradient
-              icon: null
-              open_new_tab: false
-              button_size: null
-            type: carousel_item
-            enabled: true
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-    content:
-      -
-        type: text
-        text: sadaskjd
+        text: ' '
 layout: layout
 ---
