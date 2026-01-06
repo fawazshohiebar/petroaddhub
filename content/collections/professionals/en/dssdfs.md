@@ -1,5 +1,6 @@
 ---
 id: adb6ecf2-6248-4f69-9433-f002b9ae10d9
+published: false
 blueprint: professional
 title: DSSDFS
 image: speakers/2f3a7919-200x300.jpg
