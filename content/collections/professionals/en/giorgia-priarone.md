@@ -1,5 +1,6 @@
 ---
 id: 9186b684-d2f2-4da5-aaf6-9e506745de12
+published: false
 blueprint: professional
 title: 'Giorgia Priarone'
 image: speakers/image0-1-scaled-e1741338531435-300x300.jpeg
