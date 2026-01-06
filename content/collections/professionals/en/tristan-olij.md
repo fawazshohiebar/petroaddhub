@@ -1,5 +1,6 @@
 ---
 id: 5f3c25a1-fedb-4f44-a1ab-3d7486b35c85
+published: false
 blueprint: professional
 title: 'Tristan Olij'
 image: speakers/tristan-olij-300x201.jpg
