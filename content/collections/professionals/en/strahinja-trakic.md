@@ -1,5 +1,6 @@
 ---
 id: cf935d33-5f69-4f7e-8f0d-19078d9e84e7
+published: false
 blueprint: professional
 title: 'Strahinja Trakic'
 image: speakers/thumbnail_strahinja-e1741337846950-288x300.jpg
