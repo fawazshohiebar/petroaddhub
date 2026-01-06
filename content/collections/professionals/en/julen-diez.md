@@ -1,5 +1,6 @@
 ---
 id: eca03c0b-de7e-45f5-9b14-8c66cddbdafc
+published: false
 blueprint: professional
 title: 'Julen Diez'
 image: speakers/julen-diez-scaled-e1740533553729-293x300.jpg
