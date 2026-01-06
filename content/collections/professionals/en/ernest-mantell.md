@@ -1,5 +1,6 @@
 ---
 id: 05fc0148-8879-4506-a79d-2cac2abc360c
+published: false
 blueprint: professional
 title: 'Ernest Mantell'
 image: speakers/e942a24e-d066-43e5-9985-222c18fbc785_1_105_c-e1739871515586-217x300.jpeg
