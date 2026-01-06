@@ -1,5 +1,6 @@
 ---
 id: 918dc489-ad6e-450a-8a07-b72a697a77a7
+published: false
 blueprint: professional
 title: 'Filipe Azevedo'
 image: speakers/filipe-azevedo-e1741683752119-274x300.jpg
