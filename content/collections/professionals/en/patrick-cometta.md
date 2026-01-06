@@ -1,5 +1,6 @@
 ---
 id: 4afe368f-eb87-44d5-92db-ef70eb3dacea
+published: false
 blueprint: professional
 title: 'Patrick Cometta'
 image: speakers/patrick-cometta-pic-300x200.jpg
