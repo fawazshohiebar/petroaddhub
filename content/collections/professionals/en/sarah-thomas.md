@@ -1,5 +1,6 @@
 ---
 id: c9ff19ff-32cc-4fc6-82c3-f664d0edd69d
+published: false
 blueprint: professional
 title: 'Sarah Thomas'
 image: speakers/img_0631-2-e1741338678642-286x300.jpg
