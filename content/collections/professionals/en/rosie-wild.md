@@ -1,5 +1,6 @@
 ---
 id: e3461bcc-7ff5-410c-8ae8-aa447aaab5bf
+published: false
 blueprint: professional
 title: 'Rosie Wild'
 image: speakers/rosie-wild-e1741408421416-287x300.jpg
