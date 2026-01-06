@@ -1,5 +1,6 @@
 ---
 id: 381f13ee-5a53-47f6-8e7b-5e0eacb6e13f
+published: false
 blueprint: professional
 title: 'Lilli Gelmini'
 image: speakers/lilli-gelmini-300x200.jpg
