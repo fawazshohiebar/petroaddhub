@@ -1,5 +1,6 @@
 ---
 id: 7e39a49f-2c51-46f8-888c-950461410c7c
+published: false
 blueprint: professional
 title: 'Ognjen Stojanovic'
 image: speakers/slika1-300x288.jpg
