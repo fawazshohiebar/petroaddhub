@@ -1,5 +1,6 @@
 ---
 id: 397bc4f1-a674-4f6d-bab4-45f00b995ca1
+published: false
 blueprint: professional
 title: 'Amy Van Tassel'
 image: speakers/image0-300x200.jpeg
