@@ -1,5 +1,6 @@
 ---
 id: d7fa1972-3303-46a5-a6c4-7e3ff08ac0a3
+published: false
 blueprint: professional
 title: 'Chloe Sparrow'
 image: speakers/chloe-img_0462-300x290.jpeg
