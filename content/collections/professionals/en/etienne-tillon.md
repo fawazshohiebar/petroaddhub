@@ -1,5 +1,6 @@
 ---
 id: 33ea2ff0-c5c6-4f90-b0c3-b7075ba11c21
+published: false
 blueprint: professional
 title: 'Etienne Tillon'
 image: speakers/etienne-e1741338876468-297x300.jpeg
