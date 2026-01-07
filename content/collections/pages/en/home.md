@@ -27,60 +27,6 @@ page_builder:
   -
     type: set
     attrs:
-      id: mief09fy
-      enabled: false
-      values:
-        type: heading_comp
-        background: bgimg
-        image: vector-(5)-(1).png
-        design: centered
-        heading:
-          -
-            type: heading
-            attrs:
-              level: 2
-            content:
-              -
-                type: text
-                marks:
-                  -
-                    type: textColor
-                    attrs:
-                      color: redgrad
-                text: 'Race Menu'
-        sub_heading:
-          -
-            type: heading
-            attrs:
-              level: 4
-            content:
-              -
-                type: text
-                text: "Making history as the UAE's first long distance triathlon, set in one of triathlon's most enviable destinations."
-        buttons:
-          -
-            id: mihblhxu
-            label: 'Spectator Registration'
-            design: whiterounded
-            icon: none
-            open_new_tab: false
-            button_size: fit
-            type: new_set
-            enabled: true
-            link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*1rxzvz8*_gcl_au*MTYwMTE0MzU3NS4xNzY1OTcxMTUx*_ga*Mjk1OTQwNjA1LjE3NjU5NzExNTE.*_ga_4JZJXK51X7*czE3NjU5NzExNTAkbzEkZzEkdDE3NjU5NzU1NTUkajI4JGwwJGgw&inviteId=8cc3403c-5a6f-4641-a479-d0290710927c&error=login_required&state=76be8831-171f-4c07-9cb9-b2c5608e3e56&_p=35657651042073313'
-          -
-            id: mihblris
-            label: 'Athletes Registration'
-            design: redgradient
-            icon: none
-            open_new_tab: false
-            button_size: fit
-            type: new_set
-            enabled: true
-            link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*15g0yib*_gcl_au*MTYwMTE0MzU3NS4xNzY1OTcxMTUx*_ga*Mjk1OTQwNjA1LjE3NjU5NzExNTE.*_ga_4JZJXK51X7*czE3NjU5NzExNTAkbzEkZzEkdDE3NjU5NzU1NTIkajMxJGwwJGgw&error=login_required&state=bb53f323-0ba2-482d-9bdf-a38395c5a37f&_p=20332737904846798'
-  -
-    type: set
-    attrs:
       id: miecet56
       values:
         type: cta_grid_sport
@@ -259,25 +205,6 @@ page_builder:
             type: new_set
             enabled: true
         bottom_text:
-          -
-            type: heading
-            attrs:
-              level: 4
-            content:
-              -
-                type: text
-                text: 'Offering not only the first Long-distance triathlon in the Middle East, Challenge Sir Bani Yas, will also hosts a race for every athlete, with our Middle and Olympic distance races, and a wide selection of Community races, making it a real family affair!'
-  -
-    type: set
-    attrs:
-      id: miekf1wf
-      enabled: false
-      values:
-        type: heading_comp
-        background: bgimg
-        image: vector-(5)-(1).png
-        design: centered
-        heading:
           -
             type: heading
             attrs:
@@ -630,7 +557,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767774826
+updated_at: 1767774900
 fine_seo_image: brand/screenshot-2025-12-26-at-2.31.54-pm.png
 reusable_popup: false
 fine_seo_title: 'Challenge Sir Bani Yas'
