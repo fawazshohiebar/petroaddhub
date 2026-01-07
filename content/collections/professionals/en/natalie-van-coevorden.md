@@ -4,9 +4,10 @@ blueprint: professional
 title: 'Natalie Van Coevorden'
 image: speakers/17_natalie-van-coevorden.jpg
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767697881
+updated_at: 1767790580
 ---
-Nationality: Australian 
+Country: Australia 
 PTO Ranking
 World Rank: 29
+National Rank: 4
 Tier 3 PRO
