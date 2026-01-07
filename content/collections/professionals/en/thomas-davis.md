@@ -4,9 +4,10 @@ blueprint: professional
 title: 'Thomas Davis'
 image: speakers/18_thomas-davis.jpg
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767697907
+updated_at: 1767790650
 ---
-Nationality: British
+Country: Great Britain
 PTO Ranking
 World Rank: 114
+National Rank: 10
 Tier 3 PRO
