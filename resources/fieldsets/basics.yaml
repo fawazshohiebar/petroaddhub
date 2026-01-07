@@ -443,6 +443,8 @@ fields:
                 -
                   import: background_design
                 -
+                  import: heading_group_component
+                -
                   handle: grid_version
                   field:
                     options:
@@ -490,6 +492,21 @@ fields:
                             fields:
                               -
                                 import: images_grid_and_buttons_sport
+                -
+                  handle: bottom_text
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - color
+                      - h1
+                      - h4
+                      - h5
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'bottom text'
+                    localizable: false
             cta_grid:
               display: 'Cta grid'
               fields:
