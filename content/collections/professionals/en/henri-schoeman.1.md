@@ -4,9 +4,9 @@ blueprint: professional
 title: 'Henri Schoeman'
 image: speakers/04_henri-schoeman.jpg
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767786630
+updated_at: 1767790863
 ---
-Nationality: South Africa
+Country: South Africa
 PTO Ranking
 World Rank: 211
 National Rank: 2
