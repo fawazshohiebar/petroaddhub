@@ -1,6 +1,8 @@
     <div style="{{ if background == 'bgimg' }}background-size:cover; background-image: url('{{ image.url }}');{{ else }}background-color:var(--color-{{ background_color }}){{ /if }}"
         class="w-full  bg-cover bg-center ">
         <div class="adnec-container py-10">
+                    {{ partial:partials/sets/heading_group_component }}
+
 
        {{ if grid_heading}}
             <div class="custom pb-10 text-center">{{grid_heading    | replace('<p></p>', '<br>')
@@ -29,5 +31,6 @@
                     {{ partial:partials/sets/images_grid_and_buttons_sport }}
                 {{ /grid_set_replicator }}
             </div>
+            {{bottom_text}}
         </div>
     </div>
