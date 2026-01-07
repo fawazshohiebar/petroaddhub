@@ -4,9 +4,9 @@ blueprint: professional
 title: 'Ellie Salthouse'
 image: speakers/03_ellie-salthouse.jpg
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767786434
+updated_at: 1767790803
 ---
-Nationality: Australian 
+Country: Australia 
 PTO Ranking
 World Rank: 13
 National Rank: 2
