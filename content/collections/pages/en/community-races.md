@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767876854
+updated_at: 1767876873
 page_builder:
   -
     type: set
@@ -97,6 +97,8 @@ page_builder:
                 sport_title: '10.63'
                 type: sport
                 enabled: true
+                sport_icon:
+                  - svgs/zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
