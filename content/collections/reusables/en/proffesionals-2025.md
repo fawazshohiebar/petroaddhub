@@ -1,7 +1,7 @@
 ---
 id: 3278f816-c3c3-4b97-bdd3-f3cb179c7519
 blueprint: professionals
-title: 'Proffesionals 2025'
+title: 'Proffesionals 2026'
 professionals:
   - 1bdafa57-5743-40d2-80e9-b5a9890fccc7
   - 4a29795d-7827-4a4e-8aad-ea5f5d6fd146
@@ -23,5 +23,5 @@ professionals:
   - 8f1cd25b-5858-4293-88aa-8ae8fc1cf926
   - 054db302-2273-4e8c-b45e-5d749bd15b90
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767698230
+updated_at: 1767865393
 ---
