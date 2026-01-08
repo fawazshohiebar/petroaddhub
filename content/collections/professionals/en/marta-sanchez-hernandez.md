@@ -4,10 +4,8 @@ blueprint: professional
 title: 'Marta Sánchez Hernandez'
 image: speakers/16_marta-sanchez-hernandez.jpg
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767790511
+updated_at: 1767865823
 ---
 Country: Spain 
-PTO Ranking
 World Rank: 24
 National Rank: 2
-Tier 3 PRO
