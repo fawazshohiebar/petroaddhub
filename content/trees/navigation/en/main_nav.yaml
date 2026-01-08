@@ -24,6 +24,9 @@ tree:
       -
         id: 6e874adf-c3f1-479f-9453-d55d952ffb14
         entry: c8c8fa3a-9c2f-489e-9d16-4f419e325c64
+      -
+        id: 5619e317-33e7-4988-97ef-adf167a0601f
+        entry: 93a04f25-d7d8-46aa-93ff-296d69af8545
   -
     id: 0aa138a5-52dd-4e32-a0a1-ae31a133d5a2
     title: Spectator
