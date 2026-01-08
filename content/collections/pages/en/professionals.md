@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767698232
+updated_at: 1767864951
 fine_seo_title: Professionals
 fine_seo_preview: Speakers
 page_builder:
@@ -44,15 +44,6 @@ page_builder:
                     attrs:
                       color: redgrad
                 text: 'The Professionals'
-        sub_heading:
-          -
-            type: heading
-            attrs:
-              level: 4
-            content:
-              -
-                type: text
-                text: 'Get ready to witness some of the world’s best triathletes in action! These elite athletes will be pushing their limits on the Challenge Sir Bani Yas course. Don’t miss your chance to see them compete for the top spot!'
   -
     type: set
     attrs:
