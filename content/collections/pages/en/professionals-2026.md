@@ -38,14 +38,23 @@ page_builder:
                 type: text
                 text: 'Get ready to witness some of the world’s best triathletes in action! These elite athletes will be pushing their limits on the Challenge Sir Bani Yas course. Don’t miss your chance to see them compete for the top spot!'
   -
+    type: set
+    attrs:
+      id: mk595vyw
+      values:
+        type: reusable_block
+        entry:
+          - f9421a56-119f-4aa8-b5fd-bfcd3f931af2
+  -
     type: paragraph
     attrs:
       textAlign: left
-parent: 0dc09714-d959-44e9-8e43-0c8fd272d1db
 layout: layout
 reusable_popup: false
 template: default
+fine_seo_title: 'Professionals 2026'
 fine_seo_is_title_custom: false
+fine_seo_preview: 'Professionals 2026'
 header_scripts:
   code: null
   mode: htmlmixed
@@ -56,5 +65,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767864966
+updated_at: 1767865081
 ---
