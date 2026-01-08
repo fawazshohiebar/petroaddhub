@@ -557,7 +557,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767774917
+updated_at: 1767862166
 fine_seo_image: brand/screenshot-2025-12-26-at-2.31.54-pm.png
 reusable_popup: false
 fine_seo_title: 'Challenge Sir Bani Yas'
