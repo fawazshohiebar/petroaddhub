@@ -37,7 +37,7 @@ courses_grid_set:
     enabled: true
     link: 'entry::3ca37afb-8a18-4994-8460-627d9cd48a78'
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767862162
+updated_at: 1767862164
 youtube_thumbnail:
   - challenge-sir-bin-yas/103226_28471206_3975341846-300x200.jpg
 video_link: pfKsVDj1Dy0
