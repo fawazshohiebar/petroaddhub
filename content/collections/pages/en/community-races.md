@@ -97,8 +97,6 @@ page_builder:
                 sport_title: '10.63'
                 type: sport
                 enabled: true
-                sport_icon:
-                  - svgs/zycammcymimk5fdp5k-(1).svg
               -
                 id: miws25sr
                 sport_icon:
