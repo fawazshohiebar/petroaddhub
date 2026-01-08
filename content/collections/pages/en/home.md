@@ -547,7 +547,7 @@ page_builder:
             type: new_set
             enabled: true
             button_size: fit
-            link: 'https://booking.celestyal.com/touchb2c/#/ctg-search-route'
+            link: 'https://booking.celestyal.com/touchb2c?inJsonGet=%7B%22packageCodes%22%3A%22CD03260130%22%2C%20%20%22landingPage%22%3A%22CTGS%22%2C%20%22runSearch%22%3Atrue%2C%20%22adults%22%3A%202%2C%20%22children%22%3A%200%2C%20%22agencyId%22%3A%20%22109499%22%2C%20%22residency%22%3A%20%22AE%22%2C%20%22locale%22%3A%20%22en%22%7D'
 header_scripts:
   code: null
   mode: htmlmixed
@@ -558,7 +558,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767866152
+updated_at: 1767866231
 fine_seo_image: brand/screenshot-2025-12-26-at-2.31.54-pm.png
 reusable_popup: false
 fine_seo_title: 'Challenge Sir Bani Yas'
