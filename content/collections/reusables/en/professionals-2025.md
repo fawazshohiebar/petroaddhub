@@ -1,7 +1,7 @@
 ---
 id: f9421a56-119f-4aa8-b5fd-bfcd3f931af2
 blueprint: speakers
-title: 'Professionals 2026'
+title: 'Professionals 2025'
 Speakers:
   - 7bca214d-8219-41de-9b50-af9ca85b8c09
   - 397bc4f1-a674-4f6d-bab4-45f00b995ca1
@@ -53,5 +53,5 @@ Speakers:
   - 5f3c25a1-fedb-4f44-a1ab-3d7486b35c85
   - af9896f1-5dea-4ac6-a4bd-8d9d6115f71e
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767865072
+updated_at: 1767865501
 ---
