@@ -432,7 +432,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: 'Board the dedicated race cruise ship and settle into your cabin for a seamless race experience.'
+                    text: 'Think of the cruise ship as your all-in-one race base, combining world-class comfort, athlete facilities, and family experiences in one seamless floating venue.'
             type: icon_box_set
             enabled: true
           -
@@ -461,7 +461,12 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Board the dedicated race cruise ship and settle into your cabin for a seamless race experience.'
+                    marks:
+                      -
+                        type: textColor
+                        attrs:
+                          color: '#fff'
+                    text: 'Compete in one of the world’s most unique triathlon settings, then celebrate and explore Sir Bani Yas Island’s breathtaking landscapes, wildlife and unforgettable natural beauty.'
             type: icon_box_set
             enabled: true
           -
@@ -495,7 +500,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: 'Board the dedicated race cruise ship and settle into your cabin for a seamless race experience.'
+                    text: 'Leave with more than a medal — take home stories, moments, and experiences that you will treasure long after the race ends.'
             type: icon_box_set
             enabled: true
         background: bgimg
@@ -558,7 +563,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767869508
+updated_at: 1767871882
 fine_seo_image: brand/screenshot-2025-12-26-at-2.31.54-pm.png
 reusable_popup: false
 fine_seo_title: 'Challenge Sir Bani Yas'
