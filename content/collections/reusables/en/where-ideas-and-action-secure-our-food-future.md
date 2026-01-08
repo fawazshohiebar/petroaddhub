@@ -4,8 +4,8 @@ blueprint: hero
 title: 'The Island is Calling!'
 heading: 'The Island is Calling!'
 video: pfKsVDj1Dy0
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1766748094
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1767869131
 subheading: 'Are You Ready to Answer the Challenge?'
 description_text:
   -
