@@ -4,10 +4,8 @@ blueprint: professional
 title: 'Kieran Lindars'
 image: speakers/13_kieran-lindars.jpg
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767790941
+updated_at: 1767865797
 ---
 Country: Great Britain 
-PTO Ranking
 World Rank: 47
 National Rank: 5
-Tier 3 PRO
