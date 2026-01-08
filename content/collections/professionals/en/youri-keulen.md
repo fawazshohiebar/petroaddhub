@@ -4,10 +4,8 @@ blueprint: professional
 title: 'Youri Keulen'
 image: speakers/02_youri-keulen.jpg
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767790760
+updated_at: 1767865682
 ---
 Country: Netherlands 
-PTO Ranking
 World Rank: 12
 National Rank: 3
-Tier 1 PRO
