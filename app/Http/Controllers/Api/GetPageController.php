@@ -58,14 +58,18 @@ class GetPageController extends Controller
         }
 
         foreach ($data as $key => $value) {
-            // Check if this is an image array (has permalink and is_image)
+            // Check if this is an image/svg array (has permalink and is_image or is_svg)
             if (is_array($value)) {
-                // If it's an array with a single element that has permalink and is_image
-                if (count($value) === 1 && isset($value[0]['permalink']) && isset($value[0]['is_image']) && $value[0]['is_image'] === true) {
+                // If it's an array with a single element that has permalink and is an image or svg
+                if (count($value) === 1 && isset($value[0]['permalink']) && 
+                    (isset($value[0]['is_image']) && $value[0]['is_image'] === true || 
+                     isset($value[0]['is_svg']) && $value[0]['is_svg'] === true)) {
                     $data[$key] = $value[0]['permalink'];
                 }
-                // If it's an object with permalink and is_image (not in array)
-                elseif (isset($value['permalink']) && isset($value['is_image']) && $value['is_image'] === true) {
+                // If it's an object with permalink and is_image or is_svg (not in array)
+                elseif (isset($value['permalink']) && 
+                        (isset($value['is_image']) && $value['is_image'] === true || 
+                         isset($value['is_svg']) && $value['is_svg'] === true)) {
                     $data[$key] = $value['permalink'];
                 }
                 // Otherwise recursively process nested arrays
