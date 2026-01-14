@@ -254,6 +254,109 @@ mobile_builder:
           button_link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*1ee1jdc*_gcl_aw*R0NMLjE3NjU3NzcxMzkuQ2p3S0NBaUEzZm5KQmhBZ0Vpd0F5cW1ZNVVJb0liX1RudWRsWEc3R245RE0wdFRza0NIVzJ1X0NyNk93UHgtTERqLWhuZGlKbk8yQ29ob0M2MEVRQXZEX0J3RQ..*_gcl_au*MjM3NTc4NzIxLjE3NjU3NzcxMzk.*_ga*NzY3NDE5MTA4LjE3NjU3NzcxMzk.*_ga_4JZJXK51X7*czE3NjU3OTk4ODkkbzYkZzEkdDE3NjU4MDE4MjIkajIkbDAkaDA.&error=login_required&state=37214b77-9ee5-4b4a-b93a-8681f52b8338&_p=8477287260889937'
         type: card_information
         enabled: true
+  -
+    id: mkdoevir
+    type: heading_with_grid_cads
+    enabled: true
+    heading: 'Community Run Challenge'
+    description: 'Lace up and race along Terminal Beach. With coastal views to one side and mangrove on the other. Experience this stunning course with plenty of spectators to keep you motivated.  Average daytime temperature: 21 – 24 degrees.'
+    grid:
+      -
+        id: mkdnwmpz
+        image:
+          - new-project-(6).webp
+        card_title: Road
+        sport_info:
+          -
+            id: mkdnxo0w
+            icon:
+              - svgs/1559hk33fofmk5fsxdh-(1).svg
+            card_text_info: '10.63'
+            type: sport_info_option
+            enabled: true
+          -
+            id: mkdnxqlk
+            icon:
+              - svgs/swimming.svg
+            card_text_info: 2.5km
+            type: sport_info_option
+            enabled: true
+          -
+            id: mkdnxut2
+            icon:
+              - svgs/swimming.svg
+            card_text_info: 'Age 1 +'
+            type: sport_info_option
+            enabled: true
+        button_group:
+          button_text: 'Register Now'
+          button_link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*lt2j5v*_gcl_aw*R0NMLjE3NjU3NzcxMzkuQ2p3S0NBaUEzZm5KQmhBZ0Vpd0F5cW1ZNVVJb0liX1RudWRsWEc3R245RE0wdFRza0NIVzJ1X0NyNk93UHgtTERqLWhuZGlKbk8yQ29ob0M2MEVRQXZEX0J3RQ..*_gcl_au*MjM3NTc4NzIxLjE3NjU3NzcxMzk.*_ga*NzY3NDE5MTA4LjE3NjU3NzcxMzk.*_ga_4JZJXK51X7*czE3NjU3OTk4ODkkbzYkZzEkdDE3NjU4MDE4NjkkajE1JGwwJGgw&error=login_required&state=e4b48796-f557-44a5-9b76-62939a59bf8c&_p=5462470079865792'
+        type: card_information
+        enabled: true
+      -
+        id: mkdo004q
+        image:
+          - new-project-(7).webp
+        card_title: Road
+        sport_info:
+          -
+            id: mkdnxo0w
+            icon:
+              - svgs/1559hk33fofmk5fsxdh-(1).svg
+            card_text_info: '17.43'
+            type: sport_info_option
+            enabled: true
+          -
+            id: mkdnxqlk
+            icon:
+              - svgs/swimming.svg
+            card_text_info: 5km
+            type: sport_info_option
+            enabled: true
+          -
+            id: mkdnxut2
+            icon:
+              - svgs/swimming.svg
+            card_text_info: 'Age 9 +'
+            type: sport_info_option
+            enabled: true
+        button_group:
+          button_text: 'Register Now'
+          button_link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*1oki61r*_gcl_aw*R0NMLjE3NjU3NzcxMzkuQ2p3S0NBaUEzZm5KQmhBZ0Vpd0F5cW1ZNVVJb0liX1RudWRsWEc3R245RE0wdFRza0NIVzJ1X0NyNk93UHgtTERqLWhuZGlKbk8yQ29ob0M2MEVRQXZEX0J3RQ..*_gcl_au*MjM3NTc4NzIxLjE3NjU3NzcxMzk.*_ga*NzY3NDE5MTA4LjE3NjU3NzcxMzk.*_ga_4JZJXK51X7*czE3NjU3OTk4ODkkbzYkZzEkdDE3NjU4MDE4MDgkajE2JGwwJGgw&error=login_required&state=7f37b752-152a-45ca-bdcb-3a78ce93b145&_p=44399930614406535'
+        type: card_information
+        enabled: true
+      -
+        id: mkdo01nt
+        image:
+          - new-project-(8).webp
+        card_title: Road
+        sport_info:
+          -
+            id: mkdnxo0w
+            icon:
+              - svgs/1559hk33fofmk5fsxdh-(1).svg
+            card_text_info: '19.55'
+            type: sport_info_option
+            enabled: true
+          -
+            id: mkdnxqlk
+            icon:
+              - svgs/swimming.svg
+            card_text_info: 10km
+            type: sport_info_option
+            enabled: true
+          -
+            id: mkdnxut2
+            icon:
+              - svgs/swimming.svg
+            card_text_info: 'Age 12 +'
+            type: sport_info_option
+            enabled: true
+        button_group:
+          button_text: 'Register Now'
+          button_link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*1ee1jdc*_gcl_aw*R0NMLjE3NjU3NzcxMzkuQ2p3S0NBaUEzZm5KQmhBZ0Vpd0F5cW1ZNVVJb0liX1RudWRsWEc3R245RE0wdFRza0NIVzJ1X0NyNk93UHgtTERqLWhuZGlKbk8yQ29ob0M2MEVRQXZEX0J3RQ..*_gcl_au*MjM3NTc4NzIxLjE3NjU3NzcxMzk.*_ga*NzY3NDE5MTA4LjE3NjU3NzcxMzk.*_ga_4JZJXK51X7*czE3NjU3OTk4ODkkbzYkZzEkdDE3NjU4MDE4MjIkajIkbDAkaDA.&error=login_required&state=37214b77-9ee5-4b4a-b93a-8681f52b8338&_p=8477287260889937'
+        type: card_information
+        enabled: true
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1768374093
+updated_at: 1768374536
 ---
