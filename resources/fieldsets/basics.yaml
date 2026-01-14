@@ -1954,3 +1954,32 @@ fields:
                                         display: 'Buttonc Link'
                                         localizable: false
                                         width: 50
+            heading_with_image_sets:
+              display: 'Heading With Image Sets'
+              fields:
+                -
+                  handle: heading_and_image_replicator
+                  field:
+                    type: replicator
+                    display: 'Heading And Image Replicator'
+                    localizable: false
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          data_card:
+                            display: 'Data Card'
+                            fields:
+                              -
+                                handle: heading
+                                field:
+                                  type: text
+                                  display: Heading
+                                  localizable: false
+                              -
+                                handle: image
+                                field:
+                                  container: assets
+                                  type: assets
+                                  display: Image
+                                  localizable: false
