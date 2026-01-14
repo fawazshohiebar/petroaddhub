@@ -1871,3 +1871,24 @@ fields:
                                                 type: text
                                                 display: 'Card Text Info'
                                                 localizable: false
+                              -
+                                handle: button_group
+                                field:
+                                  type: group
+                                  display: 'Button Group'
+                                  localizable: false
+                                  fields:
+                                    -
+                                      handle: button_text
+                                      field:
+                                        type: text
+                                        display: 'Button Text'
+                                        localizable: false
+                                        width: 50
+                                    -
+                                      handle: button_link
+                                      field:
+                                        type: link
+                                        display: 'Button LInk'
+                                        localizable: false
+                                        width: 50
