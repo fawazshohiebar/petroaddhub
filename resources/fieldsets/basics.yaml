@@ -1958,6 +1958,12 @@ fields:
               display: 'Heading With Image Sets'
               fields:
                 -
+                  handle: heading_of_set
+                  field:
+                    type: text
+                    display: 'Heading Of Set'
+                    localizable: false
+                -
                   handle: heading_and_image_replicator
                   field:
                     type: replicator
