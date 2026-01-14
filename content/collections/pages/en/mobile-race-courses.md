@@ -59,6 +59,32 @@ mobile_builder:
         enabled: true
     type: heading_and_cards
     enabled: true
+  -
+    id: mkdtc8rd
+    heading_and_image_replicator:
+      -
+        id: mkdtc9ry
+        heading: 'SWIM - 1.5km'
+        image:
+          - 12_csby_swim_olympic-distance-1.5km-pdf.jpg
+        type: data_card
+        enabled: true
+      -
+        id: mkdtd1y9
+        heading: 'BIKE - 45km'
+        image:
+          - 06_csby_bike_olympic-distance-45km-pdf.jpg
+        type: data_card
+        enabled: true
+      -
+        id: mkdtesss
+        heading: 'RUN - 10km'
+        image:
+          - run_long-middle-olympic-distance_050425-2048x1152.jpg
+        type: data_card
+        enabled: true
+    type: heading_with_image_sets
+    enabled: true
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1768382591
+updated_at: 1768382782
 ---
