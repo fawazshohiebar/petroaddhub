@@ -322,7 +322,7 @@ mobile_builder:
             enabled: true
         button_group:
           button_text: 'Register Now'
-          button_link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*1oki61r*_gcl_aw*R0NMLjE3NjU3NzcxMzkuQ2p3S0NBaUEzZm5KQmhBZ0Vpd0F5cW1ZNVVJb0liX1RudWRsWEc3R245RE0wdFRza0NIVzJ1X0NyNk93UHgtTERqLWhuZGlKbk8yQ29ob0M2MEVRQXZEX0J3RQ..*_gcl_au*MjM3NTc4NzIxLjE3NjU3NzcxMzk.*_ga*NzY3NDE5MTA4LjE3NjU3NzcxMzk.*_ga_4JZJXK51X7*czE3NjU3OTk4ODkkbzYkZzEkdDE3NjU4MDE4MDgkajE2JGwwJGgw&error=login_required&state=7f37b752-152a-45ca-bdcb-3a78ce93b145&_p=44399930614406535'
+          button_link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*bca5pu*_gcl_aw*R0NMLjE3NjU3NzcxMzkuQ2p3S0NBaUEzZm5KQmhBZ0Vpd0F5cW1ZNVVJb0liX1RudWRsWEc3R245RE0wdFRza0NIVzJ1X0NyNk93UHgtTERqLWhuZGlKbk8yQ29ob0M2MEVRQXZEX0J3RQ..*_gcl_au*MjM3NTc4NzIxLjE3NjU3NzcxMzk.*_ga*NzY3NDE5MTA4LjE3NjU3NzcxMzk.*_ga_4JZJXK51X7*czE3NjU3OTk4ODkkbzYkZzEkdDE3NjU4MDE4OTQkajYwJGwwJGgw&error=login_required&state=86af776c-c582-4e1a-93ce-6d47c588a57c&_p=35499700021650793'
         type: card_information
         enabled: true
       -
@@ -354,9 +354,9 @@ mobile_builder:
             enabled: true
         button_group:
           button_text: 'Register Now'
-          button_link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*1ee1jdc*_gcl_aw*R0NMLjE3NjU3NzcxMzkuQ2p3S0NBaUEzZm5KQmhBZ0Vpd0F5cW1ZNVVJb0liX1RudWRsWEc3R245RE0wdFRza0NIVzJ1X0NyNk93UHgtTERqLWhuZGlKbk8yQ29ob0M2MEVRQXZEX0J3RQ..*_gcl_au*MjM3NTc4NzIxLjE3NjU3NzcxMzk.*_ga*NzY3NDE5MTA4LjE3NjU3NzcxMzk.*_ga_4JZJXK51X7*czE3NjU3OTk4ODkkbzYkZzEkdDE3NjU4MDE4MjIkajIkbDAkaDA.&error=login_required&state=37214b77-9ee5-4b4a-b93a-8681f52b8338&_p=8477287260889937'
+          button_link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*1w8p4fq*_gcl_aw*R0NMLjE3NjU3NzcxMzkuQ2p3S0NBaUEzZm5KQmhBZ0Vpd0F5cW1ZNVVJb0liX1RudWRsWEc3R245RE0wdFRza0NIVzJ1X0NyNk93UHgtTERqLWhuZGlKbk8yQ29ob0M2MEVRQXZEX0J3RQ..*_gcl_au*MjM3NTc4NzIxLjE3NjU3NzcxMzk.*_ga*NzY3NDE5MTA4LjE3NjU3NzcxMzk.*_ga_4JZJXK51X7*czE3NjU3OTk4ODkkbzYkZzEkdDE3NjU4MDE4OTgkajU2JGwwJGgw&error=login_required&state=5f82833e-63da-4548-8d1e-62e4cdbf18c3&_p=3242175257155272'
         type: card_information
         enabled: true
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1768374536
+updated_at: 1768374654
 ---
