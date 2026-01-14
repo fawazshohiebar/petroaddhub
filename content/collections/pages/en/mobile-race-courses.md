@@ -85,6 +85,7 @@ mobile_builder:
         enabled: true
     type: heading_with_image_sets
     enabled: true
+    heading_of_set: 'Olympic Distance'
   -
     id: mkdtgfco
     heading_and_image_replicator:
@@ -111,6 +112,7 @@ mobile_builder:
         enabled: true
     type: heading_with_image_sets
     enabled: true
+    heading_of_set: 'Middle Distance'
   -
     id: mkdtj17k
     heading_and_image_replicator:
@@ -137,6 +139,7 @@ mobile_builder:
         enabled: true
     type: heading_with_image_sets
     enabled: true
+    heading_of_set: 'Long Distance'
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1768383168
+updated_at: 1768392117
 ---
