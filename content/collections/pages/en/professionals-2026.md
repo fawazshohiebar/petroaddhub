@@ -27,7 +27,7 @@ page_builder:
                     type: textColor
                     attrs:
                       color: redgrad
-                text: 'The Professionals Of 2026 '
+                text: "Meet the Pros\_"
         sub_heading:
           -
             type: heading
@@ -65,5 +65,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767872092
+updated_at: 1768386142
 ---
