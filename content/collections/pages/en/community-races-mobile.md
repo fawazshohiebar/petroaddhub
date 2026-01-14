@@ -55,6 +55,102 @@ mobile_builder:
           button_link: 'https://endurancecui.active.com/new/events/94585416/select-race?e4p=27995419-9990-4495-9961-a1970e9bc2f2&e4ts=1765801674&e4q=d2e3d28f-43a2-4fd5-b8b6-1c0d20d31ab9&_gl=1*3zu3o7*_gcl_aw*R0NMLjE3NjU3NzcxMzkuQ2p3S0NBaUEzZm5KQmhBZ0Vpd0F5cW1ZNVVJb0liX1RudWRsWEc3R245RE0wdFRza0NIVzJ1X0NyNk93UHgtTERqLWhuZGlKbk8yQ29ob0M2MEVRQXZEX0J3RQ..*_gcl_au*MjM3NTc4NzIxLjE3NjU3NzcxMzk.*_ga*NzY3NDE5MTA4LjE3NjU3NzcxMzk.*_ga_4JZJXK51X7*czE3NjU3OTk4ODkkbzYkZzEkdDE3NjU4MDE2NjMkajI3JGwwJGgw&e4c=active&e4e=snawe00000000&e4h=ec5756f4261b1268cef67ae436450002&e4rt=Safetynet&error=login_required&state=47fe55e7-f1f2-4099-a953-b8bc109cb022&_p=1914316467457653'
         type: card_information
         enabled: true
+      -
+        id: mkdo004q
+        image:
+          - new-project-(1).webp
+        card_title: 'Open Water'
+        sport_info:
+          -
+            id: mkdnxo0w
+            icon:
+              - svgs/1559hk33fofmk5fsxdh-(1).svg
+            card_text_info: '10.63'
+            type: sport_info_option
+            enabled: true
+          -
+            id: mkdnxqlk
+            icon:
+              - svgs/swimming.svg
+            card_text_info: 400m
+            type: sport_info_option
+            enabled: true
+          -
+            id: mkdnxut2
+            icon:
+              - svgs/swimming.svg
+            card_text_info: 'Age 6 +'
+            type: sport_info_option
+            enabled: true
+        button_group:
+          button_text: 'Register Now'
+          button_link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*1k1xyyf*_gcl_aw*R0NMLjE3NjU3NzcxMzkuQ2p3S0NBaUEzZm5KQmhBZ0Vpd0F5cW1ZNVVJb0liX1RudWRsWEc3R245RE0wdFRza0NIVzJ1X0NyNk93UHgtTERqLWhuZGlKbk8yQ29ob0M2MEVRQXZEX0J3RQ..*_gcl_au*MjM3NTc4NzIxLjE3NjU3NzcxMzk.*_ga*NzY3NDE5MTA4LjE3NjU3NzcxMzk.*_ga_4JZJXK51X7*czE3NjU3OTk4ODkkbzYkZzEkdDE3NjU4MDE2OTIkajYwJGwwJGgw&error=login_required&state=a46f50a8-420d-4a17-83b0-4bdc06d30529&_p=3986165683506935'
+        type: card_information
+        enabled: true
+      -
+        id: mkdo01nt
+        image:
+          - new-project.webp
+        card_title: 'Open Water'
+        sport_info:
+          -
+            id: mkdnxo0w
+            icon:
+              - svgs/1559hk33fofmk5fsxdh-(1).svg
+            card_text_info: '10.63'
+            type: sport_info_option
+            enabled: true
+          -
+            id: mkdnxqlk
+            icon:
+              - svgs/swimming.svg
+            card_text_info: 200m
+            type: sport_info_option
+            enabled: true
+          -
+            id: mkdnxut2
+            icon:
+              - svgs/swimming.svg
+            card_text_info: 'Age 6 +'
+            type: sport_info_option
+            enabled: true
+        button_group:
+          button_text: 'Register Now'
+          button_link: 'https://endurancecui.active.com/new/events/94585416/select-race?e4p=27995419-9990-4495-9961-a1970e9bc2f2&e4ts=1765801674&e4q=d2e3d28f-43a2-4fd5-b8b6-1c0d20d31ab9&_gl=1*3zu3o7*_gcl_aw*R0NMLjE3NjU3NzcxMzkuQ2p3S0NBaUEzZm5KQmhBZ0Vpd0F5cW1ZNVVJb0liX1RudWRsWEc3R245RE0wdFRza0NIVzJ1X0NyNk93UHgtTERqLWhuZGlKbk8yQ29ob0M2MEVRQXZEX0J3RQ..*_gcl_au*MjM3NTc4NzIxLjE3NjU3NzcxMzk.*_ga*NzY3NDE5MTA4LjE3NjU3NzcxMzk.*_ga_4JZJXK51X7*czE3NjU3OTk4ODkkbzYkZzEkdDE3NjU4MDE2NjMkajI3JGwwJGgw&e4c=active&e4e=snawe00000000&e4h=ec5756f4261b1268cef67ae436450002&e4rt=Safetynet&error=login_required&state=47fe55e7-f1f2-4099-a953-b8bc109cb022&_p=1914316467457653'
+        type: card_information
+        enabled: true
+      -
+        id: mkdo04g7
+        image:
+          - new-project.webp
+        card_title: 'Open Water'
+        sport_info:
+          -
+            id: mkdnxo0w
+            icon:
+              - svgs/1559hk33fofmk5fsxdh-(1).svg
+            card_text_info: '10.63'
+            type: sport_info_option
+            enabled: true
+          -
+            id: mkdnxqlk
+            icon:
+              - svgs/swimming.svg
+            card_text_info: 200m
+            type: sport_info_option
+            enabled: true
+          -
+            id: mkdnxut2
+            icon:
+              - svgs/swimming.svg
+            card_text_info: 'Age 6 +'
+            type: sport_info_option
+            enabled: true
+        button_group:
+          button_text: 'Register Now'
+          button_link: 'https://endurancecui.active.com/new/events/94585416/select-race?e4p=27995419-9990-4495-9961-a1970e9bc2f2&e4ts=1765801674&e4q=d2e3d28f-43a2-4fd5-b8b6-1c0d20d31ab9&_gl=1*3zu3o7*_gcl_aw*R0NMLjE3NjU3NzcxMzkuQ2p3S0NBaUEzZm5KQmhBZ0Vpd0F5cW1ZNVVJb0liX1RudWRsWEc3R245RE0wdFRza0NIVzJ1X0NyNk93UHgtTERqLWhuZGlKbk8yQ29ob0M2MEVRQXZEX0J3RQ..*_gcl_au*MjM3NTc4NzIxLjE3NjU3NzcxMzk.*_ga*NzY3NDE5MTA4LjE3NjU3NzcxMzk.*_ga_4JZJXK51X7*czE3NjU3OTk4ODkkbzYkZzEkdDE3NjU4MDE2NjMkajI3JGwwJGgw&e4c=active&e4e=snawe00000000&e4h=ec5756f4261b1268cef67ae436450002&e4rt=Safetynet&error=login_required&state=47fe55e7-f1f2-4099-a953-b8bc109cb022&_p=1914316467457653'
+        type: card_information
+        enabled: true
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1768373609
+updated_at: 1768373711
 ---
