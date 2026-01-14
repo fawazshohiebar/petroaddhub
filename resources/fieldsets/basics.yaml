@@ -1892,3 +1892,65 @@ fields:
                                         display: 'Button LInk'
                                         localizable: false
                                         width: 50
+            heading_and_cards:
+              display: 'Heading And Cards'
+              fields:
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                    localizable: false
+                -
+                  handle: cards_replicator
+                  field:
+                    type: replicator
+                    display: 'Cards Replicator'
+                    localizable: false
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          card:
+                            display: Card
+                            fields:
+                              -
+                                handle: image
+                                field:
+                                  container: assets
+                                  type: assets
+                                  display: Image
+                                  localizable: false
+                              -
+                                handle: card_title
+                                field:
+                                  type: text
+                                  display: 'Card Title'
+                                  localizable: false
+                              -
+                                handle: card_description
+                                field:
+                                  type: markdown
+                                  display: 'Card Description'
+                                  localizable: false
+                              -
+                                handle: button_group
+                                field:
+                                  type: group
+                                  display: 'Button Group'
+                                  localizable: false
+                                  fields:
+                                    -
+                                      handle: button_text
+                                      field:
+                                        type: text
+                                        display: 'Button Text'
+                                        localizable: false
+                                        width: 50
+                                    -
+                                      handle: buttonc_link
+                                      field:
+                                        type: link
+                                        display: 'Buttonc Link'
+                                        localizable: false
+                                        width: 50
