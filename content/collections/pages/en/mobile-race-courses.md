@@ -111,6 +111,32 @@ mobile_builder:
         enabled: true
     type: heading_with_image_sets
     enabled: true
+  -
+    id: mkdtj17k
+    heading_and_image_replicator:
+      -
+        id: mkdtj1zc
+        heading: 'SWIM - 3.8km'
+        image:
+          - 10_csby_swim_long-distance-3.8km-pdf.jpg
+        type: data_card
+        enabled: true
+      -
+        id: mkdtjeo4
+        heading: 'BIKE - 180km'
+        image:
+          - 05_csby_bike_long-distance-180km-pdf.jpg
+        type: data_card
+        enabled: true
+      -
+        id: mkdtk0n9
+        heading: 'RUN - 42.2km'
+        image:
+          - run_long-middle-olympic-distance_050425-2-2048x1152.jpg
+        type: data_card
+        enabled: true
+    type: heading_with_image_sets
+    enabled: true
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1768382894
+updated_at: 1768382995
 ---
