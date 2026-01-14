@@ -32,10 +32,8 @@ class GetPageController extends Controller
                 // Convert block to array recursively
                 $blockArray = json_decode(json_encode($block->toArray()), true);
                 
-                // Replace card_image with just the permalink
-                if (isset($blockArray['card_image']['permalink'])) {
-                    $blockArray['card_image'] = $blockArray['card_image']['permalink'];
-                }
+                // Replace all image fields with just the permalink
+                $blockArray = $this->processImageFields($blockArray);
                 
                 return $blockArray;
             })
@@ -48,5 +46,35 @@ class GetPageController extends Controller
                 'mobile_builder' => $mobileBuilder,
             ],
         ]);
+    }
+
+    /**
+     * Recursively process array to replace image objects with their permalinks
+     */
+    private function processImageFields($data)
+    {
+        if (!is_array($data)) {
+            return $data;
+        }
+
+        foreach ($data as $key => $value) {
+            // Check if this is an image array (has permalink and is_image)
+            if (is_array($value)) {
+                // If it's an array with a single element that has permalink and is_image
+                if (count($value) === 1 && isset($value[0]['permalink']) && isset($value[0]['is_image']) && $value[0]['is_image'] === true) {
+                    $data[$key] = $value[0]['permalink'];
+                }
+                // If it's an object with permalink and is_image (not in array)
+                elseif (isset($value['permalink']) && isset($value['is_image']) && $value['is_image'] === true) {
+                    $data[$key] = $value['permalink'];
+                }
+                // Otherwise recursively process nested arrays
+                else {
+                    $data[$key] = $this->processImageFields($value);
+                }
+            }
+        }
+
+        return $data;
     }
 }
