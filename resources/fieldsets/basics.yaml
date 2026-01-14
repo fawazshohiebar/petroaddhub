@@ -1804,3 +1804,70 @@ fields:
                     type: assets
                     display: Image
                     localizable: false
+            heading_with_grid_cads:
+              display: 'Heading With Grid Cads'
+              fields:
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                    localizable: false
+                -
+                  handle: description
+                  field:
+                    type: text
+                    display: Description
+                    localizable: false
+                -
+                  handle: grid
+                  field:
+                    type: replicator
+                    display: 'Grid Cards'
+                    localizable: false
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          card_information:
+                            display: 'Card Information'
+                            fields:
+                              -
+                                handle: image
+                                field:
+                                  container: assets
+                                  type: assets
+                                  display: Image
+                                  localizable: false
+                              -
+                                handle: card_title
+                                field:
+                                  type: text
+                                  display: 'Card Title'
+                                  localizable: false
+                              -
+                                handle: sport_info
+                                field:
+                                  type: replicator
+                                  display: 'Sport Info'
+                                  localizable: false
+                                  sets:
+                                    new_set_group:
+                                      display: 'New Set Group'
+                                      sets:
+                                        sport_info_option:
+                                          display: 'Sport Info Option'
+                                          fields:
+                                            -
+                                              handle: icon
+                                              field:
+                                                container: assets
+                                                type: assets
+                                                display: Icon
+                                                localizable: false
+                                            -
+                                              handle: card_text_info
+                                              field:
+                                                type: text
+                                                display: 'Card Text Info'
+                                                localizable: false
