@@ -15,10 +15,11 @@
             </div>
         {{ /courses_grid_set }}
 
-        <div>
+        <div class="relative">
 
             {{ glide:youtube_thumbnail }}
-                <img src="{{ url }}" alt="" class=" object-cover w-full h-full sm:w-auto sm:h-auto cursor-pointer"
+            <img class="absolute w-[45px] h-[45px]  left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" src="/assets/images-(29)-(1).png" alt=""  onclick="openVideoPopup()">  
+            <img src="{{ url }}" alt="" class=" object-cover w-full h-full sm:w-auto sm:h-auto cursor-pointer"
                     onclick="openVideoPopup()">
             {{ /glide:youtube_thumbnail }}
             {{# <img src="aloha.png" alt="" class="cursor-pointer" onclick="openVideoPopup()"> #}}
