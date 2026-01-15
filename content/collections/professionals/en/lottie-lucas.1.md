@@ -1,5 +1,6 @@
 ---
 id: 4dc9f59a-c9ba-400d-8eba-c4123a6b411f
+published: false
 blueprint: professional
 title: 'Lottie Lucas'
 image: speakers/15_lottie-lucas.jpg
