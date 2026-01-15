@@ -1,65 +1,108 @@
-<div class="countdown hidden xl:flex gap-4 font-sans" data-end-time="{{ countdown_end }}">
+<!-- Debug: countdown_end = {{ countdown_end }} -->
+<div class="countdown-wrapper flex gap-4 font-sans text-white" data-end-time="{{ countdown_end }}">
   <div class="countdown-item text-center">
-    <span class="days block text-lg font-light leading-tight">00</span>
-    <span class="label block text-xs text-gray-500 font-medium">Days</span>
+    <span class="countdown-days block text-4xl font-bold leading-tight">00</span>
+    <span class="label block text-xs text-white/70 font-medium uppercase">Days</span>
   </div>
+  <div class="countdown-separator text-4xl font-bold">:</div>
   <div class="countdown-item text-center">
-    <span class="hours block text-lg font-light leading-tight">00</span>
-    <span class="label block text-xs text-gray-500 font-medium">Hours</span>
+    <span class="countdown-hours block text-4xl font-bold leading-tight">00</span>
+    <span class="label block text-xs text-white/70 font-medium uppercase">Hours</span>
   </div>
+  <div class="countdown-separator text-4xl font-bold">:</div>
   <div class="countdown-item text-center">
-    <span class="minutes block text-lg font-light leading-tight">00</span>
-    <span class="label block text-xs text-gray-500 font-medium">Minutes</span>
+    <span class="countdown-minutes block text-4xl font-bold leading-tight">00</span>
+    <span class="label block text-xs text-white/70 font-medium uppercase">Minutes</span>
   </div>
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const countdownEl = document.querySelector(".countdown");
+(function() {
+  console.log("🔥 Countdown script loaded");
   
-  if (!countdownEl) {
-    console.warn("Countdown element not found");
-    return;
-  }
-  
-  const endTimeStr = countdownEl.getAttribute("data-end-time");
-  
-  if (!endTimeStr) {
-    console.warn("Countdown end time not provided");
-    return;
-  }
-  
-  const endTime = new Date(endTimeStr).getTime();
-  
-  if (isNaN(endTime)) {
-    console.warn("Invalid countdown end time:", endTimeStr);
-    return;
-  }
-
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const distance = endTime - now;
-
-    if (distance < 0) {
-      countdownEl.innerHTML = "";
+  function initCountdown() {
+    // Find ALL countdown elements
+    const countdownElements = document.querySelectorAll(".countdown-wrapper");
+    
+    console.log(`🔍 Found ${countdownElements.length} countdown element(s)`);
+    
+    if (countdownElements.length === 0) {
+      console.error("❌ No countdown elements found!");
       return;
     }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((distance / (1000 * 60)) % 60);
-
-    // Safely update elements with null checks
-    const daysEl = countdownEl.querySelector(".days");
-    const hoursEl = countdownEl.querySelector(".hours");
-    const minutesEl = countdownEl.querySelector(".minutes");
     
-    if (daysEl) daysEl.textContent = String(days).padStart(2, "0");
-    if (hoursEl) hoursEl.textContent = String(hours).padStart(2, "0");
-    if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, "0");
-  }
+    // Initialize each countdown
+    countdownElements.forEach((countdownEl, index) => {
+      console.log(`\n🎯 Initializing countdown #${index + 1}`);
+      
+      let endTimeStr = countdownEl.getAttribute("data-end-time");
+      
+      console.log(`📅 Countdown #${index + 1} end time string:`, endTimeStr);
+      
+      if (!endTimeStr || endTimeStr.trim() === '') {
+        console.warn(`⚠️ Countdown #${index + 1} end time not provided, using fallback`);
+        endTimeStr = "2026-02-01T08:00:00"; // Fallback date
+      }
+      
+      // Try to parse the date - handle different formats
+      let endTime;
+      
+      // If it contains a space, replace with T for ISO format
+      const isoTimeStr = endTimeStr.replace(' ', 'T');
+      endTime = new Date(isoTimeStr).getTime();
+      
+      console.log(`Countdown #${index + 1} - Original:`, endTimeStr, "ISO:", isoTimeStr);
+      console.log(`Countdown #${index + 1} - Parsed:`, new Date(isoTimeStr), "Timestamp:", endTime);
+      
+      if (isNaN(endTime)) {
+        console.error(`❌ Invalid countdown end time for #${index + 1}:`, endTimeStr);
+        countdownEl.innerHTML = '<span class="text-sm text-red-500">Invalid date format</span>';
+        return;
+      }
 
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
-});
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = endTime - now;
+
+        if (distance < 0) {
+          console.warn(`⚠️ Countdown #${index + 1} has expired`);
+          countdownEl.querySelector(".countdown-item").innerHTML = '<span class="text-sm text-white/70">Event has started</span>';
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((distance / (1000 * 60)) % 60);
+
+        // Safely update elements with null checks
+        const daysEl = countdownEl.querySelector(".countdown-days");
+        const hoursEl = countdownEl.querySelector(".countdown-hours");
+        const minutesEl = countdownEl.querySelector(".countdown-minutes");
+        
+        if (daysEl) {
+          daysEl.textContent = String(days).padStart(2, "0");
+        }
+        
+        if (hoursEl) {
+          hoursEl.textContent = String(hours).padStart(2, "0");
+        }
+        
+        if (minutesEl) {
+          minutesEl.textContent = String(minutes).padStart(2, "0");
+        }
+      }
+
+      updateCountdown();
+      const intervalId = setInterval(updateCountdown, 60000); // Update every minute instead of every second
+      
+      console.log(`✅ Countdown #${index + 1} initialized successfully`);
+    });
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener("DOMContentLoaded", initCountdown);
+  } else {
+    initCountdown();
+  }
+})();
 </script>

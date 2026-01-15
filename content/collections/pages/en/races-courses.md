@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1765975304
+updated_at: 1768390877
 page_builder:
   -
     type: set
@@ -227,6 +227,22 @@ page_builder:
             featured_image: run_long-middle-olympic-distance_050425-2048x1152.jpg
             type: new_set
             enabled: true
+        pdf_top_title:
+          -
+            type: heading
+            attrs:
+              level: 3
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textColor
+                    attrs:
+                      color: redgrad
+                text: 'Olympic Distance'
   -
     type: set
     attrs:
@@ -254,6 +270,22 @@ page_builder:
             featured_image: run_long-middle-olympic-distance_050425-1-1536x864.jpg
             type: new_set
             enabled: true
+        pdf_top_title:
+          -
+            type: heading
+            attrs:
+              level: 3
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textColor
+                    attrs:
+                      color: redgrad
+                text: 'Middle Distance'
   -
     type: set
     attrs:
@@ -281,6 +313,22 @@ page_builder:
             featured_image: run_long-middle-olympic-distance_050425-2-2048x1152.jpg
             type: new_set
             enabled: true
+        pdf_top_title:
+          -
+            type: heading
+            attrs:
+              level: 3
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textColor
+                    attrs:
+                      color: redgrad
+                text: 'Long Distance'
 fine_seo_title: 'Races Courses'
 fine_seo_preview: 'Races Courses'
 layout: layout

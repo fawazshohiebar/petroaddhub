@@ -4,6 +4,13 @@ blueprint: media_partners
 title: 'Media Partners'
 replicator_media_partners:
   -
+    id: mkdye16a
+    logo:
+      - adnoc.png
+    title: 'Headline Partner'
+    type: new_set
+    enabled: true
+  -
     id: miyhxjka
     logo:
       - sponsors/adnec.png
@@ -18,5 +25,5 @@ replicator_media_partners:
     type: new_set
     enabled: true
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1765777365
+updated_at: 1768391137
 ---

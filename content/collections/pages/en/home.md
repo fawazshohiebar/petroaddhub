@@ -294,15 +294,6 @@ page_builder:
       values:
         type: social_media_sec
         social_title: '#ChallengeSirBaniYas'
-        social_description:
-          -
-            type: heading
-            attrs:
-              level: 4
-            content:
-              -
-                type: text
-                text: "Making history as the UAE's first long distance triathlon, set in one of triathlon's most enviable destinations."
         social_media:
           -
             id: mifo0iu1
@@ -398,7 +389,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: 'Board the dedicated race cruise ship and settle into your cabin for a seamless race experience.'
+                    text: "We’ve made your race experience smoother, smarter, and completely hassle-free journey to Sir Bani Yas Island\_\_"
             type: icon_box_set
             enabled: true
           -
@@ -432,7 +423,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: 'The cruise ship serves as your complete race base, offering comfort, athlete facilities, and family-friendly experiences all in one place.'
+                    text: "combining world-class comfort with athlete-focused facilities, and family-friendly experiences all in one place.\_"
             type: icon_box_set
             enabled: true
           -
@@ -454,7 +445,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: 'Race & Explore the Island'
+                    text: "From cabin to course in minutes\_"
             icon_box_description:
               -
                 type: paragraph
@@ -466,7 +457,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: 'Race in a truly unique triathlon destination, then enjoy the stunning nature, wildlife, and landscapes of Sir Bani Yas Island.'
+                    text: "No commuting. No wasted energy. Just pure focus on the race and the experience.\_"
             type: icon_box_set
             enabled: true
           -
@@ -500,7 +491,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: 'The experience goes beyond the race, leaving you with lasting memories and unforgettable moments.'
+                    text: "he experience goes beyond the race, leaving you with lasting memories and unforgettable moments.\_"
             type: icon_box_set
             enabled: true
         background: bgimg
@@ -516,10 +507,20 @@ page_builder:
                 type: text
                 marks:
                   -
+                    type: bold
+                  -
                     type: textColor
                     attrs:
                       color: '#fff'
-                text: 'The Ultimate Challenge Sir Bani Yas Experience'
+                text: 'Set sail for Sir Bani Yas Island, and experience a triathlon like never before.'
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+                text: "\_"
         sub_heading:
           -
             type: heading
@@ -563,7 +564,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1768195583
+updated_at: 1768390533
 fine_seo_image: brand/screenshot-2025-12-26-at-2.31.54-pm.png
 reusable_popup: false
 fine_seo_title: 'Challenge Sir Bani Yas'
