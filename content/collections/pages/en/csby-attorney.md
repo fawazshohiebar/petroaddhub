@@ -12,10 +12,17 @@ page_builder:
         design: centered
         heading:
           -
-            type: paragraph
+            type: heading
+            attrs:
+              level: 2
             content:
               -
                 type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: redgrad
                 text: 'Cruise Ship Journey'
   -
     type: set
@@ -36,10 +43,17 @@ page_builder:
         design: centered
         heading:
           -
-            type: paragraph
+            type: heading
+            attrs:
+              level: 2
             content:
               -
                 type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: redgrad
                 text: 'Race Schedule'
   -
     type: set
@@ -71,5 +85,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1768498089
+updated_at: 1768498119
 ---
