@@ -4,23 +4,26 @@
         <div
             class="flex flex-col sm:grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-y-[40px] gap-x-[15px] md:gap-[30px] ">
             <div class="col-span-2 md:col-span-3 lg:col-span-2 mt-0">
-                <div class=" flex flex-col md:flex-row gap-5 ">
+                <div class=" flex flex-col md:flex-row gap-8 relative ">
                     {{ brand:logos_and_partners }}
-                        <div class="flex-col  flex">
+                        <div class="flex-col  relative  justify-between flex">
                             <div
                                 class="font-semibold text-lg mb-5 text-[#fff] mt-2 group-hover:text-[#fff] transition-colors">
-                                {{ title }}</div>
-
-                            <div class="flex   gap-2">
+                                {{ title }}
+                            </div>
+                            <div class="flex align-end  gap-2">
                                 {{ logo }}
                                     <a href="{{ url }}" class="group transition-all duration-300 hover:opacity-80 ">
                                         {{ image }}
                                             <img loading="lazy" src="{{ url }}" alt="{{ alt }}"
-                                                class="w-[174px] h-24  self-stretch object-contain  mx-auto">
+                                                class="lg:w-[150px] w-[140px] h-24  self-stretch object-contain  mx-auto">
                                         {{ /image }}
                                     </a>
                                 {{ /logo }}
                             </div>
+                            {{ if first }}
+                                <div class="h-full md:w-[1px] absolute right-[-15px] bg-white"></div>
+                            {{ /if }}
                         </div>
                     {{ /brand:logos_and_partners }}
                 </div>
