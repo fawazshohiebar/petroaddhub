@@ -389,7 +389,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: 'Board the dedicated race cruise ship and settle into your cabin for a seamless race experience.'
+                    text: "We’ve made your race experience smoother, smarter, and completely hassle-free journey to Sir Bani Yas Island\_\_"
             type: icon_box_set
             enabled: true
           -
@@ -423,7 +423,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: 'The cruise ship serves as your complete race base, offering comfort, athlete facilities, and family-friendly experiences all in one place.'
+                    text: "combining world-class comfort with athlete-focused facilities, and family-friendly experiences all in one place.\_"
             type: icon_box_set
             enabled: true
           -
@@ -445,7 +445,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: 'Race & Explore the Island'
+                    text: "From cabin to course in minutes\_"
             icon_box_description:
               -
                 type: paragraph
@@ -457,7 +457,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: 'Race in a truly unique triathlon destination, then enjoy the stunning nature, wildlife, and landscapes of Sir Bani Yas Island.'
+                    text: "No commuting. No wasted energy. Just pure focus on the race and the experience.\_"
             type: icon_box_set
             enabled: true
           -
@@ -491,7 +491,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: 'The experience goes beyond the race, leaving you with lasting memories and unforgettable moments.'
+                    text: "he experience goes beyond the race, leaving you with lasting memories and unforgettable moments.\_"
             type: icon_box_set
             enabled: true
         background: bgimg
@@ -507,10 +507,20 @@ page_builder:
                 type: text
                 marks:
                   -
+                    type: bold
+                  -
                     type: textColor
                     attrs:
                       color: '#fff'
-                text: 'The Ultimate Challenge Sir Bani Yas Experience'
+                text: 'Set sail for Sir Bani Yas Island, and experience a triathlon like never before.'
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+                text: "\_"
         sub_heading:
           -
             type: heading

@@ -106,21 +106,29 @@ tabs:
                       fields:
                         -
                           import: fancy_button
+          -
+            handle: countdown_date_picker
+            field:
+              time_enabled: true
+              time_seconds_enabled: true
+              type: date
+              display: 'Countdown Date Picker'
+              localizable: false
       -
         display: 'Footer Logos'
         fields:
           -
-            handle: logos
+            handle: logos_and_partners
             field:
               type: replicator
-              display: Logos
-              localizable: true
+              display: 'Logos and partners'
+              localizable: false
               sets:
                 new_set_group:
                   display: 'New Set Group'
                   sets:
-                    logo:
-                      display: Logo
+                    new_set:
+                      display: 'New Set'
                       fields:
                         -
                           handle: title
@@ -128,26 +136,41 @@ tabs:
                             type: text
                             display: Title
                             localizable: false
-                            width: 33
                         -
-                          handle: image
+                          handle: logo
                           field:
-                            max_files: 1
-                            container: collaterals
-                            type: assets
-                            display: Image
+                            type: replicator
+                            display: Logo
                             localizable: false
-                            width: 33
-                            validate:
-                              - image
-                        -
-                          handle: url
-                          field:
-                            input_type: url
-                            type: text
-                            display: Url
-                            localizable: false
-                            width: 33
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    fields:
+                                      -
+                                        handle: title
+                                        field:
+                                          type: text
+                                          display: Title
+                                          localizable: false
+                                          width: 33
+                                      -
+                                        handle: image
+                                        field:
+                                          container: collaterals
+                                          type: assets
+                                          display: Image
+                                          localizable: false
+                                          width: 33
+                                      -
+                                        handle: url
+                                        field:
+                                          type: link
+                                          display: Url
+                                          localizable: false
+                                          width: 33
       -
         display: 'Extra Event Info'
         fields:

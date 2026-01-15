@@ -108,7 +108,7 @@ class="opacity-60 bg-slate-900"
        <div class="lg:hidden items-center py-4 gap-2 block">
 
             <div class="flex justify-end gap-2 lg:gap-4 items-center">
-                {{ partial:partials/sets/countdown_date_picker countdown_end="{brand:countdown_date_picker format='Y-m-d\TH:i:s'}" }}
+                {{# {{ partial:partials/sets/countdown_date_picker countdown_end="{brand:countdown_date_picker format='Y-m-d\TH:i:s'}" }} #}}
  
                 {{ if brand:ai_search_url }}
                     <a title="{{ 'AI Search' | trans }}" href="{{ brand:ai_search_url }}" target="_blank"

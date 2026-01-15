@@ -1,20 +1,28 @@
-<footer class="bg-[linear-gradient(87deg,#E2001A_-156.79%,#0F193C_143.4%)] bg-cover text-white" >
+<footer class="bg-[linear-gradient(87deg,#E2001A_-156.79%,#0F193C_143.4%)] bg-cover text-white">
 
     <div class="adnec-container mx-auto py-[45px] md:py-[50px] lg:py-[50px] relative">
-        <div  class="flex flex-col sm:grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-y-[40px] gap-x-[15px] md:gap-[30px] ">
+        <div
+            class="flex flex-col sm:grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-y-[40px] gap-x-[15px] md:gap-[30px] ">
             <div class="col-span-2 md:col-span-3 lg:col-span-2 mt-0">
-                <div class="sm:max-w-sm ">
-                     <div
-                        class=" font-semibold text-xl mb-5 text-[#fff] mt-2 group-hover:text-[#fff] transition-colors">
-                        {{ 'Organised by' | trans }}</div>
-                     <div class="flex justify-between gap-4 items-end">
-                        {{ brand:logos }}
-                            <a href="{{ url }}" class="group transition-all duration-300 hover:opacity-80 ">
-                                <img loading="lazy" src="{{ image }}" alt="{{ image:alt }}"
-                                    class="h-24 w-auto self-stretch object-contain  mx-auto">
-                            </a>
-                        {{ /brand:logos }}
-                    </div>
+                <div class=" flex flex-col md:flex-row gap-5 ">
+                    {{ brand:logos_and_partners }}
+                        <div class="flex-col  flex">
+                            <div
+                                class="font-semibold text-lg mb-5 text-[#fff] mt-2 group-hover:text-[#fff] transition-colors">
+                                {{ title }}</div>
+
+                            <div class="flex   gap-2">
+                                {{ logo }}
+                                    <a href="{{ url }}" class="group transition-all duration-300 hover:opacity-80 ">
+                                        {{ image }}
+                                            <img loading="lazy" src="{{ url }}" alt="{{ alt }}"
+                                                class="w-[174px] h-24  self-stretch object-contain  mx-auto">
+                                        {{ /image }}
+                                    </a>
+                                {{ /logo }}
+                            </div>
+                        </div>
+                    {{ /brand:logos_and_partners }}
                 </div>
             </div>
 
@@ -62,14 +70,14 @@
 
 
 
-<div class="adnec-container relative z-10   h-[1px] bg-white opacity-20 "></div>
+    <div class="adnec-container relative z-10   h-[1px] bg-white opacity-20 "></div>
 
     <div class="  py-6">
         <div class=" adnec-container  mx-auto flex  flex-row  justify-between items-center">
             <div class="text-[#fff] text-center text-sm mb-4 md:mb-0 w-full">
-                <a class="text-white text-center"
-                    href="https://www.adnecgroup.ae" target="_blank" rel="noopener noreferrer">
-                &copy; {{ now format="Y" }}   {{ 'ADNEC Group' | trans }} 
+                <a class="text-white text-center" href="https://www.adnecgroup.ae" target="_blank"
+                    rel="noopener noreferrer">
+                    &copy; {{ now format="Y" }} {{ 'ADNEC Group' | trans }}
                     {{ 'All rights reserved' | trans }}
                 </a>
             </div>

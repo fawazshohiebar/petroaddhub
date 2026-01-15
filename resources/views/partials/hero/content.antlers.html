@@ -1,4 +1,4 @@
-<div class="w-full h-full bg-slate-900/60 z-20">
+<div class="w-full h-full bg-slate-900/30 z-20">
     <div class="adnec-container z-20 h-full flex flex-col justify-center items-center w-full  ">
         <div class="max-w-full w-full flex flex-col justify-center items-start text-center">
             <div class=" w-full flex  flex-col gap-y-5">
@@ -45,6 +45,10 @@
                 {{ if description_text }}
                     <div class="custom">{{ description_text }}</div>
                 {{ /if }}
+<div class="flex justify-center">
+                {{ partial:partials/sets/countdown_date_picker countdown_end="{brand:countdown_date_picker format='Y-m-d\TH:i:s'}" }}
+</div>
+
                 <!-- Enhanced Event Details Section -->
                 <div class="flex flex-wrap flex-row gap-5 ">
                     {{ hero_actions }}
