@@ -389,7 +389,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: "We’ve made your race experience smoother, smarter, and completely hassle-free journey to Sir Bani Yas Island\_\_"
+                    text: 'We’ve made your race experience smoother, smarter, and completely hassle-free'
             type: icon_box_set
             enabled: true
           -
@@ -423,7 +423,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: "combining world-class comfort with athlete-focused facilities, and family-friendly experiences all in one place.\_"
+                    text: "Combining world-class comfort with athlete-focused facilities, and family-friendly experiences all in one place.\_"
             type: icon_box_set
             enabled: true
           -
@@ -491,7 +491,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: '#fff'
-                    text: "he experience goes beyond the race, leaving you with lasting memories and unforgettable moments.\_"
+                    text: "The experience goes beyond the race, leaving you with lasting memories and unforgettable moments.\_"
             type: icon_box_set
             enabled: true
         background: bgimg
@@ -564,7 +564,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1768387127
+updated_at: 1768463968
 fine_seo_image: brand/screenshot-2025-12-26-at-2.31.54-pm.png
 reusable_popup: false
 fine_seo_title: 'Challenge Sir Bani Yas'
