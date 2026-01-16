@@ -39,9 +39,40 @@ logos_and_partners:
         type: new_set
         enabled: true
       -
-        id: mke1gnye
+        id: mkgt5x5r
         image:
           - 6207aea41e28e3aa10c4113cb87c9c09e2933897-(2).png
+        type: new_set
+        enabled: true
+    type: new_set
+    enabled: true
+logos_and_partners_mobile:
+  -
+    id: mke1fut7
+    title: 'Presented By'
+    logo:
+      -
+        id: mke1g1o8
+        image:
+          - 6207aea41e28e3aa10c4113cb87c9c09e2933897-(1).png
+        type: new_set
+        enabled: true
+      -
+        id: mkgt5x5r
+        image:
+          - 6207aea41e28e3aa10c4113cb87c9c09e2933897-(2).png
+        type: new_set
+        enabled: true
+    type: new_set
+    enabled: true
+  -
+    id: mke1fi5t
+    title: 'Headline Partner'
+    logo:
+      -
+        id: mke1fj81
+        image:
+          - adnoclogowhite-(2).png
         type: new_set
         enabled: true
     type: new_set

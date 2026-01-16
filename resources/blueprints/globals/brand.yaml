@@ -171,6 +171,60 @@ tabs:
                                           display: Url
                                           localizable: false
                                           width: 33
+          -
+            handle: logos_and_partners_mobile
+            field:
+              type: replicator
+              display: 'Logos and partners Mobile'
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+                            localizable: false
+                        -
+                          handle: logo
+                          field:
+                            type: replicator
+                            display: Logo
+                            localizable: false
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    fields:
+                                      -
+                                        handle: title
+                                        field:
+                                          type: text
+                                          display: Title
+                                          localizable: false
+                                          width: 33
+                                      -
+                                        handle: image
+                                        field:
+                                          container: collaterals
+                                          type: assets
+                                          display: Image
+                                          localizable: false
+                                          width: 33
+                                      -
+                                        handle: url
+                                        field:
+                                          type: link
+                                          display: Url
+                                          localizable: false
+                                          width: 33
       -
         display: 'Extra Event Info'
         fields:

@@ -25,7 +25,7 @@ page_builder:
                     type: textColor
                     attrs:
                       color: redgrad
-                text: 'We would love to speak with you.'
+                text: "We'd love to hear from you."
               -
                 type: hardBreak
                 marks:
@@ -44,7 +44,7 @@ page_builder:
                     type: textColor
                     attrs:
                       color: redgrad
-                text: 'Feel free to reach out using the below details.'
+                text: 'Please fill out the form below.'
         show_labels: true
         form: contact_us
   -
@@ -63,8 +63,9 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1765441854
+updated_by: 25795521-e2da-4e8b-b6d5-0031c5158f6c
+updated_at: 1768571183
 fine_seo_title: 'Contact Us'
 fine_seo_preview: 'Contact Us'
+layout: layout
 ---
