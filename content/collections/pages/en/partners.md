@@ -28,6 +28,13 @@ page_builder:
                     attrs:
                       color: redgrad
                 text: 'Our Partners and Supporters'
+        sub_heading:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: ...
   -
     type: set
     attrs:
@@ -85,8 +92,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1768391141
+updated_by: 3c257898-4e0f-4175-874e-a27702748280
+updated_at: 1768567248
 fine_seo_title: Partners
 fine_seo_preview: Partners
 layout: layout
