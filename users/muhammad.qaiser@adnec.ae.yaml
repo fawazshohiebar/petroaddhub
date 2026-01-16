@@ -1,7 +1,7 @@
 name: 'Muhammad Ans'
 super: true
 id: 3c257898-4e0f-4175-874e-a27702748280
-password_hash: $2y$12$5pKIxNZDoH3BSPkcBIJFaOResYz8fmubQMn.igQBJjkXOKT2VfyDa
+password_hash: $2y$12$tpHIDJGYjC8PHo1VYRhGYuiDVuDfN5mKqHAp41xlPAofWCabYnhAm
 preferences:
   assets:
     assets:
