@@ -47,3 +47,8 @@ preferences:
         - ring_number
         - falcon_gender
         - falcon_age
+    contact_us:
+      columns:
+        - datestamp
+        - last_name
+        - first_name
