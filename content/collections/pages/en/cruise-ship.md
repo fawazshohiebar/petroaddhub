@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1766743557
+updated_at: 1768640060
 page_builder:
   -
     type: set
@@ -72,7 +72,7 @@ page_builder:
             type: new_set
             enabled: true
             design: whiterounded
-            link: 'https://booking.celestyal.com/touchb2c/'
+            link: 'https://are01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fbooking.celestyal.com%2Ftouchb2c%3FinJsonGet%3D%257B%2522packageCodes%2522%253A%2522CD03260130%2522%252C%2520%2520%2522landingPage%2522%253A%2522CTGS%2522%252C%2520%2522runSearch%2522%253Atrue%252C%2520%2522adults%2522%253A%25202%252C%2520%2522children%2522%253A%25200%252C%2520%2522agencyId%2522%253A%2520%2522109499%2522%252C%2520%2522residency%2522%253A%2520%2522AE%2522%252C%2520%2522locale%2522%253A%2520%2522en%2522%257D&data=05%7C02%7Cabdelaziz.mohamed%40adnec.ae%7Cb46ea98992c94ebb5c8508de55a0ae7a%7Ca47fc36ddc5d4617b46714a51d2dca8e%7C0%7C0%7C639042347158201450%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=a6%2BQmrI43gEjH4M9lgw6HStahR0nLU4piZDrL70%2BwqA%3D&reserved=0'
   -
     type: set
     attrs:
