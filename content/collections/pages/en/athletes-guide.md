@@ -1,7 +1,7 @@
 ---
 id: ba4c5771-128f-4e8c-a8bc-529142796ba0
 blueprint: page
-title: 'Athletes Guidlines'
+title: 'Athletes Guide'
 page_builder:
   -
     type: set
@@ -30,5 +30,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1768640445
+updated_at: 1768731622
 ---
