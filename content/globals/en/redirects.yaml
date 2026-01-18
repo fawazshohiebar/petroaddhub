@@ -9,3 +9,8 @@ redirects:
     url_old: /gfw-privacy-policy/
     internal_url: 070fa963-44a4-44f5-8091-5d2b360f9ba4
     response: 302
+  -
+    id: mkjlj1ao
+    url_old: /athlete-guide
+    internal_url: ba4c5771-128f-4e8c-a8bc-529142796ba0
+    response: 302
