@@ -108,8 +108,6 @@ page_builder:
                 enabled: true
               -
                 id: miws7a26
-                sport_icon:
-                  - svgs/age-(3).svg
                 sport_title: 'Age 6 +'
                 type: sport
                 enabled: true
