@@ -5,7 +5,7 @@ fields:
     field:
       type: replicator
       display: 'Courses Grid Set'
-      localizable: false
+      localizable: true
       max_sets: 3
       sets:
         new_set_group:
@@ -34,7 +34,7 @@ fields:
       container: collaterals
       type: assets
       display: 'Youtube Thumbnail'
-      localizable: false
+      localizable: true
   -
     handle: video_link
     field:
@@ -42,4 +42,4 @@ fields:
       type: text
       display: 'Video Link'
       instructions: 'YouTube ID'
-      localizable: false
+      localizable: true
