@@ -1,7 +1,7 @@
 ---
 id: 93a04f25-d7d8-46aa-93ff-296d69af8545
 blueprint: page
-title: 'Professionals 2026'
+title: 'Pros 2026'
 page_builder:
   -
     type: set
@@ -64,6 +64,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1768460363
+updated_by: 25795521-e2da-4e8b-b6d5-0031c5158f6c
+updated_at: 1768566198
 ---

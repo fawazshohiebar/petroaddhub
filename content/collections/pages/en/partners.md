@@ -85,8 +85,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: 3c257898-4e0f-4175-874e-a27702748280
-updated_at: 1768567254
+updated_by: 25795521-e2da-4e8b-b6d5-0031c5158f6c
+updated_at: 1768567318
 fine_seo_title: Partners
 fine_seo_preview: Partners
 layout: layout
