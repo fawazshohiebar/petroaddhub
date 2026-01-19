@@ -1,7 +1,6 @@
 ---
 id: 9cc971c9-5b9f-4501-9a4a-fe2da08fa23c
 origin: 2a70f368-3d6a-45a2-a1b9-180319c73fe0
-published: false
 updated_by: 3c257898-4e0f-4175-874e-a27702748280
-updated_at: 1768815510
+updated_at: 1768815515
 ---
