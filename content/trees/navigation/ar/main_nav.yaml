@@ -90,3 +90,15 @@ tree:
   -
     id: 149ede1e-ecb9-472a-8a0e-1576907934ee
     entry: ab2ad82d-8814-4f30-9a3d-aa8b518e539f
+  -
+    id: 49463580-66e8-44fb-97ee-46b1d2f7eb3e
+    title: 'Athlete Info'
+  -
+    id: c0618536-afcb-4df8-ba97-c1f36f53831a
+    title: Spectator
+  -
+    id: 3315b052-597c-415e-931d-dc5bfe3c00c0
+    title: 'Cruise Ship'
+  -
+    id: 5f689bfb-508d-40f4-bd5c-fbf89df5bfe4
+    title: '2025 Edition'
