@@ -71,19 +71,19 @@ tree:
       -
         id: 7452ed76-af8a-41c3-b3e8-82dc348d4a0e
         entry: 2acdc5e9-bbbb-4cde-b993-30e354d25cde
+  -
+    id: e9be1b6d-62c6-425a-b326-513594352cf6
+    title: '2025 Edition'
+    children:
       -
-        id: 74d39f43-a00f-437e-a5f7-5777f469d362
-        entry: bd025470-1181-4fa3-8c0d-c5eadbf22fb8
-        children:
-          -
-            id: c97ddbb4-d8b1-4b35-8af7-0de3d9b5f60a
-            entry: a25ac0f7-1800-47a7-be13-26149b693763
-          -
-            id: b83ab233-0717-4107-ac4c-611078816f09
-            entry: c8d4b10e-d802-4fe5-b2e8-13c00f5790e3
-          -
-            id: 16c2b07d-6e04-4ce1-a138-8da00adb78bb
-            entry: 6e4e8256-5030-44a4-858b-604b8a26d290
+        id: c97ddbb4-d8b1-4b35-8af7-0de3d9b5f60a
+        entry: a25ac0f7-1800-47a7-be13-26149b693763
+      -
+        id: b83ab233-0717-4107-ac4c-611078816f09
+        entry: c8d4b10e-d802-4fe5-b2e8-13c00f5790e3
+      -
+        id: 16c2b07d-6e04-4ce1-a138-8da00adb78bb
+        entry: 6e4e8256-5030-44a4-858b-604b8a26d290
   -
     id: 672543d2-c48e-43a3-8e83-57747028c3aa
     entry: 3e370ab0-59a5-4c65-afef-b3fc445e33ef
