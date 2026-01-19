@@ -1,7 +1,6 @@
 ---
 id: 288a33d2-fff8-48e6-b394-99310b27f932
 origin: 96bd3400-787a-44c4-8e66-78874cf6a826
-published: false
 updated_by: 3c257898-4e0f-4175-874e-a27702748280
-updated_at: 1768815415
+updated_at: 1768815420
 ---
