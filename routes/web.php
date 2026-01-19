@@ -16,4 +16,4 @@ Route::permanentRedirect('/', '/en');
 Route::get('/{locale}/agenda/{agenda}/{date}', GetAgendaByDateController::class)->name('show_agenda_by_date');
 
 // redirect all /ar starting routes to homepage (including /ar)
-Route::permanentRedirect('/ar/{any?}', '/en')->where('any', '.*');
+// Route::permanentRedirect('/ar/{any?}', '/en')->where('any', '.*');
