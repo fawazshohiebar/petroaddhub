@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 3c257898-4e0f-4175-874e-a27702748280
-updated_at: 1768822506
+updated_at: 1768822549
 page_builder:
   -
     type: set
@@ -66,6 +66,28 @@ page_builder:
                       -
                         type: strike
                     text: '$100 '
+              -
+                type: heading
+                attrs:
+                  level: 4
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: textColor
+                        attrs:
+                          color: redgrad
+                    text: 'Discounted Standard Rate'
+                  -
+                    type: text
+                    text: ':'
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: ' 100$'
             type: grid_set
             enabled: true
             grid_images: cruise-ship-experience/rpc_2556-scaled.jpg
