@@ -40,13 +40,13 @@ page_builder:
                 sport_icon:
                   - svgs/swimming.svg
                 sport_title: السباحة
-                sport_distance: 3.8KM
+                sport_distance: '3.8 كم'
                 type: sport
                 enabled: true
               -
                 id: mj9wsspi
                 sport_title: الدرجات
-                sport_distance: 180KM
+                sport_distance: '180 كم'
                 type: sport
                 enabled: true
                 sport_icon:
@@ -54,7 +54,7 @@ page_builder:
               -
                 id: mj9wt14f
                 sport_title: الجري
-                sport_distance: 42.2KM
+                sport_distance: '42.2 كم'
                 type: sport
                 enabled: true
                 sport_icon:
@@ -70,7 +70,7 @@ page_builder:
               -
                 id: mj9wtx4j
                 sport_title: السباحة
-                sport_distance: 1.9KM
+                sport_distance: '1.9 كم'
                 type: sport
                 enabled: true
                 sport_icon:
@@ -78,7 +78,7 @@ page_builder:
               -
                 id: mj9wu9y5
                 sport_title: الدرجات
-                sport_distance: 96KM
+                sport_distance: '96 كم'
                 type: sport
                 enabled: true
                 sport_icon:
@@ -86,7 +86,7 @@ page_builder:
               -
                 id: mj9wuh37
                 sport_title: الجري
-                sport_distance: 21.1KM
+                sport_distance: '21.1 كم'
                 type: sport
                 enabled: true
                 sport_icon:
@@ -519,5 +519,5 @@ page_builder:
             button_size: fit
             link: 'https://booking.celestyal.com/touchb2c?inJsonGet=%7B%22packageCodes%22%3A%22CD03260130%22%2C%20%20%22landingPage%22%3A%22CTGS%22%2C%20%22runSearch%22%3Atrue%2C%20%22adults%22%3A%202%2C%20%22children%22%3A%200%2C%20%22agencyId%22%3A%20%22109499%22%2C%20%22residency%22%3A%20%22AE%22%2C%20%22locale%22%3A%20%22en%22%7D'
 updated_by: 3c257898-4e0f-4175-874e-a27702748280
-updated_at: 1768826550
+updated_at: 1768826646
 ---
