@@ -19,7 +19,7 @@ description_text:
             type: textColor
             attrs:
               color: '#fff'
-        text: '31 Jan - 1 Feb 2026'
+        text: '31 يناير - 1 فبراير 2026'
 updated_by: 3c257898-4e0f-4175-874e-a27702748280
 updated_at: 1768824984
 ---
