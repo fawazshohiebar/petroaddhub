@@ -14,8 +14,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1765803892
+updated_by: 3c257898-4e0f-4175-874e-a27702748280
+updated_at: 1768822506
 page_builder:
   -
     type: set
@@ -66,28 +66,6 @@ page_builder:
                       -
                         type: strike
                     text: '$100 '
-              -
-                type: heading
-                attrs:
-                  level: 4
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: textColor
-                        attrs:
-                          color: redgrad
-                    text: 'Discounted Rate'
-                  -
-                    type: text
-                    text: ':'
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: ' 80$'
             type: grid_set
             enabled: true
             grid_images: cruise-ship-experience/rpc_2556-scaled.jpg
@@ -439,4 +417,5 @@ page_builder:
       textAlign: left
 fine_seo_title: 'Entry Fees'
 fine_seo_preview: 'Entry Fees'
+layout: layout
 ---
