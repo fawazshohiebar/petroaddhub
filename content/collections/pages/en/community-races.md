@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 3c257898-4e0f-4175-874e-a27702748280
-updated_at: 1768803513
+updated_at: 1768803782
 page_builder:
   -
     type: set
@@ -294,14 +294,14 @@ page_builder:
               -
                 id: miws25sr
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/tricycle.svg
                 sport_title: 30km
                 type: sport
                 enabled: true
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 12 +'
                 type: sport
                 enabled: true
@@ -328,18 +328,18 @@ page_builder:
                 type: sport
                 enabled: true
                 sport_icon:
-                  - svgs/swimming.svg
+                  - zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/tricycle.svg
                 sport_title: 60km
                 type: sport
                 enabled: true
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 16 +'
                 type: sport
                 enabled: true
@@ -366,18 +366,18 @@ page_builder:
                 type: sport
                 enabled: true
                 sport_icon:
-                  - svgs/swimming.svg
+                  - zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/tricycle.svg
                 sport_title: 90km
                 type: sport
                 enabled: true
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 19 +'
                 type: sport
                 enabled: true
