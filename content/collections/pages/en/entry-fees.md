@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 3c257898-4e0f-4175-874e-a27702748280
-updated_at: 1768822549
+updated_at: 1768822587
 page_builder:
   -
     type: set
@@ -55,18 +55,6 @@ page_builder:
                     text: 'Olympic Distance — Individual'
             grid_text:
               -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Standard rate: '
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: strike
-                    text: '$100 '
-              -
                 type: heading
                 attrs:
                   level: 4
@@ -78,7 +66,7 @@ page_builder:
                         type: textColor
                         attrs:
                           color: redgrad
-                    text: 'Discounted Standard Rate'
+                    text: 'Standard Rate'
                   -
                     type: text
                     text: ':'
