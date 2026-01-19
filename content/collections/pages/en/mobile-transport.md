@@ -19,11 +19,11 @@ mobile_builder:
       - Dhannah Ferry Point to Abu Dhabi Hotel
       - Dubai International Airport to Abu Dhabi (any city location)
       - Abu Dhabi International Airport to Abu Dhabi  (any city location)
-    card_image: 03eabaa0117edede59e8cc7385055aef6ae3e2a5-(1).png
+    card_image: challenge-sir-bin-yas/dsc04156-edit-2048x1365.jpg
     type: media_with_text
     enabled: true
     card_style: style1
     card_design: side
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1766742476
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1768561625
 ---

@@ -14,8 +14,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767876873
+updated_by: 3c257898-4e0f-4175-874e-a27702748280
+updated_at: 1768804181
 page_builder:
   -
     type: set
@@ -109,7 +109,7 @@ page_builder:
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 6 +'
                 type: sport
                 enabled: true
@@ -136,7 +136,7 @@ page_builder:
                 type: sport
                 enabled: true
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
@@ -147,7 +147,7 @@ page_builder:
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 6 +'
                 type: sport
                 enabled: true
@@ -174,7 +174,7 @@ page_builder:
                 type: sport
                 enabled: true
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
@@ -185,7 +185,7 @@ page_builder:
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 8 +'
                 type: sport
                 enabled: true
@@ -212,7 +212,7 @@ page_builder:
                 type: sport
                 enabled: true
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
@@ -223,7 +223,7 @@ page_builder:
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 12 +'
                 type: sport
                 enabled: true
@@ -290,18 +290,18 @@ page_builder:
                 type: sport
                 enabled: true
                 sport_icon:
-                  - svgs/swimming.svg
+                  - zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/tricycle.svg
                 sport_title: 30km
                 type: sport
                 enabled: true
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 12 +'
                 type: sport
                 enabled: true
@@ -328,18 +328,18 @@ page_builder:
                 type: sport
                 enabled: true
                 sport_icon:
-                  - svgs/swimming.svg
+                  - zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/tricycle.svg
                 sport_title: 60km
                 type: sport
                 enabled: true
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 16 +'
                 type: sport
                 enabled: true
@@ -366,18 +366,18 @@ page_builder:
                 type: sport
                 enabled: true
                 sport_icon:
-                  - svgs/swimming.svg
+                  - zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/tricycle.svg
                 sport_title: 90km
                 type: sport
                 enabled: true
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 19 +'
                 type: sport
                 enabled: true
@@ -444,18 +444,18 @@ page_builder:
                 type: sport
                 enabled: true
                 sport_icon:
-                  - svgs/swimming.svg
+                  - zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/runner-on-the-start.svg
                 sport_title: 2.5km
                 type: sport
                 enabled: true
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 1 +'
                 type: sport
                 enabled: true
@@ -482,18 +482,18 @@ page_builder:
                 type: sport
                 enabled: true
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/runner-on-the-start.svg
                 sport_title: 5km
                 type: sport
                 enabled: true
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 9 +'
                 type: sport
                 enabled: true
@@ -520,18 +520,18 @@ page_builder:
                 type: sport
                 enabled: true
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/runner-on-the-start.svg
                 sport_title: 10km
                 type: sport
                 enabled: true
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 12 +'
                 type: sport
                 enabled: true
