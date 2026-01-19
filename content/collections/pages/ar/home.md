@@ -104,7 +104,7 @@ page_builder:
                 sport_icon:
                   - svgs/swimming.svg
                 sport_title: السباحة
-                sport_distance: 1.5KM
+                sport_distance: '1.5 كم'
                 type: sport
                 enabled: true
               -
@@ -112,7 +112,7 @@ page_builder:
                 sport_icon:
                   - svgs/tricycle.svg
                 sport_title: الدرجات
-                sport_distance: 45KM
+                sport_distance: '45 كم'
                 type: sport
                 enabled: true
               -
@@ -120,7 +120,7 @@ page_builder:
                 sport_icon:
                   - svgs/runner-on-the-start.svg
                 sport_title: الجري
-                sport_distance: 10KM
+                sport_distance: '10 كم'
                 type: sport
                 enabled: true
           -
@@ -519,5 +519,5 @@ page_builder:
             button_size: fit
             link: 'https://booking.celestyal.com/touchb2c?inJsonGet=%7B%22packageCodes%22%3A%22CD03260130%22%2C%20%20%22landingPage%22%3A%22CTGS%22%2C%20%22runSearch%22%3Atrue%2C%20%22adults%22%3A%202%2C%20%22children%22%3A%200%2C%20%22agencyId%22%3A%20%22109499%22%2C%20%22residency%22%3A%20%22AE%22%2C%20%22locale%22%3A%20%22en%22%7D'
 updated_by: 3c257898-4e0f-4175-874e-a27702748280
-updated_at: 1768826646
+updated_at: 1768826679
 ---
