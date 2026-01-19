@@ -14,8 +14,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767876873
+updated_by: 3c257898-4e0f-4175-874e-a27702748280
+updated_at: 1768802241
 page_builder:
   -
     type: set
@@ -109,7 +109,7 @@ page_builder:
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 6 +'
                 type: sport
                 enabled: true
