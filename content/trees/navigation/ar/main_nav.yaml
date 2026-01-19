@@ -31,6 +31,9 @@ tree:
         id: 6f65209e-641d-4216-9d7c-cb5e491cc99f
         entry: f18d2696-faec-48bf-8d93-32317a8cac42
   -
+    id: 49463580-66e8-44fb-97ee-46b1d2f7eb3e
+    title: 'Athlete Info'
+  -
     id: 6c7bbc61-a0d5-4306-88a7-63597c95a48c
     entry: 915ea928-cdf1-4f7d-b3ad-41eb86ac6e32
     children:
@@ -90,9 +93,6 @@ tree:
   -
     id: 149ede1e-ecb9-472a-8a0e-1576907934ee
     entry: ab2ad82d-8814-4f30-9a3d-aa8b518e539f
-  -
-    id: 49463580-66e8-44fb-97ee-46b1d2f7eb3e
-    title: 'Athlete Info'
   -
     id: c0618536-afcb-4df8-ba97-c1f36f53831a
     title: Spectator
