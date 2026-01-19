@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 3c257898-4e0f-4175-874e-a27702748280
-updated_at: 1768803129
+updated_at: 1768803326
 page_builder:
   -
     type: set
@@ -136,7 +136,7 @@ page_builder:
                 type: sport
                 enabled: true
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
@@ -147,7 +147,7 @@ page_builder:
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 6 +'
                 type: sport
                 enabled: true
@@ -174,7 +174,7 @@ page_builder:
                 type: sport
                 enabled: true
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
@@ -185,7 +185,7 @@ page_builder:
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 8 +'
                 type: sport
                 enabled: true
@@ -212,7 +212,7 @@ page_builder:
                 type: sport
                 enabled: true
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/zycammcymimk5fdp5k-(2).svg
               -
                 id: miws25sr
                 sport_icon:
@@ -223,7 +223,7 @@ page_builder:
               -
                 id: miws7a26
                 sport_icon:
-                  - svgs/swimming.svg
+                  - svgs/age.svg
                 sport_title: 'Age 12 +'
                 type: sport
                 enabled: true
