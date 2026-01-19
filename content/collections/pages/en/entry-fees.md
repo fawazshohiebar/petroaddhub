@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 3c257898-4e0f-4175-874e-a27702748280
-updated_at: 1768822587
+updated_at: 1768822763
 page_builder:
   -
     type: set
@@ -102,39 +102,19 @@ page_builder:
                     text: 'Olympic Distance - Team'
             grid_text:
               -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Standard rate: '
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: strike
-                    text: '$150 '
-              -
                 type: heading
                 attrs:
                   level: 4
                 content:
                   -
                     type: text
-                    marks:
-                      -
-                        type: textColor
-                        attrs:
-                          color: redgrad
-                    text: 'Discounted Rate'
-                  -
-                    type: text
-                    text: ':'
+                    text: 'Standard Rate:'
                   -
                     type: text
                     marks:
                       -
                         type: bold
-                    text: ' 127.5$'
+                    text: ' 150$'
             type: grid_set
             enabled: true
             grid_images: cruise-ship-experience/images-(18).webp
@@ -161,39 +141,19 @@ page_builder:
                     text: 'Middle Distance - Individual'
             grid_text:
               -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Standard rate: '
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: strike
-                    text: '$300 '
-              -
                 type: heading
                 attrs:
                   level: 4
                 content:
                   -
                     type: text
-                    marks:
-                      -
-                        type: textColor
-                        attrs:
-                          color: redgrad
-                    text: 'Discounted Rate'
-                  -
-                    type: text
-                    text: ':'
+                    text: 'Standard Rate:'
                   -
                     type: text
                     marks:
                       -
                         type: bold
-                    text: ' 240$'
+                    text: ' 300$'
             type: grid_set
             enabled: true
             grid_images: images-(19).webp
@@ -220,39 +180,19 @@ page_builder:
                     text: 'Middle Distance - Team'
             grid_text:
               -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Standard rate: '
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: strike
-                    text: '$535 '
-              -
                 type: heading
                 attrs:
                   level: 4
                 content:
                   -
                     type: text
-                    marks:
-                      -
-                        type: textColor
-                        attrs:
-                          color: redgrad
-                    text: 'Discounted Rate'
-                  -
-                    type: text
-                    text: ':'
+                    text: 'Standard Rate:'
                   -
                     type: text
                     marks:
                       -
                         type: bold
-                    text: ' 454.75$'
+                    text: ' 535$'
             type: grid_set
             enabled: true
             grid_images: images-(20).webp
@@ -279,39 +219,19 @@ page_builder:
                     text: 'Long Distance - Individual'
             grid_text:
               -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Standard rate: '
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: strike
-                    text: '$535 '
-              -
                 type: heading
                 attrs:
                   level: 4
                 content:
                   -
                     type: text
-                    marks:
-                      -
-                        type: textColor
-                        attrs:
-                          color: redgrad
-                    text: 'Discounted Rate'
-                  -
-                    type: text
-                    text: ':'
+                    text: 'Standard Rate:'
                   -
                     type: text
                     marks:
                       -
                         type: bold
-                    text: ' 454.75$'
+                    text: ' 535$'
             type: grid_set
             enabled: true
             grid_images: images-(21).webp
@@ -338,39 +258,19 @@ page_builder:
                     text: 'Long Distance - Team'
             grid_text:
               -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Standard rate: '
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: strike
-                    text: '$770 '
-              -
                 type: heading
                 attrs:
                   level: 4
                 content:
                   -
                     type: text
-                    marks:
-                      -
-                        type: textColor
-                        attrs:
-                          color: redgrad
-                    text: 'Discounted Rate'
-                  -
-                    type: text
-                    text: ':'
+                    text: 'Standard Rate:'
                   -
                     type: text
                     marks:
                       -
                         type: bold
-                    text: ' 654.5$'
+                    text: ' 770$'
             type: grid_set
             enabled: true
             grid_images: images-(22).webp
