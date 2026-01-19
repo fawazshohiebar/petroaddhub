@@ -113,7 +113,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'المسافات المتوسطة - فريق'
+                    text: 'المسافات المتوسطة - فردي'
             grid_text:
               -
                 type: heading
@@ -151,7 +151,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Middle Distance - Team'
+                    text: 'المسافات المتوسطة - فريق'
             grid_text:
               -
                 type: heading
@@ -189,7 +189,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Long Distance - Individual'
+                    text: 'مسافة طويلة - فردي'
             grid_text:
               -
                 type: heading
@@ -227,7 +227,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Long Distance - Team'
+                    text: 'فريق المسافات الطويلة'
             grid_text:
               -
                 type: heading
@@ -297,5 +297,5 @@ page_builder:
     attrs:
       textAlign: left
 updated_by: 3c257898-4e0f-4175-874e-a27702748280
-updated_at: 1768827416
+updated_at: 1768827515
 ---
