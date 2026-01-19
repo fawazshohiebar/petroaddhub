@@ -15,7 +15,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 3c257898-4e0f-4175-874e-a27702748280
-updated_at: 1768822763
+updated_at: 1768822979
 page_builder:
   -
     type: set
@@ -108,7 +108,15 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Standard Rate:'
+                    marks:
+                      -
+                        type: textColor
+                        attrs:
+                          color: redgrad
+                    text: 'Standard Rate'
+                  -
+                    type: text
+                    text: ':'
                   -
                     type: text
                     marks:
