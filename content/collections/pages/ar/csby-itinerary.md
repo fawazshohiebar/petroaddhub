@@ -1,6 +1,0 @@
----
-id: 60500cd9-9c6f-4373-965a-fefd34d0cc5f
-origin: 63c82122-0a6d-4316-ab3d-22baa74b92cf
-updated_by: 3c257898-4e0f-4175-874e-a27702748280
-updated_at: 1768815763
----

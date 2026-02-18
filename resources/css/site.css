@@ -15,7 +15,7 @@ html {
 
 :root {
 
-  --color-primary: #211551;
+  --color-primary: #f4a151;
   --color-secondary: #F2F9FC;
   --color-accent: #f47832;
   --color-blue: #0F193C;
@@ -29,7 +29,7 @@ html {
   --font-mont: "montserrat", sans-serif;
   --font-noto: "noto-sans-arabic", sans-serif;
 
-  --color-primary: #211551;
+  --color-primary: #f4a151;
   --color-secondary: #F2F9FC;
   --color-accent: #f47832;
   --color-blue: #0F193C;
