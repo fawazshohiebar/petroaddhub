@@ -33,8 +33,9 @@ RUN apk add --no-cache \
     oniguruma-dev \
     icu-dev \
     libxml2-dev \
-    mysql-client \
+    mariadb-client \
     postgresql-dev \
+    linux-headers \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) \
     pdo \
