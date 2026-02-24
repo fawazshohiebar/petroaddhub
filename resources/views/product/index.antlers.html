@@ -5,7 +5,7 @@
 {{ collection:products :slug="segment_2" limit="1" }}
 
 <div class="container mx-auto px-4 py-8">
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-5xl ">
     
         
          <div class="mb-6">
@@ -14,9 +14,9 @@
          
      <h1 class="text-4xl font-bold mb-4 customcolors">{{ title }}</h1>
         
-        {{ if product_description }}
+        {{ if description }}
         <div class="mb-6">
-            <div class="custom">{{ product_description }}</div>
+            <div class="custom prose-lg [&_h3]:mt-0  ">{{ description }}</div>
         </div>
         {{ /if }}
         

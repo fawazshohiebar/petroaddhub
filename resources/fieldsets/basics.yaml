@@ -680,6 +680,11 @@ fields:
                       - alignleft
                       - aligncenter
                       - alignright
+            product_elements:
+              display: 'Product Elements'
+              fields:
+                -
+                  import: product_elements
         forms:
           display: Forms
           icon: form-drop-down-menu

@@ -1,6 +1,5 @@
 title: 'Challenge Sir Bani Yas'
-logo: brand/d314715949800652df7c75645a976b97fa619889.png
-patronage: 'Held Under the Patronage of H.H Sheikh Mansour Bin Zayed Al Nahyan, Vice President, Deputy Prime Minister, Chairman of the Presidential Court, and Chairman of the Board of Directors of the Abu Dhabi Agriculture and Food Safety Authority (ADAFSA)'
+logo: brand/whatsapp-image-2026-01-28-at-10.12.12-pm.png
 location: 'ADNEC Centre Abu Dhabi'
 location_link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
 date: '29 Aug - 6 Sept'
@@ -8,13 +7,12 @@ time: '11 AM - 10 PM'
 button_replicator:
   -
     id: mglevgrk
-    label: 'Book Your Stand'
+    label: 'Get A Quote'
     design: Orangenogradient
     open_new_tab: false
     button_size: fit
     type: button
-    enabled: false
-countdown_date_picker: '2026-02-01 08:00:00'
+    enabled: true
 logos_and_partners:
   -
     id: mke1fi5t
@@ -23,60 +21,18 @@ logos_and_partners:
       -
         id: mke1fj81
         image:
-          - adnoclogowhite-(2).png
+          - whitepetro.png
         type: new_set
         enabled: true
     type: new_set
     enabled: true
+footer_text:
   -
-    id: mke1fut7
-    title: 'Presented By'
-    logo:
+    type: paragraph
+    content:
       -
-        id: mke1g1o8
-        image:
-          - 6207aea41e28e3aa10c4113cb87c9c09e2933897-(1).png
-        type: new_set
-        enabled: true
-      -
-        id: mkgt5x5r
-        image:
-          - 6207aea41e28e3aa10c4113cb87c9c09e2933897-(2).png
-        type: new_set
-        enabled: true
-    type: new_set
-    enabled: true
-logos_and_partners_mobile:
-  -
-    id: mke1fut7
-    title: 'Presented By'
-    logo:
-      -
-        id: mke1g1o8
-        image:
-          - 6207aea41e28e3aa10c4113cb87c9c09e2933897-(1).png
-        type: new_set
-        enabled: true
-      -
-        id: mkgt5x5r
-        image:
-          - 6207aea41e28e3aa10c4113cb87c9c09e2933897-(2).png
-        type: new_set
-        enabled: true
-    type: new_set
-    enabled: true
-  -
-    id: mke1fi5t
-    title: 'Headline Partner'
-    logo:
-      -
-        id: mke1fj81
-        image:
-          - adnoclogowhite-(2).png
-        type: new_set
-        enabled: true
-    type: new_set
-    enabled: true
+        type: text
+        text: 'We focus on delivering advanced fuel and chemical solutions that enhance industrial performance and reliability. Our commitment is to provide every client with effective, innovative products and trusted service that strengthen their operations.'
 footer_sales:
   -
     id: mglexqz2

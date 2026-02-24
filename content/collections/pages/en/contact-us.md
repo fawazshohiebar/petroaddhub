@@ -48,6 +48,60 @@ page_builder:
         show_labels: true
         form: contact_us
   -
+    type: set
+    attrs:
+      id: mm0ggbnd
+      values:
+        type: heading_and_grid
+        background: bgcolor
+        background_color: secondary
+        grid_structure: v3
+        heading:
+          -
+            type: heading
+            attrs:
+              level: 3
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#f47832'
+                text: 'For Enquiries'
+        replicating_grid:
+          -
+            id: mm0ggvlt
+            heading: Sales
+            icon_or_button: iconlist
+            icon_list:
+              -
+                id: mm0ghbjz
+                text: Sales@petroaddhub.com
+                link: 'mailto:sales@petroaddhub.com'
+                icon: envelope
+                type: icon_list_item
+                enabled: true
+            type: grid_item
+            enabled: true
+          -
+            id: mm0gizbj
+            heading: Info
+            icon_or_button: iconlist
+            icon_list:
+              -
+                id: mm0gjc8p
+                text: info@petroaddhub.com
+                link: 'mailto:info@petroaddhub.com'
+                icon: envelope
+                type: icon_list_item
+                enabled: true
+            type: grid_item
+            enabled: true
+  -
     type: paragraph
     attrs:
       textAlign: left
@@ -63,8 +117,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: 25795521-e2da-4e8b-b6d5-0031c5158f6c
-updated_at: 1768571183
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1771928635
 fine_seo_title: 'Contact Us'
 fine_seo_preview: 'Contact Us'
 layout: layout

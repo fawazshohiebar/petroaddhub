@@ -19,236 +19,27 @@ page_builder:
   -
     type: set
     attrs:
-      id: mj9nsz85
+      id: mm0fdjyx
       values:
-        type: reusable_block
-        entry:
-          - 68c321bc-fcbf-4e0d-9c33-f7118372d5ba
-  -
-    type: set
-    attrs:
-      id: miecet56
-      values:
-        type: cta_grid_sport
-        background: bgimg
-        grid_version: v1
-        grid_set_replicator:
-          -
-            id: miecfbhh
-            number_of_stars: '0'
-            grid_heading: '<p>Long Distance</p>'
-            type: grid_set
-            enabled: true
-            grid_images: features/challenge1-(1).png
-            sport_rep:
-              -
-                id: miwry2f3
-                sport_icon:
-                  - svgs/swimming.svg
-                sport_title: SWIM
-                sport_distance: 3.8KM
-                type: sport
-                enabled: true
-              -
-                id: mj9wsspi
-                sport_title: BIKE
-                sport_distance: 180KM
-                type: sport
-                enabled: true
-                sport_icon:
-                  - svgs/tricycle.svg
-              -
-                id: mj9wt14f
-                sport_title: RUN
-                sport_distance: 42.2KM
-                type: sport
-                enabled: true
-                sport_icon:
-                  - svgs/runner-on-the-start.svg
-          -
-            id: miecfm02
-            number_of_stars: '0'
-            grid_heading: '<p>Middle Distance</p>'
-            type: grid_set
-            enabled: true
-            grid_images: cruise-ship-experience/881c94b60f3a007ed04fcec1f68589a88b53e55e.png
-            sport_rep:
-              -
-                id: mj9wtx4j
-                sport_title: SWIM
-                sport_distance: 1.9KM
-                type: sport
-                enabled: true
-                sport_icon:
-                  - svgs/swimming.svg
-              -
-                id: mj9wu9y5
-                sport_title: BIKE
-                sport_distance: 96KM
-                type: sport
-                enabled: true
-                sport_icon:
-                  - svgs/tricycle.svg
-              -
-                id: mj9wuh37
-                sport_title: RUN
-                sport_distance: 21.1KM
-                type: sport
-                enabled: true
-                sport_icon:
-                  - svgs/runner-on-the-start.svg
-          -
-            id: miecfunz
-            number_of_stars: '0'
-            grid_heading: '<p>Olympic Distance</p>'
-            type: grid_set
-            enabled: true
-            grid_images: challenge-sir-bin-yas/image-8.png
-            sport_rep:
-              -
-                id: mieealnv
-                sport_icon:
-                  - svgs/swimming.svg
-                sport_title: Swim
-                sport_distance: 1.5KM
-                type: sport
-                enabled: true
-              -
-                id: mieekfo0
-                sport_icon:
-                  - svgs/tricycle.svg
-                sport_title: BIKE
-                sport_distance: 45KM
-                type: sport
-                enabled: true
-              -
-                id: mihbgilf
-                sport_icon:
-                  - svgs/runner-on-the-start.svg
-                sport_title: RUN
-                sport_distance: 10KM
-                type: sport
-                enabled: true
-          -
-            id: miecg1my
-            number_of_stars: '0'
-            grid_heading: '<p>Community Races</p>'
-            type: grid_set
-            enabled: true
-            grid_images: challenge-sir-bin-yas/image-8-(1).png
-            sport_rep:
-              -
-                id: miee9o91
-                sport_icon:
-                  - svgs/swimming.svg
-                sport_title: SWIM
-                type: sport
-                enabled: true
-              -
-                id: mj9wvn9n
-                sport_title: BIKE
-                type: sport
-                enabled: true
-                sport_icon:
-                  - svgs/tricycle.svg
-              -
-                id: mj9wvp7e
-                sport_title: RUN
-                type: sport
-                enabled: true
-                sport_icon:
-                  - svgs/runner-on-the-start.svg
-        image: vector-(5)-(1).png
-        design: centered
-        heading:
-          -
-            type: heading
-            attrs:
-              level: 2
-            content:
-              -
-                type: text
-                marks:
-                  -
-                    type: textColor
-                    attrs:
-                      color: redgrad
-                text: 'Race Menu'
-        sub_heading:
-          -
-            type: heading
-            attrs:
-              level: 4
-            content:
-              -
-                type: text
-                text: "Making history as the UAE's first long distance triathlon, set in one of triathlon's most enviable destinations."
-        buttons:
-          -
-            id: mk3rf9m6
-            link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*1rxzvz8*_gcl_au*MTYwMTE0MzU3NS4xNzY1OTcxMTUx*_ga*Mjk1OTQwNjA1LjE3NjU5NzExNTE.*_ga_4JZJXK51X7*czE3NjU5NzExNTAkbzEkZzEkdDE3NjU5NzU1NTUkajI4JGwwJGgw&inviteId=8cc3403c-5a6f-4641-a479-d0290710927c&error=login_required&state=76be8831-171f-4c07-9cb9-b2c5608e3e56&_p=35657651042073313'
-            label: 'Spectator Registration'
-            design: whiterounded
-            icon: none
-            open_new_tab: true
-            button_size: fit
-            type: new_set
-            enabled: true
-          -
-            id: mk3rfubu
-            link: 'https://endurancecui.active.com/new/events/94585416/select-race?_gl=1*15g0yib*_gcl_au*MTYwMTE0MzU3NS4xNzY1OTcxMTUx*_ga*Mjk1OTQwNjA1LjE3NjU5NzExNTE.*_ga_4JZJXK51X7*czE3NjU5NzExNTAkbzEkZzEkdDE3NjU5NzU1NTIkajMxJGwwJGgw&error=login_required&state=bb53f323-0ba2-482d-9bdf-a38395c5a37f&_p=20332737904846798'
-            label: 'Athletes Registration'
-            design: redgradient
-            icon: none
-            open_new_tab: true
-            button_size: fit
-            type: new_set
-            enabled: true
-        bottom_text:
-          -
-            type: heading
-            attrs:
-              level: 4
-            content:
-              -
-                type: text
-                text: 'Offering not only the first Long-distance triathlon in the Middle East, Challenge Sir Bani Yas, will also hosts a race for every athlete, with our Middle and Olympic distance races, and a wide selection of Community races, making it a real family affair!'
-  -
-    type: set
-    attrs:
-      id: miekmsol
-      values:
-        type: call_to_action
-        text_image_alignment: v2
+        type: ctav1
+        text_image_alignment: v1
+        spaces: p
         heading_text:
           -
             type: heading
             attrs:
-              level: 2
+              level: 3
             content:
               -
                 type: text
                 marks:
                   -
-                    type: textColor
-                    attrs:
-                      color: '#fff'
-                text: 'Welcome To '
-              -
-                type: hardBreak
-                marks:
+                    type: bold
                   -
                     type: textColor
                     attrs:
-                      color: '#fff'
-              -
-                type: text
-                marks:
-                  -
-                    type: textColor
-                    attrs:
-                      color: '#fff'
-                text: 'Challenge Sir Bani Yas'
+                      color: '#000000'
+                text: 'About Us'
         section_label:
           -
             type: paragraph
@@ -259,9 +50,45 @@ page_builder:
                   -
                     type: textColor
                     attrs:
-                      color: '#fff'
-                text: 'THE ULTIMATE DESTINATION TRIATHLON'
+                      color: '#f47832'
+                text: 'About Us - Company Overview'
         description:
+          -
+            type: heading
+            attrs:
+              level: 3
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'PetroAdd Hub Industries L.L.C'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'PetroAdd Hub Industries L.L.C is a leading provider of advanced fuel and refinery additives in the UAE, committed to delivering innovative solutions for the gasoline, diesel, and refinery processing industries. Our unique range of multifunctional additives is designed to reduce emissions, improve fuel efficiency, extend equipment life, and enhance overall performance while lowering operational costs.'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'We work closely with universities and industry experts to formulate high-quality products including octane boosters, cetane improvers, metal deactivators, desulfurizers, and pipeline cleaners. Driven by simplicity and innovation, PetroAdd Hub supports clients with end-to-end solutions, from formulation and testing to manufacturing and commercialization, ensuring reliability and excellence in every product.'
+        section_image: features/pearl-rotana-jpg-(1).png
+        background: bgcolor
+        background_color: secondary
+  -
+    type: set
+    attrs:
+      id: mm0fkh4l
+      values:
+        type: product_elements
+        background: bgcolor
+        background_color: white
+        design: centered
+        heading:
           -
             type: paragraph
             content:
@@ -271,231 +98,42 @@ page_builder:
                   -
                     type: textColor
                     attrs:
-                      color: '#fff'
-                text: 'An event like no other, set on the stunning Sir Bani Yas Island in Abu Dhabi, where you will race, spend time with your supporters and take part in a wide range of activities and excursions. From sunset DJ sessions to trekking through a nature reserve filled with local wildlife, there’s something for everyone to enjoy.'
-        section_image: section/image-(36).png
-        buttons:
+                      color: '#f47832'
+                text: 'What We Do For You'
           -
-            id: miekn9a2
-            label: 'Learn More'
-            open_new_tab: false
-            type: button_set
-            enabled: true
-            design: redgradient
-            button_size: fit
-            link: 'entry::2a70f368-3d6a-45a2-a1b9-180319c73fe0'
-        background: bgimg
-        image: backgrounds/image-(37).png
-        spaces: p
+            type: heading
+            attrs:
+              level: 3
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#000000'
+                text: 'OUR PRODUCTS'
+        product_entries:
+          - 1d894fa5-90a4-4461-891c-26ecc915e8fa
+          - 48118e9d-b503-4642-87d5-5fdd89ed9334
+          - bb0fd7d0-40f0-4501-a91b-ac55d5f5b5c3
+          - 2a3b98da-3983-400f-bfc9-cb7a2945bbd4
+          - fbaa0f39-4696-4c2c-a34d-a0f925a1f95f
+          - 70f73c10-991f-4f3d-9695-e28eecb7c2c5
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
   -
     type: set
     attrs:
-      id: mifo086e
+      id: mm0fdfoo
       values:
-        type: social_media_sec
-        social_title: '#ChallengeSirBaniYas'
-        social_media:
-          -
-            id: mifo0iu1
-            platform: instagram
-            social_media_link: '#sfdsfd'
-        social_image_rep:
-          -
-            id: mifo2sst
-            social_image: 7_travelaccommodation_800x800px.jpg
-            type: images
-            enabled: true
-          -
-            id: mk3mzq11
-            social_image: 9_spectators_800x800px-2.jpg
-            type: images
-            enabled: true
-          -
-            id: mk3n022c
-            social_image: 6_spectators_800x800px.jpg
-            type: images
-            enabled: true
-          -
-            id: mk3n0dl4
-            social_image: 13_travelaccommodation_800x800px.jpg
-            type: images
-            enabled: true
-          -
-            id: mk3n0mun
-            social_image: snorkeling-1-e1725437583916.jpg
-            type: images
-            enabled: true
-          -
-            id: mk3n0twm
-            social_image: 05_challenge-sby_780x500.jpg
-            type: images
-            enabled: true
-          -
-            id: mk3n1321
-            social_image: kayaking.jpg
-            type: images
-            enabled: true
-        social_media_hp:
-          -
-            id: mift57vv
-            platformsocial: instagram
-            social_media_link: 'https://www.instagram.com/challenge_sby/'
-          -
-            id: mift5fry
-            platformsocial: twitter
-            social_media_link: 'https://x.com/Challenge_SBY'
-          -
-            id: mift56lk
-            platformsocial: facebook
-            social_media_link: 'https://www.facebook.com/ChallengeSirBaniYas'
-          -
-            id: mift5az2
-            platformsocial: youtube
-  -
-    type: set
-    attrs:
-      id: mifyhn0a
-      values:
-        type: heading_and_icon_box
-        icon_box_rep:
-          -
-            id: mifyhp7h
-            icon_image:
-              - svgs/cruise-ship.svg
-            icon_box_heading:
-              -
-                type: heading
-                attrs:
-                  level: 4
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                      -
-                        type: textColor
-                        attrs:
-                          color: '#fff'
-                    text: 'Set Sail from Abu Dhabi'
-            icon_box_description:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: textColor
-                        attrs:
-                          color: '#fff'
-                    text: 'We’ve made your race experience smoother, smarter, and completely hassle-free'
-            type: icon_box_set
-            enabled: true
-          -
-            id: mifzortr
-            icon_image:
-              - mulled-wine.svg
-            icon_box_heading:
-              -
-                type: heading
-                attrs:
-                  level: 4
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                      -
-                        type: textColor
-                        attrs:
-                          color: '#fff'
-                    text: 'Experience the Race Hub at Sea'
-            icon_box_description:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: textColor
-                        attrs:
-                          color: '#fff'
-                    text: "Combining world-class comfort with athlete-focused facilities, and family-friendly experiences all in one place.\_"
-            type: icon_box_set
-            enabled: true
-          -
-            id: mifzouo3
-            icon_image:
-              - runners-crossing-finish-line.svg
-            icon_box_heading:
-              -
-                type: heading
-                attrs:
-                  level: 4
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                      -
-                        type: textColor
-                        attrs:
-                          color: '#fff'
-                    text: "From cabin to course in minutes\_"
-            icon_box_description:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: textColor
-                        attrs:
-                          color: '#fff'
-                    text: "No commuting. No wasted energy. Just pure focus on the race and the experience.\_"
-            type: icon_box_set
-            enabled: true
-          -
-            id: mifzowg5
-            icon_image:
-              - confetti.svg
-            icon_box_heading:
-              -
-                type: heading
-                attrs:
-                  level: 4
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                      -
-                        type: textColor
-                        attrs:
-                          color: '#fff'
-                    text: 'Return with Memories'
-            icon_box_description:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: textColor
-                        attrs:
-                          color: '#fff'
-                    text: "The experience goes beyond the race, leaving you with lasting memories and unforgettable moments.\_"
-            type: icon_box_set
-            enabled: true
-        background: bgimg
-        image: backgrounds/image-(37).png
+        type: heading_comp
+        background: bgcolor
+        background_color: gradient
         design: centered
         heading:
           -
@@ -512,15 +150,7 @@ page_builder:
                     type: textColor
                     attrs:
                       color: '#fff'
-                text: 'Set sail for Sir Bani Yas Island, and experience a triathlon like never before.'
-              -
-                type: text
-                marks:
-                  -
-                    type: textColor
-                    attrs:
-                      color: '#fff'
-                text: "\_"
+                text: 'Ready to Get Started?'
         sub_heading:
           -
             type: heading
@@ -534,26 +164,15 @@ page_builder:
                     type: textColor
                     attrs:
                       color: '#fff'
-                text: 'Book Your Cruise Ship Experience Now'
+                text: 'Contact us today to learn more about our innovative fuel additives and industrial solutions.'
         buttons:
           -
-            id: mifzzczp
-            label: 'Learn More'
+            id: mm0dzayb
+            label: 'Get A Quote'
             design: whiterounded
             open_new_tab: false
             type: new_set
             enabled: true
-            button_size: fit
-            link: 'entry::39b5ad90-5e18-46ec-8ff8-34db0178ebd5'
-          -
-            id: mifzzntz
-            label: 'Book Now'
-            design: redgradient
-            open_new_tab: true
-            type: new_set
-            enabled: true
-            button_size: fit
-            link: 'https://booking.celestyal.com/touchb2c?inJsonGet=%7B%22packageCodes%22%3A%22CD03260130%22%2C%20%20%22landingPage%22%3A%22CTGS%22%2C%20%22runSearch%22%3Atrue%2C%20%22adults%22%3A%202%2C%20%22children%22%3A%200%2C%20%22agencyId%22%3A%20%22109499%22%2C%20%22residency%22%3A%20%22AE%22%2C%20%22locale%22%3A%20%22en%22%7D'
 header_scripts:
   code: null
   mode: htmlmixed
@@ -564,7 +183,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1768463968
+updated_at: 1771927040
 fine_seo_image: brand/screenshot-2025-12-26-at-2.31.54-pm.png
 reusable_popup: false
 fine_seo_title: 'Challenge Sir Bani Yas'

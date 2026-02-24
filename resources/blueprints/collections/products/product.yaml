@@ -1,0 +1,48 @@
+title: Product
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: false
+              validate:
+                - required
+          -
+            handle: image
+            field: basics.image
+            config:
+              validate:
+                - image
+                - 'max_filesize:9216'
+                - 'mimes:png,jpg,jpeg,gif,webp,svg'
+          -
+            handle: intro_description
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'Intro Description'
+              localizable: false
+          -
+            handle: description
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Description
+              localizable: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

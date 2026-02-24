@@ -1,0 +1,14 @@
+title: 'Product Elements'
+fields:
+  -
+    import: background_design
+  -
+    import: heading_group_component
+  -
+    handle: product_entries
+    field:
+      collections:
+        - products
+      type: entries
+      display: 'Product Entries'
+      localizable: false
