@@ -20,7 +20,7 @@ html {
   --color-accent: #f47832;
   --color-blue: #0F193C;
   --color-light-accent: #f7f7f7;
-  --color-light-secondary: #f0f5ff;
+  --color-light-secondary: #F9FBFC;
   --color-gradient : linear-gradient(to right, #F5A642, #5BA3C5);
 
 }
@@ -34,7 +34,7 @@ html {
   --color-accent: #f47832;
   --color-blue: #0F193C;
   --color-light-accent: #f7f7f7;
-  --color-light-secondary: #f0f5ff;
+  --color-light-secondary: #F9FBFC;
   --color-gradient : linear-gradient(275deg, #0F193C, #dd001c);
 
 
@@ -200,6 +200,12 @@ html {
 .custom h4 {
   @apply xl:text-2xl md:text-xl  text-lg;
 }
+.custom h5 {
+  @apply xl:text-2xl md:text-xl  text-lg;
+}
+.custom h6 {
+  @apply xl:text-2xl md:text-xl  text-lg;
+}
 
 .custom p {
   @apply xl:!text-base  !text-sm;
@@ -227,7 +233,7 @@ li{
 } */
 
 .customcolors{
-   @apply  bg-gradient-to-r from-[#E2001A] to-[#0F193C] bg-clip-text text-transparent ;
+   @apply  bg-gradient-to-r from-[#F5A642] via-[#FFD27A] to-[#5BA3C5] bg-clip-text text-transparent ;
 }
 
 /* 

@@ -84,7 +84,7 @@ class="opacity-0 bg-slate-900"
         </div>
       {{ else }}
         <h3 class=" py-3 xl:text-base lg:text-sm font-semibold"
-         :class="scrolled ? 'text-black' : 'text-white '"
+         :class="scrolled ? '{{if is_homepage}} text-black{{else}}text-white{{/if}}' : 'text-white '"
         >
           <a href="{{ url }}" class="hover:text-gray-300 transition-colors">
             {{ title }}
