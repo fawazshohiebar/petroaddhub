@@ -1,22 +1,22 @@
 <header class="sticky top-0 left-0 flex flex-col w-full z-40 h-auto"
     {{# x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 10 })" #}}
-class="opacity-60 bg-slate-900"
+class="opacity-0 bg-slate-900"
 >
 {{# {{ partial:patronage }} #}}
 <nav class="w-full {{if !is_homepage}} bg-back-gradient {{/if}} flex-grow transition-all duration-300 ease-in-out" x-data="{ scrolled: false }"
     x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 10 })" x-cloak
     {{if is_homepage}}
-    :class="scrolled ? 'bg-back-gradient' : 'bg-slate-900/60 '"
+    :class="scrolled ? 'bg-white' : 'bg-transparent '"
     {{/if}}
     >
     <div
-        class="adnec-container h-full pt-0 gap-2 mx-auto lg:grid lg:grid-cols-[250px_auto] md:items-center md:justify-between grid grid-cols-[65%_35%]">
+        class="adnec-container h-full py-5 gap-2 mx-auto lg:grid lg:grid-cols-[250px_auto] md:items-center md:justify-between grid grid-cols-[65%_35%]">
         <!-- Logo and Event Info -->
 
         <div class="flex items-center">
             <a href="{{ site:url }}" title="{{brand:title}}" class="">
                 {{ brand:logo }}
-                    <img src="{{ url }}" alt="{{brand:title}}" class="xl:w-80 md:w-55 w-40 h-full object-contain">
+                    <img src="{{ url }}" alt="{{brand:title}}" class="xl:w-30 md:w-25 w-20 h-full object-contain">
                 {{ /brand:logo }}
             </a>
 
@@ -83,7 +83,9 @@ class="opacity-60 bg-slate-900"
           {{ /children }}
         </div>
       {{ else }}
-        <h3 class="text-white py-3 xl:text-base lg:text-sm font-medium">
+        <h3 class=" py-3 xl:text-base lg:text-sm font-semibold"
+         :class="scrolled ? 'text-black' : 'text-white '"
+        >
           <a href="{{ url }}" class="hover:text-gray-300 transition-colors">
             {{ title }}
           </a>
@@ -103,9 +105,10 @@ class="opacity-60 bg-slate-900"
 
         </div>
 
-
+      
+      
         <!-- Mobile Menu Button -->
-       <div class="lg:hidden items-center py-4 gap-2 block">
+    <div class="lg:hidden items-center py-4 gap-2 block">
 
             <div class="flex justify-end gap-2 lg:gap-4 items-center">
                 {{# {{ partial:partials/sets/countdown_date_picker countdown_end="{brand:countdown_date_picker format='Y-m-d\TH:i:s'}" }} #}}
@@ -119,7 +122,7 @@ class="opacity-60 bg-slate-900"
                 {{ /if }}
                 {{# {{ partial:language-switcher /}} #}}
                 <button command="show-modal" commandfor="drawer" class=" focus:outline-none"
-                    :class="scrolled ? 'text-white' : 'text-white'" aria-label="Toggle mobile menu">
+                    :class="scrolled ? 'text-white bg-primary rounded-[5px] ' : 'text-white bg-primary rounded-[5px]'" aria-label="Toggle mobile menu">
                     {{ heroicon variant="outline" icon="bars-3" class=" w-8 h-8" /}}
                 </button>
             </div>

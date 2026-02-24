@@ -1,0 +1,25 @@
+{{#
+    Product Detail Page Template
+    This template displays individual product details
+#}}
+{{ collection:products :slug="segment_2" limit="1" }}
+
+<div class="container mx-auto px-4 py-8">
+    <div class="max-w-4xl mx-auto">
+    
+        
+         <div class="mb-6">
+            <img src="{{ image:url }}" alt="{{ title }}" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+         
+     <h1 class="text-4xl font-bold mb-4 customcolors">{{ title }}</h1>
+        
+        {{ if product_description }}
+        <div class="mb-6">
+            <div class="custom">{{ product_description }}</div>
+        </div>
+        {{ /if }}
+        
+     </div>
+</div>
+{{/collection:products}}

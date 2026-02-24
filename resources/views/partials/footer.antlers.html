@@ -1,59 +1,34 @@
-<footer class="bg-[linear-gradient(87deg,#E2001A_-156.79%,#0F193C_143.4%)] bg-cover text-white">
+<footer class="bg-blue bg-cover text-white">
 
     <div class="adnec-container mx-auto py-[45px] md:py-[50px] lg:py-[50px] relative">
         <div
             class="flex flex-col sm:grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-y-[40px] gap-x-[15px] md:gap-[30px] ">
-            <div class="col-span-2 md:col-span-3 lg:col-span-2 mt-0 hidden md:block">
-                <div class=" flex flex-col md:flex-row gap-8 relative ">
+                       <div class="   mt-0  col-span-2 grid  md:grid-cols-[25%_5%_70%] h-fit ">
+                <div class=" flex flex-row md:flex-row gap-5 ">
                     {{ brand:logos_and_partners }}
-                        <div class="flex-col  relative  justify-between flex">
-                            <div
-                                class="font-semibold text-lg mb-5 text-[#fff] mt-2 group-hover:text-[#fff] transition-colors">
-                                {{ title }}
-                            </div>
-                            <div class="flex align-end  gap-2">
+                        <div class="flex-col  flex md:justify-center">
+
+                            <div class="flex   gap-2">
                                 {{ logo }}
-                                    <a href="{{ url }}" class="group transition-all duration-300 hover:opacity-80 ">
+                                    <a href="{{ url }}" class="group w-[174px] transition-all duration-300 hover:opacity-80 ">
                                         {{ image }}
                                             <img loading="lazy" src="{{ url }}" alt="{{ alt }}"
-                                                class="lg:w-[150px] w-[140px] h-24  self-stretch object-contain  mx-auto">
+                                                class=" mx-[0px] h-24  self-stretch object-contain  md:mx-auto">
                                         {{ /image }}
                                     </a>
                                 {{ /logo }}
                             </div>
-                            {{ if first }}
-                                <div class="h-full md:w-[1px] absolute right-[-15px] bg-white"></div>
-                            {{ /if }}
                         </div>
                     {{ /brand:logos_and_partners }}
                 </div>
-            </div>
-            <div class="col-span-2 md:col-span-3 lg:col-span-2 mt-0 block md:hidden">
-                <div class="flex flex-col md:flex-row gap-4 md:gap-18 relative ">
-                    {{ brand:logos_and_partners_mobile }}
-                        <div class="flex-col  relative  justify-between flex">
-                            <div
-                                class="font-semibold text-lg mb-5 text-[#fff] mt-2 group-hover:text-[#fff] transition-colors">
-                                {{ title }}
-                            </div>
-                            {{# <div class="flex align-end  gap-2"> #}}
-                            <div class="flex flex-col md:flex-row items-start gap-2">
-                                {{ logo }}
-                                    <a href="{{ url }}" class="group transition-all duration-300 hover:opacity-80 ">
-                                        {{ image }}
-                                            <img loading="lazy" src="{{ url }}" alt="{{ alt }}"
-                                                class="lg:w-[150px] w-[140px] h-24  self-stretch object-contain  mx-auto">
-                                        {{ /image }}
-                                    </a>
-                                {{ /logo }}
-                            </div>
-                            {{ if first }}
-                                <div class="hidden md:block h-full md:w-[1px] absolute right-[-30px] bg-white"></div>
-                            {{ /if }}
-                        </div>
-                    {{ /brand:logos_and_partners_mobile }}
+                <div class=" w-0 md:w-[1px] h-15 border-r border-white/20 self-center md:block hidden"></div>
+
+                <div class="text-white !text-[15px] py-5">
+                    {{ brand:footer_text }}
                 </div>
             </div>
+             
+
             <div>
                 <h3 class="text-xl font-semibold mb-6 relative inline-block">
                     {{ 'Other Links' | trans }}
@@ -92,20 +67,19 @@
                 </ul>
             </div>
 
-        </div>
+    
     </div>
 
 
 
 
     <div class="adnec-container relative z-10   h-[1px] bg-white opacity-20 "></div>
-
     <div class="  py-6">
         <div class=" adnec-container  mx-auto flex  flex-row  justify-between items-center">
             <div class="text-[#fff] text-center text-sm mb-4 md:mb-0 w-full">
-                <a class="text-white text-center" href="https://www.adnecgroup.ae" target="_blank"
+                <a class="text-white text-center" 
                     rel="noopener noreferrer">
-                    &copy; {{ now format="Y" }} {{ 'ADNEC Group' | trans }}
+                    &copy; {{ now format="Y" }}
                     {{ 'All rights reserved' | trans }}
                 </a>
             </div>

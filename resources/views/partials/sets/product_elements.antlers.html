@@ -1,0 +1,23 @@
+<div style="{{ if background == 'bgimg' }}background-size:cover; background-image: url('{{ image.url }}');{{ else }}background-color:var(--color-{{ background_color }}){{ /if }}"
+    class="w-full  bg-cover bg-center ">
+
+    <div class="adnec-container py-10">
+        {{ partial:partials/sets/heading_group_component }}
+
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-4">
+            {{ product_entries }}
+            <a href="/{{ site:short_locale }}/product/{{ slug }}">    
+            <div class="group relative rounded-xl overflow-hidden shadow-lg  bg-white transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl animate-fade-in-up">
+                    <div class="rounded-t-[15px] overflow-hidden">
+                    <img src="{{ image:url }}" alt="">
+                    </div>
+                   <div class="p-5"> 
+                   <div class="xl:text-xl md:text-lg  text-base font-semibold  mb-1 lg:mb-3"> {{ title }}</div>
+                   <div class="text-gray-600 xl:text-base  md:text-sm text-[14px] font-semibold font-mont"> {{ intro_description }}</div>
+                </div>
+                </div>
+                </a>
+            {{ /product_entries }}
+        </div>
+    </div>
+</div>

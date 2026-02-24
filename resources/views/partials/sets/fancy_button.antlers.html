@@ -16,11 +16,11 @@
         {{elseif design == 'purpleoutine' }}
             outline outline-1 outline-offset-[-1px] outline-indigo-950 text-indigo-950 md:text-base text-sm
         {{elseif design=='Orangenogradient'}}
-          text-white md:text-base text-sm bg-accent leading-normal 
+          text-white md:text-base text-sm bg-[#f4a151]  leading-normal rounded-md
         {{elseif design == 'redgradient' }}
         md:text-base text-sm font-bold text-white bg-gradient-to-br from-red-600 to-slate-900 rounded-[70px]
 {{elseif design == 'whiterounded' }}
-  text-black md:text-base text-sm font-bold bg-white rounded-[70px]
+  text-primary md:text-base text-sm font-bold bg-white rounded-[10px]
             {{ /if }}
         font-bold flex flex-row
          " {{ if open_new_tab }}target="_blank" rel="noopener noreferrer"{{ /if }} href="{{ link }}">
