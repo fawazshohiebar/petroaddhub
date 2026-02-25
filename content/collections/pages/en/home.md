@@ -123,10 +123,6 @@ page_builder:
           - fbaa0f39-4696-4c2c-a34d-a0f925a1f95f
           - 70f73c10-991f-4f3d-9695-e28eecb7c2c5
   -
-    type: paragraph
-    attrs:
-      textAlign: left
-  -
     type: set
     attrs:
       id: mm0fdfoo
@@ -183,7 +179,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1771927040
+updated_at: 1771935393
 fine_seo_image: brand/screenshot-2025-12-26-at-2.31.54-pm.png
 reusable_popup: false
 fine_seo_title: 'Challenge Sir Bani Yas'

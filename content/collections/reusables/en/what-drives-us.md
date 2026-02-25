@@ -15,7 +15,7 @@ heading:
           -
             type: textColor
             attrs:
-              color: '#f47832'
+              color: '#f4a151'
         text: 'What Drives Us'
   -
     type: heading
@@ -57,5 +57,5 @@ featured_activities:
   -
     id: xNvBA1Tx
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1771932887
+updated_at: 1771935156
 ---

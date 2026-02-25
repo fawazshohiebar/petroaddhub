@@ -16,7 +16,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1771932335
+updated_at: 1771935230
 page_builder:
   -
     type: set
@@ -129,6 +129,155 @@ page_builder:
         type: reusable_block
         entry:
           - ffc32211-48d6-4f22-b277-104d74873140
+  -
+    type: set
+    attrs:
+      id: mm0j74s9
+      values:
+        type: cta_grid
+        grid_version: v3
+        grid_heading:
+          -
+            type: heading
+            attrs:
+              level: 2
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'Our Values'
+        grid_set_replicator:
+          -
+            id: mm0j77di
+            number_of_stars: '0'
+            grid_heading:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: textColor
+                        attrs:
+                          color: '#f4a151'
+                    text: '<heroicon>[check-circle]</heroicon>'
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: textColor
+                        attrs:
+                          color: '#000000'
+                    text: ' Innovation and continuous improvement'
+            type: grid_set
+            enabled: true
+          -
+            id: mm0jdjnk
+            number_of_stars: '0'
+            grid_heading:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: textColor
+                        attrs:
+                          color: '#f4a151'
+                    text: '<heroicon>[check-circle]</heroicon>'
+                  -
+                    type: text
+                    text: ' Environmental sustainability'
+            type: grid_set
+            enabled: true
+          -
+            id: mm0jdodj
+            number_of_stars: '0'
+            grid_heading:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: textColor
+                        attrs:
+                          color: '#f4a151'
+                    text: '<heroicon>[check-circle]</heroicon>'
+                  -
+                    type: text
+                    text: ' Customer satisfaction and trust'
+            type: grid_set
+            enabled: true
+          -
+            id: mm0jdnnd
+            number_of_stars: '0'
+            grid_heading:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: textColor
+                        attrs:
+                          color: '#f4a151'
+                    text: '<heroicon>[check-circle]</heroicon>'
+                  -
+                    type: text
+                    text: ' Technical excellence'
+            type: grid_set
+            enabled: true
+          -
+            id: mm0jdmtf
+            number_of_stars: '0'
+            grid_heading:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: textColor
+                        attrs:
+                          color: '#f4a151'
+                    text: '<heroicon>[check-circle]</heroicon>'
+                  -
+                    type: text
+                    text: ' Regulatory compliance'
+            type: grid_set
+            enabled: true
+          -
+            id: mm0jdlzt
+            number_of_stars: '0'
+            grid_heading:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: textColor
+                        attrs:
+                          color: '#f4a151'
+                    text: '<heroicon>[check-circle]</heroicon>'
+                  -
+                    type: text
+                    text: ' Long-term partnerships'
+            type: grid_set
+            enabled: true
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
   -
     type: paragraph
     attrs:

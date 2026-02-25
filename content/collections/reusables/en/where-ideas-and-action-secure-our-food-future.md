@@ -2,27 +2,28 @@
 id: d4eb8f45-e6bc-4ac9-bad5-9039dd4a9eef
 blueprint: hero
 title: 'The Island is Calling!'
-heading: 'The Island is Calling!'
+heading: 'Enhancing Engine Performance Across Industries'
 video: pfKsVDj1Dy0
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1767869131
-subheading: 'Are You Ready to Answer the Challenge?'
-description_text:
-  -
-    type: heading
-    attrs:
-      level: 3
-    content:
-      -
-        type: text
-        marks:
-          -
-            type: bold
-          -
-            type: textColor
-            attrs:
-              color: '#fff'
-        text: '31 Jan - 1 Feb 2026'
+updated_at: 1771935511
+subheading: 'PetroAdd Hub delivers smart fuel additives and industrial solutions with superior reliability.'
 starting_time: 0
 ending_time: 60
+hero_actions:
+  -
+    id: mm0kmcil
+    label: 'Read More'
+    design: Orangenogradient
+    open_new_tab: false
+    button_size: fit
+    type: button
+    enabled: true
+  -
+    id: mm0kmpof
+    label: 'Get A Quote'
+    design: whiterounded
+    open_new_tab: false
+    button_size: fit
+    type: button
+    enabled: true
 ---

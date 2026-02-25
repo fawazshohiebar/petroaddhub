@@ -539,6 +539,8 @@ fields:
                       - h4
                       - bold
                       - color
+                      - h5
+                      - h6
                     remove_empty_nodes: false
                     type: bard
                     display: 'Grid Heading'

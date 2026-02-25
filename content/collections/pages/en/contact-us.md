@@ -78,7 +78,7 @@ page_builder:
                   -
                     type: textColor
                     attrs:
-                      color: redgrad
+                      color: '#000000'
                 text: "We'd love to hear from you."
               -
                 type: hardBreak
@@ -88,7 +88,7 @@ page_builder:
                   -
                     type: textColor
                     attrs:
-                      color: redgrad
+                      color: '#000000'
               -
                 type: text
                 marks:
@@ -97,7 +97,7 @@ page_builder:
                   -
                     type: textColor
                     attrs:
-                      color: redgrad
+                      color: '#000000'
                 text: 'Please fill out the form below.'
         show_labels: true
         form: contact_us
@@ -161,7 +161,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1771929984
+updated_at: 1771933900
 fine_seo_title: 'Contact Us'
 fine_seo_preview: 'Contact Us'
 layout: layout
