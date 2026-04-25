@@ -53,7 +53,7 @@ return [
     ],
 
     'form_submissions' => [
-        'driver' => 'eloquent',
+        'driver' => 'file',
         'model'  => \Statamic\Eloquent\Forms\SubmissionModel::class,
     ],
 
