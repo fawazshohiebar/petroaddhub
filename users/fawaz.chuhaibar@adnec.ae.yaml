@@ -26,15 +26,6 @@ preferences:
         - end_time
         - halls
       filters:
-        global_food_talks:
-          display: 'global food talks'
-          filters:
-            site:
-              site: en
-            fields:
-              agendas:
-                operator: like
-                term: global-food-talks
         agritech:
           display: Agritech
           filters:
