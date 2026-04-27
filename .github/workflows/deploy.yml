@@ -20,8 +20,19 @@ jobs:
           port: 22
           script: |
             cd /home/fawaz/htdocs/petroaddhub.com
+            
+            # Pull the latest code
             git pull origin main
-            composer install --no-dev --optimize-autoloader
+            
+            # Install dependencies
+            # Note: Using --no-interaction prevents the script from hanging
+            composer install --no-dev --optimize-autoloader --no-interaction
+            
+            # Statamic & Laravel Housekeeping
             php artisan optimize
             php artisan statamic:stache:clear
-            chmod -R 775 storage bootstrap/cache content
+            
+            # Secure Permissions
+            # Set directory permissions to 775 and files to 664
+            find storage bootstrap/cache content -type d -exec chmod 775 {} +
+            find storage bootstrap/cache content -type f -exec chmod 664 {} +
