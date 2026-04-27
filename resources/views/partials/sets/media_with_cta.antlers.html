@@ -26,11 +26,11 @@
                 x-intersect="$el.classList.add('{{ $variant == 'right_image' ? 'ltr:animate-fade-slide-left' : 'ltr:animate-fade-slide-right' }}', '{{ $variant == 'right_image' ? 'rtl:animate-fade-slide-right' : 'rtl:animate-fade-slide-left' }}')">
                 <div class="relative">
                     {{ if section_image }}
-                        {{ glide:section_image preset="{{ $isCompact ? 'medium' : 'large' }}" }}
-                            <img loading="lazy" src="{{ url }}" alt="{{ alt ?? title }}" width="{{ width }}"
+                        {{ section_image  }}
+                            <img loading="lazy" src="{{glide:url }}" alt="{{ alt ?? title }}" width="{{ width }}"
                                 height="{{ height }}" style="object-position: {{ focus_css ?? 'center' }};"
-                                class="w-full   object-contain  rounded-md shadow-lg  md:h-[500px] h-[400px] }}" />
-                        {{ /glide:section_image }}
+                                class="w-full   object-cover  rounded-md shadow-lg  md:h-[500px] h-[400px] }}" />
+                        {{ /section_image }}
                     {{ /if }}
                     {{ if badge_text }}
                         <div
