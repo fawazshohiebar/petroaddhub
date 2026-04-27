@@ -29,12 +29,17 @@ jobs:
             git config user.name "Server Bot"
             git config user.email "server@petroaddhub.com"
             
-            # 3. Pull latest from GitHub first to avoid conflicts
-            # We use --rebase to keep the history clean
+            # 3. Stash any local changes before pulling (prevents conflicts)
+            git stash
+            
+            # 4. Pull latest from GitHub
             git pull origin main --rebase
             
-            # 4. Sync any uncommitted changes BACK to GitHub (if any exist)
-            # This is a safety net in case Statamic's Git integration missed something
+            # 5. Restore stashed changes if any existed
+            git stash pop || echo "No stashed changes to restore"
+            
+            # 6. Sync any uncommitted changes BACK to GitHub (safety net)
+            # This catches anything Statamic's Git integration might have missed
             if [[ -n $(git status -s) ]]; then
                 git add .
                 git commit -m "chore: sync content from server [skip ci]"
@@ -43,7 +48,7 @@ jobs:
                 echo "No changes to sync from server"
             fi
             
-            # 5. Production Build & Cleanup
+            # 7. Production Build & Cleanup
             # Install dependencies only if the lock file changed
             if [ -f "composer.lock" ]; then
                 composer install --no-dev --optimize-autoloader --no-interaction
@@ -53,6 +58,6 @@ jobs:
             php artisan optimize
             php artisan statamic:stache:clear
             
-            # 6. Fix Permissions
+            # 8. Fix Permissions
             # Ensures the web server can still write to these folders
             chmod -R 775 storage bootstrap/cache content
