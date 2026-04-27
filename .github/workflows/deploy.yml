@@ -15,19 +15,21 @@ jobs:
           username: fawaz
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
-          script_stop: true # Stops immediately if a command fails
+          script_stop: true
           script: |
             cd /home/fawaz/htdocs/petroaddhub.com
             
-            # 1. Pull changes
-            git pull origin main
+            # 1. Force Sync with GitHub
+            # This fetches updates and force-overwrites any conflicting local server files
+            git fetch origin main
+            git reset --hard origin/main
             
-            # 2. Optimized Install (skips if nothing changed)
+            # 2. Optimized Install
             composer install --no-dev --optimize-autoloader --no-interaction --quiet
             
-            # 3. Fast Cleanup
+            # 3. Statamic Housekeeping
             php artisan optimize
             php artisan statamic:stache:clear
             
-            # 4. Silent Permissions (only on necessary folders)
+            # 4. Permissions Maintenance
             chmod -R 775 storage bootstrap/cache content
