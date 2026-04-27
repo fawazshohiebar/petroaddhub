@@ -20,29 +20,30 @@ jobs:
           script: |
             cd /home/fawaz/htdocs/petroaddhub.com
             
-            # 1. Sync any changes made in the Statamic Control Panel
-            # This prevents merge conflicts during the pull
-            git add .
-            git commit -m "System: Content sync from Control Panel" || echo "No changes to commit"
+            # 1. Setup identity so the server can commit
+            git config user.name "Server"
+            git config user.email "server@petroaddhub.com"
             
-            # 2. Pull the latest code from GitHub
+            # 2. Sync deletions/changes from the Control Panel
+            git add .
+            git commit -m "System: Sync from CP [skip ci]" || echo "Nothing to sync"
+            
+            # 3. Push server changes back to GitHub 
+            # This is what updates your GitHub repo with the deleted sessions/content
+            git push origin main
+            
+            # 4. Pull the new code you just pushed from your laptop
             git pull origin main --rebase
             
-            # 3. Smart Composer: Only install if the lock file changed
-            # Uses git diff to see if the composer.lock was updated in this push
+            # 5. Smart Composer install
             if git diff --name-only HEAD@{1} HEAD | grep -q "composer.lock"; then
-                echo "Composer changes detected. Installing..."
                 composer install --no-dev --optimize-autoloader --no-interaction
-            else
-                echo "No composer changes. Skipping install to save time."
             fi
 
-            # 4. Clear and rebuild system caches
-            # This optimizes the site for production
+            # 6. Optimized Cache Management
             php artisan optimize
             php artisan statamic:stache:clear
             
-            # 5. Fix permissions
-            # Ensures the web server (www-data) can still write to necessary folders
-            sudo chown -R fawaz:www-data storage bootstrap/cache content
+            # 7. Permissions fix for the web server
+            # We target only the folders that need to be writable
             chmod -R 775 storage bootstrap/cache content
