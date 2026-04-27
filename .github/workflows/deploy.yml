@@ -2,45 +2,46 @@ name: Deploy PetroAddHub
 
 on:
   push:
-    branches:
-      - main
-
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    branches: [ main ]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: SSH and Deploy
+      - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.SERVER_IP }}
-          username: fawaz
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
           script: |
             cd /home/fawaz/htdocs/petroaddhub.com
             
-            # 1. Sync any changes made in the Control Panel so they don't block the pull
+            # 1. Sync any changes made in the Control Panel
+            # This prevents "Merge Conflicts" if you edited a page in the UI
             git add .
-            git commit -m "System: Saved changes from Control Panel" || echo "No changes to commit"
+            git commit -m "System: Content sync from Control Panel" || echo "No changes to commit"
             
-            # 2. Pull the latest code from GitHub
+            # 2. Pull the latest code
             git pull origin main --rebase
             
-            # 3. Install dependencies and build assets
-            composer install --no-dev --optimize-autoloader
-            npm install
-            npm run build
-            
-            # 4. Clear and optimize Statamic/Laravel
-            php artisan optimize:clear
+            # 3. Smart Composer: Only install if the lock file changed
+            if git diff --name-only HEAD@{1} HEAD | grep -q "composer.lock"; then
+                echo "Composer changes detected. Installing..."
+                composer install --no-dev --optimize-autoloader --no-interaction
+            else
+                echo "No composer changes. Skipping install."
+            fi
+
+            # 4. Clear and rebuild system caches
+            # We use 'optimize' to cache config and routes for speed
+            php artisan optimize
             php artisan statamic:stache:clear
             
-            # 5. Fix permissions (Ensures CP remains editable after deploy)
-            # Note: This assumes fawaz has permission or you've set the folder sticky bit
-            chmod -R 775 storage content public/assets bootstrap/cache
+            # 5. Fix permissions
+            # We ensure storage and content are writable by the web server
+            sudo chown -R fawaz:www-data storage bootstrap/cache content
+            chmod -R 775 storage bootstrap/cache content
