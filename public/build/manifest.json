@@ -1,0 +1,30 @@
+{
+  "resources/css/cp.css": {
+    "file": "assets/cp-BwrNztxe.css",
+    "src": "resources/css/cp.css",
+    "isEntry": true
+  },
+  "resources/css/site.css": {
+    "file": "assets/site-COpq5KPu.css",
+    "src": "resources/css/site.css",
+    "isEntry": true
+  },
+  "resources/js/cp.js": {
+    "file": "assets/cp-B3Q_ChKW.js",
+    "name": "cp",
+    "src": "resources/js/cp.js",
+    "isEntry": true,
+    "css": [
+      "assets/cp-CXIHKRdf.css"
+    ]
+  },
+  "resources/js/site.js": {
+    "file": "assets/site-xhYL6uQB.js",
+    "name": "site",
+    "src": "resources/js/site.js",
+    "isEntry": true,
+    "css": [
+      "assets/site-BUrcyj0q.css"
+    ]
+  }
+}
