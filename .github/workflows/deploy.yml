@@ -17,33 +17,38 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: fawaz
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          # THE FIX: This allows the server to use your key to talk back to GitHub
-          envs: SSH_PRIVATE_KEY
           script: |
             cd /home/fawaz/htdocs/petroaddhub.com
             
-            # 1. Setup local SSH agent to use the key for the GitHub push
+            # 1. Setup local SSH agent so the server can talk to GitHub
             eval $(ssh-agent -s)
             echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' | ssh-add -
             
-            # 2. Identity fix
-            git config user.name "Server"
+            # 2. Configure Git identity for the server
+            git config user.name "Server Bot"
             git config user.email "server@petroaddhub.com"
             
-            # 3. Commit deletions/changes (Statamic sessions/entries)
-            git add .
-            git commit -m "System: Sync from CP [skip ci]" || echo "Nothing to sync"
+            # 3. Capture CP changes (content, users, etc.)
+            git add content/ users/ storage/forms/ # Add specific folders you want to sync
+            git commit -m "chore: updates from Control Panel [skip ci]" || echo "No CP changes to sync"
             
-            # 4. Push back to GitHub (Now has the key to authenticate!)
+            # 4. Sync with GitHub
+            # We fetch first, then rebase to put CP changes on top of your latest code
+            git fetch origin main
+            git rebase origin main
+            
+            # 5. Push everything back to GitHub
+            # Now GitHub has both your laptop code AND the server's CP content
             git push origin main
             
-            # 5. Pull your new laptop changes
-            git pull origin main --rebase
-            
-            # 6. Maintenance
-            if git diff --name-only HEAD@{1} HEAD | grep -q "composer.lock"; then
+            # 6. Production Clean-up
+            if [ -f "composer.lock" ]; then
                 composer install --no-dev --optimize-autoloader --no-interaction
+                npm run build --if-present
             fi
+            
             php artisan optimize
             php artisan statamic:stache:clear
+            
+            # Ensure permissions remain correct for the web server
             chmod -R 775 storage bootstrap/cache content
