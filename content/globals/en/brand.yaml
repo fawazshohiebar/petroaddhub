@@ -9,6 +9,7 @@ button_replicator:
     button_size: fit
     type: button
     enabled: true
+    link: 'entry::4f4f2d66-0516-44cf-a601-6d8ab15bd9bb'
 logos_and_partners:
   -
     id: mke1fi5t
