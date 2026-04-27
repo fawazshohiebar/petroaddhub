@@ -4,8 +4,13 @@ on:
   push:
     branches: [ main ]
 
-jobs:
-  deploy:
+            # Clear caches and optimize for Statamic/Laravel
+            php artisan optimize
+            php artisan statamic:stache:clear
+            
+            # 9. Fix Permissions
+            # Ensures the web server can still write to these folders
+            chmod -R 775 storage bootstrap/cache content deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -21,34 +26,40 @@ jobs:
             # Navigate to the project root
             cd /home/fawaz/htdocs/petroaddhub.com
             
-            # 1. Setup SSH agent so the server can authenticate with GitHub
-            eval $(ssh-agent -s)
-            echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' | ssh-add -
+            # 1. Setup persistent SSH key for Git operations
+            mkdir -p ~/.ssh
+            chmod 700 ~/.ssh
+            echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+            chmod 600 ~/.ssh/id_rsa
             
-            # 2. Set Git identity (Required for the server to make commits)
-            git config user.name "Server Bot"
-            git config user.email "server@petroaddhub.com"
+            # 2. Add GitHub to known_hosts
+            ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null || true
             
-            # 3. Stash any local changes before pulling (prevents conflicts)
+            # 3. Configure Git globally (used by both this workflow and Statamic)
+            git config --global user.name "Server Bot"
+            git config --global user.email "server@petroaddhub.com"
+            git config --global core.sshCommand "ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no"
+            
+            # 4. Stash any uncommitted changes before pulling
             git stash
             
-            # 4. Pull latest from GitHub
+            # 5. Pull latest from GitHub
             git pull origin main --rebase
             
-            # 5. Restore stashed changes if any existed
+            # 6. Restore stashed changes if any existed
             git stash pop || echo "No stashed changes to restore"
             
-            # 6. Sync any uncommitted changes BACK to GitHub (safety net)
+            # 7. Sync any uncommitted changes BACK to GitHub (safety net)
             # This catches anything Statamic's Git integration might have missed
             if [[ -n $(git status -s) ]]; then
                 git add .
                 git commit -m "chore: sync content from server [skip ci]"
                 git push origin main
             else
-                echo "No changes to sync from server"
+                echo "✓ No uncommitted changes - Statamic is handling Git properly"
             fi
             
-            # 7. Production Build & Cleanup
+            # 8. Production Build & Cleanup
             # Install dependencies only if the lock file changed
             if [ -f "composer.lock" ]; then
                 composer install --no-dev --optimize-autoloader --no-interaction
@@ -58,6 +69,6 @@ jobs:
             php artisan optimize
             php artisan statamic:stache:clear
             
-            # 8. Fix Permissions
+            # 11. Fix Permissions
             # Ensures the web server can still write to these folders
             chmod -R 775 storage bootstrap/cache content
