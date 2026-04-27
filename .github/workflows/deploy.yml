@@ -8,31 +8,26 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: SSH and Deploy
+      - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SERVER_IP }}
           username: fawaz
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
+          script_stop: true # Stops immediately if a command fails
           script: |
             cd /home/fawaz/htdocs/petroaddhub.com
             
-            # Pull the latest code
+            # 1. Pull changes
             git pull origin main
             
-            # Install dependencies
-            # Note: Using --no-interaction prevents the script from hanging
-            composer install --no-dev --optimize-autoloader --no-interaction
+            # 2. Optimized Install (skips if nothing changed)
+            composer install --no-dev --optimize-autoloader --no-interaction --quiet
             
-            # Statamic & Laravel Housekeeping
+            # 3. Fast Cleanup
             php artisan optimize
             php artisan statamic:stache:clear
             
-            # Secure Permissions
-            # Set directory permissions to 775 and files to 664
-            find storage bootstrap/cache content -type d -exec chmod 775 {} +
-            find storage bootstrap/cache content -type f -exec chmod 664 {} +
+            # 4. Silent Permissions (only on necessary folders)
+            chmod -R 775 storage bootstrap/cache content
