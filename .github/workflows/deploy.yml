@@ -4,13 +4,8 @@ on:
   push:
     branches: [ main ]
 
-            # Clear caches and optimize for Statamic/Laravel
-            php artisan optimize
-            php artisan statamic:stache:clear
-            
-            # 9. Fix Permissions
-            # Ensures the web server can still write to these folders
-            chmod -R 775 storage bootstrap/cache content deploy:
+jobs:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -69,6 +64,6 @@ on:
             php artisan optimize
             php artisan statamic:stache:clear
             
-            # 11. Fix Permissions
+            # 9. Fix Permissions
             # Ensures the web server can still write to these folders
             chmod -R 775 storage bootstrap/cache content
