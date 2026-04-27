@@ -44,54 +44,6 @@ tabs:
                 - image
                 - 'mimes:jpg,jpeg,png,gif,webp,svg'
           -
-            handle: patronage
-            field:
-              type: text
-              display: Patronage
-              localizable: true
-          -
-            handle: location
-            field:
-              type: text
-              display: Location
-              localizable: true
-              width: 50
-          -
-            handle: location_link
-            field:
-              type: text
-              display: 'Location Link'
-              localizable: false
-              width: 50
-          -
-            handle: date
-            field:
-              type: text
-              display: Date
-              localizable: true
-              width: 50
-          -
-            handle: date_link
-            field:
-              type: text
-              display: 'Date Link'
-              localizable: false
-              width: 50
-          -
-            handle: time
-            field:
-              type: text
-              display: Time
-              localizable: true
-              width: 50
-          -
-            handle: time_link
-            field:
-              type: text
-              display: 'Time Link'
-              localizable: false
-              width: 50
-          -
             handle: button_replicator
             field:
               type: replicator
@@ -106,14 +58,6 @@ tabs:
                       fields:
                         -
                           import: fancy_button
-          -
-            handle: countdown_date_picker
-            field:
-              time_enabled: true
-              time_seconds_enabled: true
-              type: date
-              display: 'Countdown Date Picker'
-              localizable: false
       -
         display: 'Footer Logos'
         fields:
