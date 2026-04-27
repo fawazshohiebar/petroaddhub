@@ -27,7 +27,7 @@
                 <div class="relative">
                     {{ if section_image }}
                         {{ section_image  }}
-                            <img loading="lazy" src="{{glide:url }}" alt="{{ alt ?? title }}" width="{{ width }}"
+                            <img loading="lazy" src="{{url }}" alt="{{ alt ?? title }}" width="{{ width }}"
                                 height="{{ height }}" style="object-position: {{ focus_css ?? 'center' }};"
                                 class="w-full   object-cover  rounded-md shadow-lg  md:h-[500px] h-[400px] }}" />
                         {{ /section_image }}
