@@ -17,33 +17,33 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: fawaz
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          # THE FIX: This allows the server to use your key to talk back to GitHub
+          envs: SSH_PRIVATE_KEY
           script: |
             cd /home/fawaz/htdocs/petroaddhub.com
             
-            # 1. Setup identity so the server can commit
+            # 1. Setup local SSH agent to use the key for the GitHub push
+            eval $(ssh-agent -s)
+            echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' | ssh-add -
+            
+            # 2. Identity fix
             git config user.name "Server"
             git config user.email "server@petroaddhub.com"
             
-            # 2. Sync deletions/changes from the Control Panel
+            # 3. Commit deletions/changes (Statamic sessions/entries)
             git add .
             git commit -m "System: Sync from CP [skip ci]" || echo "Nothing to sync"
             
-            # 3. Push server changes back to GitHub 
-            # This is what updates your GitHub repo with the deleted sessions/content
+            # 4. Push back to GitHub (Now has the key to authenticate!)
             git push origin main
             
-            # 4. Pull the new code you just pushed from your laptop
+            # 5. Pull your new laptop changes
             git pull origin main --rebase
             
-            # 5. Smart Composer install
+            # 6. Maintenance
             if git diff --name-only HEAD@{1} HEAD | grep -q "composer.lock"; then
                 composer install --no-dev --optimize-autoloader --no-interaction
             fi
-
-            # 6. Optimized Cache Management
             php artisan optimize
             php artisan statamic:stache:clear
-            
-            # 7. Permissions fix for the web server
-            # We target only the folders that need to be writable
             chmod -R 775 storage bootstrap/cache content
