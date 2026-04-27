@@ -33,11 +33,15 @@ jobs:
             # We use --rebase to keep the history clean
             git pull origin main --rebase
             
-            # 4. Sync Control Panel changes BACK to GitHub
-            # This captures everything: content, users, and global settings
-            git add .
-            git commit -m "chore: sync content from CP [skip ci]" || echo "No changes to sync"
-            git push origin main
+            # 4. Sync any uncommitted changes BACK to GitHub (if any exist)
+            # This is a safety net in case Statamic's Git integration missed something
+            if [[ -n $(git status -s) ]]; then
+                git add .
+                git commit -m "chore: sync content from server [skip ci]"
+                git push origin main
+            else
+                echo "No changes to sync from server"
+            fi
             
             # 5. Production Build & Cleanup
             # Install dependencies only if the lock file changed
