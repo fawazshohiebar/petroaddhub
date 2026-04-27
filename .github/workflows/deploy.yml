@@ -18,37 +18,37 @@ jobs:
           username: fawaz
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+            # Navigate to the project root
             cd /home/fawaz/htdocs/petroaddhub.com
             
-            # 1. Setup local SSH agent so the server can talk to GitHub
+            # 1. Setup SSH agent so the server can authenticate with GitHub
             eval $(ssh-agent -s)
             echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' | ssh-add -
             
-            # 2. Configure Git identity for the server
+            # 2. Set Git identity (Required for the server to make commits)
             git config user.name "Server Bot"
             git config user.email "server@petroaddhub.com"
             
-            # 3. Capture CP changes (content, users, etc.)
-            git add content/ users/ storage/forms/ # Add specific folders you want to sync
-            git commit -m "chore: updates from Control Panel [skip ci]" || echo "No CP changes to sync"
+            # 3. Pull latest from GitHub first to avoid conflicts
+            # We use --rebase to keep the history clean
+            git pull origin main --rebase
             
-            # 4. Sync with GitHub
-            # We fetch first, then rebase to put CP changes on top of your latest code
-            git fetch origin main
-            git rebase origin main
-            
-            # 5. Push everything back to GitHub
-            # Now GitHub has both your laptop code AND the server's CP content
+            # 4. Sync Control Panel changes BACK to GitHub
+            # This captures everything: content, users, and global settings
+            git add .
+            git commit -m "chore: sync content from CP [skip ci]" || echo "No changes to sync"
             git push origin main
             
-            # 6. Production Clean-up
+            # 5. Production Build & Cleanup
+            # Install dependencies only if the lock file changed
             if [ -f "composer.lock" ]; then
                 composer install --no-dev --optimize-autoloader --no-interaction
-                npm run build --if-present
             fi
             
+            # Clear caches and optimize for Statamic/Laravel
             php artisan optimize
             php artisan statamic:stache:clear
             
-            # Ensure permissions remain correct for the web server
+            # 6. Fix Permissions
+            # Ensures the web server can still write to these folders
             chmod -R 775 storage bootstrap/cache content
