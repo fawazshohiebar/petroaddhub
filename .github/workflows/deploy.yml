@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -21,9 +24,23 @@ jobs:
           port: 22
           script: |
             cd /home/fawaz/htdocs/petroaddhub.com
-            git pull origin main
+            
+            # 1. Sync any changes made in the Control Panel so they don't block the pull
+            git add .
+            git commit -m "System: Saved changes from Control Panel" || echo "No changes to commit"
+            
+            # 2. Pull the latest code from GitHub
+            git pull origin main --rebase
+            
+            # 3. Install dependencies and build assets
             composer install --no-dev --optimize-autoloader
             npm install
             npm run build
+            
+            # 4. Clear and optimize Statamic/Laravel
             php artisan optimize:clear
             php artisan statamic:stache:clear
+            
+            # 5. Fix permissions (Ensures CP remains editable after deploy)
+            # Note: This assumes fawaz has permission or you've set the folder sticky bit
+            chmod -R 775 storage content public/assets bootstrap/cache
