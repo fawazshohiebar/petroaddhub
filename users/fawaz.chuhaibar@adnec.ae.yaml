@@ -26,15 +26,6 @@ preferences:
         - end_time
         - halls
       filters:
-        agritech:
-          display: Agritech
-          filters:
-            site:
-              site: en
-            fields:
-              agendas:
-                operator: like
-                term: agritech-forum
         palt:
           display: Palt
           filters:
