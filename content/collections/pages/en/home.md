@@ -76,7 +76,7 @@ page_builder:
               -
                 type: text
                 text: 'We work closely with universities and industry experts to formulate high-quality products including octane boosters, cetane improvers, metal deactivators, desulfurizers, and pipeline cleaners. Driven by simplicity and innovation, PetroAdd Hub supports clients with end-to-end solutions, from formulation and testing to manufacturing and commercialization, ensuring reliability and excellence in every product.'
-        section_image: features/pearl-rotana-jpg-(1).png
+        section_image: pearl-r.png
         background: bgcolor
         background_color: secondary
   -
@@ -179,7 +179,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1777296470
+updated_at: 1777296544
 fine_seo_image: brand/screenshot-2025-12-26-at-2.31.54-pm.png
 reusable_popup: false
 fine_seo_title: 'Challenge Sir Bani Yas'
