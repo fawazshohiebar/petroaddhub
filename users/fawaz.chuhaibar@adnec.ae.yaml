@@ -25,17 +25,6 @@ preferences:
         - start_time
         - end_time
         - halls
-      filters:
-        palt:
-          display: Palt
-          filters:
-            site:
-              site: en
-            fields:
-              agendas:
-                operator: like
-                term: palt
-              'null': null
       per_page: 500
     reusables:
       after_save: continue_editing
