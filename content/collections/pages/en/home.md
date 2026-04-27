@@ -39,7 +39,7 @@ page_builder:
                     type: textColor
                     attrs:
                       color: '#000000'
-                text: 'About Us'
+                text: 'About Us. asdasdasda ddsfsdf'
         section_label:
           -
             type: paragraph
@@ -114,7 +114,7 @@ page_builder:
                     type: textColor
                     attrs:
                       color: '#000000'
-                text: 'OUR PRODUCTS'
+                text: 'OUR PRODUCTS jhgjh'
         product_entries:
           - 1d894fa5-90a4-4461-891c-26ecc915e8fa
           - 48118e9d-b503-4642-87d5-5fdd89ed9334
@@ -179,7 +179,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1777283113
+updated_at: 1777291035
 fine_seo_image: brand/screenshot-2025-12-26-at-2.31.54-pm.png
 reusable_popup: false
 fine_seo_title: 'Challenge Sir Bani Yas'
