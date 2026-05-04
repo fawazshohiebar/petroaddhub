@@ -16,12 +16,86 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1771935230
+updated_at: 1777931890
 page_builder:
   -
     type: set
     attrs:
+      id: morqnm1e
+      values:
+        type: call_to_action
+        text_image_alignment: v1
+        spaces: p
+        description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Multiplicity and simplicity are the core drivers behind our products, ideas, and actions. Our passion lies in creating simple yet powerful solutions for the gasoline and refining industries. Through collaboration with experts and leading universities, we have developed a unique formula of multi-functional additives (MPA) that addresses major challenges in the oil refining and gasoline sectors. In the field of gasoline additives, we rely on our expertise in formulation, engineering, and marketing to support our clients in developing and marketing additives that reduce emissions, improve fuel efficiency, extend equipment lifespan, enhance operator satisfaction, and lower operational costs. Our product range includes diesel and gasoline fuel additives, octane boosters, and cetane improvers. Our experts work to extend the life of engines and machinery for years to come. We have expanded our vision of simplicity and multiplicity into the refinery processing additives sector, developing and testing a variety of multi-functional chemical additives that have shown outstanding results when applied across various refining processes. These include our proprietary formulations of demulsifiers, chemical sulfur reducers, de-salters, metal deactivators, pipeline cleaners, octane boosters, and viscosity index improvers, helping our clients overcome long-standing challenges. Bioadd-Tech, through its subsidiaries and strategic partners, offers clients a comprehensive journey – from problem analysis and solution development to testing, analysis, manufacturing, and commercializing the final solution.'
+        section_image: products/product.png
+        background: bgcolor
+        background_color: light-accent
+        heading_text:
+          -
+            type: heading
+            attrs:
+              level: 3
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textColor
+                    attrs:
+                      color: redgrad
+                text: 'Empowering Industries with Reliable and Innovative Solutions.'
+  -
+    type: set
+    attrs:
+      id: morqnpnf
+      values:
+        type: call_to_action
+        text_image_alignment: v2
+        spaces: p
+        heading_text:
+          -
+            type: heading
+            attrs:
+              level: 3
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textColor
+                    attrs:
+                      color: redgrad
+                text: 'REFINERY PROCESSING ADDITIVES'
+        description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'BIOADD -TECH HRSTEK SEES ITSELF AS A PROVIDER, RESEARCHER, AND PROBLEM-SOLVER WITH A LONG HISTORY IN THE REFINERY PROCESSING INDUSTRY. OUR ABILITY TO CREATE A VARIETY OF GOODS SPECIFICALLY SUITED TO THE SPECIAL CHALLENGES ENCOUNTERED IN REFINERIES WAS MADE POSSIBLE BY OUR COMPREHENSIVE PRODUCT KNOWLEDGE AND EXPERTISE WITH APPLICATION MECHANISMS, WHICH WERE THE FOUNDATIONS FOR MANY OF THE PRODUCTS LISTED BELOW. SOME OF THESE PRODUCTS, WHICH ACHIEVED REMARKABLE RESULTS, WERE DEVELOPED BASED ON TAILORED'
+              -
+                type: hardBreak
+              -
+                type: text
+                text: 'PROBLEM-SOLUTION APPROACHES AND MARKET DEMAND FOR COST-EFFECTIVE ALTERNATIVE SOLUTIONS, WHILE MANY OTHERS WERE DEVELOPED BASED ON CUSTOMIZED PROBLEM-SOLUTION APPROACHES. A SUMMARY OF ALL REFINERY PROCESSING ADDITIVES WILL BE SUPPLIED IN THE PAGES THAT FOLLOW, ALONG WITH SOME TECHNICAL INFORMATION THAT MAY HELP THE CLIENT UNDERSTAND HOW THESE PRODUCTS WORK. IN ORDER TO ACHIEVE THE HIGHEST POSSIBLE COST-EFFECTIVENESS AND PROFITABILITY FOR THE CLIENT, IT IS IMPORTANT TO EMPHASIZE THAT MULTIPLICITY OF FUNCTIONALITY AND SIMPLICITY OF APPLICATION'
+        section_image: products/product.png
+        background: bgcolor
+        background_color: light-secondary
+  -
+    type: set
+    attrs:
       id: mm0i660h
+      enabled: false
       values:
         type: ctav1
         spaces: p
@@ -54,6 +128,7 @@ page_builder:
     type: set
     attrs:
       id: mm0i8beh
+      enabled: false
       values:
         type: ctav1
         spaces: p

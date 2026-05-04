@@ -2,13 +2,8 @@
     Product Detail Page Template
     This template displays individual product details
 #}}
-<div style="background: yellow; padding: 10px; margin: 10px;">
-    <strong>DEBUG:</strong> Looking for slug: {{ slug }}
-</div>
-{{ collection:products :slug="slug" limit="1" }}
-<div style="background: lightgreen; padding: 10px; margin: 10px;">
-    <strong>FOUND:</strong> {{ title }} (ID: {{ id }})
-</div>
+
+{{ collection:products slug:is="{slug}" limit="1" }}
 
 <div class="container mx-auto px-4 py-8">
     <div class="max-w-5xl ">
@@ -28,4 +23,5 @@
         
      </div>
 </div>
+
 {{/collection:products}}

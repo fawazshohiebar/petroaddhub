@@ -15,20 +15,39 @@
                         </a>
                     </li>
 
-                    {{ nav:breadcrumbs include_home="false" }}
+                    {{ if segment_1 == "product" && segment_2 }}
                         <li class="flex items-center">
                             <span class="text-white mx-2">
                                 {{heroicon variant="outline" icon="chevron-right" class="h-3 w-3 rtl:rotate-180"}}
                             </span>
-                            {{ if !is_current }}
-                                <a href="{{ url }}" class="text-white hover:text-white transition-colors duration-200">
-                                    {{ title }}
-                                </a>
-                            {{ else }}
-                                <span class="font-medium text-white">{{ title }}</span>
-                            {{ /if }}
+                            <a href="/{{ site:short_locale }}/products" class="text-white hover:text-white transition-colors duration-200 text-[16px]">
+                                Products
+                            </a>
                         </li>
-                    {{ /nav:breadcrumbs }}
+                        <li class="flex items-center">
+                            <span class="text-white mx-2">
+                                {{heroicon variant="outline" icon="chevron-right" class="h-3 w-3 rtl:rotate-180"}}
+                            </span>
+                            {{ collection:products slug:is="{segment_2}" limit="1" }}
+                                <span class="font-medium text-white text-[16px]">{{ title }}</span>
+                            {{ /collection:products }}
+                        </li>
+                    {{ else }}
+                        {{ nav:breadcrumbs include_home="false" }}
+                            <li class="flex items-center">
+                                <span class="text-white mx-2">
+                                    {{heroicon variant="outline" icon="chevron-right" class="h-3 w-3 rtl:rotate-180"}}
+                                </span>
+                                {{ if !is_current }}
+                                    <a href="{{ url }}" class="text-white hover:text-white transition-colors duration-200">
+                                        {{ title }}
+                                    </a>
+                                {{ else }}
+                                    <span class="font-medium text-white">{{ title }}</span>
+                                {{ /if }}
+                            </li>
+                        {{ /nav:breadcrumbs }}
+                    {{ /if }}
                 </ol>
             </nav>
         </div>

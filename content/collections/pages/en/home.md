@@ -69,14 +69,23 @@ page_builder:
             content:
               -
                 type: text
-                text: 'PetroAdd Hub Industries L.L.C is a leading provider of advanced fuel and refinery additives in the UAE, committed to delivering innovative solutions for the gasoline, diesel, and refinery processing industries. Our unique range of multifunctional additives is designed to reduce emissions, improve fuel efficiency, extend equipment life, and enhance overall performance while lowering operational costs.'
-          -
-            type: paragraph
-            content:
+                marks:
+                  -
+                    type: bold
+                text: PetroAddHub
               -
                 type: text
-                text: 'We work closely with universities and industry experts to formulate high-quality products including octane boosters, cetane improvers, metal deactivators, desulfurizers, and pipeline cleaners. Driven by simplicity and innovation, PetroAdd Hub supports clients with end-to-end solutions, from formulation and testing to manufacturing and commercialization, ensuring reliability and excellence in every product.'
-        section_image: psadasearl-r.png
+                text: ' is a premier provider of advanced fuel and refinery additives in the UAE, dedicated to delivering innovative solutions for the gasoline, diesel, and refinery processing sectors. Our multifunctional additives are engineered to lower emissions, boost fuel efficiency, and extend equipment life while reducing overall operational costs. By collaborating with academic institutions and industry experts, '
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: PetroAddHub
+              -
+                type: text
+                text: ' develops high-quality products—including octane boosters, cetane improvers, and pipeline cleaners—managing the entire lifecycle from initial formulation to commercialization.'
+        section_image: 20250705_131006_0000-upscale-4x.png
         background: bgcolor
         background_color: secondary
   -
@@ -114,14 +123,13 @@ page_builder:
                     type: textColor
                     attrs:
                       color: '#000000'
-                text: 'OUR PRODUCTS jhgjh'
+                text: 'OUR PRODUCTS '
         product_entries:
-          - 1d894fa5-90a4-4461-891c-26ecc915e8fa
-          - 48118e9d-b503-4642-87d5-5fdd89ed9334
-          - bb0fd7d0-40f0-4501-a91b-ac55d5f5b5c3
-          - 2a3b98da-3983-400f-bfc9-cb7a2945bbd4
-          - fbaa0f39-4696-4c2c-a34d-a0f925a1f95f
-          - 70f73c10-991f-4f3d-9695-e28eecb7c2c5
+          - b252d601-98c1-4c63-85a0-7b7ce42cdf63
+          - 7c48e1b7-e826-49d5-82e0-bdce76d1e595
+          - 90dde868-1e16-4f23-9042-94e403a217f1
+          - 71edbe4d-a2a0-40aa-9c95-98e71ba5794e
+          - a8030c54-a034-42d2-90f7-7a86bbb68fd0
   -
     type: set
     attrs:
@@ -179,7 +187,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1777297131
+updated_at: 1777929311
 fine_seo_image: whatsapp-image-2026-01-28-at-10.12.12-pm-(2).png
 reusable_popup: false
 fine_seo_title: Home
