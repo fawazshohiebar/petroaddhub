@@ -27,9 +27,13 @@ jobs:
             # 2. Optimized Install
             composer install --no-dev --optimize-autoloader --no-interaction --quiet
             
-            # 3. Statamic Housekeeping
+            # 3. Build Frontend Assets
+            npm ci --quiet
+            npm run build
+            
+            # 4. Statamic Housekeeping
             php artisan optimize
             php artisan statamic:stache:clear
             
-            # 4. Permissions Maintenance
+            # 5. Permissions Maintenance
             chmod -R 775 storage bootstrap/cache content
