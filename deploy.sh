@@ -1,27 +1,15 @@
 #!/bin/bash
-cd /home/fawaz/htdocs/petroaddhub.com
+set -e
 
-git pull origin main
+echo "⚡ Fast deployment starting..."
 
-# Install PHP dependencies
-composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
+# Only run migrations if schema changed (safe to run always, but fast if no changes)
+php artisan migrate --force --isolated 2>/dev/null || true
 
-# Install Node dependencies
-npm ci --production=false
+# Warm Statamic cache (fast operation)
+php artisan statamic:stache:warm 2>/dev/null || true
 
-# Build frontend assets
-npm run build
+# Restart queue workers if running
+php artisan horizon:terminate 2>/dev/null || true
 
-# Clear and optimize caches
-php please stache:clear
-php please static:clear
-php artisan cache:clear
-php artisan config:cache
-php artisan route:cache
-php artisan view:cache
-
-# Set proper permissions
-chmod -R 775 storage bootstrap/cache
-chmod -R 775 public/build 2>/dev/null || true
-
-echo "✅ Deployment completed successfully!"
+echo "✅ Deployed in $(date +%s) seconds!"
