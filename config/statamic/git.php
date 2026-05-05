@@ -135,6 +135,7 @@ return [
     'commands' => [
         '{{ git }} add {{ paths }}',
         '{{ git }} -c "user.name={{ name }}" -c "user.email={{ email }}" commit -m "{{ message }} [BOT]"',
+        '{{ git }} push origin main',
     ],
 
     /*
@@ -150,7 +151,7 @@ return [
     |
     */
 
-    'push' => env('STATAMIC_GIT_PUSH', true),
+    'push' => false,
 
     /*
     |--------------------------------------------------------------------------
