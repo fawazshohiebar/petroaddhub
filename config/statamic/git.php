@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'enabled' => env('STATAMIC_GIT_ENABLED', true),
+    'enabled' => env('STATAMIC_GIT_ENABLED', false),
 
     /*
     |--------------------------------------------------------------------------
