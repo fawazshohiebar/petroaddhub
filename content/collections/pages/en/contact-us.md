@@ -141,13 +141,14 @@ page_builder:
         buttons:
           -
             id: mm0gxklh
-            label: 'Call Now: +971 50 100 0643'
+            label: 'Call Now: +971 54 257 4771'
             design: Orangenogradient
             icon: none
             open_new_tab: false
             button_size: fit
             type: new_set
             enabled: true
+            link: 'tel:+971542574771'
 template: default
 reusable_popup: false
 fine_seo_is_title_custom: false
@@ -161,7 +162,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1771933900
+updated_at: 1778675464
 fine_seo_title: 'Contact Us'
 fine_seo_preview: 'Contact Us'
 layout: layout
