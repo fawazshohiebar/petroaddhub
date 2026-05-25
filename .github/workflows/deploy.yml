@@ -2,38 +2,24 @@ name: Deploy PetroAddHub
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy via SSH
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # This is the magic part that logs into your EC2
+      - name: SSH and Deploy
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SERVER_IP }}
-          username: fawaz
+          username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
-          script_stop: true
           script: |
             cd /home/fawaz/htdocs/petroaddhub.com
-            
-            # 1. Force Sync with GitHub
-            # This fetches updates and force-overwrites any conflicting local server files
-            git fetch origin main
-            git reset --hard origin/main
-            
-            # 2. Optimized Install
-            composer install --no-dev --optimize-autoloader --no-interaction --quiet
-            
-            # 3. Build Frontend Assets
-            npm ci --quiet
-            npm run build
-            
-            # 4. Statamic Housekeeping
-            php artisan optimize
-            php artisan statamic:stache:clear
-            
-            # 5. Permissions Maintenance
-            chmod -R 775 storage bootstrap/cache content
+            bash deploy.sh
