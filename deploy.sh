@@ -1,29 +1,27 @@
 #!/bin/bash
-# Move to the website directory
-cd /home/fawaz/htdocs/petroaddhub.com
+# Exit immediately if a command exits with a non-zero status
+set -e
 
-# Pull latest code from GitHub
-git pull origin main
+echo "🚀 Starting deployment for PetroAddHub..."
 
-# Install PHP dependencies
+# 1. Pull the latest code cleanly
+# We use 'git reset --hard' to throw away the automated server cache files before pulling
+git fetch origin main
+git reset --hard origin/main
+
+# 2. Install PHP dependencies
 composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
-# Install Node dependencies
-npm ci --production=false
-
-# Build frontend assets
+# 3. Install Node dependencies & build assets
+npm ci
 npm run build
 
-# Clear and optimize caches
+# 4. Clear and optimize Statamic / Laravel caches
 php please stache:clear
 php please static:clear
 php artisan cache:clear
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
-
-# Set proper permissions
-chmod -R 775 storage bootstrap/cache
-chmod -R 775 public/build 2>/dev/null || true
 
 echo "✅ Deployment completed successfully!"
