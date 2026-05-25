@@ -12,7 +12,7 @@ cd /home/fawaz/htdocs/petroaddhub.com
 # ---------------------------------------------------------
 echo "📦 Checking for live Control Panel updates..."
 
-# Configure a temporary git profile for the server if not already done globally
+# Configure local git profile for the server
 git config user.name "Server Auto Deployment"
 git config user.email "deploy@petroaddhub.com"
 
@@ -43,7 +43,6 @@ npm ci
 npm run build
 
 # 4. Clear and optimize Statamic / Laravel caches
-# Added the glide cache clear we fixed earlier!
 php artisan statamic:glide:clear 
 php please stache:clear
 php please static:clear
@@ -52,7 +51,7 @@ php artisan config:cache
 php artisan route:cache
 php artisan view:cache
 
-# 5. Lock down folder permissions for CloudPanel user fawaz
+# 5. Lock down folder permissions for fawaz
 chmod -R 775 storage bootstrap/cache
 
 echo "✅ Deployment completed successfully!"
