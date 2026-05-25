@@ -8,7 +8,7 @@ echo "🚀 Starting deployment for PetroAddHub..."
 cd /home/fawaz/htdocs/petroaddhub.com
 
 # ---------------------------------------------------------
-# STEP 1: Pull your new code changes safely
+# STEP 1: Pull your new code changes safely  
 # ---------------------------------------------------------
 echo "📥 Pulling latest changes from GitHub..."
 git pull origin main
