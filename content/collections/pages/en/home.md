@@ -123,7 +123,7 @@ page_builder:
                     type: textColor
                     attrs:
                       color: '#000000'
-                text: 'OUR PRODUCTS ss'
+                text: 'OUR PRODUCTS'
         product_entries:
           - b252d601-98c1-4c63-85a0-7b7ce42cdf63
           - 7c48e1b7-e826-49d5-82e0-bdce76d1e595
@@ -188,7 +188,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1779746240
+updated_at: 1779746292
 fine_seo_image: whatsapp-image-2026-01-28-at-10.12.12-pm-(2).png
 reusable_popup: false
 fine_seo_title: Home
