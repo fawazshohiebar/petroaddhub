@@ -16,9 +16,9 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.SERVER_USER }} # This can remain 'ubuntu'
+          username: ${{ secrets.SERVER_USER }} # Make sure this secret is updated to 'fawaz' in GitHub Settings
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
             cd /home/fawaz/htdocs/petroaddhub.com
-            sudo -u fawaz bash deploy.sh
+            bash deploy.sh

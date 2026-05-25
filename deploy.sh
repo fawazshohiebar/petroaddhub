@@ -1,11 +1,14 @@
 #!/bin/bash
-# Exit immediately if a command exits with a non-zero status
+# Exit immediately if any command fails
 set -e
 
 echo "🚀 Starting deployment for PetroAddHub..."
 
-# 1. Pull the latest code cleanly
-# We use 'git reset --hard' to throw away the automated server cache files before pulling
+# Move to the website directory
+cd /home/fawaz/htdocs/petroaddhub.com
+
+# 1. Clean house and pull latest code from GitHub
+# This drops local automated server tracking files so the pull succeeds perfectly
 git fetch origin main
 git reset --hard origin/main
 
