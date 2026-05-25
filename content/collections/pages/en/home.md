@@ -39,7 +39,7 @@ page_builder:
                     type: textColor
                     attrs:
                       color: '#000000'
-                text: 'About Usssss'
+                text: 'About Us'
         section_label:
           -
             type: paragraph
@@ -188,7 +188,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1779745773
+updated_at: 1779746008
 fine_seo_image: whatsapp-image-2026-01-28-at-10.12.12-pm-(2).png
 reusable_popup: false
 fine_seo_title: Home
