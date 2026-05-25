@@ -8,31 +8,9 @@ echo "🚀 Starting deployment for PetroAddHub..."
 cd /home/fawaz/htdocs/petroaddhub.com
 
 # ---------------------------------------------------------
-# STEP 0: SAVE LIVE CONTENT EDITS FIRST (Crucial for Flat-File)
-# ---------------------------------------------------------
-echo "📦 Checking for live Control Panel updates..."
-
-# Configure local git profile for the server
-git config user.name "Server Auto Deployment"
-git config user.email "deploy@petroaddhub.com"
-
-# Check if there are changes in content, users, or assets folders
-if [ -n "$(git status --porcelain content/ users/ public/assets/)" ]; then
-    echo "💾 Found live updates! Saving to GitHub..."
-    git add content/ users/ public/assets/
-    git commit -m "chore: save live updates from Control Panel [skip ci]"
-    
-    # Rebase against origin to stay clean, then push back to GitHub
-    git pull --rebase origin main
-    git push origin main
-else
-    echo "✨ No new live content edits found to save."
-fi
-
-# ---------------------------------------------------------
 # STEP 1: Pull your new code changes safely
 # ---------------------------------------------------------
-echo "📥 Pulling latest code changes..."
+echo "📥 Pulling latest changes from GitHub..."
 git pull origin main
 
 # 2. Install PHP dependencies
@@ -51,7 +29,7 @@ php artisan config:cache
 php artisan route:cache
 php artisan view:cache
 
-# 5. Lock down folder permissions for fawaz
+# 5. Lock down folder permissions
 chmod -R 775 storage bootstrap/cache
 
 echo "✅ Deployment completed successfully!"
