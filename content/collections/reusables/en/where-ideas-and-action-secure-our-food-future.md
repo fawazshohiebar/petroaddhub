@@ -2,10 +2,10 @@
 id: d4eb8f45-e6bc-4ac9-bad5-9039dd4a9eef
 blueprint: hero
 title: Hero
-heading: 'Enhancing Engine Performance Across Industriessdasdasds'
+heading: 'Enhancing Engine Performance Across Industries'
 video: Vjd4NJaoxIs
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1789376676
+updated_at: 1789377622
 subheading: 'PetroAdd Hub delivers smart fuel additives and industrial solutions with superior reliability.'
 starting_time: 0
 ending_time: 60
