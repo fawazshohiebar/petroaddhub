@@ -1,5 +1,7 @@
 <?php
 
+$pushCommand = env('STATAMIC_GIT_PUSH_COMMAND');
+
 return [
 
     /*
@@ -132,10 +134,11 @@ return [
     |
     */
 
-    'commands' => [
+    'commands' => array_values(array_filter([
         '{{ git }} add {{ paths }}',
         '{{ git }} -c "user.name={{ name }}" -c "user.email={{ email }}" commit -m "{{ message }} [BOT]"',
-    ],
+        $pushCommand,
+    ])),
 
     /*
     |--------------------------------------------------------------------------
@@ -150,7 +153,7 @@ return [
     |
     */
 
-    'push' => true, 
+    'push' => $pushCommand ? false : env('STATAMIC_GIT_PUSH', false),
 
     /*
     |--------------------------------------------------------------------------
